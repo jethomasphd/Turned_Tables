@@ -1,0 +1,215 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Tablet",
+  "description": "The Seed Packet. A portable artifact from a Tables Turned session. Every Table Flip ends in a Tablet. Partial is allowed. Waste is not.",
+  "type": "object",
+  "required": ["version", "title", "session", "intent", "papers", "synthesis", "provenance"],
+  "properties": {
+    "version": {
+      "type": "string",
+      "const": "1.0",
+      "description": "Schema version."
+    },
+    "title": {
+      "type": "string",
+      "description": "Project title. What is this Table Flip about."
+    },
+    "session": {
+      "type": "object",
+      "description": "Session metadata. When it started, when it sealed, how long the timebox was.",
+      "required": ["id", "created", "status"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique session identifier (UUID)."
+        },
+        "created": {
+          "type": "string",
+          "format": "date-time",
+          "description": "When the session began."
+        },
+        "sealed": {
+          "type": ["string", "null"],
+          "format": "date-time",
+          "description": "When the Tablet was sealed. Null if still in progress."
+        },
+        "status": {
+          "type": "string",
+          "enum": ["in_progress", "sealed", "partial"],
+          "description": "Session status. Partial means exported before completion."
+        },
+        "timebox_minutes": {
+          "type": "integer",
+          "minimum": 5,
+          "maximum": 120,
+          "description": "How long the user intended to spend."
+        }
+      }
+    },
+    "intent": {
+      "type": "object",
+      "description": "User intent prompts. Why are they here. What do they need. When do they need it by.",
+      "properties": {
+        "decision_context": {
+          "type": "string",
+          "description": "What decision or question is driving this session."
+        },
+        "useful_by": {
+          "type": "string",
+          "description": "When this needs to be useful. Tonight, next week, next month."
+        },
+        "question_draft": {
+          "type": "string",
+          "description": "The question the user is trying to answer, in their own words."
+        }
+      }
+    },
+    "papers": {
+      "type": "array",
+      "description": "The ingested scrolls. Each paper with its metadata, role, witness line, and disposition.",
+      "minItems": 0,
+      "maxItems": 50,
+      "items": {
+        "type": "object",
+        "required": ["pmid", "title"],
+        "properties": {
+          "pmid": {
+            "type": "string",
+            "description": "PubMed ID."
+          },
+          "doi": {
+            "type": ["string", "null"],
+            "description": "Digital Object Identifier, if available."
+          },
+          "title": {
+            "type": "string",
+            "description": "Paper title."
+          },
+          "authors": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Author list."
+          },
+          "journal": {
+            "type": ["string", "null"],
+            "description": "Journal name."
+          },
+          "year": {
+            "type": ["integer", "null"],
+            "description": "Publication year."
+          },
+          "abstract": {
+            "type": ["string", "null"],
+            "description": "Abstract text."
+          },
+          "role": {
+            "type": ["string", "null"],
+            "enum": ["background", "supports", "contradicts", "method", "unsure", null],
+            "description": "Role assigned during Mark the Roles step."
+          },
+          "witness_line": {
+            "type": ["string", "null"],
+            "description": "One-sentence takeaway written during the Witness step."
+          },
+          "disposition": {
+            "type": ["string", "null"],
+            "enum": ["keep", "release", "unsure", null],
+            "description": "Keep, release, or unsure. Decided during Witness."
+          },
+          "watch_outs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": ["confounding", "selection_bias", "measurement", "small_sample", "no_control", "self_report", "short_followup", "funding_conflict", "other"]
+            },
+            "description": "Methodological watch-outs flagged by the user."
+          }
+        }
+      }
+    },
+    "synthesis": {
+      "type": "object",
+      "description": "The synthesis: claims with receipts, and the cross-examination results.",
+      "properties": {
+        "claims": {
+          "type": "array",
+          "description": "Each claim linked to paper IDs. No receipts means UNWITNESSED.",
+          "items": {
+            "type": "object",
+            "required": ["text", "receipts", "status"],
+            "properties": {
+              "text": {
+                "type": "string",
+                "description": "The claim in plain language."
+              },
+              "receipts": {
+                "type": "array",
+                "items": { "type": "string" },
+                "description": "PMIDs or DOIs that support this claim."
+              },
+              "status": {
+                "type": "string",
+                "enum": ["witnessed", "unwitnessed", "contested"],
+                "description": "Witnessed: has receipts. Unwitnessed: no receipts. Contested: papers disagree."
+              }
+            }
+          }
+        },
+        "brief_markdown": {
+          "type": ["string", "null"],
+          "description": "The generated Brief in markdown format."
+        },
+        "cross_examination": {
+          "type": "object",
+          "description": "Results of the three stress-test questions.",
+          "properties": {
+            "change_your_mind": {
+              "type": ["string", "null"],
+              "description": "What evidence would change your conclusion?"
+            },
+            "rival_explanation": {
+              "type": ["string", "null"],
+              "description": "Best alternative explanation for what the papers show?"
+            },
+            "confidence": {
+              "type": ["string", "null"],
+              "enum": ["low", "medium", "high", null],
+              "description": "Overall confidence in the synthesis."
+            },
+            "confidence_justification": {
+              "type": ["string", "null"],
+              "description": "Why this confidence level. Required if confidence is high."
+            }
+          }
+        }
+      }
+    },
+    "provenance": {
+      "type": "array",
+      "description": "Provenance log. Every ingestion, every role assignment, every export. Receipts for the receipts.",
+      "items": {
+        "type": "object",
+        "required": ["timestamp", "action"],
+        "properties": {
+          "timestamp": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "action": {
+            "type": "string",
+            "description": "What happened."
+          },
+          "detail": {
+            "type": ["string", "null"],
+            "description": "Additional detail."
+          }
+        }
+      }
+    },
+    "next_sprint": {
+      "type": "array",
+      "description": "Queue for the next Table Flip. Papers to find, questions to chase, gaps to fill.",
+      "items": { "type": "string" }
+    }
+  }
+}
