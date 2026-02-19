@@ -12,14 +12,14 @@
   <div id="intro">
     <div id="skip-intro">skip</div>
 
-    <!-- Act I: Void — Confusion -->
+    <!-- Act I: Void -->
     <section class="act active" id="act-1">
       <div class="act-inner">
         <div class="sigil-intro">&#9674; &#9672; &#9674;</div>
       </div>
     </section>
 
-    <!-- Act II: The Wound — Awe -->
+    <!-- Act II: The Wound -->
     <section class="act" id="act-2">
       <div class="act-inner act-text">
         <p id="w1"></p>
@@ -30,7 +30,7 @@
       </div>
     </section>
 
-    <!-- Act III: The Turn — Understanding -->
+    <!-- Act III: The Turn -->
     <section class="act" id="act-3">
       <div class="act-inner act-text">
         <p id="t1"></p>
@@ -41,11 +41,12 @@
       </div>
     </section>
 
-    <!-- Act IV: Enter — Action -->
+    <!-- Act IV: Enter -->
     <section class="act" id="act-4">
       <div class="act-inner">
         <div class="sigil-intro instant">&#9674; &#9672; &#9674;</div>
         <h1 class="intro-title">Tables Turned</h1>
+        <p class="intro-sub">The Commons Table. Receipts only.</p>
         <button id="enter-btn">Flip the Tables</button>
       </div>
     </section>
@@ -60,8 +61,53 @@
       <p class="subtitle">The Commons Table. Receipts only.</p>
     </header>
 
-    <!-- Input View -->
+    <!-- ═══ WHAT IS THIS? ═══ -->
+    <div class="explainer" id="explainer">
+      <div class="explainer-toggle" id="explainer-toggle">
+        <span class="explainer-q">What is this?</span>
+        <span class="explainer-arrow">&#9662;</span>
+      </div>
+      <div class="explainer-body" id="explainer-body">
+        <div class="myth-section">
+          <h3>The Problem</h3>
+          <p>Rome is not a place. It is a pattern. Every era has its gatekeepers: priests who read the scripture so you do not have to, experts who translate the findings so you do not have to, institutions that decide what you are allowed to know and when.</p>
+          <p>Today the gate is made of jargon, paywalls, and an ocean of information so vast that no ordinary person can navigate it. The research exists. Much of it is free, sitting in public databases like PubMed. But it is written in a language designed to exclude you.</p>
+          <p>This is the information flood. Not a drought of knowledge, but a drowning in it.</p>
+        </div>
+        <div class="myth-section">
+          <h3>The Flip</h3>
+          <p>Tables Turned is built on a single conviction: <strong>the public record belongs to the public.</strong></p>
+          <p>You should not need a medical degree to understand what researchers found about the supplement you are considering for your child. You should not need to trust a headline when the abstract is right there, free, published, waiting.</p>
+          <p>This tool flips the table. You bring a question. We search the public record, pull the research, and use AI to translate it into plain language. Every claim is traced back to its source paper. Every source is cited by PMID so you can verify it yourself.</p>
+        </div>
+        <div class="myth-section">
+          <h3>The Rules</h3>
+          <div class="rules-grid">
+            <div class="rule"><strong>Receipts only.</strong> Every claim cites its source. No hand-waving.</div>
+            <div class="rule"><strong>Contradictions surfaced.</strong> If papers disagree, we say so. We do not smooth it over.</div>
+            <div class="rule"><strong>Plain language.</strong> No jargon. If a technical term is unavoidable, it is translated immediately.</div>
+            <div class="rule"><strong>Confidence stated honestly.</strong> Strong, mixed, or thin. With reasons.</div>
+            <div class="rule"><strong>Unknowns named.</strong> What the papers do not address matters as much as what they do.</div>
+            <div class="rule"><strong>Nothing trapped.</strong> Your brief, your data. Download it. It belongs to you.</div>
+          </div>
+        </div>
+        <div class="myth-section">
+          <h3>How It Works</h3>
+          <ol class="how-list">
+            <li><strong>Ask your question.</strong> In plain English. What are you trying to figure out?</li>
+            <li><strong>We search PubMed.</strong> AI generates optimized medical search terms from your question, then searches the world's largest biomedical database.</li>
+            <li><strong>You choose what matters.</strong> Review the papers found. Check the ones that look relevant. Uncheck the rest.</li>
+            <li><strong>AI reads and synthesizes.</strong> Claude reads every abstract and produces a plain-language brief, with every claim traced to its source.</li>
+            <li><strong>Download your brief.</strong> As a formatted document (DOCX) or raw data (JSON). Yours to keep. Yours to share.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══ STEP 1: ASK ═══ -->
     <div id="input-view">
+      <div class="step-label">Step 1: Ask your question</div>
+
       <div class="field">
         <label for="q">What are you trying to figure out?</label>
         <textarea id="q" rows="2" placeholder="e.g., Does vitamin D supplementation reduce respiratory infections in children?"></textarea>
@@ -72,43 +118,163 @@
         <input type="text" id="ctx" placeholder="e.g., Deciding whether to give my kid supplements before winter">
       </div>
 
-      <div class="field">
-        <label>Your PubMed articles</label>
-        <p class="hint">Paste URLs, PMIDs, or DOIs. One per line.</p>
-        <textarea id="links" rows="6" placeholder="https://pubmed.ncbi.nlm.nih.gov/28202713/
-28202713
-10.1136/bmj.i6583"></textarea>
-      </div>
-
       <div class="field" id="key-field">
         <label for="key">Anthropic API Key</label>
-        <p class="hint">Your key stays in your browser. Sent only to Anthropic's API.</p>
+        <p class="hint">Your key stays in your browser. It is only sent to Anthropic's API to power the search and synthesis. <a href="https://console.anthropic.com/settings/keys" target="_blank">Get a free key here.</a></p>
         <div class="key-row">
           <input type="password" id="key" placeholder="sk-ant-...">
-          <a href="https://console.anthropic.com/settings/keys" target="_blank" class="key-link">Get a key</a>
         </div>
       </div>
 
-      <button id="flip-btn">Flip the Tables</button>
-      <div id="flip-status"></div>
+      <button id="search-btn" class="btn-primary">Search the Public Record</button>
+      <div id="search-status"></div>
+
+      <details class="manual-entry">
+        <summary>I already have PubMed links</summary>
+        <div class="field" style="margin-top: 0.75rem;">
+          <p class="hint">Paste URLs, PMIDs, or DOIs. One per line.</p>
+          <textarea id="links" rows="4" placeholder="https://pubmed.ncbi.nlm.nih.gov/28202713/
+28202713
+10.1136/bmj.i6583"></textarea>
+          <button id="manual-btn" class="btn-secondary" style="margin-top: 0.75rem;">Use These Papers</button>
+        </div>
+      </details>
     </div>
 
-    <!-- Processing View -->
+    <!-- ═══ STEP 2: CURATE ═══ -->
+    <div id="curate-view" class="hidden">
+      <div class="step-label">Step 2: Choose your papers</div>
+      <p class="step-desc">We searched PubMed using AI-generated terms. Review what came back. Check the papers that look relevant to your question. Uncheck the rest.</p>
+
+      <div id="search-terms-display"></div>
+
+      <div class="curate-actions">
+        <button id="select-all-btn" class="btn-small">Select all</button>
+        <button id="select-none-btn" class="btn-small">Select none</button>
+        <span id="curate-count" class="curate-count"></span>
+      </div>
+
+      <div id="curate-list"></div>
+
+      <button id="synthesize-btn" class="btn-primary">Read and Synthesize</button>
+      <button id="back-to-search" class="btn-back">&#8592; Back to search</button>
+    </div>
+
+    <!-- ═══ STEP 3: PROCESSING ═══ -->
     <div id="processing-view" class="hidden">
+      <div class="step-label">Step 3: Reading the record</div>
       <div class="processing-sigil">&#9672;</div>
       <div id="proc-status">Fetching from the public record...</div>
       <div id="proc-papers"></div>
       <div id="stream-out"></div>
     </div>
 
-    <!-- Results View -->
+    <!-- ═══ STEP 4: RESULTS ═══ -->
     <div id="results-view" class="hidden">
+      <div class="step-label">Your Brief</div>
       <div id="brief-out" class="brief-box"></div>
-      <div class="export-row">
-        <button class="export-btn primary" id="dl-brief">Download Brief</button>
-        <button class="export-btn" id="dl-tablet">Download Tablet.json</button>
+
+      <div class="provenance-section" id="provenance-section">
+        <details>
+          <summary>Provenance log</summary>
+          <div id="provenance-log" class="provenance-log"></div>
+        </details>
       </div>
-      <button id="again-btn">New question</button>
+
+      <div class="export-row">
+        <button class="export-btn primary" id="dl-docx">Download Brief (.docx)</button>
+        <button class="export-btn" id="dl-brief">Download Brief (.md)</button>
+        <button class="export-btn" id="dl-tablet">Download Tablet (.json)</button>
+      </div>
+      <button id="again-btn" class="btn-back">&#8592; New question</button>
+    </div>
+
+    <!-- ═══ DOCUMENTATION ═══ -->
+    <div class="docs-section" id="docs-section">
+      <div class="docs-toggle" id="docs-toggle">
+        <span>Documentation</span>
+        <span class="explainer-arrow">&#9662;</span>
+      </div>
+      <div class="docs-body hidden" id="docs-body">
+
+        <div class="doc-chapter">
+          <h2>The Doctrine</h2>
+          <h3>Rome is a pattern, not a place</h3>
+          <p>Every era has its gatekeepers. In the ancient world, priests controlled access to scripture. In the medieval world, the Church controlled access to knowledge. In the modern world, journals and institutions control access to research.</p>
+          <p>The pattern is always the same: knowledge exists, but ordinary people are told they cannot be trusted with it. That they need interpreters. That the raw material is too complex, too dangerous, too sacred for common hands.</p>
+          <p>Tables Turned refuses this premise. The public record is public. PubMed abstracts are free. The question is not access. The question is translation.</p>
+
+          <h3>The information flood</h3>
+          <p>The modern crisis is not a lack of information. It is a drowning in it. PubMed alone contains over 37 million citations. No human can read them all. No human needs to. What people need is a way to find the relevant research, understand what it says, and make an informed decision.</p>
+          <p>This is not a problem AI solves by replacing human judgment. It is a problem AI solves by being the translator at the table. You bring the question. The public record provides the evidence. AI reads the abstracts and explains what they say in plain language. You decide what to do.</p>
+
+          <h3>Receipts only</h3>
+          <p>The core principle is provenance. Every claim in a Tables Turned brief traces back to a specific paper, identified by its PubMed ID (PMID). This is not a suggestion. It is a rule. If a claim cannot be traced to a provided paper, it is marked [UNWITNESSED] and flagged.</p>
+          <p>This matters because the history of AI-generated content is a history of hallucination. Models invent citations. They blend findings from different papers. They state conclusions that sound authoritative but have no source. Tables Turned treats this as a moral failure, not a technical limitation. Every claim has receipts, or it is marked as unsupported.</p>
+        </div>
+
+        <div class="doc-chapter">
+          <h2>How It Works</h2>
+          <h3>Step 1: Ask your question</h3>
+          <p>Type a plain-English question and the decision it serves. The decision context matters because it shapes what kind of evidence is relevant. "Does melatonin help kids sleep?" is different when the context is "deciding whether to try it tonight" versus "writing a school paper on sleep disorders."</p>
+
+          <h3>Step 2: AI-powered search</h3>
+          <p>Your question is sent to Claude, which generates optimized PubMed search terms. This is not a simple keyword extraction. The AI understands medical terminology, knows how to construct boolean search queries, and generates multiple search strategies to maximize coverage.</p>
+          <p>The search terms are shown to you transparently. You can see exactly what was searched and why. The results are fetched directly from the NCBI E-utilities API, the same public API that powers PubMed itself.</p>
+          <p>You then review every paper found and choose which ones to include. This is your curation step. You are not a passive recipient. You decide what enters the synthesis.</p>
+
+          <h3>Step 3: Synthesis</h3>
+          <p>The selected papers (abstracts, titles, authors, journals, years) are sent to Claude with strict instructions:</p>
+          <ul>
+            <li>Separate what the papers say from what we infer</li>
+            <li>Every claim must cite its source by PMID</li>
+            <li>Surface contradictions between papers</li>
+            <li>Write in plain language, no jargon</li>
+            <li>State confidence honestly (strong, mixed, or thin)</li>
+            <li>Name what is unknown</li>
+            <li>Never hallucinate or invent findings</li>
+          </ul>
+          <p>The synthesis streams in real-time so you can watch it being written.</p>
+
+          <h3>Step 4: Your brief</h3>
+          <p>The finished brief is rendered with formatted headings, highlighted PMID citations, and clear section breaks. It includes:</p>
+          <ul>
+            <li><strong>What the papers say</strong> &mdash; grouped by finding, each cited</li>
+            <li><strong>What we infer (with receipts)</strong> &mdash; numbered claims, each sourced</li>
+            <li><strong>What is unknown</strong> &mdash; gaps the papers do not address</li>
+            <li><strong>Confidence</strong> &mdash; honest assessment with reasoning</li>
+          </ul>
+          <p>Download as a formatted Word document (.docx), markdown (.md), or the raw session data (.json).</p>
+        </div>
+
+        <div class="doc-chapter">
+          <h2>Technical Details</h2>
+          <h3>Data sources</h3>
+          <p><strong>PubMed / NCBI E-utilities:</strong> All paper metadata and abstracts are fetched from the National Center for Biotechnology Information's public API. This is the same database used by researchers, doctors, and institutions worldwide. It is free, public, and requires no account.</p>
+
+          <h3>AI model</h3>
+          <p><strong>Claude by Anthropic:</strong> The synthesis is powered by Claude, Anthropic's AI assistant. You provide your own API key, which means your data is sent directly from your browser to Anthropic's servers. Nothing passes through our servers because we do not have servers. This is a static website.</p>
+
+          <h3>Privacy</h3>
+          <p>Your API key is stored in your browser's localStorage. It is never sent anywhere except to Anthropic's API. Your questions, papers, and briefs exist only in your browser. When you close the tab, they are gone unless you downloaded them. We do not track you. We do not have analytics. We do not have a database.</p>
+
+          <h3>Limitations</h3>
+          <ul>
+            <li><strong>Abstracts only.</strong> Tables Turned reads abstracts, not full papers. Abstracts are free and public. Full papers are often paywalled. This means nuance in the methods or results sections may be missed.</li>
+            <li><strong>AI can err.</strong> Despite strict instructions, Claude may occasionally misinterpret an abstract or make an inference that is not fully supported. The PMID citations let you verify every claim yourself.</li>
+            <li><strong>Not medical advice.</strong> This tool helps you understand research. It does not replace a doctor. It gives you better questions to ask, not answers to follow blindly.</li>
+            <li><strong>English only.</strong> PubMed abstracts are predominantly in English. Research published in other languages may not appear.</li>
+          </ul>
+        </div>
+
+        <div class="doc-chapter">
+          <h2>The Lineage</h2>
+          <p>Tables Turned inherits from a long tradition of making knowledge accessible. From the translation of scripture into common tongues, to the creation of public libraries, to the open-access movement in academic publishing, the pattern is always the same: gatekeepers resist, translators persist, and eventually the public record returns to the public.</p>
+          <p>This tool is one small table flip in that tradition. It is not a replacement for reading. It is not a shortcut for thinking. It is a translator that sits at the table with you, reads the public record aloud, and makes sure every claim has a receipt.</p>
+          <p class="lineage-end">The commons table is set. Pull up a chair.</p>
+        </div>
+
+      </div>
     </div>
 
     <!-- Settings -->
