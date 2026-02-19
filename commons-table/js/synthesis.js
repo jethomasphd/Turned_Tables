@@ -1,14 +1,118 @@
 /**
  * Synthesis — Anthropic API Integration
  *
- * Takes papers and a question, calls Claude, streams back a receipted brief.
- * Every claim must cite PMIDs. No jargon. No hand-waving. Receipts only.
+ * Two capabilities:
+ * 1. generateSearchQueries: Turn a plain-English question into PubMed search terms
+ * 2. generate: Synthesize papers into a receipted brief
  */
 
 const Synthesis = (() => {
   const API_URL = 'https://api.anthropic.com/v1/messages';
 
-  const SYSTEM_PROMPT = `You are a research translator for Tables Turned, a tool that helps regular people understand PubMed research and make informed decisions.
+  // ── Shared API call (non-streaming) ──
+
+  async function callAPI(apiKey, model, system, userContent) {
+    const response = await fetch(API_URL, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'x-api-key': apiKey,
+        'anthropic-version': '2023-06-01',
+        'anthropic-dangerous-direct-browser-access': 'true'
+      },
+      body: JSON.stringify({
+        model: model || 'claude-sonnet-4-5-20250929',
+        max_tokens: 1024,
+        system: system,
+        messages: [{ role: 'user', content: userContent }]
+      })
+    });
+
+    if (!response.ok) {
+      const errBody = await response.text();
+      let msg = `API error (${response.status})`;
+      try {
+        const errJson = JSON.parse(errBody);
+        if (errJson.error && errJson.error.message) msg = errJson.error.message;
+      } catch (e) { /* use default */ }
+      throw new Error(msg);
+    }
+
+    const data = await response.json();
+    return data.content && data.content[0] ? data.content[0].text : '';
+  }
+
+  // ═══════════════════════════════════════════════════════════
+  //  SEARCH QUERY GENERATION
+  //  Turn plain-English question into PubMed search terms
+  // ═══════════════════════════════════════════════════════════
+
+  const SEARCH_SYSTEM = `You are a PubMed search expert. Your job is to turn a plain-English health or science question into optimized PubMed search queries.
+
+## Rules
+1. Generate 2-4 PubMed search queries, from broad to specific.
+2. Use proper MeSH terms and boolean operators (AND, OR) where helpful.
+3. Include relevant synonyms and alternative phrasings.
+4. Prioritize queries that will find systematic reviews, meta-analyses, and RCTs when relevant.
+5. Keep queries concise but effective.
+
+## Output Format
+Return ONLY a JSON array of objects. No markdown, no explanation, no code fences.
+Each object has:
+- "query": the PubMed search string
+- "strategy": a brief plain-English description of what this query targets (1 sentence)
+
+Example output:
+[{"query":"vitamin D supplementation respiratory infection children","strategy":"Broad search for vitamin D and respiratory infections in children"},{"query":"(vitamin D OR cholecalciferol) AND (respiratory tract infection OR RTI OR common cold) AND (child OR pediatric) AND (randomized controlled trial OR meta-analysis)","strategy":"Targeted search for high-quality trials on vitamin D and respiratory infections in kids"}]`;
+
+  async function generateSearchQueries(opts) {
+    const { apiKey, model, question, context } = opts;
+
+    let prompt = `Question: ${question}`;
+    if (context) prompt += `\nDecision context: ${context}`;
+    prompt += '\n\nGenerate PubMed search queries for this question.';
+
+    const raw = await callAPI(apiKey, model, SEARCH_SYSTEM, prompt);
+
+    // Parse JSON from response (handle potential markdown fences)
+    let cleaned = raw.trim();
+    if (cleaned.startsWith('```')) {
+      cleaned = cleaned.replace(/^```(?:json)?\s*/, '').replace(/\s*```$/, '');
+    }
+
+    try {
+      return JSON.parse(cleaned);
+    } catch (e) {
+      // Try to extract JSON array from the response
+      const match = cleaned.match(/\[[\s\S]*\]/);
+      if (match) return JSON.parse(match[0]);
+      throw new Error('Failed to parse search queries from AI response');
+    }
+  }
+
+  // ═══════════════════════════════════════════════════════════
+  //  PUBMED SEARCH (via NCBI esearch)
+  //  Execute a search query and return PMIDs
+  // ═══════════════════════════════════════════════════════════
+
+  async function searchPubMed(query, maxResults) {
+    maxResults = maxResults || 10;
+    const url = `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=${encodeURIComponent(query)}&retmax=${maxResults}&sort=relevance&retmode=json`;
+    const response = await fetch(url);
+    if (!response.ok) throw new Error(`PubMed search failed: ${response.status}`);
+    const data = await response.json();
+    return {
+      pmids: data.esearchresult?.idlist || [],
+      count: parseInt(data.esearchresult?.count || '0', 10),
+      query: query
+    };
+  }
+
+  // ═══════════════════════════════════════════════════════════
+  //  BRIEF SYNTHESIS (streaming)
+  // ═══════════════════════════════════════════════════════════
+
+  const SYNTH_SYSTEM = `You are a research translator for Tables Turned, a tool that helps regular people understand PubMed research and make informed decisions.
 
 ## Your Rules
 
@@ -100,23 +204,8 @@ Produce a markdown document with exactly these sections:
     return lines.join('\n');
   }
 
-  /**
-   * Call the Anthropic API with streaming.
-   *
-   * @param {Object} opts
-   * @param {string} opts.apiKey
-   * @param {string} opts.model
-   * @param {string} opts.question
-   * @param {string} opts.context
-   * @param {Array}  opts.papers
-   * @param {Function} opts.onChunk  - Called with (chunkText, fullTextSoFar)
-   * @param {Function} opts.onDone   - Called with (fullText)
-   * @param {Function} opts.onError  - Called with (Error)
-   * @returns {Promise<string>} Full generated text
-   */
   async function generate(opts) {
     const { apiKey, model, question, context, papers, onChunk, onDone, onError } = opts;
-
     const userMessage = buildUserMessage(question, context, papers);
 
     try {
@@ -132,7 +221,7 @@ Produce a markdown document with exactly these sections:
           model: model || 'claude-sonnet-4-5-20250929',
           max_tokens: 4096,
           stream: true,
-          system: SYSTEM_PROMPT,
+          system: SYNTH_SYSTEM,
           messages: [{ role: 'user', content: userMessage }]
         })
       });
@@ -142,14 +231,11 @@ Produce a markdown document with exactly these sections:
         let msg = `API error (${response.status})`;
         try {
           const errJson = JSON.parse(errBody);
-          if (errJson.error && errJson.error.message) {
-            msg = errJson.error.message;
-          }
-        } catch (e) { /* use default message */ }
+          if (errJson.error && errJson.error.message) msg = errJson.error.message;
+        } catch (e) { /* use default */ }
         throw new Error(msg);
       }
 
-      // Stream the response
       const reader = response.body.getReader();
       const decoder = new TextDecoder();
       let buffer = '';
@@ -161,7 +247,7 @@ Produce a markdown document with exactly these sections:
 
         buffer += decoder.decode(value, { stream: true });
         const lines = buffer.split('\n');
-        buffer = lines.pop(); // keep incomplete line in buffer
+        buffer = lines.pop();
 
         for (const line of lines) {
           if (!line.startsWith('data: ')) continue;
@@ -170,23 +256,15 @@ Produce a markdown document with exactly these sections:
 
           try {
             const parsed = JSON.parse(data);
-
-            if (parsed.type === 'content_block_delta' &&
-                parsed.delta && parsed.delta.type === 'text_delta') {
-              const text = parsed.delta.text;
-              fullText += text;
-              if (onChunk) onChunk(text, fullText);
+            if (parsed.type === 'content_block_delta' && parsed.delta && parsed.delta.type === 'text_delta') {
+              fullText += parsed.delta.text;
+              if (onChunk) onChunk(parsed.delta.text, fullText);
             }
-
-            // Handle stream errors
             if (parsed.type === 'error') {
-              const errMsg = parsed.error ? parsed.error.message : 'Stream error';
-              throw new Error(errMsg);
+              throw new Error(parsed.error ? parsed.error.message : 'Stream error');
             }
           } catch (parseErr) {
-            if (parseErr.message && !parseErr.message.includes('JSON')) {
-              throw parseErr; // Re-throw non-parse errors
-            }
+            if (parseErr.message && !parseErr.message.includes('JSON')) throw parseErr;
           }
         }
       }
@@ -200,5 +278,5 @@ Produce a markdown document with exactly these sections:
     }
   }
 
-  return { generate };
+  return { generateSearchQueries, searchPubMed, generate };
 })();
