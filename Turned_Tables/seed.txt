@@ -1,0 +1,304 @@
+# Seed: Tables Turned
+
+## The Matter
+
+Rome is long gone. This is metaphor.
+
+The oppressor we are naming is not a people or a nation. It’s a **pattern**: the persistent architecture of information gatekeeping. The modern world still runs on the same structure, only now it wears cleaner clothes.
+
+Good information is hard to access.
+
+* Paywalled behind journals and institutional logins
+* Buried in technical jargon
+* Entombed in 50-page manuscripts no working person can parse
+* Routed through legacy media incentives and algorithmic attention markets
+* Summarized by systems that don’t show receipts
+
+In practice, this means ordinary people live downstream from authority rather than inside the record. They inherit conclusions. They do not inherit the means.
+
+**Tables Turned** exists to flip that pattern.
+
+Not with outrage. With a tool.
+
+A browser-native experience that lets a regular person paste 5–20 PubMed links, automatically pulls abstracts and citations from the public record, and produces an intelligible synthesis that is readable, honest, and grounded. No paywall dependence. No jargon barrier. No “trust me.”
+
+**Receipts only.**
+
+The output is not a pile of notes. It is a **portable tablet**: a compact Seed Packet that preserves intent, provenance, and conclusions in a form future work can build on. A ritual for the Flood that refuses to become Flood tech.
+
+If done right, this becomes a small act of liberation:
+**common access to the abstract-level public record, translated into common tongue, with lineage intact.**
+
+---
+
+## The Architecture
+
+This tool is a browser ritual, built around one non-negotiable idea:
+
+### The Browser Doctrine
+
+The entire experience MUST live in a web browser.
+No installation required. No native app dependency. Mobile-first. Desktop-capable.
+
+* Paste links, triage, synthesis, stress-test, and export all happen in-browser.
+* Local-first storage is acceptable for MVP, but the canonical continuity artifact is the exported **Tablet** (Seed Packet JSON).
+* The user must be able to download their work (Tablet + Ledger + Brief) in a single click. The work must not be trapped.
+
+### The Product Spine
+
+**Session in → Tablet out. Every time.**
+
+The unit of work is a **Table Flip**: a 15–30 minute sprint that ends in a Tablet export.
+
+The tool is not designed to store everything.
+It is designed to **return** you to the work later without re-drowning.
+
+### Core Modules
+
+1. **The Commons Table** (frontend web app)
+2. **Shoreline Ingest** (PubMed link → citation + abstract)
+3. **Scroll Cards** (paper cards with role + witness line)
+4. **Receipts Engine** (claim → paper IDs linking)
+5. **Cross-Examination** (stress-test widgets)
+6. **Tablet Press** (export bundle + schema validation)
+
+### Ingestion Strategy
+
+* Prefer official NCBI/PubMed APIs for metadata/abstract retrieval.
+* Input types:
+
+  * PubMed URLs
+  * PMIDs
+  * DOIs (resolve to PubMed record when possible)
+* Deduplicate across the sprint.
+* Cache results (so repeated sessions don’t re-fetch the same papers constantly).
+* Full text is optional and only when openly available (e.g., PubMed Central). The MVP must succeed with abstracts + metadata alone.
+
+### Data Contracts
+
+The tool must produce three exports:
+
+1. **Tablet**: schema-validated JSON (the Seed Packet)
+2. **Ledger**: evidence table CSV/JSON + provenance log
+3. **Brief**: markdown (and optionally PDF) synthesis
+
+All exports must be generated in-browser and downloadable.
+
+---
+
+## The Decisions
+
+These are the choices debated and resolved. The agent must honor them.
+
+### 1) Rome is metaphor
+
+* We are not making a historical argument about Rome’s present relevance.
+* “Rome” is shorthand for modern gatekeeping patterns: paywalls, jargon, incentives, centralized authority, and summaries without lineage.
+* The tone is prophetic but precise: we name the pattern, not a people.
+
+### 2) Anti-gatekeeping means abstract-first
+
+* PubMed abstracts and citations are a free public substrate.
+* The MVP must not rely on access to paywalled PDFs.
+* The user should still get a usable synthesis with abstracts alone.
+
+### 3) The teaching frame must be implicit
+
+Scientists are smart. People are tired. Everyone is overconfident sometimes.
+
+No explicit pedagogy. No “framework lecture.”
+Instead: tiny, repeated prompts that quietly enforce good thinking.
+
+### 4) The ritual is linear, idiot-proof, and myth-labeled
+
+The UI must move the user forward with minimal friction. Mythic step names are allowed, but each step must be unmistakable.
+
+### 5) Provenance or silence
+
+Every claim in the synthesis must link back to at least one ingested paper ID (PMID/DOI).
+If it cannot, the system must mark it as **UNKNOWN / UNWITNESSED**.
+
+No hallucinated authority. No “trust me.”
+
+### 6) Continuity is the point
+
+The goal is not a perfect literature review.
+The goal is scaffolding across time: Table Flips that build into strata.
+
+The exported Tablet must be resumable months later in under two minutes.
+
+---
+
+## The Open Questions
+
+These are inputs for the agent to resolve carefully without breaking doctrine.
+
+1. **Project naming surface**
+
+   * Do we ship as “Tables Turned” publicly, or keep it as the internal doctrine while the public product name is softer (e.g., “Commons Table”)?
+2. **Citation style**
+
+   * Default bibliography formatting: Vancouver vs APA vs simple numbered list. (Keep it readable for regular people.)
+3. **Scope boundaries**
+
+   * Should we support non-PubMed sources in v1, or hard-limit to PubMed for purity?
+4. **Persona of the synthesis**
+
+   * Default voice: “common tongue,” no jargon, but not patronizing. Decide the precise tone rules for output writing.
+5. **Storage**
+
+   * Local-first only (browser storage) vs optional account login. MVP should be local-first; agent can propose an opt-in account layer later.
+6. **Contradiction handling**
+
+   * When papers conflict, do we default to “map disagreement” mode, or “best-supported consensus” mode?
+
+---
+
+## The Standards
+
+Quality, aesthetic, and functional requirements.
+
+### Functional Standards
+
+* **30-minute test**: A user can paste 10 PubMed links, tag roles, write one sentence each, generate a brief, and export a Tablet in under 30 minutes.
+* **90-day return test**: Opening an exported Tablet later allows re-entry in under 2 minutes (clear ramp, clear next steps).
+* **Offline-ish resilience**: If ingestion succeeds once, the session should still function if connectivity is flaky afterward (cache what you can).
+
+### UX Standards
+
+* Mobile-first.
+* One primary action per screen.
+* No infinite scroll. No feed.
+* No “workspace sprawl.” No dashboard fetish.
+* Progress indicator that respects the timebox.
+* “5-minute mode” allowed: role-tag only, still exports a partial Tablet.
+
+### Writing Standards
+
+* Output is intelligible to regular people.
+* Jargon is translated, not celebrated.
+* Use short sentences.
+* Avoid corporate product language.
+* No em dashes.
+* Always separate **what the papers say** from **what we infer**.
+
+### Integrity Standards
+
+* Claims must cite ingested records (PMID/DOI).
+* Contradictions must be surfaced, not smoothed over.
+* Confidence must be justified with simple reasons (consistency, sample size, design strength).
+
+### Aesthetic Standards
+
+* Minimal, clean, grave.
+* The myth is in the framing, not in clutter.
+* The interface should feel like a table at night with one lamp.
+
+---
+
+## The Lineage
+
+What this inherits from and what it refuses to become.
+
+### Inherits from
+
+* The long human tradition of **witnessing**: reading, marking, and speaking what is actually there.
+* The table-flipping archetype as a symbol of refusing exploitative systems of access.
+* PubMed as a public index of biomedical citations and abstracts.
+
+### Refuses
+
+* “Second brain” vault apps.
+* Paywall-dependent workflows.
+* AI summaries without receipts.
+* Infinite feeds, algorithmic nudges, and hoarding mechanics.
+
+### Reference implementations
+
+The agent may look to modern tools for partial inspiration, but must not copy their incentives:
+
+* Systematic review screening patterns (fast include/exclude + tagging)
+* Evidence tables and claim mapping
+* Summarization UX patterns
+  But the doctrine is different: **portable tablet exports, browser-first, no tribute.**
+
+---
+
+# The Rite
+
+(These are the step names and what each must do. Ship this.)
+
+1. **No Tribute**
+   Paste 5–20 PubMed links (URLs/PMIDs/DOIs). Ingest abstracts + citations via NCBI/PubMed APIs.
+
+2. **Lay the Scrolls**
+   Render clean paper cards. Deduplicate. Show title, year, journal, abstract preview, PMID/DOI.
+
+3. **Mark the Roles**
+   One tap per scroll: Background / Supports / Contradicts / Method / Unsure.
+
+4. **Witness**
+   One sentence takeaway per scroll. Then Keep / Release / Unsure. Optional watch-outs via tap list (confounding, selection, measurement, etc.).
+
+5. **Cross-Examine**
+   Generate the Brief + Receipts. Then run the three widgets:
+
+   * What would change your mind?
+   * Best rival explanation?
+   * Confidence (Low/Medium/High) with one follow-up if High
+
+6. **Seal the Tablet**
+   Export bundle:
+
+   * Tablet.json (Seed Packet schema validated)
+   * Ledger.csv/json (evidence + provenance log)
+   * Brief.md (and optional PDF)
+
+Every Table Flip ends in a Tablet. Partial is allowed. Waste is not.
+
+---
+
+# Tablet Schema Requirements
+
+The agent must create:
+
+* `schemas/tablet.schema.json`
+* `examples/tablet.example.json`
+* Exports must validate against the schema before download.
+
+Minimum required fields:
+
+* project title
+* session metadata (timebox, timestamps, status)
+* user intent prompts (decision context, “useful by tonight,” question draft)
+* papers[] with PMID/DOI + abstract + role + witness line + keep/release
+* synthesis with claim→paper mapping
+* provenance log for ingestion
+* next sprint queue
+
+---
+
+# Repo Structure
+
+Recommended tree to keep myth consistent while remaining practical:
+
+* `/commons-table/` (frontend)
+* `/shoreline/` (ingestion + caching)
+* `/scrolls/` (paper card model)
+* `/receipts/` (claim linking constraints)
+* `/cross-examine/` (widgets + logic)
+* `/tablets/` (schema + export)
+* `/scribe/` (brief templates)
+* `/examples/` (sample sessions + exports)
+* `README.md` (this seed, unchanged)
+
+---
+
+# Final Charge to the Agent
+
+Do not build Flood tech.
+
+Build a browser table where a regular person can touch the public record, speak it plainly, and leave with a tablet that survives the gate.
+
+Rome is metaphor. The gate is real.
+Flip the tables anyway.
