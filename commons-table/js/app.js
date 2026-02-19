@@ -1,461 +1,462 @@
 /**
- * App — Main Orchestrator
+ * App — Tables Turned
  *
- * Binds the six steps of the rite into one linear path.
- * Manages state, navigation, timebox, and session lifecycle.
+ * Cinematic intro -> Simple input -> AI synthesis -> Receipted brief.
  *
- * Session in -> Tablet out. Every time.
+ * User journey: Confusion -> Awe -> Understanding -> Action
+ *
+ * Session in -> Brief out. Every time.
  */
 
 const App = (() => {
-  // ── Session State ──
-  const session = {
-    id: TabletPress.uuid(),
-    created: new Date().toISOString(),
-    status: 'in_progress',
+  // ── State ──
+  const state = {
     papers: [],
-    claims: [],
-    duplicates: [],
-    provenance: [],
     briefMarkdown: null,
-    currentStep: 0,
-    timeboxStart: null,
-    timeboxMinutes: 30
+    provenance: []
   };
 
-  const STEP_COUNT = 6;
+  const KEY_STORE = 'tt_api_key';
+  const MODEL_STORE = 'tt_model';
 
-  // ── Provenance Logging ──
-  function log(action, detail) {
-    session.provenance.push({
-      timestamp: new Date().toISOString(),
-      action,
-      detail: detail || null
+  // ── Utilities ──
+  function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
+  function $(id) { return document.getElementById(id); }
+  function show(el) { if (el) el.classList.remove('hidden'); }
+  function hide(el) { if (el) el.classList.add('hidden'); }
+
+  // ═══════════════════════════════════════════════════════════
+  //  CINEMATIC INTRO
+  //  Four acts: Void -> Wound -> Turn -> Enter
+  //  Maps to: Confusion -> Awe -> Understanding -> Action
+  // ═══════════════════════════════════════════════════════════
+
+  const WOUND_LINES = [
+    { id: 'w1', text: 'Every day, people make decisions about their health' },
+    { id: 'w2', text: 'based on headlines, hearsay, and hope.' },
+    { pause: 800 },
+    { id: 'w3', text: 'The research exists. It is public. It is free.' },
+    { id: 'w4', text: 'But it sits behind jargon, buried in abstracts nobody reads.' },
+    { pause: 600 },
+    { id: 'w5', text: 'The table is set against you.' }
+  ];
+
+  const TURN_LINES = [
+    { id: 't1', text: 'This tool reads the public record.' },
+    { pause: 600 },
+    { id: 't2', text: 'You bring the articles. You ask the question.' },
+    { id: 't3', text: 'It returns a plain-language brief' },
+    { id: 't4', text: 'with every claim traced back to its source.' },
+    { pause: 600 },
+    { id: 't5', text: 'No jargon. No hand-waving. Receipts only.' }
+  ];
+
+  let currentAct = 1;
+  let introPlaying = false;
+  let introSkipped = false;
+
+  async function typeText(el, text) {
+    el.classList.add('typing');
+    for (let i = 0; i < text.length; i++) {
+      if (introSkipped) {
+        el.textContent = text;
+        el.classList.remove('typing');
+        return;
+      }
+      el.textContent += text[i];
+      await sleep(35 + Math.random() * 25);
+    }
+    el.classList.remove('typing');
+  }
+
+  async function playLines(lines) {
+    for (const line of lines) {
+      if (introSkipped) {
+        // Instantly show all remaining text
+        for (const l of lines) {
+          if (l.id) $(l.id).textContent = l.text;
+        }
+        return;
+      }
+      if (line.pause) {
+        await sleep(line.pause);
+        continue;
+      }
+      await typeText($(line.id), line.text);
+      await sleep(250);
+    }
+  }
+
+  function showAct(num) {
+    document.querySelectorAll('.act').forEach(a => a.classList.remove('active'));
+    const act = $('act-' + num);
+    if (act) act.classList.add('active');
+    currentAct = num;
+  }
+
+  async function advanceIntro() {
+    if (introPlaying) return;
+
+    if (currentAct === 1) {
+      introPlaying = true;
+      showAct(2);
+      await playLines(WOUND_LINES);
+      introPlaying = false;
+    } else if (currentAct === 2) {
+      introPlaying = true;
+      showAct(3);
+      await playLines(TURN_LINES);
+      introPlaying = false;
+    } else if (currentAct === 3) {
+      showAct(4);
+    }
+  }
+
+  function enterApp() {
+    introSkipped = true;
+    const intro = $('intro');
+    intro.style.opacity = '0';
+    intro.style.transition = 'opacity 0.6s ease';
+    setTimeout(() => {
+      intro.style.display = 'none';
+      show($('app'));
+      initApp();
+    }, 600);
+  }
+
+  function initIntro() {
+    $('intro').addEventListener('click', (e) => {
+      if (e.target.id === 'enter-btn') { enterApp(); return; }
+      if (e.target.id === 'skip-intro') { enterApp(); return; }
+      advanceIntro();
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if ($('intro').style.display === 'none') return;
+      if (e.key === ' ' || e.key === 'Enter') {
+        e.preventDefault();
+        if (currentAct === 4) enterApp();
+        else advanceIntro();
+      }
+      if (e.key === 'Escape') enterApp();
     });
   }
 
-  // ── Intent Helpers ──
-  function getIntent() {
-    return {
-      question_draft: document.getElementById('intent-question')?.value || '',
-      decision_context: document.getElementById('intent-context')?.value || '',
-      useful_by: document.getElementById('intent-deadline')?.value || '',
-      timebox: parseInt(document.getElementById('intent-timebox')?.value, 10) || 30
-    };
-  }
+  // ═══════════════════════════════════════════════════════════
+  //  THE APP
+  // ═══════════════════════════════════════════════════════════
 
-  function getTitle() {
-    const q = document.getElementById('intent-question')?.value;
-    return q ? q.substring(0, 100) : 'Untitled Table Flip';
-  }
-
-  // ── Navigation ──
-  function goToStep(stepIndex) {
-    if (stepIndex < 0 || stepIndex >= STEP_COUNT) return;
-
-    // Hide all steps
-    document.querySelectorAll('.rite-step').forEach(el => el.classList.remove('active'));
-
-    // Show target step
-    const target = document.getElementById(`step-${stepIndex}`);
-    if (target) target.classList.add('active');
-
-    // Update nav indicators
-    document.querySelectorAll('.rite-step-indicator').forEach(el => {
-      const s = parseInt(el.dataset.step, 10);
-      el.classList.remove('active', 'completed', 'clickable');
-      if (s === stepIndex) {
-        el.classList.add('active');
-      } else if (s < stepIndex) {
-        el.classList.add('completed', 'clickable');
-      }
-    });
-
-    session.currentStep = stepIndex;
-    window.scrollTo(0, 0);
-  }
-
-  // ── Timebox ──
-  function startTimebox() {
-    session.timeboxMinutes = parseInt(document.getElementById('intent-timebox')?.value, 10) || 30;
-    session.timeboxStart = Date.now();
-
-    const fill = document.getElementById('timebox-fill');
-    if (!fill) return;
-
-    function update() {
-      if (!session.timeboxStart) return;
-      const elapsed = (Date.now() - session.timeboxStart) / 1000 / 60;
-      const pct = Math.min((elapsed / session.timeboxMinutes) * 100, 100);
-      fill.style.width = `${pct}%`;
-
-      if (pct >= 100) {
-        fill.style.background = 'var(--role-contradicts)';
-      } else if (pct >= 75) {
-        fill.style.background = 'var(--accent-warm)';
-      }
-
-      if (pct < 100) {
-        requestAnimationFrame(update);
-      }
+  function initApp() {
+    // Restore saved API key
+    const savedKey = localStorage.getItem(KEY_STORE) || '';
+    if (savedKey && $('key')) {
+      $('key').value = savedKey;
+    }
+    if (savedKey && $('s-key')) {
+      $('s-key').value = savedKey;
     }
 
-    requestAnimationFrame(update);
+    // Restore saved model
+    const savedModel = localStorage.getItem(MODEL_STORE) || '';
+    if (savedModel && $('s-model')) {
+      $('s-model').value = savedModel;
+    }
+
+    // Settings sync
+    if ($('s-key')) {
+      $('s-key').addEventListener('change', (e) => {
+        localStorage.setItem(KEY_STORE, e.target.value);
+        if ($('key')) $('key').value = e.target.value;
+      });
+    }
+    if ($('s-model')) {
+      $('s-model').addEventListener('change', (e) => {
+        localStorage.setItem(MODEL_STORE, e.target.value);
+      });
+    }
+
+    // Main key field sync
+    if ($('key')) {
+      $('key').addEventListener('change', (e) => {
+        localStorage.setItem(KEY_STORE, e.target.value);
+        if ($('s-key')) $('s-key').value = e.target.value;
+      });
+    }
+
+    // Flip button
+    $('flip-btn').addEventListener('click', handleFlip);
+
+    // Export: Brief
+    $('dl-brief').addEventListener('click', () => {
+      if (state.briefMarkdown) {
+        TabletPress.exportBrief(state.briefMarkdown);
+      }
+    });
+
+    // Export: Tablet
+    $('dl-tablet').addEventListener('click', () => {
+      TabletPress.exportTablet({
+        title: ($('q').value || '').substring(0, 100) || 'Untitled Table Flip',
+        sessionId: TabletPress.uuid(),
+        sessionCreated: new Date().toISOString(),
+        intent: {
+          question_draft: $('q').value || '',
+          decision_context: $('ctx').value || '',
+          useful_by: '',
+          timebox: 0
+        },
+        papers: state.papers,
+        claims: [],
+        crossExam: {},
+        provenance: state.provenance,
+        nextSprint: [],
+        briefMarkdown: state.briefMarkdown,
+        status: 'sealed'
+      });
+    });
+
+    // New question
+    $('again-btn').addEventListener('click', () => {
+      hide($('results-view'));
+      hide($('processing-view'));
+      show($('input-view'));
+      state.papers = [];
+      state.briefMarkdown = null;
+      $('flip-status').textContent = '';
+      $('flip-status').className = '';
+    });
   }
 
-  // ── Step 1: Ingest ──
-  async function handleIngest() {
-    const input = document.getElementById('links-input');
-    const status = document.getElementById('ingest-status');
-    const btn = document.getElementById('ingest-btn');
+  // ═══════════════════════════════════════════════════════════
+  //  THE FLIP
+  //  Fetch papers from PubMed -> Send to Claude -> Stream brief
+  // ═══════════════════════════════════════════════════════════
 
-    if (!input || !input.value.trim()) {
-      status.textContent = 'Paste at least one PubMed link, PMID, or DOI.';
-      status.className = 'error';
+  async function handleFlip() {
+    const question = ($('q').value || '').trim();
+    const context = ($('ctx').value || '').trim();
+    const linksText = ($('links').value || '').trim();
+    const apiKey = ($('key') ? $('key').value : '') || localStorage.getItem(KEY_STORE) || '';
+    const model = ($('s-model') ? $('s-model').value : '') || localStorage.getItem(MODEL_STORE) || 'claude-sonnet-4-5-20250929';
+    const statusEl = $('flip-status');
+
+    // Validate
+    if (!question) {
+      statusEl.textContent = 'Ask a question first.';
+      statusEl.className = 'error';
+      return;
+    }
+    if (!linksText) {
+      statusEl.textContent = 'Paste at least one PubMed link.';
+      statusEl.className = 'error';
+      return;
+    }
+    if (!apiKey) {
+      statusEl.textContent = 'Enter your Anthropic API key.';
+      statusEl.className = 'error';
       return;
     }
 
-    btn.disabled = true;
-    btn.innerHTML = '<span class="loading-indicator"></span>Fetching from PubMed...';
-    status.textContent = '';
-    status.className = '';
+    // Save key and model
+    localStorage.setItem(KEY_STORE, apiKey);
+    localStorage.setItem(MODEL_STORE, model);
+
+    // Disable button
+    $('flip-btn').disabled = true;
+
+    // Switch to processing view
+    hide($('input-view'));
+    show($('processing-view'));
+
+    const procStatus = $('proc-status');
+    const procPapers = $('proc-papers');
+    const streamOut = $('stream-out');
+
+    procStatus.textContent = 'Fetching from the public record...';
+    procPapers.innerHTML = '';
+    streamOut.textContent = '';
+    streamOut.classList.remove('visible');
+
+    // ── Phase 1: Fetch papers from PubMed ──
+    try {
+      const result = await Shoreline.ingest(linksText, (msg) => {
+        procStatus.textContent = msg;
+      });
+
+      state.papers = result.papers;
+
+      if (result.papers.length === 0) {
+        procStatus.textContent = 'No papers found. Check your identifiers.';
+        await sleep(2500);
+        hide($('processing-view'));
+        show($('input-view'));
+        statusEl.textContent = 'No papers found. Check your links and try again.';
+        statusEl.className = 'error';
+        $('flip-btn').disabled = false;
+        return;
+      }
+
+      // Show fetched papers
+      for (const p of result.papers) {
+        const div = document.createElement('div');
+        div.className = 'paper-found';
+        const shortTitle = p.title.length > 70
+          ? p.title.substring(0, 70) + '...'
+          : p.title;
+        const firstAuthor = p.authors && p.authors.length
+          ? p.authors[0].split(' ')[0]
+          : '';
+        div.textContent = `${shortTitle} ${firstAuthor ? '(' + firstAuthor + (p.year ? ', ' + p.year : '') + ')' : ''}`;
+        procPapers.appendChild(div);
+      }
+
+      state.provenance.push({
+        timestamp: new Date().toISOString(),
+        action: 'papers_ingested',
+        detail: result.papers.length + ' papers'
+      });
+
+    } catch (err) {
+      procStatus.textContent = 'Failed to fetch papers: ' + err.message;
+      await sleep(3000);
+      hide($('processing-view'));
+      show($('input-view'));
+      $('flip-btn').disabled = false;
+      return;
+    }
+
+    // ── Phase 2: Synthesize with Claude ──
+    procStatus.textContent = state.papers.length + ' papers gathered. Reading them now...';
+    await sleep(800);
+
+    streamOut.classList.add('visible');
+    procStatus.textContent = 'Generating your brief...';
 
     try {
-      const result = await Shoreline.ingest(input.value, (msg) => {
-        status.textContent = msg;
-      });
+      await Synthesis.generate({
+        apiKey: apiKey,
+        model: model,
+        question: question,
+        context: context,
+        papers: state.papers,
+        onChunk: function(chunk, full) {
+          streamOut.textContent = full;
+          streamOut.scrollTop = streamOut.scrollHeight;
+        },
+        onDone: function(fullText) {
+          state.briefMarkdown = fullText;
+          state.provenance.push({
+            timestamp: new Date().toISOString(),
+            action: 'synthesis_generated',
+            detail: fullText.length + ' chars'
+          });
 
-      session.papers = result.papers;
-      session.duplicates = result.duplicates;
-
-      // Log
-      log('session_created', `Timebox: ${session.timeboxMinutes} minutes`);
-      log('papers_ingested', `${result.papers.length} papers ingested. ${result.duplicates.length} duplicates. ${result.errors.length} parse errors. ${result.failedDOIs.length} unresolved DOIs. ${result.failedPMIDs.length} failed PMIDs.`);
-
-      // Status messages
-      const messages = [];
-      if (result.papers.length > 0) {
-        messages.push(`${result.papers.length} paper(s) ingested.`);
-      }
-      if (result.duplicates.length > 0) {
-        messages.push(`${result.duplicates.length} duplicate(s) removed.`);
-      }
-      if (result.failedDOIs.length > 0) {
-        messages.push(`${result.failedDOIs.length} DOI(s) could not be resolved.`);
-      }
-      if (result.failedPMIDs.length > 0) {
-        messages.push(`${result.failedPMIDs.length} PMID(s) could not be fetched.`);
-      }
-      if (result.errors.length > 0) {
-        messages.push(`${result.errors.length} line(s) not recognized.`);
-      }
-
-      status.textContent = messages.join(' ');
-
-      if (result.papers.length > 0) {
-        // Start timebox and advance
-        startTimebox();
-
-        // Render scroll cards
-        const scrollContainer = document.getElementById('scroll-cards');
-        Scrolls.renderScrollCards(session.papers, scrollContainer, session.duplicates);
-
-        const paperCount = document.getElementById('paper-count');
-        if (paperCount) paperCount.textContent = `${session.papers.length} scrolls laid.`;
-
-        goToStep(1);
-      } else {
-        status.className = 'error';
-        if (messages.length === 0) {
-          status.textContent = 'No papers found. Check your identifiers.';
+          // Transition to results
+          setTimeout(() => {
+            hide($('processing-view'));
+            show($('results-view'));
+            renderBrief(fullText);
+            $('flip-btn').disabled = false;
+            window.scrollTo(0, 0);
+          }, 500);
+        },
+        onError: function(err) {
+          procStatus.textContent = 'Synthesis failed: ' + err.message;
+          streamOut.classList.remove('visible');
+          setTimeout(() => {
+            hide($('processing-view'));
+            show($('input-view'));
+            statusEl.textContent = err.message;
+            statusEl.className = 'error';
+            $('flip-btn').disabled = false;
+          }, 3000);
         }
-      }
+      });
     } catch (err) {
-      status.textContent = `Error: ${err.message}`;
-      status.className = 'error';
-    } finally {
-      btn.disabled = false;
-      btn.innerHTML = 'Lay the Scrolls &rarr;';
+      // Errors already handled by onError callback
     }
   }
 
-  // ── Step 2 -> 3: Roles ──
-  function handleToRoles() {
-    Scrolls.renderRoleCards(session.papers, document.getElementById('role-cards'));
-    log('scrolls_reviewed', `${session.papers.length} papers displayed.`);
-    goToStep(2);
-  }
+  // ═══════════════════════════════════════════════════════════
+  //  BRIEF RENDERER
+  //  Converts markdown to styled HTML
+  // ═══════════════════════════════════════════════════════════
 
-  // ── Step 3 -> 4: Witness ──
-  function handleToWitness() {
-    // Count roles assigned
-    const roled = session.papers.filter(p => p.role).length;
-    log('roles_assigned', `${roled} of ${session.papers.length} papers assigned roles.`);
+  function renderBrief(markdown) {
+    const container = $('brief-out');
+    const lines = markdown.split('\n');
+    const html = [];
+    let inUl = false;
+    let inOl = false;
 
-    Scrolls.renderWitnessCards(session.papers, document.getElementById('witness-cards'));
-    goToStep(3);
-  }
+    for (let i = 0; i < lines.length; i++) {
+      const line = lines[i];
 
-  // ── Step 4 -> 5: Cross-Examine ──
-  function handleToCrossExamine() {
-    const witnessed = session.papers.filter(p => p.witness_line).length;
-    log('witness_complete', `${witnessed} papers witnessed.`);
-
-    // Initialize claims if empty
-    if (session.claims.length === 0) {
-      session.claims.push(Receipts.createClaim());
-    }
-
-    // Render claims editor
-    Receipts.renderClaimsEditor(
-      session.claims,
-      session.papers,
-      document.getElementById('claims-list'),
-      () => {
-        // Re-render on change
-        Receipts.renderClaimsEditor(
-          session.claims,
-          session.papers,
-          document.getElementById('claims-list'),
-          null
-        );
+      // Headings
+      if (line.startsWith('### ')) {
+        closeList();
+        html.push('<h3>' + inline(line.slice(4)) + '</h3>');
+      } else if (line.startsWith('## ')) {
+        closeList();
+        html.push('<h2>' + inline(line.slice(3)) + '</h2>');
+      } else if (line.startsWith('# ')) {
+        closeList();
+        html.push('<h1>' + inline(line.slice(2)) + '</h1>');
       }
-    );
-
-    // Init cross-examine widgets
-    CrossExamine.init();
-
-    goToStep(4);
-  }
-
-  // ── Generate Brief ──
-  function handleGenerateBrief() {
-    const crossExam = CrossExamine.getState();
-
-    session.briefMarkdown = Scribe.generateBrief({
-      title: getTitle(),
-      intent: getIntent(),
-      papers: session.papers,
-      claims: session.claims,
-      crossExam
-    });
-
-    const preview = document.getElementById('brief-preview');
-    const output = document.getElementById('brief-output');
-    if (preview && output) {
-      preview.style.display = 'block';
-      Scribe.renderBriefPreview(session.briefMarkdown, output);
-    }
-
-    log('synthesis_generated', `${session.claims.length} claims. ${session.claims.filter(c => c.status === 'witnessed').length} witnessed.`);
-  }
-
-  // ── Step 5 -> 6: Seal ──
-  function handleToSeal() {
-    const crossExam = CrossExamine.getState();
-    log('cross_examination_complete', `Confidence: ${crossExam.confidence || 'not set'}`);
-
-    // Generate brief if not yet generated
-    if (!session.briefMarkdown) {
-      handleGenerateBrief();
-    }
-
-    goToStep(5);
-  }
-
-  // ── Exports ──
-  function getExportOpts() {
-    const crossExam = CrossExamine.getState();
-    const nextSprintText = document.getElementById('next-sprint-input')?.value || '';
-    const nextSprint = nextSprintText.split('\n').map(l => l.trim()).filter(l => l);
-
-    return {
-      title: getTitle(),
-      sessionId: session.id,
-      sessionCreated: session.created,
-      intent: getIntent(),
-      papers: session.papers,
-      claims: session.claims,
-      crossExam,
-      provenance: session.provenance,
-      nextSprint,
-      briefMarkdown: session.briefMarkdown,
-      status: 'sealed'
-    };
-  }
-
-  function handleExportAll() {
-    const opts = getExportOpts();
-    TabletPress.exportAll(opts);
-    log('tablet_sealed', 'Exported: Tablet.json, Ledger.json, Ledger.csv, Brief.md');
-  }
-
-  function handleExportTablet() {
-    TabletPress.exportTablet(getExportOpts());
-  }
-
-  function handleExportLedgerJSON() {
-    TabletPress.exportLedgerJSON(session.papers, session.provenance);
-  }
-
-  function handleExportLedgerCSV() {
-    TabletPress.exportLedgerCSV(session.papers);
-  }
-
-  function handleExportBrief() {
-    if (session.briefMarkdown) {
-      TabletPress.exportBrief(session.briefMarkdown);
-    }
-  }
-
-  // ── Import Tablet ──
-  async function handleImportTablet(file) {
-    try {
-      const tablet = await TabletPress.importTablet(file);
-
-      // Restore session state
-      session.id = tablet.session?.id || TabletPress.uuid();
-      session.created = tablet.session?.created || new Date().toISOString();
-      session.papers = tablet.papers || [];
-      session.claims = tablet.synthesis?.claims || [];
-      session.provenance = tablet.provenance || [];
-      session.briefMarkdown = tablet.synthesis?.brief_markdown || null;
-
-      // Restore intent fields
-      if (tablet.intent) {
-        const q = document.getElementById('intent-question');
-        const c = document.getElementById('intent-context');
-        const d = document.getElementById('intent-deadline');
-        if (q) q.value = tablet.intent.question_draft || '';
-        if (c) c.value = tablet.intent.decision_context || '';
-        if (d) d.value = tablet.intent.useful_by || '';
+      // Horizontal rules
+      else if (/^---+\s*$/.test(line)) {
+        closeList();
+        html.push('<hr>');
       }
-
-      // Restore cross-examination
-      if (tablet.synthesis?.cross_examination) {
-        CrossExamine.setState(tablet.synthesis.cross_examination);
+      // Unordered list
+      else if (/^[-*]\s+/.test(line)) {
+        if (inOl) { html.push('</ol>'); inOl = false; }
+        if (!inUl) { html.push('<ul>'); inUl = true; }
+        html.push('<li>' + inline(line.replace(/^[-*]\s+/, '')) + '</li>');
       }
-
-      // Restore next sprint
-      if (tablet.next_sprint && tablet.next_sprint.length > 0) {
-        const ns = document.getElementById('next-sprint-input');
-        if (ns) ns.value = tablet.next_sprint.join('\n');
+      // Ordered list
+      else if (/^\d+\.\s+/.test(line)) {
+        if (inUl) { html.push('</ul>'); inUl = false; }
+        if (!inOl) { html.push('<ol>'); inOl = true; }
+        html.push('<li>' + inline(line.replace(/^\d+\.\s+/, '')) + '</li>');
       }
-
-      log('tablet_imported', `Restored ${session.papers.length} papers, ${session.claims.length} claims.`);
-
-      // Render and go to last meaningful step
-      if (session.papers.length > 0) {
-        startTimebox();
-
-        Scrolls.renderScrollCards(session.papers, document.getElementById('scroll-cards'), []);
-        const paperCount = document.getElementById('paper-count');
-        if (paperCount) paperCount.textContent = `${session.papers.length} scrolls laid.`;
-
-        // Determine which step to resume at
-        const hasRoles = session.papers.some(p => p.role);
-        const hasWitness = session.papers.some(p => p.witness_line);
-        const hasClaims = session.claims.some(c => c.text);
-
-        if (hasClaims) {
-          // Go to cross-examine
-          Scrolls.renderRoleCards(session.papers, document.getElementById('role-cards'));
-          Scrolls.renderWitnessCards(session.papers, document.getElementById('witness-cards'));
-          Receipts.renderClaimsEditor(session.claims, session.papers, document.getElementById('claims-list'), null);
-          CrossExamine.init();
-          if (session.briefMarkdown) {
-            const preview = document.getElementById('brief-preview');
-            const output = document.getElementById('brief-output');
-            if (preview && output) {
-              preview.style.display = 'block';
-              Scribe.renderBriefPreview(session.briefMarkdown, output);
-            }
-          }
-          goToStep(4);
-        } else if (hasWitness) {
-          Scrolls.renderRoleCards(session.papers, document.getElementById('role-cards'));
-          Scrolls.renderWitnessCards(session.papers, document.getElementById('witness-cards'));
-          goToStep(3);
-        } else if (hasRoles) {
-          Scrolls.renderRoleCards(session.papers, document.getElementById('role-cards'));
-          goToStep(2);
-        } else {
-          goToStep(1);
-        }
+      // Empty line
+      else if (line.trim() === '') {
+        closeList();
       }
-    } catch (err) {
-      const status = document.getElementById('ingest-status');
-      if (status) {
-        status.textContent = `Import failed: ${err.message}`;
-        status.className = 'error';
+      // Paragraph
+      else {
+        closeList();
+        html.push('<p>' + inline(line) + '</p>');
       }
     }
+    closeList();
+
+    function closeList() {
+      if (inUl) { html.push('</ul>'); inUl = false; }
+      if (inOl) { html.push('</ol>'); inOl = false; }
+    }
+
+    function inline(text) {
+      return text
+        // Bold
+        .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+        // Italic
+        .replace(/\*(.+?)\*/g, '<em>$1</em>')
+        // PMID references highlighted in gold
+        .replace(/\[PMID:\s*(\d+)\]/g, '<span class="pmid">[PMID: $1]</span>')
+        // Inline code
+        .replace(/`(.+?)`/g, '<code>$1</code>');
+    }
+
+    container.innerHTML = html.join('\n');
   }
 
-  // ── Initialize ──
-  function init() {
-    // Forward buttons
-    document.getElementById('ingest-btn')?.addEventListener('click', handleIngest);
-    document.getElementById('to-roles-btn')?.addEventListener('click', handleToRoles);
-    document.getElementById('to-witness-btn')?.addEventListener('click', handleToWitness);
-    document.getElementById('to-cross-btn')?.addEventListener('click', handleToCrossExamine);
-    document.getElementById('generate-brief-btn')?.addEventListener('click', handleGenerateBrief);
-    document.getElementById('to-seal-btn')?.addEventListener('click', handleToSeal);
+  // ═══════════════════════════════════════════════════════════
+  //  BOOT
+  // ═══════════════════════════════════════════════════════════
 
-    // Add claim button
-    document.getElementById('add-claim-btn')?.addEventListener('click', () => {
-      session.claims.push(Receipts.createClaim());
-      Receipts.renderClaimsEditor(
-        session.claims,
-        session.papers,
-        document.getElementById('claims-list'),
-        null
-      );
-    });
+  document.addEventListener('DOMContentLoaded', initIntro);
 
-    // Export buttons
-    document.getElementById('export-all-btn')?.addEventListener('click', handleExportAll);
-    document.getElementById('export-tablet-btn')?.addEventListener('click', handleExportTablet);
-    document.getElementById('export-ledger-json-btn')?.addEventListener('click', handleExportLedgerJSON);
-    document.getElementById('export-ledger-csv-btn')?.addEventListener('click', handleExportLedgerCSV);
-    document.getElementById('export-brief-btn')?.addEventListener('click', handleExportBrief);
-
-    // Import
-    document.getElementById('import-tablet')?.addEventListener('change', (e) => {
-      const file = e.target.files?.[0];
-      if (file) handleImportTablet(file);
-    });
-
-    // Back buttons
-    document.querySelectorAll('.btn-back').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const target = parseInt(btn.dataset.to, 10);
-        goToStep(target);
-      });
-    });
-
-    // Nav indicator clicks (only completed steps)
-    document.querySelectorAll('.rite-step-indicator').forEach(el => {
-      el.addEventListener('click', () => {
-        if (el.classList.contains('clickable')) {
-          const step = parseInt(el.dataset.step, 10);
-          goToStep(step);
-        }
-      });
-    });
-
-    // Hide intent block after first step
-    const intentBlock = document.getElementById('intent-block');
-    // Intent block stays visible on step 0; we can collapse it later if needed.
-
-    log('session_initialized', `Session ID: ${session.id}`);
-  }
-
-  // Boot
-  document.addEventListener('DOMContentLoaded', init);
-
-  return {
-    session,
-    goToStep
-  };
+  return { state };
 })();

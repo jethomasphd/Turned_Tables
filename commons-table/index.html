@@ -7,238 +7,132 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div id="app">
 
-    <!-- Header -->
-    <header class="app-header">
+  <!-- ═══ CINEMATIC INTRO ═══ -->
+  <div id="intro">
+    <div id="skip-intro">skip</div>
+
+    <!-- Act I: Void — Confusion -->
+    <section class="act active" id="act-1">
+      <div class="act-inner">
+        <div class="sigil-intro">&#9674; &#9672; &#9674;</div>
+      </div>
+    </section>
+
+    <!-- Act II: The Wound — Awe -->
+    <section class="act" id="act-2">
+      <div class="act-inner act-text">
+        <p id="w1"></p>
+        <p id="w2"></p>
+        <p id="w3" class="mt"></p>
+        <p id="w4"></p>
+        <p id="w5" class="mt gold"></p>
+      </div>
+    </section>
+
+    <!-- Act III: The Turn — Understanding -->
+    <section class="act" id="act-3">
+      <div class="act-inner act-text">
+        <p id="t1"></p>
+        <p id="t2" class="mt"></p>
+        <p id="t3"></p>
+        <p id="t4"></p>
+        <p id="t5" class="mt gold"></p>
+      </div>
+    </section>
+
+    <!-- Act IV: Enter — Action -->
+    <section class="act" id="act-4">
+      <div class="act-inner">
+        <div class="sigil-intro instant">&#9674; &#9672; &#9674;</div>
+        <h1 class="intro-title">Tables Turned</h1>
+        <button id="enter-btn">Flip the Tables</button>
+      </div>
+    </section>
+  </div>
+
+  <!-- ═══ THE APP ═══ -->
+  <div id="app" class="hidden">
+
+    <header>
       <div class="sigil">&#9674; &#9672; &#9674;</div>
       <h1>Tables Turned</h1>
       <p class="subtitle">The Commons Table. Receipts only.</p>
     </header>
 
-    <!-- Timebox Progress -->
-    <div class="timebox-bar" id="timebox-bar">
-      <div class="fill" id="timebox-fill" style="width: 0%"></div>
-    </div>
-
-    <!-- Intent Block -->
-    <div class="intent-block" id="intent-block">
-      <h3>Before you begin</h3>
-      <p style="color: var(--text-secondary); font-size: 0.85rem;">
-        Name what you are looking for. This is not required, but it will sharpen everything that follows.
-      </p>
-
-      <label for="intent-question">What question are you trying to answer?</label>
-      <textarea id="intent-question" rows="2" placeholder="e.g., Does melatonin actually help kids sleep?"></textarea>
-
-      <label for="intent-context">What decision does this serve?</label>
-      <input type="text" id="intent-context" placeholder="e.g., Deciding whether to try melatonin for my 8-year-old">
-
-      <label for="intent-deadline">When do you need this by?</label>
-      <input type="text" id="intent-deadline" placeholder="e.g., Tonight, before the pharmacy closes">
-
-      <label for="intent-timebox">Timebox (minutes)</label>
-      <input type="number" id="intent-timebox" value="30" min="5" max="120" style="max-width: 80px;">
-    </div>
-
-    <!-- Rite Navigation -->
-    <nav id="rite-nav">
-      <span class="rite-step-indicator active" data-step="0">I. No Tribute</span>
-      <span class="rite-step-indicator" data-step="1">II. Scrolls</span>
-      <span class="rite-step-indicator" data-step="2">III. Roles</span>
-      <span class="rite-step-indicator" data-step="3">IV. Witness</span>
-      <span class="rite-step-indicator" data-step="4">V. Cross-Examine</span>
-      <span class="rite-step-indicator" data-step="5">VI. Seal</span>
-    </nav>
-
-    <!-- ═══ STEP 1: No Tribute ═══ -->
-    <section id="step-0" class="rite-step active">
-      <div class="step-header">
-        <h2>I. No Tribute</h2>
-        <p>Paste your PubMed links below. URLs, PMIDs, or DOIs. One per line. 5 to 20 is the sweet spot, but we will take what you bring.</p>
+    <!-- Input View -->
+    <div id="input-view">
+      <div class="field">
+        <label for="q">What are you trying to figure out?</label>
+        <textarea id="q" rows="2" placeholder="e.g., Does vitamin D supplementation reduce respiratory infections in children?"></textarea>
       </div>
 
-      <textarea id="links-input" placeholder="https://pubmed.ncbi.nlm.nih.gov/28202713/
+      <div class="field">
+        <label for="ctx">What decision does this serve?</label>
+        <input type="text" id="ctx" placeholder="e.g., Deciding whether to give my kid supplements before winter">
+      </div>
+
+      <div class="field">
+        <label>Your PubMed articles</label>
+        <p class="hint">Paste URLs, PMIDs, or DOIs. One per line.</p>
+        <textarea id="links" rows="6" placeholder="https://pubmed.ncbi.nlm.nih.gov/28202713/
 28202713
-10.1136/bmj.i6583
-
-Paste one identifier per line. URLs, PMIDs, or DOIs."></textarea>
-
-      <div id="ingest-status"></div>
-
-      <button class="btn-forward" id="ingest-btn">
-        Lay the Scrolls &#8594;
-      </button>
-
-      <div class="import-section">
-        <p style="color: var(--text-muted); font-size: 0.8rem; margin-bottom: var(--spacing-sm);">
-          Or resume from a previous Tablet:
-        </p>
-        <label class="import-btn">
-          Import Tablet.json
-          <input type="file" id="import-tablet" accept=".json" style="display: none;">
-        </label>
-      </div>
-    </section>
-
-    <!-- ═══ STEP 2: Lay the Scrolls ═══ -->
-    <section id="step-1" class="rite-step">
-      <button class="btn-back" data-to="0">&#8592; Back to No Tribute</button>
-      <div class="step-header">
-        <h2>II. Lay the Scrolls</h2>
-        <p>Your papers, cleaned and laid out. Review them. If any are duplicates, they are marked.</p>
+10.1136/bmj.i6583"></textarea>
       </div>
 
-      <div class="paper-count" id="paper-count"></div>
-      <div id="scroll-cards"></div>
-
-      <button class="btn-forward" id="to-roles-btn">
-        Mark the Roles &#8594;
-      </button>
-    </section>
-
-    <!-- ═══ STEP 3: Mark the Roles ═══ -->
-    <section id="step-2" class="rite-step">
-      <button class="btn-back" data-to="1">&#8592; Back to Scrolls</button>
-      <div class="step-header">
-        <h2>III. Mark the Roles</h2>
-        <p>For each paper, one tap: what role does it play in your question?</p>
-      </div>
-
-      <div id="role-cards"></div>
-
-      <button class="btn-forward" id="to-witness-btn">
-        Witness &#8594;
-      </button>
-    </section>
-
-    <!-- ═══ STEP 4: Witness ═══ -->
-    <section id="step-3" class="rite-step">
-      <button class="btn-back" data-to="2">&#8592; Back to Roles</button>
-      <div class="step-header">
-        <h2>IV. Witness</h2>
-        <p>One sentence: what does this paper actually say? Then decide: keep it in the synthesis, release it, or mark unsure. Flag anything that worries you.</p>
-      </div>
-
-      <div id="witness-cards"></div>
-
-      <button class="btn-forward" id="to-cross-btn">
-        Cross-Examine &#8594;
-      </button>
-    </section>
-
-    <!-- ═══ STEP 5: Cross-Examine ═══ -->
-    <section id="step-4" class="rite-step">
-      <button class="btn-back" data-to="3">&#8592; Back to Witness</button>
-      <div class="step-header">
-        <h2>V. Cross-Examine</h2>
-        <p>Write your claims. Link each one to the papers that support it. Then stress-test.</p>
-      </div>
-
-      <!-- Claims Editor -->
-      <div class="claims-section" id="claims-section">
-        <h3>Claims</h3>
-        <p style="color: var(--text-secondary); font-size: 0.85rem;">
-          Write what you believe the papers show. Each claim must have receipts (paper IDs). If it does not, it will be marked UNWITNESSED.
-        </p>
-        <div id="claims-list"></div>
-        <button class="add-claim-btn" id="add-claim-btn">+ Add Claim</button>
-      </div>
-
-      <!-- Brief Preview -->
-      <div id="brief-preview" style="display: none;">
-        <h3>The Brief</h3>
-        <div class="brief-container" id="brief-output"></div>
-      </div>
-
-      <!-- Cross-Examine Widgets -->
-      <div id="cross-examine-widgets">
-        <div class="cross-widget">
-          <label for="cross-change-mind">What would change your mind?</label>
-          <textarea id="cross-change-mind" rows="3" placeholder="What evidence, if it existed, would make you abandon this conclusion?"></textarea>
-        </div>
-
-        <div class="cross-widget">
-          <label for="cross-rival">Best rival explanation?</label>
-          <textarea id="cross-rival" rows="3" placeholder="What is the strongest alternative explanation for what these papers show?"></textarea>
-        </div>
-
-        <div class="cross-widget">
-          <label>Confidence</label>
-          <div class="confidence-row">
-            <button class="confidence-btn" data-level="low">Low</button>
-            <button class="confidence-btn" data-level="medium">Medium</button>
-            <button class="confidence-btn" data-level="high">High</button>
-          </div>
-          <div class="justification-area" id="justification-area">
-            <label for="cross-justification" style="font-size: 0.75rem; color: var(--text-secondary);">
-              High confidence requires justification. Why?
-            </label>
-            <textarea id="cross-justification" rows="2" placeholder="e.g., Multiple large RCTs with consistent findings and low risk of bias."></textarea>
-          </div>
+      <div class="field" id="key-field">
+        <label for="key">Anthropic API Key</label>
+        <p class="hint">Your key stays in your browser. Sent only to Anthropic's API.</p>
+        <div class="key-row">
+          <input type="password" id="key" placeholder="sk-ant-...">
+          <a href="https://console.anthropic.com/settings/keys" target="_blank" class="key-link">Get a key</a>
         </div>
       </div>
 
-      <button class="btn-forward" id="generate-brief-btn" style="margin-bottom: var(--spacing-md);">
-        Generate Brief
-      </button>
+      <button id="flip-btn">Flip the Tables</button>
+      <div id="flip-status"></div>
+    </div>
 
-      <button class="btn-forward" id="to-seal-btn">
-        Seal the Tablet &#8594;
-      </button>
-    </section>
+    <!-- Processing View -->
+    <div id="processing-view" class="hidden">
+      <div class="processing-sigil">&#9672;</div>
+      <div id="proc-status">Fetching from the public record...</div>
+      <div id="proc-papers"></div>
+      <div id="stream-out"></div>
+    </div>
 
-    <!-- ═══ STEP 6: Seal the Tablet ═══ -->
-    <section id="step-5" class="rite-step">
-      <button class="btn-back" data-to="4">&#8592; Back to Cross-Examine</button>
+    <!-- Results View -->
+    <div id="results-view" class="hidden">
+      <div id="brief-out" class="brief-box"></div>
+      <div class="export-row">
+        <button class="export-btn primary" id="dl-brief">Download Brief</button>
+        <button class="export-btn" id="dl-tablet">Download Tablet.json</button>
+      </div>
+      <button id="again-btn">New question</button>
+    </div>
 
-      <div class="export-bundle">
-        <div class="seal-sigil">&#9674; &#9672; &#9674;</div>
-        <h2>VI. Seal the Tablet</h2>
-        <p style="color: var(--text-secondary); margin: 0 auto var(--spacing-lg);">
-          Your Table Flip is complete. Export your work.<br>
-          It belongs to you. It is not trapped here.
-        </p>
-
-        <div class="export-buttons">
-          <button class="export-btn primary" id="export-all-btn">
-            Download All (Tablet + Ledger + Brief)
-          </button>
-          <button class="export-btn" id="export-tablet-btn">
-            Tablet.json
-          </button>
-          <button class="export-btn" id="export-ledger-json-btn">
-            Ledger.json
-          </button>
-          <button class="export-btn" id="export-ledger-csv-btn">
-            Ledger.csv
-          </button>
-          <button class="export-btn" id="export-brief-btn">
-            Brief.md
-          </button>
+    <!-- Settings -->
+    <details id="settings">
+      <summary>Settings</summary>
+      <div class="settings-inner">
+        <div class="field">
+          <label for="s-key">API Key</label>
+          <input type="password" id="s-key">
         </div>
-
-        <div class="next-sprint">
-          <h3>Next Sprint Queue</h3>
-          <p style="color: var(--text-secondary); font-size: 0.85rem;">
-            What questions remain? What papers should you chase next? Leave breadcrumbs for your future self.
-          </p>
-          <textarea id="next-sprint-input" placeholder="One item per line.
-e.g., Find pediatric-specific trials
-e.g., Check dose-response studies"></textarea>
+        <div class="field">
+          <label for="s-model">Model</label>
+          <select id="s-model">
+            <option value="claude-sonnet-4-5-20250929">Claude Sonnet 4.5 (Recommended)</option>
+            <option value="claude-opus-4-6">Claude Opus 4.6 (Most Powerful)</option>
+          </select>
         </div>
       </div>
-    </section>
-
+    </details>
   </div>
 
-  <!-- Scripts: order matters -->
   <script src="js/shoreline.js"></script>
-  <script src="js/scrolls.js"></script>
-  <script src="js/receipts.js"></script>
-  <script src="js/cross-examine.js"></script>
-  <script src="js/scribe.js"></script>
   <script src="js/tablet-press.js"></script>
+  <script src="js/synthesis.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
