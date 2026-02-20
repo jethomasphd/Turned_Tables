@@ -145,7 +145,7 @@ img { max-width: 100%; display: block; }
 
 
 /* ═══════════════════════════════════════════════════════════════
-   V. CINEMATIC INTRO
+   V. CINEMATIC INTRO — Flip Card
    ═══════════════════════════════════════════════════════════════ */
 
 #intro {
@@ -153,7 +153,6 @@ img { max-width: 100%; display: block; }
   inset: 0;
   z-index: 100;
   background: var(--void-deep);
-  cursor: pointer;
   overflow: hidden;
 }
 
@@ -165,68 +164,91 @@ img { max-width: 100%; display: block; }
   pointer-events: none;
 }
 
-.act {
+#skip-intro {
+  position: fixed; top: 1.5rem; right: 1.5rem; z-index: 101;
+  font-family: var(--mono); font-size: 0.6rem; font-weight: 500;
+  color: var(--smoke); cursor: pointer;
+  text-transform: uppercase; letter-spacing: 0.15em;
+  transition: color 0.3s;
+}
+#skip-intro:hover { color: var(--bone-dim); }
+
+/* ── Flip Card Container ── */
+.intro-stage {
   position: absolute;
   inset: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 1s ease;
+  perspective: 1500px;
 }
-.act.active { opacity: 1; pointer-events: auto; }
 
-.act-inner { text-align: center; max-width: 800px; padding: 4rem 2rem; }
-.act-text { text-align: left; }
+.intro-card {
+  width: 100%;
+  max-width: 700px;
+  min-height: 320px;
+  padding: 2rem;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.intro-card.flipped {
+  transform: rotateY(180deg);
+}
 
-.act-text p {
+.intro-card-front,
+.intro-card-back {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.intro-card-front {
+  text-align: left;
+}
+
+.intro-card-back {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: rotateY(180deg);
+  text-align: center;
+  padding: 2rem;
+}
+
+/* ── Typewriter Lines ── */
+.intro-lines p {
   min-height: 1.5em;
   font-family: var(--voice);
-  font-size: clamp(1.2rem, 3.5vw, 2rem);
+  font-size: clamp(1.2rem, 3.5vw, 1.9rem);
   font-weight: 300;
   line-height: 1.6;
   color: var(--bone);
-  opacity: 1;
 }
-.act-text .mt { margin-top: 1.8rem; }
-.act-text .accent {
+.intro-lines .mt { margin-top: 1.8rem; }
+.intro-lines .accent {
   color: var(--ember-glow);
   font-style: italic;
-  font-size: clamp(1.4rem, 4vw, 2.4rem);
+  font-size: clamp(1.3rem, 4vw, 2.2rem);
 }
 
-.sigil-intro {
-  font-size: 2.5rem;
-  color: var(--ember);
-  letter-spacing: 0.5em;
-  opacity: 0;
-  animation: fadeIn 3s ease forwards, glow 4s ease-in-out 3s infinite;
-}
-.sigil-intro.instant { animation: none; opacity: 1; }
-
-.intro-title {
-  font-family: var(--voice);
-  font-size: clamp(2rem, 5vw, 3rem);
-  font-weight: 300;
-  color: var(--bone);
-  letter-spacing: 0.04em;
-  margin: 1.5rem 0 0.5rem;
-  opacity: 0;
-  animation: fadeUp 1.2s ease 0.5s forwards;
+.typing::after {
+  content: '';
+  display: inline-block;
+  width: 3px;
+  height: 1.1em;
+  background: var(--ember);
+  vertical-align: text-bottom;
+  margin-left: 4px;
+  animation: blink 0.8s step-end infinite;
 }
 
-.intro-sub {
-  font-family: var(--voice);
-  font-size: 1.15rem;
-  color: var(--smoke);
-  font-style: italic;
-  margin-bottom: 2.5rem;
-  opacity: 0;
-  animation: fadeIn 1s ease 1s forwards;
-}
-
-#enter-btn {
+/* ── Flip Button ── */
+.flip-btn {
+  display: block;
+  margin-top: 2.5rem;
   background: transparent;
   border: 1px solid var(--ember-dim);
   color: var(--ember);
@@ -238,32 +260,34 @@ img { max-width: 100%; display: block; }
   letter-spacing: 0.18em;
   transition: all 0.4s ease;
   opacity: 0;
-  animation: fadeIn 1s ease 1.4s forwards;
+  animation: fadeIn 1s ease forwards;
 }
-#enter-btn:hover {
+.flip-btn:hover {
   background: var(--ember);
   color: var(--void);
   box-shadow: 0 0 60px rgba(201, 162, 39, 0.25);
 }
 
-#skip-intro {
-  position: fixed; top: 1.5rem; right: 1.5rem; z-index: 101;
-  font-family: var(--mono); font-size: 0.6rem; font-weight: 500;
-  color: var(--smoke); cursor: pointer;
-  text-transform: uppercase; letter-spacing: 0.15em;
-  transition: color 0.3s;
+/* ── Back Face (Logo) ── */
+.sigil-back {
+  font-size: 2.5rem;
+  color: var(--ember);
+  letter-spacing: 0.5em;
+  animation: glow 4s ease-in-out infinite;
 }
-#skip-intro:hover { color: var(--bone-dim); }
-
-.typing::after {
-  content: '';
-  display: inline-block;
-  width: 3px;
-  height: 1.1em;
-  background: var(--ember);
-  vertical-align: text-bottom;
-  margin-left: 4px;
-  animation: blink 0.8s step-end infinite;
+.title-back {
+  font-family: var(--voice);
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 300;
+  color: var(--bone);
+  letter-spacing: 0.04em;
+  margin: 1.5rem 0 0.5rem;
+}
+.sub-back {
+  font-family: var(--voice);
+  font-size: 1.15rem;
+  color: var(--smoke);
+  font-style: italic;
 }
 
 
@@ -317,8 +341,16 @@ header .subtitle {
   background: rgba(201, 162, 39, 0.02);
   border: 1px solid rgba(201, 162, 39, 0.15);
   border-left: 3px solid var(--ember-dim);
-  padding: 1rem 1.25rem;
+  padding: 1.25rem 1.5rem;
   margin-bottom: 2rem;
+}
+.explainer-heading {
+  font-family: var(--voice);
+  font-size: 1.15rem;
+  font-weight: 300;
+  color: var(--ember);
+  margin-bottom: 0.6rem;
+  letter-spacing: 0.02em;
 }
 .explainer-brief p {
   font-size: 0.95rem;
@@ -326,6 +358,8 @@ header .subtitle {
   color: var(--bone-dim);
   margin: 0;
 }
+.explainer-brief strong { color: var(--bone); font-weight: 500; }
+.explainer-brief em { color: var(--ember); font-style: italic; }
 .explainer-brief a {
   color: var(--ember);
   border-bottom: 1px solid var(--ember-dim);
@@ -1156,7 +1190,7 @@ select { font-family: var(--mono); font-size: 0.82rem; cursor: pointer; }
 @media (max-width: 768px) {
   #app { padding: 1rem; }
   header { padding: 2rem 0 1.5rem; }
-  .act-inner { padding: 2rem 1.5rem; }
+  .intro-card { padding: 1.5rem; }
   .brief-box { padding: 1.5rem; }
   .export-row { flex-direction: column; }
   .curate-card-top { padding: 0.75rem; }
@@ -1164,8 +1198,5 @@ select { font-family: var(--mono); font-size: 0.82rem; cursor: pointer; }
   .curate-expand-btn { padding-left: calc(18px + 1.75rem); }
   .info-tip::after { left: auto; right: -10px; transform: none; width: 250px; }
   .process-callout { padding: 0.75rem 1rem; }
-}
-
-@media (max-width: 480px) {
-  .act-text p { font-size: 1.1rem; }
+  .flip-btn { padding: 0.85rem 2rem; }
 }
