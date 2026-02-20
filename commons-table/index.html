@@ -4,12 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tables Turned</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
   <!-- ═══ CINEMATIC INTRO ═══ -->
   <div id="intro">
+    <div class="intro-glow"></div>
     <div id="skip-intro">skip</div>
 
     <!-- Act I: Void -->
@@ -26,7 +30,7 @@
         <p id="w2"></p>
         <p id="w3" class="mt"></p>
         <p id="w4"></p>
-        <p id="w5" class="mt gold"></p>
+        <p id="w5" class="mt accent"></p>
       </div>
     </section>
 
@@ -37,7 +41,7 @@
         <p id="t2" class="mt"></p>
         <p id="t3"></p>
         <p id="t4"></p>
-        <p id="t5" class="mt gold"></p>
+        <p id="t5" class="mt accent"></p>
       </div>
     </section>
 
@@ -61,52 +65,14 @@
       <p class="subtitle">The Commons Table. Receipts only.</p>
     </header>
 
-    <!-- ═══ WHAT IS THIS? ═══ -->
-    <div class="explainer" id="explainer">
-      <div class="explainer-toggle" id="explainer-toggle">
-        <span class="explainer-q">What is this?</span>
-        <span class="explainer-arrow">&#9662;</span>
-      </div>
-      <div class="explainer-body" id="explainer-body">
-        <div class="myth-section">
-          <h3>The Problem</h3>
-          <p>Rome is not a place. It is a pattern. Every era has its gatekeepers: priests who read the scripture so you do not have to, experts who translate the findings so you do not have to, institutions that decide what you are allowed to know and when.</p>
-          <p>Today the gate is made of jargon, paywalls, and an ocean of information so vast that no ordinary person can navigate it. The research exists. Much of it is free, sitting in public databases like PubMed. But it is written in a language designed to exclude you.</p>
-          <p>This is the information flood. Not a drought of knowledge, but a drowning in it.</p>
-        </div>
-        <div class="myth-section">
-          <h3>The Flip</h3>
-          <p>Tables Turned is built on a single conviction: <strong>the public record belongs to the public.</strong></p>
-          <p>You should not need a medical degree to understand what researchers found about the supplement you are considering for your child. You should not need to trust a headline when the abstract is right there, free, published, waiting.</p>
-          <p>This tool flips the table. You bring a question. We search the public record, pull the research, and use AI to translate it into plain language. Every claim is traced back to its source paper. Every source is cited by PMID so you can verify it yourself.</p>
-        </div>
-        <div class="myth-section">
-          <h3>The Rules</h3>
-          <div class="rules-grid">
-            <div class="rule"><strong>Receipts only.</strong> Every claim cites its source. No hand-waving.</div>
-            <div class="rule"><strong>Contradictions surfaced.</strong> If papers disagree, we say so. We do not smooth it over.</div>
-            <div class="rule"><strong>Plain language.</strong> No jargon. If a technical term is unavoidable, it is translated immediately.</div>
-            <div class="rule"><strong>Confidence stated honestly.</strong> Strong, mixed, or thin. With reasons.</div>
-            <div class="rule"><strong>Unknowns named.</strong> What the papers do not address matters as much as what they do.</div>
-            <div class="rule"><strong>Nothing trapped.</strong> Your brief, your data. Download it. It belongs to you.</div>
-          </div>
-        </div>
-        <div class="myth-section">
-          <h3>How It Works</h3>
-          <ol class="how-list">
-            <li><strong>Ask your question.</strong> In plain English. What are you trying to figure out?</li>
-            <li><strong>We search PubMed.</strong> AI generates optimized medical search terms from your question, then searches the world's largest biomedical database.</li>
-            <li><strong>You choose what matters.</strong> Review the papers found. Check the ones that look relevant. Uncheck the rest.</li>
-            <li><strong>AI reads and synthesizes.</strong> Claude reads every abstract and produces a plain-language brief, with every claim traced to its source.</li>
-            <li><strong>Download your brief.</strong> As a formatted document (DOCX) or raw data (JSON). Yours to keep. Yours to share.</li>
-          </ol>
-        </div>
-      </div>
+    <!-- ═══ WHAT IS THIS? (brief) ═══ -->
+    <div class="explainer-brief" id="explainer-brief">
+      <p>The public record of medical research exists, is free, and is written in a language designed to exclude you. This tool searches it, translates it into plain English, and cites every claim so you can verify it yourself. <a href="#about-section" id="learn-more-link">Learn how it works.</a></p>
     </div>
 
     <!-- ═══ STEP 1: ASK ═══ -->
     <div id="input-view">
-      <div class="step-label">Step 1: Ask your question</div>
+      <div class="step-label">Step 1 <span class="step-label-text">Ask your question</span></div>
 
       <div class="field">
         <label for="q">What are you trying to figure out?</label>
@@ -114,39 +80,91 @@
       </div>
 
       <div class="field">
-        <label for="ctx">What decision does this serve?</label>
+        <label for="ctx">
+          What decision does this serve?
+          <span class="info-tip" data-tip="Your decision context shapes the synthesis. 'Buying supplements tomorrow' produces different emphasis than 'writing a school paper.' The AI uses this to focus on what matters to you.">?</span>
+        </label>
         <input type="text" id="ctx" placeholder="e.g., Deciding whether to give my kid supplements before winter">
       </div>
 
       <div class="field" id="key-field">
         <label for="key">Anthropic API Key</label>
-        <p class="hint">Your key stays in your browser. It is only sent to Anthropic's API to power the search and synthesis. <a href="https://console.anthropic.com/settings/keys" target="_blank">Get a free key here.</a></p>
-        <div class="key-row">
-          <input type="password" id="key" placeholder="sk-ant-...">
+        <p class="hint">Your key stays in your browser and is only sent to Anthropic's API. Nothing passes through our servers. <a href="https://console.anthropic.com/settings/keys" target="_blank">Get a key here.</a></p>
+        <input type="password" id="key" placeholder="sk-ant-...">
+      </div>
+
+      <!-- Search settings -->
+      <details class="search-settings" id="search-settings">
+        <summary>Search settings</summary>
+        <div class="settings-grid">
+          <div class="setting-item">
+            <label for="s-depth">Results per query</label>
+            <select id="s-depth">
+              <option value="5">5 (quick scan)</option>
+              <option value="10" selected>10 (standard)</option>
+              <option value="25">25 (deep dive)</option>
+            </select>
+            <span class="setting-note">Applied to each of 3-4 AI-generated search strategies</span>
+          </div>
+          <div class="setting-item">
+            <label for="s-sort">Sort by</label>
+            <select id="s-sort">
+              <option value="relevance" selected>Most relevant</option>
+              <option value="pub_date">Most recent</option>
+            </select>
+          </div>
         </div>
+      </details>
+
+      <!-- Process transparency callout -->
+      <div class="process-callout">
+        <div class="process-header">What happens when you search</div>
+        <ol class="process-steps">
+          <li>Your question is sent to <strong>Claude Opus</strong>, which translates it into optimized medical search terms (MeSH headings, boolean operators, synonyms)</li>
+          <li>Those terms query <strong>PubMed</strong>, the world's largest biomedical database (37M+ papers, free, public)</li>
+          <li>Each paper is translated into <strong>plain language</strong> so you can decide which ones matter</li>
+          <li>You choose papers. AI reads the abstracts and writes a <strong>cited brief</strong> you can download</li>
+        </ol>
       </div>
 
       <button id="search-btn" class="btn-primary">Search the Public Record</button>
       <div id="search-status"></div>
 
+      <!-- Manual entry with pedagogical handhold -->
       <details class="manual-entry">
         <summary>I already have PubMed links</summary>
+        <div class="manual-explain">
+          <p><strong>PubMed</strong> is the world's largest database of medical research, maintained by the U.S. National Library of Medicine. Every published study has a unique PubMed ID (PMID). If you have already found studies you want analyzed, paste their links or IDs below and skip the AI search step.</p>
+        </div>
         <div class="field" style="margin-top: 0.75rem;">
           <p class="hint">Paste URLs, PMIDs, or DOIs. One per line.</p>
           <textarea id="links" rows="4" placeholder="https://pubmed.ncbi.nlm.nih.gov/28202713/
 28202713
 10.1136/bmj.i6583"></textarea>
-          <button id="manual-btn" class="btn-secondary" style="margin-top: 0.75rem;">Use These Papers</button>
+          <button id="manual-btn" class="btn-secondary" style="margin-top: 0.75rem;">Analyze These Papers</button>
         </div>
       </details>
     </div>
 
     <!-- ═══ STEP 2: CURATE ═══ -->
     <div id="curate-view" class="hidden">
-      <div class="step-label">Step 2: Choose your papers</div>
-      <p class="step-desc">We searched PubMed using AI-generated terms. Review what came back. Check the papers that look relevant to your question. Uncheck the rest.</p>
+      <div class="step-label">Step 2 <span class="step-label-text">Choose your papers</span></div>
+      <p class="step-desc">We searched PubMed using AI-generated terms. Each paper has been translated into plain language. Check the ones relevant to your question. Uncheck the rest.</p>
 
-      <div id="search-terms-display"></div>
+      <!-- How we found these -->
+      <details class="search-disclosure" id="search-disclosure">
+        <summary>How we found these papers</summary>
+        <div id="search-terms-display"></div>
+        <div class="prompt-peek">
+          <details>
+            <summary>See the search prompt sent to AI</summary>
+            <pre id="search-prompt-display" class="prompt-display"></pre>
+          </details>
+        </div>
+      </details>
+
+      <!-- Search stats -->
+      <div class="search-stats" id="search-stats"></div>
 
       <div class="curate-actions">
         <button id="select-all-btn" class="btn-small">Select all</button>
@@ -162,10 +180,16 @@
 
     <!-- ═══ STEP 3: PROCESSING ═══ -->
     <div id="processing-view" class="hidden">
-      <div class="step-label">Step 3: Reading the record</div>
+      <div class="step-label">Step 3 <span class="step-label-text">Reading the record</span></div>
       <div class="processing-sigil">&#9672;</div>
-      <div id="proc-status">Fetching from the public record...</div>
+      <div id="proc-status">Preparing synthesis...</div>
       <div id="proc-papers"></div>
+
+      <details class="prompt-peek">
+        <summary>See the synthesis prompt</summary>
+        <pre id="synth-prompt-display" class="prompt-display"></pre>
+      </details>
+
       <div id="stream-out"></div>
     </div>
 
@@ -173,6 +197,11 @@
     <div id="results-view" class="hidden">
       <div class="step-label">Your Brief</div>
       <div id="brief-out" class="brief-box"></div>
+
+      <details class="prompt-peek" style="margin-bottom: 1rem;">
+        <summary>See the prompt that generated this brief</summary>
+        <pre id="result-prompt-display" class="prompt-display"></pre>
+      </details>
 
       <div class="provenance-section" id="provenance-section">
         <details>
@@ -189,16 +218,16 @@
       <button id="again-btn" class="btn-back">&#8592; New question</button>
     </div>
 
-    <!-- ═══ DOCUMENTATION ═══ -->
-    <div class="docs-section" id="docs-section">
-      <div class="docs-toggle" id="docs-toggle">
-        <span>Documentation</span>
-        <span class="explainer-arrow">&#9662;</span>
+    <!-- ═══ ABOUT & DOCUMENTATION ═══ -->
+    <div class="about-section" id="about-section">
+      <div class="about-toggle" id="about-toggle">
+        <span>About &amp; Documentation</span>
+        <span class="toggle-arrow">&#9662;</span>
       </div>
-      <div class="docs-body hidden" id="docs-body">
+      <div class="about-body hidden" id="about-body">
 
         <div class="doc-chapter">
-          <h2>The Doctrine</h2>
+          <h2>The Mission</h2>
           <h3>Rome is a pattern, not a place</h3>
           <p>Every era has its gatekeepers. In the ancient world, priests controlled access to scripture. In the medieval world, the Church controlled access to knowledge. In the modern world, journals and institutions control access to research.</p>
           <p>The pattern is always the same: knowledge exists, but ordinary people are told they cannot be trusted with it. That they need interpreters. That the raw material is too complex, too dangerous, too sacred for common hands.</p>
@@ -219,32 +248,34 @@
           <p>Type a plain-English question and the decision it serves. The decision context matters because it shapes what kind of evidence is relevant. "Does melatonin help kids sleep?" is different when the context is "deciding whether to try it tonight" versus "writing a school paper on sleep disorders."</p>
 
           <h3>Step 2: AI-powered search</h3>
-          <p>Your question is sent to Claude, which generates optimized PubMed search terms. This is not a simple keyword extraction. The AI understands medical terminology, knows how to construct boolean search queries, and generates multiple search strategies to maximize coverage.</p>
+          <p>Your question is sent to Claude Opus, which generates optimized PubMed search terms. This is not simple keyword extraction. The AI understands medical terminology, constructs boolean queries with MeSH headings, and generates multiple strategies (broad to specific) to maximize coverage.</p>
           <p>The search terms are shown to you transparently. You can see exactly what was searched and why. The results are fetched directly from the NCBI E-utilities API, the same public API that powers PubMed itself.</p>
-          <p>You then review every paper found and choose which ones to include. This is your curation step. You are not a passive recipient. You decide what enters the synthesis.</p>
+          <p>Each paper is then translated into plain language by AI, so you can understand what it found without reading medical jargon. You review every paper and choose which ones to include. This is your curation step. You decide what enters the synthesis.</p>
 
           <h3>Step 3: Synthesis</h3>
-          <p>The selected papers (abstracts, titles, authors, journals, years) are sent to Claude with strict instructions:</p>
-          <ul>
-            <li>Separate what the papers say from what we infer</li>
-            <li>Every claim must cite its source by PMID</li>
-            <li>Surface contradictions between papers</li>
-            <li>Write in plain language, no jargon</li>
-            <li>State confidence honestly (strong, mixed, or thin)</li>
-            <li>Name what is unknown</li>
-            <li>Never hallucinate or invent findings</li>
-          </ul>
+          <p>The selected papers (abstracts, titles, authors, journals, years) are sent to Claude Opus with strict instructions: separate observation from inference, cite every claim, surface contradictions, write in plain language, state confidence honestly, name what is unknown, never hallucinate.</p>
           <p>The synthesis streams in real-time so you can watch it being written.</p>
 
           <h3>Step 4: Your brief</h3>
-          <p>The finished brief is rendered with formatted headings, highlighted PMID citations, and clear section breaks. It includes:</p>
-          <ul>
-            <li><strong>What the papers say</strong> &mdash; grouped by finding, each cited</li>
-            <li><strong>What we infer (with receipts)</strong> &mdash; numbered claims, each sourced</li>
-            <li><strong>What is unknown</strong> &mdash; gaps the papers do not address</li>
-            <li><strong>Confidence</strong> &mdash; honest assessment with reasoning</li>
-          </ul>
+          <p>The finished brief includes: what the papers say (grouped by finding, each cited), what we infer (numbered claims, each sourced), what is unknown (gaps the papers do not address), and confidence (honest assessment with reasoning).</p>
           <p>Download as a formatted Word document (.docx), markdown (.md), or the raw session data (.json).</p>
+        </div>
+
+        <div class="doc-chapter">
+          <h2>The Prompts</h2>
+          <p>Every AI interaction in Tables Turned uses a carefully designed prompt. Here they are in full, so you can see exactly what instructions the AI receives.</p>
+
+          <h3>Search Query Generation</h3>
+          <p>When you type your question and press search, this prompt converts your plain English into optimized medical database queries.</p>
+          <pre id="doc-prompt-search" class="prompt-display"></pre>
+
+          <h3>Plain-Language Translation</h3>
+          <p>After finding papers, this prompt asks the AI to translate each title and abstract into language anyone can understand.</p>
+          <pre id="doc-prompt-summary" class="prompt-display"></pre>
+
+          <h3>Synthesis</h3>
+          <p>This is the core prompt. It governs how the AI reads the papers and writes your brief. Every rule serves a specific purpose: separating fact from inference, enforcing citations, surfacing disagreement, and preventing hallucination.</p>
+          <pre id="doc-prompt-synth" class="prompt-display"></pre>
         </div>
 
         <div class="doc-chapter">
@@ -253,7 +284,7 @@
           <p><strong>PubMed / NCBI E-utilities:</strong> All paper metadata and abstracts are fetched from the National Center for Biotechnology Information's public API. This is the same database used by researchers, doctors, and institutions worldwide. It is free, public, and requires no account.</p>
 
           <h3>AI model</h3>
-          <p><strong>Claude by Anthropic:</strong> The synthesis is powered by Claude, Anthropic's AI assistant. You provide your own API key, which means your data is sent directly from your browser to Anthropic's servers. Nothing passes through our servers because we do not have servers. This is a static website.</p>
+          <p><strong>Claude Opus by Anthropic:</strong> All AI interactions use Claude Opus, Anthropic's most capable model. You provide your own API key, which means your data is sent directly from your browser to Anthropic's servers. Nothing passes through our servers because we do not have servers. This is a static website.</p>
 
           <h3>Privacy</h3>
           <p>Your API key is stored in your browser's localStorage. It is never sent anywhere except to Anthropic's API. Your questions, papers, and briefs exist only in your browser. When you close the tab, they are gone unless you downloaded them. We do not track you. We do not have analytics. We do not have a database.</p>
@@ -277,7 +308,7 @@
       </div>
     </div>
 
-    <!-- Settings -->
+    <!-- ═══ SETTINGS ═══ -->
     <details id="settings">
       <summary>Settings</summary>
       <div class="settings-inner">
@@ -285,15 +316,22 @@
           <label for="s-key">API Key</label>
           <input type="password" id="s-key">
         </div>
-        <div class="field">
-          <label for="s-model">Model</label>
-          <select id="s-model">
-            <option value="claude-sonnet-4-5-20250929">Claude Sonnet 4.5 (Recommended)</option>
-            <option value="claude-opus-4-6">Claude Opus 4.6 (Most Powerful)</option>
-          </select>
-        </div>
       </div>
     </details>
+
+    <!-- ═══ FOOTER ═══ -->
+    <footer id="site-footer">
+      <div class="footer-brand">
+        <div class="footer-sigil">&#9674; &#9672; &#9674;</div>
+        <div class="footer-title">The Word Against The Flood</div>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:JEThomasPhD@gmail.com">JEThomasPhD@gmail.com</a>
+      </div>
+      <div class="footer-sig">
+        Made using <a href="https://the-companion-dossier.pages.dev/Latent_Dialogic_Space/" target="_blank" rel="noopener">Latent Dialogic Space</a>
+      </div>
+    </footer>
   </div>
 
   <script src="js/shoreline.js"></script>

@@ -1,17 +1,20 @@
 /**
  * Synthesis — Anthropic API Integration
  *
- * Two capabilities:
+ * Capabilities:
  * 1. generateSearchQueries: Turn a plain-English question into PubMed search terms
- * 2. generate: Synthesize papers into a receipted brief
+ * 2. generatePlainSummaries: Translate paper titles/abstracts into plain language
+ * 3. generate: Synthesize papers into a receipted brief (streaming)
+ * 4. searchPubMed: Execute search queries against NCBI E-utilities
  */
 
 const Synthesis = (() => {
   const API_URL = 'https://api.anthropic.com/v1/messages';
+  const MODEL = 'claude-opus-4-6';
 
   // ── Shared API call (non-streaming) ──
 
-  async function callAPI(apiKey, model, system, userContent) {
+  async function callAPI(apiKey, system, userContent, maxTokens) {
     const response = await fetch(API_URL, {
       method: 'POST',
       headers: {
@@ -21,8 +24,8 @@ const Synthesis = (() => {
         'anthropic-dangerous-direct-browser-access': 'true'
       },
       body: JSON.stringify({
-        model: model || 'claude-sonnet-4-5-20250929',
-        max_tokens: 1024,
+        model: MODEL,
+        max_tokens: maxTokens || 1024,
         system: system,
         messages: [{ role: 'user', content: userContent }]
       })
@@ -44,13 +47,12 @@ const Synthesis = (() => {
 
   // ═══════════════════════════════════════════════════════════
   //  SEARCH QUERY GENERATION
-  //  Turn plain-English question into PubMed search terms
   // ═══════════════════════════════════════════════════════════
 
   const SEARCH_SYSTEM = `You are a PubMed search expert. Your job is to turn a plain-English health or science question into optimized PubMed search queries.
 
 ## Rules
-1. Generate 2-4 PubMed search queries, from broad to specific.
+1. Generate 3-4 PubMed search queries, from broad to specific.
 2. Use proper MeSH terms and boolean operators (AND, OR) where helpful.
 3. Include relevant synonyms and alternative phrasings.
 4. Prioritize queries that will find systematic reviews, meta-analyses, and RCTs when relevant.
@@ -66,15 +68,14 @@ Example output:
 [{"query":"vitamin D supplementation respiratory infection children","strategy":"Broad search for vitamin D and respiratory infections in children"},{"query":"(vitamin D OR cholecalciferol) AND (respiratory tract infection OR RTI OR common cold) AND (child OR pediatric) AND (randomized controlled trial OR meta-analysis)","strategy":"Targeted search for high-quality trials on vitamin D and respiratory infections in kids"}]`;
 
   async function generateSearchQueries(opts) {
-    const { apiKey, model, question, context } = opts;
+    const { apiKey, question, context } = opts;
 
     let prompt = `Question: ${question}`;
     if (context) prompt += `\nDecision context: ${context}`;
     prompt += '\n\nGenerate PubMed search queries for this question.';
 
-    const raw = await callAPI(apiKey, model, SEARCH_SYSTEM, prompt);
+    const raw = await callAPI(apiKey, SEARCH_SYSTEM, prompt);
 
-    // Parse JSON from response (handle potential markdown fences)
     let cleaned = raw.trim();
     if (cleaned.startsWith('```')) {
       cleaned = cleaned.replace(/^```(?:json)?\s*/, '').replace(/\s*```$/, '');
@@ -83,7 +84,6 @@ Example output:
     try {
       return JSON.parse(cleaned);
     } catch (e) {
-      // Try to extract JSON array from the response
       const match = cleaned.match(/\[[\s\S]*\]/);
       if (match) return JSON.parse(match[0]);
       throw new Error('Failed to parse search queries from AI response');
@@ -91,13 +91,61 @@ Example output:
   }
 
   // ═══════════════════════════════════════════════════════════
-  //  PUBMED SEARCH (via NCBI esearch)
-  //  Execute a search query and return PMIDs
+  //  PLAIN-LANGUAGE SUMMARIES
+  //  Translate paper titles/abstracts into plain English
   // ═══════════════════════════════════════════════════════════
 
-  async function searchPubMed(query, maxResults) {
+  const SUMMARY_SYSTEM = `You translate medical research paper titles and abstracts into plain language for people without medical training.
+
+## Rules
+1. Use no medical jargon. If a technical concept is essential, explain it in parentheses.
+2. Be specific about findings (numbers, effects) when the abstract provides them.
+3. Each summary should help a non-expert decide if this paper is relevant to their question.
+
+## Output Format
+Return ONLY a JSON array in the same order as the papers provided. No markdown, no explanation.
+Each object has:
+- "plain_title": A clear, jargon-free title (5-12 words)
+- "plain_summary": One sentence explaining the key finding or purpose in everyday language`;
+
+  async function generatePlainSummaries(opts) {
+    const { apiKey, papers, question } = opts;
+
+    let prompt = `The user's question: "${question}"\n\nPapers to translate:\n\n`;
+    for (let i = 0; i < papers.length; i++) {
+      prompt += `Paper ${i + 1} (PMID: ${papers[i].pmid}):\n`;
+      prompt += `Title: ${papers[i].title}\n`;
+      if (papers[i].abstract) {
+        prompt += `Abstract: ${papers[i].abstract.substring(0, 600)}\n`;
+      }
+      prompt += '\n';
+    }
+    prompt += 'Translate each paper into plain language.';
+
+    const raw = await callAPI(apiKey, SUMMARY_SYSTEM, prompt, 2048);
+
+    let cleaned = raw.trim();
+    if (cleaned.startsWith('```')) {
+      cleaned = cleaned.replace(/^```(?:json)?\s*/, '').replace(/\s*```$/, '');
+    }
+
+    try {
+      return JSON.parse(cleaned);
+    } catch (e) {
+      const match = cleaned.match(/\[[\s\S]*\]/);
+      if (match) return JSON.parse(match[0]);
+      return papers.map(() => ({ plain_title: '', plain_summary: '' }));
+    }
+  }
+
+  // ═══════════════════════════════════════════════════════════
+  //  PUBMED SEARCH (via NCBI esearch)
+  // ═══════════════════════════════════════════════════════════
+
+  async function searchPubMed(query, maxResults, sort) {
     maxResults = maxResults || 10;
-    const url = `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=${encodeURIComponent(query)}&retmax=${maxResults}&sort=relevance&retmode=json`;
+    sort = sort || 'relevance';
+    const url = `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=${encodeURIComponent(query)}&retmax=${maxResults}&sort=${sort}&retmode=json`;
     const response = await fetch(url);
     if (!response.ok) throw new Error(`PubMed search failed: ${response.status}`);
     const data = await response.json();
@@ -145,7 +193,7 @@ Produce a markdown document with exactly these sections:
 
 ## What the papers say
 
-[For each paper, state what it found in plain language. Group by theme or finding. Always cite with [PMID: XXXXX].]
+[For each key finding, state what the papers found in plain language. Group by theme. Always cite with [PMID: XXXXX].]
 
 ## What we infer (with receipts)
 
@@ -205,7 +253,7 @@ Produce a markdown document with exactly these sections:
   }
 
   async function generate(opts) {
-    const { apiKey, model, question, context, papers, onChunk, onDone, onError } = opts;
+    const { apiKey, question, context, papers, onChunk, onDone, onError } = opts;
     const userMessage = buildUserMessage(question, context, papers);
 
     try {
@@ -218,7 +266,7 @@ Produce a markdown document with exactly these sections:
           'anthropic-dangerous-direct-browser-access': 'true'
         },
         body: JSON.stringify({
-          model: model || 'claude-sonnet-4-5-20250929',
+          model: MODEL,
           max_tokens: 4096,
           stream: true,
           system: SYNTH_SYSTEM,
@@ -278,5 +326,18 @@ Produce a markdown document with exactly these sections:
     }
   }
 
-  return { generateSearchQueries, searchPubMed, generate };
+  // ── Public API ──
+
+  return {
+    generateSearchQueries,
+    generatePlainSummaries,
+    searchPubMed,
+    generate,
+    buildUserMessage,
+    // Expose prompts for transparency
+    SEARCH_SYSTEM,
+    SUMMARY_SYSTEM,
+    SYNTH_SYSTEM,
+    MODEL
+  };
 })();
