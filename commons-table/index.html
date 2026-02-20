@@ -26,7 +26,8 @@
             <p id="ln1"></p>
             <p id="ln2"></p>
             <p id="ln3"></p>
-            <p id="ln4" class="mt accent"></p>
+            <p id="ln4" class="mt"></p>
+            <p id="ln5" class="mt accent"></p>
           </div>
           <button id="flip-btn" class="flip-btn hidden">Flip the Tables</button>
         </div>
@@ -145,8 +146,8 @@
           <div class="setting-item">
             <label for="s-depth">Results per query</label>
             <select id="s-depth">
-              <option value="5">5 (quick scan)</option>
-              <option value="10" selected>10 (standard)</option>
+              <option value="5" selected>5 (quick scan)</option>
+              <option value="10">10 (standard)</option>
               <option value="25">25 (deep dive)</option>
             </select>
             <span class="setting-note">Applied to each of 3&ndash;4 AI-generated search strategies</span>
@@ -163,6 +164,38 @@
 
       <button id="search-btn" class="btn-primary">Search the Public Record</button>
       <div id="search-status"></div>
+
+      <!-- Progress indicator (hidden until search starts) -->
+      <div id="search-progress" class="search-progress hidden">
+        <div class="progress-phase" id="prog-phase-1">
+          <div class="progress-marker"></div>
+          <div class="progress-text">
+            <div class="progress-label">Translating your question</div>
+            <div class="progress-detail">AI converts plain English into medical search terms</div>
+          </div>
+        </div>
+        <div class="progress-phase" id="prog-phase-2">
+          <div class="progress-marker"></div>
+          <div class="progress-text">
+            <div class="progress-label">Searching PubMed</div>
+            <div class="progress-detail">Querying 37 million papers across multiple strategies</div>
+          </div>
+        </div>
+        <div class="progress-phase" id="prog-phase-3">
+          <div class="progress-marker"></div>
+          <div class="progress-text">
+            <div class="progress-label">Fetching papers</div>
+            <div class="progress-detail">Pulling titles, authors, and abstracts</div>
+          </div>
+        </div>
+        <div class="progress-phase" id="prog-phase-4">
+          <div class="progress-marker"></div>
+          <div class="progress-text">
+            <div class="progress-label">Translating into plain language</div>
+            <div class="progress-detail">Making the jargon readable</div>
+          </div>
+        </div>
+      </div>
 
       <!-- Manual entry -->
       <details class="manual-entry">
@@ -185,7 +218,7 @@
     <!-- ═══ STEP 2: CURATE ═══ -->
     <div id="curate-view" class="hidden">
       <div class="step-label">Step 2 <span class="step-label-text">Choose your papers</span></div>
-      <p class="step-desc">We searched PubMed using AI-generated terms. Each paper has been translated into plain language. Check the ones relevant to your question. Uncheck the rest.</p>
+      <p class="step-desc">We used AI to translate your question into the medical search terms the gatekeepers designed to keep you out. Each paper below has been translated back into plain language. <strong>You decide which ones matter.</strong></p>
 
       <!-- How we found these -->
       <details class="search-disclosure" id="search-disclosure">
