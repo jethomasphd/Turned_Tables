@@ -423,6 +423,16 @@
           <p><strong>PubMed / NCBI E-utilities:</strong> All paper metadata and abstracts are fetched from the National Center for Biotechnology Information&rsquo;s public API. This is the same database used by researchers, doctors, and institutions worldwide. Free, public, no account required.</p>
           <h3>AI model</h3>
           <p><strong>Claude by Anthropic:</strong> All AI interactions use Claude, Anthropic&rsquo;s most capable model. You provide your own API key, which means your data is sent directly from your browser to Anthropic&rsquo;s servers. Nothing passes through our servers because we do not have servers. This is a static website.</p>
+
+          <h3>How papers are selected</h3>
+          <p>When you search, AI generates 3&ndash;4 independent search strategies &mdash; each targeting your question from a different angle (broad terms, specific MeSH headings, study types). Each strategy queries PubMed separately. The results are then scored and ranked:</p>
+          <ol>
+            <li><strong>Cross-strategy overlap (+3 points per strategy):</strong> A paper found by multiple independent search strategies is more likely to be central to your question. If a paper appears in 3 of 4 strategies, it gets 9 overlap points.</li>
+            <li><strong>PubMed position weight (+1&ndash;5 points):</strong> PubMed returns results in relevance order. The top result in any strategy gets 5 points, second gets 4, and so on. Papers ranked 6th or lower get 1 point.</li>
+          </ol>
+          <p>The composite score (overlap &times; 3 + position points) determines rank. The top 12 papers are shown. Papers that appear in multiple strategies display a badge (e.g., &ldquo;3/4 strategies&rdquo;) so you can see why they ranked high.</p>
+          <p>This method favors papers that are <strong>independently identified by multiple approaches</strong> AND <strong>highly ranked by PubMed&rsquo;s own relevance engine</strong>. It is fully transparent: scores and matched strategies are recorded in the Tablet export.</p>
+
           <h3>Privacy</h3>
           <p>Your API key is stored in your browser&rsquo;s localStorage. It is never sent anywhere except to Anthropic&rsquo;s API. Your questions, papers, and briefs exist only in your browser. When you close the tab, they are gone unless you downloaded them. No tracking. No analytics. No database.</p>
         </div>

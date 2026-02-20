@@ -1135,6 +1135,21 @@ select { font-family: var(--mono); font-size: 0.82rem; cursor: pointer; }
   letter-spacing: 0.05em;
 }
 
+.curate-overlap {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 0.55rem;
+  font-weight: 500;
+  color: var(--ember);
+  background: rgba(201, 162, 39, 0.08);
+  border: 1px solid rgba(201, 162, 39, 0.2);
+  padding: 0.1rem 0.4rem;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
 
 /* ═══════════════════════════════════════════════════════════════
    XIX. PROCESSING VIEW
