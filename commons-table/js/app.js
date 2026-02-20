@@ -42,12 +42,13 @@ const App = (() => {
   // ═══════════════════════════════════════════════════════════
 
   const INTRO_LINES = [
-    { id: 'ln1', text: '37 million medical research papers sit in a free, public database.' },
-    { pause: 800 },
-    { id: 'ln2', text: 'You have probably never read one.' },
+    { id: 'ln1', text: '37 million medical research papers. Funded by your taxes. Locked behind paywalls.' },
+    { pause: 900 },
+    { id: 'ln2', text: 'The journals didn\u2019t pay for the research. They don\u2019t pay the peer reviewers. They charge you $35 to read a single paper.' },
     { pause: 1000 },
-    { id: 'ln3', text: 'Not because you couldn\u2019t understand it.' },
-    { id: 'ln4', text: 'Because the search speaks boolean. The papers speak jargon. The gates were built for insiders.' },
+    { id: 'ln3', text: 'The scientists who wrote these papers cannot access their own work.' },
+    { pause: 1200 },
+    { id: 'ln4', text: 'The system was not broken. It was built this way.' },
     { pause: 1200 },
     { id: 'ln5', text: 'The tables are set against you.' }
   ];
