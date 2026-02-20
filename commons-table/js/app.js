@@ -37,32 +37,21 @@ const App = (() => {
 
   // ═══════════════════════════════════════════════════════════
   //  CINEMATIC INTRO
-  //  Timing matched to Companion Dossier: 50-90ms per char,
-  //  600-1200ms pauses, 1s act transitions
+  //  Auto-playing typewriter → "Flip the Tables" → 3D card
+  //  flip revealing logo → fade to app
   // ═══════════════════════════════════════════════════════════
 
-  const WOUND_LINES = [
-    { id: 'w1', text: 'Every day, people make decisions about their health' },
-    { id: 'w2', text: 'based on headlines, hearsay, and hope.' },
+  const INTRO_LINES = [
+    { id: 'ln1', text: '37 million medical research papers sit in a free, public database.' },
+    { pause: 800 },
+    { id: 'ln2', text: 'You have probably never read one.' },
     { pause: 1000 },
-    { id: 'w3', text: 'The research exists. It is public. It is free.' },
-    { id: 'w4', text: 'But it sits behind jargon, buried in abstracts nobody reads.' },
-    { pause: 800 },
-    { id: 'w5', text: 'The table is set against you.' }
+    { id: 'ln3', text: 'Not because you couldn\u2019t understand it.' },
+    { id: 'ln4', text: 'Because the search speaks boolean. The papers speak jargon. The gates were built for insiders.' },
+    { pause: 1200 },
+    { id: 'ln5', text: 'The tables are set against you.' }
   ];
 
-  const TURN_LINES = [
-    { id: 't1', text: 'This tool reads the public record.' },
-    { pause: 800 },
-    { id: 't2', text: 'You bring the question. We search the research.' },
-    { id: 't3', text: 'AI translates the abstracts into plain language' },
-    { id: 't4', text: 'with every claim traced back to its source.' },
-    { pause: 800 },
-    { id: 't5', text: 'No jargon. No hand-waving. Receipts only.' }
-  ];
-
-  let currentAct = 1;
-  let introPlaying = false;
   let introSkipped = false;
 
   async function typeText(el, text) {
@@ -70,53 +59,76 @@ const App = (() => {
     for (let i = 0; i < text.length; i++) {
       if (introSkipped) { el.textContent = text; el.classList.remove('typing'); return; }
       el.textContent += text[i];
-      await sleep(50 + Math.random() * 40);
+      await sleep(45 + Math.random() * 35);
     }
     el.classList.remove('typing');
   }
 
-  async function playLines(lines) {
-    for (const line of lines) {
-      if (introSkipped) { for (const l of lines) { if (l.id) $(l.id).textContent = l.text; } return; }
+  async function playIntro() {
+    await sleep(800); // initial pause in the void
+    for (const line of INTRO_LINES) {
+      if (introSkipped) {
+        for (const l of INTRO_LINES) { if (l.id) $(l.id).textContent = l.text; }
+        return;
+      }
       if (line.pause) { await sleep(line.pause); continue; }
       await typeText($(line.id), line.text);
       await sleep(400);
     }
+    // After last line, show the flip button
+    if (!introSkipped) {
+      await sleep(1000);
+      const flipBtn = $('flip-btn');
+      show(flipBtn);
+    }
   }
 
-  function showAct(num) {
-    document.querySelectorAll('.act').forEach(a => a.classList.remove('active'));
-    const act = $('act-' + num);
-    if (act) act.classList.add('active');
-    currentAct = num;
-  }
-
-  async function advanceIntro() {
-    if (introPlaying) return;
-    if (currentAct === 1) { introPlaying = true; showAct(2); await playLines(WOUND_LINES); introPlaying = false; }
-    else if (currentAct === 2) { introPlaying = true; showAct(3); await playLines(TURN_LINES); introPlaying = false; }
-    else if (currentAct === 3) { showAct(4); }
+  function doFlip() {
+    const card = $('intro-card');
+    card.classList.add('flipped');
+    // After flip completes, hold the logo, then transition to app
+    setTimeout(() => {
+      const intro = $('intro');
+      intro.style.opacity = '0';
+      intro.style.transition = 'opacity 0.8s ease';
+      setTimeout(() => {
+        intro.style.display = 'none';
+        show($('app'));
+        initApp();
+      }, 800);
+    }, 1800); // 1.4s flip + 0.4s pause to see logo
   }
 
   function enterApp() {
     introSkipped = true;
     const intro = $('intro');
     intro.style.opacity = '0';
-    intro.style.transition = 'opacity 0.8s ease';
-    setTimeout(() => { intro.style.display = 'none'; show($('app')); initApp(); }, 800);
+    intro.style.transition = 'opacity 0.6s ease';
+    setTimeout(() => { intro.style.display = 'none'; show($('app')); initApp(); }, 600);
   }
 
   function initIntro() {
-    $('intro').addEventListener('click', (e) => {
-      if (e.target.id === 'enter-btn') { enterApp(); return; }
-      if (e.target.id === 'skip-intro') { enterApp(); return; }
-      advanceIntro();
+    // Skip button
+    $('skip-intro').addEventListener('click', enterApp);
+
+    // Flip button
+    $('flip-btn').addEventListener('click', (e) => {
+      e.stopPropagation();
+      doFlip();
     });
+
+    // Keyboard: Escape skips, Enter/Space flips if button visible
     document.addEventListener('keydown', (e) => {
       if ($('intro').style.display === 'none') return;
-      if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); if (currentAct === 4) enterApp(); else advanceIntro(); }
-      if (e.key === 'Escape') enterApp();
+      if (e.key === 'Escape') { enterApp(); return; }
+      if ((e.key === ' ' || e.key === 'Enter') && !$('flip-btn').classList.contains('hidden')) {
+        e.preventDefault();
+        doFlip();
+      }
     });
+
+    // Auto-start the typewriter
+    playIntro();
   }
 
   // ═══════════════════════════════════════════════════════════
