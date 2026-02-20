@@ -35,6 +35,16 @@ const App = (() => {
 
   function getKey() { return ($('key') ? $('key').value : '') || localStorage.getItem(KEY_STORE) || ''; }
 
+  function setPhase(n) {
+    for (let i = 1; i <= 4; i++) {
+      const el = $('prog-phase-' + i);
+      if (!el) continue;
+      el.classList.remove('active', 'done');
+      if (i < n) el.classList.add('done');
+      else if (i === n) el.classList.add('active');
+    }
+  }
+
   // ═══════════════════════════════════════════════════════════
   //  CINEMATIC INTRO
   //  Auto-playing typewriter → "Flip the Tables" → 3D card
@@ -43,12 +53,14 @@ const App = (() => {
 
   const INTRO_LINES = [
     { id: 'ln1', text: '37 million medical papers.' },
-    { pause: 800 },
+    { pause: 600 },
     { id: 'ln2', text: 'Your taxes paid for them\u2026' },
-    { pause: 1200 },
+    { pause: 900 },
     { id: 'ln3', text: 'But the gatekeepers lock you out.' },
-    { pause: 1500 },
-    { id: 'ln4', text: 'The tables are set against you.' }
+    { pause: 1000 },
+    { id: 'ln4', text: 'When you have a health question, the evidence exists.' },
+    { pause: 1200 },
+    { id: 'ln5', text: 'The tables are set against you.' }
   ];
 
   let introSkipped = false;
@@ -58,7 +70,7 @@ const App = (() => {
     for (let i = 0; i < text.length; i++) {
       if (introSkipped) { el.textContent = text; el.classList.remove('typing'); return; }
       el.textContent += text[i];
-      await sleep(45 + Math.random() * 35);
+      await sleep(25 + Math.random() * 20);
     }
     el.classList.remove('typing');
   }
@@ -235,26 +247,35 @@ const App = (() => {
     state.context = context;
 
     $('search-btn').disabled = true;
-    statusEl.textContent = 'Sending your question to Claude Opus...';
+    statusEl.textContent = '';
     statusEl.className = '';
+
+    // Show progress indicator
+    const progEl = $('search-progress');
+    show(progEl);
+    setPhase(1);
 
     logProv('search_started', question);
 
     try {
-      // Phase 1: Ask Claude for search queries
+      // Phase 1: Translate question into search queries
       const queries = await Synthesis.generateSearchQueries({ apiKey, question, context });
       state.searchQueries = queries;
       logProv('search_queries_generated', queries.map(q => q.query).join(' | '));
 
-      statusEl.textContent = `${queries.length} search strategies generated. Searching PubMed...`;
+      setPhase(2);
+      $('prog-phase-2').querySelector('.progress-detail').textContent =
+        `${queries.length} strategies across 37 million papers`;
 
       // Phase 2: Execute each query against PubMed
       const allPMIDs = new Set();
       const allPapers = [];
       const RATE_MS = 350;
+      const MAX_PAPERS = 12;
 
       for (let i = 0; i < queries.length; i++) {
-        statusEl.textContent = `Searching PubMed (${i + 1}/${queries.length}): ${queries[i].strategy}`;
+        $('prog-phase-2').querySelector('.progress-detail').textContent =
+          `Strategy ${i + 1} of ${queries.length}: ${queries[i].strategy}`;
         try {
           const result = await Synthesis.searchPubMed(queries[i].query, depth, sort);
           logProv('pubmed_searched', `"${queries[i].query}" -> ${result.count} total, fetched ${result.pmids.length}`);
@@ -264,13 +285,17 @@ const App = (() => {
 
           if (newPMIDs.length > 0) {
             await sleep(RATE_MS);
-            statusEl.textContent = `Fetching paper details (${allPapers.length + newPMIDs.length} papers)...`;
+            setPhase(3);
+            $('prog-phase-3').querySelector('.progress-detail').textContent =
+              `${allPapers.length + newPMIDs.length} papers so far`;
             const papers = await Shoreline.ingest(newPMIDs.join('\n'));
             for (const p of papers.papers) {
               if (!allPapers.find(x => x.pmid === p.pmid)) {
                 allPapers.push(p);
               }
             }
+            // Back to searching if more queries remain
+            if (i < queries.length - 1) setPhase(2);
           }
           await sleep(RATE_MS);
         } catch (e) {
@@ -280,30 +305,37 @@ const App = (() => {
       }
 
       if (allPapers.length === 0) {
+        hide(progEl);
         statusEl.textContent = 'No papers found. Try rephrasing your question.';
         statusEl.className = 'error';
         $('search-btn').disabled = false;
         return;
       }
 
-      logProv('papers_found', allPapers.length + ' unique papers from ' + queries.length + ' queries');
+      // Cap at top papers by relevance (PubMed returns most relevant first)
+      const cappedPapers = allPapers.slice(0, MAX_PAPERS);
+      logProv('papers_found', `${allPapers.length} unique papers from ${queries.length} queries, showing top ${cappedPapers.length}`);
 
-      // Phase 3: Generate plain-language summaries
-      statusEl.textContent = `Translating ${allPapers.length} papers into plain language...`;
+      // Phase 4: Generate plain-language summaries
+      setPhase(4);
+      $('prog-phase-4').querySelector('.progress-detail').textContent =
+        `Translating ${cappedPapers.length} papers`;
       let summaries = [];
       try {
-        summaries = await Synthesis.generatePlainSummaries({ apiKey, papers: allPapers, question });
+        summaries = await Synthesis.generatePlainSummaries({ apiKey, papers: cappedPapers, question });
         logProv('plain_summaries_generated', summaries.length + ' papers translated');
       } catch (e) {
         console.error('Plain summary generation failed:', e);
         logProv('plain_summaries_failed', e.message);
-        summaries = allPapers.map(() => ({ plain_title: '', plain_summary: '' }));
+        summaries = cappedPapers.map(() => ({ plain_title: '', plain_summary: '' }));
       }
 
+      hide(progEl);
+
       // Store and move to curate
-      state.allFoundPapers = allPapers;
+      state.allFoundPapers = cappedPapers;
       state.plainSummaries = summaries;
-      state.selectedPMIDs = new Set(allPapers.map(p => p.pmid));
+      state.selectedPMIDs = new Set(cappedPapers.map(p => p.pmid));
 
       // Populate search prompt display
       const searchPromptEl = $('search-prompt-display');
@@ -312,7 +344,7 @@ const App = (() => {
       }
 
       displaySearchTerms(queries);
-      $('search-stats').textContent = `${allPapers.length} unique papers found across ${queries.length} search strategies, ${depth} results per query, sorted by ${sort === 'relevance' ? 'relevance' : 'date'}`;
+      $('search-stats').textContent = `Top ${cappedPapers.length} of ${allPapers.length} papers found across ${queries.length} search strategies, sorted by ${sort === 'relevance' ? 'relevance' : 'date'}`;
       renderCurateList();
 
       hide($('landing-wrap'));
@@ -320,6 +352,7 @@ const App = (() => {
       window.scrollTo(0, 0);
 
     } catch (err) {
+      hide(progEl);
       statusEl.textContent = err.message;
       statusEl.className = 'error';
     } finally {
@@ -424,13 +457,14 @@ const App = (() => {
       const abstractText = p.abstract || 'No abstract available.';
 
       // Card top: checkbox + info (clickable to toggle selection)
+      const displayTitle = plainTitle || p.title;
       const topHtml = `
         <div class="curate-card-top" data-action="toggle">
           <div class="curate-check">${selected ? '\u2713' : ''}</div>
           <div class="curate-info">
-            ${plainTitle ? `<div class="curate-plain-title">${escapeHtml(plainTitle)}</div>` : ''}
+            <div class="curate-plain-title">${escapeHtml(displayTitle)}</div>
             ${plainSummary ? `<div class="curate-plain-summary">${escapeHtml(plainSummary)}</div>` : ''}
-            <div class="curate-technical-title">${escapeHtml(p.title)}</div>
+            ${plainTitle ? `<div class="curate-technical-title">${escapeHtml(p.title)}</div>` : ''}
             <div class="curate-meta">${escapeHtml(meta)}</div>
             <div class="curate-pmid">PMID: ${p.pmid}</div>
           </div>
@@ -766,6 +800,7 @@ ${htmlContent}
     state.provenance = [];
     $('search-status').textContent = '';
     $('search-status').className = '';
+    hide($('search-progress'));
     window.scrollTo(0, 0);
   }
 
