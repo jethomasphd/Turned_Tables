@@ -135,6 +135,17 @@ const App = (() => {
     if ($('s-key')) $('s-key').addEventListener('change', (e) => { localStorage.setItem(KEY_STORE, e.target.value); if ($('key')) $('key').value = e.target.value; });
     if ($('key')) $('key').addEventListener('change', (e) => { localStorage.setItem(KEY_STORE, e.target.value); if ($('s-key')) $('s-key').value = e.target.value; });
 
+    // Scroll reveal system (matches Companion Dossier)
+    const revealObserver = new IntersectionObserver((entries) => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      }
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
     // About toggle
     $('about-toggle').addEventListener('click', () => {
       $('about-section').classList.toggle('open');
@@ -142,6 +153,8 @@ const App = (() => {
       if ($('about-section').classList.contains('open')) {
         show(body);
         populatePromptDocs();
+        // Re-observe newly visible reveal elements
+        body.querySelectorAll('.reveal:not(.visible)').forEach(el => revealObserver.observe(el));
       } else {
         hide(body);
       }
