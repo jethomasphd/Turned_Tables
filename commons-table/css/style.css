@@ -874,8 +874,35 @@ select { font-family: var(--mono); font-size: 0.82rem; cursor: pointer; }
 }
 .search-disclosure summary:hover { color: var(--bone-dim); }
 
+.search-evolution {
+  padding: 0.75rem 0.85rem;
+}
+.search-evolution-step {
+  padding: 0.35rem 0;
+}
+.evolution-label {
+  font-family: var(--mono);
+  font-size: 0.55rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--ember-dim);
+  margin-bottom: 0.25rem;
+}
+.evolution-content {
+  font-family: var(--body);
+  font-size: 0.9rem;
+  color: var(--bone-dim);
+  line-height: 1.5;
+  font-style: italic;
+}
+.evolution-arrow {
+  color: var(--smoke);
+  font-size: 0.8rem;
+  padding: 0.15rem 0 0.15rem 0.5rem;
+}
+
 #search-terms-display {
-  padding: 0.5rem 0.85rem 0.75rem;
   font-family: var(--mono); font-size: 0.78rem;
   color: var(--bone-dim); line-height: 1.6;
 }
@@ -889,14 +916,14 @@ select { font-family: var(--mono); font-size: 0.82rem; cursor: pointer; }
 
 
 /* ═══════════════════════════════════════════════════════════════
-   XVI. SEARCH STATS
+   XVI. SEARCH STATS (now inside search evolution)
    ═══════════════════════════════════════════════════════════════ */
 
 .search-stats {
-  font-family: var(--mono);
-  font-size: 0.6rem;
-  color: var(--smoke);
-  padding: 0.5rem 0;
+  font-family: var(--body);
+  font-size: 0.85rem;
+  color: var(--bone-dim);
+  padding: 0;
   margin-bottom: 0.75rem;
   letter-spacing: 0.05em;
 }
@@ -1197,7 +1224,26 @@ select { font-family: var(--mono); font-size: 0.82rem; cursor: pointer; }
    XXII. EXPORT
    ═══════════════════════════════════════════════════════════════ */
 
+.export-section { margin-bottom: 1.5rem; }
+.export-heading {
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--ember-dim);
+  margin-bottom: 0.75rem;
+}
 .export-row { display: flex; gap: 0.75rem; margin-bottom: 0.75rem; flex-wrap: wrap; }
+.export-option { flex: 1; min-width: 140px; display: flex; flex-direction: column; }
+.export-hint {
+  font-family: var(--body);
+  font-size: 0.78rem;
+  color: var(--smoke);
+  line-height: 1.5;
+  margin-top: 0.4rem;
+  padding: 0 0.25rem;
+}
 .export-btn {
   flex: 1; min-width: 140px;
   font-family: var(--mono); font-size: 0.65rem; font-weight: 500;

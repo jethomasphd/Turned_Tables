@@ -58,8 +58,9 @@
     <!-- ═══ WHAT IS THIS? ═══ -->
     <div class="landing-section" id="whats-this">
       <h2 class="landing-heading">What is this?</h2>
-      <p>There is a public database called <strong>PubMed</strong> &mdash; 37 million medical research papers, funded by your taxes, written at public universities, peer-reviewed for free. The publishers didn&rsquo;t fund the research. They didn&rsquo;t review it. They charge <strong>$35 per paper</strong> to read the results. And they wrote it in a language designed to keep you out.</p>
-      <p>Tables Turned breaks the glass. Ask a health question in plain English. AI translates it into medical search terms, searches PubMed directly, and translates the jargon back into language you can read. <strong>You decide which papers matter.</strong> AI reads them and writes a brief where every single claim cites its source.</p>
+      <p>The U.S. government maintains a database called <strong>PubMed</strong> &mdash; 37 million medical research papers. Your taxes funded them. Scientists at public universities wrote them. Other scientists peer-reviewed them for free.</p>
+      <p>Then publishers took them. They didn&rsquo;t fund the research. They didn&rsquo;t conduct it. They didn&rsquo;t review it. But they charge <strong>$35 per paper</strong> to read it &mdash; and they wrote it in clinical jargon that takes years of training to decode. PubMed lets you <em>search</em> the titles, but actually <em>reading</em> the research? That costs money. <strong>Understanding</strong> it? That costs a medical degree.</p>
+      <p>Tables Turned breaks both locks. You ask a health question in plain English. AI translates it into medical search terms, searches PubMed, and translates the results back into language anyone can read. You choose which papers matter. AI reads the abstracts and writes a brief where <strong>every claim cites its source</strong> &mdash; a real PubMed ID you can click and verify.</p>
       <p class="landing-kicker">Not an answer box. A dialogue with evidence <em>you already own</em>. <a href="#about-section" id="learn-more-link">The full story &rarr;</a></p>
 
       <!-- Flow diagram -->
@@ -218,22 +219,34 @@
     <!-- ═══ STEP 2: CURATE ═══ -->
     <div id="curate-view" class="hidden">
       <div class="step-label">Step 2 <span class="step-label-text">Choose your papers</span></div>
-      <p class="step-desc">We used AI to translate your question into the medical search terms the gatekeepers designed to keep you out. Each paper below has been translated back into plain language. <strong>You decide which ones matter.</strong></p>
+      <p class="step-desc">AI translated your question into the medical jargon the system was built on &mdash; then translated the results back into plain language. Select the papers that matter to your question. Deselect the rest.</p>
 
       <!-- How we found these -->
       <details class="search-disclosure" id="search-disclosure">
         <summary>How we found these papers</summary>
-        <div id="search-terms-display"></div>
+        <div class="search-evolution">
+          <div class="search-evolution-step">
+            <div class="evolution-label">Your question</div>
+            <div class="evolution-content" id="evolution-question"></div>
+          </div>
+          <div class="evolution-arrow">&darr;</div>
+          <div class="search-evolution-step">
+            <div class="evolution-label">AI translated it into</div>
+            <div id="search-terms-display"></div>
+          </div>
+          <div class="evolution-arrow">&darr;</div>
+          <div class="search-evolution-step">
+            <div class="evolution-label">Results</div>
+            <div class="evolution-content" id="search-stats"></div>
+          </div>
+        </div>
         <div class="prompt-peek">
           <details>
-            <summary>See the search prompt sent to AI</summary>
+            <summary>See the full search prompt</summary>
             <pre id="search-prompt-display" class="prompt-display"></pre>
           </details>
         </div>
       </details>
-
-      <!-- Search stats -->
-      <div class="search-stats" id="search-stats"></div>
 
       <div class="curate-actions">
         <button id="select-all-btn" class="btn-small">Select all</button>
@@ -279,10 +292,22 @@
         </details>
       </div>
 
-      <div class="export-row">
-        <button class="export-btn primary" id="dl-docx">Download Brief (.docx)</button>
-        <button class="export-btn" id="dl-brief">Download Brief (.md)</button>
-        <button class="export-btn" id="dl-tablet">Download Tablet (.json)</button>
+      <div class="export-section">
+        <div class="export-heading">Take it with you</div>
+        <div class="export-row">
+          <div class="export-option">
+            <button class="export-btn primary" id="dl-docx">Download Brief (.docx)</button>
+            <p class="export-hint">Your brief as a Word document. Share it with your doctor, print it, or keep it for reference. Every claim cites its source.</p>
+          </div>
+          <div class="export-option">
+            <button class="export-btn" id="dl-brief">Download Brief (.md)</button>
+            <p class="export-hint">Plain text with formatting. Opens in any text editor. Good for pasting into notes or emails.</p>
+          </div>
+          <div class="export-option">
+            <button class="export-btn" id="dl-tablet">Download Tablet (.json)</button>
+            <p class="export-hint">The full session &mdash; your question, every paper, search terms, prompts, and the brief &mdash; in a structured data file. For archiving or re-analysis.</p>
+          </div>
+        </div>
       </div>
       <button id="again-btn" class="btn-back">&#8592; New question</button>
     </div>

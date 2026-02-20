@@ -58,7 +58,7 @@ const App = (() => {
     { pause: 900 },
     { id: 'ln3', text: 'But the gatekeepers lock you out.' },
     { pause: 1000 },
-    { id: 'ln4', text: 'When you have a health question, the evidence exists.' },
+    { id: 'ln4', text: 'When you have a health question\u2026' },
     { pause: 1200 },
     { id: 'ln5', text: 'The tables are set against you.' }
   ];
@@ -343,8 +343,11 @@ const App = (() => {
         searchPromptEl.textContent = Synthesis.SEARCH_SYSTEM + '\n\n---\n\nUser message:\nQuestion: ' + question + (context ? '\nDecision context: ' + context : '') + '\n\nGenerate PubMed search queries for this question.';
       }
 
+      // Populate search evolution
+      const evoQ = $('evolution-question');
+      if (evoQ) evoQ.textContent = '"' + question + '"' + (context ? ' \u2014 ' + context : '');
       displaySearchTerms(queries);
-      $('search-stats').textContent = `Top ${cappedPapers.length} of ${allPapers.length} papers found across ${queries.length} search strategies, sorted by ${sort === 'relevance' ? 'relevance' : 'date'}`;
+      $('search-stats').textContent = `PubMed returned ${allPapers.length} papers. Showing the top ${cappedPapers.length} by ${sort === 'relevance' ? 'relevance' : 'recency'}.`;
       renderCurateList();
 
       hide($('landing-wrap'));
@@ -409,8 +412,10 @@ const App = (() => {
       state.selectedPMIDs = new Set(result.papers.map(p => p.pmid));
       state.searchQueries = [{ query: '(user-provided links)', strategy: 'Direct entry' }];
 
+      const evoQ = $('evolution-question');
+      if (evoQ) evoQ.textContent = '"' + question + '"' + (context ? ' \u2014 ' + context : '');
       displaySearchTerms(state.searchQueries);
-      $('search-stats').textContent = `${result.papers.length} papers from direct entry`;
+      $('search-stats').textContent = `${result.papers.length} papers from direct entry.`;
       renderCurateList();
 
       hide($('landing-wrap'));
