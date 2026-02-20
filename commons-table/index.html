@@ -35,7 +35,7 @@
         <div class="intro-card-back">
           <div class="sigil-back">&#9674; &#9672; &#9674;</div>
           <h1 class="title-back">Tables Turned</h1>
-          <p class="sub-back">The Commons Table</p>
+          <p class="sub-back">Read what you paid for.</p>
         </div>
 
       </div>
@@ -48,35 +48,93 @@
     <header>
       <div class="sigil">&#9674; &#9672; &#9674;</div>
       <h1>Tables Turned</h1>
-      <p class="subtitle">The Commons Table</p>
+      <p class="subtitle">Read what you paid for.</p>
     </header>
 
+    <!-- ═══ LANDING + INPUT (hidden together when navigating to curate/results) ═══ -->
+    <div id="landing-wrap">
+
     <!-- ═══ WHAT IS THIS? ═══ -->
-    <div class="explainer-brief" id="explainer-brief">
-      <h2 class="explainer-heading">What is this?</h2>
-      <p>The database is called <strong>PubMed</strong>. 37 million medical research papers &mdash; funded by the National Institutes of Health, written by researchers at public universities, peer-reviewed by unpaid scientists, and locked behind journal paywalls charging $35 per paper for work the public already paid for. Tables Turned breaks the glass. It searches PubMed in plain English, translates the jargon, and cites every claim by PubMed ID so you can verify it yourself. Not an answer box. A <em>dialogue</em> with the evidence you already own. <a href="#about-section" id="learn-more-link">Learn how it works &rarr;</a></p>
+    <div class="landing-section" id="whats-this">
+      <h2 class="landing-heading">What is this?</h2>
+      <p>There is a public database called <strong>PubMed</strong> &mdash; 37 million medical research papers, funded by your taxes, written at public universities, peer-reviewed for free. The publishers didn&rsquo;t fund the research. They didn&rsquo;t review it. They charge <strong>$35 per paper</strong> to read the results. And they wrote it in a language designed to keep you out.</p>
+      <p>Tables Turned breaks the glass. Ask a health question in plain English. AI translates it into medical search terms, searches PubMed directly, and translates the jargon back into language you can read. <strong>You decide which papers matter.</strong> AI reads them and writes a brief where every single claim cites its source.</p>
+      <p class="landing-kicker">Not an answer box. A dialogue with evidence <em>you already own</em>. <a href="#about-section" id="learn-more-link">The full story &rarr;</a></p>
+
+      <!-- Flow diagram -->
+      <div class="flow-diagram">
+        <div class="flow-step">
+          <div class="flow-icon">?</div>
+          <div class="flow-label">You ask</div>
+          <div class="flow-detail">plain English</div>
+        </div>
+        <div class="flow-arrow">&rarr;</div>
+        <div class="flow-step">
+          <div class="flow-icon">&#9906;</div>
+          <div class="flow-label">AI searches</div>
+          <div class="flow-detail">PubMed &middot; 37M papers</div>
+        </div>
+        <div class="flow-arrow">&rarr;</div>
+        <div class="flow-step">
+          <div class="flow-icon">&#10003;</div>
+          <div class="flow-label">You choose</div>
+          <div class="flow-detail">which papers matter</div>
+        </div>
+        <div class="flow-arrow">&rarr;</div>
+        <div class="flow-step">
+          <div class="flow-icon">&#9671;</div>
+          <div class="flow-label">AI reads</div>
+          <div class="flow-detail">the abstracts</div>
+        </div>
+        <div class="flow-arrow">&rarr;</div>
+        <div class="flow-step flow-step-accent">
+          <div class="flow-icon">&#9758;</div>
+          <div class="flow-label">Your brief</div>
+          <div class="flow-detail">every claim cited</div>
+        </div>
+      </div>
     </div>
 
-    <!-- ═══ STEP 1: ASK ═══ -->
+    <!-- ═══ DOESN'T AI ALREADY DO THIS? ═══ -->
+    <div class="landing-section" id="ai-comparison">
+      <h2 class="landing-heading">Doesn&rsquo;t AI already do this?</h2>
+      <div class="compare-grid">
+        <div class="compare-item">
+          <div class="compare-name">Google AI Overviews</div>
+          <div class="compare-desc">Summarizes the web. No sources you can verify. No way to know what was excluded.</div>
+        </div>
+        <div class="compare-item">
+          <div class="compare-name">ChatGPT</div>
+          <div class="compare-desc">Cites papers &mdash; some real, some <strong>hallucinated</strong>. You can&rsquo;t tell which without checking every one.</div>
+        </div>
+        <div class="compare-item compare-item-accent">
+          <div class="compare-name">Tables Turned</div>
+          <div class="compare-desc">Searches the actual medical database. You see every paper. Every claim cites a <strong>real PubMed ID</strong> you can click and verify. Every prompt is visible. Nothing is hidden.</div>
+        </div>
+      </div>
+      <p class="compare-kicker">They give you <em>answers</em>. This gives you <em>evidence</em>.</p>
+    </div>
+
+    <!-- ═══ QUICK START ═══ -->
     <div id="input-view">
-      <div class="step-label">Step 1 <span class="step-label-text">Ask your question</span></div>
+      <div class="step-label">Quick start <span class="step-label-text">Three things. That&rsquo;s it.</span></div>
 
       <div class="field">
-        <label for="q">What are you trying to figure out?</label>
+        <label for="q">1. What are you trying to figure out?</label>
         <textarea id="q" rows="2" placeholder="e.g., Does vitamin D supplementation reduce respiratory infections in children?"></textarea>
       </div>
 
       <div class="field">
         <label for="ctx">
-          What decision does this serve?
-          <span class="info-tip" data-tip="Your decision context shapes the synthesis. 'Buying supplements tomorrow' produces different emphasis than 'writing a school paper.' The AI uses this to focus on what matters to you.">?</span>
+          2. What decision does this serve?
+          <span class="info-tip" data-tip="Your context shapes the brief. 'Buying supplements tomorrow' produces different emphasis than 'writing a school paper.' The AI uses this to focus on what matters to you.">?</span>
         </label>
         <input type="text" id="ctx" placeholder="e.g., Deciding whether to give my kid supplements before winter">
       </div>
 
       <div class="field" id="key-field">
-        <label for="key">Anthropic API Key</label>
-        <p class="hint">Your key stays in your browser and is only sent to Anthropic's API. Nothing passes through our servers &mdash; we don't have servers. <a href="https://console.anthropic.com/settings/keys" target="_blank">Get a key here.</a></p>
+        <label for="key">3. Your Anthropic API Key</label>
+        <p class="hint">Yours. Stays in your browser. Only sent to Anthropic&rsquo;s API &mdash; we don&rsquo;t have servers. <a href="https://console.anthropic.com/settings/keys" target="_blank">Get one here.</a></p>
         <input type="password" id="key" placeholder="sk-ant-...">
       </div>
 
@@ -103,28 +161,17 @@
         </div>
       </details>
 
-      <!-- Process transparency callout -->
-      <div class="process-callout">
-        <div class="process-header">What happens when you search</div>
-        <ol class="process-steps">
-          <li>Your question is sent to <strong>Claude</strong>, which translates it into optimized medical search terms (MeSH headings, boolean operators, synonyms)</li>
-          <li>Those terms query <strong>PubMed</strong>, the world's largest biomedical database (37M+ papers, free, public)</li>
-          <li>Each paper is translated into <strong>plain language</strong> so you can decide which ones matter</li>
-          <li>You choose papers. AI reads the abstracts and writes a <strong>cited brief</strong> you can download</li>
-        </ol>
-      </div>
-
       <button id="search-btn" class="btn-primary">Search the Public Record</button>
       <div id="search-status"></div>
 
-      <!-- Manual entry with pedagogical handhold -->
+      <!-- Manual entry -->
       <details class="manual-entry">
-        <summary>I already have PubMed links</summary>
+        <summary>I already have PubMed links or PMIDs</summary>
         <div class="manual-explain">
-          <p><strong>PubMed</strong> is the U.S. National Library of Medicine's database of medical research. Every study has a unique PubMed ID (PMID). If you already know which studies you want analyzed, paste their links or IDs below to skip the AI search step.</p>
+          <p>Paste PubMed URLs, PMIDs, or DOIs below to skip the AI search and go straight to synthesis.</p>
         </div>
         <div class="field" style="margin-top: 0.75rem;">
-          <p class="hint">Paste URLs, PMIDs, or DOIs. One per line.</p>
+          <p class="hint">One per line.</p>
           <textarea id="links" rows="4" placeholder="https://pubmed.ncbi.nlm.nih.gov/28202713/
 28202713
 10.1136/bmj.i6583"></textarea>
@@ -132,6 +179,8 @@
         </div>
       </details>
     </div>
+
+    </div><!-- /landing-wrap -->
 
     <!-- ═══ STEP 2: CURATE ═══ -->
     <div id="curate-view" class="hidden">
@@ -235,10 +284,6 @@
         <!-- Chapter 2: Why Not Just Ask ChatGPT? -->
         <div class="doc-chapter reveal">
           <h2>Why Not Just Ask ChatGPT?</h2>
-          <p>You might be thinking: can&rsquo;t AI already do this?</p>
-          <p>Sort of. But <em>how</em> it does it matters enormously.</p>
-          <p>Google&rsquo;s &ldquo;AI Overviews&rdquo; scan the web and give you a confident summary at the top of search results. No sources you can verify. No way to know what was excluded. No indication of whether the answer came from a peer-reviewed study or a wellness blog.</p>
-          <p>ChatGPT will happily discuss medical research. It will cite papers. Some of those citations will be real. Some will be <strong>hallucinated</strong> &mdash; invented paper titles, fabricated authors, made-up findings presented with the same confident tone as the real ones. You have no way to tell which is which without checking every citation yourself.</p>
           <p>These tools treat you as a <strong>consumer of answers</strong>. You ask. They deliver. You accept. Sound familiar?</p>
           <p>It is the same gatekeeping pattern wearing a friendlier mask. The journals said: trust us, we curate the knowledge. The algorithms say: trust us, we summarize it. In both cases, the evidence is not in your hands. You are still on the outside of the glass, trusting an intermediary to get it right.</p>
           <p>Tables Turned takes a different position: you should be in <strong>dialogue with the evidence itself</strong>. Not receiving a verdict. Not consuming a summary. Sitting at the table, choosing which papers matter, reading what they actually say, and walking away with every claim traced to its source.</p>
@@ -318,7 +363,7 @@
           <p>When Aaron Swartz downloaded millions of academic papers from JSTOR and tried to make them freely available, he was prosecuted by the federal government. He died at 26. The papers are still behind paywalls. The publishers are still posting 30% profit margins.</p>
           <p>The pattern is always the same. Knowledge exists. Gatekeepers insist it must be mediated. Translators refuse the premise. Eventually, the public record returns to the public.</p>
           <p>This tool is one small table flip in that tradition. It does not replace reading. It does not replace thinking. It does not replace your physician. It is a translator that sits at the table with you, reads the public record aloud, and makes sure every claim has a receipt.</p>
-          <p class="lineage-end">The commons table is set. Pull up a chair.</p>
+          <p class="lineage-end">The tables have turned. Take your seat.</p>
         </div>
 
       </div>

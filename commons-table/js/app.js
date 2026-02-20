@@ -44,9 +44,9 @@ const App = (() => {
   const INTRO_LINES = [
     { id: 'ln1', text: '37 million medical papers.' },
     { pause: 800 },
-    { id: 'ln2', text: 'Your taxes paid for them.' },
-    { pause: 600 },
-    { id: 'ln3', text: 'You can\u2019t read them.' },
+    { id: 'ln2', text: 'Your taxes paid for them\u2026' },
+    { pause: 1200 },
+    { id: 'ln3', text: 'But the gatekeepers lock you out.' },
     { pause: 1500 },
     { id: 'ln4', text: 'The tables are set against you.' }
   ];
@@ -190,7 +190,7 @@ const App = (() => {
     $('select-all-btn').addEventListener('click', () => { state.allFoundPapers.forEach(p => state.selectedPMIDs.add(p.pmid)); renderCurateList(); });
     $('select-none-btn').addEventListener('click', () => { state.selectedPMIDs.clear(); renderCurateList(); });
     $('synthesize-btn').addEventListener('click', handleSynthesize);
-    $('back-to-search').addEventListener('click', () => { hide($('curate-view')); show($('input-view')); });
+    $('back-to-search').addEventListener('click', () => { hide($('curate-view')); show($('landing-wrap')); });
 
     // Export
     $('dl-docx').addEventListener('click', () => { if (state.briefMarkdown) downloadDocx(state.briefMarkdown); });
@@ -315,7 +315,7 @@ const App = (() => {
       $('search-stats').textContent = `${allPapers.length} unique papers found across ${queries.length} search strategies, ${depth} results per query, sorted by ${sort === 'relevance' ? 'relevance' : 'date'}`;
       renderCurateList();
 
-      hide($('input-view'));
+      hide($('landing-wrap'));
       show($('curate-view'));
       window.scrollTo(0, 0);
 
@@ -380,7 +380,7 @@ const App = (() => {
       $('search-stats').textContent = `${result.papers.length} papers from direct entry`;
       renderCurateList();
 
-      hide($('input-view'));
+      hide($('landing-wrap'));
       show($('curate-view'));
       window.scrollTo(0, 0);
 
@@ -755,7 +755,7 @@ ${htmlContent}
     hide($('results-view'));
     hide($('processing-view'));
     hide($('curate-view'));
-    show($('input-view'));
+    show($('landing-wrap'));
     state.papers = [];
     state.allFoundPapers = [];
     state.plainSummaries = [];

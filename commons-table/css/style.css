@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════════════
-   Tables Turned — The Commons Table
+   Tables Turned — Read what you paid for.
    "A table at night with one lamp."
 
    Visual DNA matched to the COMPANION Suite:
@@ -334,38 +334,167 @@ header .subtitle {
 
 
 /* ═══════════════════════════════════════════════════════════════
-   VII. EXPLAINER BRIEF
+   VII. LANDING SECTIONS (What Is This? / AI Comparison)
    ═══════════════════════════════════════════════════════════════ */
 
-.explainer-brief {
-  background: rgba(201, 162, 39, 0.02);
-  border: 1px solid rgba(201, 162, 39, 0.15);
-  border-left: 3px solid var(--ember-dim);
-  padding: 1.25rem 1.5rem;
-  margin-bottom: 2rem;
+.landing-section {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--ash);
 }
-.explainer-heading {
+
+.landing-heading {
   font-family: var(--voice);
-  font-size: 1.15rem;
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
   font-weight: 300;
   color: var(--ember);
-  margin-bottom: 0.6rem;
+  margin-bottom: 1rem;
   letter-spacing: 0.02em;
 }
-.explainer-brief p {
+
+.landing-section p {
   font-size: 0.95rem;
   line-height: 1.8;
   color: var(--bone-dim);
-  margin: 0;
+  margin-bottom: 0.75rem;
+  max-width: 65ch;
 }
-.explainer-brief strong { color: var(--bone); font-weight: 500; }
-.explainer-brief em { color: var(--ember); font-style: italic; }
-.explainer-brief a {
+.landing-section strong { color: var(--bone); font-weight: 500; }
+.landing-section em { color: var(--ember); font-style: italic; }
+.landing-section a {
   color: var(--ember);
   border-bottom: 1px solid var(--ember-dim);
   transition: border-color 0.3s ease;
 }
-.explainer-brief a:hover { border-color: var(--ember); }
+.landing-section a:hover { border-color: var(--ember); }
+
+.landing-kicker {
+  margin-top: 1rem;
+  font-family: var(--voice);
+  font-size: 1.05rem;
+  color: var(--bone) !important;
+  font-style: italic;
+}
+
+/* ── Flow Diagram ── */
+
+.flow-diagram {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0;
+  margin: 2rem 0 0.5rem;
+  padding: 1.5rem 1rem;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--ash);
+}
+
+.flow-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  min-width: 0;
+  padding: 0 0.25rem;
+}
+.flow-step-accent .flow-icon {
+  color: var(--ember-glow);
+  border-color: var(--ember);
+}
+.flow-step-accent .flow-label {
+  color: var(--ember);
+}
+
+.flow-icon {
+  width: 2.2rem;
+  height: 2.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border-bright);
+  color: var(--bone-dim);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.flow-label {
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--bone);
+  margin-bottom: 0.2rem;
+}
+
+.flow-detail {
+  font-family: var(--body);
+  font-size: 0.75rem;
+  color: var(--smoke);
+  line-height: 1.4;
+}
+
+.flow-arrow {
+  display: flex;
+  align-items: center;
+  padding-top: 0.5rem;
+  color: var(--ember-dim);
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+/* ── AI Comparison Grid ── */
+
+.compare-grid {
+  display: grid;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.compare-item {
+  padding: 1rem 1.25rem;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--ash);
+  border-left: 3px solid var(--border-bright);
+}
+.compare-item-accent {
+  border-left-color: var(--ember);
+  background: rgba(201, 162, 39, 0.03);
+}
+
+.compare-name {
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--smoke);
+  margin-bottom: 0.35rem;
+}
+.compare-item-accent .compare-name {
+  color: var(--ember);
+}
+
+.compare-desc {
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: var(--bone-dim);
+}
+.compare-desc strong { color: var(--bone); font-weight: 500; }
+
+.compare-kicker {
+  font-family: var(--voice);
+  font-size: 1.1rem;
+  color: var(--bone);
+  font-style: italic;
+  text-align: center;
+  margin: 0;
+  padding-top: 0.25rem;
+}
+.compare-kicker em {
+  color: var(--ember);
+}
 
 
 /* ═══════════════════════════════════════════════════════════════
@@ -544,36 +673,7 @@ select { font-family: var(--mono); font-size: 0.82rem; cursor: pointer; }
 }
 
 
-/* ═══════════════════════════════════════════════════════════════
-   XII. PROCESS CALLOUT
-   ═══════════════════════════════════════════════════════════════ */
-
-.process-callout {
-  background: var(--surface);
-  border: 1px solid var(--ash);
-  padding: 1rem 1.25rem;
-  margin-bottom: 1.25rem;
-}
-.process-header {
-  font-family: var(--mono);
-  font-size: 0.6rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  color: var(--ember-dim);
-  margin-bottom: 0.6rem;
-}
-.process-steps {
-  padding-left: 1.3rem;
-  margin: 0;
-}
-.process-steps li {
-  font-size: 0.9rem;
-  color: var(--bone-dim);
-  line-height: 1.65;
-  margin-bottom: 0.4rem;
-}
-.process-steps strong { color: var(--ember); font-weight: 500; }
+/* (Process callout removed — flow diagram replaces it) */
 
 
 /* ═══════════════════════════════════════════════════════════════
@@ -1197,6 +1297,28 @@ select { font-family: var(--mono); font-size: 0.82rem; cursor: pointer; }
   .curate-expand { padding-left: calc(18px + 1.75rem); }
   .curate-expand-btn { padding-left: calc(18px + 1.75rem); }
   .info-tip::after { left: auto; right: -10px; transform: none; width: 250px; }
-  .process-callout { padding: 0.75rem 1rem; }
   .flip-btn { padding: 0.85rem 2rem; }
+
+  /* Flow diagram: stack vertically on mobile */
+  .flow-diagram {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    padding: 1.25rem;
+  }
+  .flow-step {
+    flex-direction: row;
+    gap: 0.75rem;
+    text-align: left;
+    width: 100%;
+    padding: 0.4rem 0;
+  }
+  .flow-step .flow-icon { flex-shrink: 0; }
+  .flow-step .flow-label { text-align: left; }
+  .flow-step .flow-detail { text-align: left; }
+  .flow-arrow {
+    transform: rotate(90deg);
+    padding: 0.15rem 0;
+    font-size: 0.8rem;
+  }
 }
