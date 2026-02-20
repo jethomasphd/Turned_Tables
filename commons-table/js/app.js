@@ -42,15 +42,13 @@ const App = (() => {
   // ═══════════════════════════════════════════════════════════
 
   const INTRO_LINES = [
-    { id: 'ln1', text: '37 million medical research papers. Funded by your taxes. Locked behind paywalls.' },
-    { pause: 900 },
-    { id: 'ln2', text: 'The journals didn\u2019t pay for the research. They don\u2019t pay the peer reviewers. They charge you $35 to read a single paper.' },
-    { pause: 1000 },
-    { id: 'ln3', text: 'The scientists who wrote these papers cannot access their own work.' },
-    { pause: 1200 },
-    { id: 'ln4', text: 'The system was not broken. It was built this way.' },
-    { pause: 1200 },
-    { id: 'ln5', text: 'The tables are set against you.' }
+    { id: 'ln1', text: '37 million medical papers.' },
+    { pause: 800 },
+    { id: 'ln2', text: 'Your taxes paid for them.' },
+    { pause: 600 },
+    { id: 'ln3', text: 'You can\u2019t read them.' },
+    { pause: 1500 },
+    { id: 'ln4', text: 'The tables are set against you.' }
   ];
 
   let introSkipped = false;
