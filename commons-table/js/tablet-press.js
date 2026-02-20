@@ -33,16 +33,41 @@ const TabletPress = (() => {
       sessionCreated,
       intent,
       papers,
+      allFoundPapers,
+      selectedPMIDs,
+      searchQueries,
+      plainSummaries,
       claims,
       crossExam,
       provenance,
       nextSprint,
       briefMarkdown,
+      synthUserMessage,
       status
     } = opts;
 
+    function mapPaper(p, i) {
+      const summary = plainSummaries && plainSummaries[i] ? plainSummaries[i] : {};
+      return {
+        pmid: p.pmid,
+        doi: p.doi || null,
+        title: p.title,
+        authors: p.authors || [],
+        journal: p.journal || null,
+        year: p.year || null,
+        abstract: p.abstract || null,
+        plain_title: summary.plain_title || null,
+        plain_summary: summary.plain_summary || null,
+        selected: selectedPMIDs ? selectedPMIDs.has(p.pmid) : true,
+        role: p.role || null,
+        witness_line: p.witness_line || null,
+        disposition: p.disposition || null,
+        watch_outs: p.watch_outs || []
+      };
+    }
+
     return {
-      version: '1.0',
+      version: '2.0',
       title: title || 'Untitled Table Flip',
       session: {
         id: sessionId || uuid(),
@@ -56,19 +81,22 @@ const TabletPress = (() => {
         useful_by: intent?.useful_by || '',
         question_draft: intent?.question_draft || ''
       },
-      papers: (papers || []).map(p => ({
-        pmid: p.pmid,
-        doi: p.doi || null,
-        title: p.title,
-        authors: p.authors || [],
-        journal: p.journal || null,
-        year: p.year || null,
-        abstract: p.abstract || null,
-        role: p.role || null,
-        witness_line: p.witness_line || null,
-        disposition: p.disposition || null,
-        watch_outs: p.watch_outs || []
-      })),
+      search: {
+        queries: (searchQueries || []).map(q => ({
+          query: q.query,
+          strategy: q.strategy
+        })),
+        total_papers_found: allFoundPapers ? allFoundPapers.length : (papers || []).length,
+        papers_shown: (papers || []).length
+      },
+      papers: (allFoundPapers || papers || []).map((p, i) => mapPaper(p, i)),
+      prompts: {
+        search_system: typeof Synthesis !== 'undefined' ? Synthesis.SEARCH_SYSTEM : null,
+        summary_system: typeof Synthesis !== 'undefined' ? Synthesis.SUMMARY_SYSTEM : null,
+        synthesis_system: typeof Synthesis !== 'undefined' ? Synthesis.SYNTH_SYSTEM : null,
+        synthesis_user_message: synthUserMessage || null,
+        model: typeof Synthesis !== 'undefined' ? Synthesis.MODEL : null
+      },
       synthesis: {
         claims: (claims || []).map(c => ({
           text: c.text,

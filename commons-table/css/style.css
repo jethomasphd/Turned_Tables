@@ -368,12 +368,40 @@ header .subtitle {
 }
 .landing-section a:hover { border-color: var(--ember); }
 
+.landing-accent {
+  color: var(--ember) !important;
+  font-family: var(--voice);
+  font-size: 1.05rem;
+  font-style: italic;
+}
+
+.walls-list {
+  padding-left: 1.5rem;
+  margin: 0.5rem 0 0.75rem;
+}
+.walls-list li {
+  font-size: 0.95rem;
+  color: var(--bone);
+  line-height: 1.7;
+  margin-bottom: 0.25rem;
+}
+
 .landing-kicker {
   margin-top: 1rem;
+  font-family: var(--voice);
+  font-size: 1.1rem;
+  color: var(--ember) !important;
+  font-style: italic;
+  border-top: 1px solid var(--ash);
+  padding-top: 1rem;
+}
+
+.landing-kicker-sub {
   font-family: var(--voice);
   font-size: 1.05rem;
   color: var(--bone) !important;
   font-style: italic;
+  margin-top: 0.5rem;
 }
 
 /* ── Flow Diagram ── */
@@ -445,6 +473,15 @@ header .subtitle {
 }
 
 /* ── AI Comparison Grid ── */
+
+.compare-lead {
+  font-family: var(--body);
+  font-size: 0.95rem;
+  color: var(--bone-dim);
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+  max-width: 65ch;
+}
 
 .compare-grid {
   display: grid;
