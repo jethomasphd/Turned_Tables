@@ -1,8 +1,8 @@
 /**
  * App — Tables Turned
  *
- * Cinematic intro -> Ask question -> AI searches PubMed -> User curates ->
- * Claude synthesizes -> Beautiful brief with DOCX download.
+ * Cinematic intro -> Ask question -> AI searches PubMed -> AI translates papers ->
+ * User curates -> Claude synthesizes -> Beautiful brief with DOCX download.
  *
  * User journey: Confusion -> Awe -> Understanding -> Action
  */
@@ -14,14 +14,15 @@ const App = (() => {
     context: '',
     searchQueries: [],
     allFoundPapers: [],
+    plainSummaries: [],
     selectedPMIDs: new Set(),
     papers: [],
     briefMarkdown: null,
+    synthUserMessage: '',
     provenance: []
   };
 
   const KEY_STORE = 'tt_api_key';
-  const MODEL_STORE = 'tt_model';
 
   function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
   function $(id) { return document.getElementById(id); }
@@ -33,29 +34,30 @@ const App = (() => {
   }
 
   function getKey() { return ($('key') ? $('key').value : '') || localStorage.getItem(KEY_STORE) || ''; }
-  function getModel() { return ($('s-model') ? $('s-model').value : '') || localStorage.getItem(MODEL_STORE) || 'claude-sonnet-4-5-20250929'; }
 
   // ═══════════════════════════════════════════════════════════
   //  CINEMATIC INTRO
+  //  Timing matched to Companion Dossier: 50-90ms per char,
+  //  600-1200ms pauses, 1s act transitions
   // ═══════════════════════════════════════════════════════════
 
   const WOUND_LINES = [
     { id: 'w1', text: 'Every day, people make decisions about their health' },
     { id: 'w2', text: 'based on headlines, hearsay, and hope.' },
-    { pause: 800 },
+    { pause: 1000 },
     { id: 'w3', text: 'The research exists. It is public. It is free.' },
     { id: 'w4', text: 'But it sits behind jargon, buried in abstracts nobody reads.' },
-    { pause: 600 },
+    { pause: 800 },
     { id: 'w5', text: 'The table is set against you.' }
   ];
 
   const TURN_LINES = [
     { id: 't1', text: 'This tool reads the public record.' },
-    { pause: 600 },
+    { pause: 800 },
     { id: 't2', text: 'You bring the question. We search the research.' },
     { id: 't3', text: 'AI translates the abstracts into plain language' },
     { id: 't4', text: 'with every claim traced back to its source.' },
-    { pause: 600 },
+    { pause: 800 },
     { id: 't5', text: 'No jargon. No hand-waving. Receipts only.' }
   ];
 
@@ -68,7 +70,7 @@ const App = (() => {
     for (let i = 0; i < text.length; i++) {
       if (introSkipped) { el.textContent = text; el.classList.remove('typing'); return; }
       el.textContent += text[i];
-      await sleep(35 + Math.random() * 25);
+      await sleep(50 + Math.random() * 40);
     }
     el.classList.remove('typing');
   }
@@ -78,7 +80,7 @@ const App = (() => {
       if (introSkipped) { for (const l of lines) { if (l.id) $(l.id).textContent = l.text; } return; }
       if (line.pause) { await sleep(line.pause); continue; }
       await typeText($(line.id), line.text);
-      await sleep(250);
+      await sleep(400);
     }
   }
 
@@ -100,8 +102,8 @@ const App = (() => {
     introSkipped = true;
     const intro = $('intro');
     intro.style.opacity = '0';
-    intro.style.transition = 'opacity 0.6s ease';
-    setTimeout(() => { intro.style.display = 'none'; show($('app')); initApp(); }, 600);
+    intro.style.transition = 'opacity 0.8s ease';
+    setTimeout(() => { intro.style.display = 'none'; show($('app')); initApp(); }, 800);
   }
 
   function initIntro() {
@@ -122,37 +124,42 @@ const App = (() => {
   // ═══════════════════════════════════════════════════════════
 
   function initApp() {
-    // Restore saved settings
+    // Restore saved key
     const savedKey = localStorage.getItem(KEY_STORE) || '';
     if (savedKey) {
       if ($('key')) $('key').value = savedKey;
       if ($('s-key')) $('s-key').value = savedKey;
     }
-    const savedModel = localStorage.getItem(MODEL_STORE) || '';
-    if (savedModel && $('s-model')) $('s-model').value = savedModel;
 
     // Settings sync
     if ($('s-key')) $('s-key').addEventListener('change', (e) => { localStorage.setItem(KEY_STORE, e.target.value); if ($('key')) $('key').value = e.target.value; });
-    if ($('s-model')) $('s-model').addEventListener('change', (e) => { localStorage.setItem(MODEL_STORE, e.target.value); });
     if ($('key')) $('key').addEventListener('change', (e) => { localStorage.setItem(KEY_STORE, e.target.value); if ($('s-key')) $('s-key').value = e.target.value; });
 
-    // Explainer toggle
-    $('explainer-toggle').addEventListener('click', () => {
-      $('explainer').classList.toggle('open');
+    // About toggle
+    $('about-toggle').addEventListener('click', () => {
+      $('about-section').classList.toggle('open');
+      const body = $('about-body');
+      if ($('about-section').classList.contains('open')) {
+        show(body);
+        populatePromptDocs();
+      } else {
+        hide(body);
+      }
     });
 
-    // Docs toggle
-    $('docs-toggle').addEventListener('click', () => {
-      $('docs-section').classList.toggle('open');
-      const body = $('docs-body');
-      if ($('docs-section').classList.contains('open')) show(body);
-      else hide(body);
+    // Learn more link scrolls to About and opens it
+    $('learn-more-link').addEventListener('click', (e) => {
+      e.preventDefault();
+      $('about-section').classList.add('open');
+      show($('about-body'));
+      populatePromptDocs();
+      $('about-section').scrollIntoView({ behavior: 'smooth' });
     });
 
-    // Search button (AI-powered PubMed search)
+    // Search button
     $('search-btn').addEventListener('click', handleSearch);
 
-    // Manual entry button
+    // Manual entry
     $('manual-btn').addEventListener('click', handleManualEntry);
 
     // Curate actions
@@ -171,6 +178,19 @@ const App = (() => {
   }
 
   // ═══════════════════════════════════════════════════════════
+  //  POPULATE PROMPT DOCS
+  // ═══════════════════════════════════════════════════════════
+
+  function populatePromptDocs() {
+    const searchEl = $('doc-prompt-search');
+    const summaryEl = $('doc-prompt-summary');
+    const synthEl = $('doc-prompt-synth');
+    if (searchEl && !searchEl.textContent) searchEl.textContent = Synthesis.SEARCH_SYSTEM;
+    if (summaryEl && !summaryEl.textContent) summaryEl.textContent = Synthesis.SUMMARY_SYSTEM;
+    if (synthEl && !synthEl.textContent) synthEl.textContent = Synthesis.SYNTH_SYSTEM;
+  }
+
+  // ═══════════════════════════════════════════════════════════
   //  STEP 1: AI-POWERED PUBMED SEARCH
   // ═══════════════════════════════════════════════════════════
 
@@ -178,27 +198,27 @@ const App = (() => {
     const question = ($('q').value || '').trim();
     const context = ($('ctx').value || '').trim();
     const apiKey = getKey();
-    const model = getModel();
     const statusEl = $('search-status');
+    const depth = parseInt(($('s-depth') ? $('s-depth').value : '10'), 10);
+    const sort = ($('s-sort') ? $('s-sort').value : 'relevance');
 
     if (!question) { statusEl.textContent = 'Ask a question first.'; statusEl.className = 'error'; return; }
     if (!apiKey) { statusEl.textContent = 'Enter your Anthropic API key.'; statusEl.className = 'error'; return; }
 
     localStorage.setItem(KEY_STORE, apiKey);
-    localStorage.setItem(MODEL_STORE, model);
 
     state.question = question;
     state.context = context;
 
     $('search-btn').disabled = true;
-    statusEl.textContent = 'Generating search terms...';
+    statusEl.textContent = 'Sending your question to Claude Opus...';
     statusEl.className = '';
 
     logProv('search_started', question);
 
     try {
       // Phase 1: Ask Claude for search queries
-      const queries = await Synthesis.generateSearchQueries({ apiKey, model, question, context });
+      const queries = await Synthesis.generateSearchQueries({ apiKey, question, context });
       state.searchQueries = queries;
       logProv('search_queries_generated', queries.map(q => q.query).join(' | '));
 
@@ -212,16 +232,15 @@ const App = (() => {
       for (let i = 0; i < queries.length; i++) {
         statusEl.textContent = `Searching PubMed (${i + 1}/${queries.length}): ${queries[i].strategy}`;
         try {
-          const result = await Synthesis.searchPubMed(queries[i].query, 8);
-          logProv('pubmed_searched', `"${queries[i].query}" -> ${result.count} results, fetched ${result.pmids.length}`);
+          const result = await Synthesis.searchPubMed(queries[i].query, depth, sort);
+          logProv('pubmed_searched', `"${queries[i].query}" -> ${result.count} total, fetched ${result.pmids.length}`);
 
-          // Collect unique PMIDs
           const newPMIDs = result.pmids.filter(id => !allPMIDs.has(id));
           newPMIDs.forEach(id => allPMIDs.add(id));
 
           if (newPMIDs.length > 0) {
             await sleep(RATE_MS);
-            statusEl.textContent = `Fetching paper details...`;
+            statusEl.textContent = `Fetching paper details (${allPapers.length + newPMIDs.length} papers)...`;
             const papers = await Shoreline.ingest(newPMIDs.join('\n'));
             for (const p of papers.papers) {
               if (!allPapers.find(x => x.pmid === p.pmid)) {
@@ -245,11 +264,31 @@ const App = (() => {
 
       logProv('papers_found', allPapers.length + ' unique papers from ' + queries.length + ' queries');
 
+      // Phase 3: Generate plain-language summaries
+      statusEl.textContent = `Translating ${allPapers.length} papers into plain language...`;
+      let summaries = [];
+      try {
+        summaries = await Synthesis.generatePlainSummaries({ apiKey, papers: allPapers, question });
+        logProv('plain_summaries_generated', summaries.length + ' papers translated');
+      } catch (e) {
+        console.error('Plain summary generation failed:', e);
+        logProv('plain_summaries_failed', e.message);
+        summaries = allPapers.map(() => ({ plain_title: '', plain_summary: '' }));
+      }
+
       // Store and move to curate
       state.allFoundPapers = allPapers;
-      state.selectedPMIDs = new Set(allPapers.map(p => p.pmid)); // Select all by default
+      state.plainSummaries = summaries;
+      state.selectedPMIDs = new Set(allPapers.map(p => p.pmid));
+
+      // Populate search prompt display
+      const searchPromptEl = $('search-prompt-display');
+      if (searchPromptEl) {
+        searchPromptEl.textContent = Synthesis.SEARCH_SYSTEM + '\n\n---\n\nUser message:\nQuestion: ' + question + (context ? '\nDecision context: ' + context : '') + '\n\nGenerate PubMed search queries for this question.';
+      }
 
       displaySearchTerms(queries);
+      $('search-stats').textContent = `${allPapers.length} unique papers found across ${queries.length} search strategies, ${depth} results per query, sorted by ${sort === 'relevance' ? 'relevance' : 'date'}`;
       renderCurateList();
 
       hide($('input-view'));
@@ -298,11 +337,23 @@ const App = (() => {
       }
 
       logProv('papers_ingested', result.papers.length + ' papers');
+
+      // Generate plain-language summaries
+      statusEl.textContent = `Translating ${result.papers.length} papers into plain language...`;
+      let summaries = [];
+      try {
+        summaries = await Synthesis.generatePlainSummaries({ apiKey, papers: result.papers, question });
+      } catch (e) {
+        summaries = result.papers.map(() => ({ plain_title: '', plain_summary: '' }));
+      }
+
       state.allFoundPapers = result.papers;
+      state.plainSummaries = summaries;
       state.selectedPMIDs = new Set(result.papers.map(p => p.pmid));
       state.searchQueries = [{ query: '(user-provided links)', strategy: 'Direct entry' }];
 
       displaySearchTerms(state.searchQueries);
+      $('search-stats').textContent = `${result.papers.length} papers from direct entry`;
       renderCurateList();
 
       hide($('input-view'));
@@ -334,29 +385,57 @@ const App = (() => {
     const list = $('curate-list');
     list.innerHTML = '';
 
-    for (const p of state.allFoundPapers) {
+    for (let i = 0; i < state.allFoundPapers.length; i++) {
+      const p = state.allFoundPapers[i];
+      const summary = state.plainSummaries[i] || {};
       const selected = state.selectedPMIDs.has(p.pmid);
       const card = document.createElement('div');
       card.className = 'curate-card' + (selected ? ' selected' : '');
       card.dataset.pmid = p.pmid;
 
       const firstAuthor = p.authors && p.authors.length ? p.authors[0].split(' ')[0] : '';
-      const meta = [firstAuthor, p.journal, p.year].filter(Boolean).join(' · ');
-      const abstractSnip = p.abstract ? p.abstract.substring(0, 200) : 'No abstract available';
+      const meta = [firstAuthor, p.journal, p.year].filter(Boolean).join(' \u00B7 ');
+      const plainTitle = summary.plain_title || '';
+      const plainSummary = summary.plain_summary || '';
+      const abstractText = p.abstract || 'No abstract available.';
 
-      card.innerHTML = `
-        <div class="curate-check">${selected ? '\u2713' : ''}</div>
-        <div class="curate-info">
-          <div class="curate-title">${escapeHtml(p.title)}</div>
-          <div class="curate-meta">${escapeHtml(meta)}</div>
-          <div class="curate-abstract">${escapeHtml(abstractSnip)}</div>
-          <div class="curate-pmid">PMID: ${p.pmid}</div>
+      // Card top: checkbox + info (clickable to toggle selection)
+      const topHtml = `
+        <div class="curate-card-top" data-action="toggle">
+          <div class="curate-check">${selected ? '\u2713' : ''}</div>
+          <div class="curate-info">
+            ${plainTitle ? `<div class="curate-plain-title">${escapeHtml(plainTitle)}</div>` : ''}
+            ${plainSummary ? `<div class="curate-plain-summary">${escapeHtml(plainSummary)}</div>` : ''}
+            <div class="curate-technical-title">${escapeHtml(p.title)}</div>
+            <div class="curate-meta">${escapeHtml(meta)}</div>
+            <div class="curate-pmid">PMID: ${p.pmid}</div>
+          </div>
         </div>`;
 
-      card.addEventListener('click', () => {
+      // Expand button
+      const expandBtnHtml = `<button class="curate-expand-btn" data-action="expand">Show full abstract \u25BE</button>`;
+
+      // Expandable abstract
+      const expandHtml = `
+        <div class="curate-expand">
+          <div class="curate-abstract-full">${escapeHtml(abstractText)}</div>
+        </div>`;
+
+      card.innerHTML = topHtml + expandBtnHtml + expandHtml;
+
+      // Toggle selection on card-top click
+      card.querySelector('[data-action="toggle"]').addEventListener('click', () => {
         if (state.selectedPMIDs.has(p.pmid)) state.selectedPMIDs.delete(p.pmid);
         else state.selectedPMIDs.add(p.pmid);
         renderCurateList();
+      });
+
+      // Expand/collapse abstract
+      card.querySelector('[data-action="expand"]').addEventListener('click', (e) => {
+        e.stopPropagation();
+        card.classList.toggle('expanded');
+        const btn = card.querySelector('.curate-expand-btn');
+        btn.textContent = card.classList.contains('expanded') ? 'Hide abstract \u25B4' : 'Show full abstract \u25BE';
       });
 
       list.appendChild(card);
@@ -402,18 +481,30 @@ const App = (() => {
       procPapers.appendChild(div);
     }
 
+    // Populate synthesis prompt display
+    const userMsg = Synthesis.buildUserMessage(state.question, state.context, selected);
+    state.synthUserMessage = userMsg;
+    const synthPromptEl = $('synth-prompt-display');
+    if (synthPromptEl) {
+      synthPromptEl.textContent = 'SYSTEM PROMPT:\n' + Synthesis.SYNTH_SYSTEM + '\n\n---\n\nUSER MESSAGE:\n' + userMsg.substring(0, 3000) + (userMsg.length > 3000 ? '\n...(truncated for display)' : '');
+    }
+    // Also populate result prompt display
+    const resultPromptEl = $('result-prompt-display');
+    if (resultPromptEl) {
+      resultPromptEl.textContent = synthPromptEl.textContent;
+    }
+
     procStatus.textContent = selected.length + ' papers selected. Reading them now...';
     await sleep(600);
 
     streamOut.classList.add('visible');
-    procStatus.textContent = 'Generating your brief...';
+    procStatus.textContent = 'Generating your brief with Claude Opus...';
 
     const apiKey = getKey();
-    const model = getModel();
 
     try {
       await Synthesis.generate({
-        apiKey, model,
+        apiKey,
         question: state.question,
         context: state.context,
         papers: selected,
@@ -505,19 +596,16 @@ const App = (() => {
     let html = '';
     for (const entry of state.provenance) {
       const time = new Date(entry.timestamp).toLocaleTimeString();
-      html += `<div class="prov-entry"><span class="prov-time">${time}</span> <span class="prov-action">${escapeHtml(entry.action)}</span>${entry.detail ? ': ' + escapeHtml(entry.detail).substring(0, 120) : ''}</div>`;
+      html += `<div class="prov-entry"><span class="prov-time">${time}</span> <span class="prov-action">${escapeHtml(entry.action)}</span>${entry.detail ? ': ' + escapeHtml(entry.detail).substring(0, 140) : ''}</div>`;
     }
     log.innerHTML = html;
   }
 
   // ═══════════════════════════════════════════════════════════
   //  DOCX EXPORT
-  //  Generates a real .docx file from markdown using Open XML
   // ═══════════════════════════════════════════════════════════
 
   function downloadDocx(markdown) {
-    // Build a .docx using HTML-in-docx approach (Word can open HTML files saved as .doc)
-    // This gives us formatting without any external library.
     const htmlContent = markdownToDocxHtml(markdown);
 
     const docContent = `<!DOCTYPE html>
@@ -538,9 +626,9 @@ const App = (() => {
 <![endif]-->
 <style>
   @page { margin: 1in; }
-  body { font-family: Georgia, serif; font-size: 11pt; line-height: 1.6; color: #1a1a1a; }
-  h1 { font-size: 18pt; color: #8B6914; font-weight: normal; margin-bottom: 12pt; border-bottom: 1px solid #d4c5a9; padding-bottom: 6pt; }
-  h2 { font-size: 14pt; color: #1a1a1a; font-weight: normal; margin-top: 18pt; margin-bottom: 8pt; border-bottom: 1px solid #e0d8c8; padding-bottom: 4pt; }
+  body { font-family: 'Crimson Pro', Georgia, serif; font-size: 11pt; line-height: 1.7; color: #1a1a1a; }
+  h1 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 18pt; color: #8B6914; font-weight: normal; margin-bottom: 12pt; border-bottom: 1px solid #d4c5a9; padding-bottom: 6pt; }
+  h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 14pt; color: #1a1a1a; font-weight: 600; margin-top: 18pt; margin-bottom: 8pt; border-bottom: 1px solid #e0d8c8; padding-bottom: 4pt; }
   h3 { font-size: 12pt; color: #666; font-weight: normal; margin-top: 14pt; margin-bottom: 6pt; }
   p { margin-bottom: 8pt; }
   hr { border: none; border-top: 1px solid #d4c5a9; margin: 16pt 0; }
@@ -548,14 +636,14 @@ const App = (() => {
   li { margin-bottom: 4pt; }
   strong { color: #1a1a1a; }
   em { color: #666; }
-  .pmid { font-family: Courier New, monospace; font-size: 9pt; color: #8B6914; background: #FFF8E7; padding: 1px 3px; }
+  .pmid { font-family: 'IBM Plex Mono', Courier New, monospace; font-size: 9pt; color: #8B6914; background: #FFF8E7; padding: 1px 3px; }
   .unwitnessed { font-family: Arial, sans-serif; font-size: 8pt; color: #8B0000; background: #FFF0F0; padding: 1px 4px; text-transform: uppercase; }
   .footer { font-size: 9pt; color: #999; font-style: italic; margin-top: 24pt; padding-top: 8pt; border-top: 1px solid #e0d8c8; }
 </style>
 </head>
 <body>
 ${htmlContent}
-<div class="footer">Generated by Tables Turned &middot; ${new Date().toLocaleDateString()} &middot; Receipts only.</div>
+<div class="footer">Generated by Tables Turned &middot; ${new Date().toLocaleDateString()} &middot; Receipts only. &middot; The Word Against The Flood</div>
 </body>
 </html>`;
 
@@ -646,9 +734,11 @@ ${htmlContent}
     show($('input-view'));
     state.papers = [];
     state.allFoundPapers = [];
+    state.plainSummaries = [];
     state.selectedPMIDs = new Set();
     state.briefMarkdown = null;
     state.searchQueries = [];
+    state.synthUserMessage = '';
     state.provenance = [];
     $('search-status').textContent = '';
     $('search-status').className = '';
