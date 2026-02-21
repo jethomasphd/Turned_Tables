@@ -1,0 +1,10 @@
+name = "tables-turned-api"
+main = "src/index.js"
+compatibility_date = "2024-12-01"
+
+# The ANTHROPIC_API_KEY is stored as a secret, NOT here.
+# Run: npx wrangler secret put ANTHROPIC_API_KEY
+# Then paste your sk-ant-... key when prompted.
+
+[vars]
+ALLOWED_ORIGIN = "https://tables-turned.pages.dev"

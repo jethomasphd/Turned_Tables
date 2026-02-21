@@ -9,19 +9,19 @@
  */
 
 const Synthesis = (() => {
-  const API_URL = 'https://api.anthropic.com/v1/messages';
+  // Worker proxy URL — update this after deploying your Cloudflare Worker.
+  // For local development: 'http://localhost:8787'
+  // For production: 'https://tables-turned-api.<your-subdomain>.workers.dev'
+  const WORKER_URL = 'https://tables-turned-api.jet8747.workers.dev';
   const MODEL = 'claude-opus-4-6';
 
   // ── Shared API call (non-streaming) ──
 
-  async function callAPI(apiKey, system, userContent, maxTokens) {
-    const response = await fetch(API_URL, {
+  async function callAPI(system, userContent, maxTokens) {
+    const response = await fetch(WORKER_URL, {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json',
-        'x-api-key': apiKey,
-        'anthropic-version': '2023-06-01',
-        'anthropic-dangerous-direct-browser-access': 'true'
+        'Content-Type': 'application/json'
       },
       body: JSON.stringify({
         model: MODEL,
@@ -68,13 +68,13 @@ Example output:
 [{"query":"vitamin D supplementation respiratory infection children","strategy":"Broad search for vitamin D and respiratory infections in children"},{"query":"(vitamin D OR cholecalciferol) AND (respiratory tract infection OR RTI OR common cold) AND (child OR pediatric) AND (randomized controlled trial OR meta-analysis)","strategy":"Targeted search for high-quality trials on vitamin D and respiratory infections in kids"}]`;
 
   async function generateSearchQueries(opts) {
-    const { apiKey, question, context } = opts;
+    const { question, context } = opts;
 
     let prompt = `Question: ${question}`;
     if (context) prompt += `\nDecision context: ${context}`;
     prompt += '\n\nGenerate PubMed search queries for this question.';
 
-    const raw = await callAPI(apiKey, SEARCH_SYSTEM, prompt);
+    const raw = await callAPI(SEARCH_SYSTEM, prompt);
 
     let cleaned = raw.trim();
     if (cleaned.startsWith('```')) {
@@ -109,7 +109,7 @@ Each object has:
 - "plain_summary": One sentence explaining the key finding or purpose in everyday language`;
 
   async function generatePlainSummaries(opts) {
-    const { apiKey, papers, question } = opts;
+    const { papers, question } = opts;
 
     let prompt = `The user's question: "${question}"\n\nPapers to translate:\n\n`;
     for (let i = 0; i < papers.length; i++) {
@@ -122,7 +122,7 @@ Each object has:
     }
     prompt += 'Translate each paper into plain language.';
 
-    const raw = await callAPI(apiKey, SUMMARY_SYSTEM, prompt, 2048);
+    const raw = await callAPI(SUMMARY_SYSTEM, prompt, 2048);
 
     let cleaned = raw.trim();
     if (cleaned.startsWith('```')) {
@@ -253,17 +253,14 @@ Produce a markdown document with exactly these sections:
   }
 
   async function generate(opts) {
-    const { apiKey, question, context, papers, onChunk, onDone, onError } = opts;
+    const { question, context, papers, onChunk, onDone, onError } = opts;
     const userMessage = buildUserMessage(question, context, papers);
 
     try {
-      const response = await fetch(API_URL, {
+      const response = await fetch(WORKER_URL, {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
-          'x-api-key': apiKey,
-          'anthropic-version': '2023-06-01',
-          'anthropic-dangerous-direct-browser-access': 'true'
+          'Content-Type': 'application/json'
         },
         body: JSON.stringify({
           model: MODEL,
