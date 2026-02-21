@@ -121,7 +121,7 @@
 
     <!-- ═══ QUICK START ═══ -->
     <div id="input-view">
-      <div class="step-label">Quick start <span class="step-label-text">Three things. That&rsquo;s it.</span></div>
+      <div class="step-label">Quick start <span class="step-label-text">Two things. That&rsquo;s it.</span></div>
 
       <div class="field">
         <label for="q">1. What are you trying to figure out?</label>
@@ -134,12 +134,6 @@
           <span class="info-tip" data-tip="Your context shapes the brief. 'Buying supplements tomorrow' produces different emphasis than 'writing a school paper.' The AI uses this to focus on what matters to you.">?</span>
         </label>
         <input type="text" id="ctx" placeholder="e.g., Deciding whether to give my kid supplements before winter">
-      </div>
-
-      <div class="field" id="key-field">
-        <label for="key">3. Your Anthropic API Key</label>
-        <p class="hint">Yours. Stays in your browser. Only sent to Anthropic&rsquo;s API &mdash; we don&rsquo;t have servers. <a href="https://console.anthropic.com/settings/keys" target="_blank">Get one here.</a></p>
-        <input type="password" id="key" placeholder="sk-ant-...">
       </div>
 
       <!-- Search settings -->
@@ -367,7 +361,7 @@
           <p>Here is how Tables Turned works, step by step.</p>
 
           <h3>Step 1: You ask a question</h3>
-          <p>Type your question in plain English. Add your decision context &mdash; the reason you are asking. &ldquo;Should I give my kid melatonin?&rdquo; is different when the context is &ldquo;they can&rsquo;t sleep before school tomorrow&rdquo; versus &ldquo;building a long-term sleep routine.&rdquo; The context shapes which evidence matters most.</p>
+          <p>Type your question in plain English. Add your decision context &mdash; the reason you are asking. &ldquo;Should I give my kid melatonin?&rdquo; is different when the context is &ldquo;they can&rsquo;t sleep before school tomorrow&rdquo; versus &ldquo;building a long-term sleep routine.&rdquo; The context shapes which evidence matters most. No API key needed &mdash; just ask.</p>
 
           <h3>Step 2: AI translates your question into PubMed&rsquo;s language</h3>
           <p>Your question is sent to <strong>Claude</strong>, Anthropic&rsquo;s AI. It does not just pull keywords. It generates <strong>multiple search strategies</strong> using real medical terminology &mdash; MeSH headings, boolean operators, synonym expansions &mdash; the same language a medical librarian would use. These strategies range from broad (casting a wide net) to specific (targeting exact conditions and interventions).</p>
@@ -420,7 +414,7 @@
           <h3>Data source</h3>
           <p><strong>PubMed / NCBI E-utilities:</strong> All paper metadata and abstracts are fetched from the National Center for Biotechnology Information&rsquo;s public API. This is the same database used by researchers, doctors, and institutions worldwide. Free, public, no account required.</p>
           <h3>AI model</h3>
-          <p><strong>Claude by Anthropic:</strong> All AI interactions use Claude, Anthropic&rsquo;s most capable model. You provide your own API key, which means your data is sent directly from your browser to Anthropic&rsquo;s servers. Nothing passes through our servers because we do not have servers. This is a static website.</p>
+          <p><strong>Claude by Anthropic:</strong> All AI interactions use Claude, Anthropic&rsquo;s most capable model. Your requests are routed through a minimal Cloudflare Worker proxy that holds the API key &mdash; your browser never sees or stores it. The worker adds the key and forwards your request to Anthropic. No data is logged or stored on the worker.</p>
 
           <h3>How papers are selected</h3>
           <p>When you search, AI generates 3&ndash;4 independent search strategies &mdash; each targeting your question from a different angle (broad terms, specific MeSH headings, study types). Each strategy queries PubMed separately. The results are then scored and ranked:</p>
@@ -432,7 +426,7 @@
           <p>This method favors papers that are <strong>independently identified by multiple approaches</strong> AND <strong>highly ranked by PubMed&rsquo;s own relevance engine</strong>. It is fully transparent: scores and matched strategies are recorded in the Tablet export.</p>
 
           <h3>Privacy</h3>
-          <p>Your API key is stored in your browser&rsquo;s localStorage. It is never sent anywhere except to Anthropic&rsquo;s API. Your questions, papers, and briefs exist only in your browser. When you close the tab, they are gone unless you downloaded them. No tracking. No analytics. No database.</p>
+          <p>No API key is needed &mdash; the key is held securely on a Cloudflare Worker and never exposed to your browser. Your questions and papers pass through the worker only to reach Anthropic&rsquo;s API; nothing is logged or stored. Your briefs exist only in your browser. When you close the tab, they are gone unless you downloaded them. No tracking. No analytics. No database.</p>
         </div>
 
         <!-- Chapter 7: The Lineage -->
@@ -449,17 +443,6 @@
 
       </div>
     </div>
-
-    <!-- ═══ SETTINGS ═══ -->
-    <details id="settings">
-      <summary>Settings</summary>
-      <div class="settings-inner">
-        <div class="field">
-          <label for="s-key">API Key</label>
-          <input type="password" id="s-key">
-        </div>
-      </div>
-    </details>
 
     <!-- ═══ FOOTER ═══ -->
     <footer id="site-footer">

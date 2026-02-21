@@ -22,8 +22,6 @@ const App = (() => {
     provenance: []
   };
 
-  const KEY_STORE = 'tt_api_key';
-
   function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
   function $(id) { return document.getElementById(id); }
   function show(el) { if (el) el.classList.remove('hidden'); }
@@ -32,8 +30,6 @@ const App = (() => {
   function logProv(action, detail) {
     state.provenance.push({ timestamp: new Date().toISOString(), action, detail: detail || null });
   }
-
-  function getKey() { return ($('key') ? $('key').value : '') || localStorage.getItem(KEY_STORE) || ''; }
 
   function setPhase(n) {
     for (let i = 1; i <= 4; i++) {
@@ -147,17 +143,6 @@ const App = (() => {
   // ═══════════════════════════════════════════════════════════
 
   function initApp() {
-    // Restore saved key
-    const savedKey = localStorage.getItem(KEY_STORE) || '';
-    if (savedKey) {
-      if ($('key')) $('key').value = savedKey;
-      if ($('s-key')) $('s-key').value = savedKey;
-    }
-
-    // Settings sync
-    if ($('s-key')) $('s-key').addEventListener('change', (e) => { localStorage.setItem(KEY_STORE, e.target.value); if ($('key')) $('key').value = e.target.value; });
-    if ($('key')) $('key').addEventListener('change', (e) => { localStorage.setItem(KEY_STORE, e.target.value); if ($('s-key')) $('s-key').value = e.target.value; });
-
     // Scroll reveal system (matches Companion Dossier)
     const revealObserver = new IntersectionObserver((entries) => {
       for (const entry of entries) {
@@ -233,15 +218,11 @@ const App = (() => {
   async function handleSearch() {
     const question = ($('q').value || '').trim();
     const context = ($('ctx').value || '').trim();
-    const apiKey = getKey();
     const statusEl = $('search-status');
     const depth = parseInt(($('s-depth') ? $('s-depth').value : '10'), 10);
     const sort = ($('s-sort') ? $('s-sort').value : 'relevance');
 
     if (!question) { statusEl.textContent = 'Ask a question first.'; statusEl.className = 'error'; return; }
-    if (!apiKey) { statusEl.textContent = 'Enter your Anthropic API key.'; statusEl.className = 'error'; return; }
-
-    localStorage.setItem(KEY_STORE, apiKey);
 
     state.question = question;
     state.context = context;
@@ -259,7 +240,7 @@ const App = (() => {
 
     try {
       // Phase 1: Translate question into search queries
-      const queries = await Synthesis.generateSearchQueries({ apiKey, question, context });
+      const queries = await Synthesis.generateSearchQueries({ question, context });
       state.searchQueries = queries;
       logProv('search_queries_generated', queries.map(q => q.query).join(' | '));
 
@@ -348,7 +329,7 @@ const App = (() => {
         `Translating ${cappedPapers.length} papers`;
       let summaries = [];
       try {
-        summaries = await Synthesis.generatePlainSummaries({ apiKey, papers: cappedPapers, question });
+        summaries = await Synthesis.generatePlainSummaries({ papers: cappedPapers, question });
         logProv('plain_summaries_generated', summaries.length + ' papers translated');
       } catch (e) {
         console.error('Plain summary generation failed:', e);
@@ -400,14 +381,10 @@ const App = (() => {
     const linksText = ($('links').value || '').trim();
     const question = ($('q').value || '').trim();
     const context = ($('ctx').value || '').trim();
-    const apiKey = getKey();
     const statusEl = $('search-status');
 
     if (!question) { statusEl.textContent = 'Ask a question first.'; statusEl.className = 'error'; return; }
     if (!linksText) { statusEl.textContent = 'Paste at least one PubMed link.'; statusEl.className = 'error'; return; }
-    if (!apiKey) { statusEl.textContent = 'Enter your Anthropic API key.'; statusEl.className = 'error'; return; }
-
-    localStorage.setItem(KEY_STORE, apiKey);
     state.question = question;
     state.context = context;
 
@@ -431,7 +408,7 @@ const App = (() => {
       statusEl.textContent = `Translating ${result.papers.length} papers into plain language...`;
       let summaries = [];
       try {
-        summaries = await Synthesis.generatePlainSummaries({ apiKey, papers: result.papers, question });
+        summaries = await Synthesis.generatePlainSummaries({ papers: result.papers, question });
       } catch (e) {
         summaries = result.papers.map(() => ({ plain_title: '', plain_summary: '' }));
       }
@@ -595,11 +572,8 @@ const App = (() => {
     streamOut.classList.add('visible');
     procStatus.textContent = 'Generating your brief with Claude Opus...';
 
-    const apiKey = getKey();
-
     try {
       await Synthesis.generate({
-        apiKey,
         question: state.question,
         context: state.context,
         papers: selected,
