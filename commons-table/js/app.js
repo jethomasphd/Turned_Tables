@@ -268,7 +268,9 @@ const App = (() => {
         `${queries.length} strategies across 37 million papers`;
 
       // Phase 2: Execute each query against PubMed
-      const allPMIDs = new Set();
+      // Track scoring: papers found by multiple strategies rank higher,
+      // plus positional weight from PubMed's relevance ordering.
+      const paperScores = {}; // pmid -> { overlap: N, positionPts: N, strategies: [] }
       const allPapers = [];
       const RATE_MS = 350;
       const MAX_PAPERS = 12;
@@ -280,8 +282,21 @@ const App = (() => {
           const result = await Synthesis.searchPubMed(queries[i].query, depth, sort);
           logProv('pubmed_searched', `"${queries[i].query}" -> ${result.count} total, fetched ${result.pmids.length}`);
 
+          // Score each PMID by position and overlap
+          for (let pos = 0; pos < result.pmids.length; pos++) {
+            const pmid = result.pmids[pos];
+            if (!paperScores[pmid]) {
+              paperScores[pmid] = { overlap: 0, positionPts: 0, strategies: [] };
+            }
+            paperScores[pmid].overlap += 1;
+            // Position weight: top 5 get 5/4/3/2/1 pts, rest get 1
+            paperScores[pmid].positionPts += Math.max(1, 6 - Math.min(pos + 1, 5));
+            paperScores[pmid].strategies.push(queries[i].strategy);
+          }
+
+          // Fetch any new papers
+          const allPMIDs = new Set(allPapers.map(p => p.pmid));
           const newPMIDs = result.pmids.filter(id => !allPMIDs.has(id));
-          newPMIDs.forEach(id => allPMIDs.add(id));
 
           if (newPMIDs.length > 0) {
             await sleep(RATE_MS);
@@ -312,9 +327,20 @@ const App = (() => {
         return;
       }
 
-      // Cap at top papers by relevance (PubMed returns most relevant first)
+      // Rank papers by composite score (overlap * 3 + position points)
+      // Papers found by multiple strategies are strongly favored.
+      for (const p of allPapers) {
+        const s = paperScores[p.pmid] || { overlap: 1, positionPts: 1, strategies: [] };
+        p._score = (s.overlap * 3) + s.positionPts;
+        p._overlap = s.overlap;
+        p._strategies = s.strategies;
+      }
+      allPapers.sort((a, b) => b._score - a._score);
+
       const cappedPapers = allPapers.slice(0, MAX_PAPERS);
-      logProv('papers_found', `${allPapers.length} unique papers from ${queries.length} queries, showing top ${cappedPapers.length}`);
+      const topScore = cappedPapers[0]?._score || 0;
+      const bottomScore = cappedPapers[cappedPapers.length - 1]?._score || 0;
+      logProv('papers_ranked', `${allPapers.length} papers scored. Top ${cappedPapers.length} selected (scores ${topScore}-${bottomScore}). Method: cross-strategy overlap (x3) + PubMed position weight.`);
 
       // Phase 4: Generate plain-language summaries
       setPhase(4);
@@ -347,7 +373,10 @@ const App = (() => {
       const evoQ = $('evolution-question');
       if (evoQ) evoQ.textContent = '"' + question + '"' + (context ? ' \u2014 ' + context : '');
       displaySearchTerms(queries);
-      $('search-stats').textContent = `PubMed returned ${allPapers.length} papers. Showing the top ${cappedPapers.length} by ${sort === 'relevance' ? 'relevance' : 'recency'}.`;
+      const multiHits = cappedPapers.filter(p => p._overlap > 1).length;
+      let statsText = `PubMed returned ${allPapers.length} papers across ${queries.length} strategies. Showing the top ${cappedPapers.length}, ranked by cross-strategy overlap and PubMed relevance.`;
+      if (multiHits > 0) statsText += ` ${multiHits} papers appeared in multiple search strategies.`;
+      $('search-stats').textContent = statsText;
       renderCurateList();
 
       hide($('landing-wrap'));
@@ -463,11 +492,14 @@ const App = (() => {
 
       // Card top: checkbox + info (clickable to toggle selection)
       const displayTitle = plainTitle || p.title;
+      const overlapBadge = p._overlap > 1
+        ? `<span class="curate-overlap" title="Found in ${p._overlap} of ${state.searchQueries.length} search strategies">${p._overlap}/${state.searchQueries.length} strategies</span>`
+        : '';
       const topHtml = `
         <div class="curate-card-top" data-action="toggle">
           <div class="curate-check">${selected ? '\u2713' : ''}</div>
           <div class="curate-info">
-            <div class="curate-plain-title">${escapeHtml(displayTitle)}</div>
+            <div class="curate-plain-title">${escapeHtml(displayTitle)}${overlapBadge}</div>
             ${plainSummary ? `<div class="curate-plain-summary">${escapeHtml(plainSummary)}</div>` : ''}
             ${plainTitle ? `<div class="curate-technical-title">${escapeHtml(p.title)}</div>` : ''}
             <div class="curate-meta">${escapeHtml(meta)}</div>

@@ -59,6 +59,12 @@ const TabletPress = (() => {
         plain_title: summary.plain_title || null,
         plain_summary: summary.plain_summary || null,
         selected: selectedPMIDs ? selectedPMIDs.has(p.pmid) : true,
+        ranking: {
+          score: p._score || null,
+          overlap: p._overlap || null,
+          strategies_matched: p._strategies || [],
+          method: 'cross-strategy overlap (x3) + PubMed position weight'
+        },
         role: p.role || null,
         witness_line: p.witness_line || null,
         disposition: p.disposition || null,
