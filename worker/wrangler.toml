@@ -7,4 +7,4 @@ compatibility_date = "2024-12-01"
 # Then paste your sk-ant-... key when prompted.
 
 [vars]
-ALLOWED_ORIGIN = "https://tables-turned.pages.dev"
+ALLOWED_ORIGIN = "https://turned-tables.pages.dev"
