@@ -12,7 +12,7 @@ const Synthesis = (() => {
   // Worker proxy URL — update this after deploying your Cloudflare Worker.
   // For local development: 'http://localhost:8787'
   // For production: 'https://tables-turned-api.<your-subdomain>.workers.dev'
-  const WORKER_URL = 'https://tables-turned-api.jet8747.workers.dev';
+  const WORKER_URL = 'https://tables-turned-api.jethomasphd.workers.dev';
   const MODEL = 'claude-opus-4-6';
 
   // ── Shared API call (non-streaming) ──
