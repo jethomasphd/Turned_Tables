@@ -79,13 +79,11 @@ const TabletPress = (() => {
         id: sessionId || uuid(),
         created: sessionCreated || new Date().toISOString(),
         sealed: status === 'sealed' ? new Date().toISOString() : null,
-        status: status || 'sealed',
-        timebox_minutes: intent?.timebox || 30
+        status: status || 'sealed'
       },
       intent: {
-        decision_context: intent?.decision_context || '',
-        useful_by: intent?.useful_by || '',
-        question_draft: intent?.question_draft || ''
+        question: intent?.question_draft || '',
+        decision_context: intent?.decision_context || ''
       },
       search: {
         queries: (searchQueries || []).map(q => ({
@@ -104,21 +102,9 @@ const TabletPress = (() => {
         model: typeof Synthesis !== 'undefined' ? Synthesis.MODEL : null
       },
       synthesis: {
-        claims: (claims || []).map(c => ({
-          text: c.text,
-          receipts: c.receipts || [],
-          status: c.status || 'unwitnessed'
-        })),
-        brief_markdown: briefMarkdown || null,
-        cross_examination: {
-          change_your_mind: crossExam?.change_your_mind || null,
-          rival_explanation: crossExam?.rival_explanation || null,
-          confidence: crossExam?.confidence || null,
-          confidence_justification: crossExam?.confidence_justification || null
-        }
+        brief_markdown: briefMarkdown || null
       },
-      provenance: provenance || [],
-      next_sprint: nextSprint || []
+      provenance: provenance || []
     };
   }
 
@@ -251,7 +237,7 @@ const TabletPress = (() => {
       reader.onload = (e) => {
         try {
           const tablet = JSON.parse(e.target.result);
-          if (tablet.version !== '1.0') {
+          if (tablet.version !== '2.0') {
             reject(new Error(`Unknown Tablet version: ${tablet.version}`));
             return;
           }
