@@ -1143,6 +1143,16 @@ select { font-family: var(--mono); font-size: 0.82rem; cursor: pointer; }
   margin-top: 0.3rem;
   letter-spacing: 0.05em;
 }
+.curate-pmid a {
+  color: var(--ember-dim);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(139, 115, 85, 0.3);
+  transition: color 0.2s, border-color 0.2s;
+}
+.curate-pmid a:hover {
+  color: var(--ember);
+  border-bottom-color: var(--ember);
+}
 
 .curate-overlap {
   display: inline-block;
@@ -1234,6 +1244,13 @@ select { font-family: var(--mono); font-size: 0.82rem; cursor: pointer; }
   color: var(--ember);
   background: rgba(201, 162, 39, 0.08);
   padding: 1px 5px;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(201, 162, 39, 0.3);
+  transition: background 0.2s, border-color 0.2s;
+}
+.brief-box .pmid:hover {
+  background: rgba(201, 162, 39, 0.15);
+  border-bottom-color: var(--ember);
 }
 .brief-box .tag-unwitnessed {
   font-family: var(--mono); font-size: 0.55rem; font-weight: 500;

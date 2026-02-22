@@ -33,12 +33,12 @@ const App = (() => {
 
   // ── Educational Scaffolding (main page) ──
   const EDU_MESSAGES = [
-    'Google AI Overviews summarizes blogs, forums, and ads \u2014 weighted the same as peer-reviewed research. This searches the actual U.S. medical database.',
-    'ChatGPT fabricates citations \u2014 invented authors, fake titles, delivered with confidence. Here, every paper is real and every PMID is clickable.',
-    'Other tools give you answers. This gives you evidence \u2014 and lets you decide which papers matter.',
-    'Every claim in your brief will link to a real PubMed paper you can verify in 3 seconds.',
-    'Your taxes funded this research. The abstracts are public. AI just broke the jargon barrier for you.',
-    'Unlike a search engine, this tool shows you exactly which search terms the AI used \u2014 and lets you see every prompt.'
+    'Google AI Overviews weighs wellness blogs the same as peer-reviewed research. This searches the actual U.S. medical database.',
+    'ChatGPT invents citations. Fake authors, fake titles, real confidence. Here, every paper is real and every PMID links to PubMed.',
+    'Other tools give you answers. This gives you evidence.',
+    'Every claim in your brief cites a real paper you can verify in seconds.',
+    'Your taxes funded this research. AI just broke the jargon barrier.',
+    'Every search term, every prompt, every source. Nothing hidden.'
   ];
   let eduInterval = null;
   let eduIdx = 0;
@@ -55,7 +55,7 @@ const App = (() => {
         msgEl.textContent = EDU_MESSAGES[eduIdx];
         msgEl.style.opacity = '1';
       }, 400);
-    }, 5000);
+    }, 9000);
   }
 
   function stopEduScaffold() {
@@ -541,7 +541,7 @@ const App = (() => {
             ${plainSummary ? `<div class="curate-plain-summary">${escapeHtml(plainSummary)}</div>` : ''}
             ${plainTitle ? `<div class="curate-technical-title">${escapeHtml(p.title)}</div>` : ''}
             <div class="curate-meta">${escapeHtml(meta)}</div>
-            <div class="curate-pmid">PMID: ${p.pmid}</div>
+            <div class="curate-pmid"><a href="https://pubmed.ncbi.nlm.nih.gov/${p.pmid}/" target="_blank" rel="noopener">PMID: ${p.pmid}</a></div>
           </div>
         </div>`;
 
@@ -555,6 +555,10 @@ const App = (() => {
         </div>`;
 
       card.innerHTML = topHtml + expandBtnHtml + expandHtml;
+
+      // Prevent PMID links from triggering card toggle
+      const pmidLink = card.querySelector('.curate-pmid a');
+      if (pmidLink) pmidLink.addEventListener('click', (e) => e.stopPropagation());
 
       // Toggle selection on card-top click
       card.querySelector('[data-action="toggle"]').addEventListener('click', () => {
@@ -711,7 +715,7 @@ const App = (() => {
       return text
         .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
         .replace(/\*(.+?)\*/g, '<em>$1</em>')
-        .replace(/\[PMID:\s*(\d+)\]/g, '<span class="pmid">[PMID: $1]</span>')
+        .replace(/\[PMID:\s*(\d+)\]/g, '<a href="https://pubmed.ncbi.nlm.nih.gov/$1/" target="_blank" rel="noopener" class="pmid">[PMID: $1]</a>')
         .replace(/\[UNWITNESSED\]/g, '<span class="tag-unwitnessed">[UNWITNESSED]</span>')
         .replace(/\[CONTESTED\]/g, '<span class="tag-contested">[CONTESTED]</span>')
         .replace(/`(.+?)`/g, '<code>$1</code>');
@@ -759,20 +763,20 @@ const App = (() => {
 </xml>
 <![endif]-->
 <style>
-  @page { margin: 1in; }
-  body { font-family: 'Crimson Pro', Georgia, serif; font-size: 11pt; line-height: 1.7; color: #1a1a1a; }
-  h1 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 18pt; color: #8B6914; font-weight: normal; margin-bottom: 12pt; border-bottom: 1px solid #d4c5a9; padding-bottom: 6pt; }
-  h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 14pt; color: #1a1a1a; font-weight: 600; margin-top: 18pt; margin-bottom: 8pt; border-bottom: 1px solid #e0d8c8; padding-bottom: 4pt; }
-  h3 { font-size: 12pt; color: #666; font-weight: normal; margin-top: 14pt; margin-bottom: 6pt; }
-  p { margin-bottom: 8pt; }
-  hr { border: none; border-top: 1px solid #d4c5a9; margin: 16pt 0; }
-  ul, ol { margin-bottom: 8pt; margin-left: 20pt; }
-  li { margin-bottom: 4pt; }
+  @page { margin: 0.6in 0.7in; }
+  body { font-family: 'Crimson Pro', Georgia, serif; font-size: 10pt; line-height: 1.4; color: #1a1a1a; }
+  h1 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 14pt; color: #8B6914; font-weight: normal; margin-bottom: 6pt; border-bottom: 1px solid #d4c5a9; padding-bottom: 4pt; }
+  h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 11pt; color: #1a1a1a; font-weight: 600; margin-top: 10pt; margin-bottom: 4pt; border-bottom: 1px solid #e0d8c8; padding-bottom: 2pt; }
+  h3 { font-size: 10pt; color: #666; font-weight: normal; margin-top: 8pt; margin-bottom: 3pt; }
+  p { margin-bottom: 4pt; }
+  hr { border: none; border-top: 1px solid #d4c5a9; margin: 8pt 0; }
+  ul, ol { margin-bottom: 4pt; margin-left: 16pt; }
+  li { margin-bottom: 2pt; }
   strong { color: #1a1a1a; }
   em { color: #666; }
-  .pmid { font-family: 'IBM Plex Mono', Courier New, monospace; font-size: 9pt; color: #8B6914; background: #FFF8E7; padding: 1px 3px; }
-  .unwitnessed { font-family: Arial, sans-serif; font-size: 8pt; color: #8B0000; background: #FFF0F0; padding: 1px 4px; text-transform: uppercase; }
-  .footer { font-size: 9pt; color: #999; font-style: italic; margin-top: 24pt; padding-top: 8pt; border-top: 1px solid #e0d8c8; }
+  a.pmid { font-family: 'IBM Plex Mono', Courier New, monospace; font-size: 8pt; color: #8B6914; background: #FFF8E7; padding: 1px 3px; text-decoration: none; }
+  .unwitnessed { font-family: Arial, sans-serif; font-size: 7pt; color: #8B0000; background: #FFF0F0; padding: 1px 4px; text-transform: uppercase; }
+  .footer { font-size: 8pt; color: #999; font-style: italic; margin-top: 10pt; padding-top: 4pt; border-top: 1px solid #e0d8c8; }
 </style>
 </head>
 <body>
@@ -828,7 +832,7 @@ ${htmlContent}
       return text
         .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
         .replace(/\*(.+?)\*/g, '<em>$1</em>')
-        .replace(/\[PMID:\s*(\d+)\]/g, '<span class="pmid">[PMID: $1]</span>')
+        .replace(/\[PMID:\s*(\d+)\]/g, '<a href="https://pubmed.ncbi.nlm.nih.gov/$1/" class="pmid">[PMID: $1]</a>')
         .replace(/\[UNWITNESSED\]/g, '<span class="unwitnessed">[UNWITNESSED]</span>')
         .replace(/`(.+?)`/g, '<code>$1</code>');
     }
