@@ -1,8 +1,8 @@
 # Tables Turned
 
-**Read what you paid for.**
+**Your taxes paid for 37 million medical papers. They keep you out.**
 
-Search 37 million medical research papers in plain English. AI translates the jargon, you curate the evidence, every claim cites its source. The public record, returned to the public.
+Search the U.S. medical database in plain English. AI translates the jargon, you curate the evidence, every claim cites its source. The public record, returned to the public.
 
 ---
 
@@ -35,17 +35,177 @@ plain English       PubMed (37M          which papers        the abstracts      
 
 ---
 
-## Paper Selection Algorithm
+## Architecture
 
-When multiple search strategies return overlapping results, that overlap is signal. Papers found independently by multiple approaches are more likely to be central to your question.
+```
+  ╔══════════════════════════════════════════════════════════════════════════════════════╗
+  ║                          T A B L E S   T U R N E D                                 ║
+  ║                    Information Flow & Technical Architecture                        ║
+  ╚══════════════════════════════════════════════════════════════════════════════════════╝
 
-**Scoring method:**
-- **Cross-strategy overlap: +3 points per strategy** that returned the paper
-- **PubMed position weight: +1-5 points** based on rank within each strategy's results (top result = 5 pts, 5th = 1 pt)
-- **Composite score** = (overlap × 3) + position points
-- **Top 12** by composite score are shown
 
-Papers appearing in multiple strategies display a badge (e.g., "3/4 strategies"). Scores and matched strategies are recorded in the Tablet export for full transparency.
+       ┌─────────────────┐
+       │   YOU            │    "Is Ozempic safe?"
+       │   plain English  │    + optional decision context
+       └────────┬────────┘
+                │
+                ▼
+  ┌──────────────────────────┐       ┌──────────────────────────────────┐
+  │  ◎  CLAUDE               │       │  Cloudflare Worker Proxy         │
+  │     Search Query Engine   │──────▶│  tables-turned-api.workers.dev   │
+  │                          │       │  (API key secured, CORS, logs)   │
+  │  System prompt instructs │       └──────────────────────────────────┘
+  │  3-4 queries: broad →    │
+  │  specific, MeSH terms,   │
+  │  boolean operators       │
+  └──────────┬───────────────┘
+             │
+             │  e.g.  "ozempic OR semaglutide AND adverse effects"
+             │        "(GLP-1 receptor agonist) AND safety AND RCT"
+             │        "semaglutide AND (side effects OR cardiovascular)"
+             ▼
+  ┌──────────────────────────────────────────────────────────────────┐
+  │                                                                  │
+  │   ╔═══════════════════════════════════════════════════════╗      │
+  │   ║  NCBI / PubMed  ·  U.S. National Library of Medicine ║      │
+  │   ║  37,000,000+ peer-reviewed medical papers             ║      │
+  │   ╚═══════════════════════════════════════════════════════╝      │
+  │                                                                  │
+  │   eutils.ncbi.nlm.nih.gov                                       │
+  │   ├── esearch.fcgi  →  find PMIDs matching each query            │
+  │   └── efetch.fcgi   →  retrieve titles, authors, abstracts       │
+  │                                                                  │
+  └──────────┬───────────────────────────────────────────────────────┘
+             │
+             │  Papers returned per strategy
+             ▼
+  ┌──────────────────────────────────────────────────────────────────┐
+  │  CROSS-STRATEGY SCORING                                          │
+  │                                                                  │
+  │   score = (overlap × 3) + positionPts                            │
+  │                                                                  │
+  │   overlap     = how many queries returned this same paper        │
+  │   positionPts = PubMed relevance weight (top 5 → 5/4/3/2/1 pts) │
+  │                                                                  │
+  │   Papers found by multiple strategies rank highest.              │
+  │   Cap: top 12 papers.                                            │
+  └──────────┬───────────────────────────────────────────────────────┘
+             │
+             ▼
+  ┌──────────────────────────┐
+  │  ◎  CLAUDE               │
+  │     Plain-Language        │    Each paper gets:
+  │     Translator            │    · plain_title   (no jargon)
+  │                          │    · plain_summary  (one sentence)
+  │  Abstracts truncated to  │
+  │  600 chars per paper     │
+  └──────────┬───────────────┘
+             │
+             ▼
+  ┌──────────────────────────────────────────────────────────────────┐
+  │                                                                  │
+  │   ✓  YOU CURATE                                                  │
+  │                                                                  │
+  │   ┌──────────────────────────────────────────┐                   │
+  │   │ [✓] Can semaglutide cause pancreatitis?  │  ← plain title   │
+  │   │     One study found elevated risk in...  │  ← plain summary │
+  │   │     ─────────────────────────────────    │                   │
+  │   │     Semaglutide-Associated Pancreatic... │  ← original      │
+  │   │     Smith · NEJM · 2023                  │  ← metadata      │
+  │   │     PMID: 37291836  [click to verify]    │  ← real link     │
+  │   │     ▸ Show full abstract                 │                   │
+  │   │     ░░░░░ 3/4 strategies                 │  ← overlap badge │
+  │   └──────────────────────────────────────────┘                   │
+  │   ┌──────────────────────────────────────────┐                   │
+  │   │ [✓] ...                                  │                   │
+  │   └──────────────────────────────────────────┘                   │
+  │   ┌──────────────────────────────────────────┐                   │
+  │   │ [ ] (deselected — doesn't go to brief)   │                   │
+  │   └──────────────────────────────────────────┘                   │
+  │                                                                  │
+  │   "8 of 12 selected"          [Select All] [Select None]         │
+  │                                                                  │
+  └──────────┬───────────────────────────────────────────────────────┘
+             │
+             │  Only selected papers
+             ▼
+  ┌──────────────────────────┐
+  │  ◎  CLAUDE               │     STREAMING synthesis
+  │     Synthesis Engine      │
+  │                          │     Rules enforced:
+  │  Model: claude-opus-4-6  │     · Every claim cites [PMID: XXXXX]
+  │  Max tokens: 1500        │     · Or marked [UNWITNESSED]
+  │                          │     · Surface contradictions
+  │  Full abstracts sent     │     · No jargon, no patronizing
+  │  (not truncated)         │     · State confidence: Low/Med/High
+  └──────────┬───────────────┘
+             │
+             ▼
+  ┌──────────────────────────────────────────────────────────────────┐
+  │                                                                  │
+  │   💡  YOUR BRIEF                                                 │
+  │                                                                  │
+  │   # Is Ozempic Safe?                                             │
+  │   **Question:** ... · **Context:** ...                           │
+  │                                                                  │
+  │   ## The short answer                                            │
+  │   Semaglutide appears effective for weight loss with             │
+  │   manageable side effects [PMID: 37291836], though...            │
+  │                                                                  │
+  │   ## Key findings                                                │
+  │   · Nausea reported in 44% of participants [PMID: 35441470]     │
+  │   · Cardiovascular benefit observed in SELECT trial              │
+  │     [PMID: 37385644]                                             │
+  │   · Thyroid C-cell concerns in animal models [UNWITNESSED        │
+  │     in human trials]                                             │
+  │                                                                  │
+  │   ## What is unknown                                             │
+  │   · Long-term effects beyond 2 years                             │
+  │   · Impact after discontinuation                                 │
+  │                                                                  │
+  │   ## Confidence: Medium                                          │
+  │                                                                  │
+  └──────────┬───────────────────────────────────────────────────────┘
+             │
+             ▼
+  ┌──────────────────────────────────────────────────────────────────┐
+  │  PROVENANCE LOG  (audit trail of every decision)                 │
+  │                                                                  │
+  │  14:32:01  search_started      "Is Ozempic safe?"               │
+  │  14:32:03  queries_generated   ozempic OR semaglutide AND...    │
+  │  14:32:05  pubmed_searched     "ozempic..." → 847 total         │
+  │  14:32:08  papers_ranked       42 scored. Top 12 selected.      │
+  │  14:32:12  summaries_generated 12 papers translated             │
+  │  14:32:45  papers_selected     8 of 12 selected                 │
+  │  14:33:02  synthesis_generated 1247 chars from 8 papers         │
+  └──────────┬───────────────────────────────────────────────────────┘
+             │
+             ▼
+  ┌──────────────────────────────────────────────────────────────────┐
+  │  EXPORT                                                          │
+  │                                                                  │
+  │  ┌────────────┐ ┌────────────┐ ┌──────────┐ ┌────────────────┐  │
+  │  │ Tablet.json │ │ Ledger.json│ │Ledger.csv│ │ Brief.md/.docx │  │
+  │  │             │ │            │ │          │ │                │  │
+  │  │ Full session│ │ Evidence   │ │ For Excel│ │ The brief +    │  │
+  │  │ + all AI    │ │ table +    │ │ / Sheets │ │ citations      │  │
+  │  │ prompts +   │ │ provenance │ │          │ │                │  │
+  │  │ provenance  │ │            │ │          │ │                │  │
+  │  └────────────┘ └────────────┘ └──────────┘ └────────────────┘  │
+  │                                                                  │
+  │  Nothing hidden. Every prompt visible. Every paper verifiable.   │
+  └──────────────────────────────────────────────────────────────────┘
+
+
+  ── TECH STACK ──────────────────────────────────────────────
+
+  Frontend:   Vanilla HTML / CSS / JS  (no frameworks)
+  AI:         Claude claude-opus-4-6 via Cloudflare Worker proxy
+  Data:       NCBI E-utilities (esearch + efetch)
+  Hosting:    Cloudflare Pages
+  Storage:    Browser only (localStorage cache for papers)
+  Backend:    None — all state lives client-side
+```
 
 ---
 
@@ -53,9 +213,9 @@ Papers appearing in multiple strategies display a badge (e.g., "3/4 strategies")
 
 | Tool | What It Does | The Problem |
 |------|-------------|-------------|
-| **Google AI Overviews** | Summarizes the open web | No sources. Wellness blogs weighted same as peer-reviewed research. |
-| **ChatGPT** | Cites papers | Some real, some **hallucinated**. You can't tell which. |
-| **Tables Turned** | Searches the actual U.S. medical database | Every paper is real. Every claim cites a PubMed ID you can click. Every prompt is visible. |
+| **Google AI Overviews** | Summarizes the open web | Wellness blogs and supplement ads weighted the same as peer-reviewed research. No sources you can verify. |
+| **ChatGPT** | Cites papers | Some real, some **completely fabricated**. Invented authors, fake titles, made-up findings delivered with total confidence. You cannot tell which are real. |
+| **Tables Turned** | Searches the actual U.S. medical database | Every paper is real. Every claim cites a PubMed ID you can click. Every prompt is visible. Nothing is hidden. Nothing is invented. |
 
 They give you *answers*. This gives you *evidence*.
 
@@ -69,13 +229,32 @@ Three things. That's it.
 2. Why you're asking ("Deciding whether to try it before school")
 3. An [Anthropic API key](https://console.anthropic.com/settings/keys) (yours, stays in your browser)
 
-Open `commons-table/index.html` in any modern browser. No installation. No server. No account.
+**Two entry points:**
+
+- **`index.html`** -- Cinematic intro (typewriter sequence + card flip) that lands you at the search page. The full story.
+- **`search.html`** -- Straight to the search interface. No preamble.
+
+No installation. No server. No account.
 
 ---
 
 ## For Researchers
 
 Already have a corpus? Skip the search. Paste PubMed URLs, PMIDs, or DOIs directly. Tables Turned will fetch the abstracts, translate them into plain language, and let you curate before synthesis -- same workflow, your papers.
+
+---
+
+## Paper Selection Algorithm
+
+When multiple search strategies return overlapping results, that overlap is signal. Papers found independently by multiple approaches are more likely to be central to your question.
+
+**Scoring method:**
+- **Cross-strategy overlap: +3 points per strategy** that returned the paper
+- **PubMed position weight: +1-5 points** based on rank within each strategy's results (top result = 5 pts, 5th = 1 pt)
+- **Composite score** = (overlap x 3) + position points
+- **Top 12** by composite score are shown
+
+Papers appearing in multiple strategies display a badge (e.g., "3/4 strategies"). Scores and matched strategies are recorded in the Tablet export for full transparency.
 
 ---
 
@@ -113,28 +292,18 @@ The full session archive -- everything in one structured file:
 
 ---
 
-## Technical Details
-
-| Component | Detail |
-|-----------|--------|
-| **Data source** | PubMed / NCBI E-utilities (public API, free, no account) |
-| **AI model** | Claude by Anthropic (user provides their own API key) |
-| **Architecture** | Static website. No server. No database. No tracking. |
-| **Privacy** | API key stored in browser localStorage only. Questions, papers, and briefs exist only in your browser. |
-
----
-
 ## Repo Structure
 
 ```
-commons-table/           Frontend web app
-  index.html             Single-page application
-  css/style.css          Companion Suite design system
+commons-table/               Frontend web app
+  index.html                 Cinematic intro → redirects to search.html
+  search.html                Main search interface (primary entry point)
+  css/style.css              Companion Suite design system
   js/
-    app.js               Main orchestrator (intro, search, curate, synthesize, export)
-    synthesis.js          Anthropic API integration (search queries, summaries, synthesis)
-    shoreline.js          PubMed ingestion, XML parsing, caching
-    tablet-press.js       Export bundle generator (Tablet v2.0)
+    app.js                   Main orchestrator (intro, search, curate, synthesize, export)
+    synthesis.js             Anthropic API integration (search queries, summaries, synthesis)
+    shoreline.js             PubMed ingestion, XML parsing, localStorage caching
+    tablet-press.js          Export bundle generator (Tablet v2.0, Ledger, Brief)
 ```
 
 ---
