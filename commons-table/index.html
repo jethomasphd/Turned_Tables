@@ -164,38 +164,40 @@
 
       <!-- Progress indicator (hidden until search starts) -->
       <div id="search-progress" class="search-progress hidden">
-        <div class="progress-phase" id="prog-phase-1">
-          <div class="progress-marker"></div>
-          <div class="progress-text">
-            <div class="progress-label">Translating your question</div>
-            <div class="progress-detail">AI converts plain English into medical search terms</div>
+
+        <!-- Search pipeline diagram -->
+        <div class="search-pipeline">
+          <div class="pipeline-node" id="prog-phase-1">
+            <div class="pipeline-icon">&#9906;</div>
+            <div class="pipeline-label">Translating</div>
+            <div class="pipeline-detail" id="pipeline-detail-1">plain English &rarr; medical terms</div>
+          </div>
+          <div class="pipeline-wire"><div class="pipeline-wire-fill"></div></div>
+          <div class="pipeline-node" id="prog-phase-2">
+            <div class="pipeline-icon">&#8981;</div>
+            <div class="pipeline-label">Searching</div>
+            <div class="pipeline-detail" id="pipeline-detail-2">37M papers &middot; multiple strategies</div>
+          </div>
+          <div class="pipeline-wire"><div class="pipeline-wire-fill"></div></div>
+          <div class="pipeline-node" id="prog-phase-3">
+            <div class="pipeline-icon">&#9112;</div>
+            <div class="pipeline-label">Fetching</div>
+            <div class="pipeline-detail" id="pipeline-detail-3">titles, authors &amp; abstracts</div>
+          </div>
+          <div class="pipeline-wire"><div class="pipeline-wire-fill"></div></div>
+          <div class="pipeline-node" id="prog-phase-4">
+            <div class="pipeline-icon">&#9998;</div>
+            <div class="pipeline-label">Translating</div>
+            <div class="pipeline-detail" id="pipeline-detail-4">jargon &rarr; plain language</div>
           </div>
         </div>
-        <div class="progress-phase" id="prog-phase-2">
-          <div class="progress-marker"></div>
-          <div class="progress-text">
-            <div class="progress-label">Searching PubMed</div>
-            <div class="progress-detail">Querying 37 million papers across multiple strategies</div>
-          </div>
-        </div>
-        <div class="progress-phase" id="prog-phase-3">
-          <div class="progress-marker"></div>
-          <div class="progress-text">
-            <div class="progress-label">Fetching papers</div>
-            <div class="progress-detail">Pulling titles, authors, and abstracts</div>
-          </div>
-        </div>
-        <div class="progress-phase" id="prog-phase-4">
-          <div class="progress-marker"></div>
-          <div class="progress-text">
-            <div class="progress-label">Translating into plain language</div>
-            <div class="progress-detail">Making the jargon readable</div>
-          </div>
-        </div>
+
+        <!-- Educational scaffold -->
         <div class="edu-scaffold" id="edu-scaffold">
           <div class="edu-scaffold-label">How this is different</div>
           <div class="edu-scaffold-msg" id="edu-scaffold-msg"></div>
         </div>
+
       </div>
 
       <!-- Manual entry — for researchers who already have their corpus -->

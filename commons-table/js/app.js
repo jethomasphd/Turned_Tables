@@ -33,12 +33,12 @@ const App = (() => {
 
   // ── Educational Scaffolding (main page) ──
   const EDU_MESSAGES = [
-    'ChatGPT invents medical sources. Real-sounding titles, fabricated authors, made-up findings \u2014 all delivered with the same confidence as real evidence.',
-    'Google AI Overviews summarize the open web. Supplement ads, wellness blogs, and peer-reviewed research all carry equal weight in your health answer.',
-    'Ask any AI chatbot for medical sources, then try to verify them. Many of the papers it cites were never written. You have no way to tell which are real.',
-    'AI answer boxes give you conclusions stripped of evidence. No methods. No sample sizes. No conflicts of interest. Just a confident paragraph you\u2019re supposed to trust.',
-    'The problem is not AI. The problem is AI without receipts. A confident answer with no verifiable source is just a confident guess \u2014 and guesses about your health have consequences.',
-    'Here, every claim cites a real PubMed paper you can click and verify in seconds. That is the difference.'
+    'Right now, ChatGPT is fabricating medical citations. Real-sounding titles, invented authors, made-up findings \u2014 delivered with total confidence. You cannot tell which papers are real. We only return papers that exist.',
+    'Google\u2019s AI Overviews treat wellness blogs and supplement ads the same as peer-reviewed research. Your health question deserves better than a confident summary of the open web.',
+    'Ask ChatGPT for sources on any drug. Then try clicking them. Many of those papers were never written. Here, every PMID links to a real paper in the U.S. National Library of Medicine.',
+    'Google gives you a paragraph. ChatGPT gives you a paragraph with fake footnotes. Neither shows you the methods, the sample size, or who funded the study. We show you the actual abstracts.',
+    'ChatGPT hallucinates evidence. Google buries evidence under ads. Neither lets you choose which papers matter. Here, you see every paper and decide for yourself.',
+    'Every claim in your brief will cite a real PubMed paper you can click and verify in seconds. No hallucinations. No ads. No hidden sources.'
   ];
   let eduInterval = null;
   let eduIdx = 0;
@@ -124,15 +124,13 @@ const App = (() => {
   function doFlip() {
     const card = $('intro-card');
     card.classList.add('flipped');
-    // After flip completes, hold the logo, then transition to app
+    // After flip completes, hold the logo, then redirect to search
     setTimeout(() => {
       const intro = $('intro');
       intro.style.opacity = '0';
       intro.style.transition = 'opacity 0.8s ease';
       setTimeout(() => {
-        intro.style.display = 'none';
-        show($('app'));
-        initApp();
+        window.location.href = 'search.html';
       }, 800);
     }, 1800); // 1.4s flip + 0.4s pause to see logo
   }
@@ -142,7 +140,7 @@ const App = (() => {
     const intro = $('intro');
     intro.style.opacity = '0';
     intro.style.transition = 'opacity 0.6s ease';
-    setTimeout(() => { intro.style.display = 'none'; show($('app')); initApp(); }, 600);
+    setTimeout(() => { window.location.href = 'search.html'; }, 600);
   }
 
   function initIntro() {
@@ -229,7 +227,7 @@ const App = (() => {
     // Search button (only in full mode — fast mode wires its own)
     if ($('search-btn')) $('search-btn').addEventListener('click', handleSearch);
 
-    // Manual entry (only in full mode)
+    // Manual entry
     if ($('manual-btn')) $('manual-btn').addEventListener('click', handleManualEntry);
 
     // Curate actions
@@ -295,7 +293,7 @@ const App = (() => {
     const progEl = $('search-progress');
     show(progEl);
     setPhase(1);
-    if (!fastMode) startEduScaffold();
+    startEduScaffold();
 
     logProv('search_started', question);
 
@@ -306,8 +304,8 @@ const App = (() => {
       logProv('search_queries_generated', queries.map(q => q.query).join(' | '));
 
       setPhase(2);
-      $('prog-phase-2').querySelector('.progress-detail').textContent =
-        `${queries.length} strategies across 37 million papers`;
+      const d2 = $('pipeline-detail-2') || $('prog-phase-2').querySelector('.progress-detail');
+      if (d2) d2.textContent = `${queries.length} strategies across 37 million papers`;
 
       // Phase 2: Execute each query against PubMed
       // Track scoring: papers found by multiple strategies rank higher,
@@ -318,8 +316,8 @@ const App = (() => {
       const MAX_PAPERS = 12;
 
       for (let i = 0; i < queries.length; i++) {
-        $('prog-phase-2').querySelector('.progress-detail').textContent =
-          `Strategy ${i + 1} of ${queries.length}: ${queries[i].strategy}`;
+        const d2s = $('pipeline-detail-2') || $('prog-phase-2').querySelector('.progress-detail');
+        if (d2s) d2s.textContent = `Strategy ${i + 1}/${queries.length}: ${queries[i].strategy}`;
         try {
           const result = await Synthesis.searchPubMed(queries[i].query, depth, sort);
           logProv('pubmed_searched', `"${queries[i].query}" -> ${result.count} total, fetched ${result.pmids.length}`);
@@ -343,8 +341,8 @@ const App = (() => {
           if (newPMIDs.length > 0) {
             await sleep(RATE_MS);
             setPhase(3);
-            $('prog-phase-3').querySelector('.progress-detail').textContent =
-              `${allPapers.length + newPMIDs.length} papers so far`;
+            const d3 = $('pipeline-detail-3') || $('prog-phase-3').querySelector('.progress-detail');
+            if (d3) d3.textContent = `${allPapers.length + newPMIDs.length} papers so far`;
             const papers = await Shoreline.ingest(newPMIDs.join('\n'));
             for (const p of papers.papers) {
               if (!allPapers.find(x => x.pmid === p.pmid)) {
@@ -387,8 +385,8 @@ const App = (() => {
 
       // Phase 4: Generate plain-language summaries
       setPhase(4);
-      $('prog-phase-4').querySelector('.progress-detail').textContent =
-        `Translating ${cappedPapers.length} papers`;
+      const d4 = $('pipeline-detail-4') || $('prog-phase-4').querySelector('.progress-detail');
+      if (d4) d4.textContent = `Translating ${cappedPapers.length} papers`;
       let summaries = [];
       try {
         summaries = await Synthesis.generatePlainSummaries({ papers: cappedPapers, question });
@@ -423,13 +421,21 @@ const App = (() => {
       $('search-stats').textContent = statsText;
       renderCurateList();
 
-      if (fastMode) {
-        hide($('fast-hero'));
-      } else {
-        hide($('landing-wrap'));
+      // Smooth crossfade from search to curate
+      const fadeTarget = fastMode ? $('fast-hero') : $('landing-wrap');
+      const curateEl = $('curate-view');
+      if (fadeTarget) {
+        fadeTarget.style.transition = 'opacity 0.4s ease';
+        fadeTarget.style.opacity = '0';
       }
-      show($('curate-view'));
+      curateEl.style.opacity = '0';
+      show(curateEl);
       window.scrollTo(0, 0);
+      setTimeout(() => {
+        if (fadeTarget) hide(fadeTarget);
+        curateEl.style.transition = 'opacity 0.5s ease';
+        curateEl.style.opacity = '1';
+      }, 400);
 
     } catch (err) {
       hide(progEl);
@@ -493,13 +499,21 @@ const App = (() => {
       $('search-stats').textContent = `${result.papers.length} papers from direct entry.`;
       renderCurateList();
 
-      if (fastMode) {
-        hide($('fast-hero'));
-      } else {
-        hide($('landing-wrap'));
+      // Smooth crossfade from search to curate
+      const fadeTarget2 = fastMode ? $('fast-hero') : $('landing-wrap');
+      const curateEl2 = $('curate-view');
+      if (fadeTarget2) {
+        fadeTarget2.style.transition = 'opacity 0.4s ease';
+        fadeTarget2.style.opacity = '0';
       }
-      show($('curate-view'));
+      curateEl2.style.opacity = '0';
+      show(curateEl2);
       window.scrollTo(0, 0);
+      setTimeout(() => {
+        if (fadeTarget2) hide(fadeTarget2);
+        curateEl2.style.transition = 'opacity 0.5s ease';
+        curateEl2.style.opacity = '1';
+      }, 400);
 
     } catch (err) {
       statusEl.textContent = err.message;
@@ -885,9 +899,11 @@ ${htmlContent}
     hide($('curate-view'));
     if (fastMode) {
       const hero = $('fast-hero');
-      if (hero) { hero.classList.remove('collapsed'); show(hero); }
+      if (hero) { hero.classList.remove('collapsed'); hero.style.opacity = '1'; show(hero); }
     } else {
-      show($('landing-wrap'));
+      const lw = $('landing-wrap');
+      if (lw) lw.style.opacity = '1';
+      show(lw);
     }
     state.papers = [];
     state.allFoundPapers = [];
