@@ -23,6 +23,7 @@
       text-align: center;
       padding: 2rem 1rem;
       animation: fadeIn 0.6s ease;
+      transition: min-height 0.6s ease, padding 0.6s ease;
     }
 
     .fast-hero .sigil {
@@ -40,6 +41,7 @@
       color: var(--bone);
       letter-spacing: 0.03em;
       margin-bottom: 0.3rem;
+      transition: font-size 0.4s ease, margin 0.4s ease;
     }
 
     .fast-tagline {
@@ -48,6 +50,9 @@
       color: var(--ember);
       font-style: italic;
       margin-bottom: 2rem;
+      opacity: 1;
+      max-height: 10rem;
+      transition: opacity 0.3s ease, max-height 0.4s ease, margin 0.4s ease, padding 0.4s ease;
     }
 
     /* The main input area */
@@ -177,6 +182,9 @@
       flex-wrap: wrap;
       gap: 0.5rem;
       justify-content: center;
+      opacity: 1;
+      max-height: 20rem;
+      transition: opacity 0.3s ease, max-height 0.4s ease, margin 0.4s ease;
     }
 
     .fast-chip {
@@ -208,6 +216,9 @@
       gap: 2rem;
       padding-top: 1.5rem;
       border-top: 1px solid var(--ash);
+      opacity: 1;
+      max-height: 20rem;
+      transition: opacity 0.3s ease, max-height 0.4s ease, margin 0.4s ease, padding 0.4s ease;
     }
 
     .fast-value-item {
@@ -288,6 +299,9 @@
       color: var(--bone-dim);
       font-style: italic;
       max-width: 680px;
+      opacity: 1;
+      max-height: 10rem;
+      transition: opacity 0.3s ease, max-height 0.4s ease, margin 0.4s ease;
     }
 
     .fast-full-story em {
@@ -317,16 +331,25 @@
       padding-bottom: 1rem;
     }
 
-    .fast-hero.collapsed h1 { font-size: 1.4rem; margin-bottom: 0.3rem; }
-    .fast-hero.collapsed .fast-tagline { display: none; }
-    .fast-hero.collapsed .fast-tagline-sub { display: none; }
+    .fast-hero.collapsed h1 { font-size: 1.4rem; margin-bottom: 0.3rem; transition: font-size 0.4s ease; }
+    .fast-hero.collapsed .fast-tagline,
+    .fast-hero.collapsed .fast-tagline-sub,
     .fast-hero.collapsed .fast-suggestions,
     .fast-hero.collapsed .fast-value-strip,
-    .fast-hero.collapsed .flow-diagram { display: none; }
-    .fast-hero.collapsed .fast-full-story { display: none; }
+    .fast-hero.collapsed .flow-diagram,
+    .fast-hero.collapsed .fast-full-story,
+    .fast-hero.collapsed .fast-faq-row,
+    .fast-hero.collapsed .fast-faq-panel {
+      opacity: 0;
+      max-height: 0;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease, max-height 0.4s ease;
+    }
     .fast-hero.collapsed .fast-input-box { margin-top: 0.5rem; }
     .fast-hero.collapsed .fast-context-row { margin-top: 0.5rem; }
-    .fast-hero.collapsed .fast-faq-row { display: none; }
 
     /* Override the app container for fast mode */
     body.fast-mode #app {
@@ -341,6 +364,9 @@
       display: flex;
       justify-content: center;
       gap: 0.25rem;
+      opacity: 1;
+      max-height: 10rem;
+      transition: opacity 0.3s ease, max-height 0.4s ease, margin 0.4s ease;
     }
 
     .fast-faq-btn {
@@ -439,38 +465,40 @@
       <!-- Progress indicator (hidden until search starts) -->
       <div class="fast-progress">
         <div id="search-progress" class="search-progress hidden">
-          <div class="progress-phase" id="prog-phase-1">
-            <div class="progress-marker"></div>
-            <div class="progress-text">
-              <div class="progress-label">Translating your question</div>
-              <div class="progress-detail">AI converts plain English into medical search terms</div>
+
+          <!-- Search pipeline diagram -->
+          <div class="search-pipeline">
+            <div class="pipeline-node" id="prog-phase-1">
+              <div class="pipeline-icon">&#9906;</div>
+              <div class="pipeline-label">Translating</div>
+              <div class="pipeline-detail" id="pipeline-detail-1">plain English &rarr; medical terms</div>
+            </div>
+            <div class="pipeline-wire"><div class="pipeline-wire-fill"></div></div>
+            <div class="pipeline-node" id="prog-phase-2">
+              <div class="pipeline-icon">&#8981;</div>
+              <div class="pipeline-label">Searching</div>
+              <div class="pipeline-detail" id="pipeline-detail-2">37M papers &middot; multiple strategies</div>
+            </div>
+            <div class="pipeline-wire"><div class="pipeline-wire-fill"></div></div>
+            <div class="pipeline-node" id="prog-phase-3">
+              <div class="pipeline-icon">&#9112;</div>
+              <div class="pipeline-label">Fetching</div>
+              <div class="pipeline-detail" id="pipeline-detail-3">titles, authors &amp; abstracts</div>
+            </div>
+            <div class="pipeline-wire"><div class="pipeline-wire-fill"></div></div>
+            <div class="pipeline-node" id="prog-phase-4">
+              <div class="pipeline-icon">&#9998;</div>
+              <div class="pipeline-label">Translating</div>
+              <div class="pipeline-detail" id="pipeline-detail-4">jargon &rarr; plain language</div>
             </div>
           </div>
-          <div class="progress-phase" id="prog-phase-2">
-            <div class="progress-marker"></div>
-            <div class="progress-text">
-              <div class="progress-label">Searching PubMed</div>
-              <div class="progress-detail">Querying 37 million papers across multiple strategies</div>
-            </div>
-          </div>
-          <div class="progress-phase" id="prog-phase-3">
-            <div class="progress-marker"></div>
-            <div class="progress-text">
-              <div class="progress-label">Fetching papers</div>
-              <div class="progress-detail">Pulling titles, authors, and abstracts</div>
-            </div>
-          </div>
-          <div class="progress-phase" id="prog-phase-4">
-            <div class="progress-marker"></div>
-            <div class="progress-text">
-              <div class="progress-label">Translating into plain language</div>
-              <div class="progress-detail">Making the jargon readable</div>
-            </div>
-          </div>
+
+          <!-- Educational scaffold: sharp critiques -->
           <div class="edu-scaffold" id="edu-scaffold">
             <div class="edu-scaffold-label">How this is different</div>
             <div class="edu-scaffold-msg" id="edu-scaffold-msg"></div>
           </div>
+
         </div>
       </div>
 
@@ -951,12 +979,12 @@
 
       // ── Educational Scaffolding ──
       const EDU_MESSAGES = [
-        'ChatGPT invents medical sources. Real-sounding titles, fabricated authors, made-up findings \u2014 all delivered with the same confidence as real evidence.',
-        'Google AI Overviews summarize the open web. Supplement ads, wellness blogs, and peer-reviewed research all carry equal weight in your health answer.',
-        'Ask any AI chatbot for medical sources, then try to verify them. Many of the papers it cites were never written. You have no way to tell which are real.',
-        'AI answer boxes give you conclusions stripped of evidence. No methods. No sample sizes. No conflicts of interest. Just a confident paragraph you\u2019re supposed to trust.',
-        'The problem is not AI. The problem is AI without receipts. A confident answer with no verifiable source is just a confident guess \u2014 and guesses about your health have consequences.',
-        'Here, every claim cites a real PubMed paper you can click and verify in seconds. That is the difference.'
+        'Right now, ChatGPT is fabricating medical citations. Real-sounding titles, invented authors, made-up findings \u2014 delivered with total confidence. You cannot tell which papers are real. We only return papers that exist.',
+        'Google\u2019s AI Overviews treat wellness blogs and supplement ads the same as peer-reviewed research. Your health question deserves better than a confident summary of the open web.',
+        'Ask ChatGPT for sources on any drug. Then try clicking them. Many of those papers were never written. Here, every PMID links to a real paper in the U.S. National Library of Medicine.',
+        'Google gives you a paragraph. ChatGPT gives you a paragraph with fake footnotes. Neither shows you the methods, the sample size, or who funded the study. We show you the actual abstracts.',
+        'ChatGPT hallucinates evidence. Google buries evidence under ads. Neither lets you choose which papers matter. Here, you see every paper and decide for yourself.',
+        'Every claim in your brief will cite a real PubMed paper you can click and verify in seconds. No hallucinations. No ads. No hidden sources.'
       ];
       let eduInterval = null;
       let eduIdx = 0;
