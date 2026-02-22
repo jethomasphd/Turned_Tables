@@ -1448,36 +1448,12 @@ select { font-family: var(--mono); font-size: 0.82rem; cursor: pointer; }
    XXV. FOOTER
    ═══════════════════════════════════════════════════════════════ */
 
-/* ── Contact CTA ── */
-.contact-cta {
-  margin-top: 3rem;
-  padding: 2rem 0;
-  border-top: 1px solid var(--ash);
-  text-align: center;
-}
-.contact-lead {
+.footer-cta {
   font-family: var(--voice);
-  font-size: 1.05rem;
+  font-size: 0.9rem;
   color: var(--smoke);
   font-style: italic;
-  margin-bottom: 0.75rem;
-}
-.contact-link {
-  display: inline-block;
-  font-family: var(--mono);
-  font-size: 0.75rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: var(--ember);
-  border: 1px solid var(--ember-dim);
-  padding: 0.6rem 2rem;
-  transition: all 0.3s ease;
-}
-.contact-link:hover {
-  background: var(--ember);
-  color: var(--void);
-  box-shadow: 0 0 40px rgba(201, 162, 39, 0.15);
+  margin-bottom: 0.35rem;
 }
 
 #site-footer {
