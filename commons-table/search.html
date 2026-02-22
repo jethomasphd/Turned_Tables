@@ -244,11 +244,40 @@
     }
     .fast-status.error { color: var(--red); }
 
-    /* Progress indicator in fast mode */
+    /* Progress indicator in fast mode: inline dots, edu scaffold is the star */
     .fast-progress {
       width: 100%;
       max-width: 680px;
       margin-top: 1rem;
+    }
+    .fast-progress .search-progress {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0;
+      background: none;
+      border: none;
+    }
+    .fast-progress .progress-phase {
+      padding: 0;
+      gap: 0.3rem;
+    }
+    .fast-progress .progress-text {
+      display: none;
+    }
+    .fast-progress .progress-marker {
+      width: 8px;
+      height: 8px;
+    }
+    .fast-progress .edu-scaffold {
+      flex-basis: 100%;
+      margin-top: 0.75rem;
+      min-height: 4.5em;
+      padding: 1.25rem 1.5rem;
+      border: 1px solid rgba(201, 162, 39, 0.15);
+      background: rgba(201, 162, 39, 0.04);
     }
 
     /* "Full story" link */
@@ -389,8 +418,9 @@
     <div class="fast-hero" id="fast-hero">
       <div class="sigil">&#9674; &#9672; &#9674;</div>
       <h1>Tables Turned</h1>
-      <div class="fast-tagline">They locked the research your taxes paid for behind paywalls and jargon.</div>
-      <div class="fast-tagline fast-tagline-sub" style="margin-top:-1.5rem; font-size:clamp(0.82rem, 2vw, 0.95rem); font-style:normal; color:var(--bone-dim);">Break through. Search 37 million papers in plain English.</div>
+      <div class="fast-tagline">Your taxes paid for 37 million medical papers. You can&rsquo;t read them.</div>
+      <div class="fast-tagline fast-tagline-sub" style="margin-top:-1.5rem; font-size:clamp(0.82rem, 2vw, 0.95rem); font-style:normal; color:var(--bone-dim);">Paywalls lock the doors. Jargon guards the windows.</div>
+      <div class="fast-tagline fast-tagline-sub" style="margin-top:-1.5rem; font-size:clamp(0.85rem, 2.2vw, 1rem); font-style:normal; color:var(--bone);">Search them in plain English. Every claim cites its source.</div>
 
       <div class="fast-input-box">
         <textarea id="q" rows="2" placeholder="What health question are you trying to figure out?"></textarea>
@@ -450,14 +480,14 @@
         <div class="fast-chip" data-q="Is Ozempic safe? What are the side effects people aren't talking about?" data-ctx="Thinking about asking my doctor for Ozempic">Ozempic side effects</div>
         <div class="fast-chip" data-q="Do antidepressants actually work or is it just placebo?" data-ctx="My doctor prescribed me an antidepressant and I'm not sure about it">Antidepressants &amp; placebo</div>
         <div class="fast-chip" data-q="My doctor said my PSA is high. What should I do next and how worried should I be?" data-ctx="Just got blood work back and my PSA was elevated">Elevated PSA &mdash; now what?</div>
-        <div class="fast-chip" data-q="Is the pill safe long-term? What does it actually do for PCOS and endometriosis?" data-ctx="Dealing with painful periods and considering going on birth control">Birth control &amp; periods</div>
-        <div class="fast-chip" data-q="Is vaping weed safer than smoking it?" data-ctx="Thinking about switching from smoking to a vape">Vaping vs smoking weed</div>
-        <div class="fast-chip" data-q="Is it safe to take Adderall for years? What happens long-term?" data-ctx="Been on ADHD medication for a while and wondering about long-term effects">Adderall long-term</div>
+        <div class="fast-chip" data-q="I'm trying to get pregnant and it's not happening. What does the research say about fertility after 30?" data-ctx="Trying to conceive and wondering if age is a factor">Fertility after 30</div>
+        <div class="fast-chip" data-q="Is vaping cannabis safer than smoking it?" data-ctx="Thinking about switching from smoking to a vape">Vaping vs smoking cannabis</div>
+        <div class="fast-chip" data-q="Is screen time actually bad for my kids? How much is too much?" data-ctx="Parent trying to set reasonable limits on devices">Kids &amp; screen time</div>
       </div>
 
       <div class="fast-faq-row" id="fast-faq-row">
         <button class="fast-faq-btn" id="faq-what-btn">What is this?</button>
-        <button class="fast-faq-btn" id="faq-ai-btn">Doesn&rsquo;t AI do this?</button>
+        <button class="fast-faq-btn" id="faq-ai-btn">Doesn&rsquo;t AI already do this?</button>
         <button class="fast-faq-btn" id="toggle-settings-btn">&#9881; Settings</button>
       </div>
 
@@ -494,16 +524,16 @@
           <div class="setting-item">
             <label for="s-depth">Results per query</label>
             <select id="s-depth">
-              <option value="5" selected>5 (quick scan)</option>
+              <option value="5">5 (quick scan)</option>
               <option value="10">10 (standard)</option>
-              <option value="25">25 (deep dive)</option>
+              <option value="25" selected>25 (deep dive)</option>
             </select>
           </div>
           <div class="setting-item">
             <label for="s-sort">Sort by</label>
             <select id="s-sort">
               <option value="relevance" selected>Most relevant (best match for your terms)</option>
-              <option value="pub_date">Most recent (newest first, good for new drugs)</option>
+              <option value="pub_date">Most recent (newest first, great for emerging treatments)</option>
             </select>
           </div>
         </div>
@@ -549,7 +579,16 @@
     <!-- ═══ STEP 2: CURATE (same as original) ═══ -->
     <div id="curate-view" class="hidden">
       <div class="step-label">Step 2 <span class="step-label-text">Your evidence, your call</span></div>
-      <p class="step-desc">These are real papers from the U.S. medical database &mdash; not summaries of summaries. <strong>You are the editor now.</strong> Read the plain-language translations. Tap a card to see the original abstract. Click any PMID to verify it on PubMed yourself. Go deep or skim &mdash; there is no wrong way. Then pick the papers that actually matter to <em>your</em> question and drop the rest. The AI writes nothing until you say what counts.</p>
+      <div class="step-desc">
+        <p>These are real papers from the U.S. medical database &mdash; not summaries of summaries. <strong>You are the editor now.</strong></p>
+        <ul class="step-actions">
+          <li><strong>Read</strong> the plain-language summary below each title</li>
+          <li><strong>Tap</strong> any card to reveal the original abstract</li>
+          <li><strong>Click</strong> a PMID to verify it directly on PubMed</li>
+          <li><strong>Select</strong> what matters to your question &mdash; deselect the rest</li>
+        </ul>
+        <p>Go as deep or as shallow as you need. <em>The AI writes nothing until you say what counts.</em></p>
+      </div>
 
       <details class="search-disclosure" id="search-disclosure">
         <summary>How we found these papers</summary>
@@ -601,8 +640,8 @@
         <pre id="synth-prompt-display" class="prompt-display"></pre>
       </details>
 
+      <div class="stream-notice" id="stream-notice">Your <strong>formatted brief</strong> is being prepared. The text below is the raw AI output streaming in real time &mdash; your final report will be cleanly structured with headings, citations, and a downloadable document.</div>
       <div id="stream-out"></div>
-      <div class="stream-notice" id="stream-notice">Your <strong>formatted brief</strong> is being prepared. The text above is the raw AI output streaming in real time &mdash; your final report will be cleanly structured with headings, citations, and a downloadable document.</div>
     </div>
 
     <!-- ═══ STEP 4: RESULTS (same as original) ═══ -->
@@ -751,13 +790,16 @@
           <p><strong>Claude by Anthropic:</strong> All AI interactions use Claude, Anthropic&rsquo;s most capable model. Your requests are routed through a minimal Cloudflare Worker proxy that holds the API key &mdash; your browser never sees or stores it. The worker adds the key and forwards your request to Anthropic. No data is logged or stored on the worker.</p>
 
           <h3>How papers are selected</h3>
-          <p>When you search, AI generates 3&ndash;4 independent search strategies &mdash; each targeting your question from a different angle (broad terms, specific MeSH headings, study types). Each strategy queries PubMed separately. The results are then scored and ranked:</p>
+          <p>When you search, AI generates 3&ndash;4 independent search strategies &mdash; each targeting your question from a different angle (broad terms, specific MeSH headings, study types). Each strategy queries PubMed separately and <strong>returns up to 25 results</strong> (configurable in Settings). That means the initial pool can contain 75&ndash;100+ papers before deduplication.</p>
+          <p><strong>For example:</strong> if you ask &ldquo;Is Ozempic safe?&rdquo;, the AI might generate: (1) a broad search for semaglutide safety, (2) a targeted MeSH query for GLP-1 agonists and adverse effects, (3) a search filtered to systematic reviews and meta-analyses, and (4) a search focusing on cardiovascular outcomes. Each returns up to 25 papers from PubMed&rsquo;s index. Papers found by multiple strategies are almost certainly central to your question.</p>
+          <p>All results are then scored and ranked:</p>
           <ol>
-            <li><strong>Cross-strategy overlap (+3 points per strategy):</strong> A paper found by multiple independent search strategies is more likely to be central to your question. If a paper appears in 3 of 4 strategies, it gets 9 overlap points.</li>
+            <li><strong>Cross-strategy overlap (+3 points per strategy):</strong> A paper found by multiple independent strategies is more likely to be central to your question. If a paper appears in 3 of 4 strategies, it gets 9 overlap points.</li>
             <li><strong>PubMed position weight (+1&ndash;5 points):</strong> PubMed returns results in relevance order. The top result in any strategy gets 5 points, second gets 4, and so on. Papers ranked 6th or lower get 1 point.</li>
           </ol>
-          <p>The composite score (overlap &times; 3 + position points) determines rank. The top 12 papers are shown. Papers that appear in multiple strategies display a badge (e.g., &ldquo;3/4 strategies&rdquo;) so you can see why they ranked high.</p>
-          <p>This method favors papers that are <strong>independently identified by multiple approaches</strong> AND <strong>highly ranked by PubMed&rsquo;s own relevance engine</strong>. It is fully transparent: scores and matched strategies are recorded in the Tablet export.</p>
+          <p>The composite score (overlap &times; 3 + position points) determines rank. The <strong>top 12 papers</strong> are shown to you for curation. Papers that appear in multiple strategies display a badge (e.g., &ldquo;3/4 strategies&rdquo;) so you can see why they ranked high.</p>
+          <p><strong>Compare this to using PubMed directly:</strong> you would need to know boolean operators and Medical Subject Headings (MeSH) &mdash; a controlled vocabulary of 30,000+ terms &mdash; to construct a single search. You would get one list of results with no plain-language translations and no way to quickly assess relevance. Tables Turned runs multiple expert-level searches, pools and scores the results, translates them into plain language, and lets you decide what matters.</p>
+          <p>The full scoring data &mdash; every strategy, every score, every matched paper &mdash; is recorded in the Tablet (.json) export.</p>
 
           <h3>Privacy</h3>
           <p>No API key is needed &mdash; the key is held securely on a Cloudflare Worker and never exposed to your browser. Your questions and papers pass through the worker only to reach Anthropic&rsquo;s API; nothing is logged or stored. Your briefs exist only in your browser. When you close the tab, they are gone unless you downloaded them. No tracking. No analytics. No database.</p>
@@ -776,6 +818,12 @@
         </div>
 
       </div>
+    </div>
+
+    <!-- ═══ CONTACT CTA ═══ -->
+    <div class="contact-cta">
+      <p class="contact-lead">Questions, ideas, or feedback?</p>
+      <a href="mailto:JEThomasPhD@gmail.com" class="contact-link">Get in touch &rarr;</a>
     </div>
 
     <!-- ═══ FOOTER ═══ -->
@@ -908,12 +956,12 @@
 
       // ── Educational Scaffolding ──
       const EDU_MESSAGES = [
-        'ChatGPT fabricates medical citations. Invented authors, fake journals, made-up findings delivered with total confidence. You cannot tell which are real.',
-        'Google AI Overviews cannot tell a randomized controlled trial from a supplement ad. Both get the same algorithmic weight in your health answer.',
-        'Researchers tested ChatGPT on medical questions. A significant share of its cited papers did not exist. It invented them.',
-        'Google\u2019s AI once recommended eating rocks for minerals. It summarizes whatever ranks highest \u2014 including Reddit threads and content marketing.',
-        'Ask ChatGPT for sources on a drug interaction, then check the PMIDs. Many are dead links to papers that were never written.',
-        'Here, every PMID links to a real paper on PubMed. Click it. Read the abstract. Verify the claim yourself. That is the difference.'
+        'ChatGPT invents medical sources. Real-sounding titles, fabricated authors, made-up findings \u2014 all delivered with the same confidence as real evidence.',
+        'Google AI Overviews summarize the open web. Supplement ads, wellness blogs, and peer-reviewed research all carry equal weight in your health answer.',
+        'Ask any AI chatbot for medical sources, then try to verify them. Many of the papers it cites were never written. You have no way to tell which are real.',
+        'AI answer boxes give you conclusions stripped of evidence. No methods. No sample sizes. No conflicts of interest. Just a confident paragraph you\u2019re supposed to trust.',
+        'The problem is not AI. The problem is AI without receipts. A confident answer with no verifiable source is just a confident guess \u2014 and guesses about your health have consequences.',
+        'Here, every claim cites a real PubMed paper you can click and verify in seconds. That is the difference.'
       ];
       let eduInterval = null;
       let eduIdx = 0;

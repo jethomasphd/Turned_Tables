@@ -33,12 +33,12 @@ const App = (() => {
 
   // ── Educational Scaffolding (main page) ──
   const EDU_MESSAGES = [
-    'ChatGPT fabricates medical citations. Invented authors, fake journals, made-up findings delivered with total confidence. You cannot tell which are real.',
-    'Google AI Overviews cannot tell a randomized controlled trial from a supplement ad. Both get the same algorithmic weight in your health answer.',
-    'Researchers tested ChatGPT on medical questions. A significant share of its cited papers did not exist. It invented them.',
-    'Google\u2019s AI once recommended eating rocks for minerals. It summarizes whatever ranks highest \u2014 including Reddit threads and content marketing.',
-    'Ask ChatGPT for sources on a drug interaction, then check the PMIDs. Many are dead links to papers that were never written.',
-    'Here, every PMID links to a real paper on PubMed. Click it. Read the abstract. Verify the claim yourself. That is the difference.'
+    'ChatGPT invents medical sources. Real-sounding titles, fabricated authors, made-up findings \u2014 all delivered with the same confidence as real evidence.',
+    'Google AI Overviews summarize the open web. Supplement ads, wellness blogs, and peer-reviewed research all carry equal weight in your health answer.',
+    'Ask any AI chatbot for medical sources, then try to verify them. Many of the papers it cites were never written. You have no way to tell which are real.',
+    'AI answer boxes give you conclusions stripped of evidence. No methods. No sample sizes. No conflicts of interest. Just a confident paragraph you\u2019re supposed to trust.',
+    'The problem is not AI. The problem is AI without receipts. A confident answer with no verifiable source is just a confident guess \u2014 and guesses about your health have consequences.',
+    'Here, every claim cites a real PubMed paper you can click and verify in seconds. That is the difference.'
   ];
   let eduInterval = null;
   let eduIdx = 0;
@@ -861,17 +861,14 @@ ${htmlContent}
       title: (state.question || '').substring(0, 100) || 'Untitled Table Flip',
       sessionId: TabletPress.uuid(),
       sessionCreated: new Date().toISOString(),
-      intent: { question_draft: state.question, decision_context: state.context, useful_by: '', timebox: 0 },
+      intent: { question_draft: state.question, decision_context: state.context },
       papers: state.papers,
       allFoundPapers: state.allFoundPapers,
       selectedPMIDs: state.selectedPMIDs,
       searchQueries: state.searchQueries,
       plainSummaries: state.plainSummaries,
       synthUserMessage: state.synthUserMessage,
-      claims: [],
-      crossExam: {},
       provenance: state.provenance,
-      nextSprint: [],
       briefMarkdown: state.briefMarkdown,
       status: 'sealed'
     });
