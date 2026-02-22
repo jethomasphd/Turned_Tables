@@ -45,7 +45,7 @@
     .fast-tagline {
       font-family: var(--voice);
       font-size: clamp(0.95rem, 2.5vw, 1.15rem);
-      color: var(--smoke);
+      color: var(--ember);
       font-style: italic;
       margin-bottom: 2rem;
     }
@@ -389,7 +389,7 @@
     <div class="fast-hero" id="fast-hero">
       <div class="sigil">&#9674; &#9672; &#9674;</div>
       <h1>Tables Turned</h1>
-      <div class="fast-tagline">They locked the research you paid for behind paywalls and jargon.</div>
+      <div class="fast-tagline">They locked the research your taxes paid for behind paywalls and jargon.</div>
       <div class="fast-tagline fast-tagline-sub" style="margin-top:-1.5rem; font-size:clamp(0.82rem, 2vw, 0.95rem); font-style:normal; color:var(--bone-dim);">Break through. Search 37 million papers in plain English.</div>
 
       <div class="fast-input-box">
@@ -450,6 +450,9 @@
         <div class="fast-chip" data-q="What are the health effects of vaping cannabis compared to smoking it?" data-ctx="Considering switching from smoking to vaping">Vaping cannabis</div>
         <div class="fast-chip" data-q="How effective is semaglutide (Ozempic) for weight loss and what are the risks?" data-ctx="Considering asking my doctor about Ozempic">Ozempic risks</div>
         <div class="fast-chip" data-q="Do SSRIs actually work better than placebo for treating depression?" data-ctx="Prescribed antidepressants and wondering if the evidence supports them">Antidepressants &amp; placebo</div>
+        <div class="fast-chip" data-q="Does PSA screening reduce mortality from prostate cancer or lead to overdiagnosis and unnecessary treatment?" data-ctx="Over 50 and my doctor wants to start PSA testing">PSA &amp; prostate cancer</div>
+        <div class="fast-chip" data-q="What are the most effective treatments for slowing COPD progression in current or former smokers?" data-ctx="Diagnosed with COPD and trying to understand my options">COPD treatment</div>
+        <div class="fast-chip" data-q="Is hormone replacement therapy safe for managing menopause symptoms and what are the long-term risks?" data-ctx="Considering HRT and getting conflicting advice">HRT &amp; menopause</div>
       </div>
 
       <div class="fast-faq-row" id="fast-faq-row">
@@ -545,8 +548,8 @@
 
     <!-- ═══ STEP 2: CURATE (same as original) ═══ -->
     <div id="curate-view" class="hidden">
-      <div class="step-label">Step 2 <span class="step-label-text">Choose your papers</span></div>
-      <p class="step-desc">AI translated your question into the medical jargon the system was built on &mdash; then translated the results back into plain language. Now it&rsquo;s your turn. Read the plain-language summaries. Tap any card to read the abstract. Click a PMID to go straight to PubMed. Go as deep or as shallow as your decision needs &mdash; but <em>you</em> decide what matters. Select the papers that speak to your question. Deselect the rest. This is where your hands get in the loop.</p>
+      <div class="step-label">Step 2 <span class="step-label-text">Your evidence, your call</span></div>
+      <p class="step-desc">These are real papers from the U.S. medical database &mdash; not summaries of summaries. <strong>You are the editor now.</strong> Read the plain-language translations. Tap a card to see the original abstract. Click any PMID to verify it on PubMed yourself. Go deep or skim &mdash; there is no wrong way. Then pick the papers that actually matter to <em>your</em> question and drop the rest. The AI writes nothing until you say what counts.</p>
 
       <details class="search-disclosure" id="search-disclosure">
         <summary>How we found these papers</summary>
