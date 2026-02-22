@@ -304,8 +304,6 @@ const App = (() => {
       logProv('search_queries_generated', queries.map(q => q.query).join(' | '));
 
       setPhase(2);
-      const d2 = $('pipeline-detail-2') || $('prog-phase-2').querySelector('.progress-detail');
-      if (d2) d2.textContent = `${queries.length} strategies across 37 million papers`;
 
       // Phase 2: Execute each query against PubMed
       // Track scoring: papers found by multiple strategies rank higher,
@@ -316,8 +314,6 @@ const App = (() => {
       const MAX_PAPERS = 12;
 
       for (let i = 0; i < queries.length; i++) {
-        const d2s = $('pipeline-detail-2') || $('prog-phase-2').querySelector('.progress-detail');
-        if (d2s) d2s.textContent = `Strategy ${i + 1}/${queries.length}: ${queries[i].strategy}`;
         try {
           const result = await Synthesis.searchPubMed(queries[i].query, depth, sort);
           logProv('pubmed_searched', `"${queries[i].query}" -> ${result.count} total, fetched ${result.pmids.length}`);
@@ -341,8 +337,6 @@ const App = (() => {
           if (newPMIDs.length > 0) {
             await sleep(RATE_MS);
             setPhase(3);
-            const d3 = $('pipeline-detail-3') || $('prog-phase-3').querySelector('.progress-detail');
-            if (d3) d3.textContent = `${allPapers.length + newPMIDs.length} papers so far`;
             const papers = await Shoreline.ingest(newPMIDs.join('\n'));
             for (const p of papers.papers) {
               if (!allPapers.find(x => x.pmid === p.pmid)) {
@@ -385,8 +379,6 @@ const App = (() => {
 
       // Phase 4: Generate plain-language summaries
       setPhase(4);
-      const d4 = $('pipeline-detail-4') || $('prog-phase-4').querySelector('.progress-detail');
-      if (d4) d4.textContent = `Translating ${cappedPapers.length} papers`;
       let summaries = [];
       try {
         summaries = await Synthesis.generatePlainSummaries({ papers: cappedPapers, question });
