@@ -142,6 +142,9 @@ const App = (() => {
   //  INIT APP
   // ═══════════════════════════════════════════════════════════
 
+  // Detect fast mode (resolved at boot time, after DOMContentLoaded)
+  let fastMode = false;
+
   function initApp() {
     // Scroll reveal system (matches Companion Dossier)
     const revealObserver = new IntersectionObserver((entries) => {
@@ -154,40 +157,51 @@ const App = (() => {
     }, { threshold: 0.1 });
     document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
-    // About toggle
-    $('about-toggle').addEventListener('click', () => {
-      $('about-section').classList.toggle('open');
-      const body = $('about-body');
-      if ($('about-section').classList.contains('open')) {
-        show(body);
+    // About toggle (only in full mode)
+    if ($('about-toggle')) {
+      $('about-toggle').addEventListener('click', () => {
+        $('about-section').classList.toggle('open');
+        const body = $('about-body');
+        if ($('about-section').classList.contains('open')) {
+          show(body);
+          populatePromptDocs();
+          body.querySelectorAll('.reveal:not(.visible)').forEach(el => revealObserver.observe(el));
+        } else {
+          hide(body);
+        }
+      });
+    }
+
+    // Learn more link (only in full mode)
+    if ($('learn-more-link')) {
+      $('learn-more-link').addEventListener('click', (e) => {
+        e.preventDefault();
+        $('about-section').classList.add('open');
+        show($('about-body'));
         populatePromptDocs();
-        // Re-observe newly visible reveal elements
-        body.querySelectorAll('.reveal:not(.visible)').forEach(el => revealObserver.observe(el));
-      } else {
-        hide(body);
-      }
-    });
+        $('about-section').scrollIntoView({ behavior: 'smooth' });
+      });
+    }
 
-    // Learn more link scrolls to About and opens it
-    $('learn-more-link').addEventListener('click', (e) => {
-      e.preventDefault();
-      $('about-section').classList.add('open');
-      show($('about-body'));
-      populatePromptDocs();
-      $('about-section').scrollIntoView({ behavior: 'smooth' });
-    });
+    // Search button (only in full mode — fast mode wires its own)
+    if ($('search-btn')) $('search-btn').addEventListener('click', handleSearch);
 
-    // Search button
-    $('search-btn').addEventListener('click', handleSearch);
-
-    // Manual entry
-    $('manual-btn').addEventListener('click', handleManualEntry);
+    // Manual entry (only in full mode)
+    if ($('manual-btn')) $('manual-btn').addEventListener('click', handleManualEntry);
 
     // Curate actions
     $('select-all-btn').addEventListener('click', () => { state.allFoundPapers.forEach(p => state.selectedPMIDs.add(p.pmid)); renderCurateList(); });
     $('select-none-btn').addEventListener('click', () => { state.selectedPMIDs.clear(); renderCurateList(); });
     $('synthesize-btn').addEventListener('click', handleSynthesize);
-    $('back-to-search').addEventListener('click', () => { hide($('curate-view')); show($('landing-wrap')); });
+    $('back-to-search').addEventListener('click', () => {
+      hide($('curate-view'));
+      if (fastMode) {
+        show($('fast-hero'));
+        window.dispatchEvent(new CustomEvent('tables-turned-reset'));
+      } else {
+        show($('landing-wrap'));
+      }
+    });
 
     // Export
     $('dl-docx').addEventListener('click', () => { if (state.briefMarkdown) downloadDocx(state.briefMarkdown); });
@@ -196,6 +210,9 @@ const App = (() => {
 
     // New question
     $('again-btn').addEventListener('click', resetToStart);
+
+    // Listen for fast-mode search trigger
+    window.addEventListener('tables-turned-search', () => { handleSearch(); });
   }
 
   // ═══════════════════════════════════════════════════════════
@@ -227,7 +244,7 @@ const App = (() => {
     state.question = question;
     state.context = context;
 
-    $('search-btn').disabled = true;
+    if ($('search-btn')) $('search-btn').disabled = true;
     statusEl.textContent = '';
     statusEl.className = '';
 
@@ -360,7 +377,11 @@ const App = (() => {
       $('search-stats').textContent = statsText;
       renderCurateList();
 
-      hide($('landing-wrap'));
+      if (fastMode) {
+        hide($('fast-hero'));
+      } else {
+        hide($('landing-wrap'));
+      }
       show($('curate-view'));
       window.scrollTo(0, 0);
 
@@ -369,7 +390,8 @@ const App = (() => {
       statusEl.textContent = err.message;
       statusEl.className = 'error';
     } finally {
-      $('search-btn').disabled = false;
+      if ($('search-btn')) $('search-btn').disabled = false;
+      if (fastMode) window.dispatchEvent(new CustomEvent('tables-turned-reset'));
     }
   }
 
@@ -424,7 +446,11 @@ const App = (() => {
       $('search-stats').textContent = `${result.papers.length} papers from direct entry.`;
       renderCurateList();
 
-      hide($('landing-wrap'));
+      if (fastMode) {
+        hide($('fast-hero'));
+      } else {
+        hide($('landing-wrap'));
+      }
       show($('curate-view'));
       window.scrollTo(0, 0);
 
@@ -432,7 +458,7 @@ const App = (() => {
       statusEl.textContent = err.message;
       statusEl.className = 'error';
     } finally {
-      $('manual-btn').disabled = false;
+      if ($('manual-btn')) $('manual-btn').disabled = false;
     }
   }
 
@@ -805,7 +831,12 @@ ${htmlContent}
     hide($('results-view'));
     hide($('processing-view'));
     hide($('curate-view'));
-    show($('landing-wrap'));
+    if (fastMode) {
+      const hero = $('fast-hero');
+      if (hero) { hero.classList.remove('collapsed'); show(hero); }
+    } else {
+      show($('landing-wrap'));
+    }
     state.papers = [];
     state.allFoundPapers = [];
     state.plainSummaries = [];
@@ -818,10 +849,20 @@ ${htmlContent}
     $('search-status').className = '';
     hide($('search-progress'));
     window.scrollTo(0, 0);
+    if (fastMode) window.dispatchEvent(new CustomEvent('tables-turned-reset'));
   }
 
   // ── Boot ──
-  document.addEventListener('DOMContentLoaded', initIntro);
+  document.addEventListener('DOMContentLoaded', () => {
+    fastMode = !$('intro');
+    if (!fastMode) {
+      initIntro();
+    } else {
+      // Fast mode: no cinematic intro, go straight to app
+      show($('app'));
+      initApp();
+    }
+  });
 
   return { state };
 })();

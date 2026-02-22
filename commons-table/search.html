@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tables Turned — Search</title>
+  <meta name="description" content="Search 37 million medical research papers in plain English. AI translates the jargon, you curate the evidence, every claim cites its source.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Crimson+Pro:ital,wght@0,300;0,400;0,500;1,300;1,400&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* ═══ FAST-USE OVERRIDES ═══
+       ChatGPT-familiar: centered hero input, value prop as context not obstacle */
+
+    /* Hero section: vertically centered on viewport */
+    .fast-hero {
+      min-height: 70vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem 1rem;
+      animation: fadeIn 0.6s ease;
+    }
+
+    .fast-hero .sigil {
+      font-size: 1.2rem;
+      color: var(--ember);
+      letter-spacing: 0.5em;
+      margin-bottom: 0.5rem;
+      animation: glow 4s ease-in-out infinite;
+    }
+
+    .fast-hero h1 {
+      font-family: var(--voice);
+      font-size: clamp(1.8rem, 5vw, 2.6rem);
+      font-weight: 300;
+      color: var(--bone);
+      letter-spacing: 0.03em;
+      margin-bottom: 0.3rem;
+    }
+
+    .fast-tagline {
+      font-family: var(--voice);
+      font-size: clamp(0.95rem, 2.5vw, 1.15rem);
+      color: var(--smoke);
+      font-style: italic;
+      margin-bottom: 2rem;
+    }
+
+    /* The main input area */
+    .fast-input-box {
+      width: 100%;
+      max-width: 680px;
+      position: relative;
+    }
+
+    .fast-input-box textarea {
+      width: 100%;
+      min-height: 60px;
+      max-height: 200px;
+      background: var(--card);
+      border: 1px solid var(--border-mid);
+      color: var(--bone);
+      font-family: var(--body);
+      font-size: 1.05rem;
+      padding: 1rem 1.25rem;
+      padding-right: 4.5rem;
+      line-height: 1.6;
+      resize: none;
+      border-radius: 12px;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+
+    .fast-input-box textarea:focus {
+      outline: none;
+      border-color: var(--ember);
+      box-shadow: 0 0 0 1px rgba(201, 162, 39, 0.15),
+                  0 4px 24px rgba(201, 162, 39, 0.06);
+    }
+
+    .fast-input-box textarea::placeholder {
+      color: var(--smoke);
+      font-style: italic;
+    }
+
+    .fast-submit-btn {
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+      width: 40px;
+      height: 40px;
+      border: none;
+      background: var(--ember);
+      color: var(--void);
+      cursor: pointer;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s, box-shadow 0.2s;
+      font-size: 1.1rem;
+    }
+
+    .fast-submit-btn:hover {
+      background: var(--ember-glow);
+      box-shadow: 0 0 20px rgba(201, 162, 39, 0.3);
+    }
+
+    .fast-submit-btn:disabled {
+      opacity: 0.3;
+      cursor: not-allowed;
+    }
+
+    .fast-submit-btn:disabled:hover {
+      background: var(--ember);
+      box-shadow: none;
+    }
+
+    .fast-submit-btn svg {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+    }
+
+    /* Context row below the main input */
+    .fast-context-row {
+      width: 100%;
+      max-width: 680px;
+      margin-top: 0.75rem;
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+    }
+
+    .fast-context-row input {
+      flex: 1;
+      background: var(--card);
+      border: 1px solid var(--border-mid);
+      color: var(--bone);
+      font-family: var(--body);
+      font-size: 0.88rem;
+      padding: 0.55rem 0.85rem;
+      border-radius: 8px;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+
+    .fast-context-row input:focus {
+      outline: none;
+      border-color: var(--ember);
+      box-shadow: 0 0 0 1px rgba(201, 162, 39, 0.1);
+    }
+
+    .fast-context-row input::placeholder {
+      color: var(--smoke);
+      font-size: 0.82rem;
+    }
+
+    .fast-context-label {
+      font-family: var(--mono);
+      font-size: 0.55rem;
+      font-weight: 500;
+      color: var(--ember-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      white-space: nowrap;
+    }
+
+    /* Suggestion chips */
+    .fast-suggestions {
+      width: 100%;
+      max-width: 680px;
+      margin-top: 1.25rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+    }
+
+    .fast-chip {
+      font-family: var(--body);
+      font-size: 0.82rem;
+      color: var(--bone-dim);
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border-mid);
+      padding: 0.4rem 0.85rem;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      white-space: nowrap;
+    }
+
+    .fast-chip:hover {
+      border-color: var(--ember-dim);
+      color: var(--ember);
+      background: rgba(201, 162, 39, 0.04);
+    }
+
+    /* Value prop strip below hero */
+    .fast-value-strip {
+      width: 100%;
+      max-width: 680px;
+      margin-top: 2.5rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--ash);
+    }
+
+    .fast-value-item {
+      text-align: center;
+      flex: 1;
+    }
+
+    .fast-value-icon {
+      font-size: 1.1rem;
+      color: var(--ember-dim);
+      margin-bottom: 0.3rem;
+    }
+
+    .fast-value-text {
+      font-family: var(--mono);
+      font-size: 0.55rem;
+      font-weight: 500;
+      color: var(--smoke);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      line-height: 1.5;
+    }
+
+    /* Status message (below input) */
+    .fast-status {
+      width: 100%;
+      max-width: 680px;
+      text-align: center;
+      font-family: var(--mono);
+      font-size: 0.78rem;
+      color: var(--bone-dim);
+      min-height: 1.2em;
+      margin-top: 0.75rem;
+    }
+    .fast-status.error { color: var(--red); }
+
+    /* Progress indicator in fast mode */
+    .fast-progress {
+      width: 100%;
+      max-width: 680px;
+      margin-top: 1rem;
+    }
+
+    /* "Full story" link */
+    .fast-full-story {
+      margin-top: 1rem;
+      font-family: var(--mono);
+      font-size: 0.55rem;
+      color: var(--smoke);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .fast-full-story a {
+      color: var(--ember-dim);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(139, 115, 85, 0.3);
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .fast-full-story a:hover {
+      color: var(--ember);
+      border-bottom-color: var(--ember);
+    }
+
+    /* Hide the original landing sections' headings since fast mode replaces them */
+    .fast-hero #landing-wrap > #whats-this,
+    .fast-hero #landing-wrap > #ai-comparison { display: none; }
+
+    /* When the hero collapses after search starts, shrink it */
+    .fast-hero.collapsed {
+      min-height: auto;
+      padding-top: 1.5rem;
+      padding-bottom: 0;
+    }
+
+    .fast-hero.collapsed h1 { font-size: 1.3rem; margin-bottom: 0.15rem; }
+    .fast-hero.collapsed .fast-tagline { margin-bottom: 0; font-size: 0.9rem; }
+    .fast-hero.collapsed .fast-suggestions,
+    .fast-hero.collapsed .fast-value-strip { display: none; }
+    .fast-hero.collapsed .fast-full-story { display: none; }
+
+    /* Override the app container for fast mode */
+    body.fast-mode #app {
+      max-width: 780px;
+    }
+
+    /* Settings toggle in fast mode */
+    .fast-settings-toggle {
+      width: 100%;
+      max-width: 680px;
+      margin-top: 0.5rem;
+      text-align: right;
+    }
+
+    .fast-settings-toggle button {
+      background: none;
+      border: none;
+      font-family: var(--mono);
+      font-size: 0.55rem;
+      color: var(--smoke);
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 0.25rem 0;
+      transition: color 0.2s;
+    }
+
+    .fast-settings-toggle button:hover { color: var(--bone-dim); }
+
+    .fast-settings-panel {
+      width: 100%;
+      max-width: 680px;
+      display: none;
+      margin-top: 0.5rem;
+      padding: 0.75rem 1rem;
+      background: var(--surface);
+      border: 1px solid var(--ash);
+      border-radius: 8px;
+    }
+
+    .fast-settings-panel.open { display: block; }
+
+    .fast-settings-panel .settings-grid {
+      display: flex;
+      gap: 1.5rem;
+      align-items: flex-end;
+    }
+
+    .fast-settings-panel select {
+      border-radius: 6px;
+    }
+
+    @media (max-width: 768px) {
+      .fast-hero { min-height: 60vh; padding: 1.5rem 1rem; }
+      .fast-value-strip { flex-direction: column; gap: 1rem; align-items: center; }
+      .fast-context-row { flex-direction: column; }
+      .fast-suggestions { gap: 0.4rem; }
+      .fast-settings-panel .settings-grid { flex-direction: column; gap: 0.75rem; }
+    }
+  </style>
+</head>
+<body class="fast-mode">
+
+  <!-- ═══ NO INTRO — Straight to the app ═══ -->
+  <div id="app" class="hidden">
+
+    <!-- ═══ FAST-USE HERO: ChatGPT-familiar centered input ═══ -->
+    <div class="fast-hero" id="fast-hero">
+      <div class="sigil">&#9674; &#9672; &#9674;</div>
+      <h1>Tables Turned</h1>
+      <div class="fast-tagline">Search 37 million medical papers in plain English.</div>
+
+      <div class="fast-input-box">
+        <textarea id="q" rows="2" placeholder="What health question are you trying to figure out?"></textarea>
+        <button class="fast-submit-btn" id="fast-search-btn" title="Search the public record">
+          <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+        </button>
+      </div>
+
+      <div class="fast-context-row">
+        <span class="fast-context-label">Context</span>
+        <input type="text" id="ctx" placeholder="What decision does this serve? (optional)">
+      </div>
+
+      <div class="fast-status" id="search-status"></div>
+
+      <!-- Progress indicator (hidden until search starts) -->
+      <div class="fast-progress">
+        <div id="search-progress" class="search-progress hidden">
+          <div class="progress-phase" id="prog-phase-1">
+            <div class="progress-marker"></div>
+            <div class="progress-text">
+              <div class="progress-label">Translating your question</div>
+              <div class="progress-detail">AI converts plain English into medical search terms</div>
+            </div>
+          </div>
+          <div class="progress-phase" id="prog-phase-2">
+            <div class="progress-marker"></div>
+            <div class="progress-text">
+              <div class="progress-label">Searching PubMed</div>
+              <div class="progress-detail">Querying 37 million papers across multiple strategies</div>
+            </div>
+          </div>
+          <div class="progress-phase" id="prog-phase-3">
+            <div class="progress-marker"></div>
+            <div class="progress-text">
+              <div class="progress-label">Fetching papers</div>
+              <div class="progress-detail">Pulling titles, authors, and abstracts</div>
+            </div>
+          </div>
+          <div class="progress-phase" id="prog-phase-4">
+            <div class="progress-marker"></div>
+            <div class="progress-text">
+              <div class="progress-label">Translating into plain language</div>
+              <div class="progress-detail">Making the jargon readable</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="fast-suggestions" id="fast-suggestions">
+        <div class="fast-chip" data-q="Does vitamin D supplementation reduce respiratory infections in children?" data-ctx="Deciding whether to give my kid supplements before winter">Vitamin D &amp; kids' colds</div>
+        <div class="fast-chip" data-q="What is the evidence for melatonin safety in children under 5?" data-ctx="My toddler won't sleep and I'm considering melatonin">Melatonin for toddlers</div>
+        <div class="fast-chip" data-q="Does exercise reduce symptoms of clinical depression?" data-ctx="Considering exercise as part of a treatment plan">Exercise &amp; depression</div>
+        <div class="fast-chip" data-q="What does the evidence say about intermittent fasting and type 2 diabetes?" data-ctx="Recently diagnosed, exploring lifestyle changes">Fasting &amp; diabetes</div>
+      </div>
+
+      <div class="fast-settings-toggle" id="fast-settings-toggle">
+        <button id="toggle-settings-btn">&#9881; Settings</button>
+      </div>
+
+      <div class="fast-settings-panel" id="fast-settings-panel">
+        <div class="settings-grid">
+          <div class="setting-item">
+            <label for="s-depth">Results per query</label>
+            <select id="s-depth">
+              <option value="5" selected>5 (quick scan)</option>
+              <option value="10">10 (standard)</option>
+              <option value="25">25 (deep dive)</option>
+            </select>
+          </div>
+          <div class="setting-item">
+            <label for="s-sort">Sort by</label>
+            <select id="s-sort">
+              <option value="relevance" selected>Most relevant</option>
+              <option value="pub_date">Most recent</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="fast-value-strip">
+        <div class="fast-value-item">
+          <div class="fast-value-icon">&#9906;</div>
+          <div class="fast-value-text">Real PubMed<br>papers only</div>
+        </div>
+        <div class="fast-value-item">
+          <div class="fast-value-icon">&#10003;</div>
+          <div class="fast-value-text">You choose<br>which matter</div>
+        </div>
+        <div class="fast-value-item">
+          <div class="fast-value-icon">&#9758;</div>
+          <div class="fast-value-text">Every claim<br>cites a source</div>
+        </div>
+      </div>
+
+      <div class="fast-full-story">
+        <a href="index.html">The full story &rarr;</a>
+      </div>
+    </div>
+
+    <!-- ═══ STEP 2: CURATE (same as original) ═══ -->
+    <div id="curate-view" class="hidden">
+      <div class="step-label">Step 2 <span class="step-label-text">Choose your papers</span></div>
+      <p class="step-desc">AI translated your question into the medical jargon the system was built on &mdash; then translated the results back into plain language. Select the papers that matter to your question. Deselect the rest.</p>
+
+      <details class="search-disclosure" id="search-disclosure">
+        <summary>How we found these papers</summary>
+        <div class="search-evolution">
+          <div class="search-evolution-step">
+            <div class="evolution-label">Your question</div>
+            <div class="evolution-content" id="evolution-question"></div>
+          </div>
+          <div class="evolution-arrow">&darr;</div>
+          <div class="search-evolution-step">
+            <div class="evolution-label">AI translated it into</div>
+            <div id="search-terms-display"></div>
+          </div>
+          <div class="evolution-arrow">&darr;</div>
+          <div class="search-evolution-step">
+            <div class="evolution-label">Results</div>
+            <div class="evolution-content" id="search-stats"></div>
+          </div>
+        </div>
+        <div class="prompt-peek">
+          <details>
+            <summary>See the full search prompt</summary>
+            <pre id="search-prompt-display" class="prompt-display"></pre>
+          </details>
+        </div>
+      </details>
+
+      <div class="curate-actions">
+        <button id="select-all-btn" class="btn-small">Select all</button>
+        <button id="select-none-btn" class="btn-small">Select none</button>
+        <span id="curate-count" class="curate-count"></span>
+      </div>
+
+      <div id="curate-list"></div>
+
+      <button id="synthesize-btn" class="btn-primary">Read and Synthesize</button>
+      <button id="back-to-search" class="btn-back">&#8592; Back to search</button>
+    </div>
+
+    <!-- ═══ STEP 3: PROCESSING (same as original) ═══ -->
+    <div id="processing-view" class="hidden">
+      <div class="step-label">Step 3 <span class="step-label-text">Reading the record</span></div>
+      <div class="processing-sigil">&#9672;</div>
+      <div id="proc-status">Preparing synthesis...</div>
+      <div id="proc-papers"></div>
+
+      <details class="prompt-peek">
+        <summary>See the synthesis prompt</summary>
+        <pre id="synth-prompt-display" class="prompt-display"></pre>
+      </details>
+
+      <div id="stream-out"></div>
+    </div>
+
+    <!-- ═══ STEP 4: RESULTS (same as original) ═══ -->
+    <div id="results-view" class="hidden">
+      <div class="step-label">Your Brief</div>
+      <div id="brief-out" class="brief-box"></div>
+
+      <details class="prompt-peek" style="margin-bottom: 1rem;">
+        <summary>See the prompt that generated this brief</summary>
+        <pre id="result-prompt-display" class="prompt-display"></pre>
+      </details>
+
+      <div class="provenance-section" id="provenance-section">
+        <details>
+          <summary>Provenance log</summary>
+          <div id="provenance-log" class="provenance-log"></div>
+        </details>
+      </div>
+
+      <div class="export-section">
+        <div class="export-heading">Take it with you</div>
+        <div class="export-row">
+          <div class="export-option">
+            <button class="export-btn primary" id="dl-docx">Download Brief (.docx)</button>
+            <p class="export-hint">Your brief as a Word document. Share it with your doctor, print it, or keep it for reference. Every claim cites its source.</p>
+          </div>
+          <div class="export-option">
+            <button class="export-btn" id="dl-brief">Download Brief (.md)</button>
+            <p class="export-hint">Plain text with formatting. Opens in any text editor. Good for pasting into notes or emails.</p>
+          </div>
+          <div class="export-option">
+            <button class="export-btn" id="dl-tablet">Download Tablet (.json)</button>
+            <p class="export-hint">The full session &mdash; your question, every paper, search terms, prompts, and the brief &mdash; in a structured data file. For archiving or re-analysis.</p>
+          </div>
+        </div>
+      </div>
+      <button id="again-btn" class="btn-back">&#8592; New question</button>
+    </div>
+
+    <!-- ═══ FOOTER ═══ -->
+    <footer id="site-footer">
+      <div class="footer-brand">
+        <div class="footer-sigil">&#9674; &#9672; &#9674;</div>
+        <div class="footer-title">The Word Against The Flood</div>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:JEThomasPhD@gmail.com">JEThomasPhD@gmail.com</a>
+      </div>
+      <div class="footer-sig">
+        Made using <a href="https://the-companion-dossier.pages.dev/Latent_Dialogic_Space/" target="_blank" rel="noopener">Latent Dialogic Space</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/shoreline.js"></script>
+  <script src="js/tablet-press.js"></script>
+  <script src="js/synthesis.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    // ═══ FAST-USE WIRING ═══
+    // Bridges the fast-mode UI to the existing App pipeline.
+    // App.js listens for the 'tables-turned-search' custom event and calls handleSearch.
+    // All form elements (#q, #ctx, #s-depth, #s-sort) share the same IDs, so the
+    // existing pipeline reads them directly.
+    (() => {
+      const $ = id => document.getElementById(id);
+      const hero = $('fast-hero');
+      const qEl = $('q');
+      const ctxEl = $('ctx');
+      const searchBtn = $('fast-search-btn');
+
+      // Suggestion chips fill the inputs
+      document.querySelectorAll('.fast-chip').forEach(chip => {
+        chip.addEventListener('click', () => {
+          qEl.value = chip.dataset.q;
+          ctxEl.value = chip.dataset.ctx || '';
+          qEl.focus();
+          qEl.style.height = 'auto';
+          qEl.style.height = qEl.scrollHeight + 'px';
+        });
+      });
+
+      // Settings toggle
+      $('toggle-settings-btn').addEventListener('click', () => {
+        $('fast-settings-panel').classList.toggle('open');
+      });
+
+      // Search button and Enter key both trigger the pipeline
+      searchBtn.addEventListener('click', triggerSearch);
+      qEl.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' && !e.shiftKey) {
+          e.preventDefault();
+          triggerSearch();
+        }
+      });
+
+      // Auto-resize textarea as user types
+      qEl.addEventListener('input', () => {
+        qEl.style.height = 'auto';
+        qEl.style.height = Math.min(qEl.scrollHeight, 200) + 'px';
+      });
+
+      function triggerSearch() {
+        const question = (qEl.value || '').trim();
+        if (!question) {
+          $('search-status').textContent = 'Ask a question first.';
+          $('search-status').className = 'fast-status error';
+          return;
+        }
+        hero.classList.add('collapsed');
+        searchBtn.disabled = true;
+        window.dispatchEvent(new CustomEvent('tables-turned-search'));
+      }
+
+      // Re-enable the button when navigating back
+      window.addEventListener('tables-turned-reset', () => {
+        searchBtn.disabled = false;
+      });
+    })();
+  </script>
+</body>
+</html>
