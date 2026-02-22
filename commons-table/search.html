@@ -297,35 +297,56 @@
     .fast-hero.collapsed .fast-full-story { display: none; }
     .fast-hero.collapsed .fast-input-box { margin-top: 0.5rem; }
     .fast-hero.collapsed .fast-context-row { margin-top: 0.5rem; }
-    .fast-hero.collapsed .fast-settings-toggle { display: none; }
+    .fast-hero.collapsed .fast-faq-row { display: none; }
 
     /* Override the app container for fast mode */
     body.fast-mode #app {
       max-width: 780px;
     }
 
-    /* Settings toggle in fast mode */
-    .fast-settings-toggle {
+    /* FAQ + Settings row */
+    .fast-faq-row {
       width: 100%;
       max-width: 680px;
       margin-top: 0.5rem;
-      text-align: right;
+      display: flex;
+      justify-content: center;
+      gap: 0.25rem;
     }
 
-    .fast-settings-toggle button {
+    .fast-faq-btn {
       background: none;
-      border: none;
+      border: 1px solid transparent;
       font-family: var(--mono);
       font-size: 0.55rem;
       color: var(--smoke);
       cursor: pointer;
       text-transform: uppercase;
       letter-spacing: 0.08em;
-      padding: 0.25rem 0;
-      transition: color 0.2s;
+      padding: 0.35rem 0.65rem;
+      transition: color 0.2s, border-color 0.2s;
+      border-radius: 4px;
     }
 
-    .fast-settings-toggle button:hover { color: var(--bone-dim); }
+    .fast-faq-btn:hover { color: var(--bone-dim); border-color: var(--border-mid); }
+    .fast-faq-btn.active { color: var(--ember); border-color: var(--ember-dim); }
+
+    .fast-faq-panel {
+      width: 100%;
+      max-width: 680px;
+      display: none;
+      margin-top: 0.5rem;
+      padding: 1rem 1.25rem;
+      background: var(--surface);
+      border: 1px solid var(--ash);
+      border-radius: 8px;
+      text-align: left;
+    }
+
+    .fast-faq-panel.open { display: block; animation: fadeIn 0.3s ease; }
+    .fast-faq-panel p { font-size: 0.9rem; line-height: 1.7; color: var(--bone-dim); margin-bottom: 0.6rem; max-width: 65ch; }
+    .fast-faq-panel strong { color: var(--bone); font-weight: 500; }
+    .fast-faq-panel em { color: var(--ember); font-style: italic; }
 
     .fast-settings-panel {
       width: 100%;
@@ -431,10 +452,40 @@
         <div class="fast-chip" data-q="Do SSRIs actually work better than placebo for treating depression?" data-ctx="Prescribed antidepressants and wondering if the evidence supports them">Antidepressants &amp; placebo</div>
       </div>
 
-      <div class="fast-settings-toggle" id="fast-settings-toggle">
-        <button id="toggle-settings-btn">&#9881; Settings</button>
+      <div class="fast-faq-row" id="fast-faq-row">
+        <button class="fast-faq-btn" id="faq-what-btn">What is this?</button>
+        <button class="fast-faq-btn" id="faq-ai-btn">Doesn&rsquo;t AI do this?</button>
+        <button class="fast-faq-btn" id="toggle-settings-btn">&#9881; Settings</button>
       </div>
 
+      <!-- FAQ: What is this? -->
+      <div class="fast-faq-panel" id="faq-what-panel">
+        <p>Your taxes funded 37 million medical research papers. Then private publishers locked them behind <strong>$35 paywalls</strong>. And the ones you can reach? Written in jargon designed to keep you out.</p>
+        <p><strong>Paywall:</strong> &ldquo;You can&rsquo;t read it.&rdquo; <strong>Credential wall:</strong> &ldquo;You won&rsquo;t understand it.&rdquo;</p>
+        <p>Tables Turned breaks both. Ask a question in plain English. AI searches the real U.S. medical database, translates the jargon, and writes a brief where <strong>every claim cites a source you can click and verify</strong>. You choose which papers matter. Nothing is hidden.</p>
+      </div>
+
+      <!-- FAQ: Doesn't AI already do this? -->
+      <div class="fast-faq-panel" id="faq-ai-panel">
+        <p>When your kid has a fever at 2am, or your doctor says &ldquo;we found something,&rdquo; you don&rsquo;t need vibes. You need evidence.</p>
+        <div class="compare-grid" style="margin: 0.75rem 0;">
+          <div class="compare-item">
+            <div class="compare-name">Google AI Overviews</div>
+            <div class="compare-desc">Summarizes the open web &mdash; wellness blogs, forums, and ads weighted the same as peer-reviewed research. No sources you can verify. <strong>Would you stake your child&rsquo;s health on a confident paragraph with no receipts?</strong></div>
+          </div>
+          <div class="compare-item">
+            <div class="compare-name">ChatGPT</div>
+            <div class="compare-desc">Cites papers &mdash; some real, some <strong>completely fabricated</strong>. Invented authors, fake titles, made-up findings delivered with total confidence. <strong>It hallucinates medical evidence and presents it as fact.</strong></div>
+          </div>
+          <div class="compare-item compare-item-accent">
+            <div class="compare-name">Tables Turned</div>
+            <div class="compare-desc">Searches the actual U.S. medical database. Every paper is real. Every claim cites a <strong>real PubMed ID</strong> you can click and verify. Every prompt is visible. <strong>Nothing is hidden. Nothing is invented.</strong></div>
+          </div>
+        </div>
+        <p class="compare-kicker" style="text-align:center; font-family:var(--voice); font-size:1.05rem; font-style:italic;">They give you <em>answers</em>. This gives you <em>evidence</em>.</p>
+      </div>
+
+      <!-- Settings panel -->
       <div class="fast-settings-panel" id="fast-settings-panel">
         <div class="settings-grid">
           <div class="setting-item">
@@ -448,10 +499,9 @@
           <div class="setting-item">
             <label for="s-sort">Sort by</label>
             <select id="s-sort">
-              <option value="relevance" selected>Most relevant</option>
-              <option value="pub_date">Most recent</option>
+              <option value="relevance" selected>Most relevant (best match for your terms)</option>
+              <option value="pub_date">Most recent (newest first, good for new drugs)</option>
             </select>
-            <span class="setting-note">Most relevant: best match for your terms. Most recent: newest papers first &mdash; good for fast-moving topics like new drugs or COVID.</span>
           </div>
         </div>
       </div>
@@ -589,7 +639,7 @@
       <button id="again-btn" class="btn-back">&#8592; New question</button>
     </div>
 
-    <!-- ═══ ABOUT & DOCUMENTATION (expandable, like main page) ═══ -->
+    <!-- ═══ ABOUT & DOCUMENTATION (expandable, full narrative) ═══ -->
     <div class="about-section" id="about-section-fast">
       <div class="about-toggle" id="about-toggle-fast">
         <span>About &amp; Documentation</span>
@@ -597,51 +647,128 @@
       </div>
       <div class="about-body hidden" id="about-body-fast">
 
+        <!-- Chapter 1: Why This Exists -->
         <div class="doc-chapter reveal">
           <h2>Why This Exists</h2>
-          <p>Your taxes funded 37 million medical research papers. Then private publishers locked them behind <strong>$35 paywalls</strong>. And the ones you can reach? Written in jargon designed to keep you out.</p>
-          <p><strong>Paywall:</strong> &ldquo;You can&rsquo;t read it.&rdquo; <strong>Credential wall:</strong> &ldquo;You won&rsquo;t understand it.&rdquo;</p>
-          <p>Tables Turned breaks both. Ask a question in plain English. AI searches the real U.S. medical database, translates the jargon, and writes a brief where <strong>every claim cites a source you can click and verify</strong>. You choose which papers matter. Nothing is hidden.</p>
+          <p>The U.S. government helped build the largest biomedical knowledge engine on Earth: <strong>PubMed</strong> &mdash; tens of millions of research papers. Your taxes funded the labs. Public universities did the work. Scientists wrote the findings. Other scientists peer-reviewed them for free.</p>
+          <p>Then the system does something almost religiously cynical: <strong>it lets private publishers capture the public record.</strong></p>
+          <p>They didn&rsquo;t fund the study. They didn&rsquo;t run the experiment. They didn&rsquo;t do the peer review. But they control the door. So you &mdash; who already paid &mdash; get a preview page and a paywall: <strong>$35 per paper</strong> to &ldquo;access&rdquo; what you financed.</p>
+          <p>And that&rsquo;s only the first lock. Even when you can get in, the language is engineered to keep ordinary people out: clinical, defensive, credential-coded prose that requires years of training to translate into <em>&ldquo;What does this mean for my body? For my kid? For my risk?&rdquo;</em></p>
+          <p>So the public gets crushed between two walls:</p>
+          <ol class="walls-list">
+            <li><strong>Paywall:</strong> &ldquo;You can&rsquo;t read it.&rdquo;</li>
+            <li><strong>Credential wall:</strong> &ldquo;Even if you read it, you won&rsquo;t understand it.&rdquo;</li>
+          </ol>
+          <p>That&rsquo;s not an accident. <strong>That&rsquo;s a governance model.</strong> The government can claim &ldquo;transparency&rdquo; because the titles are searchable. The publishers can claim &ldquo;value&rdquo; because the prose is indecipherable. And the public &mdash; patients, families, citizens &mdash; are told to shut up and trust the priesthood.</p>
+          <p>This is old power. In Rome and its provinces near first-century Palestine, information was a controlled substance: literacy as a gate, language as a gate, status as a gate, permission as a gate. The common people got parables. The elite got records. Until the tables were flipped.</p>
+
+          <h3>How The Machine Works</h3>
+          <p>Here is the lifecycle of a publicly funded research paper.</p>
+          <p>A researcher at a public university, paid with public funds, conducts a study funded by an NIH grant &mdash; also public funds. She writes a paper. She submits it to a journal. Volunteer scientists &mdash; also employed at public universities &mdash; review it for free. The journal publishes it. <strong>The researcher signs over her copyright.</strong> The journal charges $35 to read the paper, or bundles it into a subscription costing universities $10,000 to $50,000 per year.</p>
+          <p>The five largest academic publishers &mdash; <strong>Elsevier, Springer Nature, Wiley, Taylor &amp; Francis, and SAGE</strong> &mdash; control more than half of all published research. Elsevier alone has reported profit margins above 30%, consistently higher than Apple, Google, or Amazon.</p>
+          <p>The researcher who wrote the paper? She cannot access her own published work without paying or going through her university&rsquo;s subscription. If she changes institutions or retires, she loses access to the paper she wrote. Academics routinely email each other PDFs of their own papers because the legitimate channels are broken.</p>
+          <p>This is not a conspiracy. It is a <strong>business model</strong>. &ldquo;Publish or perish&rdquo; culture means tenure requires publication in prestigious journals. Prestigious journals require copyright transfer. The system feeds itself.</p>
+
+          <h3>The Second Lock: Language</h3>
+          <p>Even when you can access the abstracts for free through PubMed, the search interface requires <strong>boolean operators</strong> and <strong>Medical Subject Headings (MeSH)</strong> &mdash; a controlled vocabulary of over 30,000 terms that medical librarians spend years learning. A plain question like &ldquo;does vitamin D help prevent colds?&rdquo; must become:</p>
+          <pre class="prompt-display" style="margin:0.75rem 0;">(&quot;Vitamin D&quot;[MeSH] OR &quot;Cholecalciferol&quot;[MeSH]) AND (&quot;Respiratory Tract Infections&quot;[MeSH] OR &quot;Common Cold&quot;[MeSH]) AND (&quot;Prevention and Control&quot;[Subheading] OR &quot;Dietary Supplements&quot;[MeSH])</pre>
+          <p>And the papers themselves speak clinical jargon. A study about whether exercise helps depression does not say &ldquo;exercise helps depression.&rdquo; It says: <em>&ldquo;A statistically significant reduction in PHQ-9 scores (mean difference &minus;3.2, 95% CI &minus;4.1 to &minus;2.3, p&lt;0.001) was observed in the intervention group relative to controls at 12-week follow-up.&rdquo;</em></p>
+          <p>So the public pays three times. Once through taxes. Again through tuition. And again through paywalls. And even after all that, the language ensures you cannot understand what you paid for.</p>
+          <p>PubMed offers the abstracts for free. That is the crack in the wall. <strong>Tables Turned drives a truck through it.</strong></p>
         </div>
 
+        <!-- Chapter 2: Why Not Just Ask ChatGPT? -->
         <div class="doc-chapter reveal">
           <h2>Why Not Just Ask ChatGPT?</h2>
           <p>These tools treat you as a <strong>consumer of answers</strong>. You ask. They deliver. You accept. Sound familiar?</p>
-          <p>It is the same gatekeeping pattern wearing a friendlier mask. The journals said: trust us, we curate the knowledge. The algorithms say: trust us, we summarize it. In both cases, the evidence is not in your hands.</p>
+          <p>It is the same gatekeeping pattern wearing a friendlier mask. The journals said: trust us, we curate the knowledge. The algorithms say: trust us, we summarize it. In both cases, the evidence is not in your hands. You are still on the outside of the glass, trusting an intermediary to get it right.</p>
           <p>Tables Turned takes a different position: you should be in <strong>dialogue with the evidence itself</strong>. Not receiving a verdict. Not consuming a summary. Sitting at the table, choosing which papers matter, reading what they actually say, and walking away with every claim traced to its source.</p>
+          <p>The difference between an answer box and a dialogue is the difference between being told what to think and being equipped to think for yourself.</p>
         </div>
 
+        <!-- Chapter 3: The Dialogue -->
         <div class="doc-chapter reveal">
           <h2>The Dialogue</h2>
+          <p>Here is how Tables Turned works, step by step.</p>
+
           <h3>Step 1: You ask a question</h3>
-          <p>Type your question in plain English. Add your decision context &mdash; the reason you are asking. The context shapes which evidence matters most.</p>
+          <p>Type your question in plain English. Add your decision context &mdash; the reason you are asking. &ldquo;Should I give my kid melatonin?&rdquo; is different when the context is &ldquo;they can&rsquo;t sleep before school tomorrow&rdquo; versus &ldquo;building a long-term sleep routine.&rdquo; The context shapes which evidence matters most. No API key needed &mdash; just ask.</p>
+
           <h3>Step 2: AI translates your question into PubMed&rsquo;s language</h3>
-          <p>Your question is sent to Claude, which generates <strong>multiple search strategies</strong> using real medical terminology. You can see every search term it generated, and why.</p>
+          <p>Your question is sent to <strong>Claude</strong>, Anthropic&rsquo;s AI. It does not just pull keywords. It generates <strong>multiple search strategies</strong> using real medical terminology &mdash; MeSH headings, boolean operators, synonym expansions &mdash; the same language a medical librarian would use. These strategies range from broad (casting a wide net) to specific (targeting exact conditions and interventions).</p>
+          <p>You can see every search term it generated, and why. Nothing is hidden.</p>
+
           <h3>Step 3: Papers come back in plain language</h3>
-          <p>Papers return with titles, authors, journals, and abstracts. AI translates each into plain language. <strong>You decide which papers to include.</strong></p>
+          <p>The search terms query PubMed&rsquo;s public API &mdash; the same interface used by researchers and institutions worldwide. Papers return with their titles, authors, journals, years, and abstracts. Then AI translates each paper&rsquo;s title and abstract into plain language &mdash; not dumbed down, but made readable.</p>
+          <p>You see both versions: the plain-language translation and the original technical title. <strong>You decide which papers to include.</strong> This is your curation step. The AI does not decide what is relevant. You do.</p>
+
           <h3>Step 4: AI reads and writes your brief</h3>
-          <p>The papers you selected are synthesized with strict instructions: cite every claim, surface contradictions, state confidence honestly. You leave with receipts.</p>
+          <p>The papers you selected are sent to Claude with strict instructions: separate what the papers observe from what can be inferred. Cite every claim with a PubMed ID. Surface contradictions between papers &mdash; do not hide disagreement. State confidence honestly. Name what is unknown. Flag any claim that cannot be traced to a provided paper as <em>[UNWITNESSED]</em>.</p>
+          <p>The synthesis streams in real time. You watch it being written. When it is done, you have a brief you can download as a Word document &mdash; with every claim linked to its source.</p>
+          <p>You came in with a question. You leave with receipts.</p>
         </div>
 
+        <!-- Chapter 4: The Prompts -->
+        <div class="doc-chapter reveal">
+          <h2>The Prompts</h2>
+          <p>Every AI interaction in Tables Turned uses a carefully designed prompt. Most AI tools hide their prompts. We show you ours in full, because transparency is not optional when health decisions are at stake.</p>
+
+          <h3>Search Query Generation</h3>
+          <p>When you type your question and press search, this prompt converts your plain English into optimized medical database queries with real MeSH headings and boolean logic.</p>
+          <pre id="doc-prompt-search" class="prompt-display"></pre>
+
+          <h3>Plain-Language Translation</h3>
+          <p>After finding papers, this prompt translates each title and abstract into language anyone can understand &mdash; without losing the substance.</p>
+          <pre id="doc-prompt-summary" class="prompt-display"></pre>
+
+          <h3>Synthesis</h3>
+          <p>This is the core prompt. It governs how the AI reads the papers and writes your brief. Every rule serves a purpose: separating fact from inference, enforcing citations, surfacing disagreement, preventing hallucination.</p>
+          <pre id="doc-prompt-synth" class="prompt-display"></pre>
+        </div>
+
+        <!-- Chapter 5: Honest Limits -->
         <div class="doc-chapter reveal">
           <h2>Honest Limits</h2>
+          <p>This tool has real limitations. Knowing them makes you a better user.</p>
           <ul>
-            <li><strong>Abstracts only.</strong> Tables Turned reads abstracts, not full papers. If a paper matters, find and read the full text.</li>
-            <li><strong>AI can err.</strong> Every claim includes a PMID &mdash; click it and verify.</li>
-            <li><strong>Not medical advice.</strong> This gives you better questions to ask your doctor, not answers to follow blindly.</li>
+            <li><strong>Abstracts only.</strong> Tables Turned reads abstracts, not full papers. Abstracts are free and public. Full papers are often paywalled. This means nuance in the methods or results sections may be missed. If a paper matters to your decision, find and read the full text.</li>
+            <li><strong>AI can err.</strong> Despite strict instructions, Claude may occasionally misinterpret an abstract or make an unsupported inference. Every claim includes a PMID citation &mdash; click it and read the abstract yourself. The receipts exist so you can verify.</li>
+            <li><strong>Not medical advice.</strong> This tool helps you understand what research exists. It does not replace a physician. It gives you better questions to ask your doctor, not answers to follow blindly.</li>
+            <li><strong>English-dominant.</strong> PubMed indexes predominantly English-language abstracts. Research published in other languages may not appear.</li>
+            <li><strong>Search boundaries.</strong> The AI generates search strategies, but PubMed&rsquo;s index has limits. Very new papers may not be indexed yet. Very niche topics may have little published research. The search stats tell you exactly how many papers were found and how.</li>
           </ul>
         </div>
 
+        <!-- Chapter 6: Technical Details -->
         <div class="doc-chapter reveal">
           <h2>Technical Details</h2>
-          <p><strong>Data source:</strong> PubMed / NCBI E-utilities &mdash; the same database used by researchers worldwide.</p>
-          <p><strong>AI model:</strong> Claude by Anthropic. Your requests route through a minimal Cloudflare Worker proxy. No data is logged or stored.</p>
-          <p><strong>Privacy:</strong> Your briefs exist only in your browser. No tracking. No analytics. No database.</p>
+          <h3>Data source</h3>
+          <p><strong>PubMed / NCBI E-utilities:</strong> All paper metadata and abstracts are fetched from the National Center for Biotechnology Information&rsquo;s public API. This is the same database used by researchers, doctors, and institutions worldwide. Free, public, no account required.</p>
+          <h3>AI model</h3>
+          <p><strong>Claude by Anthropic:</strong> All AI interactions use Claude, Anthropic&rsquo;s most capable model. Your requests are routed through a minimal Cloudflare Worker proxy that holds the API key &mdash; your browser never sees or stores it. The worker adds the key and forwards your request to Anthropic. No data is logged or stored on the worker.</p>
+
+          <h3>How papers are selected</h3>
+          <p>When you search, AI generates 3&ndash;4 independent search strategies &mdash; each targeting your question from a different angle (broad terms, specific MeSH headings, study types). Each strategy queries PubMed separately. The results are then scored and ranked:</p>
+          <ol>
+            <li><strong>Cross-strategy overlap (+3 points per strategy):</strong> A paper found by multiple independent search strategies is more likely to be central to your question. If a paper appears in 3 of 4 strategies, it gets 9 overlap points.</li>
+            <li><strong>PubMed position weight (+1&ndash;5 points):</strong> PubMed returns results in relevance order. The top result in any strategy gets 5 points, second gets 4, and so on. Papers ranked 6th or lower get 1 point.</li>
+          </ol>
+          <p>The composite score (overlap &times; 3 + position points) determines rank. The top 12 papers are shown. Papers that appear in multiple strategies display a badge (e.g., &ldquo;3/4 strategies&rdquo;) so you can see why they ranked high.</p>
+          <p>This method favors papers that are <strong>independently identified by multiple approaches</strong> AND <strong>highly ranked by PubMed&rsquo;s own relevance engine</strong>. It is fully transparent: scores and matched strategies are recorded in the Tablet export.</p>
+
+          <h3>Privacy</h3>
+          <p>No API key is needed &mdash; the key is held securely on a Cloudflare Worker and never exposed to your browser. Your questions and papers pass through the worker only to reach Anthropic&rsquo;s API; nothing is logged or stored. Your briefs exist only in your browser. When you close the tab, they are gone unless you downloaded them. No tracking. No analytics. No database.</p>
         </div>
 
+        <!-- Chapter 7: The Lineage -->
         <div class="doc-chapter reveal">
           <h2>The Lineage</h2>
-          <p>Tables Turned inherits from a long tradition of putting knowledge back in common hands &mdash; from Tyndale&rsquo;s translation to Carnegie&rsquo;s libraries to Aaron Swartz&rsquo;s fight for open access.</p>
+          <p>Tables Turned inherits from a long tradition of putting knowledge back in common hands.</p>
+          <p>When William Tyndale translated the Bible into English in 1526, he was burned at the stake for it. The gatekeepers of his era argued that scripture was too dangerous for ordinary people &mdash; that only priests could be trusted to interpret the Word.</p>
+          <p>When Andrew Carnegie built 2,509 free public libraries across the English-speaking world, he was told the working class would not use them. They did.</p>
+          <p>When Aaron Swartz downloaded millions of academic papers from JSTOR and tried to make them freely available, he was prosecuted by the federal government. He died at 26. The papers are still behind paywalls. The publishers are still posting 30% profit margins.</p>
+          <p>The pattern is always the same. Knowledge exists. Gatekeepers insist it must be mediated. Translators refuse the premise. Eventually, the public record returns to the public.</p>
+          <p>This tool is one small table flip in that tradition. It does not replace reading. It does not replace thinking. It does not replace your physician. It is a translator that sits at the table with you, reads the public record aloud, and makes sure every claim has a receipt.</p>
           <p class="lineage-end">The tables have turned. Take your seat.</p>
         </div>
 
@@ -687,9 +814,26 @@
         });
       });
 
-      // Settings toggle
-      $('toggle-settings-btn').addEventListener('click', () => {
-        $('fast-settings-panel').classList.toggle('open');
+      // FAQ + Settings toggle (mutually exclusive panels)
+      const faqPanels = [
+        { btn: $('faq-what-btn'), panel: $('faq-what-panel') },
+        { btn: $('faq-ai-btn'), panel: $('faq-ai-panel') },
+        { btn: $('toggle-settings-btn'), panel: $('fast-settings-panel') }
+      ];
+      faqPanels.forEach(({ btn, panel }) => {
+        btn.addEventListener('click', () => {
+          const isOpen = panel.classList.contains('open');
+          // Close all panels and deactivate all buttons
+          faqPanels.forEach(({ btn: b, panel: p }) => {
+            p.classList.remove('open');
+            b.classList.remove('active');
+          });
+          // Toggle the clicked one
+          if (!isOpen) {
+            panel.classList.add('open');
+            btn.classList.add('active');
+          }
+        });
       });
 
       // Search button and Enter key both trigger the pipeline
@@ -761,12 +905,12 @@
 
       // ── Educational Scaffolding ──
       const EDU_MESSAGES = [
-        'Google AI Overviews weighs wellness blogs the same as peer-reviewed research. This searches the actual U.S. medical database.',
-        'ChatGPT invents citations. Fake authors, fake titles, real confidence. Here, every paper is real and every PMID links to PubMed.',
-        'Other tools give you answers. This gives you evidence.',
-        'Every claim in your brief cites a real paper you can verify in seconds.',
-        'Your taxes funded this research. AI just broke the jargon barrier.',
-        'Every search term, every prompt, every source. Nothing hidden.'
+        'ChatGPT fabricates medical citations. Invented authors, fake journals, made-up findings delivered with total confidence. You cannot tell which are real.',
+        'Google AI Overviews cannot tell a randomized controlled trial from a supplement ad. Both get the same algorithmic weight in your health answer.',
+        'Researchers tested ChatGPT on medical questions. A significant share of its cited papers did not exist. It invented them.',
+        'Google\u2019s AI once recommended eating rocks for minerals. It summarizes whatever ranks highest \u2014 including Reddit threads and content marketing.',
+        'Ask ChatGPT for sources on a drug interaction, then check the PMIDs. Many are dead links to papers that were never written.',
+        'Here, every PMID links to a real paper on PubMed. Click it. Read the abstract. Verify the claim yourself. That is the difference.'
       ];
       let eduInterval = null;
       let eduIdx = 0;

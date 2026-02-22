@@ -33,12 +33,12 @@ const App = (() => {
 
   // ── Educational Scaffolding (main page) ──
   const EDU_MESSAGES = [
-    'Google AI Overviews weighs wellness blogs the same as peer-reviewed research. This searches the actual U.S. medical database.',
-    'ChatGPT invents citations. Fake authors, fake titles, real confidence. Here, every paper is real and every PMID links to PubMed.',
-    'Other tools give you answers. This gives you evidence.',
-    'Every claim in your brief cites a real paper you can verify in seconds.',
-    'Your taxes funded this research. AI just broke the jargon barrier.',
-    'Every search term, every prompt, every source. Nothing hidden.'
+    'ChatGPT fabricates medical citations. Invented authors, fake journals, made-up findings delivered with total confidence. You cannot tell which are real.',
+    'Google AI Overviews cannot tell a randomized controlled trial from a supplement ad. Both get the same algorithmic weight in your health answer.',
+    'Researchers tested ChatGPT on medical questions. A significant share of its cited papers did not exist. It invented them.',
+    'Google\u2019s AI once recommended eating rocks for minerals. It summarizes whatever ranks highest \u2014 including Reddit threads and content marketing.',
+    'Ask ChatGPT for sources on a drug interaction, then check the PMIDs. Many are dead links to papers that were never written.',
+    'Here, every PMID links to a real paper on PubMed. Click it. Read the abstract. Verify the claim yourself. That is the difference.'
   ];
   let eduInterval = null;
   let eduIdx = 0;
@@ -212,6 +212,18 @@ const App = (() => {
         populatePromptDocs();
         $('about-section').scrollIntoView({ behavior: 'smooth' });
       });
+    }
+
+    // About toggle for fast mode (search page)
+    if ($('about-toggle-fast')) {
+      // Listen for open event from inline JS and populate prompts
+      const fastAboutBody = $('about-body-fast');
+      const observer = new MutationObserver(() => {
+        if (fastAboutBody && !fastAboutBody.classList.contains('hidden')) {
+          populatePromptDocs();
+        }
+      });
+      observer.observe(fastAboutBody, { attributes: true, attributeFilter: ['class'] });
     }
 
     // Search button (only in full mode — fast mode wires its own)
