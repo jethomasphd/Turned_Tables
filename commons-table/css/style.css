@@ -415,6 +415,7 @@ header .subtitle {
   padding: 1.5rem 1rem;
   background: rgba(0, 0, 0, 0.3);
   border: 1px solid var(--ash);
+  border-radius: 8px;
 }
 
 .flow-step {
@@ -602,6 +603,7 @@ input[type="text"], input[type="password"], textarea, select {
   width: 100%;
   background: var(--card);
   border: 1px solid var(--border-mid);
+  border-radius: 8px;
   color: var(--bone);
   font-family: var(--body);
   font-size: 0.95rem;
@@ -675,6 +677,7 @@ select { font-family: var(--mono); font-size: 0.82rem; cursor: pointer; }
 .search-settings {
   margin-bottom: 1rem;
   border: 1px solid var(--ash);
+  border-radius: 8px;
   background: var(--surface);
 }
 .search-settings summary {
@@ -719,6 +722,7 @@ select { font-family: var(--mono); font-size: 0.82rem; cursor: pointer; }
   padding: 1.25rem;
   background: var(--surface);
   border: 1px solid var(--ash);
+  border-radius: 8px;
 }
 
 .progress-phase {
@@ -804,6 +808,7 @@ select { font-family: var(--mono); font-size: 0.82rem; cursor: pointer; }
   background: var(--surface);
   border: 1px solid var(--ash);
   border-left: 2px solid var(--ember-dim);
+  border-radius: 8px;
 }
 .manual-explain p {
   font-size: 0.9rem;
@@ -896,6 +901,7 @@ select { font-family: var(--mono); font-size: 0.82rem; cursor: pointer; }
 .search-disclosure {
   margin-bottom: 1.25rem;
   border: 1px solid var(--ash);
+  border-radius: 8px;
   background: var(--surface);
 }
 .search-disclosure summary {
@@ -993,6 +999,7 @@ select { font-family: var(--mono); font-size: 0.82rem; cursor: pointer; }
   line-height: 1.7;
   background: #050505;
   border: 1px solid var(--ash);
+  border-radius: 8px;
   padding: 0.85rem 1rem;
   white-space: pre-wrap;
   word-break: break-word;
@@ -1014,6 +1021,7 @@ select { font-family: var(--mono); font-size: 0.82rem; cursor: pointer; }
 .curate-card {
   background: rgba(0, 0, 0, 0.4);
   border: 1px solid var(--ash);
+  border-radius: 8px;
   margin-bottom: 0.6rem;
   transition: border-color 0.25s, background 0.25s;
   position: relative;
@@ -1106,6 +1114,7 @@ select { font-family: var(--mono); font-size: 0.82rem; cursor: pointer; }
   background: #050505;
   border: 1px solid var(--ash);
   border-left: 2px solid var(--ember-dim);
+  border-radius: 8px;
 }
 
 .curate-expand-btn {
@@ -1171,6 +1180,7 @@ select { font-family: var(--mono); font-size: 0.82rem; cursor: pointer; }
   padding: 1rem;
   background: #050505;
   border: 1px solid var(--ash);
+  border-radius: 8px;
   display: none;
   scrollbar-width: thin;
   scrollbar-color: var(--ember-dim) transparent;
@@ -1187,6 +1197,7 @@ select { font-family: var(--mono); font-size: 0.82rem; cursor: pointer; }
 .brief-box {
   background: #050505;
   border: 1px solid var(--ash);
+  border-radius: 8px;
   padding: 2.5rem;
   margin-bottom: 1.5rem;
   font-family: var(--body);
@@ -1261,6 +1272,7 @@ select { font-family: var(--mono); font-size: 0.82rem; cursor: pointer; }
   padding: 0.75rem;
   background: #050505;
   border: 1px solid var(--ash);
+  border-radius: 8px;
   margin-top: 0.5rem;
   max-height: 240px;
   overflow-y: auto;
@@ -1452,6 +1464,124 @@ select { font-family: var(--mono); font-size: 0.82rem; cursor: pointer; }
    XXVI. RESPONSIVE
    ═══════════════════════════════════════════════════════════════ */
 
+/* ═══════════════════════════════════════════════════════════════
+   XXVII. ABOUT MODAL (for /search page)
+   ═══════════════════════════════════════════════════════════════ */
+
+.about-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(4px);
+  display: none;
+  align-items: flex-start;
+  justify-content: center;
+  overflow-y: auto;
+  padding: 2rem 1rem;
+}
+.about-modal-overlay.open { display: flex; }
+
+.about-modal {
+  width: 100%;
+  max-width: 750px;
+  background: var(--void-warm);
+  border: 1px solid var(--ash);
+  border-radius: 12px;
+  padding: 2.5rem;
+  position: relative;
+  animation: fadeUp 0.4s ease;
+}
+
+.about-modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1.25rem;
+  background: none;
+  border: 1px solid var(--border-mid);
+  border-radius: 6px;
+  color: var(--smoke);
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0.35rem 0.75rem;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+}
+.about-modal-close:hover {
+  color: var(--bone-dim);
+  border-color: var(--ember-dim);
+}
+
+.about-modal .doc-chapter { margin-bottom: 2rem; padding-top: 0.75rem; }
+.about-modal .doc-chapter:first-child { padding-top: 0; }
+
+
+/* ═══════════════════════════════════════════════════════════════
+   XXVIII. EDUCATIONAL SCAFFOLDING (loading messages)
+   ═══════════════════════════════════════════════════════════════ */
+
+.edu-scaffold {
+  margin-top: 1rem;
+  padding: 0.85rem 1rem;
+  background: rgba(201, 162, 39, 0.03);
+  border: 1px solid rgba(201, 162, 39, 0.1);
+  border-radius: 8px;
+  text-align: center;
+  min-height: 3.5em;
+}
+
+.edu-scaffold-label {
+  font-family: var(--mono);
+  font-size: 0.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--ember-dim);
+  margin-bottom: 0.35rem;
+}
+
+.edu-scaffold-msg {
+  font-family: var(--body);
+  font-size: 0.88rem;
+  color: var(--bone-dim);
+  line-height: 1.6;
+  font-style: italic;
+  transition: opacity 0.5s ease;
+}
+
+
+/* ═══════════════════════════════════════════════════════════════
+   XXIX. STREAM NOTICE (formatted report coming)
+   ═══════════════════════════════════════════════════════════════ */
+
+.stream-notice {
+  margin-top: 0.75rem;
+  padding: 0.6rem 1rem;
+  background: rgba(201, 162, 39, 0.04);
+  border: 1px solid rgba(201, 162, 39, 0.12);
+  border-radius: 8px;
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  color: var(--ember-dim);
+  text-align: center;
+  letter-spacing: 0.03em;
+  line-height: 1.5;
+  display: none;
+}
+.stream-notice.visible { display: block; }
+
+.stream-notice strong {
+  color: var(--ember);
+  font-weight: 500;
+}
+
+
+/* ═══════════════════════════════════════════════════════════════
+   XXX. RESPONSIVE
+   ═══════════════════════════════════════════════════════════════ */
+
 @media (max-width: 768px) {
   #app { padding: 1rem; }
   header { padding: 2rem 0 1.5rem; }
@@ -1463,6 +1593,7 @@ select { font-family: var(--mono); font-size: 0.82rem; cursor: pointer; }
   .curate-expand-btn { padding-left: calc(18px + 1.75rem); }
   .info-tip::after { left: auto; right: -10px; transform: none; width: 250px; }
   .flip-btn { padding: 0.85rem 2rem; }
+  .about-modal { padding: 1.5rem; }
 
   /* Flow diagram: stack vertically on mobile */
   .flow-diagram {

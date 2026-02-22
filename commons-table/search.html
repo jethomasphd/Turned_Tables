@@ -287,7 +287,8 @@
     .fast-hero.collapsed h1 { font-size: 1.3rem; margin-bottom: 0.15rem; }
     .fast-hero.collapsed .fast-tagline { margin-bottom: 0; font-size: 0.9rem; }
     .fast-hero.collapsed .fast-suggestions,
-    .fast-hero.collapsed .fast-value-strip { display: none; }
+    .fast-hero.collapsed .fast-value-strip,
+    .fast-hero.collapsed .flow-diagram { display: none; }
     .fast-hero.collapsed .fast-full-story { display: none; }
 
     /* Override the app container for fast mode */
@@ -359,7 +360,8 @@
     <div class="fast-hero" id="fast-hero">
       <div class="sigil">&#9674; &#9672; &#9674;</div>
       <h1>Tables Turned</h1>
-      <div class="fast-tagline">Search 37 million medical papers in plain English.</div>
+      <div class="fast-tagline">Read what you paid for.</div>
+      <div class="fast-tagline" style="margin-top:-1.5rem; font-size:clamp(0.82rem, 2vw, 0.95rem); font-style:normal; color:var(--smoke);">Search 37 million medical papers in plain English. Every claim cites its source.</div>
 
       <div class="fast-input-box">
         <textarea id="q" rows="2" placeholder="What health question are you trying to figure out?"></textarea>
@@ -406,14 +408,19 @@
               <div class="progress-detail">Making the jargon readable</div>
             </div>
           </div>
+          <div class="edu-scaffold" id="edu-scaffold">
+            <div class="edu-scaffold-label">How this is different</div>
+            <div class="edu-scaffold-msg" id="edu-scaffold-msg"></div>
+          </div>
         </div>
       </div>
 
       <div class="fast-suggestions" id="fast-suggestions">
-        <div class="fast-chip" data-q="Does vitamin D supplementation reduce respiratory infections in children?" data-ctx="Deciding whether to give my kid supplements before winter">Vitamin D &amp; kids' colds</div>
-        <div class="fast-chip" data-q="What is the evidence for melatonin safety in children under 5?" data-ctx="My toddler won't sleep and I'm considering melatonin">Melatonin for toddlers</div>
-        <div class="fast-chip" data-q="Does exercise reduce symptoms of clinical depression?" data-ctx="Considering exercise as part of a treatment plan">Exercise &amp; depression</div>
-        <div class="fast-chip" data-q="What does the evidence say about intermittent fasting and type 2 diabetes?" data-ctx="Recently diagnosed, exploring lifestyle changes">Fasting &amp; diabetes</div>
+        <div class="fast-chip" data-q="Does vitamin D supplementation reduce the frequency or severity of colds and respiratory infections?" data-ctx="Deciding whether to take vitamin D supplements this winter">Vitamin D &amp; colds</div>
+        <div class="fast-chip" data-q="Is there a link between childhood vaccines and autism spectrum disorder?" data-ctx="New parent evaluating the vaccination schedule">Vaccines &amp; autism</div>
+        <div class="fast-chip" data-q="Does consumption of ultra-processed foods increase cancer risk?" data-ctx="Trying to make better grocery decisions for my family">Processed foods &amp; cancer</div>
+        <div class="fast-chip" data-q="What are the health effects of vaping cannabis compared to smoking it?" data-ctx="Considering switching from smoking to vaping">Vaping cannabis</div>
+        <div class="fast-chip" data-q="How effective is semaglutide (Ozempic) for weight loss and what are the risks?" data-ctx="Considering asking my doctor about Ozempic">Ozempic &amp; weight loss</div>
       </div>
 
       <div class="fast-settings-toggle" id="fast-settings-toggle">
@@ -440,23 +447,40 @@
         </div>
       </div>
 
-      <div class="fast-value-strip">
-        <div class="fast-value-item">
-          <div class="fast-value-icon">&#9906;</div>
-          <div class="fast-value-text">Real PubMed<br>papers only</div>
+      <div class="flow-diagram" style="max-width:680px; margin:2rem auto 0.5rem;">
+        <div class="flow-step">
+          <div class="flow-icon">?</div>
+          <div class="flow-label">You ask</div>
+          <div class="flow-detail">plain English</div>
         </div>
-        <div class="fast-value-item">
-          <div class="fast-value-icon">&#10003;</div>
-          <div class="fast-value-text">You choose<br>which matter</div>
+        <div class="flow-arrow">&rarr;</div>
+        <div class="flow-step">
+          <div class="flow-icon">&#9906;</div>
+          <div class="flow-label">AI searches</div>
+          <div class="flow-detail">PubMed &middot; 37M papers</div>
         </div>
-        <div class="fast-value-item">
-          <div class="fast-value-icon">&#9758;</div>
-          <div class="fast-value-text">Every claim<br>cites a source</div>
+        <div class="flow-arrow">&rarr;</div>
+        <div class="flow-step">
+          <div class="flow-icon">&#10003;</div>
+          <div class="flow-label">You choose</div>
+          <div class="flow-detail">which papers matter</div>
+        </div>
+        <div class="flow-arrow">&rarr;</div>
+        <div class="flow-step">
+          <div class="flow-icon">&#9671;</div>
+          <div class="flow-label">AI reads</div>
+          <div class="flow-detail">the abstracts</div>
+        </div>
+        <div class="flow-arrow">&rarr;</div>
+        <div class="flow-step flow-step-accent">
+          <div class="flow-icon">&#9758;</div>
+          <div class="flow-label">Your brief</div>
+          <div class="flow-detail">every claim cited</div>
         </div>
       </div>
 
       <div class="fast-full-story">
-        <a href="index.html">The full story &rarr;</a>
+        <a href="#" id="open-about-modal">The full story &rarr;</a>
       </div>
     </div>
 
@@ -516,6 +540,7 @@
       </details>
 
       <div id="stream-out"></div>
+      <div class="stream-notice" id="stream-notice">Your <strong>formatted brief</strong> is being prepared. The text above is the raw AI output streaming in real time &mdash; your final report will be cleanly structured with headings, citations, and a downloadable document.</div>
     </div>
 
     <!-- ═══ STEP 4: RESULTS (same as original) ═══ -->
@@ -555,6 +580,62 @@
       <button id="again-btn" class="btn-back">&#8592; New question</button>
     </div>
 
+    <!-- ═══ ABOUT MODAL ═══ -->
+    <div class="about-modal-overlay" id="about-modal-overlay">
+      <div class="about-modal">
+        <button class="about-modal-close" id="about-modal-close">Close &times;</button>
+
+        <div class="doc-chapter">
+          <h2>Why This Exists</h2>
+          <p>Your taxes funded 37 million medical research papers. Then private publishers locked them behind <strong>$35 paywalls</strong>. And the ones you can reach? Written in jargon designed to keep you out.</p>
+          <p><strong>Paywall:</strong> &ldquo;You can&rsquo;t read it.&rdquo; <strong>Credential wall:</strong> &ldquo;You won&rsquo;t understand it.&rdquo;</p>
+          <p>Tables Turned breaks both. Ask a question in plain English. AI searches the real U.S. medical database, translates the jargon, and writes a brief where <strong>every claim cites a source you can click and verify</strong>. You choose which papers matter. Nothing is hidden.</p>
+        </div>
+
+        <div class="doc-chapter">
+          <h2>Why Not Just Ask ChatGPT?</h2>
+          <p>These tools treat you as a <strong>consumer of answers</strong>. You ask. They deliver. You accept. Sound familiar?</p>
+          <p>It is the same gatekeeping pattern wearing a friendlier mask. The journals said: trust us, we curate the knowledge. The algorithms say: trust us, we summarize it. In both cases, the evidence is not in your hands.</p>
+          <p>Tables Turned takes a different position: you should be in <strong>dialogue with the evidence itself</strong>. Not receiving a verdict. Not consuming a summary. Sitting at the table, choosing which papers matter, reading what they actually say, and walking away with every claim traced to its source.</p>
+        </div>
+
+        <div class="doc-chapter">
+          <h2>The Dialogue</h2>
+          <h3>Step 1: You ask a question</h3>
+          <p>Type your question in plain English. Add your decision context &mdash; the reason you are asking. The context shapes which evidence matters most.</p>
+          <h3>Step 2: AI translates your question into PubMed&rsquo;s language</h3>
+          <p>Your question is sent to Claude, which generates <strong>multiple search strategies</strong> using real medical terminology. You can see every search term it generated, and why.</p>
+          <h3>Step 3: Papers come back in plain language</h3>
+          <p>Papers return with titles, authors, journals, and abstracts. AI translates each into plain language. <strong>You decide which papers to include.</strong></p>
+          <h3>Step 4: AI reads and writes your brief</h3>
+          <p>The papers you selected are synthesized with strict instructions: cite every claim, surface contradictions, state confidence honestly. You leave with receipts.</p>
+        </div>
+
+        <div class="doc-chapter">
+          <h2>Honest Limits</h2>
+          <ul>
+            <li><strong>Abstracts only.</strong> Tables Turned reads abstracts, not full papers. If a paper matters, find and read the full text.</li>
+            <li><strong>AI can err.</strong> Every claim includes a PMID &mdash; click it and verify.</li>
+            <li><strong>Not medical advice.</strong> This gives you better questions to ask your doctor, not answers to follow blindly.</li>
+          </ul>
+        </div>
+
+        <div class="doc-chapter">
+          <h2>Technical Details</h2>
+          <p><strong>Data source:</strong> PubMed / NCBI E-utilities &mdash; the same database used by researchers worldwide.</p>
+          <p><strong>AI model:</strong> Claude by Anthropic. Your requests route through a minimal Cloudflare Worker proxy. No data is logged or stored.</p>
+          <p><strong>Privacy:</strong> Your briefs exist only in your browser. No tracking. No analytics. No database.</p>
+        </div>
+
+        <div class="doc-chapter">
+          <h2>The Lineage</h2>
+          <p>Tables Turned inherits from a long tradition of putting knowledge back in common hands &mdash; from Tyndale&rsquo;s translation to Carnegie&rsquo;s libraries to Aaron Swartz&rsquo;s fight for open access.</p>
+          <p class="lineage-end">The tables have turned. Take your seat.</p>
+        </div>
+
+      </div>
+    </div>
+
     <!-- ═══ FOOTER ═══ -->
     <footer id="site-footer">
       <div class="footer-brand">
@@ -576,10 +657,6 @@
   <script src="js/app.js"></script>
   <script>
     // ═══ FAST-USE WIRING ═══
-    // Bridges the fast-mode UI to the existing App pipeline.
-    // App.js listens for the 'tables-turned-search' custom event and calls handleSearch.
-    // All form elements (#q, #ctx, #s-depth, #s-sort) share the same IDs, so the
-    // existing pipeline reads them directly.
     (() => {
       const $ = id => document.getElementById(id);
       const hero = $('fast-hero');
@@ -627,13 +704,64 @@
         }
         hero.classList.add('collapsed');
         searchBtn.disabled = true;
+        startEduScaffold();
         window.dispatchEvent(new CustomEvent('tables-turned-search'));
       }
 
       // Re-enable the button when navigating back
       window.addEventListener('tables-turned-reset', () => {
         searchBtn.disabled = false;
+        stopEduScaffold();
       });
+
+      // ── About Modal ──
+      const modalOverlay = $('about-modal-overlay');
+      $('open-about-modal').addEventListener('click', (e) => {
+        e.preventDefault();
+        modalOverlay.classList.add('open');
+      });
+      $('about-modal-close').addEventListener('click', () => {
+        modalOverlay.classList.remove('open');
+      });
+      modalOverlay.addEventListener('click', (e) => {
+        if (e.target === modalOverlay) modalOverlay.classList.remove('open');
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modalOverlay.classList.contains('open')) {
+          modalOverlay.classList.remove('open');
+        }
+      });
+
+      // ── Educational Scaffolding ──
+      const EDU_MESSAGES = [
+        'Google AI Overviews summarizes blogs, forums, and ads \u2014 weighted the same as peer-reviewed research. This searches the actual U.S. medical database.',
+        'ChatGPT fabricates citations \u2014 invented authors, fake titles, delivered with confidence. Here, every paper is real and every PMID is clickable.',
+        'Other tools give you answers. This gives you evidence \u2014 and lets you decide which papers matter.',
+        'Every claim in your brief will link to a real PubMed paper you can verify in 3 seconds.',
+        'Your taxes funded this research. The abstracts are public. AI just broke the jargon barrier for you.',
+        'Unlike a search engine, this tool shows you exactly which search terms the AI used \u2014 and lets you see every prompt.'
+      ];
+      let eduInterval = null;
+      let eduIdx = 0;
+
+      function startEduScaffold() {
+        const msgEl = $('edu-scaffold-msg');
+        if (!msgEl) return;
+        eduIdx = 0;
+        msgEl.textContent = EDU_MESSAGES[0];
+        eduInterval = setInterval(() => {
+          eduIdx = (eduIdx + 1) % EDU_MESSAGES.length;
+          msgEl.style.opacity = '0';
+          setTimeout(() => {
+            msgEl.textContent = EDU_MESSAGES[eduIdx];
+            msgEl.style.opacity = '1';
+          }, 400);
+        }, 5000);
+      }
+
+      function stopEduScaffold() {
+        if (eduInterval) { clearInterval(eduInterval); eduInterval = null; }
+      }
     })();
   </script>
 </body>

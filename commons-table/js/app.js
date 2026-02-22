@@ -31,6 +31,37 @@ const App = (() => {
     state.provenance.push({ timestamp: new Date().toISOString(), action, detail: detail || null });
   }
 
+  // ── Educational Scaffolding (main page) ──
+  const EDU_MESSAGES = [
+    'Google AI Overviews summarizes blogs, forums, and ads \u2014 weighted the same as peer-reviewed research. This searches the actual U.S. medical database.',
+    'ChatGPT fabricates citations \u2014 invented authors, fake titles, delivered with confidence. Here, every paper is real and every PMID is clickable.',
+    'Other tools give you answers. This gives you evidence \u2014 and lets you decide which papers matter.',
+    'Every claim in your brief will link to a real PubMed paper you can verify in 3 seconds.',
+    'Your taxes funded this research. The abstracts are public. AI just broke the jargon barrier for you.',
+    'Unlike a search engine, this tool shows you exactly which search terms the AI used \u2014 and lets you see every prompt.'
+  ];
+  let eduInterval = null;
+  let eduIdx = 0;
+
+  function startEduScaffold() {
+    const msgEl = $('edu-scaffold-msg');
+    if (!msgEl) return;
+    eduIdx = 0;
+    msgEl.textContent = EDU_MESSAGES[0];
+    eduInterval = setInterval(() => {
+      eduIdx = (eduIdx + 1) % EDU_MESSAGES.length;
+      msgEl.style.opacity = '0';
+      setTimeout(() => {
+        msgEl.textContent = EDU_MESSAGES[eduIdx];
+        msgEl.style.opacity = '1';
+      }, 400);
+    }, 5000);
+  }
+
+  function stopEduScaffold() {
+    if (eduInterval) { clearInterval(eduInterval); eduInterval = null; }
+  }
+
   function setPhase(n) {
     for (let i = 1; i <= 4; i++) {
       const el = $('prog-phase-' + i);
@@ -252,6 +283,7 @@ const App = (() => {
     const progEl = $('search-progress');
     show(progEl);
     setPhase(1);
+    if (!fastMode) startEduScaffold();
 
     logProv('search_started', question);
 
@@ -319,6 +351,7 @@ const App = (() => {
 
       if (allPapers.length === 0) {
         hide(progEl);
+        stopEduScaffold();
         statusEl.textContent = 'No papers found. Try rephrasing your question.';
         statusEl.className = 'error';
         $('search-btn').disabled = false;
@@ -355,6 +388,7 @@ const App = (() => {
       }
 
       hide(progEl);
+      stopEduScaffold();
 
       // Store and move to curate
       state.allFoundPapers = cappedPapers;
@@ -387,6 +421,7 @@ const App = (() => {
 
     } catch (err) {
       hide(progEl);
+      stopEduScaffold();
       statusEl.textContent = err.message;
       statusEl.className = 'error';
     } finally {
@@ -596,6 +631,8 @@ const App = (() => {
     await sleep(600);
 
     streamOut.classList.add('visible');
+    const streamNotice = $('stream-notice');
+    if (streamNotice) streamNotice.classList.add('visible');
     procStatus.textContent = 'Generating your brief with Claude Opus...';
 
     try {
@@ -610,6 +647,7 @@ const App = (() => {
         onDone(fullText) {
           state.briefMarkdown = fullText;
           logProv('synthesis_generated', fullText.length + ' chars, ' + selected.length + ' papers');
+          if (streamNotice) streamNotice.classList.remove('visible');
 
           setTimeout(() => {
             hide($('processing-view'));
@@ -622,6 +660,7 @@ const App = (() => {
         onError(err) {
           procStatus.textContent = 'Synthesis failed: ' + err.message;
           streamOut.classList.remove('visible');
+          if (streamNotice) streamNotice.classList.remove('visible');
           logProv('synthesis_failed', err.message);
           setTimeout(() => {
             hide($('processing-view'));
@@ -848,6 +887,9 @@ ${htmlContent}
     $('search-status').textContent = '';
     $('search-status').className = '';
     hide($('search-progress'));
+    stopEduScaffold();
+    const sn = $('stream-notice');
+    if (sn) sn.classList.remove('visible');
     window.scrollTo(0, 0);
     if (fastMode) window.dispatchEvent(new CustomEvent('tables-turned-reset'));
   }
