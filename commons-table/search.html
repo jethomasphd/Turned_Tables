@@ -567,18 +567,6 @@
         </div>
       </div>
 
-      <!-- Manual entry — for researchers who already have their corpus -->
-      <details class="manual-entry" style="max-width:680px; width:100%; margin-top:0.5rem; border-top:none; padding-top:0;">
-        <summary>I already have papers &mdash; skip the search</summary>
-        <div class="manual-explain">
-          <p>Paste PubMed URLs, PMIDs, or DOIs below. Your question and context above still shape the synthesis.</p>
-        </div>
-        <div class="field" style="margin-top: 0.75rem;">
-          <textarea id="links" rows="3" placeholder="https://pubmed.ncbi.nlm.nih.gov/28202713/&#10;28202713&#10;10.1136/bmj.i6583"></textarea>
-          <button id="manual-btn" class="btn-secondary" style="margin-top: 0.5rem; font-size: 0.7rem;">Analyze These Papers</button>
-        </div>
-      </details>
-
       <div class="flow-diagram" style="max-width:680px; margin:2rem auto 0.5rem;">
         <div class="flow-step">
           <div class="flow-icon">?</div>
@@ -610,6 +598,18 @@
           <div class="flow-detail">every claim cited</div>
         </div>
       </div>
+
+      <!-- Manual entry — for researchers who already have their corpus -->
+      <details class="manual-entry" style="max-width:680px; width:100%; margin-top:0.75rem; border-top:none; padding-top:0;">
+        <summary>I already have papers &mdash; skip the search</summary>
+        <div class="manual-explain">
+          <p>Paste PubMed URLs, PMIDs, or DOIs below. Your question and context above still shape the synthesis.</p>
+        </div>
+        <div class="field" style="margin-top: 0.75rem;">
+          <textarea id="links" rows="3" placeholder="https://pubmed.ncbi.nlm.nih.gov/28202713/&#10;28202713&#10;10.1136/bmj.i6583"></textarea>
+          <button id="manual-btn" class="btn-secondary" style="margin-top: 0.5rem; font-size: 0.7rem;">Analyze These Papers</button>
+        </div>
+      </details>
 
       <div class="fast-full-story">
         Not an answer box. A dialogue with evidence <em>you already own</em>. <a href="#about-section-fast" id="open-about-expand">The full story &rarr;</a>
