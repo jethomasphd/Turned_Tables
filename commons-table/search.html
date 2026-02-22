@@ -339,7 +339,8 @@
     .fast-hero.collapsed .flow-diagram,
     .fast-hero.collapsed .fast-full-story,
     .fast-hero.collapsed .fast-faq-row,
-    .fast-hero.collapsed .fast-faq-panel {
+    .fast-hero.collapsed .fast-faq-panel,
+    .fast-hero.collapsed .manual-entry {
       opacity: 0;
       max-height: 0;
       overflow: hidden;
@@ -444,8 +445,7 @@
     <div class="fast-hero" id="fast-hero">
       <div class="sigil">&#9674; &#9672; &#9674;</div>
       <h1>Tables Turned</h1>
-      <div class="fast-tagline"><span style="color:var(--ember-glow); font-weight:400;">Your taxes</span> paid for 37 million medical papers. <span style="color:var(--ember-glow); font-weight:400;">They</span> don&rsquo;t want you reading them.</div>
-      <div class="fast-tagline fast-tagline-sub" style="margin-top:-1.5rem; font-size:clamp(0.82rem, 2vw, 0.95rem); font-style:normal; color:var(--bone-dim);">Paywalls lock the doors. Jargon guards the windows.</div>
+      <div class="fast-tagline"><span style="color:var(--ember-glow); font-weight:400;">Your taxes</span> paid for 37 million medical papers. <span style="color:var(--ember-glow); font-weight:400;">They</span> keep you out.</div>
       <div class="fast-tagline fast-tagline-sub" style="margin-top:-1.5rem; font-size:clamp(0.85rem, 2.2vw, 1rem); font-style:normal; color:var(--bone);">Search them in plain English. Every claim cites its source.</div>
 
       <div class="fast-input-box">
@@ -566,6 +566,18 @@
           </div>
         </div>
       </div>
+
+      <!-- Manual entry — for researchers who already have their corpus -->
+      <details class="manual-entry" style="max-width:680px; width:100%; margin-top:0.5rem; border-top:none; padding-top:0;">
+        <summary>I already have papers &mdash; skip the search</summary>
+        <div class="manual-explain">
+          <p>Paste PubMed URLs, PMIDs, or DOIs below. Your question and context above still shape the synthesis.</p>
+        </div>
+        <div class="field" style="margin-top: 0.75rem;">
+          <textarea id="links" rows="3" placeholder="https://pubmed.ncbi.nlm.nih.gov/28202713/&#10;28202713&#10;10.1136/bmj.i6583"></textarea>
+          <button id="manual-btn" class="btn-secondary" style="margin-top: 0.5rem; font-size: 0.7rem;">Analyze These Papers</button>
+        </div>
+      </details>
 
       <div class="flow-diagram" style="max-width:680px; margin:2rem auto 0.5rem;">
         <div class="flow-step">

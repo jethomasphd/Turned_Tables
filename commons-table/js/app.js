@@ -124,15 +124,13 @@ const App = (() => {
   function doFlip() {
     const card = $('intro-card');
     card.classList.add('flipped');
-    // After flip completes, hold the logo, then transition to app
+    // After flip completes, hold the logo, then redirect to search
     setTimeout(() => {
       const intro = $('intro');
       intro.style.opacity = '0';
       intro.style.transition = 'opacity 0.8s ease';
       setTimeout(() => {
-        intro.style.display = 'none';
-        show($('app'));
-        initApp();
+        window.location.href = 'search.html';
       }, 800);
     }, 1800); // 1.4s flip + 0.4s pause to see logo
   }
@@ -142,7 +140,7 @@ const App = (() => {
     const intro = $('intro');
     intro.style.opacity = '0';
     intro.style.transition = 'opacity 0.6s ease';
-    setTimeout(() => { intro.style.display = 'none'; show($('app')); initApp(); }, 600);
+    setTimeout(() => { window.location.href = 'search.html'; }, 600);
   }
 
   function initIntro() {
@@ -229,7 +227,7 @@ const App = (() => {
     // Search button (only in full mode — fast mode wires its own)
     if ($('search-btn')) $('search-btn').addEventListener('click', handleSearch);
 
-    // Manual entry (only in full mode)
+    // Manual entry
     if ($('manual-btn')) $('manual-btn').addEventListener('click', handleManualEntry);
 
     // Curate actions
