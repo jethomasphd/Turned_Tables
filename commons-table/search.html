@@ -620,14 +620,12 @@
     <div id="curate-view" class="hidden">
       <div class="step-label">Step 2 <span class="step-label-text">Your evidence, your call</span></div>
       <div class="step-desc">
-        <p>These are real papers from the U.S. medical database &mdash; not summaries of summaries. <strong>You are the editor now.</strong></p>
+        <p>Real papers from the U.S. medical database. <strong>You are the editor.</strong></p>
         <ul class="step-actions">
-          <li><strong>Read</strong> the plain-language summary below each title</li>
-          <li><strong>Tap</strong> any card to reveal the original abstract</li>
-          <li><strong>Click</strong> a PMID to verify it directly on PubMed</li>
-          <li><strong>Select</strong> what matters to your question &mdash; deselect the rest</li>
+          <li><strong>Tap</strong> a card to see the original abstract</li>
+          <li><strong>Click</strong> a PMID to verify on PubMed</li>
+          <li><strong>Select</strong> what matters &mdash; deselect the rest</li>
         </ul>
-        <p>Go as deep or as shallow as you need. <em>The AI writes nothing until you say what counts.</em></p>
       </div>
 
       <details class="search-disclosure" id="search-disclosure">
@@ -991,11 +989,12 @@
 
       // ── Educational Scaffolding ──
       const EDU_MESSAGES = [
-        'ChatGPT invents medical papers that don\u2019t exist \u2014 every paper here is real and clickable.',
-        'Google\u2019s AI summaries weigh wellness blogs the same as peer-reviewed research \u2014 we only search the actual medical database.',
-        'Ask ChatGPT for sources on any drug, then try clicking them \u2014 most were never written.',
-        'No other tool shows you the methods, sample size, and funding behind every claim.',
-        'Every claim in your brief cites a real PubMed paper you can verify in seconds.'
+        'Right now, ChatGPT is fabricating medical citations. Real-sounding titles, invented authors, made-up findings \u2014 delivered with total confidence. You cannot tell which papers are real. We only return papers that exist.',
+        'Google\u2019s AI Overviews treat wellness blogs and supplement ads the same as peer-reviewed research. Your health question deserves better than a confident summary of the open web.',
+        'Ask ChatGPT for sources on any drug. Then try clicking them. Many of those papers were never written. Here, every PMID links to a real paper in the U.S. National Library of Medicine.',
+        'Google gives you a paragraph. ChatGPT gives you a paragraph with fake footnotes. Neither shows you the methods, the sample size, or who funded the study. We show you the actual abstracts.',
+        'ChatGPT hallucinates evidence. Google buries evidence under ads. Neither lets you choose which papers matter. Here, you see every paper and decide for yourself.',
+        'Every claim in your brief will cite a real PubMed paper you can click and verify in seconds. No hallucinations. No ads. No hidden sources.'
       ];
       let eduInterval = null;
       let eduIdx = 0;
