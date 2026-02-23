@@ -1,5 +1,6 @@
 # Tables Turned
 
+
 **Your taxes paid for 37 million medical papers. They keep you out.**
 
 Search the U.S. medical database in plain English. AI translates the jargon, you curate the evidence, every claim cites its source. The public record, returned to the public.
