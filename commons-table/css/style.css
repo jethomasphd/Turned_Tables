@@ -863,6 +863,36 @@ select { font-family: var(--mono); font-size: 0.82rem; cursor: pointer; }
   50% { box-shadow: 0 0 20px rgba(201, 162, 39, 0.4), 0 0 50px rgba(201, 162, 39, 0.12); }
 }
 
+/* ── Time hints (inline) ── */
+.time-hint {
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  color: var(--ember-dim);
+  opacity: 0.7;
+  display: block;
+  margin-top: 0.15rem;
+}
+
+/* ── Indeterminate progress bar (search) ── */
+.search-progress-bar {
+  width: 100%;
+  height: 2px;
+  background: rgba(201, 162, 39, 0.1);
+  border-radius: 1px;
+  margin-top: 1rem;
+  overflow: hidden;
+}
+.search-progress-bar-fill {
+  width: 30%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, var(--ember), transparent);
+  animation: progressSlide 2s ease-in-out infinite;
+}
+@keyframes progressSlide {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(400%); }
+}
+
 
 /* ═══════════════════════════════════════════════════════════════
    XIII. MANUAL ENTRY
@@ -1260,6 +1290,32 @@ select { font-family: var(--mono); font-size: 0.82rem; cursor: pointer; }
 #processing-view { text-align: center; padding-top: 2rem; }
 .processing-sigil { font-size: 2rem; color: var(--ember); animation: pulse 2s ease-in-out infinite, glow 4s ease-in-out infinite; }
 #proc-status { font-family: var(--mono); font-size: 0.78rem; color: var(--bone-dim); margin: 1rem 0; }
+.time-hedge {
+  font-family: var(--body);
+  font-size: 0.78rem;
+  color: var(--smoke);
+  font-style: italic;
+  margin: 0 auto 1rem;
+  max-width: 28rem;
+  line-height: 1.5;
+  animation: fadeIn 0.6s ease;
+}
+/* Synthesis progress bar */
+.synth-progress-bar {
+  width: 80%;
+  max-width: 24rem;
+  height: 2px;
+  background: rgba(201, 162, 39, 0.1);
+  border-radius: 1px;
+  margin: 0.75rem auto;
+  overflow: hidden;
+}
+.synth-progress-bar-fill {
+  width: 30%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, var(--ember), transparent);
+  animation: progressSlide 2.5s ease-in-out infinite;
+}
 #proc-papers { text-align: left; margin-bottom: 1.5rem; }
 .paper-found { font-family: var(--mono); font-size: 0.75rem; color: var(--smoke); margin-bottom: 0.3rem; padding-left: 1.2rem; position: relative; }
 .paper-found::before { content: '\2713'; position: absolute; left: 0; color: var(--green); }

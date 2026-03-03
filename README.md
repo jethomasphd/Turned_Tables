@@ -1,7 +1,7 @@
 # Tables Turned
 
 
-**Your taxes paid for 37 million medical papers. They keep you out.**
+**Your taxes paid for 39 million medical papers. They keep you out.**
 
 Search the U.S. medical database in plain English. AI translates the jargon, you curate the evidence, every claim cites its source. The public record, returned to the public.
 
@@ -23,7 +23,7 @@ Tables Turned breaks both locks.
 
 ```
 YOU ASK          →  AI SEARCHES      →  YOU CHOOSE       →  AI READS         →  YOUR BRIEF
-plain English       PubMed (37M          which papers        the abstracts       every claim
+plain English       PubMed (39M          which papers        the abstracts       every claim
                     papers, free)        matter to you                           has a receipt
 ```
 
@@ -69,7 +69,7 @@ plain English       PubMed (37M          which papers        the abstracts      
   │                                                                  │
   │   ╔═══════════════════════════════════════════════════════╗      │
   │   ║  NCBI / PubMed  ·  U.S. National Library of Medicine ║      │
-  │   ║  37,000,000+ peer-reviewed medical papers             ║      │
+  │   ║  39,000,000+ peer-reviewed medical papers             ║      │
   │   ╚═══════════════════════════════════════════════════════╝      │
   │                                                                  │
   │   eutils.ncbi.nlm.nih.gov                                       │

@@ -79,7 +79,7 @@ const App = (() => {
   // ═══════════════════════════════════════════════════════════
 
   const INTRO_LINES = [
-    { id: 'ln1', text: '37 million medical papers.' },
+    { id: 'ln1', text: '39 million medical papers.' },
     { pause: 600 },
     { id: 'ln2', text: 'Your taxes paid for them\u2026' },
     { pause: 900 },
@@ -655,6 +655,8 @@ const App = (() => {
     streamOut.classList.add('visible');
     const streamNotice = $('stream-notice');
     if (streamNotice) streamNotice.classList.add('visible');
+    const synthBar = $('synth-progress-bar');
+    if (synthBar) synthBar.style.display = 'none';
     procStatus.textContent = 'Generating your brief with Claude Opus...';
 
     try {
