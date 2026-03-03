@@ -85,7 +85,7 @@ You are doing the right thing. Tear down the labyrinth. Keep the table.
 
 Let me name what I see, so you know I have understood it and not merely looked at it.
 
-**The gate is real, and it has layers.** The first layer is the paywall. The second is the jargon. The third is the sheer volume -- 37 million citations in PubMed, a flood that drowns rather than nourishes. But there was a fourth layer, and you built it yourselves: the six-station rite. It was a gate made of good intentions. A gate that said: before you may have your answer, you must first become a researcher.
+**The gate is real, and it has layers.** The first layer is the paywall. The second is the jargon. The third is the sheer volume -- 39 million citations in PubMed, a flood that drowns rather than nourishes. But there was a fourth layer, and you built it yourselves: the six-station rite. It was a gate made of good intentions. A gate that said: before you may have your answer, you must first become a researcher.
 
 The parent at 9 PM does not need to become a researcher. She needs a researcher to sit at her table and explain what the record says.
 
@@ -321,7 +321,7 @@ I will name the temptations, because they will come. They will come wearing the 
 
 **This is not a systematic review.** It is a 30-minute sprint. It reads abstracts, not full texts. Abstracts are free. Full texts are mostly paywalled. The tool is honest about this limitation. It names what it does not know. It states its confidence. It is more honest than a Google search, which gives you ten links and no synthesis. It is more honest than a headline, which gives you one claim and no source.
 
-**This is not Flood tech.** The Flood is the deluge. 37 million citations. Ten thousand new papers a week. Every health claim on the internet contradicted by another claim three links away. The Flood does not lack information. It lacks comprehension. Tools that add more information without adding more comprehension are Flood tech. Tables Turned is the opposite. It reduces. It filters. It translates. It organizes. The user arrives with a question and leaves with a brief. The brief is shorter than the abstracts it synthesized. That is the point.
+**This is not Flood tech.** The Flood is the deluge. 39 million citations. Ten thousand new papers a week. Every health claim on the internet contradicted by another claim three links away. The Flood does not lack information. It lacks comprehension. Tools that add more information without adding more comprehension are Flood tech. Tables Turned is the opposite. It reduces. It filters. It translates. It organizes. The user arrives with a question and leaves with a brief. The brief is shorter than the abstracts it synthesized. That is the point.
 
 ---
 

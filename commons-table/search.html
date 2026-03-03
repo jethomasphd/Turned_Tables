@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tables Turned — Search</title>
-  <meta name="description" content="They locked 37 million medical papers behind paywalls and jargon. Break through. Search the public record in plain English, every claim cites a real PubMed source.">
+  <meta name="description" content="They locked 39 million medical papers behind paywalls and jargon. Break through. Search the public record in plain English, every claim cites a real PubMed source.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Crimson+Pro:ital,wght@0,300;0,400;0,500;1,300;1,400&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
@@ -445,7 +445,7 @@
     <div class="fast-hero" id="fast-hero">
       <div class="sigil">&#9674; &#9672; &#9674;</div>
       <h1>Tables Turned</h1>
-      <div class="fast-tagline"><span style="color:var(--ember-glow); font-weight:400;">Your taxes</span> paid for 37M medical papers. <span style="color:var(--ember-glow); font-weight:400;">They</span> keep you out.</div>
+      <div class="fast-tagline"><span style="color:var(--ember-glow); font-weight:400;">Your taxes</span> paid for 39M medical papers. <span style="color:var(--ember-glow); font-weight:400;">They</span> keep you out.</div>
       <div class="fast-tagline fast-tagline-sub" style="margin-top:-1.5rem; font-size:clamp(0.85rem, 2.2vw, 1rem); font-style:normal; color:var(--bone);">Search them in plain English. Every claim cites its source.</div>
 
       <div class="fast-input-box">
@@ -477,7 +477,7 @@
             <div class="pipeline-node" id="prog-phase-2">
               <div class="pipeline-icon">&#8981;</div>
               <div class="pipeline-label">Searching</div>
-              <div class="pipeline-detail" id="pipeline-detail-2">37M papers &middot; multiple strategies</div>
+              <div class="pipeline-detail" id="pipeline-detail-2">39M papers &middot; multiple strategies</div>
             </div>
             <div class="pipeline-wire"><div class="pipeline-wire-fill"></div></div>
             <div class="pipeline-node" id="prog-phase-3">
@@ -489,9 +489,12 @@
             <div class="pipeline-node" id="prog-phase-4">
               <div class="pipeline-icon">&#9998;</div>
               <div class="pipeline-label">Translating</div>
-              <div class="pipeline-detail" id="pipeline-detail-4">jargon &rarr; plain language</div>
+              <div class="pipeline-detail" id="pipeline-detail-4">jargon &rarr; plain language <span class="time-hint">(this step can take 30&ndash;60s)</span></div>
             </div>
           </div>
+
+          <!-- Indeterminate progress bar -->
+          <div class="search-progress-bar"><div class="search-progress-bar-fill"></div></div>
 
           <!-- Educational scaffold: sharp critiques -->
           <div class="edu-scaffold" id="edu-scaffold">
@@ -521,7 +524,7 @@
 
       <!-- FAQ: What is this? -->
       <div class="fast-faq-panel" id="faq-what-panel">
-        <p>Your taxes funded 37 million medical research papers. Then private publishers locked them behind <strong>$35 paywalls</strong>. And the ones you can reach? Written in jargon designed to keep you out.</p>
+        <p>Your taxes funded 39 million medical research papers. Then private publishers locked them behind <strong>$35 paywalls</strong>. And the ones you can reach? Written in jargon designed to keep you out.</p>
         <p><strong>Paywall:</strong> &ldquo;You can&rsquo;t read it.&rdquo; <strong>Credential wall:</strong> &ldquo;You won&rsquo;t understand it.&rdquo;</p>
         <p>Tables Turned breaks both. Ask a question in plain English. AI searches the real U.S. medical database, translates the jargon, and writes a brief where <strong>every claim cites a source you can click and verify</strong>. You choose which papers matter. Nothing is hidden.</p>
       </div>
@@ -577,7 +580,7 @@
         <div class="flow-step">
           <div class="flow-icon">&#9906;</div>
           <div class="flow-label">AI searches</div>
-          <div class="flow-detail">PubMed &middot; 37M papers</div>
+          <div class="flow-detail">PubMed &middot; 39M papers</div>
         </div>
         <div class="flow-arrow">&rarr;</div>
         <div class="flow-step">
@@ -620,7 +623,7 @@
     <div id="curate-view" class="hidden">
       <div class="step-label">Step 2 <span class="step-label-text">Your evidence, your call</span></div>
       <div class="step-desc">
-        <p>These are real papers from the U.S. medical database &mdash; not summaries of summaries. <strong>You are the editor now.</strong></p>
+        <p>These are real papers from the U.S. medical database. <strong>You are the editor now.</strong></p>
         <ul class="step-actions">
           <li><strong>Read</strong> the plain-language summary below each title</li>
           <li><strong>Tap</strong> any card to reveal the original abstract</li>
@@ -673,6 +676,8 @@
       <div class="step-label">Step 3 <span class="step-label-text">Reading the record</span></div>
       <div class="processing-sigil">&#9672;</div>
       <div id="proc-status">Preparing synthesis...</div>
+      <div class="time-hedge">The AI is reading your selected papers and writing a cited brief. This can take 30&ndash;60 seconds &mdash; it&rsquo;s doing real work, not buffering.</div>
+      <div class="synth-progress-bar" id="synth-progress-bar"><div class="synth-progress-bar-fill"></div></div>
       <div id="proc-papers"></div>
 
       <details class="prompt-peek">
