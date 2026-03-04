@@ -10,17 +10,20 @@ const ANTHROPIC_API = 'https://api.anthropic.com/v1/messages';
 
 /**
  * Build CORS headers for the response.
+ * allowedOrigins is a comma-separated string of allowed origins,
+ * e.g. "https://turned-tables.pages.dev,https://tables-turned.com"
  */
-function corsHeaders(origin, allowedOrigin) {
-  // In development, allow localhost. In production, lock to your domain.
+function corsHeaders(origin, allowedOrigins) {
+  const origins = allowedOrigins.split(',').map(o => o.trim());
+
   const allowed = (
-    origin === allowedOrigin ||
+    origins.includes(origin) ||
     origin?.startsWith('http://localhost') ||
     origin?.startsWith('http://127.0.0.1')
   );
 
   return {
-    'Access-Control-Allow-Origin': allowed ? origin : allowedOrigin,
+    'Access-Control-Allow-Origin': allowed ? origin : origins[0],
     'Access-Control-Allow-Methods': 'POST, OPTIONS',
     'Access-Control-Allow-Headers': 'Content-Type',
     'Access-Control-Max-Age': '86400',
