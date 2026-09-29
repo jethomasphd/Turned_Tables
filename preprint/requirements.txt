@@ -1,0 +1,7 @@
+# Python dependencies for the Tables Turned preprint reproduction package
+anthropic>=1.9       # arms + audit (only needed to re-run live API calls)
+matplotlib>=3.8      # figures
+numpy>=1.26          # figures
+pillow>=10           # figure 2 composition
+playwright>=1.50     # figure 2 interface screenshots (uses an existing Chromium; no browser download)
+pymupdf>=1.24        # optional: page count / preview of the rendered PDF

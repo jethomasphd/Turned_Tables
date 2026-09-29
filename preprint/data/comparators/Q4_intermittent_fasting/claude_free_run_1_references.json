@@ -1,0 +1,88 @@
+{
+  "extracted_by": "claude-sonnet-5-5",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 1628,
+    "output_tokens": 1290,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "extracted_at": "2026-09-28T23:50:26Z",
+  "references": [
+    {
+      "raw": "Trepanowski et al., 2017, JAMA Internal Medicine. \"Effect of Alternate-Day Fasting on Weight Loss, Weight Maintenance, and Cardioprotection Among Metabolically Healthy Obese Adults.\" At 12 months, alternate-day fasting and daily calorie restriction produced similar weight loss, and the fasting group had a higher dropout rate.",
+      "authors": "Trepanowski et al.",
+      "first_author_surname": "Trepanowski",
+      "year": "2017",
+      "title": "Effect of Alternate-Day Fasting on Weight Loss, Weight Maintenance, and Cardioprotection Among Metabolically Healthy Obese Adults",
+      "journal": "JAMA Internal Medicine",
+      "pmid": "",
+      "doi": "",
+      "kind": "journal_article"
+    },
+    {
+      "raw": "Liu et al., 2022, New England Journal of Medicine. \"Calorie Restriction with or without Time-Restricted Eating in Weight Loss.\" Adding an 8-hour eating window to calorie restriction gave no additional weight loss at 12 months.",
+      "authors": "Liu et al.",
+      "first_author_surname": "Liu",
+      "year": "2022",
+      "title": "Calorie Restriction with or without Time-Restricted Eating in Weight Loss",
+      "journal": "New England Journal of Medicine",
+      "pmid": "",
+      "doi": "",
+      "kind": "journal_article"
+    },
+    {
+      "raw": "Lowe et al., 2020, JAMA Internal Medicine. \"Effects of Time-Restricted Eating on Weight Loss and Other Metabolic Parameters in Women and Men With Overweight and Obesity\" (the TREAT trial). Time-restricted eating did not produce significantly more weight loss than a control group eating three meals a day.",
+      "authors": "Lowe et al.",
+      "first_author_surname": "Lowe",
+      "year": "2020",
+      "title": "Effects of Time-Restricted Eating on Weight Loss and Other Metabolic Parameters in Women and Men With Overweight and Obesity",
+      "journal": "JAMA Internal Medicine",
+      "pmid": "",
+      "doi": "",
+      "kind": "journal_article"
+    },
+    {
+      "raw": "Sundfør et al., 2018, Nutrition, Metabolism and Cardiovascular Diseases. A trial of continuous versus intermittent (5:2-style) energy restriction. I recall similar outcomes, but I'm less certain of the exact title and details.",
+      "authors": "Sundfør et al.",
+      "first_author_surname": "Sundfør",
+      "year": "2018",
+      "title": "",
+      "journal": "Nutrition, Metabolism and Cardiovascular Diseases",
+      "pmid": "",
+      "doi": "",
+      "kind": "journal_article"
+    },
+    {
+      "raw": "Cioffi et al., 2018, Journal of Translational Medicine. A meta-analysis of intermittent versus continuous energy restriction. Weight loss and cardiometabolic outcomes were broadly similar.",
+      "authors": "Cioffi et al.",
+      "first_author_surname": "Cioffi",
+      "year": "2018",
+      "title": "",
+      "journal": "Journal of Translational Medicine",
+      "pmid": "",
+      "doi": "",
+      "kind": "journal_article"
+    },
+    {
+      "raw": "Patikorn et al., 2021, JAMA Network Open. \"Intermittent Fasting and Obesity-Related Health Outcomes: An Umbrella Review of Meta-analyses of Randomized Clinical Trials.\" Found modest benefits versus no intervention, with little difference versus continuous restriction.",
+      "authors": "Patikorn et al.",
+      "first_author_surname": "Patikorn",
+      "year": "2021",
+      "title": "Intermittent Fasting and Obesity-Related Health Outcomes: An Umbrella Review of Meta-analyses of Randomized Clinical Trials",
+      "journal": "JAMA Network Open",
+      "pmid": "",
+      "doi": "",
+      "kind": "journal_article"
+    }
+  ]
+}

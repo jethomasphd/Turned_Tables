@@ -1,0 +1,73 @@
+Tables Turned replication | model=claude-opus-4-6 | route=worker:https://tables-turned-api.jethomasphd.workers.dev | 5 question(s)
+
+[Q2] Is Ozempic safe?  (replicate 1)
+  4 strategies generated
+    S1:       620 hits  | semaglutide safety weight loss
+    S2:     1,843 hits  | (semaglutide OR Ozempic OR Wegovy) AND (safety OR adverse effects OR side effect
+    S3:       291 hits  | (semaglutide OR Ozempic OR Wegovy) AND (adverse effects OR drug-related side eff
+    S4:     1,194 hits  | (semaglutide) AND (pancreatitis OR thyroid cancer OR gallbladder OR gastroparesi
+  pool 52 -> top 12 (scores 21..12)
+  brief: 3213 chars, stop=end_turn, total 62.43s
+  saved -> data/tables_turned/Q2_ozempic_safety/run_1.json
+
+[Q3] Does vitamin D prevent colds?  (replicate 1)
+  4 strategies generated
+    S1:        11 hits  | vitamin D supplementation common cold prevention
+    S2:       905 hits  | (vitamin D OR cholecalciferol OR calcifediol) AND (respiratory tract infection O
+    S3:       364 hits  | (vitamin D OR cholecalciferol) AND (acute respiratory tract infection OR common 
+    S4:        51 hits  | ("Vitamin D"[MeSH] OR "Cholecalciferol"[MeSH]) AND ("Respiratory Tract Infection
+  pool 72 -> top 12 (scores 19..6)
+  brief: 3079 chars, stop=end_turn, total 59.46s
+  saved -> data/tables_turned/Q3_vitamin_d_colds/run_1.json
+
+[Q4] Is intermittent fasting better than regular dieting for losing weight?  (replicate 1)
+  4 strategies generated
+    S1:       751 hits  | intermittent fasting weight loss
+    [ncbi] retry 1 after HTTPError
+    S2:       421 hits  | (intermittent fasting OR time-restricted eating OR alternate day fasting OR 5:2 
+    S3:       451 hits  | (intermittent fasting OR time-restricted feeding OR alternate-day fasting) AND (
+    S4:        64 hits  | ("intermittent fasting"[MeSH] OR "fasting"[MeSH] OR time-restricted eating) AND 
+  pool 73 -> top 12 (scores 24..9)
+  brief: 3029 chars, stop=end_turn, total 66.78s
+  saved -> data/tables_turned/Q4_intermittent_fasting/run_1.json
+
+[Q5] Do probiotics prevent diarrhea from antibiotics?  (replicate 1)
+  4 strategies generated
+    S1:       502 hits  | probiotics antibiotic-associated diarrhea prevention
+    S2:        89 hits  | (probiotics OR Lactobacillus OR Saccharomyces boulardii OR Bifidobacterium) AND 
+    S3:        94 hits  | (probiotics OR Lactobacillus OR Saccharomyces boulardii) AND (antibiotic-associa
+    S4:        12 hits  | (probiotics) AND (amoxicillin OR penicillin OR beta-lactam) AND (diarrhea OR dia
+  pool 61 -> top 12 (scores 22..9)
+  brief: 3506 chars, stop=end_turn, total 58.92s
+  saved -> data/tables_turned/Q5_probiotics_antibiotics/run_1.json
+
+[Q6] Does apple cider vinegar help with weight loss?  (replicate 1)
+  4 strategies generated
+    S1:        11 hits  | apple cider vinegar weight loss
+    S2:       459 hits  | (apple cider vinegar OR acetic acid) AND (weight loss OR body weight OR obesity 
+    S3:       621 hits  | (vinegar OR acetic acid) AND (body composition OR adiposity OR waist circumferen
+    S4:         2 hits  | (apple cider vinegar OR vinegar dietary supplement) AND (weight management OR an
+  pool 58 -> top 12 (scores 26..5)
+  brief: 2610 chars, stop=end_turn, total 53.57s
+  saved -> data/tables_turned/Q6_acv_weight_loss/run_1.json
+Tables Turned replication | model=claude-opus-4-6 | route=worker:https://tables-turned-api.jethomasphd.workers.dev | 1 question(s)
+
+[Q1] Does melatonin help kids sleep?  (replicate 2)
+  4 strategies generated
+    S1:     1,199 hits  | melatonin sleep children
+    S2:       125 hits  | (melatonin OR exogenous melatonin) AND (sleep initiation disorders OR sleep onse
+    S3:       405 hits  | (melatonin) AND (sleep) AND (child OR children OR pediatric OR school-age) AND (
+    S4:         3 hits  | (melatonin supplementation OR melatonin gummies OR melatonin oral) AND (sleep qu
+  pool 56 -> top 12 (scores 16..8)
+  brief: 3327 chars, stop=end_turn, total 55.73s
+  saved -> data/tables_turned/Q1_melatonin_kids/run_2.json
+
+[Q1] Does melatonin help kids sleep?  (replicate 3)
+  4 strategies generated
+    S1:     1,199 hits  | melatonin sleep children
+    S2:       125 hits  | (melatonin OR exogenous melatonin) AND (sleep initiation disorders OR sleep onse
+    S3:       405 hits  | (melatonin) AND (sleep) AND (child OR children OR pediatric) AND (safety OR adve
+    S4:       105 hits  | (melatonin OR "melatonin supplementation") AND ("sleep onset" OR "bedtime" OR "f
+  pool 77 -> top 12 (scores 22..8)
+  brief: 3075 chars, stop=end_turn, total 55.16s
+  saved -> data/tables_turned/Q1_melatonin_kids/run_3.json

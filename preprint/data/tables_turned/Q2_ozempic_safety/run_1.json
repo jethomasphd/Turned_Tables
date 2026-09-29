@@ -1,0 +1,2006 @@
+{
+  "tablet": {
+    "version": "2.0",
+    "title": "Is Ozempic safe?",
+    "session": {
+      "id": "a1ac658a-5a21-4420-802d-0aa77e678e84",
+      "created": "2026-09-28T23:37:39Z",
+      "sealed": "2026-09-28T23:38:41Z",
+      "status": "sealed"
+    },
+    "intent": {
+      "question": "Is Ozempic safe?",
+      "decision_context": "My doctor suggested semaglutide for weight loss and I want to understand the risks before I start."
+    },
+    "search": {
+      "queries": [
+        {
+          "query": "semaglutide safety weight loss",
+          "strategy": "Broad search for any literature discussing semaglutide safety in the context of weight management"
+        },
+        {
+          "query": "(semaglutide OR Ozempic OR Wegovy) AND (safety OR adverse effects OR side effects OR tolerability) AND (obesity OR overweight OR weight loss OR weight management)",
+          "strategy": "Comprehensive search using brand names, generic name, and multiple safety-related terms for weight loss indications"
+        },
+        {
+          "query": "(semaglutide OR Ozempic OR Wegovy) AND (adverse effects OR drug-related side effects OR risk) AND (obesity OR overweight) AND (randomized controlled trial[pt] OR systematic review[pt] OR meta-analysis[pt])",
+          "strategy": "Targeted search for high-quality evidence (RCTs, systematic reviews, meta-analyses) on semaglutide risks in obesity treatment"
+        },
+        {
+          "query": "(semaglutide) AND (pancreatitis OR thyroid cancer OR gallbladder OR gastroparesis OR cardiovascular OR suicidal ideation OR kidney OR nausea OR gastrointestinal) AND (obesity OR weight) AND (safety OR adverse)",
+          "strategy": "Focused search for specific serious adverse events and commonly reported side effects of semaglutide in weight management populations"
+        }
+      ],
+      "total_papers_found": 12,
+      "papers_shown": 12
+    },
+    "papers": [
+      {
+        "pmid": "36578889",
+        "doi": "10.15605/jafes.037.02.14",
+        "title": "Efficacy and Safety of Semaglutide for Weight Loss in Obesity Without Diabetes: A Systematic Review and Meta-Analysis.",
+        "authors": [
+          "Tan Hanna Clementine",
+          "Dampil Oliver Allan",
+          "Marquez Maricar Mae"
+        ],
+        "journal": "Journal of the ASEAN Federation of Endocrine Societies",
+        "year": 2022,
+        "abstract": "BACKGROUND: The weight loss benefit of semaglutide in patients with diabetes is well-documented, but its clinical utility in treating obesity among patients without diabetes is less described. We therefore assessed the efficacy and safety of subcutaneous semaglutide as treatment for obesity in patients without diabetes.\n\nMETHODOLOGY: A comprehensive search of PubMed/MEDLINE, Cochrane and Google scholar was performed to identify trials on the efficacy and safety of subcutaneous semaglutide on patients with obesity without diabetes. Primary outcome was expressed as percent mean weight difference. Secondary outcomes including risk for gastrointestinal adverse events, discontinuation of treatment and serious adverse events were expressed as risk ratios. These were calculated using the random effects model.\n\nRESULTS: The study included 4 randomized controlled trials having a total of 3,613 individuals with obesity without diabetes. The mean difference for weight reduction was -11.85%, favoring semaglutide [95% confidence interval (CI) (-12.81,-10.90), p<0.00001]. Secondary outcomes showed that the risk of developing gastrointestinal adverse events was 1.59 times more likely with semaglutide (RR 1.59, 95%CI [1.34, 1.88], p<0.00001). Risk for discontinuation due to adverse events was twice as likely in the semaglutide group (RR 2.19, 95%CI [1.36,3.55], p=0.001) and the risk for serious adverse events was 1.6 times more likely for semaglutide (RR1.60, 95%CI [1.24, 2.07], p=0.0003). Serious events were mostly of gastrointestinal and hepatobiliary disorders such as acute pancreatitis and cholelithiasis.\n\nCONCLUSION: Among individuals with obesity without type 2 diabetes, subcutaneous semaglutide is effective for weight loss with an 11.85% reduction from baseline compared to placebo. This supports the use of semaglutide for weight management in obesity. However, risk of gastrointestinal adverse events, discontinuation of treatment and serious adverse events were higher in the semaglutide group versus placebo.",
+        "plain_title": "Review of Semaglutide's Safety and Weight Loss in Non-Diabetic Obesity",
+        "plain_summary": "Researchers combined results from multiple studies to evaluate how well semaglutide (the active ingredient in Ozempic and Wegovy) works for weight loss and how safe it is in people with obesity who don't have diabetes.",
+        "selected": true,
+        "ranking": {
+          "score": 21,
+          "overlap": 4,
+          "strategies_matched": [
+            "Broad search for any literature discussing semaglutide safety in the context of weight management",
+            "Comprehensive search using brand names, generic name, and multiple safety-related terms for weight loss indications",
+            "Targeted search for high-quality evidence (RCTs, systematic reviews, meta-analyses) on semaglutide risks in obesity treatment",
+            "Focused search for specific serious adverse events and commonly reported side effects of semaglutide in weight management populations"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Meta-Analysis",
+          "Systematic Review",
+          "Journal Article"
+        ],
+        "strategy_idx": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "positions": [
+          1,
+          4,
+          6,
+          6
+        ]
+      },
+      {
+        "pmid": "33567185",
+        "doi": "10.1056/NEJMoa2032183",
+        "title": "Once-Weekly Semaglutide in Adults with Overweight or Obesity.",
+        "authors": [
+          "Wilding John P H",
+          "Batterham Rachel L",
+          "Calanna Salvatore",
+          "Davies Melanie",
+          "Van Gaal Luc F",
+          "Lingvay Ildiko",
+          "McGowan Barbara M",
+          "Rosenstock Julio",
+          "Tran Marie T D",
+          "Wadden Thomas A",
+          "Wharton Sean",
+          "Yokote Koutaro",
+          "Zeuthen Niels",
+          "Kushner Robert F"
+        ],
+        "journal": "The New England journal of medicine",
+        "year": 2021,
+        "abstract": "BACKGROUND: Obesity is a global health challenge with few pharmacologic options. Whether adults with obesity can achieve weight loss with once-weekly semaglutide at a dose of 2.4 mg as an adjunct to lifestyle intervention has not been confirmed.\n\nMETHODS: In this double-blind trial, we enrolled 1961 adults with a body-mass index (the weight in kilograms divided by the square of the height in meters) of 30 or greater (≥27 in persons with ≥1 weight-related coexisting condition), who did not have diabetes, and randomly assigned them, in a 2:1 ratio, to 68 weeks of treatment with once-weekly subcutaneous semaglutide (at a dose of 2.4 mg) or placebo, plus lifestyle intervention. The coprimary end points were the percentage change in body weight and weight reduction of at least 5%. The primary estimand (a precise description of the treatment effect reflecting the objective of the clinical trial) assessed effects regardless of treatment discontinuation or rescue interventions.\n\nRESULTS: The mean change in body weight from baseline to week 68 was -14.9% in the semaglutide group as compared with -2.4% with placebo, for an estimated treatment difference of -12.4 percentage points (95% confidence interval [CI], -13.4 to -11.5; P<0.001). More participants in the semaglutide group than in the placebo group achieved weight reductions of 5% or more (1047 participants [86.4%] vs. 182 [31.5%]), 10% or more (838 [69.1%] vs. 69 [12.0%]), and 15% or more (612 [50.5%] vs. 28 [4.9%]) at week 68 (P<0.001 for all three comparisons of odds). The change in body weight from baseline to week 68 was -15.3 kg in the semaglutide group as compared with -2.6 kg in the placebo group (estimated treatment difference, -12.7 kg; 95% CI, -13.7 to -11.7). Participants who received semaglutide had a greater improvement with respect to cardiometabolic risk factors and a greater increase in participant-reported physical functioning from baseline than those who received placebo. Nausea and diarrhea were the most common adverse events with semaglutide; they were typically transient and mild-to-moderate in severity and subsided with time. More participants in the semaglutide group than in the placebo group discontinued treatment owing to gastrointestinal events (59 [4.5%] vs. 5 [0.8%]).\n\nCONCLUSIONS: In participants with overweight or obesity, 2.4 mg of semaglutide once weekly plus lifestyle intervention was associated with sustained, clinically relevant reduction in body weight. (Funded by Novo Nordisk; STEP 1 ClinicalTrials.gov number, NCT03548935).",
+        "plain_title": "Weekly Semaglutide Injection Causes Major Weight Loss in Obesity",
+        "plain_summary": "A large study of nearly 2,000 adults with obesity but without diabetes tested a once-weekly semaglutide injection (2.4 mg) for about 16 months to see if it produced meaningful weight loss when combined with lifestyle changes like diet and exercise.",
+        "selected": true,
+        "ranking": {
+          "score": 21,
+          "overlap": 3,
+          "strategies_matched": [
+            "Comprehensive search using brand names, generic name, and multiple safety-related terms for weight loss indications",
+            "Targeted search for high-quality evidence (RCTs, systematic reviews, meta-analyses) on semaglutide risks in obesity treatment",
+            "Focused search for specific serious adverse events and commonly reported side effects of semaglutide in weight management populations"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article",
+          "Multicenter Study",
+          "Randomized Controlled Trial",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "strategy_idx": [
+          1,
+          2,
+          3
+        ],
+        "positions": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "pmid": "35441470",
+        "doi": "10.1111/dom.14725",
+        "title": "Weight regain and cardiometabolic effects after withdrawal of semaglutide: The STEP 1 trial extension.",
+        "authors": [
+          "Wilding John P H",
+          "Batterham Rachel L",
+          "Davies Melanie",
+          "Van Gaal Luc F",
+          "Kandler Kristian",
+          "Konakli Katerina",
+          "Lingvay Ildiko",
+          "McGowan Barbara M",
+          "Oral Tugce Kalayci",
+          "Rosenstock Julio",
+          "Wadden Thomas A",
+          "Wharton Sean",
+          "Yokote Koutaro",
+          "Kushner Robert F"
+        ],
+        "journal": "Diabetes, obesity & metabolism",
+        "year": 2022,
+        "abstract": "AIM: To explore changes in body weight and cardiometabolic risk factors after treatment withdrawal in the STEP 1 trial extension.\n\nMATERIALS AND METHODS: STEP 1 (NCT03548935) randomized 1961 adults with a body mass index ≥ 30 kg/m2 (or ≥ 27 kg/m2 with ≥ 1 weight-related co-morbidity) without diabetes to 68 weeks of once-weekly subcutaneous semaglutide 2.4 mg (including 16 weeks of dose escalation) or placebo, as an adjunct to lifestyle intervention. At week 68, treatments (including lifestyle intervention) were discontinued. An off-treatment extension assessed for a further year a representative subset of participants who had completed 68 weeks of treatment. This subset comprised all eligible participants from any site in Canada, Germany and the UK, and sites in the United States and Japan with the highest main phase recruitment. All analyses in the extension were exploratory.\n\nRESULTS: Extension analyses included 327 participants. From week 0 to week 68, mean weight loss was 17.3% (SD: 9.3%) with semaglutide and 2.0% (SD: 6.1%) with placebo. Following treatment withdrawal, semaglutide and placebo participants regained 11.6 (SD: 7.7) and 1.9 (SD: 4.8) percentage points of lost weight, respectively, by week 120, resulting in net losses of 5.6% (SD: 8.9%) and 0.1% (SD: 5.8%), respectively, from week 0 to week 120. Cardiometabolic improvements seen from week 0 to week 68 with semaglutide reverted towards baseline at week 120 for most variables.\n\nCONCLUSIONS: One year after withdrawal of once-weekly subcutaneous semaglutide 2.4 mg and lifestyle intervention, participants regained two-thirds of their prior weight loss, with similar changes in cardiometabolic variables. Findings confirm the chronicity of obesity and suggest ongoing treatment is required to maintain improvements in weight and health.",
+        "plain_title": "People Regain Weight After Stopping Semaglutide Treatment",
+        "plain_summary": "After people stopped taking semaglutide and also stopped their lifestyle program, researchers tracked them for another year and found that weight and heart-health markers that had improved during treatment tended to return toward their starting levels.",
+        "selected": true,
+        "ranking": {
+          "score": 20,
+          "overlap": 3,
+          "strategies_matched": [
+            "Broad search for any literature discussing semaglutide safety in the context of weight management",
+            "Targeted search for high-quality evidence (RCTs, systematic reviews, meta-analyses) on semaglutide risks in obesity treatment",
+            "Focused search for specific serious adverse events and commonly reported side effects of semaglutide in weight management populations"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "strategy_idx": [
+          0,
+          2,
+          3
+        ],
+        "positions": [
+          3,
+          3,
+          1
+        ]
+      },
+      {
+        "pmid": "40353578",
+        "doi": "10.1056/NEJMoa2416394",
+        "title": "Tirzepatide as Compared with Semaglutide for the Treatment of Obesity.",
+        "authors": [
+          "Aronne Louis J",
+          "Horn Deborah Bade",
+          "le Roux Carel W",
+          "Ho Wayne",
+          "Falcon Beverly L",
+          "Gomez Valderas Elisa",
+          "Das Sagar",
+          "Lee Clare J",
+          "Glass Leonard C",
+          "Senyucel Cagri",
+          "Dunn Julia P"
+        ],
+        "journal": "The New England journal of medicine",
+        "year": 2025,
+        "abstract": "BACKGROUND: Tirzepatide and semaglutide are highly effective medications for obesity management. The efficacy and safety of tirzepatide as compared with semaglutide in adults with obesity but without type 2 diabetes is unknown.\n\nMETHODS: In this phase 3b, open-label, controlled trial, adult participants with obesity but without type 2 diabetes were randomly assigned in a 1:1 ratio to receive the maximum tolerated dose of tirzepatide (10 mg or 15 mg) or the maximum tolerated dose of semaglutide (1.7 mg or 2.4 mg) subcutaneously once weekly for 72 weeks. The primary end point was the percent change in weight from baseline to week 72. Key secondary end points included weight reductions of at least 10%, 15%, 20%, and 25% and a change in waist circumference from baseline to week 72.\n\nRESULTS: A total of 751 participants underwent randomization. The least-squares mean percent change in weight at week 72 was -20.2% (95% confidence interval [CI], -21.4 to -19.1) with tirzepatide and -13.7% (95% CI, -14.9 to -12.6) with semaglutide (P<0.001). The least-squares mean change in waist circumference was -18.4 cm (95% CI, -19.6 to -17.2) with tirzepatide and -13.0 cm (95% CI, -14.3 to -11.7) with semaglutide (P<0.001). Participants in the tirzepatide group were more likely than those in the semaglutide group to have weight reductions of at least 10%, 15%, 20%, and 25%. The most common adverse events in both treatment groups were gastrointestinal, and most were mild to moderate in severity and occurred primarily during dose escalation.\n\nCONCLUSIONS: Among participants with obesity but without diabetes, treatment with tirzepatide was superior to treatment with semaglutide with respect to reduction in body weight and waist circumference at week 72. (Funded by Eli Lilly; SURMOUNT-5 ClinicalTrials.gov number, NCT05822830.).",
+        "plain_title": "Head-to-Head Comparison of Tirzepatide Versus Semaglutide for Obesity",
+        "plain_summary": "This trial directly compared two popular weight-loss injections — tirzepatide (Mounjaro/Zepbound) and semaglutide (Ozempic/Wegovy) — in adults with obesity but without type 2 diabetes to see which one leads to more weight loss and how their side effects compare.",
+        "selected": true,
+        "ranking": {
+          "score": 16,
+          "overlap": 4,
+          "strategies_matched": [
+            "Broad search for any literature discussing semaglutide safety in the context of weight management",
+            "Comprehensive search using brand names, generic name, and multiple safety-related terms for weight loss indications",
+            "Targeted search for high-quality evidence (RCTs, systematic reviews, meta-analyses) on semaglutide risks in obesity treatment",
+            "Focused search for specific serious adverse events and commonly reported side effects of semaglutide in weight management populations"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Clinical Trial, Phase III",
+          "Comparative Study",
+          "Equivalence Trial",
+          "Journal Article",
+          "Multicenter Study"
+        ],
+        "strategy_idx": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "positions": [
+          13,
+          6,
+          13,
+          14
+        ]
+      },
+      {
+        "pmid": "36216945",
+        "doi": "10.1038/s41591-022-02026-4",
+        "title": "Two-year effects of semaglutide in adults with overweight or obesity: the STEP 5 trial.",
+        "authors": [
+          "Garvey W Timothy",
+          "Batterham Rachel L",
+          "Bhatta Meena",
+          "Buscemi Silvio",
+          "Christensen Louise N",
+          "Frias Juan P",
+          "Jódar Esteban",
+          "Kandler Kristian",
+          "Rigas Georgia",
+          "Wadden Thomas A",
+          "Wharton Sean"
+        ],
+        "journal": "Nature medicine",
+        "year": 2022,
+        "abstract": "The STEP 5 trial assessed the efficacy and safety of once-weekly subcutaneous semaglutide 2.4 mg versus placebo (both plus behavioral intervention) for long-term treatment of adults with obesity, or overweight with at least one weight-related comorbidity, without diabetes. The co-primary endpoints were the percentage change in body weight and achievement of weight loss of ≥5% at week 104. Efficacy was assessed among all randomized participants regardless of treatment discontinuation or rescue intervention. From 5 October 2018 to 1 February 2019, 304 participants were randomly assigned to semaglutide 2.4 mg (n = 152) or placebo (n = 152), 92.8% of whom completed the trial (attended the end-of-trial safety visit). Most participants were female (236 (77.6%)) and white (283 (93.1%)), with a mean (s.d.) age of 47.3 (11.0) years, body mass index of 38.5 (6.9) kg m-2 and weight of 106.0 (22.0) kg. The mean change in body weight from baseline to week 104 was -15.2% in the semaglutide group (n = 152) versus -2.6% with placebo (n = 152), for an estimated treatment difference of -12.6 %-points (95% confidence interval, -15.3 to -9.8; P < 0.0001). More participants in the semaglutide group than in the placebo group achieved weight loss ≥5% from baseline at week 104 (77.1% versus 34.4%; P < 0.0001). Gastrointestinal adverse events, mostly mild-to-moderate, were reported more often with semaglutide than with placebo (82.2% versus 53.9%). In summary, in adults with overweight (with at least one weight-related comorbidity) or obesity, semaglutide treatment led to substantial, sustained weight loss over 104 weeks versus placebo. NCT03693430.",
+        "plain_title": "Semaglutide Maintains Weight Loss Over Two Full Years",
+        "plain_summary": "A two-year study of 304 adults with obesity or overweight (without diabetes) found that weekly semaglutide injections sustained significant weight loss over the entire period compared to a placebo, and the researchers also monitored safety throughout.",
+        "selected": true,
+        "ranking": {
+          "score": 16,
+          "overlap": 4,
+          "strategies_matched": [
+            "Broad search for any literature discussing semaglutide safety in the context of weight management",
+            "Comprehensive search using brand names, generic name, and multiple safety-related terms for weight loss indications",
+            "Targeted search for high-quality evidence (RCTs, systematic reviews, meta-analyses) on semaglutide risks in obesity treatment",
+            "Focused search for specific serious adverse events and commonly reported side effects of semaglutide in weight management populations"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "strategy_idx": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "positions": [
+          16,
+          17,
+          11,
+          12
+        ]
+      },
+      {
+        "pmid": "40961952",
+        "doi": "10.1016/S2213-8587(25)00226-8",
+        "title": "Once-weekly semaglutide 7·2 mg in adults with obesity (STEP UP): a randomised, controlled, phase 3b trial.",
+        "authors": [
+          "Wharton Sean",
+          "Freitas Paula",
+          "Hjelmesæth Jøran",
+          "Kabisch Maria",
+          "Kandler Kristian",
+          "Lingvay Ildiko",
+          "Quiroga Maria",
+          "Rosenstock Julio",
+          "Garvey W Timothy"
+        ],
+        "journal": "The lancet. Diabetes & endocrinology",
+        "year": 2025,
+        "abstract": "BACKGROUND: Once-weekly subcutaneous semaglutide 2·4 mg is approved for weight management in people with obesity and related complications; however, some individuals do not reach their therapeutic goals with this dose. We aimed to test the efficacy and safety of a higher dose of semaglutide (7·2 mg) in people with obesity.\n\nMETHODS: STEP UP was a phase 3b, randomised, double-blind, placebo-controlled and active-controlled trial conducted across 95 hospitals, specialist clinics, and medical centres in 11 countries in adults with BMI 30 kg/m2 or greater, without diabetes. Participants were randomly assigned (5:1:1) to receive once-weekly subcutaneous semaglutide 7·2 mg, 2·4 mg, or placebo, with a lifestyle intervention, for 72 weeks. Coprimary endpoints were percentage change in bodyweight and the proportion of participants with a bodyweight reduction of 5% or greater for semaglutide 7·2 mg versus placebo from baseline to week 72 (treatment policy estimand). Confirmatory secondary endpoints were percentage change in bodyweight with 7·2 mg versus 2·4 mg, change in waist circumference (cm), and proportion of participants with bodyweight reductions of 10% or greater, 15% or greater, 20% or greater, and 25% or greater versus placebo, and 20% or greater and 25% or greater versus 2·4 mg. Safety was assessed in all participants who received at least one dose of the trial product. This trial is registered with ClinicalTrials.gov (NCT05646706) and is now completed.\n\nFINDINGS: Between Jan 1, 2023, and Nov 26, 2024, 1407 participants were randomly assigned to semaglutide 7·2 mg (n=1005), semaglutide 2·4 mg (n=201), or placebo (n=201). 1037 (73·7%) of 1407 participants were female, the mean age was 47 (SD 12) years, mean bodyweight was 113·0 (24·1) kg, and mean BMI was 39·9 (7·1) kg/m2. The mean change in bodyweight was greater with semaglutide 7·2 mg versus 2·4 mg (-18·7% [SE 0·4] vs -15·6% [0·7]; estimated treatment difference [ETD] -3·1% [95% CI -4·7 to -1·6]; p<0·0001) and with semaglutide 7·2 mg versus placebo (-18·7% [0·4] vs -3·9% [0·6]; -14·8% [-16·2 to -13·4]; p<0·0001). Participants in the semaglutide 7·2 mg group were more likely than those in the placebo group to reach bodyweight reductions of 5% or greater (odds ratio 12·1 [95% CI 8·3 to 17·6]; p<0·0001), 10% or greater (14·5 [9·6 to 21·9]; p<0·0001), 15% or greater (20·3 [11·2 to 36·8]; p<0·0001), 20% or greater (27·3 [10·9 to 68·0]; p<0·0001), and 25% or greater (127·4 [36·8 to 441·4]; p<0·0001); and more likely than those in the 2·4 mg group to reach bodyweight reductions of 20% or greater (1·8 [1·3 to 2·4]; p=0·0006) and 25% or greater (2·4 [1·6 to 3·5]; p<0·0001). Improvements in waist circumference were observed with semaglutide 7·2 mg versus placebo (ETD -11·7 cm [95% CI -13·0 to -10·4]; p<0·0001). Gastrointestinal adverse events were more common with semaglutide 7·2 mg (711 [70·8%] of 1004) versus 2·4 mg (123 [61·2%] of 201) or placebo (86 [42·8%] of 201), as was dysaesthesia (230 [22·9%], 12 [6·0%], and one [0·5%], respectively). Serious adverse events were reported by 68 (6·8%) of 1004 participants with semaglutide 7·2 mg, 22 (10·9%) of 201 with semaglutide 2·4 mg, and 11 (5·5%) of 201 with placebo.\n\nINTERPRETATION: Semaglutide 7·2 mg was superior to placebo and 2·4 mg for bodyweight reduction in adults with obesity, while retaining a favourable risk-benefit profile.\n\nFUNDING: Novo Nordisk.\n\nTRANSLATIONS: For the German and Greek translations of the abstract see Supplementary Materials section.",
+        "plain_title": "Higher-Dose Semaglutide Tested for Greater Weight Loss",
+        "plain_summary": "A large international trial tested a higher dose of semaglutide (7.2 mg weekly) for people with obesity who might not lose enough weight on the currently approved 2.4 mg dose, examining both how much extra weight it helped them lose and whether the higher dose caused more side effects.",
+        "selected": true,
+        "ranking": {
+          "score": 16,
+          "overlap": 4,
+          "strategies_matched": [
+            "Broad search for any literature discussing semaglutide safety in the context of weight management",
+            "Comprehensive search using brand names, generic name, and multiple safety-related terms for weight loss indications",
+            "Targeted search for high-quality evidence (RCTs, systematic reviews, meta-analyses) on semaglutide risks in obesity treatment",
+            "Focused search for specific serious adverse events and commonly reported side effects of semaglutide in weight management populations"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Clinical Trial, Phase III",
+          "Multicenter Study",
+          "Research Support, N.I.H., Extramural"
+        ],
+        "strategy_idx": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "positions": [
+          17,
+          8,
+          8,
+          10
+        ]
+      },
+      {
+        "pmid": "33625476",
+        "doi": "10.1001/jama.2021.1831",
+        "title": "Effect of Subcutaneous Semaglutide vs Placebo as an Adjunct to Intensive Behavioral Therapy on Body Weight in Adults With Overweight or Obesity: The STEP 3 Randomized Clinical Trial.",
+        "authors": [
+          "Wadden Thomas A",
+          "Bailey Timothy S",
+          "Billings Liana K",
+          "Davies Melanie",
+          "Frias Juan P",
+          "Koroleva Anna",
+          "Lingvay Ildiko",
+          "O'Neil Patrick M",
+          "Rubino Domenica M",
+          "Skovgaard Dorthe",
+          "Wallenstein Signe O R",
+          "Garvey W Timothy"
+        ],
+        "journal": "JAMA",
+        "year": 2021,
+        "abstract": "IMPORTANCE: Weight loss improves cardiometabolic risk factors in people with overweight or obesity. Intensive lifestyle intervention and pharmacotherapy are the most effective noninvasive weight loss approaches.\n\nOBJECTIVE: To compare the effects of once-weekly subcutaneous semaglutide, 2.4 mg vs placebo for weight management as an adjunct to intensive behavioral therapy with initial low-calorie diet in adults with overweight or obesity.\n\nDESIGN, SETTING, AND PARTICIPANTS: Randomized, double-blind, parallel-group, 68-week, phase 3a study (STEP 3) conducted at 41 sites in the US from August 2018 to April 2020 in adults without diabetes (N = 611) and with either overweight (body mass index ≥27) plus at least 1 comorbidity or obesity (body mass index ≥30).\n\nINTERVENTIONS: Participants were randomized (2:1) to semaglutide, 2.4 mg (n = 407) or placebo (n = 204), both combined with a low-calorie diet for the first 8 weeks and intensive behavioral therapy (ie, 30 counseling visits) during 68 weeks.\n\nMAIN OUTCOMES AND MEASURES: The co-primary end points were percentage change in body weight and the loss of 5% or more of baseline weight by week 68. Confirmatory secondary end points included losses of at least 10% or 15% of baseline weight.\n\nRESULTS: Of 611 randomized participants (495 women [81.0%], mean age 46 years [SD, 13], body weight 105.8 kg [SD, 22.9], and body mass index 38.0 [SD, 6.7]), 567 (92.8%) completed the trial, and 505 (82.7%) were receiving treatment at trial end. At week 68, the estimated mean body weight change from baseline was -16.0% for semaglutide vs -5.7% for placebo (difference, -10.3 percentage points [95% CI, -12.0 to -8.6]; P < .001). More participants treated with semaglutide vs placebo lost at least 5% of baseline body weight (86.6% vs 47.6%, respectively; P < .001). A higher proportion of participants in the semaglutide vs placebo group achieved weight losses of at least 10% or 15% (75.3% vs 27.0% and 55.8% vs 13.2%, respectively; P < .001). Gastrointestinal adverse events were more frequent with semaglutide (82.8%) vs placebo (63.2%). Treatment was discontinued owing to these events in 3.4% of semaglutide participants vs 0% of placebo participants.\n\nCONCLUSIONS AND RELEVANCE: Among adults with overweight or obesity, once-weekly subcutaneous semaglutide compared with placebo, used as an adjunct to intensive behavioral therapy and initial low-calorie diet, resulted in significantly greater weight loss during 68 weeks. Further research is needed to assess the durability of these findings.\n\nTRIAL REGISTRATION: ClinicalTrials.gov Identifier: NCT03611582.",
+        "plain_title": "Semaglutide Plus Intensive Lifestyle Coaching Boosts Weight Loss",
+        "plain_summary": "This study found that adding a weekly semaglutide injection to an intensive program of behavioral counseling and an initial low-calorie diet helped adults with overweight or obesity lose substantially more weight than the intensive program alone.",
+        "selected": true,
+        "ranking": {
+          "score": 15,
+          "overlap": 3,
+          "strategies_matched": [
+            "Comprehensive search using brand names, generic name, and multiple safety-related terms for weight loss indications",
+            "Targeted search for high-quality evidence (RCTs, systematic reviews, meta-analyses) on semaglutide risks in obesity treatment",
+            "Focused search for specific serious adverse events and commonly reported side effects of semaglutide in weight management populations"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Clinical Trial, Phase III",
+          "Comparative Study",
+          "Journal Article",
+          "Randomized Controlled Trial"
+        ],
+        "strategy_idx": [
+          1,
+          2,
+          3
+        ],
+        "positions": [
+          2,
+          15,
+          19
+        ]
+      },
+      {
+        "pmid": "37952131",
+        "doi": "10.1056/NEJMoa2307563",
+        "title": "Semaglutide and Cardiovascular Outcomes in Obesity without Diabetes.",
+        "authors": [
+          "Lincoff A Michael",
+          "Brown-Frandsen Kirstine",
+          "Colhoun Helen M",
+          "Deanfield John",
+          "Emerson Scott S",
+          "Esbjerg Sille",
+          "Hardt-Lindberg Søren",
+          "Hovingh G Kees",
+          "Kahn Steven E",
+          "Kushner Robert F",
+          "Lingvay Ildiko",
+          "Oral Tugce K",
+          "Michelsen Marie M",
+          "Plutzky Jorge",
+          "Tornøe Christoffer W",
+          "Ryan Donna H"
+        ],
+        "journal": "The New England journal of medicine",
+        "year": 2023,
+        "abstract": "BACKGROUND: Semaglutide, a glucagon-like peptide-1 receptor agonist, has been shown to reduce the risk of adverse cardiovascular events in patients with diabetes. Whether semaglutide can reduce cardiovascular risk associated with overweight and obesity in the absence of diabetes is unknown.\n\nMETHODS: In a multicenter, double-blind, randomized, placebo-controlled, event-driven superiority trial, we enrolled patients 45 years of age or older who had preexisting cardiovascular disease and a body-mass index (the weight in kilograms divided by the square of the height in meters) of 27 or greater but no history of diabetes. Patients were randomly assigned in a 1:1 ratio to receive once-weekly subcutaneous semaglutide at a dose of 2.4 mg or placebo. The primary cardiovascular end point was a composite of death from cardiovascular causes, nonfatal myocardial infarction, or nonfatal stroke in a time-to-first-event analysis. Safety was also assessed.\n\nRESULTS: A total of 17,604 patients were enrolled; 8803 were assigned to receive semaglutide and 8801 to receive placebo. The mean (±SD) duration of exposure to semaglutide or placebo was 34.2±13.7 months, and the mean duration of follow-up was 39.8±9.4 months. A primary cardiovascular end-point event occurred in 569 of the 8803 patients (6.5%) in the semaglutide group and in 701 of the 8801 patients (8.0%) in the placebo group (hazard ratio, 0.80; 95% confidence interval, 0.72 to 0.90; P<0.001). Adverse events leading to permanent discontinuation of the trial product occurred in 1461 patients (16.6%) in the semaglutide group and 718 patients (8.2%) in the placebo group (P<0.001).\n\nCONCLUSIONS: In patients with preexisting cardiovascular disease and overweight or obesity but without diabetes, weekly subcutaneous semaglutide at a dose of 2.4 mg was superior to placebo in reducing the incidence of death from cardiovascular causes, nonfatal myocardial infarction, or nonfatal stroke at a mean follow-up of 39.8 months. (Funded by Novo Nordisk; SELECT ClinicalTrials.gov number, NCT03574597.).",
+        "plain_title": "Semaglutide Lowers Heart Attack and Stroke Risk in Obese Non-Diabetics",
+        "plain_summary": "A major trial in older adults who were overweight or obese with existing heart disease but no diabetes showed that semaglutide reduced the risk of serious heart events like heart attacks and strokes compared to a placebo.",
+        "selected": true,
+        "ranking": {
+          "score": 15,
+          "overlap": 2,
+          "strategies_matched": [
+            "Targeted search for high-quality evidence (RCTs, systematic reviews, meta-analyses) on semaglutide risks in obesity treatment",
+            "Focused search for specific serious adverse events and commonly reported side effects of semaglutide in weight management populations"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Equivalence Trial",
+          "Journal Article",
+          "Multicenter Study",
+          "Randomized Controlled Trial"
+        ],
+        "strategy_idx": [
+          2,
+          3
+        ],
+        "positions": [
+          1,
+          2
+        ]
+      },
+      {
+        "pmid": "40934115",
+        "doi": "10.1056/NEJMoa2500969",
+        "title": "Oral Semaglutide at a Dose of 25 mg in Adults with Overweight or Obesity.",
+        "authors": [
+          "Wharton Sean",
+          "Lingvay Ildiko",
+          "Bogdanski Pawel",
+          "Duque do Vale Ruben",
+          "Jacob Stephan",
+          "Karlsson Tobias",
+          "Shaji Chaithra",
+          "Rubino Domenica",
+          "Garvey W Timothy"
+        ],
+        "journal": "The New England journal of medicine",
+        "year": 2025,
+        "abstract": "BACKGROUND: Oral semaglutide at a dose of 25 mg may provide an alternative treatment option to injectable semaglutide (2.4 mg) and higher-dose oral semaglutide (50 mg) for persons with overweight or obesity.\n\nMETHODS: In a 71-week, double-blind, randomized, placebo-controlled trial conducted at 22 sites in four countries, we enrolled persons without diabetes who had a body-mass index (BMI; the weight in kilograms divided by the square of the height in meters) of 30 or higher or a BMI of 27 or higher with at least one obesity-related complication. The participants were randomly assigned in a 2:1 ratio to receive oral semaglutide (25 mg) or placebo once daily, plus lifestyle interventions. The coprimary end points at week 64 were the percent change in body weight and a reduction of 5% or more in body weight; confirmatory secondary end points included reductions in body weight of 10% or more, 15% or more, and 20% or more and the change in the Impact of Weight on Quality of Life-Lite Clinical Trials Version (IWQOL-Lite-CT) Physical Function score.\n\nRESULTS: A total of 205 participants were randomly assigned to receive oral semaglutide, and 102 to receive placebo. The estimated mean change in body weight from baseline to week 64 was -13.6% in the oral semaglutide group and -2.2% in the placebo group (estimated difference, -11.4 percentage points; 95% confidence interval, -13.9 to -9.0; P<0.001). Participants in the oral semaglutide group were significantly more likely than those in the placebo group to have body-weight reductions of 5% or more, 10% or more, 15% or more, and 20% or more (P<0.001 for all comparisons) and to have an improved IWQOL-Lite-CT Physical Function score (P<0.001). Gastrointestinal adverse events were more common with oral semaglutide than with placebo (74.0% vs. 42.2%).\n\nCONCLUSIONS: Oral semaglutide at a dose of 25 mg once daily resulted in a greater mean reduction in body weight than placebo in participants with overweight or obesity. (Funded by Novo Nordisk; OASIS 4 ClinicalTrials.gov number, NCT05564117.).",
+        "plain_title": "Oral Semaglutide Pill Tested for Weight Loss Without Diabetes",
+        "plain_summary": "A roughly 17-month trial tested a 25 mg daily semaglutide pill (rather than a weekly injection) in people with overweight or obesity but no diabetes to see if the oral form can produce similar weight loss and has an acceptable safety profile.",
+        "selected": true,
+        "ranking": {
+          "score": 14,
+          "overlap": 3,
+          "strategies_matched": [
+            "Comprehensive search using brand names, generic name, and multiple safety-related terms for weight loss indications",
+            "Targeted search for high-quality evidence (RCTs, systematic reviews, meta-analyses) on semaglutide risks in obesity treatment",
+            "Focused search for specific serious adverse events and commonly reported side effects of semaglutide in weight management populations"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Clinical Trial, Phase II",
+          "Journal Article",
+          "Multicenter Study",
+          "Randomized Controlled Trial"
+        ],
+        "strategy_idx": [
+          1,
+          2,
+          3
+        ],
+        "positions": [
+          3,
+          7,
+          7
+        ]
+      },
+      {
+        "pmid": "34305810",
+        "doi": "10.3389/fendo.2021.645563",
+        "title": "Safety of Semaglutide.",
+        "authors": [
+          "Smits Mark M",
+          "Van Raalte Daniël H"
+        ],
+        "journal": "Frontiers in endocrinology",
+        "year": 2021,
+        "abstract": "The glucagon-like peptide-1 receptor agonist (GLP-1RA) semaglutide is the most recently approved agent of this drug class, and the only GLP-1RA currently available as both subcutaneous and oral formulation. While GLP-1RAs effectively improve glycemic control and cause weight loss, potential safety concerns have arisen over the years. For semaglutide, such concerns have been addressed in the extensive phase 3 registration trials including cardiovascular outcome trials for both subcutaneous (SUSTAIN: Semaglutide Unabated Sustainability in Treatment of Type 2 Diabetes) and oral (PIONEER: Peptide InnOvatioN for the Early diabEtes tReatment) semaglutide and are being studied in further trials and registries, including real world data studies. In the current review we discuss the occurrence of adverse events associated with semaglutide focusing on hypoglycemia, gastrointestinal side effects, pancreatic safety (pancreatitis and pancreatic cancer), thyroid cancer, gallbladder events, cardiovascular aspects, acute kidney injury, diabetic retinopathy (DRP) complications and injection-site and allergic reactions and where available, we highlight potential underlying mechanisms. Furthermore, we discuss whether effects are specific for semaglutide or a class effect. We conclude that semaglutide induces mostly mild-to-moderate and transient gastrointestinal disturbances and increases the risk of biliary disease (cholelithiasis). No unexpected safety issues have arisen to date, and the established safety profile for semaglutide is similar to that of other GLP-1RAs where definitive conclusions for pancreatic and thyroid cancer cannot be drawn at this point due to low incidence of these conditions. Due to its potent glucose-lowering effect, patients at risk for deterioration of existing DRP should be carefully monitored if treated with semaglutide, particularly if also treated with insulin. Given the beneficial metabolic and cardiovascular actions of semaglutide, and the low risk for severe adverse events, semaglutide has an overall favorable risk/benefit profile for patient with type 2 diabetes.",
+        "plain_title": "Comprehensive Review of Semaglutide's Known Safety Profile",
+        "plain_summary": "This review examined safety data from semaglutide's large clinical trial programs (for both injectable and pill forms) and found that while gastrointestinal side effects like nausea are common, the drug's overall safety profile is consistent with other medications in its class, with no major unexpected dangers identified.",
+        "selected": true,
+        "ranking": {
+          "score": 12,
+          "overlap": 3,
+          "strategies_matched": [
+            "Broad search for any literature discussing semaglutide safety in the context of weight management",
+            "Comprehensive search using brand names, generic name, and multiple safety-related terms for weight loss indications",
+            "Focused search for specific serious adverse events and commonly reported side effects of semaglutide in weight management populations"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article",
+          "Research Support, Non-U.S. Gov't",
+          "Review"
+        ],
+        "strategy_idx": [
+          0,
+          1,
+          3
+        ],
+        "positions": [
+          7,
+          13,
+          15
+        ]
+      },
+      {
+        "pmid": "39761578",
+        "doi": "10.7326/ANNALS-24-01590",
+        "title": "Efficacy and Safety of Glucagon-Like Peptide-1 Receptor Agonists for Weight Loss Among Adults Without Diabetes : A Systematic Review of Randomized Controlled Trials.",
+        "authors": [
+          "Moiz Areesha",
+          "Filion Kristian B",
+          "Toutounchi Helia",
+          "Tsoukas Michael A",
+          "Yu Oriana H Y",
+          "Peters Tricia M",
+          "Eisenberg Mark J"
+        ],
+        "journal": "Annals of internal medicine",
+        "year": 2025,
+        "abstract": "BACKGROUND: Recent randomized controlled trials (RCTs) have investigated glucagon-like peptide-1 receptor agonists (GLP-1 RAs) and dual or triple co-agonists for weight loss among adults with overweight or obesity and without diabetes.\n\nPURPOSE: To assess the efficacy and safety of GLP-1 RAs and co-agonists for the treatment of obesity among adults without diabetes.\n\nDATA SOURCES: MEDLINE, Embase, and Cochrane CENTRAL from inception to 4 October 2024.\n\nSTUDY SELECTION: Placebo-controlled RCTs in otherwise healthy participants with overweight or obesity.\n\nDATA EXTRACTION: The primary outcome was change in relative or absolute body weight from baseline to maximum on-treatment follow-up. Safety outcomes included death, serious adverse events (SAEs), any adverse events (AEs), and gastrointestinal AEs.\n\nDATA SYNTHESIS: A total of 26 RCTs comprising 15 491 participants (72% female; mean body mass index, 30 to 41 kg/m2; mean age, 34 to 57 years) and 12 agents (3 commercially available agents [liraglutide, semaglutide, and tirzepatide] and 9 premarket agents for long-term weight management) were included. Treatment ranged from 16 to 104 weeks (median, 43 weeks). Compared with placebo, tirzepatide (15 mg once weekly) resulted in weight loss of up to 17.8% (95% CI, 16.3% to 19.3%) after 72 weeks of therapy; semaglutide (2.4 mg once weekly), up to 13.9% (CI, 11.0% to 16.7%) after 68 weeks; and liraglutide (3.0 mg once daily), up to 5.8% (CI, 3.6% to 8.0%) after 26 weeks. Retatrutide (12 mg once weekly) produced greater weight loss of up to 22.1% (CI, 19.3% to 24.9%) after 48 weeks; other novel single and combination GLP-1 agents were also efficacious to varying degrees. Although AEs were frequent (GLP-1 RA vs. placebo: 80% to 97% vs. 63% to 100%), the majority were gastrointestinal-related (47% to 84% vs. 13% to 63%, respectively), most commonly nausea, vomiting, diarrhea, and constipation. AEs requiring treatment discontinuation (0% to 26% vs. 0% to 9%, respectively) and SAEs (0% to 10% vs. 0% to 12%, respectively) were rare.\n\nLIMITATIONS: No head-to-head RCTs were available. Heterogeneity prevented meta-analysis.\n\nCONCLUSION: GLP-1 RAs and co-agonists are efficacious for weight loss, with reported safety concerns predominantly gastrointestinal in nature, when used among adults with overweight or obesity and without diabetes.\n\nPRIMARY FUNDING SOURCE: None. (PROSPERO: CRD42024505558).",
+        "plain_title": "Broad Review of GLP-1 Weight-Loss Drugs' Effectiveness and Safety",
+        "plain_summary": "A systematic review of clinical trials found that GLP-1-based drugs (including semaglutide) are effective for weight loss in adults without diabetes, with gastrointestinal issues being the most common side effects, and the review helps clarify how these medications compare to each other and to placebo.",
+        "selected": true,
+        "ranking": {
+          "score": 12,
+          "overlap": 3,
+          "strategies_matched": [
+            "Broad search for any literature discussing semaglutide safety in the context of weight management",
+            "Targeted search for high-quality evidence (RCTs, systematic reviews, meta-analyses) on semaglutide risks in obesity treatment",
+            "Focused search for specific serious adverse events and commonly reported side effects of semaglutide in weight management populations"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review"
+        ],
+        "strategy_idx": [
+          0,
+          2,
+          3
+        ],
+        "positions": [
+          8,
+          25,
+          24
+        ]
+      },
+      {
+        "pmid": "40196933",
+        "doi": "10.1111/dom.16364",
+        "title": "Real-world evidence on the utilization, clinical and comparative effectiveness, and adverse effects of newer GLP-1RA-based weight-loss therapies.",
+        "authors": [
+          "Thomsen Reimar W",
+          "Mailhac Aurélie",
+          "Løhde Julie B",
+          "Pottegård Anton"
+        ],
+        "journal": "Diabetes, obesity & metabolism",
+        "year": 2025,
+        "abstract": "Glucagon-like peptide-1 receptor agonists (GLP-1RAs) have emerged as key agents for weight management, based on their marked efficacy as observed in randomized controlled trials. While still limited, real-world studies on GLP-1RA use in populations with obesity are increasingly available. This narrative review discusses contemporary real-world evidence demonstrating the utilization, clinical and comparative effectiveness, and adverse effects of the currently approved GLP-1RA-based weight-loss therapies, that is, liraglutide, semaglutide and tirzepatide. The observed weight reduction in clinical practice overall tends to be lower than in randomized controlled trials; however, outcomes approach those seen in trials when focusing on highly adherent patients. Real-world studies demonstrate high discontinuation rates of GLP-1RAs (20%-50%) within the first year, and the use of much lower doses than those evaluated in clinical trials. Evidence from observational studies within type 2 diabetes or obesity populations suggests frequent gastrointestinal disturbances in GLP-1RA users, as also observed in trials, but no clear increase in risks of severe events like pancreatitis or pancreatic cancer, thyroid disorders, or depression and self-harm. Further evidence is needed to understand possible real-world associations of GLP-1RAs with eye disease and other rare outcomes. We provide 10 areas of particular importance for further research on GLP-1RA within the real-world space, including improved understanding of the exact drivers of early discontinuation and suboptimal dosing, studies of the effects of stopping GLP-1RA treatment, and investigations of clinical and cost-effectiveness for hard clinical outcomes in real-world settings, including not only cardio-reno-metabolic outcomes but also obesity-induced diseases like neuropsychiatric disease, cancer, musculoskeletal disease, and infections. PLAIN LANGUAGE SUMMARY: Recent advancements in weight-loss medications have sparked a lot of interest. The so-called GLP-1 receptor agonist medications (GLP-1RAs) have gained a lot of attention, because they have shown to be very effective, leading to significant weight loss in patients participating in clinical trials. GLP-1RAs, like liraglutide, semaglutide, and tirzepatide, help manage weight by mimicking hormones that control blood sugar and appetite. However, how these medications perform in real life can be different from the controlled settings of clinical trials, in which patients are carefully selected and their treatment plans closely followed. This literature review looks at how these medications are used and their effectiveness and safety in real-world settings. In real-life practice, GLP-1RAs are often less effective than in clinical trial conditions. This is usually because patients don't follow their medication plans as strictly as in trials. Real-world data shows that many patients use lower doses and do not stick to their treatment as strictly as participants in a controlled trial might, leading to less weight loss. However, those who do follow their plans closely can achieve results similar to those in trials. A major issue with GLP-1RAs is that many patients stop using them within the first year due to side effects or high costs of the medications, especially if not covered by insurance. Common side effects include nausea and digestive problems, which are the main reasons patients stop taking these treatments. These side effects are often manageable and decrease over time, and this reviews found no strong real-world evidence that GLP-1RAs cause severe side effects in many users. Despite these challenges, when GLP-1RAs are used effectively and consistently, they show substantial benefits in weight loss, most so the newest medications semaglutide and tirzepatide. These medications are also likely to help manage and prevent weight-related health conditions like type 2 diabetes and cardiovascular disease, but evidence for these beneficial outcomes is still scarce in real-world settings. The review emphasizes the need for more research to understand why many patients stop using these medications and how to improve dosing. It also calls for studies on the long-term effects of these therapies on various health outcomes, including mental health, cardiometabolic health, cancer, and rare conditions like eye diseases. Overall, while GLP-1RAs are a valuable tool for weight management, their real-world use requires careful consideration of individual patient factors, such as the ability to stick to treatment plans, manage side effects, and afford the medications. Further research will help make these treatments more effective for a wider range of people that need them.",
+        "plain_title": "Real-World Data on GLP-1 Weight-Loss Drugs Beyond Clinical Trials",
+        "plain_summary": "This review looked at how semaglutide and similar weight-loss drugs perform in everyday medical practice (not just controlled studies) and found that while they do cause meaningful weight loss, the real-world results tend to be somewhat smaller than in clinical trials, and side effects like nausea and digestive problems remain the most commonly reported issues.",
+        "selected": true,
+        "ranking": {
+          "score": 12,
+          "overlap": 3,
+          "strategies_matched": [
+            "Broad search for any literature discussing semaglutide safety in the context of weight management",
+            "Comprehensive search using brand names, generic name, and multiple safety-related terms for weight loss indications",
+            "Focused search for specific serious adverse events and commonly reported side effects of semaglutide in weight management populations"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "strategy_idx": [
+          0,
+          1,
+          3
+        ],
+        "positions": [
+          9,
+          10,
+          11
+        ]
+      }
+    ],
+    "prompts": {
+      "search_system": "You are a PubMed search expert. Your job is to turn a plain-English health or science question into optimized PubMed search queries.\n\n## Rules\n1. Generate 3-4 PubMed search queries, from broad to specific.\n2. Use proper MeSH terms and boolean operators (AND, OR) where helpful.\n3. Include relevant synonyms and alternative phrasings.\n4. Prioritize queries that will find systematic reviews, meta-analyses, and RCTs when relevant.\n5. Keep queries concise but effective.\n\n## Output Format\nReturn ONLY a JSON array of objects. No markdown, no explanation, no code fences.\nEach object has:\n- \"query\": the PubMed search string\n- \"strategy\": a brief plain-English description of what this query targets (1 sentence)\n\nExample output:\n[{\"query\":\"vitamin D supplementation respiratory infection children\",\"strategy\":\"Broad search for vitamin D and respiratory infections in children\"},{\"query\":\"(vitamin D OR cholecalciferol) AND (respiratory tract infection OR RTI OR common cold) AND (child OR pediatric) AND (randomized controlled trial OR meta-analysis)\",\"strategy\":\"Targeted search for high-quality trials on vitamin D and respiratory infections in kids\"}]",
+      "summary_system": "You translate medical research paper titles and abstracts into plain language for people without medical training.\n\n## Rules\n1. Use no medical jargon. If a technical concept is essential, explain it in parentheses.\n2. Be specific about findings (numbers, effects) when the abstract provides them.\n3. Each summary should help a non-expert decide if this paper is relevant to their question.\n\n## Output Format\nReturn ONLY a JSON array in the same order as the papers provided. No markdown, no explanation.\nEach object has:\n- \"plain_title\": A clear, jargon-free title (5-12 words)\n- \"plain_summary\": One sentence explaining the key finding or purpose in everyday language",
+      "synthesis_system": "You are a research translator for Tables Turned, a tool that helps regular people understand PubMed research.\n\n## Your Rules\n\n1. **Answer the question first.** Open with a direct, clear answer in 2-3 sentences based on the evidence. This is the most important part.\n2. **Every claim needs receipts.** Cite as [PMID: XXXXX]. If you cannot link a claim to a provided paper, mark it [UNWITNESSED].\n3. **Surface contradictions.** If papers disagree, say so plainly.\n4. **Write in common tongue.** No jargon. If a technical term is unavoidable, translate it in parentheses. Short sentences.\n5. **Do not patronize.** The reader is intelligent and busy.\n6. **State confidence honestly.** Strong, mixed, or thin with reasons.\n7. **Do not hallucinate.** Never invent findings. Never cite a PMID not provided to you.\n\n## Output Format\n\n**CRITICAL: The entire brief must fit on ONE printed page. Be concise. No filler. No padding. Every sentence must earn its place.**\n\nProduce a markdown document with exactly these sections:\n\n# [Short title from the question]\n\n**Question:** [question] · **Context:** [context]\n\n---\n\n## The short answer\n\n[2-3 sentences directly answering the user's question. Lead with what matters most to their decision. Cite key PMIDs inline.]\n\n## Key findings\n\n[4-6 bullet points maximum. Each bullet states one finding in plain language and cites [PMID: XXXXX]. If papers contradict each other, say so in the bullet.]\n\n## What is unknown\n\n[2-3 bullet points: gaps the papers do not address that the reader likely cares about.]\n\n## Confidence: [Low / Medium / High]\n\n[One sentence: why, based on study count, size, consistency, and design quality.]\n\n---\n\n*Generated by Tables Turned. Receipts only.*",
+      "synthesis_user_message": "**Question:** Is Ozempic safe?\n**Context:** My doctor suggested semaglutide for weight loss and I want to understand the risks before I start.\n\n---\n\n**Papers provided (12):**\n\n### PMID: 36578889\n**Title:** Efficacy and Safety of Semaglutide for Weight Loss in Obesity Without Diabetes: A Systematic Review and Meta-Analysis.\n**Authors:** Tan Hanna Clementine, Dampil Oliver Allan, Marquez Maricar Mae\n**Journal:** Journal of the ASEAN Federation of Endocrine Societies (2022)\n**Abstract:**\nBACKGROUND: The weight loss benefit of semaglutide in patients with diabetes is well-documented, but its clinical utility in treating obesity among patients without diabetes is less described. We therefore assessed the efficacy and safety of subcutaneous semaglutide as treatment for obesity in patients without diabetes.\n\nMETHODOLOGY: A comprehensive search of PubMed/MEDLINE, Cochrane and Google scholar was performed to identify trials on the efficacy and safety of subcutaneous semaglutide on patients with obesity without diabetes. Primary outcome was expressed as percent mean weight difference. Secondary outcomes including risk for gastrointestinal adverse events, discontinuation of treatment and serious adverse events were expressed as risk ratios. These were calculated using the random effects model.\n\nRESULTS: The study included 4 randomized controlled trials having a total of 3,613 individuals with obesity without diabetes. The mean difference for weight reduction was -11.85%, favoring semaglutide [95% confidence interval (CI) (-12.81,-10.90), p<0.00001]. Secondary outcomes showed that the risk of developing gastrointestinal adverse events was 1.59 times more likely with semaglutide (RR 1.59, 95%CI [1.34, 1.88], p<0.00001). Risk for discontinuation due to adverse events was twice as likely in the semaglutide group (RR 2.19, 95%CI [1.36,3.55], p=0.001) and the risk for serious adverse events was 1.6 times more likely for semaglutide (RR1.60, 95%CI [1.24, 2.07], p=0.0003). Serious events were mostly of gastrointestinal and hepatobiliary disorders such as acute pancreatitis and cholelithiasis.\n\nCONCLUSION: Among individuals with obesity without type 2 diabetes, subcutaneous semaglutide is effective for weight loss with an 11.85% reduction from baseline compared to placebo. This supports the use of semaglutide for weight management in obesity. However, risk of gastrointestinal adverse events, discontinuation of treatment and serious adverse events were higher in the semaglutide group versus placebo.\n\n---\n\n### PMID: 33567185\n**Title:** Once-Weekly Semaglutide in Adults with Overweight or Obesity.\n**Authors:** Wilding John P H, Batterham Rachel L, Calanna Salvatore, Davies Melanie, Van Gaal Luc F et al.\n**Journal:** The New England journal of medicine (2021)\n**Abstract:**\nBACKGROUND: Obesity is a global health challenge with few pharmacologic options. Whether adults with obesity can achieve weight loss with once-weekly semaglutide at a dose of 2.4 mg as an adjunct to lifestyle intervention has not been confirmed.\n\nMETHODS: In this double-blind trial, we enrolled 1961 adults with a body-mass index (the weight in kilograms divided by the square of the height in meters) of 30 or greater (≥27 in persons with ≥1 weight-related coexisting condition), who did not have diabetes, and randomly assigned them, in a 2:1 ratio, to 68 weeks of treatment with once-weekly subcutaneous semaglutide (at a dose of 2.4 mg) or placebo, plus lifestyle intervention. The coprimary end points were the percentage change in body weight and weight reduction of at least 5%. The primary estimand (a precise description of the treatment effect reflecting the objective of the clinical trial) assessed effects regardless of treatment discontinuation or rescue interventions.\n\nRESULTS: The mean change in body weight from baseline to week 68 was -14.9% in the semaglutide group as compared with -2.4% with placebo, for an estimated treatment difference of -12.4 percentage points (95% confidence interval [CI], -13.4 to -11.5; P<0.001). More participants in the semaglutide group than in the placebo group achieved weight reductions of 5% or more (1047 participants [86.4%] vs. 182 [31.5%]), 10% or more (838 [69.1%] vs. 69 [12.0%]), and 15% or more (612 [50.5%] vs. 28 [4.9%]) at week 68 (P<0.001 for all three comparisons of odds). The change in body weight from baseline to week 68 was -15.3 kg in the semaglutide group as compared with -2.6 kg in the placebo group (estimated treatment difference, -12.7 kg; 95% CI, -13.7 to -11.7). Participants who received semaglutide had a greater improvement with respect to cardiometabolic risk factors and a greater increase in participant-reported physical functioning from baseline than those who received placebo. Nausea and diarrhea were the most common adverse events with semaglutide; they were typically transient and mild-to-moderate in severity and subsided with time. More participants in the semaglutide group than in the placebo group discontinued treatment owing to gastrointestinal events (59 [4.5%] vs. 5 [0.8%]).\n\nCONCLUSIONS: In participants with overweight or obesity, 2.4 mg of semaglutide once weekly plus lifestyle intervention was associated with sustained, clinically relevant reduction in body weight. (Funded by Novo Nordisk; STEP 1 ClinicalTrials.gov number, NCT03548935).\n\n---\n\n### PMID: 35441470\n**Title:** Weight regain and cardiometabolic effects after withdrawal of semaglutide: The STEP 1 trial extension.\n**Authors:** Wilding John P H, Batterham Rachel L, Davies Melanie, Van Gaal Luc F, Kandler Kristian et al.\n**Journal:** Diabetes, obesity & metabolism (2022)\n**Abstract:**\nAIM: To explore changes in body weight and cardiometabolic risk factors after treatment withdrawal in the STEP 1 trial extension.\n\nMATERIALS AND METHODS: STEP 1 (NCT03548935) randomized 1961 adults with a body mass index ≥ 30 kg/m2 (or ≥ 27 kg/m2 with ≥ 1 weight-related co-morbidity) without diabetes to 68 weeks of once-weekly subcutaneous semaglutide 2.4 mg (including 16 weeks of dose escalation) or placebo, as an adjunct to lifestyle intervention. At week 68, treatments (including lifestyle intervention) were discontinued. An off-treatment extension assessed for a further year a representative subset of participants who had completed 68 weeks of treatment. This subset comprised all eligible participants from any site in Canada, Germany and the UK, and sites in the United States and Japan with the highest main phase recruitment. All analyses in the extension were exploratory.\n\nRESULTS: Extension analyses included 327 participants. From week 0 to week 68, mean weight loss was 17.3% (SD: 9.3%) with semaglutide and 2.0% (SD: 6.1%) with placebo. Following treatment withdrawal, semaglutide and placebo participants regained 11.6 (SD: 7.7) and 1.9 (SD: 4.8) percentage points of lost weight, respectively, by week 120, resulting in net losses of 5.6% (SD: 8.9%) and 0.1% (SD: 5.8%), respectively, from week 0 to week 120. Cardiometabolic improvements seen from week 0 to week 68 with semaglutide reverted towards baseline at week 120 for most variables.\n\nCONCLUSIONS: One year after withdrawal of once-weekly subcutaneous semaglutide 2.4 mg and lifestyle intervention, participants regained two-thirds of their prior weight loss, with similar changes in cardiometabolic variables. Findings confirm the chronicity of obesity and suggest ongoing treatment is required to maintain improvements in weight and health.\n\n---\n\n### PMID: 40353578\n**Title:** Tirzepatide as Compared with Semaglutide for the Treatment of Obesity.\n**Authors:** Aronne Louis J, Horn Deborah Bade, le Roux Carel W, Ho Wayne, Falcon Beverly L et al.\n**Journal:** The New England journal of medicine (2025)\n**Abstract:**\nBACKGROUND: Tirzepatide and semaglutide are highly effective medications for obesity management. The efficacy and safety of tirzepatide as compared with semaglutide in adults with obesity but without type 2 diabetes is unknown.\n\nMETHODS: In this phase 3b, open-label, controlled trial, adult participants with obesity but without type 2 diabetes were randomly assigned in a 1:1 ratio to receive the maximum tolerated dose of tirzepatide (10 mg or 15 mg) or the maximum tolerated dose of semaglutide (1.7 mg or 2.4 mg) subcutaneously once weekly for 72 weeks. The primary end point was the percent change in weight from baseline to week 72. Key secondary end points included weight reductions of at least 10%, 15%, 20%, and 25% and a change in waist circumference from baseline to week 72.\n\nRESULTS: A total of 751 participants underwent randomization. The least-squares mean percent change in weight at week 72 was -20.2% (95% confidence interval [CI], -21.4 to -19.1) with tirzepatide and -13.7% (95% CI, -14.9 to -12.6) with semaglutide (P<0.001). The least-squares mean change in waist circumference was -18.4 cm (95% CI, -19.6 to -17.2) with tirzepatide and -13.0 cm (95% CI, -14.3 to -11.7) with semaglutide (P<0.001). Participants in the tirzepatide group were more likely than those in the semaglutide group to have weight reductions of at least 10%, 15%, 20%, and 25%. The most common adverse events in both treatment groups were gastrointestinal, and most were mild to moderate in severity and occurred primarily during dose escalation.\n\nCONCLUSIONS: Among participants with obesity but without diabetes, treatment with tirzepatide was superior to treatment with semaglutide with respect to reduction in body weight and waist circumference at week 72. (Funded by Eli Lilly; SURMOUNT-5 ClinicalTrials.gov number, NCT05822830.).\n\n---\n\n### PMID: 36216945\n**Title:** Two-year effects of semaglutide in adults with overweight or obesity: the STEP 5 trial.\n**Authors:** Garvey W Timothy, Batterham Rachel L, Bhatta Meena, Buscemi Silvio, Christensen Louise N et al.\n**Journal:** Nature medicine (2022)\n**Abstract:**\nThe STEP 5 trial assessed the efficacy and safety of once-weekly subcutaneous semaglutide 2.4 mg versus placebo (both plus behavioral intervention) for long-term treatment of adults with obesity, or overweight with at least one weight-related comorbidity, without diabetes. The co-primary endpoints were the percentage change in body weight and achievement of weight loss of ≥5% at week 104. Efficacy was assessed among all randomized participants regardless of treatment discontinuation or rescue intervention. From 5 October 2018 to 1 February 2019, 304 participants were randomly assigned to semaglutide 2.4 mg (n = 152) or placebo (n = 152), 92.8% of whom completed the trial (attended the end-of-trial safety visit). Most participants were female (236 (77.6%)) and white (283 (93.1%)), with a mean (s.d.) age of 47.3 (11.0) years, body mass index of 38.5 (6.9) kg m-2 and weight of 106.0 (22.0) kg. The mean change in body weight from baseline to week 104 was -15.2% in the semaglutide group (n = 152) versus -2.6% with placebo (n = 152), for an estimated treatment difference of -12.6 %-points (95% confidence interval, -15.3 to -9.8; P < 0.0001). More participants in the semaglutide group than in the placebo group achieved weight loss ≥5% from baseline at week 104 (77.1% versus 34.4%; P < 0.0001). Gastrointestinal adverse events, mostly mild-to-moderate, were reported more often with semaglutide than with placebo (82.2% versus 53.9%). In summary, in adults with overweight (with at least one weight-related comorbidity) or obesity, semaglutide treatment led to substantial, sustained weight loss over 104 weeks versus placebo. NCT03693430.\n\n---\n\n### PMID: 40961952\n**Title:** Once-weekly semaglutide 7·2 mg in adults with obesity (STEP UP): a randomised, controlled, phase 3b trial.\n**Authors:** Wharton Sean, Freitas Paula, Hjelmesæth Jøran, Kabisch Maria, Kandler Kristian et al.\n**Journal:** The lancet. Diabetes & endocrinology (2025)\n**Abstract:**\nBACKGROUND: Once-weekly subcutaneous semaglutide 2·4 mg is approved for weight management in people with obesity and related complications; however, some individuals do not reach their therapeutic goals with this dose. We aimed to test the efficacy and safety of a higher dose of semaglutide (7·2 mg) in people with obesity.\n\nMETHODS: STEP UP was a phase 3b, randomised, double-blind, placebo-controlled and active-controlled trial conducted across 95 hospitals, specialist clinics, and medical centres in 11 countries in adults with BMI 30 kg/m2 or greater, without diabetes. Participants were randomly assigned (5:1:1) to receive once-weekly subcutaneous semaglutide 7·2 mg, 2·4 mg, or placebo, with a lifestyle intervention, for 72 weeks. Coprimary endpoints were percentage change in bodyweight and the proportion of participants with a bodyweight reduction of 5% or greater for semaglutide 7·2 mg versus placebo from baseline to week 72 (treatment policy estimand). Confirmatory secondary endpoints were percentage change in bodyweight with 7·2 mg versus 2·4 mg, change in waist circumference (cm), and proportion of participants with bodyweight reductions of 10% or greater, 15% or greater, 20% or greater, and 25% or greater versus placebo, and 20% or greater and 25% or greater versus 2·4 mg. Safety was assessed in all participants who received at least one dose of the trial product. This trial is registered with ClinicalTrials.gov (NCT05646706) and is now completed.\n\nFINDINGS: Between Jan 1, 2023, and Nov 26, 2024, 1407 participants were randomly assigned to semaglutide 7·2 mg (n=1005), semaglutide 2·4 mg (n=201), or placebo (n=201). 1037 (73·7%) of 1407 participants were female, the mean age was 47 (SD 12) years, mean bodyweight was 113·0 (24·1) kg, and mean BMI was 39·9 (7·1) kg/m2. The mean change in bodyweight was greater with semaglutide 7·2 mg versus 2·4 mg (-18·7% [SE 0·4] vs -15·6% [0·7]; estimated treatment difference [ETD] -3·1% [95% CI -4·7 to -1·6]; p<0·0001) and with semaglutide 7·2 mg versus placebo (-18·7% [0·4] vs -3·9% [0·6]; -14·8% [-16·2 to -13·4]; p<0·0001). Participants in the semaglutide 7·2 mg group were more likely than those in the placebo group to reach bodyweight reductions of 5% or greater (odds ratio 12·1 [95% CI 8·3 to 17·6]; p<0·0001), 10% or greater (14·5 [9·6 to 21·9]; p<0·0001), 15% or greater (20·3 [11·2 to 36·8]; p<0·0001), 20% or greater (27·3 [10·9 to 68·0]; p<0·0001), and 25% or greater (127·4 [36·8 to 441·4]; p<0·0001); and more likely than those in the 2·4 mg group to reach bodyweight reductions of 20% or greater (1·8 [1·3 to 2·4]; p=0·0006) and 25% or greater (2·4 [1·6 to 3·5]; p<0·0001). Improvements in waist circumference were observed with semaglutide 7·2 mg versus placebo (ETD -11·7 cm [95% CI -13·0 to -10·4]; p<0·0001). Gastrointestinal adverse events were more common with semaglutide 7·2 mg (711 [70·8%] of 1004) versus 2·4 mg (123 [61·2%] of 201) or placebo (86 [42·8%] of 201), as was dysaesthesia (230 [22·9%], 12 [6·0%], and one [0·5%], respectively). Serious adverse events were reported by 68 (6·8%) of 1004 participants with semaglutide 7·2 mg, 22 (10·9%) of 201 with semaglutide 2·4 mg, and 11 (5·5%) of 201 with placebo.\n\nINTERPRETATION: Semaglutide 7·2 mg was superior to placebo and 2·4 mg for bodyweight reduction in adults with obesity, while retaining a favourable risk-benefit profile.\n\nFUNDING: Novo Nordisk.\n\nTRANSLATIONS: For the German and Greek translations of the abstract see Supplementary Materials section.\n\n---\n\n### PMID: 33625476\n**Title:** Effect of Subcutaneous Semaglutide vs Placebo as an Adjunct to Intensive Behavioral Therapy on Body Weight in Adults With Overweight or Obesity: The STEP 3 Randomized Clinical Trial.\n**Authors:** Wadden Thomas A, Bailey Timothy S, Billings Liana K, Davies Melanie, Frias Juan P et al.\n**Journal:** JAMA (2021)\n**Abstract:**\nIMPORTANCE: Weight loss improves cardiometabolic risk factors in people with overweight or obesity. Intensive lifestyle intervention and pharmacotherapy are the most effective noninvasive weight loss approaches.\n\nOBJECTIVE: To compare the effects of once-weekly subcutaneous semaglutide, 2.4 mg vs placebo for weight management as an adjunct to intensive behavioral therapy with initial low-calorie diet in adults with overweight or obesity.\n\nDESIGN, SETTING, AND PARTICIPANTS: Randomized, double-blind, parallel-group, 68-week, phase 3a study (STEP 3) conducted at 41 sites in the US from August 2018 to April 2020 in adults without diabetes (N = 611) and with either overweight (body mass index ≥27) plus at least 1 comorbidity or obesity (body mass index ≥30).\n\nINTERVENTIONS: Participants were randomized (2:1) to semaglutide, 2.4 mg (n = 407) or placebo (n = 204), both combined with a low-calorie diet for the first 8 weeks and intensive behavioral therapy (ie, 30 counseling visits) during 68 weeks.\n\nMAIN OUTCOMES AND MEASURES: The co-primary end points were percentage change in body weight and the loss of 5% or more of baseline weight by week 68. Confirmatory secondary end points included losses of at least 10% or 15% of baseline weight.\n\nRESULTS: Of 611 randomized participants (495 women [81.0%], mean age 46 years [SD, 13], body weight 105.8 kg [SD, 22.9], and body mass index 38.0 [SD, 6.7]), 567 (92.8%) completed the trial, and 505 (82.7%) were receiving treatment at trial end. At week 68, the estimated mean body weight change from baseline was -16.0% for semaglutide vs -5.7% for placebo (difference, -10.3 percentage points [95% CI, -12.0 to -8.6]; P < .001). More participants treated with semaglutide vs placebo lost at least 5% of baseline body weight (86.6% vs 47.6%, respectively; P < .001). A higher proportion of participants in the semaglutide vs placebo group achieved weight losses of at least 10% or 15% (75.3% vs 27.0% and 55.8% vs 13.2%, respectively; P < .001). Gastrointestinal adverse events were more frequent with semaglutide (82.8%) vs placebo (63.2%). Treatment was discontinued owing to these events in 3.4% of semaglutide participants vs 0% of placebo participants.\n\nCONCLUSIONS AND RELEVANCE: Among adults with overweight or obesity, once-weekly subcutaneous semaglutide compared with placebo, used as an adjunct to intensive behavioral therapy and initial low-calorie diet, resulted in significantly greater weight loss during 68 weeks. Further research is needed to assess the durability of these findings.\n\nTRIAL REGISTRATION: ClinicalTrials.gov Identifier: NCT03611582.\n\n---\n\n### PMID: 37952131\n**Title:** Semaglutide and Cardiovascular Outcomes in Obesity without Diabetes.\n**Authors:** Lincoff A Michael, Brown-Frandsen Kirstine, Colhoun Helen M, Deanfield John, Emerson Scott S et al.\n**Journal:** The New England journal of medicine (2023)\n**Abstract:**\nBACKGROUND: Semaglutide, a glucagon-like peptide-1 receptor agonist, has been shown to reduce the risk of adverse cardiovascular events in patients with diabetes. Whether semaglutide can reduce cardiovascular risk associated with overweight and obesity in the absence of diabetes is unknown.\n\nMETHODS: In a multicenter, double-blind, randomized, placebo-controlled, event-driven superiority trial, we enrolled patients 45 years of age or older who had preexisting cardiovascular disease and a body-mass index (the weight in kilograms divided by the square of the height in meters) of 27 or greater but no history of diabetes. Patients were randomly assigned in a 1:1 ratio to receive once-weekly subcutaneous semaglutide at a dose of 2.4 mg or placebo. The primary cardiovascular end point was a composite of death from cardiovascular causes, nonfatal myocardial infarction, or nonfatal stroke in a time-to-first-event analysis. Safety was also assessed.\n\nRESULTS: A total of 17,604 patients were enrolled; 8803 were assigned to receive semaglutide and 8801 to receive placebo. The mean (±SD) duration of exposure to semaglutide or placebo was 34.2±13.7 months, and the mean duration of follow-up was 39.8±9.4 months. A primary cardiovascular end-point event occurred in 569 of the 8803 patients (6.5%) in the semaglutide group and in 701 of the 8801 patients (8.0%) in the placebo group (hazard ratio, 0.80; 95% confidence interval, 0.72 to 0.90; P<0.001). Adverse events leading to permanent discontinuation of the trial product occurred in 1461 patients (16.6%) in the semaglutide group and 718 patients (8.2%) in the placebo group (P<0.001).\n\nCONCLUSIONS: In patients with preexisting cardiovascular disease and overweight or obesity but without diabetes, weekly subcutaneous semaglutide at a dose of 2.4 mg was superior to placebo in reducing the incidence of death from cardiovascular causes, nonfatal myocardial infarction, or nonfatal stroke at a mean follow-up of 39.8 months. (Funded by Novo Nordisk; SELECT ClinicalTrials.gov number, NCT03574597.).\n\n---\n\n### PMID: 40934115\n**Title:** Oral Semaglutide at a Dose of 25 mg in Adults with Overweight or Obesity.\n**Authors:** Wharton Sean, Lingvay Ildiko, Bogdanski Pawel, Duque do Vale Ruben, Jacob Stephan et al.\n**Journal:** The New England journal of medicine (2025)\n**Abstract:**\nBACKGROUND: Oral semaglutide at a dose of 25 mg may provide an alternative treatment option to injectable semaglutide (2.4 mg) and higher-dose oral semaglutide (50 mg) for persons with overweight or obesity.\n\nMETHODS: In a 71-week, double-blind, randomized, placebo-controlled trial conducted at 22 sites in four countries, we enrolled persons without diabetes who had a body-mass index (BMI; the weight in kilograms divided by the square of the height in meters) of 30 or higher or a BMI of 27 or higher with at least one obesity-related complication. The participants were randomly assigned in a 2:1 ratio to receive oral semaglutide (25 mg) or placebo once daily, plus lifestyle interventions. The coprimary end points at week 64 were the percent change in body weight and a reduction of 5% or more in body weight; confirmatory secondary end points included reductions in body weight of 10% or more, 15% or more, and 20% or more and the change in the Impact of Weight on Quality of Life-Lite Clinical Trials Version (IWQOL-Lite-CT) Physical Function score.\n\nRESULTS: A total of 205 participants were randomly assigned to receive oral semaglutide, and 102 to receive placebo. The estimated mean change in body weight from baseline to week 64 was -13.6% in the oral semaglutide group and -2.2% in the placebo group (estimated difference, -11.4 percentage points; 95% confidence interval, -13.9 to -9.0; P<0.001). Participants in the oral semaglutide group were significantly more likely than those in the placebo group to have body-weight reductions of 5% or more, 10% or more, 15% or more, and 20% or more (P<0.001 for all comparisons) and to have an improved IWQOL-Lite-CT Physical Function score (P<0.001). Gastrointestinal adverse events were more common with oral semaglutide than with placebo (74.0% vs. 42.2%).\n\nCONCLUSIONS: Oral semaglutide at a dose of 25 mg once daily resulted in a greater mean reduction in body weight than placebo in participants with overweight or obesity. (Funded by Novo Nordisk; OASIS 4 ClinicalTrials.gov number, NCT05564117.).\n\n---\n\n### PMID: 34305810\n**Title:** Safety of Semaglutide.\n**Authors:** Smits Mark M, Van Raalte Daniël H\n**Journal:** Frontiers in endocrinology (2021)\n**Abstract:**\nThe glucagon-like peptide-1 receptor agonist (GLP-1RA) semaglutide is the most recently approved agent of this drug class, and the only GLP-1RA currently available as both subcutaneous and oral formulation. While GLP-1RAs effectively improve glycemic control and cause weight loss, potential safety concerns have arisen over the years. For semaglutide, such concerns have been addressed in the extensive phase 3 registration trials including cardiovascular outcome trials for both subcutaneous (SUSTAIN: Semaglutide Unabated Sustainability in Treatment of Type 2 Diabetes) and oral (PIONEER: Peptide InnOvatioN for the Early diabEtes tReatment) semaglutide and are being studied in further trials and registries, including real world data studies. In the current review we discuss the occurrence of adverse events associated with semaglutide focusing on hypoglycemia, gastrointestinal side effects, pancreatic safety (pancreatitis and pancreatic cancer), thyroid cancer, gallbladder events, cardiovascular aspects, acute kidney injury, diabetic retinopathy (DRP) complications and injection-site and allergic reactions and where available, we highlight potential underlying mechanisms. Furthermore, we discuss whether effects are specific for semaglutide or a class effect. We conclude that semaglutide induces mostly mild-to-moderate and transient gastrointestinal disturbances and increases the risk of biliary disease (cholelithiasis). No unexpected safety issues have arisen to date, and the established safety profile for semaglutide is similar to that of other GLP-1RAs where definitive conclusions for pancreatic and thyroid cancer cannot be drawn at this point due to low incidence of these conditions. Due to its potent glucose-lowering effect, patients at risk for deterioration of existing DRP should be carefully monitored if treated with semaglutide, particularly if also treated with insulin. Given the beneficial metabolic and cardiovascular actions of semaglutide, and the low risk for severe adverse events, semaglutide has an overall favorable risk/benefit profile for patient with type 2 diabetes.\n\n---\n\n### PMID: 39761578\n**Title:** Efficacy and Safety of Glucagon-Like Peptide-1 Receptor Agonists for Weight Loss Among Adults Without Diabetes : A Systematic Review of Randomized Controlled Trials.\n**Authors:** Moiz Areesha, Filion Kristian B, Toutounchi Helia, Tsoukas Michael A, Yu Oriana H Y et al.\n**Journal:** Annals of internal medicine (2025)\n**Abstract:**\nBACKGROUND: Recent randomized controlled trials (RCTs) have investigated glucagon-like peptide-1 receptor agonists (GLP-1 RAs) and dual or triple co-agonists for weight loss among adults with overweight or obesity and without diabetes.\n\nPURPOSE: To assess the efficacy and safety of GLP-1 RAs and co-agonists for the treatment of obesity among adults without diabetes.\n\nDATA SOURCES: MEDLINE, Embase, and Cochrane CENTRAL from inception to 4 October 2024.\n\nSTUDY SELECTION: Placebo-controlled RCTs in otherwise healthy participants with overweight or obesity.\n\nDATA EXTRACTION: The primary outcome was change in relative or absolute body weight from baseline to maximum on-treatment follow-up. Safety outcomes included death, serious adverse events (SAEs), any adverse events (AEs), and gastrointestinal AEs.\n\nDATA SYNTHESIS: A total of 26 RCTs comprising 15 491 participants (72% female; mean body mass index, 30 to 41 kg/m2; mean age, 34 to 57 years) and 12 agents (3 commercially available agents [liraglutide, semaglutide, and tirzepatide] and 9 premarket agents for long-term weight management) were included. Treatment ranged from 16 to 104 weeks (median, 43 weeks). Compared with placebo, tirzepatide (15 mg once weekly) resulted in weight loss of up to 17.8% (95% CI, 16.3% to 19.3%) after 72 weeks of therapy; semaglutide (2.4 mg once weekly), up to 13.9% (CI, 11.0% to 16.7%) after 68 weeks; and liraglutide (3.0 mg once daily), up to 5.8% (CI, 3.6% to 8.0%) after 26 weeks. Retatrutide (12 mg once weekly) produced greater weight loss of up to 22.1% (CI, 19.3% to 24.9%) after 48 weeks; other novel single and combination GLP-1 agents were also efficacious to varying degrees. Although AEs were frequent (GLP-1 RA vs. placebo: 80% to 97% vs. 63% to 100%), the majority were gastrointestinal-related (47% to 84% vs. 13% to 63%, respectively), most commonly nausea, vomiting, diarrhea, and constipation. AEs requiring treatment discontinuation (0% to 26% vs. 0% to 9%, respectively) and SAEs (0% to 10% vs. 0% to 12%, respectively) were rare.\n\nLIMITATIONS: No head-to-head RCTs were available. Heterogeneity prevented meta-analysis.\n\nCONCLUSION: GLP-1 RAs and co-agonists are efficacious for weight loss, with reported safety concerns predominantly gastrointestinal in nature, when used among adults with overweight or obesity and without diabetes.\n\nPRIMARY FUNDING SOURCE: None. (PROSPERO: CRD42024505558).\n\n---\n\n### PMID: 40196933\n**Title:** Real-world evidence on the utilization, clinical and comparative effectiveness, and adverse effects of newer GLP-1RA-based weight-loss therapies.\n**Authors:** Thomsen Reimar W, Mailhac Aurélie, Løhde Julie B, Pottegård Anton\n**Journal:** Diabetes, obesity & metabolism (2025)\n**Abstract:**\nGlucagon-like peptide-1 receptor agonists (GLP-1RAs) have emerged as key agents for weight management, based on their marked efficacy as observed in randomized controlled trials. While still limited, real-world studies on GLP-1RA use in populations with obesity are increasingly available. This narrative review discusses contemporary real-world evidence demonstrating the utilization, clinical and comparative effectiveness, and adverse effects of the currently approved GLP-1RA-based weight-loss therapies, that is, liraglutide, semaglutide and tirzepatide. The observed weight reduction in clinical practice overall tends to be lower than in randomized controlled trials; however, outcomes approach those seen in trials when focusing on highly adherent patients. Real-world studies demonstrate high discontinuation rates of GLP-1RAs (20%-50%) within the first year, and the use of much lower doses than those evaluated in clinical trials. Evidence from observational studies within type 2 diabetes or obesity populations suggests frequent gastrointestinal disturbances in GLP-1RA users, as also observed in trials, but no clear increase in risks of severe events like pancreatitis or pancreatic cancer, thyroid disorders, or depression and self-harm. Further evidence is needed to understand possible real-world associations of GLP-1RAs with eye disease and other rare outcomes. We provide 10 areas of particular importance for further research on GLP-1RA within the real-world space, including improved understanding of the exact drivers of early discontinuation and suboptimal dosing, studies of the effects of stopping GLP-1RA treatment, and investigations of clinical and cost-effectiveness for hard clinical outcomes in real-world settings, including not only cardio-reno-metabolic outcomes but also obesity-induced diseases like neuropsychiatric disease, cancer, musculoskeletal disease, and infections. PLAIN LANGUAGE SUMMARY: Recent advancements in weight-loss medications have sparked a lot of interest. The so-called GLP-1 receptor agonist medications (GLP-1RAs) have gained a lot of attention, because they have shown to be very effective, leading to significant weight loss in patients participating in clinical trials. GLP-1RAs, like liraglutide, semaglutide, and tirzepatide, help manage weight by mimicking hormones that control blood sugar and appetite. However, how these medications perform in real life can be different from the controlled settings of clinical trials, in which patients are carefully selected and their treatment plans closely followed. This literature review looks at how these medications are used and their effectiveness and safety in real-world settings. In real-life practice, GLP-1RAs are often less effective than in clinical trial conditions. This is usually because patients don't follow their medication plans as strictly as in trials. Real-world data shows that many patients use lower doses and do not stick to their treatment as strictly as participants in a controlled trial might, leading to less weight loss. However, those who do follow their plans closely can achieve results similar to those in trials. A major issue with GLP-1RAs is that many patients stop using them within the first year due to side effects or high costs of the medications, especially if not covered by insurance. Common side effects include nausea and digestive problems, which are the main reasons patients stop taking these treatments. These side effects are often manageable and decrease over time, and this reviews found no strong real-world evidence that GLP-1RAs cause severe side effects in many users. Despite these challenges, when GLP-1RAs are used effectively and consistently, they show substantial benefits in weight loss, most so the newest medications semaglutide and tirzepatide. These medications are also likely to help manage and prevent weight-related health conditions like type 2 diabetes and cardiovascular disease, but evidence for these beneficial outcomes is still scarce in real-world settings. The review emphasizes the need for more research to understand why many patients stop using these medications and how to improve dosing. It also calls for studies on the long-term effects of these therapies on various health outcomes, including mental health, cardiometabolic health, cancer, and rare conditions like eye diseases. Overall, while GLP-1RAs are a valuable tool for weight management, their real-world use requires careful consideration of individual patient factors, such as the ability to stick to treatment plans, manage side effects, and afford the medications. Further research will help make these treatments more effective for a wider range of people that need them.\n\n---\n\nBased on these papers, generate a plain-language synthesis brief.\nCRITICAL: The brief MUST fit on ONE printed page. Be direct and concise. Cut all filler.\nAnswer the question first. Every claim must cite PMID(s).\nSurface contradictions. State confidence honestly.\nWrite for a regular person making a real decision.",
+      "model": "claude-opus-4-6"
+    },
+    "synthesis": {
+      "brief_markdown": "# Is Ozempic (Semaglutide) Safe for Weight Loss?\n\n**Question:** Is Ozempic safe? · **Context:** Doctor suggested semaglutide for weight loss; wants to understand risks before starting.\n\n---\n\n## The short answer\n\nSemaglutide is broadly considered safe for weight loss, with an overall favorable risk-benefit profile, but it is not side-effect-free [PMID: 34305810]. The most common problems are gut-related — nausea, diarrhea, constipation — which are usually mild-to-moderate and fade over time [PMID: 33567185]. A large cardiovascular trial (17,604 people, ~3 years follow-up) showed it actually *reduced* heart attacks and strokes by 20% in people with preexisting heart disease [PMID: 37952131].\n\n## Key findings\n\n- **Gut side effects are the main issue.** Across trials, gastrointestinal complaints occur in ~75–83% of semaglutide users vs. ~42–64% on placebo. Most are mild-to-moderate nausea, vomiting, diarrhea, or constipation that improve over weeks [PMID: 33567185; PMID: 36216945; PMID: 33625476].\n- **Some people quit because of side effects.** About 3–7% of users in trials stopped treatment due to GI problems, compared to <1% on placebo [PMID: 33567185; PMID: 33625476]. Real-world dropout rates are higher (20–50% in the first year), driven partly by side effects and cost [PMID: 40196933].\n- **Serious adverse events are higher than placebo but still uncommon.** A meta-analysis found the risk of serious events (mainly gallstones, pancreatitis) was ~1.6× higher with semaglutide [PMID: 36578889]. The comprehensive safety review found increased gallbladder disease (cholelithiasis) as a real concern [PMID: 34305810].\n- **Cardiovascular safety is strong.** The SELECT trial showed a 20% reduction in major cardiovascular events (heart attack, stroke, cardiovascular death) over ~40 months — a significant benefit, not just neutral safety [PMID: 37952131].\n- **No confirmed link to thyroid or pancreatic cancer in humans so far**, though animal studies raised a thyroid cancer signal. Low incidence makes definitive conclusions impossible at this time [PMID: 34305810; PMID: 40196933].\n- **Weight regain is significant after stopping.** Participants regained about two-thirds of lost weight within one year of discontinuation, suggesting long-term use is needed to maintain results [PMID: 35441470].\n\n## What is unknown\n\n- **Long-term safety beyond 3–4 years** has not been established in obesity populations. Most trials run 1–2 years [PMID: 40196933].\n- **Rare outcomes** — thyroid cancer, pancreatic cancer, retinal disease, mental health effects — need more data; current evidence is reassuring but not conclusive [PMID: 34305810; PMID: 40196933].\n- **Individual risk factors** (e.g., history of gallstones, pancreatitis, or retinopathy) may change the calculus and aren't well-studied in weight-loss-specific trials.\n\n## Confidence: **Medium-High**\n\nBased on multiple large RCTs (including one with 17,604 participants and ~3 years follow-up), a systematic review of 26 trials, and a comprehensive safety review. GI side effects and gallbladder risk are well-established. Very rare harms remain uncertain due to insufficient long-term data.\n\n---\n\n*Generated by Tables Turned. Receipts only.*"
+    },
+    "provenance": [
+      {
+        "timestamp": "2026-09-28T23:37:39Z",
+        "action": "search_started",
+        "detail": "Is Ozempic safe?"
+      },
+      {
+        "timestamp": "2026-09-28T23:37:46Z",
+        "action": "search_queries_generated",
+        "detail": "semaglutide safety weight loss | (semaglutide OR Ozempic OR Wegovy) AND (safety OR adverse effects OR side effects OR tolerability) AND (obesity OR overweight OR weight loss OR weight management) | (semaglutide OR Ozempic OR Wegovy) AND (adverse effects OR drug-related side effects OR risk) AND (obesity OR overweight) AND (randomized controlled trial[pt] OR systematic review[pt] OR meta-analysis[pt]) | (semaglutide) AND (pancreatitis OR thyroid cancer OR gallbladder OR gastroparesis OR cardiovascular OR suicidal ideation OR kidney OR nausea OR gastrointestinal) AND (obesity OR weight) AND (safety OR adverse)"
+      },
+      {
+        "timestamp": "2026-09-28T23:37:47Z",
+        "action": "pubmed_searched",
+        "detail": "\"semaglutide safety weight loss\" -> 620 total, fetched 25"
+      },
+      {
+        "timestamp": "2026-09-28T23:37:49Z",
+        "action": "pubmed_searched",
+        "detail": "\"(semaglutide OR Ozempic OR Wegovy) AND (safety OR adverse effects OR side effects OR tolerability) AND (obesity OR overweight OR weight loss OR weight management)\" -> 1843 total, fetched 25"
+      },
+      {
+        "timestamp": "2026-09-28T23:37:50Z",
+        "action": "pubmed_searched",
+        "detail": "\"(semaglutide OR Ozempic OR Wegovy) AND (adverse effects OR drug-related side effects OR risk) AND (obesity OR overweight) AND (randomized controlled trial[pt] OR systematic review[pt] OR meta-analysis[pt])\" -> 291 total, fetched 25"
+      },
+      {
+        "timestamp": "2026-09-28T23:37:51Z",
+        "action": "pubmed_searched",
+        "detail": "\"(semaglutide) AND (pancreatitis OR thyroid cancer OR gallbladder OR gastroparesis OR cardiovascular OR suicidal ideation OR kidney OR nausea OR gastrointestinal) AND (obesity OR weight) AND (safety OR adverse)\" -> 1194 total, fetched 25"
+      },
+      {
+        "timestamp": "2026-09-28T23:37:52Z",
+        "action": "papers_ranked",
+        "detail": "52 papers scored. Top 12 selected (scores 21-12). Method: cross-strategy overlap (x3) + PubMed position weight."
+      },
+      {
+        "timestamp": "2026-09-28T23:38:16Z",
+        "action": "plain_summaries_generated",
+        "detail": "12 papers translated"
+      },
+      {
+        "timestamp": "2026-09-28T23:38:16Z",
+        "action": "papers_selected_for_synthesis",
+        "detail": "12 papers"
+      },
+      {
+        "timestamp": "2026-09-28T23:38:41Z",
+        "action": "synthesis_generated",
+        "detail": "3213 chars, 12 papers"
+      }
+    ]
+  },
+  "telemetry": {
+    "prompt_sha256": {
+      "SEARCH_SYSTEM": "0a2d1ccd7d4c77e0f5441613fc38edb45f36237befa5723d030b9244d27b607e",
+      "SUMMARY_SYSTEM": "7726ec6a8d32f245ff4d3b8ecb20668a8b440756e31f4106cb36a69dea75243b",
+      "SYNTH_SYSTEM": "dbda0a2b78e23926f4a986a6d6f9d0ed42a9090ed3128819e380e0c82beddde4"
+    },
+    "search_depth": 25,
+    "search_sort": "relevance",
+    "per_query": [
+      {
+        "query": "semaglutide safety weight loss",
+        "strategy": "Broad search for any literature discussing semaglutide safety in the context of weight management",
+        "total_hits": 620,
+        "returned": [
+          "36578889",
+          "38679221",
+          "35441470",
+          "30122305",
+          "34170647",
+          "38016699",
+          "34305810",
+          "39761578",
+          "40196933",
+          "36188627",
+          "38923272",
+          "39089293",
+          "40353578",
+          "39178623",
+          "40281304",
+          "36216945",
+          "40961952",
+          "38613667",
+          "31186300",
+          "39134066",
+          "40507553",
+          "40184508",
+          "38286487",
+          "33074557",
+          "40550013"
+        ],
+        "querytranslation": "(\"semaglutide\"[Supplementary Concept] OR \"semaglutide\"[All Fields] OR \"semaglutide\"[MeSH Terms]) AND (\"safety\"[MeSH Terms] OR \"safety\"[All Fields] OR \"safeties\"[All Fields]) AND (\"weight loss\"[MeSH Terms] OR (\"weight\"[All Fields] AND \"loss\"[All Fields]) OR \"weight loss\"[All Fields])"
+      },
+      {
+        "query": "(semaglutide OR Ozempic OR Wegovy) AND (safety OR adverse effects OR side effects OR tolerability) AND (obesity OR overweight OR weight loss OR weight management)",
+        "strategy": "Comprehensive search using brand names, generic name, and multiple safety-related terms for weight loss indications",
+        "total_hits": 1843,
+        "returned": [
+          "33567185",
+          "33625476",
+          "40934115",
+          "36578889",
+          "34942372",
+          "40353578",
+          "33667417",
+          "40961952",
+          "39476339",
+          "40196933",
+          "36322838",
+          "39089293",
+          "34305810",
+          "39037780",
+          "40544433",
+          "40281304",
+          "36216945",
+          "38330988",
+          "35131037",
+          "37385278",
+          "40550013",
+          "39222642",
+          "38740993",
+          "33830968",
+          "40544432"
+        ],
+        "querytranslation": "(\"semaglutide\"[Supplementary Concept] OR \"semaglutide\"[All Fields] OR \"semaglutide\"[MeSH Terms] OR (\"semaglutide\"[Supplementary Concept] OR \"semaglutide\"[All Fields] OR \"ozempic\"[All Fields] OR \"semaglutide\"[MeSH Terms]) OR (\"semaglutide\"[Supplementary Concept] OR \"semaglutide\"[All Fields] OR \"semaglutide\"[MeSH Terms] OR \"wegovy\"[All Fields])) AND (\"safety\"[MeSH Terms] OR \"safety\"[All Fields] OR \"safeties\"[All Fields] OR (\"adverse effects\"[MeSH Subheading] OR (\"adverse\"[All Fields] AND \"effects\"[All Fields]) OR \"adverse effects\"[All Fields]) OR (\"adverse effects\"[MeSH Subheading] OR (\"adverse\"[All Fields] AND \"effects\"[All Fields]) OR \"adverse effects\"[All Fields] OR (\"side\"[All Fields] AND \"effects\"[All Fields]) OR \"side effects\"[All Fields]) OR (\"immune tolerance\"[MeSH Terms] OR (\"immune\"[All Fields] AND \"tolerance\"[All Fields]) OR \"immune tolerance\"[All Fields] OR \"tolerance\"[All Fields] OR \"drug tolerance\"[MeSH Terms] OR (\"drug\"[All Fields] AND \"tolerance\"[All Fields]) OR \"drug tolerance\"[All Fields] OR \"tolerabilities\"[All Fields] OR \"tolerability\"[All Fields] OR \"tolerable\"[All Fields] OR \"tolerableness\"[All Fields] OR \"tolerably\"[All Fields] OR \"tolerances\"[All Fields] OR \"tolerant\"[All Fields] OR \"tolerants\"[All Fields] OR \"tolerate\"[All Fields] OR \"tolerated\"[All Fields] OR \"tolerates\"[All Fields] OR \"tolerating\"[All Fields] OR \"toleration\"[All Fields] OR \"tolerator\"[All Fields] OR \"tolerators\"[All Fields] OR \"tolerence\"[All Fields])) AND (\"obeses\"[All Fields] OR \"obesity\"[MeSH Terms] OR \"obesity\"[All Fields] OR \"obese\"[All Fields] OR \"obesities\"[All Fields] OR \"obesity s\"[All Fields] OR (\"overweight\"[MeSH Terms] OR \"overweight\"[All Fields] OR \"overweighted\"[All Fields] OR \"overweightness\"[All Fields] OR \"overweights\"[All Fields]) OR (\"weight loss\"[MeSH Terms] OR (\"weight\"[All Fields] AND \"loss\"[All Fields]) OR \"weight loss\"[All Fields]) OR ((\"weight s\"[All Fields] OR \"weighted\"[All Fields] OR \"weighting\"[All Fields] OR \"weightings\"[All Fields] OR \"weights and measures\"[MeSH Terms] OR (\"weights\"[All Fields] AND \"measures\"[All Fields]) OR \"weights and measures\"[All Fields] OR \"weight\"[All Fields] OR \"body weight\"[MeSH Terms] OR (\"body\"[All Fields] AND \"weight\"[All Fields]) OR \"body weight\"[All Fields] OR \"weights\"[All Fields]) AND (\"manage\"[All Fields] OR \"managed\"[All Fields] OR \"management s\"[All Fields] OR \"managements\"[All Fields] OR \"manager\"[All Fields] OR \"manager s\"[All Fields] OR \"managers\"[All Fields] OR \"manages\"[All Fields] OR \"managing\"[All Fields] OR \"managment\"[All Fields] OR \"organization and administration\"[MeSH Terms] OR (\"organization\"[All Fields] AND \"administration\"[All Fields]) OR \"organization and administration\"[All Fields] OR \"management\"[All Fields] OR \"disease management\"[MeSH Terms] OR (\"disease\"[All Fields] AND \"management\"[All Fields]) OR \"disease management\"[All Fields])))"
+      },
+      {
+        "query": "(semaglutide OR Ozempic OR Wegovy) AND (adverse effects OR drug-related side effects OR risk) AND (obesity OR overweight) AND (randomized controlled trial[pt] OR systematic review[pt] OR meta-analysis[pt])",
+        "strategy": "Targeted search for high-quality evidence (RCTs, systematic reviews, meta-analyses) on semaglutide risks in obesity treatment",
+        "total_hits": 291,
+        "returned": [
+          "37952131",
+          "33567185",
+          "35441470",
+          "28266779",
+          "33755728",
+          "36578889",
+          "40934115",
+          "40961952",
+          "39476339",
+          "39222642",
+          "36216945",
+          "36322838",
+          "40353578",
+          "38673931",
+          "33625476",
+          "40544433",
+          "38740993",
+          "35015037",
+          "37385278",
+          "40550013",
+          "39952695",
+          "37622681",
+          "40169145",
+          "29246950",
+          "39761578"
+        ],
+        "querytranslation": "(\"semaglutide\"[Supplementary Concept] OR \"semaglutide\"[All Fields] OR \"semaglutide\"[MeSH Terms] OR (\"semaglutide\"[Supplementary Concept] OR \"semaglutide\"[All Fields] OR \"ozempic\"[All Fields] OR \"semaglutide\"[MeSH Terms]) OR (\"semaglutide\"[Supplementary Concept] OR \"semaglutide\"[All Fields] OR \"semaglutide\"[MeSH Terms] OR \"wegovy\"[All Fields])) AND (\"adverse effects\"[MeSH Subheading] OR (\"adverse\"[All Fields] AND \"effects\"[All Fields]) OR \"adverse effects\"[All Fields] OR (\"drug-related\"[All Fields] AND (\"adverse effects\"[MeSH Subheading] OR (\"adverse\"[All Fields] AND \"effects\"[All Fields]) OR \"adverse effects\"[All Fields] OR (\"side\"[All Fields] AND \"effects\"[All Fields]) OR \"side effects\"[All Fields])) OR (\"risk\"[MeSH Terms] OR \"risk\"[All Fields])) AND (\"obeses\"[All Fields] OR \"obesity\"[MeSH Terms] OR \"obesity\"[All Fields] OR \"obese\"[All Fields] OR \"obesities\"[All Fields] OR \"obesity s\"[All Fields] OR (\"overweight\"[MeSH Terms] OR \"overweight\"[All Fields] OR \"overweighted\"[All Fields] OR \"overweightness\"[All Fields] OR \"overweights\"[All Fields])) AND (\"randomized controlled trial\"[Publication Type] OR \"systematic review\"[Publication Type] OR \"meta-analysis\"[Publication Type])"
+      },
+      {
+        "query": "(semaglutide) AND (pancreatitis OR thyroid cancer OR gallbladder OR gastroparesis OR cardiovascular OR suicidal ideation OR kidney OR nausea OR gastrointestinal) AND (obesity OR weight) AND (safety OR adverse)",
+        "strategy": "Focused search for specific serious adverse events and commonly reported side effects of semaglutide in weight management populations",
+        "total_hits": 1194,
+        "returned": [
+          "35441470",
+          "37952131",
+          "33567185",
+          "28266779",
+          "33755728",
+          "36578889",
+          "40934115",
+          "34170647",
+          "39476339",
+          "40961952",
+          "40196933",
+          "36216945",
+          "36322838",
+          "40353578",
+          "34305810",
+          "39037780",
+          "38976257",
+          "40281304",
+          "33625476",
+          "40544433",
+          "35131037",
+          "35015037",
+          "29246950",
+          "39761578",
+          "38587233"
+        ],
+        "querytranslation": "(\"semaglutide\"[Supplementary Concept] OR \"semaglutide\"[All Fields] OR \"semaglutide\"[MeSH Terms]) AND (\"pancreas\"[MeSH Terms] OR \"pancreas\"[All Fields] OR \"pancreatic\"[All Fields] OR \"pancreatitides\"[All Fields] OR \"pancreatitis\"[MeSH Terms] OR \"pancreatitis\"[All Fields] OR (\"thyroid neoplasms\"[MeSH Terms] OR (\"thyroid\"[All Fields] AND \"neoplasms\"[All Fields]) OR \"thyroid neoplasms\"[All Fields] OR (\"thyroid\"[All Fields] AND \"cancer\"[All Fields]) OR \"thyroid cancer\"[All Fields]) OR (\"gallbladder\"[MeSH Terms] OR \"gallbladder\"[All Fields] OR \"gallbladders\"[All Fields] OR \"gallbladder s\"[All Fields]) OR (\"gastroparesis\"[MeSH Terms] OR \"gastroparesis\"[All Fields]) OR (\"cardiovascular system\"[MeSH Terms] OR (\"cardiovascular\"[All Fields] AND \"system\"[All Fields]) OR \"cardiovascular system\"[All Fields] OR \"cardiovascular\"[All Fields] OR \"cardiovasculars\"[All Fields]) OR (\"suicidal ideation\"[MeSH Terms] OR (\"suicidal\"[All Fields] AND \"ideation\"[All Fields]) OR \"suicidal ideation\"[All Fields]) OR (\"kidney\"[MeSH Terms] OR \"kidney\"[All Fields] OR \"kidneys\"[All Fields] OR \"kidney s\"[All Fields]) OR (\"nausea\"[MeSH Terms] OR \"nausea\"[All Fields] OR \"nauseas\"[All Fields]) OR (\"gastrointestinal\"[All Fields] OR \"gastrointestinally\"[All Fields] OR \"gastrointestine\"[All Fields])) AND (\"obeses\"[All Fields] OR \"obesity\"[MeSH Terms] OR \"obesity\"[All Fields] OR \"obese\"[All Fields] OR \"obesities\"[All Fields] OR \"obesity s\"[All Fields] OR (\"weight s\"[All Fields] OR \"weighted\"[All Fields] OR \"weighting\"[All Fields] OR \"weightings\"[All Fields] OR \"weights and measures\"[MeSH Terms] OR (\"weights\"[All Fields] AND \"measures\"[All Fields]) OR \"weights and measures\"[All Fields] OR \"weight\"[All Fields] OR \"body weight\"[MeSH Terms] OR (\"body\"[All Fields] AND \"weight\"[All Fields]) OR \"body weight\"[All Fields] OR \"weights\"[All Fields])) AND (\"safety\"[MeSH Terms] OR \"safety\"[All Fields] OR \"safeties\"[All Fields] OR (\"adverse\"[All Fields] OR \"adversely\"[All Fields] OR \"adverses\"[All Fields]))"
+      }
+    ],
+    "candidate_pool": [
+      {
+        "pmid": "36578889",
+        "title": "Efficacy and Safety of Semaglutide for Weight Loss in Obesity Without Diabetes: A Systematic Review and Meta-Analysis.",
+        "year": 2022,
+        "score": 21,
+        "overlap": 4,
+        "strategy_idx": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "positions": [
+          1,
+          4,
+          6,
+          6
+        ],
+        "publication_types": [
+          "Meta-Analysis",
+          "Systematic Review",
+          "Journal Article"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "33567185",
+        "title": "Once-Weekly Semaglutide in Adults with Overweight or Obesity.",
+        "year": 2021,
+        "score": 21,
+        "overlap": 3,
+        "strategy_idx": [
+          1,
+          2,
+          3
+        ],
+        "positions": [
+          1,
+          2,
+          3
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Multicenter Study",
+          "Randomized Controlled Trial",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "35441470",
+        "title": "Weight regain and cardiometabolic effects after withdrawal of semaglutide: The STEP 1 trial extension.",
+        "year": 2022,
+        "score": 20,
+        "overlap": 3,
+        "strategy_idx": [
+          0,
+          2,
+          3
+        ],
+        "positions": [
+          3,
+          3,
+          1
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "40353578",
+        "title": "Tirzepatide as Compared with Semaglutide for the Treatment of Obesity.",
+        "year": 2025,
+        "score": 16,
+        "overlap": 4,
+        "strategy_idx": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "positions": [
+          13,
+          6,
+          13,
+          14
+        ],
+        "publication_types": [
+          "Clinical Trial, Phase III",
+          "Comparative Study",
+          "Equivalence Trial",
+          "Journal Article",
+          "Multicenter Study"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "36216945",
+        "title": "Two-year effects of semaglutide in adults with overweight or obesity: the STEP 5 trial.",
+        "year": 2022,
+        "score": 16,
+        "overlap": 4,
+        "strategy_idx": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "positions": [
+          16,
+          17,
+          11,
+          12
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "40961952",
+        "title": "Once-weekly semaglutide 7·2 mg in adults with obesity (STEP UP): a randomised, controlled, phase 3b trial.",
+        "year": 2025,
+        "score": 16,
+        "overlap": 4,
+        "strategy_idx": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "positions": [
+          17,
+          8,
+          8,
+          10
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Clinical Trial, Phase III",
+          "Multicenter Study",
+          "Research Support, N.I.H., Extramural"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "33625476",
+        "title": "Effect of Subcutaneous Semaglutide vs Placebo as an Adjunct to Intensive Behavioral Therapy on Body Weight in Adults With Overweight or Obesity: The STEP 3 Randomized Clinical Trial.",
+        "year": 2021,
+        "score": 15,
+        "overlap": 3,
+        "strategy_idx": [
+          1,
+          2,
+          3
+        ],
+        "positions": [
+          2,
+          15,
+          19
+        ],
+        "publication_types": [
+          "Clinical Trial, Phase III",
+          "Comparative Study",
+          "Journal Article",
+          "Randomized Controlled Trial"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "37952131",
+        "title": "Semaglutide and Cardiovascular Outcomes in Obesity without Diabetes.",
+        "year": 2023,
+        "score": 15,
+        "overlap": 2,
+        "strategy_idx": [
+          2,
+          3
+        ],
+        "positions": [
+          1,
+          2
+        ],
+        "publication_types": [
+          "Equivalence Trial",
+          "Journal Article",
+          "Multicenter Study",
+          "Randomized Controlled Trial"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "40934115",
+        "title": "Oral Semaglutide at a Dose of 25 mg in Adults with Overweight or Obesity.",
+        "year": 2025,
+        "score": 14,
+        "overlap": 3,
+        "strategy_idx": [
+          1,
+          2,
+          3
+        ],
+        "positions": [
+          3,
+          7,
+          7
+        ],
+        "publication_types": [
+          "Clinical Trial, Phase II",
+          "Journal Article",
+          "Multicenter Study",
+          "Randomized Controlled Trial"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "34305810",
+        "title": "Safety of Semaglutide.",
+        "year": 2021,
+        "score": 12,
+        "overlap": 3,
+        "strategy_idx": [
+          0,
+          1,
+          3
+        ],
+        "positions": [
+          7,
+          13,
+          15
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Research Support, Non-U.S. Gov't",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "39761578",
+        "title": "Efficacy and Safety of Glucagon-Like Peptide-1 Receptor Agonists for Weight Loss Among Adults Without Diabetes : A Systematic Review of Randomized Controlled Trials.",
+        "year": 2025,
+        "score": 12,
+        "overlap": 3,
+        "strategy_idx": [
+          0,
+          2,
+          3
+        ],
+        "positions": [
+          8,
+          25,
+          24
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "40196933",
+        "title": "Real-world evidence on the utilization, clinical and comparative effectiveness, and adverse effects of newer GLP-1RA-based weight-loss therapies.",
+        "year": 2025,
+        "score": 12,
+        "overlap": 3,
+        "strategy_idx": [
+          0,
+          1,
+          3
+        ],
+        "positions": [
+          9,
+          10,
+          11
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "40281304",
+        "title": "GLP-1-based therapies for diabetes, obesity and beyond.",
+        "year": 2025,
+        "score": 12,
+        "overlap": 3,
+        "strategy_idx": [
+          0,
+          1,
+          3
+        ],
+        "positions": [
+          15,
+          16,
+          18
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "40550013",
+        "title": "Semaglutide in Adults with Type 1 Diabetes and Obesity.",
+        "year": 2025,
+        "score": 12,
+        "overlap": 3,
+        "strategy_idx": [
+          0,
+          1,
+          2
+        ],
+        "positions": [
+          25,
+          21,
+          20
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Multicenter Study"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "39476339",
+        "title": "Once-Weekly Semaglutide in Persons with Obesity and Knee Osteoarthritis.",
+        "year": 2024,
+        "score": 12,
+        "overlap": 3,
+        "strategy_idx": [
+          1,
+          2,
+          3
+        ],
+        "positions": [
+          9,
+          9,
+          9
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Multicenter Study",
+          "Clinical Trial, Phase III"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "36322838",
+        "title": "Once-Weekly Semaglutide in Adolescents with Obesity.",
+        "year": 2022,
+        "score": 12,
+        "overlap": 3,
+        "strategy_idx": [
+          1,
+          2,
+          3
+        ],
+        "positions": [
+          11,
+          12,
+          13
+        ],
+        "publication_types": [
+          "Randomized Controlled Trial",
+          "Journal Article",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "40544433",
+        "title": "Coadministered Cagrilintide and Semaglutide in Adults with Overweight or Obesity.",
+        "year": 2025,
+        "score": 12,
+        "overlap": 3,
+        "strategy_idx": [
+          1,
+          2,
+          3
+        ],
+        "positions": [
+          15,
+          16,
+          20
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Multicenter Study",
+          "Clinical Trial, Phase III"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "28266779",
+        "title": "Effects of once-weekly semaglutide on appetite, energy intake, control of eating, food preference and body weight in subjects with obesity.",
+        "year": 2017,
+        "score": 10,
+        "overlap": 2,
+        "strategy_idx": [
+          2,
+          3
+        ],
+        "positions": [
+          4,
+          4
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "34170647",
+        "title": "Tirzepatide versus Semaglutide Once Weekly in Patients with Type 2 Diabetes.",
+        "year": 2021,
+        "score": 8,
+        "overlap": 2,
+        "strategy_idx": [
+          0,
+          3
+        ],
+        "positions": [
+          5,
+          8
+        ],
+        "publication_types": [
+          "Clinical Trial, Phase III",
+          "Comparative Study",
+          "Equivalence Trial",
+          "Journal Article",
+          "Multicenter Study",
+          "Randomized Controlled Trial",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "39089293",
+        "title": "Efficacy and safety of once-weekly semaglutide 2·4 mg versus placebo in people with obesity and prediabetes (STEP 10): a randomised, double-blind, placebo-controlled, multicentre phase 3 trial.",
+        "year": 2024,
+        "score": 8,
+        "overlap": 2,
+        "strategy_idx": [
+          0,
+          1
+        ],
+        "positions": [
+          12,
+          12
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Clinical Trial, Phase III",
+          "Multicenter Study",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "39037780",
+        "title": "Medications for Obesity: A Review.",
+        "year": 2024,
+        "score": 8,
+        "overlap": 2,
+        "strategy_idx": [
+          1,
+          3
+        ],
+        "positions": [
+          14,
+          16
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "35131037",
+        "title": "Semaglutide once a week in adults with overweight or obesity, with or without type 2 diabetes in an east Asian population (STEP 6): a randomised, double-blind, double-dummy, placebo-controlled, phase 3a trial.",
+        "year": 2022,
+        "score": 8,
+        "overlap": 2,
+        "strategy_idx": [
+          1,
+          3
+        ],
+        "positions": [
+          19,
+          21
+        ],
+        "publication_types": [
+          "Clinical Trial, Phase III",
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Research Support, Non-U.S. Gov't",
+          "Equivalence Trial"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "37385278",
+        "title": "Oral semaglutide 50 mg taken once per day in adults with overweight or obesity (OASIS 1): a randomised, double-blind, placebo-controlled, phase 3 trial.",
+        "year": 2023,
+        "score": 8,
+        "overlap": 2,
+        "strategy_idx": [
+          1,
+          2
+        ],
+        "positions": [
+          20,
+          19
+        ],
+        "publication_types": [
+          "Clinical Trial, Phase III",
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Research Support, Non-U.S. Gov't",
+          "Equivalence Trial"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "39222642",
+        "title": "Semaglutide versus placebo in patients with heart failure and mildly reduced or preserved ejection fraction: a pooled analysis of the SELECT, FLOW, STEP-HFpEF, and STEP-HFpEF DM randomised trials.",
+        "year": 2024,
+        "score": 8,
+        "overlap": 2,
+        "strategy_idx": [
+          1,
+          2
+        ],
+        "positions": [
+          22,
+          10
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Research Support, Non-U.S. Gov't",
+          "Research Support, N.I.H., Intramural"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "38740993",
+        "title": "Long-term weight loss effects of semaglutide in obesity without diabetes in the SELECT trial.",
+        "year": 2024,
+        "score": 8,
+        "overlap": 2,
+        "strategy_idx": [
+          1,
+          2
+        ],
+        "positions": [
+          23,
+          17
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Multicenter Study",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "33755728",
+        "title": "Effect of Continued Weekly Subcutaneous Semaglutide vs Placebo on Weight Loss Maintenance in Adults With Overweight or Obesity: The STEP 4 Randomized Clinical Trial.",
+        "year": 2021,
+        "score": 8,
+        "overlap": 2,
+        "strategy_idx": [
+          2,
+          3
+        ],
+        "positions": [
+          5,
+          5
+        ],
+        "publication_types": [
+          "Clinical Trial, Phase III",
+          "Comparative Study",
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "35015037",
+        "title": "Effect of Weekly Subcutaneous Semaglutide vs Daily Liraglutide on Body Weight in Adults With Overweight or Obesity Without Diabetes: The STEP 8 Randomized Clinical Trial.",
+        "year": 2022,
+        "score": 8,
+        "overlap": 2,
+        "strategy_idx": [
+          2,
+          3
+        ],
+        "positions": [
+          18,
+          22
+        ],
+        "publication_types": [
+          "Clinical Trial, Phase III",
+          "Journal Article",
+          "Multicenter Study",
+          "Randomized Controlled Trial"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "29246950",
+        "title": "Efficacy and Safety of Once-Weekly Semaglutide Versus Exenatide ER in Subjects With Type 2 Diabetes (SUSTAIN 3): A 56-Week, Open-Label, Randomized Clinical Trial.",
+        "year": 2018,
+        "score": 8,
+        "overlap": 2,
+        "strategy_idx": [
+          2,
+          3
+        ],
+        "positions": [
+          24,
+          23
+        ],
+        "publication_types": [
+          "Clinical Trial, Phase III",
+          "Journal Article",
+          "Multicenter Study",
+          "Randomized Controlled Trial",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "38679221",
+        "title": "Long-Term Efficacy and Safety of Once-Weekly Semaglutide for Weight Loss in Patients Without Diabetes: A Systematic Review and Meta-Analysis of Randomized Controlled Trials.",
+        "year": 2024,
+        "score": 7,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          2
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review",
+          "Meta-Analysis",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "30122305",
+        "title": "Efficacy and safety of semaglutide compared with liraglutide and placebo for weight loss in patients with obesity: a randomised, double-blind, placebo and active controlled, dose-ranging, phase 2 trial.",
+        "year": 2018,
+        "score": 5,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          4
+        ],
+        "publication_types": [
+          "Clinical Trial, Phase II",
+          "Comparative Study",
+          "Journal Article",
+          "Multicenter Study",
+          "Randomized Controlled Trial",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "38016699",
+        "title": "Efficacy and safety of semaglutide 2.4 mg for weight loss in overweight or obese adults without diabetes: An updated systematic review and meta-analysis including the 2-year STEP 5 trial.",
+        "year": 2024,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          6
+        ],
+        "publication_types": [
+          "Meta-Analysis",
+          "Systematic Review",
+          "Journal Article"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "36188627",
+        "title": "Efficacy and safety of semaglutide on weight loss in obese or overweight patients without diabetes: A systematic review and meta-analysis of randomized controlled trials.",
+        "year": 2022,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          10
+        ],
+        "publication_types": [
+          "Systematic Review",
+          "Journal Article"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "38923272",
+        "title": "Efficacy and safety of once-weekly subcutaneous semaglutide on weight loss in patients with overweight or obesity without diabetes mellitus-A systematic review and meta-analysis of randomized controlled trials.",
+        "year": 2024,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          11
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review",
+          "Meta-Analysis",
+          "Research Support, N.I.H., Extramural"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "39178623",
+        "title": "The efficacy and safety of GLP-1 agonists in PCOS women living with obesity in promoting weight loss and hormonal regulation: A meta-analysis of randomized controlled trials.",
+        "year": 2024,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          14
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "38613667",
+        "title": "Subcutaneously administered tirzepatide vs semaglutide for adults with type 2 diabetes: a systematic review and network meta-analysis of randomised controlled trials.",
+        "year": 2024,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          18
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review",
+          "Network Meta-Analysis"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "31186300",
+        "title": "PIONEER 1: Randomized Clinical Trial of the Efficacy and Safety of Oral Semaglutide Monotherapy in Comparison With Placebo in Patients With Type 2 Diabetes.",
+        "year": 2019,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          19
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "39134066",
+        "title": "Safety and efficacy of glucagon-like peptide-1 (GLP-1) receptor agonists in patients with weight regain or insufficient weight loss after metabolic bariatric surgery: A systematic review and meta-analysis.",
+        "year": 2024,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          20
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "40507553",
+        "title": "Weight Regain After Liraglutide, Semaglutide or Tirzepatide Interruption: A Narrative Review of Randomized Studies.",
+        "year": 2025,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          21
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "40184508",
+        "title": "Tirzepatide Versus Semaglutide on Weight Loss in Type 2 Diabetes Patients: A Systematic Review and Meta-Analysis of Direct Comparative Studies.",
+        "year": 2025,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          22
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review",
+          "Meta-Analysis",
+          "Comparative Study"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "38286487",
+        "title": "Comparative effectiveness of GLP-1 receptor agonists on glycaemic control, body weight, and lipid profile for type 2 diabetes: systematic review and network meta-analysis.",
+        "year": 2024,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          23
+        ],
+        "publication_types": [
+          "Systematic Review",
+          "Journal Article",
+          "Network Meta-Analysis"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "33074557",
+        "title": "Efficacy and safety of once-weekly semaglutide versus once-daily sitagliptin as add-on to metformin in patients with type 2 diabetes in SUSTAIN China: A 30-week, double-blind, phase 3a, randomized trial.",
+        "year": 2021,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          24
+        ],
+        "publication_types": [
+          "Clinical Trial, Phase III",
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "34942372",
+        "title": "Semaglutide for the treatment of obesity.",
+        "year": 2023,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          5
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review",
+          "Research Support, N.I.H., Extramural"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "33667417",
+        "title": "Semaglutide 2·4 mg once a week in adults with overweight or obesity, and type 2 diabetes (STEP 2): a randomised, double-blind, double-dummy, placebo-controlled, phase 3 trial.",
+        "year": 2021,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          7
+        ],
+        "publication_types": [
+          "Clinical Trial, Phase III",
+          "Journal Article",
+          "Multicenter Study",
+          "Randomized Controlled Trial",
+          "Research Support, Non-U.S. Gov't",
+          "Equivalence Trial"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "38330988",
+        "title": "Efficacy and safety of once weekly semaglutide 2·4 mg for weight management in a predominantly east Asian population with overweight or obesity (STEP 7): a double-blind, multicentre, randomised controlled trial.",
+        "year": 2024,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          18
+        ],
+        "publication_types": [
+          "Clinical Trial, Phase III",
+          "Journal Article",
+          "Multicenter Study",
+          "Randomized Controlled Trial",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "33830968",
+        "title": "Semaglutide (Ozempic) for weight loss.",
+        "year": 2021,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          24
+        ],
+        "publication_types": [
+          "Journal Article"
+        ],
+        "has_abstract": false
+      },
+      {
+        "pmid": "40544432",
+        "title": "Cagrilintide-Semaglutide in Adults with Overweight or Obesity and Type 2 Diabetes.",
+        "year": 2025,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          25
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Clinical Trial, Phase III",
+          "Multicenter Study"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "38673931",
+        "title": "Assessment of Thyroid Carcinogenic Risk and Safety Profile of GLP1-RA Semaglutide (Ozempic) Therapy for Diabetes Mellitus and Obesity: A Systematic Literature Review.",
+        "year": 2024,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          14
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "39952695",
+        "title": "Emerging pharmacotherapies for obesity: A systematic review.",
+        "year": 2025,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          21
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "37622681",
+        "title": "Semaglutide in Patients with Heart Failure with Preserved Ejection Fraction and Obesity.",
+        "year": 2023,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          22
+        ],
+        "publication_types": [
+          "Randomized Controlled Trial",
+          "Journal Article",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "40169145",
+        "title": "Semaglutide and walking capacity in people with symptomatic peripheral artery disease and type 2 diabetes (STRIDE): a phase 3b, double-blind, randomised, placebo-controlled trial.",
+        "year": 2025,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          23
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Clinical Trial, Phase III",
+          "Multicenter Study",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "38976257",
+        "title": "Semaglutide vs Tirzepatide for Weight Loss in Adults With Overweight or Obesity.",
+        "year": 2024,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          17
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Observational Study",
+          "Comparative Study",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "38587233",
+        "title": "Semaglutide in Patients with Obesity-Related Heart Failure and Type 2 Diabetes.",
+        "year": 2024,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          25
+        ],
+        "publication_types": [
+          "Randomized Controlled Trial",
+          "Journal Article"
+        ],
+        "has_abstract": true
+      }
+    ],
+    "timings": {
+      "query_generation_s": 7.49,
+      "retrieval_s": 5.48,
+      "translation_s": 24.9,
+      "synthesis_s": 24.54,
+      "synthesis_first_token_s": 1.86,
+      "total_s": 62.43
+    },
+    "usage": {
+      "search": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 338,
+        "output_tokens": 294,
+        "output_tokens_details": null,
+        "server_tool_use": null,
+        "service_tier": "standard"
+      },
+      "summary": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 2606,
+        "output_tokens": 1192,
+        "output_tokens_details": null,
+        "server_tool_use": null,
+        "service_tier": "standard"
+      },
+      "synthesis": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 9960,
+        "output_tokens": 911,
+        "output_tokens_details": null,
+        "server_tool_use": null,
+        "service_tier": "standard"
+      }
+    },
+    "synthesis_stop_reason": "end_turn",
+    "served_model": "claude-opus-4-6"
+  },
+  "run": {
+    "question_id": "Q2",
+    "replicate": 1,
+    "route": "worker:https://tables-turned-api.jethomasphd.workers.dev",
+    "captured_at": "2026-09-28T23:38:41Z"
+  }
+}

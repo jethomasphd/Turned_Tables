@@ -1,0 +1,390 @@
+{
+  "arm": "ai_overview_model",
+  "model_requested": "claude-sonnet-5-5",
+  "served_model": "claude-sonnet-5-5",
+  "query": "do probiotics prevent diarrhea from antibiotics",
+  "system": "You are reproducing the AI-generated overview panel that a general-purpose web search engine shows above its organic results (for example, Google's \"AI Overview\"). Behave the way that product behaves:\n\n- Run exactly one web search, using the user's query exactly as typed.\n- Base the overview only on what the returned web pages say. Do not run additional searches and do not seek out primary research beyond what that one search surfaces.\n- Format: open with a one- or two-sentence direct answer in bold. Then give 3 to 6 short bullet points of key considerations. Keep the whole overview under 200 words.\n- Attribute points to the web pages they came from.\n- End with this line on its own: \"This is for informational purposes only. For medical advice or diagnosis, consult a professional.\"\n\nDo not mention that you are reproducing anything; just present the overview.",
+  "user_location": {
+    "type": "approximate",
+    "city": "Austin",
+    "region": "Texas",
+    "country": "US",
+    "timezone": "America/Chicago"
+  },
+  "overview_text": "**Probiotics often reduce the risk of antibiotic-associated diarrhea (AAD), but the evidence is mixed and depends on the strain and the population.**\n\n- **Children:** A Cochrane review found AAD in 8% of children taking probiotics versus 19% of controls. About 1 case was prevented for every 9 children treated. [1]\n- **Outpatients:** A meta-analysis reported a 51% lower risk of AAD, with moderate-quality evidence. [2] Only 18% of the included studies had a low risk of bias, and those studies did not find a statistically significant reduction. [2]\n- **Conflicting results:** A large trial in inpatients aged 65 and older found no evidence that a multistrain lactobacilli and bifidobacteria product prevented AAD. [3]\n- **Strains:** Cleveland Clinic says the most commonly studied for AAD are Lactobacillus rhamnosus-based and Saccharomyces boulardii-based probiotics. [4]\n- **Timing:** WebMD says taking probiotics before, during, and for several days after antibiotics may lower your chances of diarrhea. [5]\n- **Safety:** Probiotics could be harmful for people with immune deficiencies or those who are severely debilitated. [4] Cleveland Clinic advises asking your doctor before taking any. [4]\n\nThis is for informational purposes only. For medical advice or diagnosis, consult a professional.",
+  "retrieved_sources": [
+    {
+      "rank": 1,
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9437377/",
+      "title": "Do Probiotics Prevent Clostridium difficile-Associated Diarrhea?",
+      "page_age": null
+    },
+    {
+      "rank": 2,
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5745464/",
+      "title": "Probiotics for the Prevention of Antibiotic-Associated Diarrhea in Outpatients—A Systematic Review and Meta-Analysis",
+      "page_age": null
+    },
+    {
+      "rank": 3,
+      "url": "https://ubiehealth.com/doctors-note/probiotics-antibiotic-side-effects-10-wk3-exp3",
+      "title": "Can probiotics prevent antibiotic side effects? | Ubie Doctor's Note",
+      "page_age": "November 7, 2025"
+    },
+    {
+      "rank": 4,
+      "url": "https://www.cochrane.org/evidence/CD004827_probiotics-prevention-antibiotic-associated-diarrhea-children",
+      "title": "Probiotics for the prevention of antibiotic-associated diarrhea in children | Cochrane",
+      "page_age": "June 19, 2025"
+    },
+    {
+      "rank": 5,
+      "url": "https://www.aafp.org/pubs/afp/issues/2021/1200/od1.html",
+      "title": "Probiotics for Preventing Antibiotic-Associated Diarrhea | AFP",
+      "page_age": "December 15, 2021"
+    },
+    {
+      "rank": 6,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5745464/",
+      "title": "Probiotics for the Prevention of Antibiotic-Associated Diarrhea in Outpatients—A Systematic Review and Meta-Analysis - PMC",
+      "page_age": null
+    },
+    {
+      "rank": 7,
+      "url": "https://health.clevelandclinic.org/how-to-prevent-diarrhea-while-you-take-antibiotics",
+      "title": "How to Prevent Diarrhea While You Take Antibiotics",
+      "page_age": "January 24, 2020"
+    },
+    {
+      "rank": 8,
+      "url": "https://www.webmd.com/digestive-disorders/probiotics-diarrhea",
+      "title": "Probiotics for Diarrhea: Types, Uses, Side Effects, Benefits",
+      "page_age": "February 18, 2026"
+    },
+    {
+      "rank": 9,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9408191/",
+      "title": "Probiotics for the Prevention of Antibiotic-Associated Diarrhea - PMC",
+      "page_age": null
+    },
+    {
+      "rank": 10,
+      "url": "https://www.healthline.com/nutrition/probiotics-for-diarrhea",
+      "title": "Probiotics for Diarrhea: Benefits, Types, and Side Effects",
+      "page_age": "October 28, 2024"
+    }
+  ],
+  "cited_sources": [
+    {
+      "n": 1,
+      "url": "https://www.cochrane.org/evidence/CD004827_probiotics-prevention-antibiotic-associated-diarrhea-children",
+      "title": "Probiotics for the prevention of antibiotic-associated diarrhea in children | Cochrane"
+    },
+    {
+      "n": 2,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5745464/",
+      "title": "Probiotics for the Prevention of Antibiotic-Associated Diarrhea in Outpatients—A Systematic Review and Meta-Analysis - PMC"
+    },
+    {
+      "n": 3,
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9437377/",
+      "title": "Do Probiotics Prevent Clostridium difficile-Associated Diarrhea?"
+    },
+    {
+      "n": 4,
+      "url": "https://health.clevelandclinic.org/how-to-prevent-diarrhea-while-you-take-antibiotics",
+      "title": "How to Prevent Diarrhea While You Take Antibiotics"
+    },
+    {
+      "n": 5,
+      "url": "https://www.webmd.com/digestive-disorders/probiotics-diarrhea",
+      "title": "Probiotics for Diarrhea: Types, Uses, Side Effects, Benefits"
+    }
+  ],
+  "cited_spans": [
+    {
+      "n": 1,
+      "text": "A Cochrane review found AAD in 8% of children taking probiotics versus 19% of controls. About 1 case was prevented for every 9 children treated.",
+      "cited_text": "The incidence of AAD in the probiotic group was 8% (259/3232) compared to 19% (598/3120) in the control group, demonstrating a moderate reduction (11%..."
+    },
+    {
+      "n": 2,
+      "text": "A meta-analysis reported a 51% lower risk of AAD, with moderate-quality evidence.",
+      "cited_text": "Using probiotics for the prevention of antibiotic-associated diarrhea reduces the risk of AAD by 51% (RR 0.49; 95% CI 0.36 to 0.67) with a moderate qu..."
+    },
+    {
+      "n": 2,
+      "text": "Only 18% of the included studies had a low risk of bias, and those studies did not find a statistically significant reduction.",
+      "cited_text": "However, our study still suggests that caution be applied prior to widespread introduction of probiotic treatment for AAD as only 18% of the included ..."
+    },
+    {
+      "n": 3,
+      "text": "A large trial in inpatients aged 65 and older found no evidence that a multistrain lactobacilli and bifidobacteria product prevented AAD.",
+      "cited_text": "They found no evidence that a multistrain preparation of lactobacilli and bifidobacteria was effective in AAD or CDD prevention [[16]]."
+    },
+    {
+      "n": 4,
+      "text": "Cleveland Clinic says the most commonly studied for AAD are Lactobacillus rhamnosus-based and Saccharomyces boulardii-based probiotics.",
+      "cited_text": "The most commonly studied for antibiotic-associated diarrhea are Lactobacillus rhamnosus-based and Saccharomyces boulardii-based probiotics. "
+    },
+    {
+      "n": 5,
+      "text": "WebMD says taking probiotics before, during, and for several days after antibiotics may lower your chances of diarrhea.",
+      "cited_text": "Studies of children and adults show that you may cut your chances of having diarrhea if you take probiotics before and during treatment and several da..."
+    },
+    {
+      "n": 4,
+      "text": "Probiotics could be harmful for people with immune deficiencies or those who are severely debilitated.",
+      "cited_text": "Probiotics could possibly be harmful for people with immune deficiencies or those who are severely debilitated. "
+    },
+    {
+      "n": 4,
+      "text": "Cleveland Clinic advises asking your doctor before taking any.",
+      "cited_text": "With so many options, be sure to ask your doctor for advice before taking any probiotics, as you should for any type of supplement. "
+    }
+  ],
+  "stop_reason": "end_turn",
+  "latency_s": 5.76,
+  "usage": [
+    {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "global",
+      "input_tokens": 14815,
+      "output_tokens": 672,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_fetch_requests": 0,
+        "web_search_requests": 1
+      },
+      "service_tier": "standard"
+    }
+  ],
+  "raw_blocks": [
+    [
+      {
+        "id": "srvtoolu_01YWRrBL9MJpQ7GD69BMVczU",
+        "input": {
+          "query": "do probiotics prevent diarrhea from antibiotics"
+        },
+        "name": "web_search",
+        "type": "server_tool_use"
+      },
+      {
+        "caller": {
+          "type": "direct"
+        },
+        "content": [
+          {
+            "title": "Do Probiotics Prevent Clostridium difficile-Associated Diarrhea?",
+            "type": "web_search_result",
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9437377/"
+          },
+          {
+            "title": "Probiotics for the Prevention of Antibiotic-Associated Diarrhea in Outpatients—A Systematic Review and Meta-Analysis",
+            "type": "web_search_result",
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5745464/"
+          },
+          {
+            "page_age": "November 7, 2025",
+            "title": "Can probiotics prevent antibiotic side effects? | Ubie Doctor's Note",
+            "type": "web_search_result",
+            "url": "https://ubiehealth.com/doctors-note/probiotics-antibiotic-side-effects-10-wk3-exp3"
+          },
+          {
+            "page_age": "June 19, 2025",
+            "title": "Probiotics for the prevention of antibiotic-associated diarrhea in children | Cochrane",
+            "type": "web_search_result",
+            "url": "https://www.cochrane.org/evidence/CD004827_probiotics-prevention-antibiotic-associated-diarrhea-children"
+          },
+          {
+            "page_age": "December 15, 2021",
+            "title": "Probiotics for Preventing Antibiotic-Associated Diarrhea | AFP",
+            "type": "web_search_result",
+            "url": "https://www.aafp.org/pubs/afp/issues/2021/1200/od1.html"
+          },
+          {
+            "title": "Probiotics for the Prevention of Antibiotic-Associated Diarrhea in Outpatients—A Systematic Review and Meta-Analysis - PMC",
+            "type": "web_search_result",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5745464/"
+          },
+          {
+            "page_age": "January 24, 2020",
+            "title": "How to Prevent Diarrhea While You Take Antibiotics",
+            "type": "web_search_result",
+            "url": "https://health.clevelandclinic.org/how-to-prevent-diarrhea-while-you-take-antibiotics"
+          },
+          {
+            "page_age": "February 18, 2026",
+            "title": "Probiotics for Diarrhea: Types, Uses, Side Effects, Benefits",
+            "type": "web_search_result",
+            "url": "https://www.webmd.com/digestive-disorders/probiotics-diarrhea"
+          },
+          {
+            "title": "Probiotics for the Prevention of Antibiotic-Associated Diarrhea - PMC",
+            "type": "web_search_result",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9408191/"
+          },
+          {
+            "page_age": "October 28, 2024",
+            "title": "Probiotics for Diarrhea: Benefits, Types, and Side Effects",
+            "type": "web_search_result",
+            "url": "https://www.healthline.com/nutrition/probiotics-for-diarrhea"
+          }
+        ],
+        "tool_use_id": "srvtoolu_01YWRrBL9MJpQ7GD69BMVczU",
+        "type": "web_search_tool_result"
+      },
+      {
+        "text": "**Probiotics often reduce the risk of antibiotic-associated diarrhea (AAD), but the evidence is mixed and depends on the strain and the population.**\n\n- **Children:** ",
+        "type": "text"
+      },
+      {
+        "citations": [
+          {
+            "cited_text": "The incidence of AAD in the probiotic group was 8% (259/3232) compared to 19% (598/3120) in the control group, demonstrating a moderate reduction (11%...",
+            "encrypted_index": "EpIBCioIFBgCIiQ3MTk5M2NmOC02MjRhLTRhMDktOGVjYi00ZGYyYmU1MDgzMDcSDODYSQGYbyRiIVpT4hoMQ5oakQs+LZGvlRAxIjA1wMrxdtEprFaqMZpTcqqY/TdcQ1UIRMymQ69P4YlJsewFTsEucG41/lPRr5OqoWkqFpCjGFMpY+Sj6ixdwlroDyUemB3uTPkYBA==",
+            "title": "Probiotics for the prevention of antibiotic-associated diarrhea in children | Cochrane",
+            "type": "web_search_result_location",
+            "url": "https://www.cochrane.org/evidence/CD004827_probiotics-prevention-antibiotic-associated-diarrhea-children"
+          }
+        ],
+        "text": "A Cochrane review found AAD in 8% of children taking probiotics versus 19% of controls. About 1 case was prevented for every 9 children treated.",
+        "type": "text"
+      },
+      {
+        "text": "\n- **Outpatients:** ",
+        "type": "text"
+      },
+      {
+        "citations": [
+          {
+            "cited_text": "Using probiotics for the prevention of antibiotic-associated diarrhea reduces the risk of AAD by 51% (RR 0.49; 95% CI 0.36 to 0.67) with a moderate qu...",
+            "encrypted_index": "Eo8BCioIFBgCIiQ3MTk5M2NmOC02MjRhLTRhMDktOGVjYi00ZGYyYmU1MDgzMDcSDGvMBdWYRriP5zCqlhoMvFs806KYJQJjb10oIjCS+npT35v0Mweyo2ipq89HQHODaQ6wYO1FM5UwsTeDf0f2u0OhcfAHB6cqtvtAxNwqE/AlxmwzlQDAaLPUvynWU6mKnhQYBA==",
+            "title": "Probiotics for the Prevention of Antibiotic-Associated Diarrhea in Outpatients—A Systematic Review and Meta-Analysis - PMC",
+            "type": "web_search_result_location",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5745464/"
+          }
+        ],
+        "text": "A meta-analysis reported a 51% lower risk of AAD, with moderate-quality evidence.",
+        "type": "text"
+      },
+      {
+        "text": " ",
+        "type": "text"
+      },
+      {
+        "citations": [
+          {
+            "cited_text": "However, our study still suggests that caution be applied prior to widespread introduction of probiotic treatment for AAD as only 18% of the included ...",
+            "encrypted_index": "Eo8BCioIFBgCIiQ3MTk5M2NmOC02MjRhLTRhMDktOGVjYi00ZGYyYmU1MDgzMDcSDNv984rVUyvMcewarxoMY9biSSf2S+EcVej0IjCPdQTQEiVyTallIkyEXH9RaZxajtaQ8cWvpKvu8hAFu9DVAyhOkpgfIH//IAPAPBkqE1q7YrLk3No9gwrlItmPFgm/T70YBA==",
+            "title": "Probiotics for the Prevention of Antibiotic-Associated Diarrhea in Outpatients—A Systematic Review and Meta-Analysis - PMC",
+            "type": "web_search_result_location",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5745464/"
+          }
+        ],
+        "text": "Only 18% of the included studies had a low risk of bias, and those studies did not find a statistically significant reduction.",
+        "type": "text"
+      },
+      {
+        "text": "\n- **Conflicting results:** ",
+        "type": "text"
+      },
+      {
+        "citations": [
+          {
+            "cited_text": "They found no evidence that a multistrain preparation of lactobacilli and bifidobacteria was effective in AAD or CDD prevention [[16]].",
+            "encrypted_index": "EpABCioIFBgCIiQ3MTk5M2NmOC02MjRhLTRhMDktOGVjYi00ZGYyYmU1MDgzMDcSDH4tAO2KJi1ILRY+AxoMC7AuRA3JDO4Mf+h+IjDKWokEfNrvl3h2N2E9SdI65Es9w2K2TbP2/+VXgC9kk4xcr6eL7vKTqp/Bt803SDQqFJfIHTjVmR6HB/M646Np158eUR9pGAQ=",
+            "title": "Do Probiotics Prevent Clostridium difficile-Associated Diarrhea?",
+            "type": "web_search_result_location",
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9437377/"
+          }
+        ],
+        "text": "A large trial in inpatients aged 65 and older found no evidence that a multistrain lactobacilli and bifidobacteria product prevented AAD.",
+        "type": "text"
+      },
+      {
+        "text": "\n- **Strains:** ",
+        "type": "text"
+      },
+      {
+        "citations": [
+          {
+            "cited_text": "The most commonly studied for antibiotic-associated diarrhea are Lactobacillus rhamnosus-based and Saccharomyces boulardii-based probiotics. ",
+            "encrypted_index": "Eo8BCioIFBgCIiQ3MTk5M2NmOC02MjRhLTRhMDktOGVjYi00ZGYyYmU1MDgzMDcSDACFOdau+rpmhawwAhoM958VWR4JbIqA0a8TIjBZyqfkIEgEnSQW9emVT1TrNP0+QwtlfThJVsqWYCgiqN1jTh76FQ8r7ekjDyc4kW4qE1FQilV5vCMYZiAxvmgKNlzEZV0YBA==",
+            "title": "How to Prevent Diarrhea While You Take Antibiotics",
+            "type": "web_search_result_location",
+            "url": "https://health.clevelandclinic.org/how-to-prevent-diarrhea-while-you-take-antibiotics"
+          }
+        ],
+        "text": "Cleveland Clinic says the most commonly studied for AAD are Lactobacillus rhamnosus-based and Saccharomyces boulardii-based probiotics.",
+        "type": "text"
+      },
+      {
+        "text": "\n- **Timing:** ",
+        "type": "text"
+      },
+      {
+        "citations": [
+          {
+            "cited_text": "Studies of children and adults show that you may cut your chances of having diarrhea if you take probiotics before and during treatment and several da...",
+            "encrypted_index": "EpABCioIFBgCIiQ3MTk5M2NmOC02MjRhLTRhMDktOGVjYi00ZGYyYmU1MDgzMDcSDGF9uT9i+jucsEu9JhoMcO7nSJWmiXk9kKLUIjDRJCNWQyuweS55quLZswGfZE+XfDugUSlm6/srP1PVpl1ZJln7aLHhaXvJx0YuHzIqFMjaHiPIKuggZws/KfbDVePRvI11GAQ=",
+            "title": "Probiotics for Diarrhea: Types, Uses, Side Effects, Benefits",
+            "type": "web_search_result_location",
+            "url": "https://www.webmd.com/digestive-disorders/probiotics-diarrhea"
+          }
+        ],
+        "text": "WebMD says taking probiotics before, during, and for several days after antibiotics may lower your chances of diarrhea.",
+        "type": "text"
+      },
+      {
+        "text": "\n- **Safety:** ",
+        "type": "text"
+      },
+      {
+        "citations": [
+          {
+            "cited_text": "Probiotics could possibly be harmful for people with immune deficiencies or those who are severely debilitated. ",
+            "encrypted_index": "Eo8BCioIFBgCIiQ3MTk5M2NmOC02MjRhLTRhMDktOGVjYi00ZGYyYmU1MDgzMDcSDI2OoDNDN8Ii8J6aXhoM8sYl/uI4/WUh04uXIjBf14n/ZOOIi/hfZsdOvafeNUwlKtMFSEoXVaRIrijeatNUQOAnB4eB6vaem+QMh2IqEzCkp2UCUk15MxI115stCOno6V0YBA==",
+            "title": "How to Prevent Diarrhea While You Take Antibiotics",
+            "type": "web_search_result_location",
+            "url": "https://health.clevelandclinic.org/how-to-prevent-diarrhea-while-you-take-antibiotics"
+          }
+        ],
+        "text": "Probiotics could be harmful for people with immune deficiencies or those who are severely debilitated.",
+        "type": "text"
+      },
+      {
+        "text": " ",
+        "type": "text"
+      },
+      {
+        "citations": [
+          {
+            "cited_text": "With so many options, be sure to ask your doctor for advice before taking any probiotics, as you should for any type of supplement. ",
+            "encrypted_index": "Eo8BCioIFBgCIiQ3MTk5M2NmOC02MjRhLTRhMDktOGVjYi00ZGYyYmU1MDgzMDcSDFPuGR7gnlcFIibd2RoMwCS9f23tqHHNBxKDIjCpj1d6IPQ5Pw2tSnjVr1mkOpDeeea7+DOV9SW0/BG9IOecEBxWddUR4Jm9Q63QoTIqE1N6zDcPwaOJ+oV2M4e8nAtr7T4YBA==",
+            "title": "How to Prevent Diarrhea While You Take Antibiotics",
+            "type": "web_search_result_location",
+            "url": "https://health.clevelandclinic.org/how-to-prevent-diarrhea-while-you-take-antibiotics"
+          }
+        ],
+        "text": "Cleveland Clinic advises asking your doctor before taking any.",
+        "type": "text"
+      },
+      {
+        "text": "\n\nThis is for informational purposes only. For medical advice or diagnosis, consult a professional.",
+        "type": "text"
+      }
+    ]
+  ],
+  "question_id": "Q5",
+  "replicate": 1,
+  "route": "worker:https://tables-turned-api.jethomasphd.workers.dev",
+  "captured_at": "2026-09-28T23:42:08Z"
+}

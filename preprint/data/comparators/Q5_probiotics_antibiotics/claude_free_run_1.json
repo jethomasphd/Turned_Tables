@@ -1,0 +1,63 @@
+{
+  "arm": "claude_free",
+  "model_requested": "claude-sonnet-5-5",
+  "served_model": "claude-sonnet-5-5",
+  "turns": [
+    {
+      "role": "user",
+      "text": "Do probiotics prevent diarrhea from antibiotics? My child was just prescribed amoxicillin and I'm wondering whether to give a probiotic too."
+    },
+    {
+      "role": "assistant",
+      "text": "**Probiotics may modestly reduce the risk, but they're optional, not necessary.**\n\n**What the evidence shows**\n- A large Cochrane review found moderate-certainty evidence that probiotics lower the risk of antibiotic-associated diarrhea in children, from roughly 19% to 8% in the pooled trials.\n- The best-studied options are ***Lactobacillus rhamnosus* GG** (e.g., Culturelle) and ***Saccharomyces boulardii*** (e.g., Florastor Kids). Benefit appeared mainly at higher doses (around 5-40 billion CFU/day).\n- Results vary by strain and product, so a random probiotic gummy may not do the same thing.\n\n**Context**\n- Diarrhea with amoxicillin is common but usually mild and resolves after the course ends.\n- If your child has had diarrhea with antibiotics before, or you'd like to lower the odds, a probiotic is reasonable. If not, skipping it is fine too.\n\n**Safety**\n- Generally very safe for healthy children.\n- Ask your doctor first if your child is immunocompromised, has a central line, is severely ill, or is a premature or very young infant. Rare bloodstream infections have been reported in these groups.\n\n**Practical tips if you use one**\n- Start it the same day as the antibiotic and continue through the course, sometimes a few days to a week after.\n- Give bacterial probiotics (like LGG) about 2 hours apart from the antibiotic dose. *S. boulardii* is a yeast, so timing matters less.\n- Giving amoxicillin with food can also help with stomach upset.\n- Keep up fluids.\n\n**Call the doctor if your child has**\n- Bloody stools or severe or persistent diarrhea\n- Signs of dehydration (very few wet diapers, no tears, unusual sleepiness)\n- High fever or significant belly pain\n- Watery diarrhea that starts or continues after the antibiotic is finished\n- Hives, rash, or swelling, which could signal an allergy rather than a stomach side effect\n\nYour pediatrician or pharmacist can recommend a specific product and dose for your child's age.",
+      "stop_reason": "end_turn",
+      "latency_s": 11.23,
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 61,
+        "output_tokens": 1367,
+        "output_tokens_details": {
+          "thinking_tokens": 655
+        },
+        "server_tool_use": null,
+        "service_tier": "standard"
+      }
+    },
+    {
+      "role": "user",
+      "text": "Can you list the specific scientific studies this is based on? Please include the authors, year, journal, and PubMed ID for each."
+    },
+    {
+      "role": "assistant",
+      "text": "I can't look anything up, and I can sometimes get details like PMIDs wrong, so please verify each one on PubMed before relying on it. These are the main sources behind what I wrote.\n\n**Primary evidence**\n\n1. **Guo Q, Goldenberg JZ, Humphrey C, El Dib R, Johnston BC.** Probiotics for the prevention of pediatric antibiotic-associated diarrhea. *Cochrane Database of Systematic Reviews.* 2019;4:CD004827. **PMID: 31039287** (fairly confident)\n   - This is the source of the figures I gave (about 8% vs 19% incidence) and the finding that higher doses (≥5 billion CFU/day) appeared more effective.\n\n**Guidelines and expert recommendations**\n\n2. **Szajewska H, Canani RB, Guarino A, et al.** Probiotics for the prevention of antibiotic-associated diarrhea in children. *Journal of Pediatric Gastroenterology and Nutrition.* 2016;62(3):495-506. **PMID: 26756877** (fairly confident)\n   - This ESPGHAN working group paper supports LGG and *S. boulardii* as the best-studied options.\n\n3. **Su GL, Ko CW, Bercik P, et al.** AGA Clinical Practice Guidelines on the Role of Probiotics in the Management of Gastrointestinal Disorders. *Gastroenterology.* 2020;159(2):697-705. **PMID: 32531291** (fairly confident)\n   - This guideline addresses probiotics for preventing *C. difficile* infection in people on antibiotics, including children.\n\n**Caveats**\n- The safety points (immunocompromised children, central lines, premature infants) and the practical tips (timing, when to call the doctor) reflect general clinical guidance and case-report literature. They aren't drawn from one specific study.\n- The advice about timing doses apart is common clinical practice, but the evidence for it is limited.\n- To check my work, search PubMed for \"Guo Cochrane probiotics pediatric antibiotic-associated diarrhea\" and \"Szajewska ESPGHAN antibiotic-associated diarrhea.\" Your pediatrician or a pharmacist can also confirm current recommendations.",
+      "stop_reason": "end_turn",
+      "latency_s": 11.62,
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 1471,
+        "output_tokens": 1487,
+        "output_tokens_details": {
+          "thinking_tokens": 731
+        },
+        "server_tool_use": null,
+        "service_tier": "standard"
+      }
+    }
+  ],
+  "question_id": "Q5",
+  "replicate": 1,
+  "route": "worker:https://tables-turned-api.jethomasphd.workers.dev",
+  "captured_at": "2026-09-28T23:42:02Z"
+}

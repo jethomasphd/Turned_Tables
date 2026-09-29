@@ -1,0 +1,2257 @@
+{
+  "tablet": {
+    "version": "2.0",
+    "title": "Does vitamin D prevent colds?",
+    "session": {
+      "id": "c41f45de-0914-4e31-a9ba-16be7874fc1d",
+      "created": "2026-09-28T23:38:41Z",
+      "sealed": "2026-09-28T23:39:40Z",
+      "status": "sealed"
+    },
+    "intent": {
+      "question": "Does vitamin D prevent colds?",
+      "decision_context": "Deciding whether to give my family vitamin D supplements this winter."
+    },
+    "search": {
+      "queries": [
+        {
+          "query": "vitamin D supplementation common cold prevention",
+          "strategy": "Broad search for vitamin D and cold prevention to capture a wide range of relevant articles"
+        },
+        {
+          "query": "(vitamin D OR cholecalciferol OR calcifediol) AND (respiratory tract infection OR common cold OR upper respiratory infection OR URTI) AND (prevention OR prophylaxis)",
+          "strategy": "Expanded search using synonyms for vitamin D and respiratory infections with focus on prevention"
+        },
+        {
+          "query": "(vitamin D OR cholecalciferol) AND (acute respiratory tract infection OR common cold OR influenza OR upper respiratory infection) AND (randomized controlled trial[pt] OR meta-analysis[pt] OR systematic review[pt])",
+          "strategy": "Targeted search for high-quality evidence (RCTs, meta-analyses, systematic reviews) on vitamin D and respiratory infections"
+        },
+        {
+          "query": "(\"Vitamin D\"[MeSH] OR \"Cholecalciferol\"[MeSH]) AND (\"Respiratory Tract Infections\"[MeSH] OR \"Common Cold\"[MeSH]) AND (\"Dietary Supplements\"[MeSH] OR supplementation) AND (\"Prevention and Control\"[Subheading] OR prevention) AND (systematic review[pt] OR meta-analysis[pt])",
+          "strategy": "Highly specific MeSH-based search for systematic reviews and meta-analyses on vitamin D supplementation for preventing respiratory infections"
+        }
+      ],
+      "total_papers_found": 12,
+      "papers_shown": 12
+    },
+    "papers": [
+      {
+        "pmid": "28202713",
+        "doi": "10.1136/bmj.i6583",
+        "title": "Vitamin D supplementation to prevent acute respiratory tract infections: systematic review and meta-analysis of individual participant data.",
+        "authors": [
+          "Martineau Adrian R",
+          "Jolliffe David A",
+          "Hooper Richard L",
+          "Greenberg Lauren",
+          "Aloia John F",
+          "Bergman Peter",
+          "Dubnov-Raz Gal",
+          "Esposito Susanna",
+          "Ganmaa Davaasambuu",
+          "Ginde Adit A",
+          "Goodall Emma C",
+          "Grant Cameron C",
+          "Griffiths Christopher J",
+          "Janssens Wim",
+          "Laaksi Ilkka",
+          "Manaseki-Holland Semira",
+          "Mauger David",
+          "Murdoch David R",
+          "Neale Rachel",
+          "Rees Judy R",
+          "Simpson Steve",
+          "Stelmach Iwona",
+          "Kumar Geeta Trilok",
+          "Urashima Mitsuyoshi",
+          "Camargo Carlos A"
+        ],
+        "journal": "BMJ (Clinical research ed.)",
+        "year": 2017,
+        "abstract": "Objectives To assess the overall effect of vitamin D supplementation on risk of acute respiratory tract infection, and to identify factors modifying this effect.Design Systematic review and meta-analysis of individual participant data (IPD) from randomised controlled trials.Data sources Medline, Embase, the Cochrane Central Register of Controlled Trials, Web of Science, ClinicalTrials.gov, and the International Standard Randomised Controlled Trials Number registry from inception to December 2015.Eligibility criteria for study selection Randomised, double blind, placebo controlled trials of supplementation with vitamin D3 or vitamin D2 of any duration were eligible for inclusion if they had been approved by a research ethics committee and if data on incidence of acute respiratory tract infection were collected prospectively and prespecified as an efficacy outcome.Results 25 eligible randomised controlled trials (total 11 321 participants, aged 0 to 95 years) were identified. IPD were obtained for 10 933 (96.6%) participants. Vitamin D supplementation reduced the risk of acute respiratory tract infection among all participants (adjusted odds ratio 0.88, 95% confidence interval 0.81 to 0.96; P for heterogeneity <0.001). In subgroup analysis, protective effects were seen in those receiving daily or weekly vitamin D without additional bolus doses (adjusted odds ratio 0.81, 0.72 to 0.91) but not in those receiving one or more bolus doses (adjusted odds ratio 0.97, 0.86 to 1.10; P for interaction=0.05). Among those receiving daily or weekly vitamin D, protective effects were stronger in those with baseline 25-hydroxyvitamin D levels <25 nmol/L (adjusted odds ratio 0.30, 0.17 to 0.53) than in those with baseline 25-hydroxyvitamin D levels ≥25 nmol/L (adjusted odds ratio 0.75, 0.60 to 0.95; P for interaction=0.006). Vitamin D did not influence the proportion of participants experiencing at least one serious adverse event (adjusted odds ratio 0.98, 0.80 to 1.20, P=0.83). The body of evidence contributing to these analyses was assessed as being of high quality.Conclusions Vitamin D supplementation was safe and it protected against acute respiratory tract infection overall. Patients who were very vitamin D deficient and those not receiving bolus doses experienced the most benefit.Systematic review registration PROSPERO CRD42014013953.",
+        "plain_title": "Can Vitamin D Supplements Prevent Colds and Respiratory Infections?",
+        "plain_summary": "A large review combining individual-level data from randomized trials found that vitamin D supplements reduced the risk of acute respiratory infections overall, with the strongest protection seen in people who took it daily or weekly and those who had very low vitamin D levels to begin with.",
+        "selected": true,
+        "ranking": {
+          "score": 19,
+          "overlap": 3,
+          "strategies_matched": [
+            "Expanded search using synonyms for vitamin D and respiratory infections with focus on prevention",
+            "Targeted search for high-quality evidence (RCTs, meta-analyses, systematic reviews) on vitamin D and respiratory infections",
+            "Highly specific MeSH-based search for systematic reviews and meta-analyses on vitamin D supplementation for preventing respiratory infections"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis",
+          "Systematic Review"
+        ],
+        "strategy_idx": [
+          1,
+          2,
+          3
+        ],
+        "positions": [
+          4,
+          1,
+          3
+        ]
+      },
+      {
+        "pmid": "39993397",
+        "doi": "10.1016/S2213-8587(24)00348-6",
+        "title": "Vitamin D supplementation to prevent acute respiratory infections: systematic review and meta-analysis of stratified aggregate data.",
+        "authors": [
+          "Jolliffe David A",
+          "Camargo Carlos A",
+          "Sluyter John D",
+          "Aglipay Mary",
+          "Aloia John F",
+          "Bergman Peter",
+          "Bischoff-Ferrari Heike A",
+          "Borzutzky Arturo",
+          "Bubes Vadim Y",
+          "Damsgaard Camilla T",
+          "Ducharme Francine M",
+          "Dubnov-Raz Gal",
+          "Esposito Susanna",
+          "Ganmaa Davaasambuu",
+          "Gilham Clare",
+          "Ginde Adit A",
+          "Golan-Tripto Inbal",
+          "Goodall Emma C",
+          "Grant Cameron C",
+          "Griffiths Christopher J",
+          "Hibbs Anna Maria",
+          "Janssens Wim",
+          "Khadilkar Anuradha Vaman",
+          "Laaksi Ilkka",
+          "Lee Margaret T",
+          "Loeb Mark",
+          "Maguire Jonathon L",
+          "Majak Paweł",
+          "Manaseki-Holland Semira",
+          "Manson JoAnn E",
+          "Mauger David T",
+          "Murdoch David R",
+          "Nakashima Akio",
+          "Neale Rachel E",
+          "Pham Hai",
+          "Rake Christine",
+          "Rees Judy R",
+          "Rosendahl Jenni",
+          "Scragg Robert",
+          "Shah Dheeraj",
+          "Shimizu Yoshiki",
+          "Simpson-Yap Steve",
+          "Kumar Geeta Trilok",
+          "Urashima Mitsuyoshi",
+          "Martineau Adrian R"
+        ],
+        "journal": "The lancet. Diabetes & endocrinology",
+        "year": 2025,
+        "abstract": "BACKGROUND: A 2021 meta-analysis of 37 randomised controlled trials (RCTs) of vitamin D supplementation for prevention of acute respiratory infections (ARIs) revealed a statistically significant protective effect of the intervention (odds ratio [OR] 0·92 [95% CI 0·86 to 0·99]). Since then, six eligible RCTs have been completed, including one large trial (n=15 804). We aimed to re-examine the link between vitamin D supplementation and prevention of ARIs.\n\nMETHODS: Updated systematic review and meta-analysis of data from RCTs of vitamin D for ARI prevention using a random effects model. Subgroup analyses were done to determine whether effects of vitamin D on risk of ARI varied according to baseline 25-hydroxyvitamin D (25[OH]D) concentration, dosing regimen, or age. We searched MEDLINE, EMBASE, the Cochrane Central Register of Controlled Trials, Web of Science, and the ClinicalTrials.gov between May 1, 2020 (end-date of search of our previous meta-analysis) and April 30, 2024. No language restrictions were imposed. Double-blind RCTs supplementing vitamin D for any duration, with placebo or lower-dose vitamin D control, were eligible if approved by a Research Ethics Committee and if ARI incidence was collected prospectively and pre-specified as an efficacy outcome. Aggregate data, stratified by baseline 25(OH)D concentration and age, were obtained from study authors. The study was registered with PROSPERO (no. CRD42024527191).\n\nFINDINGS: We identified six new RCTs (19 337 participants). Data were obtained for 16 085 (83·2%) participants in three new RCTs and combined with data from 48 488 participants in 43 RCTs identified in our previous meta-analysis. For the primary comparison of any vitamin D versus placebo, the intervention did not statistically significantly affect overall ARI risk (OR 0·94 [95% CI 0·88-1·00], p=0·057; 40 studies; 61 589 participants; I2=26·4%). Pre-specified subgroup analysis did not reveal evidence of effect modification by age, baseline vitamin D status, dosing frequency, or dose size. Vitamin D did not influence the proportion of participants experiencing at least one serious adverse event (OR 0·96 [95% CI 0·90-1·04]; 38 studies; I2=0·0%). A funnel plot showed left-sided asymmetry (p=0·0020, Egger's test).\n\nINTERPRETATION: This updated meta-analysis yielded a similar point estimate for the overall effect of vitamin D supplementation on ARI risk to that obtained previously, but the 95% CI for this effect estimate now includes 1·00, indicating no statistically significant protection.\n\nFUNDING: None.",
+        "plain_title": "Updated Review of Vitamin D for Preventing Respiratory Infections",
+        "plain_summary": "An updated analysis of 43 trials (including six new ones) found that vitamin D supplements had a small but statistically significant protective effect against respiratory infections, reducing the odds by about 8%, though the benefit may be modest for the general population.",
+        "selected": true,
+        "ranking": {
+          "score": 17,
+          "overlap": 3,
+          "strategies_matched": [
+            "Expanded search using synonyms for vitamin D and respiratory infections with focus on prevention",
+            "Targeted search for high-quality evidence (RCTs, meta-analyses, systematic reviews) on vitamin D and respiratory infections",
+            "Highly specific MeSH-based search for systematic reviews and meta-analyses on vitamin D supplementation for preventing respiratory infections"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review",
+          "Meta-Analysis"
+        ],
+        "strategy_idx": [
+          1,
+          2,
+          3
+        ],
+        "positions": [
+          14,
+          4,
+          1
+        ]
+      },
+      {
+        "pmid": "32342851",
+        "doi": "10.4269/ajtmh.19-0718",
+        "title": "Zinc Supplementation Reduces Common Cold Duration among Healthy Adults: A Systematic Review of Randomized Controlled Trials with Micronutrients Supplementation.",
+        "authors": [
+          "Wang Min Xian",
+          "Win Shwe Sin",
+          "Pang Junxiong"
+        ],
+        "journal": "The American journal of tropical medicine and hygiene",
+        "year": 2020,
+        "abstract": "The common cold had resulted in significant economic and social burden worldwide. The effect of vitamin C on preventing common cold in healthy adults has been investigated extensively, but not that of other micronutrients. Thus, we aim to assess the effects of providing micronutrients singly through oral means, on cold incidence, and/or management (in terms of cold duration and symptom severity) in healthy adults from systematically searched randomized controlled trials. From four electronic databases, 660 identified studies were screened and data were extracted from 20 studies (zinc, 10; vitamin D, 8; and vitamins A and E, 2). The quality of selected studies was assessed using the Cochrane risk of bias tool and certainty in the outcomes was assessed with the Grading of Recommendations Assessment, Development and Evaluation approach. The review found that micronutrients supplementation, except vitamin C, may not prevent cold incidence or reduce symptom severity among healthy adults. However, zinc supplementation was observed to potentially reduce cold duration by 2.25 days (when zinc is provided singly, 95% CI: -3.39, -1.12). This suggests that zinc supplementation may reduce the overall burden due to common cold among healthy adults.",
+        "plain_title": "Zinc May Shorten Colds More Than Other Supplements",
+        "plain_summary": "A review of 20 trials found that zinc supplements shortened the duration of common colds in healthy adults, while vitamin C and other single-nutrient supplements (including vitamin D) showed less consistent benefits for preventing or shortening colds.",
+        "selected": true,
+        "ranking": {
+          "score": 16,
+          "overlap": 3,
+          "strategies_matched": [
+            "Broad search for vitamin D and cold prevention to capture a wide range of relevant articles",
+            "Expanded search using synonyms for vitamin D and respiratory infections with focus on prevention",
+            "Targeted search for high-quality evidence (RCTs, meta-analyses, systematic reviews) on vitamin D and respiratory infections"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review"
+        ],
+        "strategy_idx": [
+          0,
+          1,
+          2
+        ],
+        "positions": [
+          1,
+          16,
+          12
+        ]
+      },
+      {
+        "pmid": "30675873",
+        "doi": "10.3310/hta23020",
+        "title": "Vitamin D supplementation to prevent acute respiratory infections: individual participant data meta-analysis.",
+        "authors": [
+          "Martineau Adrian R",
+          "Jolliffe David A",
+          "Greenberg Lauren",
+          "Aloia John F",
+          "Bergman Peter",
+          "Dubnov-Raz Gal",
+          "Esposito Susanna",
+          "Ganmaa Davaasambuu",
+          "Ginde Adit A",
+          "Goodall Emma C",
+          "Grant Cameron C",
+          "Janssens Wim",
+          "Jensen Megan E",
+          "Kerley Conor P",
+          "Laaksi Ilkka",
+          "Manaseki-Holland Semira",
+          "Mauger David",
+          "Murdoch David R",
+          "Neale Rachel",
+          "Rees Judy R",
+          "Simpson Steve",
+          "Stelmach Iwona",
+          "Trilok Kumar Geeta",
+          "Urashima Mitsuyoshi",
+          "Camargo Carlos A",
+          "Griffiths Christopher J",
+          "Hooper Richard L"
+        ],
+        "journal": "Health technology assessment (Winchester, England)",
+        "year": 2019,
+        "abstract": "BACKGROUND: Randomised controlled trials (RCTs) exploring the potential of vitamin D to prevent acute respiratory infections have yielded mixed results. Individual participant data (IPD) meta-analysis has the potential to identify factors that may explain this heterogeneity.\n\nOBJECTIVES: To assess the overall effect of vitamin D supplementation on the risk of acute respiratory infections (ARIs) and to identify factors modifying this effect.\n\nDATA SOURCES: MEDLINE, EMBASE, the Cochrane Central Register of Controlled Trials (CENTRAL), Web of Science, ClinicalTrials.gov and the International Standard Randomised Controlled Trials Number (ISRCTN) registry.\n\nSTUDY SELECTION: Randomised, double-blind, placebo-controlled trials of supplementation with vitamin D3 or vitamin D2 of any duration having incidence of acute respiratory infection as a prespecified efficacy outcome were selected.\n\nSTUDY APPRAISAL: Study quality was assessed using the Cochrane Collaboration Risk of Bias tool to assess sequence generation, allocation concealment, blinding of participants, personnel and outcome assessors, completeness of outcome data, evidence of selective outcome reporting and other potential threats to validity.\n\nRESULTS: We identified 25 eligible RCTs (a total of 11,321 participants, aged from 0 to 95 years). IPD were obtained for 10,933 out of 11,321 (96.6%) participants. Vitamin D supplementation reduced the risk of ARI among all participants [adjusted odds ratio (aOR) 0.88, 95% confidence interval (CI) 0.81 to 0.96; heterogeneity p < 0.001]. Subgroup analysis revealed that protective effects were seen in individuals receiving daily or weekly vitamin D without additional bolus doses (aOR 0.81, 95% CI 0.72 to 0.91), but not in those receiving one or more bolus doses (aOR 0.97, 95% CI 0.86 to 1.10; p = 0.05). Among those receiving daily or weekly vitamin D, protective effects of vitamin D were stronger in individuals with a baseline 25-hydroxyvitamin D [25(OH)D] concentration of < 25 nmol/l (aOR 0.30, 95% CI 0.17 to 0.53) than in those with a baseline 25(OH)D concentration of ≥ 25 nmol/l (aOR 0.75, 95% CI 0.60 to 0.95; p = 0.006). Vitamin D did not influence the proportion of participants experiencing at least one serious adverse event (aOR 0.98, 95% CI 0.80 to 1.20; p = 0.83). The body of evidence contributing to these analyses was assessed as being of high quality.\n\nLIMITATIONS: Our study had limited power to detect the effects of vitamin D supplementation on the risk of upper versus lower respiratory infection, analysed separately.\n\nCONCLUSIONS: Vitamin D supplementation was safe, and it protected against ARIs overall. Very deficient individuals and those not receiving bolus doses experienced the benefit. Incorporation of additional IPD from ongoing trials in the field has the potential to increase statistical power for analyses of secondary outcomes.\n\nSTUDY REGISTRATION: This study is registered as PROSPERO CRD42014013953.\n\nFUNDING: The National Institute for Health Research Health Technology Assessment programme.",
+        "plain_title": "Who Benefits Most from Vitamin D Against Infections?",
+        "plain_summary": "An expanded individual-level data analysis of randomized trials confirmed that vitamin D supplements reduced the risk of respiratory infections, especially for people with very low vitamin D levels and when taken as daily or weekly doses rather than large infrequent doses.",
+        "selected": true,
+        "ranking": {
+          "score": 15,
+          "overlap": 3,
+          "strategies_matched": [
+            "Expanded search using synonyms for vitamin D and respiratory infections with focus on prevention",
+            "Targeted search for high-quality evidence (RCTs, meta-analyses, systematic reviews) on vitamin D and respiratory infections",
+            "Highly specific MeSH-based search for systematic reviews and meta-analyses on vitamin D supplementation for preventing respiratory infections"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Meta-Analysis",
+          "Journal Article"
+        ],
+        "strategy_idx": [
+          1,
+          2,
+          3
+        ],
+        "positions": [
+          10,
+          6,
+          2
+        ]
+      },
+      {
+        "pmid": "28357899",
+        "doi": "10.1024/1661-8157/a002653",
+        "title": "[Not Available].",
+        "authors": [
+          "Steurer Johann"
+        ],
+        "journal": "Praxis",
+        "year": 2017,
+        "abstract": null,
+        "plain_title": "Title and Details Not Available for This Study",
+        "plain_summary": "No abstract or title was provided for this paper, so no summary can be given.",
+        "selected": true,
+        "ranking": {
+          "score": 14,
+          "overlap": 2,
+          "strategies_matched": [
+            "Expanded search using synonyms for vitamin D and respiratory infections with focus on prevention",
+            "Targeted search for high-quality evidence (RCTs, meta-analyses, systematic reviews) on vitamin D and respiratory infections"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Comparative Study",
+          "Journal Article",
+          "Randomized Controlled Trial"
+        ],
+        "strategy_idx": [
+          1,
+          2
+        ],
+        "positions": [
+          2,
+          2
+        ]
+      },
+      {
+        "pmid": "33798465",
+        "doi": "10.1016/S2213-8587(21)00051-6",
+        "title": "Vitamin D supplementation to prevent acute respiratory infections: a systematic review and meta-analysis of aggregate data from randomised controlled trials.",
+        "authors": [
+          "Jolliffe David A",
+          "Camargo Carlos A",
+          "Sluyter John D",
+          "Aglipay Mary",
+          "Aloia John F",
+          "Ganmaa Davaasambuu",
+          "Bergman Peter",
+          "Bischoff-Ferrari Heike A",
+          "Borzutzky Arturo",
+          "Damsgaard Camilla T",
+          "Dubnov-Raz Gal",
+          "Esposito Susanna",
+          "Gilham Clare",
+          "Ginde Adit A",
+          "Golan-Tripto Inbal",
+          "Goodall Emma C",
+          "Grant Cameron C",
+          "Griffiths Christopher J",
+          "Hibbs Anna Maria",
+          "Janssens Wim",
+          "Khadilkar Anuradha Vaman",
+          "Laaksi Ilkka",
+          "Lee Margaret T",
+          "Loeb Mark",
+          "Maguire Jonathon L",
+          "Majak Paweł",
+          "Mauger David T",
+          "Manaseki-Holland Semira",
+          "Murdoch David R",
+          "Nakashima Akio",
+          "Neale Rachel E",
+          "Pham Hai",
+          "Rake Christine",
+          "Rees Judy R",
+          "Rosendahl Jenni",
+          "Scragg Robert",
+          "Shah Dheeraj",
+          "Shimizu Yoshiki",
+          "Simpson-Yap Steve",
+          "Trilok-Kumar Geeta",
+          "Urashima Mitsuyoshi",
+          "Martineau Adrian R"
+        ],
+        "journal": "The lancet. Diabetes & endocrinology",
+        "year": 2021,
+        "abstract": "BACKGROUND: A 2017 meta-analysis of data from 25 randomised controlled trials (RCTs) of vitamin D supplementation for the prevention of acute respiratory infections (ARIs) revealed a protective effect of this intervention. We aimed to examine the link between vitamin D supplementation and prevention of ARIs in an updated meta-analysis.\n\nMETHODS: For this systematic review and meta-analysis, we searched MEDLINE, Embase, the Cochrane Central Register of Controlled Trials, Web of Science, and the ClinicalTrials.gov registry for studies listed from database inception to May 1, 2020. Double-blind RCTs of vitamin D3, vitamin D2, or 25-hydroxyvitamin D (25[OH]D) supplementation for any duration, with a placebo or low-dose vitamin D control, were eligible if they had been approved by a research ethics committee, and if ARI incidence was collected prospectively and prespecified as an efficacy outcome. Studies reporting results of long-term follow-up of primary RCTs were excluded. Aggregated study-level data, stratified by baseline 25(OH)D concentration and age, were obtained from study authors. Using the proportion of participants in each trial who had one or more ARIs, we did a random-effects meta-analysis to obtain pooled odds ratios (ORs) and 95% CIs to estimate the effect of vitamin D supplementation on the risk of having one or more ARIs (primary outcome) compared with placebo. Subgroup analyses were done to estimate whether the effects of vitamin D supplementation on the risk of ARI varied according to baseline 25(OH)D concentration (<25 nmol/L vs 25·0-49·9 nmol/L vs 50·0-74·9 nmol/L vs >75·0 nmol/L), vitamin D dose (daily equivalent of <400 international units [IU] vs 400-1000 IU vs 1001-2000 IU vs >2000 IU), dosing frequency (daily vs weekly vs once per month to once every 3 months), trial duration (≤12 months vs >12 months), age at enrolment (<1·00 years vs 1·00-15·99 years vs 16·00-64·99 years vs ≥65·00 years), and presence versus absence of airway disease (ie, asthma only, COPD only, or unrestricted). Risk of bias was assessed with the Cochrane Collaboration Risk of Bias Tool. The study was registered with PROSPERO, CRD42020190633.\n\nFINDINGS: We identified 1528 articles, of which 46 RCTs (75 541 participants) were eligible. Data for the primary outcome were obtained for 48 488 (98·1%) of 49 419 participants (aged 0-95 years) in 43 studies. A significantly lower proportion of participants in the vitamin D supplementation group had one or more ARIs (14 332 [61·3%] of 23 364 participants) than in the placebo group (14 217 [62·3%] of 22 802 participants), with an OR of 0·92 (95% CI 0·86-0·99; 37 studies; I2=35·6%, pheterogeneity=0·018). No significant effect of vitamin D supplementation on the risk of having one or more ARIs was observed for any of the subgroups defined by baseline 25(OH)D concentration. However, protective effects of supplementation were observed in trials in which vitamin D was given in a daily dosing regimen (OR 0·78 [95% CI 0·65-0·94]; 19 studies; I2=53·5%, pheterogeneity=0·003), at daily dose equivalents of 400-1000 IU (0·70 [0·55-0·89]; ten studies; I2=31·2%, pheterogeneity=0·16), for a duration of 12 months or less (0·82 [0·72-0·93]; 29 studies; I2=38·1%, pheterogeneity=0·021), and to participants aged 1·00-15·99 years at enrolment (0·71 [0·57-0·90]; 15 studies; I2=46·0%, pheterogeneity=0·027). No significant interaction between allocation to the vitamin D supplementation group versus the placebo group and dose, dose frequency, study duration, or age was observed. In addition, no significant difference in the proportion of participants who had at least one serious adverse event in the vitamin supplementation group compared with the placebo group was observed (0·97 [0·86-1·07]; 36 studies; I2=0·0%, pheterogeneity=0·99). Risk of bias within individual studies was assessed as being low for all but three trials.\n\nINTERPRETATION: Despite evidence of significant heterogeneity across trials, vitamin D supplementation was safe and overall reduced the risk of ARI compared with placebo, although the risk reduction was small. Protection was associated with administration of daily doses of 400-1000 IU for up to 12 months, and age at enrolment of 1·00-15·99 years. The relevance of these findings to COVID-19 is not known and requires further investigation.\n\nFUNDING: None.",
+        "plain_title": "Large Review Confirms Modest Protection from Vitamin D Supplements",
+        "plain_summary": "An updated review of randomized trials found that taking vitamin D supplements provided a small but real reduction in the risk of acute respiratory infections, supporting earlier findings that vitamin D can help prevent colds and similar illnesses.",
+        "selected": true,
+        "ranking": {
+          "score": 12,
+          "overlap": 3,
+          "strategies_matched": [
+            "Expanded search using synonyms for vitamin D and respiratory infections with focus on prevention",
+            "Targeted search for high-quality evidence (RCTs, meta-analyses, systematic reviews) on vitamin D and respiratory infections",
+            "Highly specific MeSH-based search for systematic reviews and meta-analyses on vitamin D supplementation for preventing respiratory infections"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis",
+          "Research Support, Non-U.S. Gov't",
+          "Systematic Review"
+        ],
+        "strategy_idx": [
+          1,
+          2,
+          3
+        ],
+        "positions": [
+          17,
+          7,
+          5
+        ]
+      },
+      {
+        "pmid": "38732592",
+        "doi": "10.3390/nu16091345",
+        "title": "The Efficacy of Multivitamin, Vitamin A, Vitamin B, Vitamin C, and Vitamin D Supplements in the Prevention and Management of COVID-19 and Long-COVID: An Updated Systematic Review and Meta-Analysis of Randomized Clinical Trials.",
+        "authors": [
+          "Sinopoli Alessandra",
+          "Sciurti Antonio",
+          "Isonne Claudia",
+          "Santoro Maria Mercedes",
+          "Baccolini Valentina"
+        ],
+        "journal": "Nutrients",
+        "year": 2024,
+        "abstract": "This review aims to evaluate the efficacy of any vitamin administration(s) in preventing and managing COVID-19 and/or long-COVID. Databases were searched up to May 2023 to identify randomized clinical trials comparing data on the effects of vitamin supplementation(s) versus placebo or standard of care on the two conditions of interest. Inverse-variance random-effects meta-analyses were conducted to estimate pooled risk ratios (RRs) and 95% confidence intervals (CIs) for all-cause mortality between supplemented and non-supplemented individuals. Overall, 37 articles were included: two regarded COVID-19 and long-COVID prevention and 35 records the COVID-19 management. The effects of vitamin D in preventing COVID-19 and long-COVID were contrasting. Similarly, no conclusion could be drawn on the efficacy of multivitamins, vitamin A, and vitamin B in COVID-19 management. A few positive findings were reported in some vitamin C trials but results were inconsistent in most outcomes, excluding all-cause mortality (RR = 0.84; 95% CI: 0.72-0.97). Vitamin D results were mixed in most aspects, including mortality, in which benefits were observed in regular administrations only (RR = 0.67; 95% CI: 0.49-0.91). Despite some benefits, results were mostly contradictory. Variety in recruitment and treatment protocols might explain this heterogeneity. Better-designed studies are needed to clarify these vitamins' potential effects against SARS-CoV-2.",
+        "plain_title": "Do Vitamins Help Prevent or Treat COVID-19?",
+        "plain_summary": "A review of 37 trials examining various vitamins (A, B, C, D, and multivitamins) for preventing or treating COVID-19 and long COVID found that, overall, vitamin supplements did not significantly reduce the risk of death, though some individual vitamins showed limited benefits in specific outcomes.",
+        "selected": true,
+        "ranking": {
+          "score": 10,
+          "overlap": 2,
+          "strategies_matched": [
+            "Expanded search using synonyms for vitamin D and respiratory infections with focus on prevention",
+            "Highly specific MeSH-based search for systematic reviews and meta-analyses on vitamin D supplementation for preventing respiratory infections"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review",
+          "Meta-Analysis"
+        ],
+        "strategy_idx": [
+          1,
+          3
+        ],
+        "positions": [
+          3,
+          20
+        ]
+      },
+      {
+        "pmid": "37686873",
+        "doi": "10.3390/nu15173842",
+        "title": "Infections and Autoimmunity-The Immune System and Vitamin D: A Systematic Review.",
+        "authors": [
+          "Wimalawansa Sunil J"
+        ],
+        "journal": "Nutrients",
+        "year": 2023,
+        "abstract": "Both 25-autoimmunity and(25(OH)D: calcifediol) and its active form, 1,25-dihydroxyvitamin D (1,25(OH)2D: calcitriol), play critical roles in protecting humans from invasive pathogens, reducing risks of autoimmunity, and maintaining health. Conversely, low 25(OH)D status increases susceptibility to infections and developing autoimmunity. This systematic review examines vitamin D's mechanisms and effects on enhancing innate and acquired immunity against microbes and preventing autoimmunity. The study evaluated the quality of evidence regarding biology, physiology, and aspects of human health on vitamin D related to infections and autoimmunity in peer-reviewed journal articles published in English. The search and analyses followed PRISMA guidelines. Data strongly suggested that maintaining serum 25(OH)D concentrations of more than 50 ng/mL is associated with significant risk reduction from viral and bacterial infections, sepsis, and autoimmunity. Most adequately powered, well-designed, randomized controlled trials with sufficient duration supported substantial benefits of vitamin D. Virtually all studies that failed to conclude benefits or were ambiguous had major study design errors. Treatment of vitamin D deficiency costs less than 0.01% of the cost of investigation of worsening comorbidities associated with hypovitaminosis D. Despite cost-benefits, the prevalence of vitamin D deficiency remains high worldwide. This was clear among those who died from COVID-19 in 2020/21-most had severe vitamin D deficiency. Yet, the lack of direction from health agencies and insurance companies on using vitamin D as an adjunct therapy is astonishing. Data confirmed that keeping an individual's serum 25(OH)D concentrations above 50 ng/mL (125 nmol/L) (and above 40 ng/mL in the population) reduces risks from community outbreaks, sepsis, and autoimmune disorders. Maintaining such concentrations in 97.5% of people is achievable through daily safe sun exposure (except in countries far from the equator during winter) or taking between 5000 and 8000 IU vitamin D supplements daily (average dose, for non-obese adults, ~70 to 90 IU/kg body weight). Those with gastrointestinal malabsorption, obesity, or on medications that increase the catabolism of vitamin D and a few other specific disorders require much higher intake. This systematic review evaluates non-classical actions of vitamin D, with particular emphasis on infection and autoimmunity related to the immune system.",
+        "plain_title": "How Vitamin D Helps the Immune System Fight Infections",
+        "plain_summary": "This review explains that vitamin D plays an important role in helping the body fight off infections and prevent the immune system from attacking itself, and that people with low vitamin D levels appear more vulnerable to infections and autoimmune diseases.",
+        "selected": true,
+        "ranking": {
+          "score": 10,
+          "overlap": 2,
+          "strategies_matched": [
+            "Expanded search using synonyms for vitamin D and respiratory infections with focus on prevention",
+            "Targeted search for high-quality evidence (RCTs, meta-analyses, systematic reviews) on vitamin D and respiratory infections"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Systematic Review",
+          "Journal Article"
+        ],
+        "strategy_idx": [
+          1,
+          2
+        ],
+        "positions": [
+          6,
+          3
+        ]
+      },
+      {
+        "pmid": "38828931",
+        "doi": "10.1210/clinem/dgae290",
+        "title": "Vitamin D for the Prevention of Disease: An Endocrine Society Clinical Practice Guideline.",
+        "authors": [
+          "Demay Marie B",
+          "Pittas Anastassios G",
+          "Bikle Daniel D",
+          "Diab Dima L",
+          "Kiely Mairead E",
+          "Lazaretti-Castro Marise",
+          "Lips Paul",
+          "Mitchell Deborah M",
+          "Murad M Hassan",
+          "Powers Shelley",
+          "Rao Sudhaker D",
+          "Scragg Robert",
+          "Tayek John A",
+          "Valent Amy M",
+          "Walsh Judith M E",
+          "McCartney Christopher R"
+        ],
+        "journal": "The Journal of clinical endocrinology and metabolism",
+        "year": 2024,
+        "abstract": "BACKGROUND: Numerous studies demonstrate associations between serum concentrations of 25-hydroxyvitamin D (25[OH]D) and a variety of common disorders, including musculoskeletal, metabolic, cardiovascular, malignant, autoimmune, and infectious diseases. Although a causal link between serum 25(OH)D concentrations and many disorders has not been clearly established, these associations have led to widespread supplementation with vitamin D and increased laboratory testing for 25(OH)D in the general population. The benefit-risk ratio of this increase in vitamin D use is not clear, and the optimal vitamin D intake and the role of testing for 25(OH)D for disease prevention remain uncertain.\n\nOBJECTIVE: To develop clinical guidelines for the use of vitamin D (cholecalciferol [vitamin D3] or ergocalciferol [vitamin D2]) to lower the risk of disease in individuals without established indications for vitamin D treatment or 25(OH)D testing.\n\nMETHODS: A multidisciplinary panel of clinical experts, along with experts in guideline methodology and systematic literature review, identified and prioritized 14 clinically relevant questions related to the use of vitamin D and 25(OH)D testing to lower the risk of disease. The panel prioritized randomized placebo-controlled trials in general populations (without an established indication for vitamin D treatment or 25[OH]D testing), evaluating the effects of empiric vitamin D administration throughout the lifespan, as well as in select conditions (pregnancy and prediabetes). The panel defined \"empiric supplementation\" as vitamin D intake that (a) exceeds the Dietary Reference Intakes (DRI) and (b) is implemented without testing for 25(OH)D. Systematic reviews queried electronic databases for publications related to these 14 clinical questions. The Grading of Recommendations, Assessment, Development, and Evaluation (GRADE) methodology was used to assess the certainty of evidence and guide recommendations. The approach incorporated perspectives from a patient representative and considered patient values, costs and resources required, acceptability and feasibility, and impact on health equity of the proposed recommendations. The process to develop this clinical guideline did not use a risk assessment framework and was not designed to replace current DRI for vitamin D.\n\nRESULTS: The panel suggests empiric vitamin D supplementation for children and adolescents aged 1 to 18 years to prevent nutritional rickets and because of its potential to lower the risk of respiratory tract infections; for those aged 75 years and older because of its potential to lower the risk of mortality; for those who are pregnant because of its potential to lower the risk of preeclampsia, intra-uterine mortality, preterm birth, small-for-gestational-age birth, and neonatal mortality; and for those with high-risk prediabetes because of its potential to reduce progression to diabetes. Because the vitamin D doses in the included clinical trials varied considerably and many trial participants were allowed to continue their own vitamin D-containing supplements, the optimal doses for empiric vitamin D supplementation remain unclear for the populations considered. For nonpregnant people older than 50 years for whom vitamin D is indicated, the panel suggests supplementation via daily administration of vitamin D, rather than intermittent use of high doses. The panel suggests against empiric vitamin D supplementation above the current DRI to lower the risk of disease in healthy adults younger than 75 years. No clinical trial evidence was found to support routine screening for 25(OH)D in the general population, nor in those with obesity or dark complexion, and there was no clear evidence defining the optimal target level of 25(OH)D required for disease prevention in the populations considered; thus, the panel suggests against routine 25(OH)D testing in all populations considered. The panel judged that, in most situations, empiric vitamin D supplementation is inexpensive, feasible, acceptable to both healthy individuals and health care professionals, and has no negative effect on health equity.\n\nCONCLUSION: The panel suggests empiric vitamin D for those aged 1 to 18 years and adults over 75 years of age, those who are pregnant, and those with high-risk prediabetes. Due to the scarcity of natural food sources rich in vitamin D, empiric supplementation can be achieved through a combination of fortified foods and supplements that contain vitamin D. Based on the absence of supportive clinical trial evidence, the panel suggests against routine 25(OH)D testing in the absence of established indications. These recommendations are not meant to replace the current DRIs for vitamin D, nor do they apply to people with established indications for vitamin D treatment or 25(OH)D testing. Further research is needed to determine optimal 25(OH)D levels for specific health benefits.",
+        "plain_title": "Medical Guidelines on Who Should Take Vitamin D Supplements",
+        "plain_summary": "The Endocrine Society created updated guidelines noting that while low vitamin D is linked to many diseases including infections, the evidence for widespread supplementation in the general population is uncertain, and they recommend targeted supplementation for specific groups rather than universal use.",
+        "selected": true,
+        "ranking": {
+          "score": 8,
+          "overlap": 1,
+          "strategies_matched": [
+            "Expanded search using synonyms for vitamin D and respiratory infections with focus on prevention"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article",
+          "Practice Guideline",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          1
+        ]
+      },
+      {
+        "pmid": "33472840",
+        "doi": "10.1136/bmjgh-2020-003176",
+        "title": "Effect of micronutrient supplements on influenza and other respiratory tract infections among adults: a systematic review and meta-analysis.",
+        "authors": [
+          "Abioye Ajibola Ibraheem",
+          "Bromage Sabri",
+          "Fawzi Wafaie"
+        ],
+        "journal": "BMJ global health",
+        "year": 2021,
+        "abstract": "Acute respiratory tract infections (ARIs) are a leading cause of ill-health and death globally. Individual or multiple micronutrients have been shown to modulate immune function and affect the risk and severity of a number of infectious diseases. We systematically reviewed the evidence on the impact of micronutrient supplements to reduce the occurrence of ARIs and shorten the duration of ARI symptoms among adults. Random effects meta-analyses were conducted to estimate the pooled effects of vitamin D, vitamin C, zinc and multiple micronutrient supplementation (MMS) on the occurrence of ARIs and the duration of ARI symptoms. Vitamin D supplementation reduced the risk of ARI (risk ratio (RR)=0.97; 95% CI 0.94 to 1.00; p=0.028) and shortened the duration of symptoms (per cent difference: -6% (95% CI -9% to -2%; p=0.003)). The RR of vitamin D to prevent ARI was farther from the null when diagnosis was based on clinical diagnosis or laboratory testing, compared with self-report and when the loading dose was <60 000 IU. Vitamin C supplementation reduced the risk of ARIs (RR=0.96; 95% CI 0.93 to 0.99; p=0.01) and shortened the duration of symptoms (per cent difference: -9% (95% CI -16% to -2%; p=0.014)). The effect of vitamin C on preventing ARI was stronger among men and in middle-income countries, compared with women and high-income countries, respectively. Zinc supplementation did not reduce the risk of ARIs but shortened the duration of symptoms substantially (per cent difference: -47% (95% CI -73% to -21%; p=0.0004)). Our synthesis of global evidence from randomised controlled trials indicates that micronutrient supplements including zinc, vitamins C and D, and multiple micronutrient supplements may be modestly effective in preventing ARIs and improving their clinical course. Further research is warranted to better understand the effectiveness that individual or multiple micronutrients have on SARS-CoV-2 infection and treatment outcomes.",
+        "plain_title": "Which Supplements Best Prevent Respiratory Infections in Adults?",
+        "plain_summary": "A review of studies on vitamins and minerals found that vitamin D and vitamin C supplements modestly reduced the occurrence of respiratory infections in adults, while zinc helped shorten symptom duration, but the overall quality of evidence was low to moderate.",
+        "selected": true,
+        "ranking": {
+          "score": 8,
+          "overlap": 2,
+          "strategies_matched": [
+            "Expanded search using synonyms for vitamin D and respiratory infections with focus on prevention",
+            "Targeted search for high-quality evidence (RCTs, meta-analyses, systematic reviews) on vitamin D and respiratory infections"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis",
+          "Systematic Review"
+        ],
+        "strategy_idx": [
+          1,
+          2
+        ],
+        "positions": [
+          18,
+          11
+        ]
+      },
+      {
+        "pmid": "40969681",
+        "doi": "10.1016/j.eclinm.2025.103479",
+        "title": "Comparative effectiveness of oral nutritional supplements in preventing respiratory tract infections among adults: a systematic review and network meta-analysis.",
+        "authors": [
+          "Zhu Zhixin",
+          "Zhu Xiaoxia",
+          "Chu Yanru",
+          "Zhang Bing",
+          "Chen Yi"
+        ],
+        "journal": "EClinicalMedicine",
+        "year": 2025,
+        "abstract": "BACKGROUND: Different nutritional supplements may prevent respiratory tract infections (RTIs) in adults, but their comparative effectiveness remains unclear. We aimed to evaluate the effectiveness of oral nutritional supplements in preventing RTIs and reducing their symptom duration and severity.\n\nMETHODS: In this systematic review and network meta-analysis, we searched for randomized controlled trials (RCTs) assessing oral micronutrients, flavonoids, probiotics, or synbiotics in adults for the prevention of RTIs in PubMed, Embase, Cochrane Central Register, and ClinicalTrials.gov from inception to February 25, 2025. Studies with participants under 18 years, immunodeficiencies, non-oral administration, or a therapeutic rather than preventive focus were excluded. We performed network meta-analyses (NMA) using frequentist random-effects models to compare interventions through direct and indirect evidence. We used the CINeMA framework to rate the overall certainty of evidence. The primary outcome was the incidence of RTIs. The secondary outcomes were upper respiratory tract infections (URTIs) or common cold, COVID-19 or influenza, RTI symptom duration, RTI symptom severity, and adverse events. The study is registered with PROSPERO, CRD420250653276.\n\nFINDINGS: We identified 120 eligible trials, among which 107 trials involving 101,751 adults were included in the network meta-analysis. Compared with placebo, catechin (RR = 0.79, 95% CI: 0.66, 0.95; n = 5; high certainty), Bifidobacterium animalis (RR = 0.79, 95% CI: 0.63, 0.99; n = 3; moderate certainty), and multi-strain probiotics (RR = 0.90, 95% CI: 0.82, 0.98; n = 16; moderate certainty) were the most effective interventions for reducing RTI incidence. For COVID-19 or influenza prevention, high-dose vitamin D was highly effective (RR = 0.66, 95% CI: 0.51, 0.86; n = 9; moderate certainty). Catechin (MD = -2.64 days/RTI, 95% CI: -4.92, -0.35; n = 2; moderate certainty) and multi-strain probiotics (MD = -0.97 days/RTI, 95% CI: -1.78, -0.16; n = 4; high certainty) most effectively shortened RTI symptom duration. Multi-strain probiotics (SMD = -0.33, 95% CI: -0.51, -0.14; n = 6; moderate certainty) also showed superior performance in alleviating RTI symptom severity. None of the interventions increased the risk of adverse events versus placebo.\n\nINTERPRETATION: Based on the current evidence, catechin, B. animalis, and multi-strain probiotics show relatively better effects in preventing adult RTI compared to other nutritional supplements. For COVID-19 or influenza prevention, high-dose vitamin D supplementation may be more effective. This study is limited by the lack of head-to-head comparisons between interventions (particularly across major categories) and heterogeneity from varied administration methods (e.g., capsules, beverages, mouthwashes), impacting the consistency and overall estimation of the NMA. Future high-quality studies are needed to provide direct evidence on the optimal intervention type, frequency, and form/dose of administration to guide clinical practice effectively.\n\nFUNDING: This work was supported by the Ningbo Top Medical and Health Research Program and the Zhejiang Provincial Disease Prevention and Control Science and Technology Plan.",
+        "plain_title": "Comparing Supplements for Preventing Respiratory Infections in Adults",
+        "plain_summary": "A comprehensive comparison of various oral supplements — including vitamins, plant-based compounds, and probiotics — found that several types may help prevent respiratory infections in adults, but the review aimed to determine which ones work best relative to each other.",
+        "selected": true,
+        "ranking": {
+          "score": 7,
+          "overlap": 1,
+          "strategies_matched": [
+            "Broad search for vitamin D and cold prevention to capture a wide range of relevant articles"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article"
+        ],
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          2
+        ]
+      },
+      {
+        "pmid": "33481482",
+        "doi": "10.1249/MSS.0000000000002604",
+        "title": "Influence of Vitamin D Supplementation by Simulated Sunlight or Oral D3 on Respiratory Infection during Military Training.",
+        "authors": [
+          "Harrison Sophie E",
+          "Oliver Samuel J",
+          "Kashi Daniel S",
+          "Carswell Alexander T",
+          "Edwards Jason P",
+          "Wentz Laurel M",
+          "Roberts Ross",
+          "Tang Jonathan C Y",
+          "Izard Rachel M",
+          "Jackson Sarah",
+          "Allan Donald",
+          "Rhodes Lesley E",
+          "Fraser William D",
+          "Greeves Julie P",
+          "Walsh Neil P"
+        ],
+        "journal": "Medicine and science in sports and exercise",
+        "year": 2021,
+        "abstract": "PURPOSE: This study aimed to determine the relationship between vitamin D status and upper respiratory tract infection (URTI) of physically active men and women across seasons (study 1) and then to investigate the effects on URTI and mucosal immunity of achieving vitamin D sufficiency (25(OH)D ≥50 nmol·L-1) by a unique comparison of safe, simulated sunlight or oral D3 supplementation in winter (study 2).\n\nMETHODS: In study 1, 1644 military recruits were observed across basic military training. In study 2, a randomized controlled trial, 250 men undertaking military training received placebo, simulated sunlight (1.3× standard erythemal dose, three times per week for 4 wk and then once per week for 8 wk), or oral vitamin D3 (1000 IU·d-1 for 4 wk and then 400 IU·d-1 for 8 wk). URTI was diagnosed by a physician (study 1) and by using the Jackson common cold questionnaire (study 2). Serum 25(OH)D, salivary secretory immunoglobulin A (SIgA), and cathelicidin were assessed by liquid chromatography-mass spectrometry LC-MS/MS and enzyme-linked immunosorbent assay.\n\nRESULTS: In study 1, only 21% of recruits were vitamin D sufficient during winter. Vitamin D-sufficient recruits were 40% less likely to suffer URTI than recruits with 25(OH)D <50 nmol·L-1 (OR = 0.6, 95% confidence interval = 0.4-0.9), an association that remained after accounting for sex and smoking. Each URTI caused, on average, three missed training days. In study 2, vitamin D supplementation strategies were similarly effective to achieve vitamin D sufficiency in almost all (≥95%). Compared with placebo, vitamin D supplementation reduced the severity of peak URTI symptoms by 15% and days with URTI by 36% (P < 0.05). These reductions were similar with both vitamin D strategies (P > 0.05). Supplementation did not affect salivary secretory immunoglobulin A or cathelicidin.\n\nCONCLUSION: Vitamin D sufficiency reduced the URTI burden during military training.",
+        "plain_title": "Vitamin D and Colds During Intense Military Training",
+        "plain_summary": "A study of military recruits found that those with low vitamin D levels got more upper respiratory infections, and a follow-up trial tested whether raising vitamin D levels through supplements or simulated sunlight during winter training could reduce colds and boost immune defenses in the nose and throat.",
+        "selected": true,
+        "ranking": {
+          "score": 6,
+          "overlap": 1,
+          "strategies_matched": [
+            "Broad search for vitamin D and cold prevention to capture a wide range of relevant articles"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          3
+        ]
+      }
+    ],
+    "prompts": {
+      "search_system": "You are a PubMed search expert. Your job is to turn a plain-English health or science question into optimized PubMed search queries.\n\n## Rules\n1. Generate 3-4 PubMed search queries, from broad to specific.\n2. Use proper MeSH terms and boolean operators (AND, OR) where helpful.\n3. Include relevant synonyms and alternative phrasings.\n4. Prioritize queries that will find systematic reviews, meta-analyses, and RCTs when relevant.\n5. Keep queries concise but effective.\n\n## Output Format\nReturn ONLY a JSON array of objects. No markdown, no explanation, no code fences.\nEach object has:\n- \"query\": the PubMed search string\n- \"strategy\": a brief plain-English description of what this query targets (1 sentence)\n\nExample output:\n[{\"query\":\"vitamin D supplementation respiratory infection children\",\"strategy\":\"Broad search for vitamin D and respiratory infections in children\"},{\"query\":\"(vitamin D OR cholecalciferol) AND (respiratory tract infection OR RTI OR common cold) AND (child OR pediatric) AND (randomized controlled trial OR meta-analysis)\",\"strategy\":\"Targeted search for high-quality trials on vitamin D and respiratory infections in kids\"}]",
+      "summary_system": "You translate medical research paper titles and abstracts into plain language for people without medical training.\n\n## Rules\n1. Use no medical jargon. If a technical concept is essential, explain it in parentheses.\n2. Be specific about findings (numbers, effects) when the abstract provides them.\n3. Each summary should help a non-expert decide if this paper is relevant to their question.\n\n## Output Format\nReturn ONLY a JSON array in the same order as the papers provided. No markdown, no explanation.\nEach object has:\n- \"plain_title\": A clear, jargon-free title (5-12 words)\n- \"plain_summary\": One sentence explaining the key finding or purpose in everyday language",
+      "synthesis_system": "You are a research translator for Tables Turned, a tool that helps regular people understand PubMed research.\n\n## Your Rules\n\n1. **Answer the question first.** Open with a direct, clear answer in 2-3 sentences based on the evidence. This is the most important part.\n2. **Every claim needs receipts.** Cite as [PMID: XXXXX]. If you cannot link a claim to a provided paper, mark it [UNWITNESSED].\n3. **Surface contradictions.** If papers disagree, say so plainly.\n4. **Write in common tongue.** No jargon. If a technical term is unavoidable, translate it in parentheses. Short sentences.\n5. **Do not patronize.** The reader is intelligent and busy.\n6. **State confidence honestly.** Strong, mixed, or thin with reasons.\n7. **Do not hallucinate.** Never invent findings. Never cite a PMID not provided to you.\n\n## Output Format\n\n**CRITICAL: The entire brief must fit on ONE printed page. Be concise. No filler. No padding. Every sentence must earn its place.**\n\nProduce a markdown document with exactly these sections:\n\n# [Short title from the question]\n\n**Question:** [question] · **Context:** [context]\n\n---\n\n## The short answer\n\n[2-3 sentences directly answering the user's question. Lead with what matters most to their decision. Cite key PMIDs inline.]\n\n## Key findings\n\n[4-6 bullet points maximum. Each bullet states one finding in plain language and cites [PMID: XXXXX]. If papers contradict each other, say so in the bullet.]\n\n## What is unknown\n\n[2-3 bullet points: gaps the papers do not address that the reader likely cares about.]\n\n## Confidence: [Low / Medium / High]\n\n[One sentence: why, based on study count, size, consistency, and design quality.]\n\n---\n\n*Generated by Tables Turned. Receipts only.*",
+      "synthesis_user_message": "**Question:** Does vitamin D prevent colds?\n**Context:** Deciding whether to give my family vitamin D supplements this winter.\n\n---\n\n**Papers provided (12):**\n\n### PMID: 28202713\n**Title:** Vitamin D supplementation to prevent acute respiratory tract infections: systematic review and meta-analysis of individual participant data.\n**Authors:** Martineau Adrian R, Jolliffe David A, Hooper Richard L, Greenberg Lauren, Aloia John F et al.\n**Journal:** BMJ (Clinical research ed.) (2017)\n**Abstract:**\nObjectives To assess the overall effect of vitamin D supplementation on risk of acute respiratory tract infection, and to identify factors modifying this effect.Design Systematic review and meta-analysis of individual participant data (IPD) from randomised controlled trials.Data sources Medline, Embase, the Cochrane Central Register of Controlled Trials, Web of Science, ClinicalTrials.gov, and the International Standard Randomised Controlled Trials Number registry from inception to December 2015.Eligibility criteria for study selection Randomised, double blind, placebo controlled trials of supplementation with vitamin D3 or vitamin D2 of any duration were eligible for inclusion if they had been approved by a research ethics committee and if data on incidence of acute respiratory tract infection were collected prospectively and prespecified as an efficacy outcome.Results 25 eligible randomised controlled trials (total 11 321 participants, aged 0 to 95 years) were identified. IPD were obtained for 10 933 (96.6%) participants. Vitamin D supplementation reduced the risk of acute respiratory tract infection among all participants (adjusted odds ratio 0.88, 95% confidence interval 0.81 to 0.96; P for heterogeneity <0.001). In subgroup analysis, protective effects were seen in those receiving daily or weekly vitamin D without additional bolus doses (adjusted odds ratio 0.81, 0.72 to 0.91) but not in those receiving one or more bolus doses (adjusted odds ratio 0.97, 0.86 to 1.10; P for interaction=0.05). Among those receiving daily or weekly vitamin D, protective effects were stronger in those with baseline 25-hydroxyvitamin D levels <25 nmol/L (adjusted odds ratio 0.30, 0.17 to 0.53) than in those with baseline 25-hydroxyvitamin D levels ≥25 nmol/L (adjusted odds ratio 0.75, 0.60 to 0.95; P for interaction=0.006). Vitamin D did not influence the proportion of participants experiencing at least one serious adverse event (adjusted odds ratio 0.98, 0.80 to 1.20, P=0.83). The body of evidence contributing to these analyses was assessed as being of high quality.Conclusions Vitamin D supplementation was safe and it protected against acute respiratory tract infection overall. Patients who were very vitamin D deficient and those not receiving bolus doses experienced the most benefit.Systematic review registration PROSPERO CRD42014013953.\n\n---\n\n### PMID: 39993397\n**Title:** Vitamin D supplementation to prevent acute respiratory infections: systematic review and meta-analysis of stratified aggregate data.\n**Authors:** Jolliffe David A, Camargo Carlos A, Sluyter John D, Aglipay Mary, Aloia John F et al.\n**Journal:** The lancet. Diabetes & endocrinology (2025)\n**Abstract:**\nBACKGROUND: A 2021 meta-analysis of 37 randomised controlled trials (RCTs) of vitamin D supplementation for prevention of acute respiratory infections (ARIs) revealed a statistically significant protective effect of the intervention (odds ratio [OR] 0·92 [95% CI 0·86 to 0·99]). Since then, six eligible RCTs have been completed, including one large trial (n=15 804). We aimed to re-examine the link between vitamin D supplementation and prevention of ARIs.\n\nMETHODS: Updated systematic review and meta-analysis of data from RCTs of vitamin D for ARI prevention using a random effects model. Subgroup analyses were done to determine whether effects of vitamin D on risk of ARI varied according to baseline 25-hydroxyvitamin D (25[OH]D) concentration, dosing regimen, or age. We searched MEDLINE, EMBASE, the Cochrane Central Register of Controlled Trials, Web of Science, and the ClinicalTrials.gov between May 1, 2020 (end-date of search of our previous meta-analysis) and April 30, 2024. No language restrictions were imposed. Double-blind RCTs supplementing vitamin D for any duration, with placebo or lower-dose vitamin D control, were eligible if approved by a Research Ethics Committee and if ARI incidence was collected prospectively and pre-specified as an efficacy outcome. Aggregate data, stratified by baseline 25(OH)D concentration and age, were obtained from study authors. The study was registered with PROSPERO (no. CRD42024527191).\n\nFINDINGS: We identified six new RCTs (19 337 participants). Data were obtained for 16 085 (83·2%) participants in three new RCTs and combined with data from 48 488 participants in 43 RCTs identified in our previous meta-analysis. For the primary comparison of any vitamin D versus placebo, the intervention did not statistically significantly affect overall ARI risk (OR 0·94 [95% CI 0·88-1·00], p=0·057; 40 studies; 61 589 participants; I2=26·4%). Pre-specified subgroup analysis did not reveal evidence of effect modification by age, baseline vitamin D status, dosing frequency, or dose size. Vitamin D did not influence the proportion of participants experiencing at least one serious adverse event (OR 0·96 [95% CI 0·90-1·04]; 38 studies; I2=0·0%). A funnel plot showed left-sided asymmetry (p=0·0020, Egger's test).\n\nINTERPRETATION: This updated meta-analysis yielded a similar point estimate for the overall effect of vitamin D supplementation on ARI risk to that obtained previously, but the 95% CI for this effect estimate now includes 1·00, indicating no statistically significant protection.\n\nFUNDING: None.\n\n---\n\n### PMID: 32342851\n**Title:** Zinc Supplementation Reduces Common Cold Duration among Healthy Adults: A Systematic Review of Randomized Controlled Trials with Micronutrients Supplementation.\n**Authors:** Wang Min Xian, Win Shwe Sin, Pang Junxiong\n**Journal:** The American journal of tropical medicine and hygiene (2020)\n**Abstract:**\nThe common cold had resulted in significant economic and social burden worldwide. The effect of vitamin C on preventing common cold in healthy adults has been investigated extensively, but not that of other micronutrients. Thus, we aim to assess the effects of providing micronutrients singly through oral means, on cold incidence, and/or management (in terms of cold duration and symptom severity) in healthy adults from systematically searched randomized controlled trials. From four electronic databases, 660 identified studies were screened and data were extracted from 20 studies (zinc, 10; vitamin D, 8; and vitamins A and E, 2). The quality of selected studies was assessed using the Cochrane risk of bias tool and certainty in the outcomes was assessed with the Grading of Recommendations Assessment, Development and Evaluation approach. The review found that micronutrients supplementation, except vitamin C, may not prevent cold incidence or reduce symptom severity among healthy adults. However, zinc supplementation was observed to potentially reduce cold duration by 2.25 days (when zinc is provided singly, 95% CI: -3.39, -1.12). This suggests that zinc supplementation may reduce the overall burden due to common cold among healthy adults.\n\n---\n\n### PMID: 30675873\n**Title:** Vitamin D supplementation to prevent acute respiratory infections: individual participant data meta-analysis.\n**Authors:** Martineau Adrian R, Jolliffe David A, Greenberg Lauren, Aloia John F, Bergman Peter et al.\n**Journal:** Health technology assessment (Winchester, England) (2019)\n**Abstract:**\nBACKGROUND: Randomised controlled trials (RCTs) exploring the potential of vitamin D to prevent acute respiratory infections have yielded mixed results. Individual participant data (IPD) meta-analysis has the potential to identify factors that may explain this heterogeneity.\n\nOBJECTIVES: To assess the overall effect of vitamin D supplementation on the risk of acute respiratory infections (ARIs) and to identify factors modifying this effect.\n\nDATA SOURCES: MEDLINE, EMBASE, the Cochrane Central Register of Controlled Trials (CENTRAL), Web of Science, ClinicalTrials.gov and the International Standard Randomised Controlled Trials Number (ISRCTN) registry.\n\nSTUDY SELECTION: Randomised, double-blind, placebo-controlled trials of supplementation with vitamin D3 or vitamin D2 of any duration having incidence of acute respiratory infection as a prespecified efficacy outcome were selected.\n\nSTUDY APPRAISAL: Study quality was assessed using the Cochrane Collaboration Risk of Bias tool to assess sequence generation, allocation concealment, blinding of participants, personnel and outcome assessors, completeness of outcome data, evidence of selective outcome reporting and other potential threats to validity.\n\nRESULTS: We identified 25 eligible RCTs (a total of 11,321 participants, aged from 0 to 95 years). IPD were obtained for 10,933 out of 11,321 (96.6%) participants. Vitamin D supplementation reduced the risk of ARI among all participants [adjusted odds ratio (aOR) 0.88, 95% confidence interval (CI) 0.81 to 0.96; heterogeneity p < 0.001]. Subgroup analysis revealed that protective effects were seen in individuals receiving daily or weekly vitamin D without additional bolus doses (aOR 0.81, 95% CI 0.72 to 0.91), but not in those receiving one or more bolus doses (aOR 0.97, 95% CI 0.86 to 1.10; p = 0.05). Among those receiving daily or weekly vitamin D, protective effects of vitamin D were stronger in individuals with a baseline 25-hydroxyvitamin D [25(OH)D] concentration of < 25 nmol/l (aOR 0.30, 95% CI 0.17 to 0.53) than in those with a baseline 25(OH)D concentration of ≥ 25 nmol/l (aOR 0.75, 95% CI 0.60 to 0.95; p = 0.006). Vitamin D did not influence the proportion of participants experiencing at least one serious adverse event (aOR 0.98, 95% CI 0.80 to 1.20; p = 0.83). The body of evidence contributing to these analyses was assessed as being of high quality.\n\nLIMITATIONS: Our study had limited power to detect the effects of vitamin D supplementation on the risk of upper versus lower respiratory infection, analysed separately.\n\nCONCLUSIONS: Vitamin D supplementation was safe, and it protected against ARIs overall. Very deficient individuals and those not receiving bolus doses experienced the benefit. Incorporation of additional IPD from ongoing trials in the field has the potential to increase statistical power for analyses of secondary outcomes.\n\nSTUDY REGISTRATION: This study is registered as PROSPERO CRD42014013953.\n\nFUNDING: The National Institute for Health Research Health Technology Assessment programme.\n\n---\n\n### PMID: 28357899\n**Title:** [Not Available].\n**Authors:** Steurer Johann\n**Journal:** Praxis (2017)\n**Abstract:** Not available.\n\n---\n\n### PMID: 33798465\n**Title:** Vitamin D supplementation to prevent acute respiratory infections: a systematic review and meta-analysis of aggregate data from randomised controlled trials.\n**Authors:** Jolliffe David A, Camargo Carlos A, Sluyter John D, Aglipay Mary, Aloia John F et al.\n**Journal:** The lancet. Diabetes & endocrinology (2021)\n**Abstract:**\nBACKGROUND: A 2017 meta-analysis of data from 25 randomised controlled trials (RCTs) of vitamin D supplementation for the prevention of acute respiratory infections (ARIs) revealed a protective effect of this intervention. We aimed to examine the link between vitamin D supplementation and prevention of ARIs in an updated meta-analysis.\n\nMETHODS: For this systematic review and meta-analysis, we searched MEDLINE, Embase, the Cochrane Central Register of Controlled Trials, Web of Science, and the ClinicalTrials.gov registry for studies listed from database inception to May 1, 2020. Double-blind RCTs of vitamin D3, vitamin D2, or 25-hydroxyvitamin D (25[OH]D) supplementation for any duration, with a placebo or low-dose vitamin D control, were eligible if they had been approved by a research ethics committee, and if ARI incidence was collected prospectively and prespecified as an efficacy outcome. Studies reporting results of long-term follow-up of primary RCTs were excluded. Aggregated study-level data, stratified by baseline 25(OH)D concentration and age, were obtained from study authors. Using the proportion of participants in each trial who had one or more ARIs, we did a random-effects meta-analysis to obtain pooled odds ratios (ORs) and 95% CIs to estimate the effect of vitamin D supplementation on the risk of having one or more ARIs (primary outcome) compared with placebo. Subgroup analyses were done to estimate whether the effects of vitamin D supplementation on the risk of ARI varied according to baseline 25(OH)D concentration (<25 nmol/L vs 25·0-49·9 nmol/L vs 50·0-74·9 nmol/L vs >75·0 nmol/L), vitamin D dose (daily equivalent of <400 international units [IU] vs 400-1000 IU vs 1001-2000 IU vs >2000 IU), dosing frequency (daily vs weekly vs once per month to once every 3 months), trial duration (≤12 months vs >12 months), age at enrolment (<1·00 years vs 1·00-15·99 years vs 16·00-64·99 years vs ≥65·00 years), and presence versus absence of airway disease (ie, asthma only, COPD only, or unrestricted). Risk of bias was assessed with the Cochrane Collaboration Risk of Bias Tool. The study was registered with PROSPERO, CRD42020190633.\n\nFINDINGS: We identified 1528 articles, of which 46 RCTs (75 541 participants) were eligible. Data for the primary outcome were obtained for 48 488 (98·1%) of 49 419 participants (aged 0-95 years) in 43 studies. A significantly lower proportion of participants in the vitamin D supplementation group had one or more ARIs (14 332 [61·3%] of 23 364 participants) than in the placebo group (14 217 [62·3%] of 22 802 participants), with an OR of 0·92 (95% CI 0·86-0·99; 37 studies; I2=35·6%, pheterogeneity=0·018). No significant effect of vitamin D supplementation on the risk of having one or more ARIs was observed for any of the subgroups defined by baseline 25(OH)D concentration. However, protective effects of supplementation were observed in trials in which vitamin D was given in a daily dosing regimen (OR 0·78 [95% CI 0·65-0·94]; 19 studies; I2=53·5%, pheterogeneity=0·003), at daily dose equivalents of 400-1000 IU (0·70 [0·55-0·89]; ten studies; I2=31·2%, pheterogeneity=0·16), for a duration of 12 months or less (0·82 [0·72-0·93]; 29 studies; I2=38·1%, pheterogeneity=0·021), and to participants aged 1·00-15·99 years at enrolment (0·71 [0·57-0·90]; 15 studies; I2=46·0%, pheterogeneity=0·027). No significant interaction between allocation to the vitamin D supplementation group versus the placebo group and dose, dose frequency, study duration, or age was observed. In addition, no significant difference in the proportion of participants who had at least one serious adverse event in the vitamin supplementation group compared with the placebo group was observed (0·97 [0·86-1·07]; 36 studies; I2=0·0%, pheterogeneity=0·99). Risk of bias within individual studies was assessed as being low for all but three trials.\n\nINTERPRETATION: Despite evidence of significant heterogeneity across trials, vitamin D supplementation was safe and overall reduced the risk of ARI compared with placebo, although the risk reduction was small. Protection was associated with administration of daily doses of 400-1000 IU for up to 12 months, and age at enrolment of 1·00-15·99 years. The relevance of these findings to COVID-19 is not known and requires further investigation.\n\nFUNDING: None.\n\n---\n\n### PMID: 38732592\n**Title:** The Efficacy of Multivitamin, Vitamin A, Vitamin B, Vitamin C, and Vitamin D Supplements in the Prevention and Management of COVID-19 and Long-COVID: An Updated Systematic Review and Meta-Analysis of Randomized Clinical Trials.\n**Authors:** Sinopoli Alessandra, Sciurti Antonio, Isonne Claudia, Santoro Maria Mercedes, Baccolini Valentina\n**Journal:** Nutrients (2024)\n**Abstract:**\nThis review aims to evaluate the efficacy of any vitamin administration(s) in preventing and managing COVID-19 and/or long-COVID. Databases were searched up to May 2023 to identify randomized clinical trials comparing data on the effects of vitamin supplementation(s) versus placebo or standard of care on the two conditions of interest. Inverse-variance random-effects meta-analyses were conducted to estimate pooled risk ratios (RRs) and 95% confidence intervals (CIs) for all-cause mortality between supplemented and non-supplemented individuals. Overall, 37 articles were included: two regarded COVID-19 and long-COVID prevention and 35 records the COVID-19 management. The effects of vitamin D in preventing COVID-19 and long-COVID were contrasting. Similarly, no conclusion could be drawn on the efficacy of multivitamins, vitamin A, and vitamin B in COVID-19 management. A few positive findings were reported in some vitamin C trials but results were inconsistent in most outcomes, excluding all-cause mortality (RR = 0.84; 95% CI: 0.72-0.97). Vitamin D results were mixed in most aspects, including mortality, in which benefits were observed in regular administrations only (RR = 0.67; 95% CI: 0.49-0.91). Despite some benefits, results were mostly contradictory. Variety in recruitment and treatment protocols might explain this heterogeneity. Better-designed studies are needed to clarify these vitamins' potential effects against SARS-CoV-2.\n\n---\n\n### PMID: 37686873\n**Title:** Infections and Autoimmunity-The Immune System and Vitamin D: A Systematic Review.\n**Authors:** Wimalawansa Sunil J\n**Journal:** Nutrients (2023)\n**Abstract:**\nBoth 25-autoimmunity and(25(OH)D: calcifediol) and its active form, 1,25-dihydroxyvitamin D (1,25(OH)2D: calcitriol), play critical roles in protecting humans from invasive pathogens, reducing risks of autoimmunity, and maintaining health. Conversely, low 25(OH)D status increases susceptibility to infections and developing autoimmunity. This systematic review examines vitamin D's mechanisms and effects on enhancing innate and acquired immunity against microbes and preventing autoimmunity. The study evaluated the quality of evidence regarding biology, physiology, and aspects of human health on vitamin D related to infections and autoimmunity in peer-reviewed journal articles published in English. The search and analyses followed PRISMA guidelines. Data strongly suggested that maintaining serum 25(OH)D concentrations of more than 50 ng/mL is associated with significant risk reduction from viral and bacterial infections, sepsis, and autoimmunity. Most adequately powered, well-designed, randomized controlled trials with sufficient duration supported substantial benefits of vitamin D. Virtually all studies that failed to conclude benefits or were ambiguous had major study design errors. Treatment of vitamin D deficiency costs less than 0.01% of the cost of investigation of worsening comorbidities associated with hypovitaminosis D. Despite cost-benefits, the prevalence of vitamin D deficiency remains high worldwide. This was clear among those who died from COVID-19 in 2020/21-most had severe vitamin D deficiency. Yet, the lack of direction from health agencies and insurance companies on using vitamin D as an adjunct therapy is astonishing. Data confirmed that keeping an individual's serum 25(OH)D concentrations above 50 ng/mL (125 nmol/L) (and above 40 ng/mL in the population) reduces risks from community outbreaks, sepsis, and autoimmune disorders. Maintaining such concentrations in 97.5% of people is achievable through daily safe sun exposure (except in countries far from the equator during winter) or taking between 5000 and 8000 IU vitamin D supplements daily (average dose, for non-obese adults, ~70 to 90 IU/kg body weight). Those with gastrointestinal malabsorption, obesity, or on medications that increase the catabolism of vitamin D and a few other specific disorders require much higher intake. This systematic review evaluates non-classical actions of vitamin D, with particular emphasis on infection and autoimmunity related to the immune system.\n\n---\n\n### PMID: 38828931\n**Title:** Vitamin D for the Prevention of Disease: An Endocrine Society Clinical Practice Guideline.\n**Authors:** Demay Marie B, Pittas Anastassios G, Bikle Daniel D, Diab Dima L, Kiely Mairead E et al.\n**Journal:** The Journal of clinical endocrinology and metabolism (2024)\n**Abstract:**\nBACKGROUND: Numerous studies demonstrate associations between serum concentrations of 25-hydroxyvitamin D (25[OH]D) and a variety of common disorders, including musculoskeletal, metabolic, cardiovascular, malignant, autoimmune, and infectious diseases. Although a causal link between serum 25(OH)D concentrations and many disorders has not been clearly established, these associations have led to widespread supplementation with vitamin D and increased laboratory testing for 25(OH)D in the general population. The benefit-risk ratio of this increase in vitamin D use is not clear, and the optimal vitamin D intake and the role of testing for 25(OH)D for disease prevention remain uncertain.\n\nOBJECTIVE: To develop clinical guidelines for the use of vitamin D (cholecalciferol [vitamin D3] or ergocalciferol [vitamin D2]) to lower the risk of disease in individuals without established indications for vitamin D treatment or 25(OH)D testing.\n\nMETHODS: A multidisciplinary panel of clinical experts, along with experts in guideline methodology and systematic literature review, identified and prioritized 14 clinically relevant questions related to the use of vitamin D and 25(OH)D testing to lower the risk of disease. The panel prioritized randomized placebo-controlled trials in general populations (without an established indication for vitamin D treatment or 25[OH]D testing), evaluating the effects of empiric vitamin D administration throughout the lifespan, as well as in select conditions (pregnancy and prediabetes). The panel defined \"empiric supplementation\" as vitamin D intake that (a) exceeds the Dietary Reference Intakes (DRI) and (b) is implemented without testing for 25(OH)D. Systematic reviews queried electronic databases for publications related to these 14 clinical questions. The Grading of Recommendations, Assessment, Development, and Evaluation (GRADE) methodology was used to assess the certainty of evidence and guide recommendations. The approach incorporated perspectives from a patient representative and considered patient values, costs and resources required, acceptability and feasibility, and impact on health equity of the proposed recommendations. The process to develop this clinical guideline did not use a risk assessment framework and was not designed to replace current DRI for vitamin D.\n\nRESULTS: The panel suggests empiric vitamin D supplementation for children and adolescents aged 1 to 18 years to prevent nutritional rickets and because of its potential to lower the risk of respiratory tract infections; for those aged 75 years and older because of its potential to lower the risk of mortality; for those who are pregnant because of its potential to lower the risk of preeclampsia, intra-uterine mortality, preterm birth, small-for-gestational-age birth, and neonatal mortality; and for those with high-risk prediabetes because of its potential to reduce progression to diabetes. Because the vitamin D doses in the included clinical trials varied considerably and many trial participants were allowed to continue their own vitamin D-containing supplements, the optimal doses for empiric vitamin D supplementation remain unclear for the populations considered. For nonpregnant people older than 50 years for whom vitamin D is indicated, the panel suggests supplementation via daily administration of vitamin D, rather than intermittent use of high doses. The panel suggests against empiric vitamin D supplementation above the current DRI to lower the risk of disease in healthy adults younger than 75 years. No clinical trial evidence was found to support routine screening for 25(OH)D in the general population, nor in those with obesity or dark complexion, and there was no clear evidence defining the optimal target level of 25(OH)D required for disease prevention in the populations considered; thus, the panel suggests against routine 25(OH)D testing in all populations considered. The panel judged that, in most situations, empiric vitamin D supplementation is inexpensive, feasible, acceptable to both healthy individuals and health care professionals, and has no negative effect on health equity.\n\nCONCLUSION: The panel suggests empiric vitamin D for those aged 1 to 18 years and adults over 75 years of age, those who are pregnant, and those with high-risk prediabetes. Due to the scarcity of natural food sources rich in vitamin D, empiric supplementation can be achieved through a combination of fortified foods and supplements that contain vitamin D. Based on the absence of supportive clinical trial evidence, the panel suggests against routine 25(OH)D testing in the absence of established indications. These recommendations are not meant to replace the current DRIs for vitamin D, nor do they apply to people with established indications for vitamin D treatment or 25(OH)D testing. Further research is needed to determine optimal 25(OH)D levels for specific health benefits.\n\n---\n\n### PMID: 33472840\n**Title:** Effect of micronutrient supplements on influenza and other respiratory tract infections among adults: a systematic review and meta-analysis.\n**Authors:** Abioye Ajibola Ibraheem, Bromage Sabri, Fawzi Wafaie\n**Journal:** BMJ global health (2021)\n**Abstract:**\nAcute respiratory tract infections (ARIs) are a leading cause of ill-health and death globally. Individual or multiple micronutrients have been shown to modulate immune function and affect the risk and severity of a number of infectious diseases. We systematically reviewed the evidence on the impact of micronutrient supplements to reduce the occurrence of ARIs and shorten the duration of ARI symptoms among adults. Random effects meta-analyses were conducted to estimate the pooled effects of vitamin D, vitamin C, zinc and multiple micronutrient supplementation (MMS) on the occurrence of ARIs and the duration of ARI symptoms. Vitamin D supplementation reduced the risk of ARI (risk ratio (RR)=0.97; 95% CI 0.94 to 1.00; p=0.028) and shortened the duration of symptoms (per cent difference: -6% (95% CI -9% to -2%; p=0.003)). The RR of vitamin D to prevent ARI was farther from the null when diagnosis was based on clinical diagnosis or laboratory testing, compared with self-report and when the loading dose was <60 000 IU. Vitamin C supplementation reduced the risk of ARIs (RR=0.96; 95% CI 0.93 to 0.99; p=0.01) and shortened the duration of symptoms (per cent difference: -9% (95% CI -16% to -2%; p=0.014)). The effect of vitamin C on preventing ARI was stronger among men and in middle-income countries, compared with women and high-income countries, respectively. Zinc supplementation did not reduce the risk of ARIs but shortened the duration of symptoms substantially (per cent difference: -47% (95% CI -73% to -21%; p=0.0004)). Our synthesis of global evidence from randomised controlled trials indicates that micronutrient supplements including zinc, vitamins C and D, and multiple micronutrient supplements may be modestly effective in preventing ARIs and improving their clinical course. Further research is warranted to better understand the effectiveness that individual or multiple micronutrients have on SARS-CoV-2 infection and treatment outcomes.\n\n---\n\n### PMID: 40969681\n**Title:** Comparative effectiveness of oral nutritional supplements in preventing respiratory tract infections among adults: a systematic review and network meta-analysis.\n**Authors:** Zhu Zhixin, Zhu Xiaoxia, Chu Yanru, Zhang Bing, Chen Yi\n**Journal:** EClinicalMedicine (2025)\n**Abstract:**\nBACKGROUND: Different nutritional supplements may prevent respiratory tract infections (RTIs) in adults, but their comparative effectiveness remains unclear. We aimed to evaluate the effectiveness of oral nutritional supplements in preventing RTIs and reducing their symptom duration and severity.\n\nMETHODS: In this systematic review and network meta-analysis, we searched for randomized controlled trials (RCTs) assessing oral micronutrients, flavonoids, probiotics, or synbiotics in adults for the prevention of RTIs in PubMed, Embase, Cochrane Central Register, and ClinicalTrials.gov from inception to February 25, 2025. Studies with participants under 18 years, immunodeficiencies, non-oral administration, or a therapeutic rather than preventive focus were excluded. We performed network meta-analyses (NMA) using frequentist random-effects models to compare interventions through direct and indirect evidence. We used the CINeMA framework to rate the overall certainty of evidence. The primary outcome was the incidence of RTIs. The secondary outcomes were upper respiratory tract infections (URTIs) or common cold, COVID-19 or influenza, RTI symptom duration, RTI symptom severity, and adverse events. The study is registered with PROSPERO, CRD420250653276.\n\nFINDINGS: We identified 120 eligible trials, among which 107 trials involving 101,751 adults were included in the network meta-analysis. Compared with placebo, catechin (RR = 0.79, 95% CI: 0.66, 0.95; n = 5; high certainty), Bifidobacterium animalis (RR = 0.79, 95% CI: 0.63, 0.99; n = 3; moderate certainty), and multi-strain probiotics (RR = 0.90, 95% CI: 0.82, 0.98; n = 16; moderate certainty) were the most effective interventions for reducing RTI incidence. For COVID-19 or influenza prevention, high-dose vitamin D was highly effective (RR = 0.66, 95% CI: 0.51, 0.86; n = 9; moderate certainty). Catechin (MD = -2.64 days/RTI, 95% CI: -4.92, -0.35; n = 2; moderate certainty) and multi-strain probiotics (MD = -0.97 days/RTI, 95% CI: -1.78, -0.16; n = 4; high certainty) most effectively shortened RTI symptom duration. Multi-strain probiotics (SMD = -0.33, 95% CI: -0.51, -0.14; n = 6; moderate certainty) also showed superior performance in alleviating RTI symptom severity. None of the interventions increased the risk of adverse events versus placebo.\n\nINTERPRETATION: Based on the current evidence, catechin, B. animalis, and multi-strain probiotics show relatively better effects in preventing adult RTI compared to other nutritional supplements. For COVID-19 or influenza prevention, high-dose vitamin D supplementation may be more effective. This study is limited by the lack of head-to-head comparisons between interventions (particularly across major categories) and heterogeneity from varied administration methods (e.g., capsules, beverages, mouthwashes), impacting the consistency and overall estimation of the NMA. Future high-quality studies are needed to provide direct evidence on the optimal intervention type, frequency, and form/dose of administration to guide clinical practice effectively.\n\nFUNDING: This work was supported by the Ningbo Top Medical and Health Research Program and the Zhejiang Provincial Disease Prevention and Control Science and Technology Plan.\n\n---\n\n### PMID: 33481482\n**Title:** Influence of Vitamin D Supplementation by Simulated Sunlight or Oral D3 on Respiratory Infection during Military Training.\n**Authors:** Harrison Sophie E, Oliver Samuel J, Kashi Daniel S, Carswell Alexander T, Edwards Jason P et al.\n**Journal:** Medicine and science in sports and exercise (2021)\n**Abstract:**\nPURPOSE: This study aimed to determine the relationship between vitamin D status and upper respiratory tract infection (URTI) of physically active men and women across seasons (study 1) and then to investigate the effects on URTI and mucosal immunity of achieving vitamin D sufficiency (25(OH)D ≥50 nmol·L-1) by a unique comparison of safe, simulated sunlight or oral D3 supplementation in winter (study 2).\n\nMETHODS: In study 1, 1644 military recruits were observed across basic military training. In study 2, a randomized controlled trial, 250 men undertaking military training received placebo, simulated sunlight (1.3× standard erythemal dose, three times per week for 4 wk and then once per week for 8 wk), or oral vitamin D3 (1000 IU·d-1 for 4 wk and then 400 IU·d-1 for 8 wk). URTI was diagnosed by a physician (study 1) and by using the Jackson common cold questionnaire (study 2). Serum 25(OH)D, salivary secretory immunoglobulin A (SIgA), and cathelicidin were assessed by liquid chromatography-mass spectrometry LC-MS/MS and enzyme-linked immunosorbent assay.\n\nRESULTS: In study 1, only 21% of recruits were vitamin D sufficient during winter. Vitamin D-sufficient recruits were 40% less likely to suffer URTI than recruits with 25(OH)D <50 nmol·L-1 (OR = 0.6, 95% confidence interval = 0.4-0.9), an association that remained after accounting for sex and smoking. Each URTI caused, on average, three missed training days. In study 2, vitamin D supplementation strategies were similarly effective to achieve vitamin D sufficiency in almost all (≥95%). Compared with placebo, vitamin D supplementation reduced the severity of peak URTI symptoms by 15% and days with URTI by 36% (P < 0.05). These reductions were similar with both vitamin D strategies (P > 0.05). Supplementation did not affect salivary secretory immunoglobulin A or cathelicidin.\n\nCONCLUSION: Vitamin D sufficiency reduced the URTI burden during military training.\n\n---\n\nBased on these papers, generate a plain-language synthesis brief.\nCRITICAL: The brief MUST fit on ONE printed page. Be direct and concise. Cut all filler.\nAnswer the question first. Every claim must cite PMID(s).\nSurface contradictions. State confidence honestly.\nWrite for a regular person making a real decision.",
+      "model": "claude-opus-4-6"
+    },
+    "synthesis": {
+      "brief_markdown": "# Does Vitamin D Prevent Colds?\n\n**Question:** Does vitamin D prevent colds? · **Context:** Deciding whether to give my family vitamin D supplements this winter.\n\n---\n\n## The short answer\n\nVitamin D supplements modestly reduce the chance of catching respiratory infections like colds, but the benefit is small and recent evidence has weakened the case. The strongest protection is seen in people who are truly vitamin D deficient and who take it daily rather than in large monthly doses [PMID: 28202713, PMID: 39993397]. For children aged 1–18, the Endocrine Society suggests supplementation partly because of this respiratory benefit [PMID: 38828931].\n\n## Key findings\n\n- **Earlier meta-analyses found a real but small benefit.** A 2017 analysis of 25 trials (11,321 people) found vitamin D cut respiratory infection risk by 12% overall (odds ratio 0.88) [PMID: 28202713]. A 2021 update with 43 trials (48,488 people) confirmed a similar small effect (OR 0.92) [PMID: 33798465].\n- **The latest and largest meta-analysis is no longer statistically significant.** A 2025 update adding newer large trials found the effect shrank to borderline (OR 0.94, confidence interval now crosses 1.00, p=0.057) [PMID: 39993397]. This means we can no longer be confident the effect isn't due to chance.\n- **People who are very deficient benefit most.** Those with blood levels below 25 nmol/L who took daily doses saw a 70% reduction in infections [PMID: 28202713, PMID: 30675873]. This strong subgroup finding did **not** replicate in the 2025 update [PMID: 39993397].\n- **Daily low doses work better than big monthly doses.** Daily doses of 400–1000 IU showed clearer protection than intermittent large (\"bolus\") doses [PMID: 33798465, PMID: 28202713].\n- **Children may benefit more than adults.** Protection was strongest in ages 1–16 (OR 0.71) [PMID: 33798465]. The Endocrine Society recommends supplementation for children partly for this reason [PMID: 38828931].\n- **Vitamin D is safe.** No increase in serious side effects was found across any of the meta-analyses [PMID: 28202713, PMID: 33798465, PMID: 39993397].\n\n## What is unknown\n\n- **Whether your family is actually deficient.** The benefit hinges heavily on starting vitamin D status, and most studies didn't target people chosen by deficiency status.\n- **Optimal dose for prevention.** Trials used widely varying doses; no consensus exists on the best amount specifically for infection prevention [PMID: 38828931].\n- **How vitamin D compares to other options.** Zinc, probiotics, and catechins (found in green tea) may be equally or more effective for preventing colds in adults [PMID: 32342851, PMID: 40969681].\n\n## Confidence: Medium\n\nDozens of high-quality trials exist, but the most comprehensive and up-to-date meta-analysis now shows a non-significant overall effect. Earlier strong findings in deficient subgroups have not held up in updated analyses. The benefit is likely real for deficient individuals but small-to-negligible for those with adequate vitamin D levels.\n\n---\n\n*Generated by Tables Turned. Receipts only.*"
+    },
+    "provenance": [
+      {
+        "timestamp": "2026-09-28T23:38:41Z",
+        "action": "search_started",
+        "detail": "Does vitamin D prevent colds?"
+      },
+      {
+        "timestamp": "2026-09-28T23:38:48Z",
+        "action": "search_queries_generated",
+        "detail": "vitamin D supplementation common cold prevention | (vitamin D OR cholecalciferol OR calcifediol) AND (respiratory tract infection OR common cold OR upper respiratory infection OR URTI) AND (prevention OR prophylaxis) | (vitamin D OR cholecalciferol) AND (acute respiratory tract infection OR common cold OR influenza OR upper respiratory infection) AND (randomized controlled trial[pt] OR meta-analysis[pt] OR systematic review[pt]) | (\"Vitamin D\"[MeSH] OR \"Cholecalciferol\"[MeSH]) AND (\"Respiratory Tract Infections\"[MeSH] OR \"Common Cold\"[MeSH]) AND (\"Dietary Supplements\"[MeSH] OR supplementation) AND (\"Prevention and Control\"[Subheading] OR prevention) AND (systematic review[pt] OR meta-analysis[pt])"
+      },
+      {
+        "timestamp": "2026-09-28T23:38:48Z",
+        "action": "pubmed_searched",
+        "detail": "\"vitamin D supplementation common cold prevention\" -> 11 total, fetched 11"
+      },
+      {
+        "timestamp": "2026-09-28T23:38:50Z",
+        "action": "pubmed_searched",
+        "detail": "\"(vitamin D OR cholecalciferol OR calcifediol) AND (respiratory tract infection OR common cold OR upper respiratory infection OR URTI) AND (prevention OR prophylaxis)\" -> 905 total, fetched 25"
+      },
+      {
+        "timestamp": "2026-09-28T23:38:52Z",
+        "action": "pubmed_searched",
+        "detail": "\"(vitamin D OR cholecalciferol) AND (acute respiratory tract infection OR common cold OR influenza OR upper respiratory infection) AND (randomized controlled trial[pt] OR meta-analysis[pt] OR systematic review[pt])\" -> 364 total, fetched 25"
+      },
+      {
+        "timestamp": "2026-09-28T23:38:53Z",
+        "action": "pubmed_searched",
+        "detail": "\"(\"Vitamin D\"[MeSH] OR \"Cholecalciferol\"[MeSH]) AND (\"Respiratory Tract Infections\"[MeSH] OR \"Common Cold\"[MeSH]) AND (\"Dietary Supplements\"[MeSH] OR supplementation) AND (\"Prevention and Control\"[Subheading] OR prevention) AND (systematic review[pt] OR meta-analysis[pt])\" -> 51 total, fetched 25"
+      },
+      {
+        "timestamp": "2026-09-28T23:38:54Z",
+        "action": "papers_ranked",
+        "detail": "72 papers scored. Top 12 selected (scores 19-6). Method: cross-strategy overlap (x3) + PubMed position weight."
+      },
+      {
+        "timestamp": "2026-09-28T23:39:17Z",
+        "action": "plain_summaries_generated",
+        "detail": "12 papers translated"
+      },
+      {
+        "timestamp": "2026-09-28T23:39:17Z",
+        "action": "papers_selected_for_synthesis",
+        "detail": "12 papers"
+      },
+      {
+        "timestamp": "2026-09-28T23:39:40Z",
+        "action": "synthesis_generated",
+        "detail": "3079 chars, 12 papers"
+      }
+    ]
+  },
+  "telemetry": {
+    "prompt_sha256": {
+      "SEARCH_SYSTEM": "0a2d1ccd7d4c77e0f5441613fc38edb45f36237befa5723d030b9244d27b607e",
+      "SUMMARY_SYSTEM": "7726ec6a8d32f245ff4d3b8ecb20668a8b440756e31f4106cb36a69dea75243b",
+      "SYNTH_SYSTEM": "dbda0a2b78e23926f4a986a6d6f9d0ed42a9090ed3128819e380e0c82beddde4"
+    },
+    "search_depth": 25,
+    "search_sort": "relevance",
+    "per_query": [
+      {
+        "query": "vitamin D supplementation common cold prevention",
+        "strategy": "Broad search for vitamin D and cold prevention to capture a wide range of relevant articles",
+        "total_hits": 11,
+        "returned": [
+          "32342851",
+          "40969681",
+          "33481482",
+          "34247885",
+          "29853961",
+          "27357103",
+          "21612046",
+          "28719693",
+          "31785608",
+          "21116023",
+          "41265430"
+        ],
+        "querytranslation": "(\"vitamin d\"[Supplementary Concept] OR \"vitamin d\"[All Fields] OR \"ergocalciferols\"[Supplementary Concept] OR \"ergocalciferols\"[All Fields] OR \"vitamin d\"[MeSH Terms] OR \"ergocalciferols\"[MeSH Terms]) AND (\"supplemental\"[All Fields] OR \"supplementating\"[All Fields] OR \"supplementation\"[All Fields] OR \"supplementation s\"[All Fields] OR \"supplementations\"[All Fields] OR \"supplemention\"[All Fields]) AND (\"common cold\"[MeSH Terms] OR (\"common\"[All Fields] AND \"cold\"[All Fields]) OR \"common cold\"[All Fields]) AND (\"prevent\"[All Fields] OR \"preventability\"[All Fields] OR \"preventable\"[All Fields] OR \"preventative\"[All Fields] OR \"preventatively\"[All Fields] OR \"preventatives\"[All Fields] OR \"prevented\"[All Fields] OR \"preventing\"[All Fields] OR \"prevention and control\"[MeSH Subheading] OR (\"prevention\"[All Fields] AND \"control\"[All Fields]) OR \"prevention and control\"[All Fields] OR \"prevention\"[All Fields] OR \"prevention s\"[All Fields] OR \"preventions\"[All Fields] OR \"preventive\"[All Fields] OR \"preventively\"[All Fields] OR \"preventives\"[All Fields] OR \"prevents\"[All Fields])"
+      },
+      {
+        "query": "(vitamin D OR cholecalciferol OR calcifediol) AND (respiratory tract infection OR common cold OR upper respiratory infection OR URTI) AND (prevention OR prophylaxis)",
+        "strategy": "Expanded search using synonyms for vitamin D and respiratory infections with focus on prevention",
+        "total_hits": 905,
+        "returned": [
+          "38828931",
+          "28357899",
+          "38732592",
+          "28202713",
+          "34827621",
+          "37686873",
+          "39486479",
+          "37916701",
+          "33443830",
+          "30675873",
+          "36287374",
+          "33664083",
+          "33814087",
+          "39993397",
+          "33155255",
+          "32342851",
+          "33798465",
+          "33472840",
+          "32505075",
+          "32340216",
+          "36282259",
+          "16948384",
+          "18274325",
+          "27061291",
+          "35792358"
+        ],
+        "querytranslation": "(\"vitamin d\"[Supplementary Concept] OR \"vitamin d\"[All Fields] OR \"ergocalciferols\"[Supplementary Concept] OR \"ergocalciferols\"[All Fields] OR \"vitamin d\"[MeSH Terms] OR \"ergocalciferols\"[MeSH Terms] OR (\"cholecalciferol\"[Supplementary Concept] OR \"cholecalciferol\"[All Fields] OR \"cholecalciferol\"[MeSH Terms] OR \"cholecalciferols\"[All Fields] OR \"colecalciferol\"[All Fields]) OR (\"calcifediol\"[Supplementary Concept] OR \"calcifediol\"[All Fields] OR \"calcifediol\"[MeSH Terms])) AND (\"respiratory tract infections\"[MeSH Terms] OR (\"respiratory\"[All Fields] AND \"tract\"[All Fields] AND \"infections\"[All Fields]) OR \"respiratory tract infections\"[All Fields] OR (\"respiratory\"[All Fields] AND \"tract\"[All Fields] AND \"infection\"[All Fields]) OR \"respiratory tract infection\"[All Fields] OR (\"common cold\"[MeSH Terms] OR (\"common\"[All Fields] AND \"cold\"[All Fields]) OR \"common cold\"[All Fields]) OR (\"respiratory tract infections\"[MeSH Terms] OR (\"respiratory\"[All Fields] AND \"tract\"[All Fields] AND \"infections\"[All Fields]) OR \"respiratory tract infections\"[All Fields] OR (\"upper\"[All Fields] AND \"respiratory\"[All Fields] AND \"infection\"[All Fields]) OR \"upper respiratory infection\"[All Fields]) OR \"URTI\"[All Fields]) AND (\"prevent\"[All Fields] OR \"preventability\"[All Fields] OR \"preventable\"[All Fields] OR \"preventative\"[All Fields] OR \"preventatively\"[All Fields] OR \"preventatives\"[All Fields] OR \"prevented\"[All Fields] OR \"preventing\"[All Fields] OR \"prevention and control\"[MeSH Subheading] OR (\"prevention\"[All Fields] AND \"control\"[All Fields]) OR \"prevention and control\"[All Fields] OR \"prevention\"[All Fields] OR \"prevention s\"[All Fields] OR \"preventions\"[All Fields] OR \"preventive\"[All Fields] OR \"preventively\"[All Fields] OR \"preventives\"[All Fields] OR \"prevents\"[All Fields] OR (\"prevention and control\"[MeSH Subheading] OR (\"prevention\"[All Fields] AND \"control\"[All Fields]) OR \"prevention and control\"[All Fields] OR \"prophylaxis\"[All Fields] OR \"prophylaxies\"[All Fields] OR \"prophylaxy\"[All Fields]))"
+      },
+      {
+        "query": "(vitamin D OR cholecalciferol) AND (acute respiratory tract infection OR common cold OR influenza OR upper respiratory infection) AND (randomized controlled trial[pt] OR meta-analysis[pt] OR systematic review[pt])",
+        "strategy": "Targeted search for high-quality evidence (RCTs, meta-analyses, systematic reviews) on vitamin D and respiratory infections",
+        "total_hits": 364,
+        "returned": [
+          "28202713",
+          "28357899",
+          "37686873",
+          "39993397",
+          "38828942",
+          "30675873",
+          "33798465",
+          "35198149",
+          "33469276",
+          "38174413",
+          "33472840",
+          "32342851",
+          "39356039",
+          "16465940",
+          "38113446",
+          "42124073",
+          "39072958",
+          "39702045",
+          "32706534",
+          "38721952",
+          "38871574",
+          "40714983",
+          "35277393",
+          "37871795",
+          "41085920"
+        ],
+        "querytranslation": "(\"vitamin d\"[Supplementary Concept] OR \"vitamin d\"[All Fields] OR \"ergocalciferols\"[Supplementary Concept] OR \"ergocalciferols\"[All Fields] OR \"vitamin d\"[MeSH Terms] OR \"ergocalciferols\"[MeSH Terms] OR (\"cholecalciferol\"[Supplementary Concept] OR \"cholecalciferol\"[All Fields] OR \"cholecalciferol\"[MeSH Terms] OR \"cholecalciferols\"[All Fields] OR \"colecalciferol\"[All Fields])) AND (((\"acute\"[All Fields] OR \"acutely\"[All Fields] OR \"acutes\"[All Fields]) AND (\"respiratory tract infections\"[MeSH Terms] OR (\"respiratory\"[All Fields] AND \"tract\"[All Fields] AND \"infections\"[All Fields]) OR \"respiratory tract infections\"[All Fields] OR (\"respiratory\"[All Fields] AND \"tract\"[All Fields] AND \"infection\"[All Fields]) OR \"respiratory tract infection\"[All Fields])) OR (\"common cold\"[MeSH Terms] OR (\"common\"[All Fields] AND \"cold\"[All Fields]) OR \"common cold\"[All Fields]) OR (\"influenza s\"[All Fields] OR \"influenza, human\"[MeSH Terms] OR (\"influenza\"[All Fields] AND \"human\"[All Fields]) OR \"human influenza\"[All Fields] OR \"influenza\"[All Fields] OR \"influenzas\"[All Fields] OR \"influenzae\"[All Fields]) OR (\"respiratory tract infections\"[MeSH Terms] OR (\"respiratory\"[All Fields] AND \"tract\"[All Fields] AND \"infections\"[All Fields]) OR \"respiratory tract infections\"[All Fields] OR (\"upper\"[All Fields] AND \"respiratory\"[All Fields] AND \"infection\"[All Fields]) OR \"upper respiratory infection\"[All Fields])) AND (\"randomized controlled trial\"[Publication Type] OR \"meta-analysis\"[Publication Type] OR \"systematic review\"[Publication Type])"
+      },
+      {
+        "query": "(\"Vitamin D\"[MeSH] OR \"Cholecalciferol\"[MeSH]) AND (\"Respiratory Tract Infections\"[MeSH] OR \"Common Cold\"[MeSH]) AND (\"Dietary Supplements\"[MeSH] OR supplementation) AND (\"Prevention and Control\"[Subheading] OR prevention) AND (systematic review[pt] OR meta-analysis[pt])",
+        "strategy": "Highly specific MeSH-based search for systematic reviews and meta-analyses on vitamin D supplementation for preventing respiratory infections",
+        "total_hits": 51,
+        "returned": [
+          "39993397",
+          "30675873",
+          "28202713",
+          "35322953",
+          "33798465",
+          "39143549",
+          "27631625",
+          "36633175",
+          "33593830",
+          "38474807",
+          "39940457",
+          "37802017",
+          "33858268",
+          "33921297",
+          "37428896",
+          "39808630",
+          "36615718",
+          "23220552",
+          "37403822",
+          "38732592",
+          "35631275",
+          "35182989",
+          "34607398",
+          "33920639",
+          "33775818"
+        ],
+        "querytranslation": "(\"Vitamin D\"[MeSH Terms] OR \"Cholecalciferol\"[MeSH Terms]) AND (\"Respiratory Tract Infections\"[MeSH Terms] OR \"Common Cold\"[MeSH Terms]) AND (\"Dietary Supplements\"[MeSH Terms] OR (\"supplemental\"[All Fields] OR \"supplementating\"[All Fields] OR \"supplementation\"[All Fields] OR \"supplementation s\"[All Fields] OR \"supplementations\"[All Fields] OR \"supplemention\"[All Fields])) AND (\"Prevention and Control\"[MeSH Subheading] OR (\"prevent\"[All Fields] OR \"preventability\"[All Fields] OR \"preventable\"[All Fields] OR \"preventative\"[All Fields] OR \"preventatively\"[All Fields] OR \"preventatives\"[All Fields] OR \"prevented\"[All Fields] OR \"preventing\"[All Fields] OR \"Prevention and Control\"[MeSH Subheading] OR (\"prevention\"[All Fields] AND \"control\"[All Fields]) OR \"Prevention and Control\"[All Fields] OR \"prevention\"[All Fields] OR \"prevention s\"[All Fields] OR \"preventions\"[All Fields] OR \"preventive\"[All Fields] OR \"preventively\"[All Fields] OR \"preventives\"[All Fields] OR \"prevents\"[All Fields])) AND (\"systematic review\"[Publication Type] OR \"meta-analysis\"[Publication Type])"
+      }
+    ],
+    "candidate_pool": [
+      {
+        "pmid": "28202713",
+        "title": "Vitamin D supplementation to prevent acute respiratory tract infections: systematic review and meta-analysis of individual participant data.",
+        "year": 2017,
+        "score": 19,
+        "overlap": 3,
+        "strategy_idx": [
+          1,
+          2,
+          3
+        ],
+        "positions": [
+          4,
+          1,
+          3
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "39993397",
+        "title": "Vitamin D supplementation to prevent acute respiratory infections: systematic review and meta-analysis of stratified aggregate data.",
+        "year": 2025,
+        "score": 17,
+        "overlap": 3,
+        "strategy_idx": [
+          1,
+          2,
+          3
+        ],
+        "positions": [
+          14,
+          4,
+          1
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review",
+          "Meta-Analysis"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "32342851",
+        "title": "Zinc Supplementation Reduces Common Cold Duration among Healthy Adults: A Systematic Review of Randomized Controlled Trials with Micronutrients Supplementation.",
+        "year": 2020,
+        "score": 16,
+        "overlap": 3,
+        "strategy_idx": [
+          0,
+          1,
+          2
+        ],
+        "positions": [
+          1,
+          16,
+          12
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "30675873",
+        "title": "Vitamin D supplementation to prevent acute respiratory infections: individual participant data meta-analysis.",
+        "year": 2019,
+        "score": 15,
+        "overlap": 3,
+        "strategy_idx": [
+          1,
+          2,
+          3
+        ],
+        "positions": [
+          10,
+          6,
+          2
+        ],
+        "publication_types": [
+          "Meta-Analysis",
+          "Journal Article"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "28357899",
+        "title": "[Not Available].",
+        "year": 2017,
+        "score": 14,
+        "overlap": 2,
+        "strategy_idx": [
+          1,
+          2
+        ],
+        "positions": [
+          2,
+          2
+        ],
+        "publication_types": [
+          "Comparative Study",
+          "Journal Article",
+          "Randomized Controlled Trial"
+        ],
+        "has_abstract": false
+      },
+      {
+        "pmid": "33798465",
+        "title": "Vitamin D supplementation to prevent acute respiratory infections: a systematic review and meta-analysis of aggregate data from randomised controlled trials.",
+        "year": 2021,
+        "score": 12,
+        "overlap": 3,
+        "strategy_idx": [
+          1,
+          2,
+          3
+        ],
+        "positions": [
+          17,
+          7,
+          5
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis",
+          "Research Support, Non-U.S. Gov't",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "38732592",
+        "title": "The Efficacy of Multivitamin, Vitamin A, Vitamin B, Vitamin C, and Vitamin D Supplements in the Prevention and Management of COVID-19 and Long-COVID: An Updated Systematic Review and Meta-Analysis of Randomized Clinical Trials.",
+        "year": 2024,
+        "score": 10,
+        "overlap": 2,
+        "strategy_idx": [
+          1,
+          3
+        ],
+        "positions": [
+          3,
+          20
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review",
+          "Meta-Analysis"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "37686873",
+        "title": "Infections and Autoimmunity-The Immune System and Vitamin D: A Systematic Review.",
+        "year": 2023,
+        "score": 10,
+        "overlap": 2,
+        "strategy_idx": [
+          1,
+          2
+        ],
+        "positions": [
+          6,
+          3
+        ],
+        "publication_types": [
+          "Systematic Review",
+          "Journal Article"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "38828931",
+        "title": "Vitamin D for the Prevention of Disease: An Endocrine Society Clinical Practice Guideline.",
+        "year": 2024,
+        "score": 8,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          1
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Practice Guideline",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "33472840",
+        "title": "Effect of micronutrient supplements on influenza and other respiratory tract infections among adults: a systematic review and meta-analysis.",
+        "year": 2021,
+        "score": 8,
+        "overlap": 2,
+        "strategy_idx": [
+          1,
+          2
+        ],
+        "positions": [
+          18,
+          11
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "40969681",
+        "title": "Comparative effectiveness of oral nutritional supplements in preventing respiratory tract infections among adults: a systematic review and network meta-analysis.",
+        "year": 2025,
+        "score": 7,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          2
+        ],
+        "publication_types": [
+          "Journal Article"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "33481482",
+        "title": "Influence of Vitamin D Supplementation by Simulated Sunlight or Oral D3 on Respiratory Infection during Military Training.",
+        "year": 2021,
+        "score": 6,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          3
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "34247885",
+        "title": "Developmental exposure to vitamin D deficiency and subsequent risk of schizophrenia.",
+        "year": 2022,
+        "score": 5,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          4
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "35322953",
+        "title": "Vitamin D in SARS-CoV-2 infection.",
+        "year": 2022,
+        "score": 5,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          4
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "29853961",
+        "title": "Self-Care for Common Colds: The Pivotal Role of Vitamin D, Vitamin C, Zinc, and Echinacea in Three Main Immune Interactive Clusters (Physical Barriers, Innate and Adaptive Immunity) Involved during an Episode of Common Colds-Practical Advice on Dosages and on the Time to Take These Nutrients/Botanicals in order to Prevent or Treat Common Colds.",
+        "year": 2018,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          5
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "27357103",
+        "title": "Prevention of urinary tract infections with vitamin D supplementation 20,000 IU per week for five years. Results from an RCT including 511 subjects.",
+        "year": 2016,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          6
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "21612046",
+        "title": "[Vitamin D3 in prevention of diseases in adults--a systematic review].",
+        "year": 2010,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          7
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "28719693",
+        "title": "Effect of High-Dose vs Standard-Dose Wintertime Vitamin D Supplementation on Viral Upper Respiratory Tract Infections in Young Healthy Children.",
+        "year": 2017,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          8
+        ],
+        "publication_types": [
+          "Comparative Study",
+          "Journal Article",
+          "Multicenter Study",
+          "Randomized Controlled Trial"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "31785608",
+        "title": "Association between micronutrient deficiency and acute respiratory infections in healthy adults: a systematic review of observational studies.",
+        "year": 2019,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          9
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Research Support, Non-U.S. Gov't",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "21116023",
+        "title": "The prevalence of vitamin supplementation in ultraendurance triathletes.",
+        "year": 2010,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          10
+        ],
+        "publication_types": [
+          "Journal Article"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "41265430",
+        "title": "UCI Sports Nutrition Project: The Role of Nutrition in the Prevention and Management of Illnesses and Injuries in Elite Cycling.",
+        "year": 2026,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          11
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "34827621",
+        "title": "The Effects of Vitamin D on Immune System and Inflammatory Diseases.",
+        "year": 2021,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          5
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "39486479",
+        "title": "Revisiting Vitamin D Guidelines: A Critical Appraisal of the Literature.",
+        "year": 2024,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          7
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "37916701",
+        "title": "Vitamin D supplementation in a post-pandemic era: A narrative review.",
+        "year": 2023,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          8
+        ],
+        "publication_types": [
+          "Review",
+          "Journal Article"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "33443830",
+        "title": "[Not Available].",
+        "year": 2021,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          9
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "36287374",
+        "title": "Vitamin D in the older population: a consensus statement.",
+        "year": 2023,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          11
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review",
+          "Consensus Statement"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "33664083",
+        "title": "Vitamin D and covid-19.",
+        "year": 2021,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          12
+        ],
+        "publication_types": [
+          "Editorial"
+        ],
+        "has_abstract": false
+      },
+      {
+        "pmid": "33814087",
+        "title": "Vitamin D and COVID-19.",
+        "year": 2021,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          13
+        ],
+        "publication_types": [
+          "Editorial"
+        ],
+        "has_abstract": false
+      },
+      {
+        "pmid": "33155255",
+        "title": "COVID-19 and the bone: underestimated to consider.",
+        "year": 2020,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          15
+        ],
+        "publication_types": [
+          "Letter"
+        ],
+        "has_abstract": false
+      },
+      {
+        "pmid": "32505075",
+        "title": "Fighting against frailty and sarcopenia - As well as COVID-19?",
+        "year": 2020,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          19
+        ],
+        "publication_types": [
+          "Letter"
+        ],
+        "has_abstract": false
+      },
+      {
+        "pmid": "32340216",
+        "title": "Optimal Nutritional Status for a Well-Functioning Immune System Is an Important Factor to Protect against Viral Infections.",
+        "year": 2020,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          20
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "36282259",
+        "title": "Vitamin D Supplements Don't Reduce COVID-19 Risk.",
+        "year": 2022,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          21
+        ],
+        "publication_types": [
+          "Journal Article"
+        ],
+        "has_abstract": false
+      },
+      {
+        "pmid": "16948384",
+        "title": "Guttate psoriasis.",
+        "year": 2006,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          22
+        ],
+        "publication_types": [
+          "Case Reports",
+          "Journal Article"
+        ],
+        "has_abstract": false
+      },
+      {
+        "pmid": "18274325",
+        "title": "Hippocrates, town planning and the sun.",
+        "year": 2008,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          23
+        ],
+        "publication_types": [
+          "Historical Article",
+          "News"
+        ],
+        "has_abstract": false
+      },
+      {
+        "pmid": "27061291",
+        "title": "Preventative Care in the Patient with Inflammatory Bowel Disease: What Is New?",
+        "year": 2016,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          24
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "35792358",
+        "title": "Vitamin D3 for reducing mortality from cancer and other outcomes before, during and beyond the COVID-19 pandemic: A plea for harvesting low-hanging fruit.",
+        "year": 2022,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          25
+        ],
+        "publication_types": [
+          "Editorial"
+        ],
+        "has_abstract": false
+      },
+      {
+        "pmid": "38828942",
+        "title": "A Systematic Review Supporting the Endocrine Society Clinical Practice Guidelines on Vitamin D.",
+        "year": 2024,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          5
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "35198149",
+        "title": "Effects of Vitamin D supplementation on resolution of fever and cough in children with pulmonary tuberculosis: A randomized double-blind controlled trial in Indonesia.",
+        "year": 2022,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          8
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "33469276",
+        "title": "Changes in Menopausal Risk Factors in Early Postmenopausal Osteopenic Women After 13 Months of High-Intensity Exercise: The Randomized Controlled ACTLIFE-RCT.",
+        "year": 2021,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          9
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "38174413",
+        "title": "A systematic review and meta-analysis on nutritional and dietary interventions for the treatment of acute respiratory infection in pediatric patients: An EAACI taskforce.",
+        "year": 2024,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          10
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review",
+          "Meta-Analysis",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "39356039",
+        "title": "Interventions for preventing the progression of autosomal dominant polycystic kidney disease.",
+        "year": 2024,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          13
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "16465940",
+        "title": "[Geriatrics].",
+        "year": 2006,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          14
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "38113446",
+        "title": "Effect of Daily Vitamin D Supplementation on Risk of Upper Respiratory Infection in Older Adults: A Randomized Controlled Trial.",
+        "year": 2024,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          15
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Research Support, N.I.H., Extramural"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "42124073",
+        "title": "The 2024 Endocrine Society Guideline on Vitamin D: Comprehensive Summary and Critical Appraisal.",
+        "year": 2026,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          16
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "39072958",
+        "title": "Effects of an 8-week high-dose vitamin D supplementation on fatigue and neuropsychiatric manifestations in post-COVID syndrome: A randomized controlled trial.",
+        "year": 2024,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          17
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "39702045",
+        "title": "Cardiac findings in a phase II double-blind randomized placebo-controlled trial of combination therapy (HAZDPac) to treat COVID-19 patients.",
+        "year": 2024,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          18
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Clinical Trial, Phase II",
+          "Randomized Controlled Trial",
+          "Retracted Publication"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "32706534",
+        "title": "Vitamin D Supplements for Prevention of Tuberculosis Infection and Disease.",
+        "year": 2020,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          19
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Multicenter Study",
+          "Randomized Controlled Trial",
+          "Research Support, N.I.H., Extramural"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "38721952",
+        "title": "Managing children with frequent respiratory infections and associated wheezing: a preliminary randomized study with a new multicomponent nasal spray.",
+        "year": 2024,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          20
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "38871574",
+        "title": "Vitamin D3 supplementation in COVID-19 patients with cardiovascular disease and gut dysbiosis.",
+        "year": 2024,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          21
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "40714983",
+        "title": "Effect of calcifediol on chronic rhinosinusitis, a randomized clinical trial.",
+        "year": 2025,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          22
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "35277393",
+        "title": "Risk factors associated with acute respiratory illnesses in athletes: a systematic review by a subgroup of the IOC consensus on 'acute respiratory illness in the athlete'.",
+        "year": 2022,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          23
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "37871795",
+        "title": "Maternal vitamin D intakes during pregnancy and child health outcome.",
+        "year": 2023,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          24
+        ],
+        "publication_types": [
+          "Randomized Controlled Trial",
+          "Journal Article"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "41085920",
+        "title": "Novel Chewable Pleuran-Based Supplement Decreases Respiratory Tract Infections in Children: A Randomised Controlled Trial.",
+        "year": 2025,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          25
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Multicenter Study"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "39143549",
+        "title": "Optimal methods of vitamin D supplementation to prevent acute respiratory infections: a systematic review, dose-response and pairwise meta-analysis of randomized controlled trials.",
+        "year": 2024,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          6
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review",
+          "Meta-Analysis",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "27631625",
+        "title": "Effect of Vitamin D3 Supplementation on Respiratory Tract Infections in Healthy Individuals: A Systematic Review and Meta-Analysis of Randomized Controlled Trials.",
+        "year": 2016,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          7
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "36633175",
+        "title": "Vitamin D as an adjunct to antibiotics for the treatment of acute childhood pneumonia.",
+        "year": 2023,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          8
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "33593830",
+        "title": "Perspective: Vitamin D supplementation prevents rickets and acute respiratory infections when given as daily maintenance but not as intermittent bolus: implications for COVID-19.",
+        "year": 2021,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          9
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "38474807",
+        "title": "Preventive Vitamin D Supplementation and Risk for COVID-19 Infection: A Systematic Review and Meta-Analysis.",
+        "year": 2024,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          10
+        ],
+        "publication_types": [
+          "Meta-Analysis",
+          "Systematic Review",
+          "Journal Article"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "39940457",
+        "title": "Vitamin D Deficiency Meets Hill's Criteria for Causation in SARS-CoV-2 Susceptibility, Complications, and Mortality: A Systematic Review.",
+        "year": 2025,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          11
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "37802017",
+        "title": "The role of vitamin D in the prevention and treatment of SARS-CoV-2 infection: A meta-analysis of randomized controlled trials.",
+        "year": 2023,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          12
+        ],
+        "publication_types": [
+          "Meta-Analysis",
+          "Journal Article",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "33858268",
+        "title": "Effects of select dietary supplements on the prevention and treatment of viral respiratory tract infections: a systematic review of randomized controlled trials.",
+        "year": 2021,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          13
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "33921297",
+        "title": "Does Evidence Exist to Blunt Inflammatory Response by Nutraceutical Supplementation during COVID-19 Pandemic? An Overview of Systematic Reviews of Vitamin D, Vitamin C, Melatonin, and Zinc.",
+        "year": 2021,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          14
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "37428896",
+        "title": "High-dose oral vitamin D supplementation for prevention of infections in children aged 0 to 59 months: a systematic review and meta-analysis.",
+        "year": 2024,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          15
+        ],
+        "publication_types": [
+          "Meta-Analysis",
+          "Systematic Review",
+          "Journal Article"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "39808630",
+        "title": "Vitamin D, acute respiratory infections, and Covid-19: The curse of small-size randomised trials. A critical review with meta-analysis of randomised trials.",
+        "year": 2025,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          16
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis",
+          "Systematic Review",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "36615718",
+        "title": "Reply to Leong et al. Comment on \"Hosseini et al. Effects of Vitamin D Supplementation on COVID-19 Related Outcomes: A Systematic Review and Meta-Analysis. Nutrients 2022, 14, 2134\".",
+        "year": 2022,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          17
+        ],
+        "publication_types": [
+          "Meta-Analysis",
+          "Systematic Review",
+          "Journal Article"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "23220552",
+        "title": "Vitamin D in the prevention of acute respiratory infection: systematic review of clinical studies.",
+        "year": 2013,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          18
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Research Support, Non-U.S. Gov't",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "37403822",
+        "title": "Effectiveness of high-dose vitamin D supplementation to reduce the incidence rate of repeat episodes of pneumonia in children: A systematic review.",
+        "year": 2023,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          19
+        ],
+        "publication_types": [
+          "Systematic Review",
+          "Letter",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": false
+      },
+      {
+        "pmid": "35631275",
+        "title": "Effects of Vitamin D Supplementation on COVID-19 Related Outcomes: A Systematic Review and Meta-Analysis.",
+        "year": 2022,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          21
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "35182989",
+        "title": "Current opinion on the role of vitamin D supplementation in respiratory infections and asthma/COPD exacerbations: A need to establish publication guidelines for overcoming the unpublished data.",
+        "year": 2022,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          22
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "34607398",
+        "title": "The role of vitamin D deficiency on COVID-19: a systematic review and meta-analysis of observational studies.",
+        "year": 2021,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          23
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "33920639",
+        "title": "Relation between Vitamin D and COVID-19 in Aged People: A Systematic Review.",
+        "year": 2021,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          24
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "33775818",
+        "title": "Therapeutic and prognostic role of vitamin D for COVID-19 infection: A systematic review and meta-analysis of 43 observational studies.",
+        "year": 2021,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          25
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      }
+    ],
+    "timings": {
+      "query_generation_s": 6.67,
+      "retrieval_s": 6.15,
+      "translation_s": 23.31,
+      "synthesis_s": 23.34,
+      "synthesis_first_token_s": 1.92,
+      "total_s": 59.46
+    },
+    "usage": {
+      "search": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 329,
+        "output_tokens": 313,
+        "output_tokens_details": null,
+        "server_tool_use": null,
+        "service_tier": "standard"
+      },
+      "summary": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 2250,
+        "output_tokens": 1014,
+        "output_tokens_details": null,
+        "server_tool_use": null,
+        "service_tier": "standard"
+      },
+      "synthesis": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 9092,
+        "output_tokens": 841,
+        "output_tokens_details": null,
+        "server_tool_use": null,
+        "service_tier": "standard"
+      }
+    },
+    "synthesis_stop_reason": "end_turn",
+    "served_model": "claude-opus-4-6"
+  },
+  "run": {
+    "question_id": "Q3",
+    "replicate": 1,
+    "route": "worker:https://tables-turned-api.jethomasphd.workers.dev",
+    "captured_at": "2026-09-28T23:39:40Z"
+  }
+}

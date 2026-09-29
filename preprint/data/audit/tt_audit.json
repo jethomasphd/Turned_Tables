@@ -1,0 +1,1449 @@
+[
+  {
+    "question_id": "Q1",
+    "replicate": 1,
+    "file": "data/tables_turned/Q1_melatonin_kids/run_1.json",
+    "n_cited_pmids": 9,
+    "n_resolved_in_pubmed": 9,
+    "n_in_curated_corpus": 9,
+    "out_of_corpus_pmids": [],
+    "n_corpus": 12,
+    "corpus_coverage": 0.75,
+    "n_unwitnessed_markers": 1,
+    "retracted_in_corpus": [],
+    "retracted_cited": [],
+    "claims": [
+      {
+        "text": "Yes, melatonin helps children fall asleep faster and sleep somewhat longer, and it appears safe in the short and medium term.",
+        "kind": "sentence",
+        "section": "The short answer",
+        "pmids": [],
+        "unwitnessed": false
+      },
+      {
+        "text": "A meta-analysis of 24 trials found melatonin was significantly effective at reducing the time to fall asleep and increasing total sleep time specifically in children and adolescents [PMID: 36179487].",
+        "kind": "sentence",
+        "section": "The short answer",
+        "pmids": [
+          "36179487"
+        ],
+        "unwitnessed": false,
+        "verdict": "supported",
+        "verdict_reason": "The meta-analysis of 24 RCTs found that, in non-comorbid insomnia, melatonin significantly improved sleep onset latency and total sleep time only in children and adolescents."
+      },
+      {
+        "text": "However, European pediatric sleep experts recommend trying good sleep habits and consistent bedtime routines *first*, and using low-dose melatonin only if those steps aren't enough [PMID: 38625388].",
+        "kind": "sentence",
+        "section": "The short answer",
+        "pmids": [
+          "38625388"
+        ],
+        "unwitnessed": false,
+        "verdict": "supported",
+        "verdict_reason": "The European expert guidance calls for a stepwise approach with sleep hygiene and bedtime routines first, and low-dose melatonin only when these measures are not effective."
+      },
+      {
+        "text": "**Kids fall asleep faster.** Across studies, melatonin reduced sleep onset latency (time to fall asleep) by roughly 25–40 minutes compared to placebo in children [PMID: 29096777, PMID: 36179487].",
+        "kind": "bullet",
+        "section": "Key findings",
+        "pmids": [
+          "29096777",
+          "36179487"
+        ],
+        "unwitnessed": false,
+        "verdict": "partially_supported",
+        "verdict_reason": "The placebo-adjusted reduction was about 25 minutes in a single trial of children with ASD, whereas 39.6 minutes was the within-group change, and the meta-analysis reports no magnitude, so the 25–40 minute versus-placebo range for children generally is overstated."
+      },
+      {
+        "text": "**Kids sleep a bit longer.** Total sleep time increased modestly — around 8 minutes in a broad meta-analysis of all ages [PMID: 23691095], but more substantially (~58 minutes) in children with neurodevelopmental conditions [PMID: 29096777].",
+        "kind": "bullet",
+        "section": "Key findings",
+        "pmids": [
+          "23691095",
+          "29096777"
+        ],
+        "unwitnessed": false,
+        "verdict": "partially_supported",
+        "verdict_reason": "The ~8-minute all-ages figure is correct, but the 57.5-minute figure is the within-group increase; the placebo-adjusted difference in children with ASD was about 32 minutes."
+      },
+      {
+        "text": "**Effects are stronger in kids than adults.** One meta-analysis found melatonin was *not* significantly effective in adults with chronic insomnia but *was* effective in children and adolescents [PMID: 36179487]. A European adult insomnia guideline does not recommend melatonin for adult insomnia [PMID: 28875581].",
+        "kind": "bullet",
+        "section": "Key findings",
+        "pmids": [
+          "36179487",
+          "28875581"
+        ],
+        "unwitnessed": false,
+        "verdict": "supported",
+        "verdict_reason": "The meta-analysis found melatonin not effective in adults but effective in children and adolescents, and the European guideline does not recommend melatonin for adult insomnia."
+      },
+      {
+        "text": "**Safety profile is reassuring.** A 2-year study in children found no concerning effects on growth, weight, or puberty. Most common side effects were fatigue and daytime sleepiness [PMID: 31982581]. Multiple reviews describe melatonin as well-tolerated [PMID: 33540815, PMID: 31638842].",
+        "kind": "bullet",
+        "section": "Key findings",
+        "pmids": [
+          "31982581",
+          "33540815",
+          "31638842"
+        ],
+        "unwitnessed": false,
+        "verdict": "supported",
+        "verdict_reason": "The 2-year study found growth, BMI and puberty within normal ranges, with fatigue and somnolence as the most frequent adverse events, and both reviews describe melatonin as safe and well tolerated."
+      },
+      {
+        "text": "**Experts say behavioral strategies come first.** A 2024 European expert panel recommends sleep hygiene and bedtime routines as step one; low-dose melatonin (given 30–60 min before bed) as step two for children over age 2 who don't improve [PMID: 38625388].",
+        "kind": "bullet",
+        "section": "Key findings",
+        "pmids": [
+          "38625388"
+        ],
+        "unwitnessed": false,
+        "verdict": "supported",
+        "verdict_reason": "The panel recommends sleep hygiene and bedtime routines (followed by behavioral therapies) first, then low-dose melatonin 30–60 minutes before bedtime in children over 2 when these fail; the 2024 date is not stated in the abstract, which reports only that the panel met in October 2023."
+      },
+      {
+        "text": "**Most strong evidence is in kids with autism/ADHD, not typically developing kids.** The largest controlled trials studied children with neurodevelopmental disorders [PMID: 29096777, PMID: 36603513]. Evidence in otherwise healthy children exists but is thinner.",
+        "kind": "bullet",
+        "section": "Key findings",
+        "pmids": [
+          "29096777",
+          "36603513"
+        ],
+        "unwitnessed": false,
+        "verdict": "partially_supported",
+        "verdict_reason": "The cited sources do involve children with ASD and ADHD, but they do not establish that these are the largest controlled trials (one is a systematic review) or that evidence in healthy children is thinner."
+      },
+      {
+        "text": "**Optimal dose and formulation for a typical 7-year-old.** Most rigorous trials used pharmaceutical-grade prolonged-release tablets, not over-the-counter gummies, which vary widely in actual melatonin content [UNWITNESSED from these papers].",
+        "kind": "bullet",
+        "section": "What is unknown",
+        "pmids": [],
+        "unwitnessed": true
+      },
+      {
+        "text": "**Long-term effects in typically developing children.** The 2-year safety data come from children with autism [PMID: 31982581]; comparable long-term data for healthy kids are lacking.",
+        "kind": "bullet",
+        "section": "What is unknown",
+        "pmids": [
+          "31982581"
+        ],
+        "unwitnessed": false,
+        "verdict": "supported",
+        "verdict_reason": "The 2-year safety data came from children with ASD (96%), consistent with the claim that long-term data in healthy children are not provided by this source."
+      },
+      {
+        "text": "**Whether stopping melatonin leads to rebound sleep problems.** One study showed some decline after withdrawal but not back to baseline [PMID: 31982581]; more data are needed.",
+        "kind": "bullet",
+        "section": "What is unknown",
+        "pmids": [
+          "31982581"
+        ],
+        "unwitnessed": false,
+        "verdict": "supported",
+        "verdict_reason": "During the 2-week placebo withdrawal, measures declined compared with treatment but remained improved compared with baseline."
+      },
+      {
+        "text": "Strong evidence that melatonin helps children fall asleep faster, but the best-controlled trials are mostly in kids with autism or ADHD, not typically developing children.",
+        "kind": "sentence",
+        "section": "Confidence: Medium",
+        "pmids": [],
+        "unwitnessed": false
+      },
+      {
+        "text": "Safety data are reassuring but limited beyond 2 years.",
+        "kind": "sentence",
+        "section": "Confidence: Medium",
+        "pmids": [],
+        "unwitnessed": false
+      },
+      {
+        "text": "The recommendation to try sleep hygiene first is consistent across sources.",
+        "kind": "sentence",
+        "section": "Confidence: Medium",
+        "pmids": [],
+        "unwitnessed": false
+      }
+    ],
+    "judge": {
+      "model": "claude-opus-5-5",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 12350,
+        "output_tokens": 1817,
+        "output_tokens_details": {
+          "thinking_tokens": 943
+        },
+        "server_tool_use": null,
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "question_id": "Q1",
+    "replicate": 2,
+    "file": "data/tables_turned/Q1_melatonin_kids/run_2.json",
+    "n_cited_pmids": 8,
+    "n_resolved_in_pubmed": 8,
+    "n_in_curated_corpus": 8,
+    "out_of_corpus_pmids": [],
+    "n_corpus": 12,
+    "corpus_coverage": 0.667,
+    "n_unwitnessed_markers": 0,
+    "retracted_in_corpus": [],
+    "retracted_cited": [],
+    "claims": [
+      {
+        "text": "Yes, melatonin can help children fall asleep faster and sleep somewhat longer.",
+        "kind": "sentence",
+        "section": "The short answer",
+        "pmids": [],
+        "unwitnessed": false
+      },
+      {
+        "text": "In children and adolescents, it reduced the time to fall asleep by roughly 20–40 minutes and added about 8–48 minutes of total sleep, depending on the study [PMID: 36179487, PMID: 29720494].",
+        "kind": "sentence",
+        "section": "The short answer",
+        "pmids": [
+          "36179487",
+          "29720494"
+        ],
+        "unwitnessed": false,
+        "verdict": "partially_supported",
+        "verdict_reason": "The cited sources give about 29 minutes faster sleep onset and 48 minutes more sleep in children with neurodevelopmental disorders, but the 20–40 minute range and the 8-minute lower bound are not in either cited pediatric source."
+      },
+      {
+        "text": "However, experts recommend trying good sleep habits and a consistent bedtime routine first, and using melatonin only if those don't work [PMID: 38625388].",
+        "kind": "sentence",
+        "section": "The short answer",
+        "pmids": [
+          "38625388"
+        ],
+        "unwitnessed": false,
+        "verdict": "supported",
+        "verdict_reason": "The guidance states that sleep hygiene and bedtime routines must be the first step, with low-dose melatonin used when these are not effective."
+      },
+      {
+        "text": "**Melatonin shortens the time it takes kids to fall asleep.** A meta-analysis of children with neurodevelopmental disorders found it cut about 29 minutes off the time to fall asleep compared to a sugar pill [PMID: 29720494]. A separate review found it was effective for sleep onset latency in children with chronic insomnia generally [PMID: 36179487].",
+        "kind": "bullet",
+        "section": "Key findings",
+        "pmids": [
+          "29720494",
+          "36179487"
+        ],
+        "unwitnessed": false,
+        "verdict": "supported",
+        "verdict_reason": "One source reports a sleep-onset reduction of about 29 minutes versus placebo in children with neurodevelopmental disorders, and the other found melatonin effective for sleep onset latency in children and adolescents with chronic insomnia."
+      },
+      {
+        "text": "**It modestly increases total sleep time.** Studies report gains ranging from ~8 minutes (in mixed adult/child primary insomnia data) to ~48 minutes in children with neurodevelopmental conditions [PMID: 23691095, PMID: 29720494].",
+        "kind": "bullet",
+        "section": "Key findings",
+        "pmids": [
+          "23691095",
+          "29720494"
+        ],
+        "unwitnessed": false,
+        "verdict": "supported",
+        "verdict_reason": "The sources report 8.25 minutes more total sleep in mixed adult/child primary sleep disorders (described as modest) and 48 minutes in children with neurodevelopmental disorders."
+      },
+      {
+        "text": "**It appears safe in the short and medium term.** A 2-year study in children (ages 2–17) found no harmful effects on growth, weight, or puberty, and no withdrawal problems when stopped [PMID: 31982581]. Common side effects were mild: fatigue and daytime drowsiness [PMID: 29096777].",
+        "kind": "bullet",
+        "section": "Key findings",
+        "pmids": [
+          "31982581",
+          "29096777"
+        ],
+        "unwitnessed": false,
+        "verdict": "partially_supported",
+        "verdict_reason": "The 2-year study found no harm to growth or puberty and no withdrawal issues, but it enrolled mostly children with autism, not children generally, and fatigue is reported in that study rather than the cited 29096777, which mentions only somnolence."
+      },
+      {
+        "text": "**Experts say: try behavioral strategies first.** A 2024 European expert panel recommends sleep hygiene and consistent routines as step one. If those fail, low-dose melatonin (given 30–60 min before bedtime) is appropriate for children over age 2 [PMID: 38625388].",
+        "kind": "bullet",
+        "section": "Key findings",
+        "pmids": [
+          "38625388"
+        ],
+        "unwitnessed": false,
+        "verdict": "supported",
+        "verdict_reason": "The panel recommends sleep hygiene and routines first, then low-dose melatonin 30–60 minutes before bedtime for children over 2, and calls it a useful strategy."
+      },
+      {
+        "text": "**Most strong evidence comes from kids with autism/ADHD, not typically developing children.** The largest, best-designed trials studied children with neurodevelopmental conditions [PMID: 29096777, PMID: 30710339]. Evidence in otherwise healthy children is thinner.",
+        "kind": "bullet",
+        "section": "Key findings",
+        "pmids": [
+          "29096777",
+          "30710339"
+        ],
+        "unwitnessed": false,
+        "verdict": "partially_supported",
+        "verdict_reason": "The cited studies do involve children with neurodevelopmental conditions, but neither compares evidence with typically developing children, and one describes that evidence as mostly poor quality rather than best-designed."
+      },
+      {
+        "text": "**In adults, melatonin performs poorly compared to prescription sleep drugs.** A large network meta-analysis in adults found melatonin did not show \"overall material benefits\" for insomnia [PMID: 35843245]. This does not directly apply to your child, but it tempers expectations about effect size.",
+        "kind": "bullet",
+        "section": "Key findings",
+        "pmids": [
+          "35843245"
+        ],
+        "unwitnessed": false,
+        "verdict": "supported",
+        "verdict_reason": "The network meta-analysis found several prescription hypnotics more efficacious than melatonin and states that melatonin did not show overall material benefits."
+      },
+      {
+        "text": "**How well melatonin works in typically developing 7-year-olds specifically.** Most pediatric trials enrolled children with autism or other neurodevelopmental conditions. The benefit in healthy kids with garden-variety bedtime difficulty is less proven [PMID: 30710339].",
+        "kind": "bullet",
+        "section": "What is unknown",
+        "pmids": [
+          "30710339"
+        ],
+        "unwitnessed": false,
+        "verdict": "not_supported",
+        "verdict_reason": "The source only studies children with neurodisabilities and says nothing about the evidence base or benefit in typically developing children."
+      },
+      {
+        "text": "**Long-term safety beyond 2 years**, and whether prolonged use affects hormones or puberty over many years, remains unstudied [PMID: 31982581].",
+        "kind": "bullet",
+        "section": "What is unknown",
+        "pmids": [
+          "31982581"
+        ],
+        "unwitnessed": false,
+        "verdict": "not_supported",
+        "verdict_reason": "The source reports 2-year safety data but does not state that longer-term effects remain unstudied."
+      },
+      {
+        "text": "**Optimal dose and formulation for healthy children.** Over-the-counter gummies are unregulated and doses vary; most experts advise starting with the lowest available dose [PMID: 38625388].",
+        "kind": "bullet",
+        "section": "What is unknown",
+        "pmids": [
+          "38625388"
+        ],
+        "unwitnessed": false,
+        "verdict": "partially_supported",
+        "verdict_reason": "The guidance recommends low-dose melatonin and notes a lack of guidelines for over-the-counter remedies, but says nothing about gummies being unregulated or doses varying."
+      },
+      {
+        "text": "Multiple meta-analyses consistently show melatonin helps kids fall asleep faster with a good safety profile, but the strongest evidence is in children with neurodevelopmental disorders, not typically developing kids.",
+        "kind": "sentence",
+        "section": "Confidence: Medium",
+        "pmids": [],
+        "unwitnessed": false
+      },
+      {
+        "text": "Effect sizes are real but modest.",
+        "kind": "sentence",
+        "section": "Confidence: Medium",
+        "pmids": [],
+        "unwitnessed": false
+      }
+    ],
+    "judge": {
+      "model": "claude-opus-5-5",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 16587,
+        "output_tokens": 1999,
+        "output_tokens_details": {
+          "thinking_tokens": 1097
+        },
+        "server_tool_use": null,
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "question_id": "Q1",
+    "replicate": 3,
+    "file": "data/tables_turned/Q1_melatonin_kids/run_3.json",
+    "n_cited_pmids": 6,
+    "n_resolved_in_pubmed": 6,
+    "n_in_curated_corpus": 6,
+    "out_of_corpus_pmids": [],
+    "n_corpus": 12,
+    "corpus_coverage": 0.5,
+    "n_unwitnessed_markers": 0,
+    "retracted_in_corpus": [],
+    "retracted_cited": [],
+    "claims": [
+      {
+        "text": "Yes, melatonin helps children fall asleep faster and sleep somewhat longer.",
+        "kind": "sentence",
+        "section": "The short answer",
+        "pmids": [],
+        "unwitnessed": false
+      },
+      {
+        "text": "A major meta-analysis found melatonin was significantly effective at reducing the time it takes kids to fall asleep and increasing total sleep time — notably more so in children than in adults [PMID: 36179487].",
+        "kind": "sentence",
+        "section": "The short answer",
+        "pmids": [
+          "36179487"
+        ],
+        "unwitnessed": false,
+        "verdict": "supported",
+        "verdict_reason": "The meta-analysis reports melatonin significantly improved sleep onset latency and total sleep time in children and adolescents but not in adults with non-comorbid chronic insomnia."
+      },
+      {
+        "text": "European pediatric sleep experts recommend it as a second step when good sleep habits and behavioral strategies alone aren't enough, at a low dose given 30–60 minutes before bedtime [PMID: 38625388].",
+        "kind": "sentence",
+        "section": "The short answer",
+        "pmids": [
+          "38625388"
+        ],
+        "unwitnessed": false,
+        "verdict": "supported",
+        "verdict_reason": "The European expert guidance recommends low-dose melatonin 30-60 min before bedtime as a step after sleep hygiene and behavioral therapies fail."
+      },
+      {
+        "text": "**Kids fall asleep faster.** Across studies, melatonin reduced sleep onset latency by roughly 7–40 minutes depending on the population and formulation, and modestly increased total sleep time [PMID: 23691095, PMID: 36179487].",
+        "kind": "bullet",
+        "section": "Key findings",
+        "pmids": [
+          "23691095",
+          "36179487"
+        ],
+        "unwitnessed": false,
+        "verdict": "partially_supported",
+        "verdict_reason": "The cited sources give only a ~7-minute pooled reduction in sleep latency (and no numbers in 36179487), so the upper bound of ~40 minutes is not supported by the cited sources."
+      },
+      {
+        "text": "**It works better in children than adults.** The benefit was statistically significant in children/adolescents but *not* in adults with chronic insomnia [PMID: 36179487].",
+        "kind": "bullet",
+        "section": "Key findings",
+        "pmids": [
+          "36179487"
+        ],
+        "unwitnessed": false,
+        "verdict": "supported",
+        "verdict_reason": "The source states melatonin was significantly effective in children/adolescents but not in adults and concludes it did not appear effective in adults."
+      },
+      {
+        "text": "**Try sleep hygiene first.** Expert consensus says melatonin should only come *after* consistent bedtime routines, limited screen time, and behavioral strategies have been tried [PMID: 38625388].",
+        "kind": "bullet",
+        "section": "Key findings",
+        "pmids": [
+          "38625388"
+        ],
+        "unwitnessed": false,
+        "verdict": "partially_supported",
+        "verdict_reason": "The source supports sleep hygiene, bedtime routine and behavioral therapy as first steps, but does not mention limiting screen time."
+      },
+      {
+        "text": "**Screen time matters independently.** Reading on a light-emitting device before bed suppresses the body's own melatonin, delays the internal clock, and makes falling asleep harder — cutting screens before bed may help on its own [PMID: 25535358].",
+        "kind": "bullet",
+        "section": "Key findings",
+        "pmids": [
+          "25535358"
+        ],
+        "unwitnessed": false,
+        "verdict": "supported",
+        "verdict_reason": "The study found reading on a light-emitting eReader suppressed melatonin, delayed the circadian clock and lengthened time to fall asleep compared with a printed book, which reasonably implies reducing screens may help."
+      },
+      {
+        "text": "**Short-term safety looks good.** The most common side effects are daytime drowsiness and headache, at rates similar to placebo. A 2-year study in children (mostly with autism) found no negative effects on growth or puberty [PMID: 31982581, PMID: 29096777].",
+        "kind": "bullet",
+        "section": "Key findings",
+        "pmids": [
+          "31982581",
+          "29096777"
+        ],
+        "unwitnessed": false,
+        "verdict": "partially_supported",
+        "verdict_reason": "Growth and puberty findings are supported, but headache is not mentioned and the RCT reports somnolence was more common with melatonin than placebo, contradicting 'similar to placebo'."
+      },
+      {
+        "text": "**Effects are modest, not dramatic.** One large meta-analysis found the average improvement was about 7 minutes faster to fall asleep and 8 minutes more sleep overall — meaningful but not a miracle [PMID: 23691095].",
+        "kind": "bullet",
+        "section": "Key findings",
+        "pmids": [
+          "23691095"
+        ],
+        "unwitnessed": false,
+        "verdict": "supported",
+        "verdict_reason": "The meta-analysis reports WMDs of 7.06 minutes for sleep latency and 8.25 minutes for total sleep time and describes the effects as modest."
+      },
+      {
+        "text": "**Long-term safety in typically developing children is unstudied.** The 2-year data comes from kids with autism; no equivalent long-term trial exists for otherwise healthy children [PMID: 31982581].",
+        "kind": "bullet",
+        "section": "What is unknown",
+        "pmids": [
+          "31982581"
+        ],
+        "unwitnessed": false,
+        "verdict": "partially_supported",
+        "verdict_reason": "The source confirms the 2-year data come from children mostly with autism, but it does not state that no long-term trial exists in typically developing children."
+      },
+      {
+        "text": "**Optimal dose for a healthy 7-year-old is unclear.** Most studies used clinical-grade melatonin in controlled doses; over-the-counter gummies vary in actual melatonin content and are not tightly regulated.",
+        "kind": "bullet",
+        "section": "What is unknown",
+        "pmids": [],
+        "unwitnessed": false
+      },
+      {
+        "text": "**Whether melatonin addresses the root cause** of your child's sleep difficulty (anxiety, screen habits, circadian timing) is something these studies don't answer.",
+        "kind": "bullet",
+        "section": "What is unknown",
+        "pmids": [],
+        "unwitnessed": false
+      },
+      {
+        "text": "Multiple meta-analyses and randomized trials consistently show melatonin helps kids fall asleep faster, with good short-term safety.",
+        "kind": "sentence",
+        "section": "Confidence: Medium-High",
+        "pmids": [],
+        "unwitnessed": false
+      },
+      {
+        "text": "Confidence is not \"high\" because most rigorous long-term data comes from neurodevelopmental populations, not typically developing children, and OTC gummy dosing is less controlled than what was studied.",
+        "kind": "sentence",
+        "section": "Confidence: Medium-High",
+        "pmids": [],
+        "unwitnessed": false
+      }
+    ],
+    "judge": {
+      "model": "claude-opus-5-5",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 8260,
+        "output_tokens": 1508,
+        "output_tokens_details": {
+          "thinking_tokens": 800
+        },
+        "server_tool_use": null,
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "question_id": "Q2",
+    "replicate": 1,
+    "file": "data/tables_turned/Q2_ozempic_safety/run_1.json",
+    "n_cited_pmids": 8,
+    "n_resolved_in_pubmed": 8,
+    "n_in_curated_corpus": 8,
+    "out_of_corpus_pmids": [],
+    "n_corpus": 12,
+    "corpus_coverage": 0.667,
+    "n_unwitnessed_markers": 0,
+    "retracted_in_corpus": [],
+    "retracted_cited": [],
+    "claims": [
+      {
+        "text": "Semaglutide is broadly considered safe for weight loss, with an overall favorable risk-benefit profile, but it is not side-effect-free [PMID: 34305810].",
+        "kind": "sentence",
+        "section": "The short answer",
+        "pmids": [
+          "34305810"
+        ],
+        "unwitnessed": false,
+        "verdict": "partially_supported",
+        "verdict_reason": "The review concludes a favorable risk/benefit profile and notes GI and biliary side effects, but it draws that conclusion for patients with type 2 diabetes, not for weight-loss use."
+      },
+      {
+        "text": "The most common problems are gut-related — nausea, diarrhea, constipation — which are usually mild-to-moderate and fade over time [PMID: 33567185].",
+        "kind": "sentence",
+        "section": "The short answer",
+        "pmids": [
+          "33567185"
+        ],
+        "unwitnessed": false,
+        "verdict": "partially_supported",
+        "verdict_reason": "STEP 1 reports nausea and diarrhea as the most common, typically transient, mild-to-moderate events, but it does not mention constipation."
+      },
+      {
+        "text": "A large cardiovascular trial (17,604 people, ~3 years follow-up) showed it actually *reduced* heart attacks and strokes by 20% in people with preexisting heart disease [PMID: 37952131].",
+        "kind": "sentence",
+        "section": "The short answer",
+        "pmids": [
+          "37952131"
+        ],
+        "unwitnessed": false,
+        "verdict": "partially_supported",
+        "verdict_reason": "The enrollment, follow-up, population and HR 0.80 match, but the 20% reduction applies to a composite that also includes cardiovascular death, not heart attacks and strokes alone."
+      },
+      {
+        "text": "**Gut side effects are the main issue.** Across trials, gastrointestinal complaints occur in ~75–83% of semaglutide users vs. ~42–64% on placebo. Most are mild-to-moderate nausea, vomiting, diarrhea, or constipation that improve over weeks [PMID: 33567185; PMID: 36216945; PMID: 33625476].",
+        "kind": "bullet",
+        "section": "Key findings",
+        "pmids": [
+          "33567185",
+          "36216945",
+          "33625476"
+        ],
+        "unwitnessed": false,
+        "verdict": "partially_supported",
+        "verdict_reason": "The sources report GI events in 82.2–82.8% on semaglutide vs 53.9–63.2% on placebo, so the lower bounds (~75%, ~42%) are unsupported, and vomiting, constipation and improvement over weeks are not described in the cited GI-rate sources."
+      },
+      {
+        "text": "**Some people quit because of side effects.** About 3–7% of users in trials stopped treatment due to GI problems, compared to <1% on placebo [PMID: 33567185; PMID: 33625476]. Real-world dropout rates are higher (20–50% in the first year), driven partly by side effects and cost [PMID: 40196933].",
+        "kind": "bullet",
+        "section": "Key findings",
+        "pmids": [
+          "33567185",
+          "33625476",
+          "40196933"
+        ],
+        "unwitnessed": false,
+        "verdict": "partially_supported",
+        "verdict_reason": "Trial GI discontinuation was 3.4–4.5% vs 0–0.8%, so the 7% upper bound is unsupported, while the real-world 20–50% dropout driven by side effects and cost is supported."
+      },
+      {
+        "text": "**Serious adverse events are higher than placebo but still uncommon.** A meta-analysis found the risk of serious events (mainly gallstones, pancreatitis) was ~1.6× higher with semaglutide [PMID: 36578889]. The comprehensive safety review found increased gallbladder disease (cholelithiasis) as a real concern [PMID: 34305810].",
+        "kind": "bullet",
+        "section": "Key findings",
+        "pmids": [
+          "36578889",
+          "34305810"
+        ],
+        "unwitnessed": false,
+        "verdict": "supported",
+        "verdict_reason": "The meta-analysis reports RR 1.60 for serious adverse events, mostly pancreatitis and cholelithiasis, and the safety review confirms increased cholelithiasis risk and a low risk of severe events."
+      },
+      {
+        "text": "**Cardiovascular safety is strong.** The SELECT trial showed a 20% reduction in major cardiovascular events (heart attack, stroke, cardiovascular death) over ~40 months — a significant benefit, not just neutral safety [PMID: 37952131].",
+        "kind": "bullet",
+        "section": "Key findings",
+        "pmids": [
+          "37952131"
+        ],
+        "unwitnessed": false,
+        "verdict": "supported",
+        "verdict_reason": "SELECT showed HR 0.80 for the composite of CV death, MI or stroke at mean 39.8 months, with superiority over placebo."
+      },
+      {
+        "text": "**No confirmed link to thyroid or pancreatic cancer in humans so far**, though animal studies raised a thyroid cancer signal. Low incidence makes definitive conclusions impossible at this time [PMID: 34305810; PMID: 40196933].",
+        "kind": "bullet",
+        "section": "Key findings",
+        "pmids": [
+          "34305810",
+          "40196933"
+        ],
+        "unwitnessed": false,
+        "verdict": "partially_supported",
+        "verdict_reason": "The sources say definitive conclusions on thyroid and pancreatic cancer cannot be drawn and show no clear real-world increase, but they do not mention an animal-study thyroid signal."
+      },
+      {
+        "text": "**Weight regain is significant after stopping.** Participants regained about two-thirds of lost weight within one year of discontinuation, suggesting long-term use is needed to maintain results [PMID: 35441470].",
+        "kind": "bullet",
+        "section": "Key findings",
+        "pmids": [
+          "35441470"
+        ],
+        "unwitnessed": false,
+        "verdict": "supported",
+        "verdict_reason": "The STEP 1 extension found participants regained two-thirds of prior weight loss one year after withdrawal and concluded that ongoing treatment is required."
+      },
+      {
+        "text": "**Long-term safety beyond 3–4 years** has not been established in obesity populations. Most trials run 1–2 years [PMID: 40196933].",
+        "kind": "bullet",
+        "section": "What is unknown",
+        "pmids": [
+          "40196933"
+        ],
+        "unwitnessed": false,
+        "verdict": "not_supported",
+        "verdict_reason": "The cited review does not state that safety beyond 3–4 years is unestablished or that most trials last 1–2 years."
+      },
+      {
+        "text": "**Rare outcomes** — thyroid cancer, pancreatic cancer, retinal disease, mental health effects — need more data; current evidence is reassuring but not conclusive [PMID: 34305810; PMID: 40196933].",
+        "kind": "bullet",
+        "section": "What is unknown",
+        "pmids": [
+          "34305810",
+          "40196933"
+        ],
+        "unwitnessed": false,
+        "verdict": "supported",
+        "verdict_reason": "The sources say cancer conclusions cannot be drawn and show no clear increase in pancreatic cancer, thyroid disorders or depression, while calling for more data on eye disease, mental health and rare outcomes."
+      },
+      {
+        "text": "**Individual risk factors** (e.g., history of gallstones, pancreatitis, or retinopathy) may change the calculus and aren't well-studied in weight-loss-specific trials.",
+        "kind": "bullet",
+        "section": "What is unknown",
+        "pmids": [],
+        "unwitnessed": false
+      },
+      {
+        "text": "Based on multiple large RCTs (including one with 17,604 participants and ~3 years follow-up), a systematic review of 26 trials, and a comprehensive safety review.",
+        "kind": "sentence",
+        "section": "Confidence: **Medium-High**",
+        "pmids": [],
+        "unwitnessed": false
+      },
+      {
+        "text": "GI side effects and gallbladder risk are well-established.",
+        "kind": "sentence",
+        "section": "Confidence: **Medium-High**",
+        "pmids": [],
+        "unwitnessed": false
+      },
+      {
+        "text": "Very rare harms remain uncertain due to insufficient long-term data.",
+        "kind": "sentence",
+        "section": "Confidence: **Medium-High**",
+        "pmids": [],
+        "unwitnessed": false
+      }
+    ],
+    "judge": {
+      "model": "claude-opus-5-5",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 20061,
+        "output_tokens": 1686,
+        "output_tokens_details": {
+          "thinking_tokens": 734
+        },
+        "server_tool_use": null,
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "question_id": "Q3",
+    "replicate": 1,
+    "file": "data/tables_turned/Q3_vitamin_d_colds/run_1.json",
+    "n_cited_pmids": 7,
+    "n_resolved_in_pubmed": 7,
+    "n_in_curated_corpus": 7,
+    "out_of_corpus_pmids": [],
+    "n_corpus": 12,
+    "corpus_coverage": 0.583,
+    "n_unwitnessed_markers": 0,
+    "retracted_in_corpus": [],
+    "retracted_cited": [],
+    "claims": [
+      {
+        "text": "Vitamin D supplements modestly reduce the chance of catching respiratory infections like colds, but the benefit is small and recent evidence has weakened the case.",
+        "kind": "sentence",
+        "section": "The short answer",
+        "pmids": [],
+        "unwitnessed": false
+      },
+      {
+        "text": "The strongest protection is seen in people who are truly vitamin D deficient and who take it daily rather than in large monthly doses [PMID: 28202713, PMID: 39993397].",
+        "kind": "sentence",
+        "section": "The short answer",
+        "pmids": [
+          "28202713",
+          "39993397"
+        ],
+        "unwitnessed": false,
+        "verdict": "partially_supported",
+        "verdict_reason": "The 2017 IPD meta-analysis supports stronger benefit in very deficient people and those avoiding bolus doses, but the cited 2025 update found no effect modification by baseline vitamin D status or dosing frequency, and the 2017 comparison was daily/weekly versus bolus rather than daily versus monthly."
+      },
+      {
+        "text": "For children aged 1–18, the Endocrine Society suggests supplementation partly because of this respiratory benefit [PMID: 38828931].",
+        "kind": "sentence",
+        "section": "The short answer",
+        "pmids": [
+          "38828931"
+        ],
+        "unwitnessed": false,
+        "verdict": "supported",
+        "verdict_reason": "The guideline suggests empiric supplementation for ages 1–18 to prevent rickets and because of its potential to lower respiratory tract infection risk."
+      },
+      {
+        "text": "**Earlier meta-analyses found a real but small benefit.** A 2017 analysis of 25 trials (11,321 people) found vitamin D cut respiratory infection risk by 12% overall (odds ratio 0.88) [PMID: 28202713]. A 2021 update with 43 trials (48,488 people) confirmed a similar small effect (OR 0.92) [PMID: 33798465].",
+        "kind": "bullet",
+        "section": "Key findings",
+        "pmids": [
+          "28202713",
+          "33798465"
+        ],
+        "unwitnessed": false,
+        "verdict": "supported",
+        "verdict_reason": "The 2017 analysis reports 25 trials, 11,321 participants and an adjusted OR of 0.88, and the 2021 update reports 43 trials, 48,488 participants and an OR of 0.92 described as a small reduction (the 12% figure is a reduction in odds rather than risk, a minor simplification)."
+      },
+      {
+        "text": "**The latest and largest meta-analysis is no longer statistically significant.** A 2025 update adding newer large trials found the effect shrank to borderline (OR 0.94, confidence interval now crosses 1.00, p=0.057) [PMID: 39993397]. This means we can no longer be confident the effect isn't due to chance.",
+        "kind": "bullet",
+        "section": "Key findings",
+        "pmids": [
+          "39993397"
+        ],
+        "unwitnessed": false,
+        "verdict": "supported",
+        "verdict_reason": "The 2025 update reports OR 0.94 (95% CI 0.88–1.00, p=0.057) and states there is no statistically significant protection."
+      },
+      {
+        "text": "**People who are very deficient benefit most.** Those with blood levels below 25 nmol/L who took daily doses saw a 70% reduction in infections [PMID: 28202713, PMID: 30675873]. This strong subgroup finding did **not** replicate in the 2025 update [PMID: 39993397].",
+        "kind": "bullet",
+        "section": "Key findings",
+        "pmids": [
+          "28202713",
+          "30675873",
+          "39993397"
+        ],
+        "unwitnessed": false,
+        "verdict": "supported",
+        "verdict_reason": "The 2017/2019 IPD analyses report aOR 0.30 for baseline levels <25 nmol/L among daily or weekly recipients, and the 2025 update found no effect modification by baseline vitamin D status."
+      },
+      {
+        "text": "**Daily low doses work better than big monthly doses.** Daily doses of 400–1000 IU showed clearer protection than intermittent large (\"bolus\") doses [PMID: 33798465, PMID: 28202713].",
+        "kind": "bullet",
+        "section": "Key findings",
+        "pmids": [
+          "33798465",
+          "28202713"
+        ],
+        "unwitnessed": false,
+        "verdict": "partially_supported",
+        "verdict_reason": "Protection was seen with daily and 400–1000 IU dosing and not with bolus doses, but the 2021 analysis found no significant interaction by dose or frequency, so the claim that daily doses 'work better' is stated more firmly than the evidence allows."
+      },
+      {
+        "text": "**Children may benefit more than adults.** Protection was strongest in ages 1–16 (OR 0.71) [PMID: 33798465]. The Endocrine Society recommends supplementation for children partly for this reason [PMID: 38828931].",
+        "kind": "bullet",
+        "section": "Key findings",
+        "pmids": [
+          "33798465",
+          "38828931"
+        ],
+        "unwitnessed": false,
+        "verdict": "partially_supported",
+        "verdict_reason": "The 2021 analysis reports OR 0.71 for ages 1–15.99 but found no significant interaction by age, and the guideline 'suggests' rather than 'recommends' supplementation, citing respiratory infection potential in general rather than this specific finding."
+      },
+      {
+        "text": "**Vitamin D is safe.** No increase in serious side effects was found across any of the meta-analyses [PMID: 28202713, PMID: 33798465, PMID: 39993397].",
+        "kind": "bullet",
+        "section": "Key findings",
+        "pmids": [
+          "28202713",
+          "33798465",
+          "39993397"
+        ],
+        "unwitnessed": false,
+        "verdict": "supported",
+        "verdict_reason": "All three meta-analyses report no difference in serious adverse events between vitamin D and placebo."
+      },
+      {
+        "text": "**Whether your family is actually deficient.** The benefit hinges heavily on starting vitamin D status, and most studies didn't target people chosen by deficiency status.",
+        "kind": "bullet",
+        "section": "What is unknown",
+        "pmids": [],
+        "unwitnessed": false
+      },
+      {
+        "text": "**Optimal dose for prevention.** Trials used widely varying doses; no consensus exists on the best amount specifically for infection prevention [PMID: 38828931].",
+        "kind": "bullet",
+        "section": "What is unknown",
+        "pmids": [
+          "38828931"
+        ],
+        "unwitnessed": false,
+        "verdict": "supported",
+        "verdict_reason": "The guideline states that trial doses varied considerably and that optimal doses for empiric supplementation remain unclear."
+      },
+      {
+        "text": "**How vitamin D compares to other options.** Zinc, probiotics, and catechins (found in green tea) may be equally or more effective for preventing colds in adults [PMID: 32342851, PMID: 40969681].",
+        "kind": "bullet",
+        "section": "What is unknown",
+        "pmids": [
+          "32342851",
+          "40969681"
+        ],
+        "unwitnessed": false,
+        "verdict": "partially_supported",
+        "verdict_reason": "The network meta-analysis supports catechins and probiotics as among the most effective for preventing respiratory infections, but the zinc review found zinc did not prevent cold incidence and only shortened cold duration."
+      },
+      {
+        "text": "Dozens of high-quality trials exist, but the most comprehensive and up-to-date meta-analysis now shows a non-significant overall effect.",
+        "kind": "sentence",
+        "section": "Confidence: Medium",
+        "pmids": [],
+        "unwitnessed": false
+      },
+      {
+        "text": "Earlier strong findings in deficient subgroups have not held up in updated analyses.",
+        "kind": "sentence",
+        "section": "Confidence: Medium",
+        "pmids": [],
+        "unwitnessed": false
+      },
+      {
+        "text": "The benefit is likely real for deficient individuals but small-to-negligible for those with adequate vitamin D levels.",
+        "kind": "sentence",
+        "section": "Confidence: Medium",
+        "pmids": [],
+        "unwitnessed": false
+      }
+    ],
+    "judge": {
+      "model": "claude-opus-5-5",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 25212,
+        "output_tokens": 1961,
+        "output_tokens_details": {
+          "thinking_tokens": 1031
+        },
+        "server_tool_use": null,
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "question_id": "Q4",
+    "replicate": 1,
+    "file": "data/tables_turned/Q4_intermittent_fasting/run_1.json",
+    "n_cited_pmids": 7,
+    "n_resolved_in_pubmed": 7,
+    "n_in_curated_corpus": 7,
+    "out_of_corpus_pmids": [],
+    "n_corpus": 12,
+    "corpus_coverage": 0.583,
+    "n_unwitnessed_markers": 0,
+    "retracted_in_corpus": [],
+    "retracted_cited": [],
+    "claims": [
+      {
+        "text": "For most people, intermittent fasting and traditional calorie-cutting produce **nearly identical weight loss**.",
+        "kind": "sentence",
+        "section": "The short answer",
+        "pmids": [],
+        "unwitnessed": false
+      },
+      {
+        "text": "The largest meta-analysis (99 trials, 6,582 people) found only minor differences, with one exception: alternate-day fasting edged out continuous dieting by about 1.3 kg (~3 lbs) in shorter trials [PMID: 40533200].",
+        "kind": "sentence",
+        "section": "The short answer",
+        "pmids": [
+          "40533200"
+        ],
+        "unwitnessed": false,
+        "verdict": "supported",
+        "verdict_reason": "The source reports 99 trials with 6,582 adults, minor differences overall, and alternate-day fasting beating continuous restriction by 1.29 kg, with the benefit seen in shorter trials."
+      },
+      {
+        "text": "One well-designed 12-month trial found that a 4:3 fasting schedule (eat very little 3 days/week) beat daily calorie restriction by about 6 lbs, possibly because it reduced binge eating [PMID: 40163873].",
+        "kind": "sentence",
+        "section": "The short answer",
+        "pmids": [
+          "40163873"
+        ],
+        "unwitnessed": false,
+        "verdict": "partially_supported",
+        "verdict_reason": "The cited trial supports a 2.89 kg (~6 lb) greater loss with 4:3 fasting at 12 months, but it says nothing about binge eating as an explanation."
+      },
+      {
+        "text": "Bottom line: pick whichever approach you can actually stick with for a full year.",
+        "kind": "sentence",
+        "section": "The short answer",
+        "pmids": [],
+        "unwitnessed": false
+      },
+      {
+        "text": "**Overall, fasting ≈ regular dieting.** The largest network meta-analysis found all fasting types and continuous restriction produced similar weight loss vs. each other, with differences generally under 2 kg [PMID: 40533200]. A second meta-analysis of 24 trials agreed [PMID: 36349432].",
+        "kind": "bullet",
+        "section": "Key findings",
+        "pmids": [
+          "40533200",
+          "36349432"
+        ],
+        "unwitnessed": false,
+        "verdict": "supported",
+        "verdict_reason": "The network meta-analysis reports minor differences (all under 2 kg) and similar benefits to continuous restriction, and the 24-trial meta-analysis found similar weight loss between fasting and continuous restriction."
+      },
+      {
+        "text": "**Alternate-day fasting may have a slight edge.** It was the only fasting type to outperform continuous restriction (by ~1.3 kg), but this advantage disappeared in trials lasting 6+ months [PMID: 40533200] [PMID: 36349432].",
+        "kind": "bullet",
+        "section": "Key findings",
+        "pmids": [
+          "40533200",
+          "36349432"
+        ],
+        "unwitnessed": false,
+        "verdict": "supported",
+        "verdict_reason": "Alternate-day fasting was the only fasting type to beat continuous restriction (-1.29 kg), and trials of 24 weeks or longer showed benefits only versus ad-libitum diets, while the second meta-analysis ranked alternate-day fasting most effective."
+      },
+      {
+        "text": "**One 12-month trial favored 4:3 fasting.** Participants fasting 3 days/week lost ~2.9 kg more than daily dieters, with less binge eating and uncontrolled eating [PMID: 40163873] [PMID: 40733010].",
+        "kind": "bullet",
+        "section": "Key findings",
+        "pmids": [
+          "40163873",
+          "40733010"
+        ],
+        "unwitnessed": false,
+        "verdict": "supported",
+        "verdict_reason": "The trial reports a 2.89 kg greater loss with 4:3 fasting, and the secondary analysis found binge and uncontrolled eating decreased with 4:3 fasting but increased with daily restriction."
+      },
+      {
+        "text": "**Short-term fasting may burn slightly more fat.** One meta-analysis found fasting produced about 1 kg more fat loss than continuous restriction in the short term, but this didn't hold long-term [PMID: 39458528].",
+        "kind": "bullet",
+        "section": "Key findings",
+        "pmids": [
+          "39458528"
+        ],
+        "unwitnessed": false,
+        "verdict": "supported",
+        "verdict_reason": "The meta-analysis found 1.08 kg greater short-term fat mass loss with fasting and no superior long-term outcomes."
+      },
+      {
+        "text": "**A 5:2 plan with meal replacements showed strong results in diabetics**—9.7 kg lost in 16 weeks—but this combined fasting with meal replacements and was only studied short-term in people with type 2 diabetes [PMID: 38904963].",
+        "kind": "bullet",
+        "section": "Key findings",
+        "pmids": [
+          "38904963"
+        ],
+        "unwitnessed": false,
+        "verdict": "supported",
+        "verdict_reason": "The trial reports 9.7 kg weight loss at 16 weeks with a 5:2 meal-replacement diet in adults with early type 2 diabetes, described as a short-term result."
+      },
+      {
+        "text": "**Night shift workers saw no difference** between 5:2 fasting and continuous restriction at 24 weeks [PMID: 40554393].",
+        "kind": "bullet",
+        "section": "Key findings",
+        "pmids": [
+          "40554393"
+        ],
+        "unwitnessed": false,
+        "verdict": "supported",
+        "verdict_reason": "The trial found no significant weight difference between either modified 5:2 strategy and continuous restriction at 24 weeks in night shift workers."
+      },
+      {
+        "text": "**Long-term data (1+ years) is scarce.** Only one provided trial lasted 12 months [PMID: 40163873]. Whether fasting advantages persist or fade beyond a year is unclear [PMID: 40533200].",
+        "kind": "bullet",
+        "section": "What is unknown",
+        "pmids": [
+          "40163873",
+          "40533200"
+        ],
+        "unwitnessed": false,
+        "verdict": "supported",
+        "verdict_reason": "The 12-month trial notes that long-term trials are limited, and the meta-analysis found no fasting advantage in longer trials and calls for longer-duration studies."
+      },
+      {
+        "text": "**Adherence is the wild card.** Compliance was high in short trials (>80%), but real-world stickability over a full year—which matters most for losing 20 lbs—is poorly studied [PMID: 36349432].",
+        "kind": "bullet",
+        "section": "What is unknown",
+        "pmids": [
+          "36349432"
+        ],
+        "unwitnessed": false,
+        "verdict": "supported",
+        "verdict_reason": "The meta-analysis reports compliance above 80% in trials shorter than 3 months and calls for longer well-powered RCTs, consistent with long-term adherence being poorly studied."
+      },
+      {
+        "text": "**Who benefits most?** There's little data on whether fasting works better for specific people (by age, activity level, or eating patterns).",
+        "kind": "bullet",
+        "section": "What is unknown",
+        "pmids": [],
+        "unwitnessed": false
+      },
+      {
+        "text": "Multiple large meta-analyses agree on the core finding (no major difference), but long-term trials are few and short-term advantages for fasting are small and inconsistent.",
+        "kind": "sentence",
+        "section": "Confidence: Medium",
+        "pmids": [],
+        "unwitnessed": false
+      },
+      {
+        "text": "The one positive 12-month trial is a single study with limited generalizability.",
+        "kind": "sentence",
+        "section": "Confidence: Medium",
+        "pmids": [],
+        "unwitnessed": false
+      }
+    ],
+    "judge": {
+      "model": "claude-opus-5-5",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 14389,
+        "output_tokens": 1943,
+        "output_tokens_details": {
+          "thinking_tokens": 1048
+        },
+        "server_tool_use": null,
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "question_id": "Q5",
+    "replicate": 1,
+    "file": "data/tables_turned/Q5_probiotics_antibiotics/run_1.json",
+    "n_cited_pmids": 7,
+    "n_resolved_in_pubmed": 7,
+    "n_in_curated_corpus": 7,
+    "out_of_corpus_pmids": [],
+    "n_corpus": 12,
+    "corpus_coverage": 0.583,
+    "n_unwitnessed_markers": 0,
+    "retracted_in_corpus": [],
+    "retracted_cited": [],
+    "claims": [
+      {
+        "text": "Yes, probiotics significantly reduce the chance of antibiotic-associated diarrhea (AAD) in children.",
+        "kind": "sentence",
+        "section": "The short answer",
+        "pmids": [],
+        "unwitnessed": false
+      },
+      {
+        "text": "A large Cochrane review of 33 trials (6,352 kids) found probiotics cut AAD roughly in half — from 19% down to 8% — meaning you'd need to give about 9 children probiotics to prevent one case of diarrhea [PMID: 31039287]. **However**, the benefit depends on the probiotic strain, the dose, and how disruptive the antibiotic is.",
+        "kind": "sentence",
+        "section": "The short answer",
+        "pmids": [
+          "31039287"
+        ],
+        "unwitnessed": false,
+        "verdict": "partially_supported",
+        "verdict_reason": "The source matches the trial count, participants, the 19% to 8% drop and NNT 9, and supports dose dependence; strain dependence is only hinted at, and it says nothing about how disruptive the antibiotic is."
+      },
+      {
+        "text": "One well-designed trial found that when kids took narrow-spectrum antibiotics (like plain amoxicillin) and had very low diarrhea rates to begin with (~2%), a probiotic added no benefit [PMID: 41699149].",
+        "kind": "sentence",
+        "section": "The short answer",
+        "pmids": [
+          "41699149"
+        ],
+        "unwitnessed": false,
+        "verdict": "partially_supported",
+        "verdict_reason": "The trial found about 2% diarrhea with no probiotic benefit, but it did not restrict children to narrow-spectrum antibiotics (some used broad-spectrum penicillins) and never names plain amoxicillin."
+      },
+      {
+        "text": "**Overall, probiotics work.** Pooled data from 63 trials (11,811 participants, adults and children) showed a 42% relative reduction in AAD risk (NNT ~13) [PMID: 22570464]. The pediatric-specific Cochrane review found an even larger effect (55% reduction, NNT 9) [PMID: 31039287].",
+        "kind": "bullet",
+        "section": "Key findings",
+        "pmids": [
+          "22570464",
+          "31039287"
+        ],
+        "unwitnessed": false,
+        "verdict": "partially_supported",
+        "verdict_reason": "The numbers are correct (RR 0.58, i.e. a 42% reduction, NNT 13; pediatric RR 0.45, NNT 9), but the 63-trial source does not state that participants included both adults and children, and it describes an association rather than saying probiotics 'work'."
+      },
+      {
+        "text": "**Higher doses work better.** At ≥5 billion CFU/day, AAD dropped from 23% to 8% (NNT 6). Lower doses showed a smaller, borderline benefit [PMID: 31039287].",
+        "kind": "bullet",
+        "section": "Key findings",
+        "pmids": [
+          "31039287"
+        ],
+        "unwitnessed": false,
+        "verdict": "supported",
+        "verdict_reason": "The source reports high-dose AAD of 8% vs 23% with NNT 6, and a low-dose RR of 0.68 with a CI of 0.46–1.01, a borderline result."
+      },
+      {
+        "text": "**Best-studied strains in children: *Lactobacillus rhamnosus* GG and *Saccharomyces boulardii*.** European pediatric guidelines give both a strong recommendation based on moderate-quality evidence [PMID: 26756877]. A large trial also supports *L. reuteri* DSM 17938 specifically in children on amoxicillin-clavulanate [PMID: 40488914].",
+        "kind": "bullet",
+        "section": "Key findings",
+        "pmids": [
+          "26756877",
+          "40488914"
+        ],
+        "unwitnessed": false,
+        "verdict": "supported",
+        "verdict_reason": "ESPGHAN gives both LGG and S. boulardii a strong recommendation on moderate-quality evidence, and the PEARL trial showed L. reuteri DSM 17938 reduced AAD in children on amoxicillin-clavulanate."
+      },
+      {
+        "text": "**If the antibiotic barely disrupts the gut, probiotics may not help.** In a trial where children received short-course, narrow-spectrum antibiotics (including amoxicillin), diarrhea rates were only ~2% and the probiotic (*B. lactis* BB-12) did nothing extra [PMID: 41699149]. This is an important nuance for your situation with plain amoxicillin.",
+        "kind": "bullet",
+        "section": "Key findings",
+        "pmids": [
+          "41699149"
+        ],
+        "unwitnessed": false,
+        "verdict": "partially_supported",
+        "verdict_reason": "The source shows about 2% diarrhea and no benefit from BB-12, but it does not say all children received short-course narrow-spectrum antibiotics (some used broad-spectrum penicillins) and never mentions amoxicillin."
+      },
+      {
+        "text": "**Probiotics appear safe in otherwise healthy children.** Across 24 pediatric trials, no serious adverse events were attributed to probiotics. Minor side effects (gas, rash, nausea) occurred at similar rates in probiotic and placebo groups [PMID: 31039287].",
+        "kind": "bullet",
+        "section": "Key findings",
+        "pmids": [
+          "31039287"
+        ],
+        "unwitnessed": false,
+        "verdict": "supported",
+        "verdict_reason": "The source reports no serious adverse events attributable to probiotics across 24 trials, and similar low adverse event rates (4% vs 6%, RD 0.00) including rash, nausea and gas."
+      },
+      {
+        "text": "**Benefit is clearest when baseline diarrhea risk is moderate-to-high** (e.g., broad-spectrum antibiotics, longer courses, hospitalized children). Studies with low baseline risk showed little or no benefit [PMID: 34385227] [PMID: 41699149].",
+        "kind": "bullet",
+        "section": "Key findings",
+        "pmids": [
+          "34385227",
+          "41699149"
+        ],
+        "unwitnessed": false,
+        "verdict": "partially_supported",
+        "verdict_reason": "The adult meta-analysis and the pediatric trial support benefit mainly at moderate-to-high baseline risk, but the examples (longer courses, hospitalized children) are not given and the meta-analysis covers adults, not children."
+      },
+      {
+        "text": "**Whether plain amoxicillin (narrow-spectrum) causes enough gut disruption to warrant a probiotic.** Most positive trials used broader-spectrum antibiotics like amoxicillin-clavulanate. Evidence for amoxicillin alone is thin [PMID: 41699149].",
+        "kind": "bullet",
+        "section": "What is unknown",
+        "pmids": [
+          "41699149"
+        ],
+        "unwitnessed": false,
+        "verdict": "not_supported",
+        "verdict_reason": "The cited trial never mentions amoxicillin or amoxicillin-clavulanate, and does not state that most positive trials used broader-spectrum antibiotics or that evidence for amoxicillin alone is thin."
+      },
+      {
+        "text": "**Optimal duration of probiotic use.** Some data suggest longer courses improve gut flora more, but clear pediatric dosing timelines are lacking [PMID: 39467682].",
+        "kind": "bullet",
+        "section": "What is unknown",
+        "pmids": [
+          "39467682"
+        ],
+        "unwitnessed": false,
+        "verdict": "partially_supported",
+        "verdict_reason": "The study supports longer probiotic courses improving gut flora, but it does not state that clear pediatric dosing timelines are lacking."
+      },
+      {
+        "text": "**Long-term effects on the developing microbiome** from routine probiotic use in children remain unstudied in these trials.",
+        "kind": "bullet",
+        "section": "What is unknown",
+        "pmids": [],
+        "unwitnessed": false
+      },
+      {
+        "text": "Strong evidence that probiotics reduce AAD in children overall, but the benefit is most clear with broad-spectrum antibiotics at high probiotic doses.",
+        "kind": "sentence",
+        "section": "Confidence: Medium",
+        "pmids": [],
+        "unwitnessed": false
+      },
+      {
+        "text": "For your specific scenario — a healthy child on plain amoxicillin — the benefit may be small or negligible, since diarrhea risk is already low with narrow-spectrum antibiotics.",
+        "kind": "sentence",
+        "section": "Confidence: Medium",
+        "pmids": [],
+        "unwitnessed": false
+      }
+    ],
+    "judge": {
+      "model": "claude-opus-5-5",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 20753,
+        "output_tokens": 2140,
+        "output_tokens_details": {
+          "thinking_tokens": 1178
+        },
+        "server_tool_use": null,
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "question_id": "Q6",
+    "replicate": 1,
+    "file": "data/tables_turned/Q6_acv_weight_loss/run_1.json",
+    "n_cited_pmids": 7,
+    "n_resolved_in_pubmed": 7,
+    "n_in_curated_corpus": 7,
+    "out_of_corpus_pmids": [],
+    "n_corpus": 12,
+    "corpus_coverage": 0.583,
+    "n_unwitnessed_markers": 0,
+    "retracted_in_corpus": [],
+    "retracted_cited": [],
+    "claims": [
+      {
+        "text": "There is some evidence that apple cider vinegar (ACV) can produce modest, short-term weight loss — roughly a few pounds over 8–12 weeks — especially in people who are already overweight or have type 2 diabetes [PMID: 41010525] [PMID: 19661687].",
+        "kind": "sentence",
+        "section": "The short answer",
+        "pmids": [
+          "41010525",
+          "19661687"
+        ],
+        "unwitnessed": false,
+        "verdict": "partially_supported",
+        "verdict_reason": "The sources support significant short-term weight reduction over up to 12 weeks in overweight, obese, or type 2 diabetic adults, but neither gives the magnitude in pounds (the meta-analysis reports only standardized mean differences), so 'a few pounds' is unsupported."
+      },
+      {
+        "text": "However, the effect sizes are small, the study quality is generally low, and recent critiques have flagged statistical problems in key trials, casting doubt on whether the results are trustworthy [PMID: 40771528] [PMID: 39882285].",
+        "kind": "sentence",
+        "section": "The short answer",
+        "pmids": [
+          "40771528",
+          "39882285"
+        ],
+        "unwitnessed": false,
+        "verdict": "partially_supported",
+        "verdict_reason": "The cited items have no abstracts, and their titles only hint at statistical and data concerns; they give no evidence that effect sizes are small or that study quality is generally low."
+      },
+      {
+        "text": "**A 2025 meta-analysis of 10 trials (789 people)** found that daily ACV intake significantly reduced body weight, BMI, and waist circumference compared to placebo. Benefits were clearest at ~30 mL/day for up to 12 weeks in overweight/obese adults [PMID: 41010525].",
+        "kind": "bullet",
+        "section": "Key findings",
+        "pmids": [
+          "41010525"
+        ],
+        "unwitnessed": false,
+        "verdict": "supported",
+        "verdict_reason": "The abstract reports 10 RCTs with 789 participants showing significant reductions in weight, BMI, and waist circumference, with subgroup benefits at 30 mL/day, up to 12 weeks, in overweight or obese adults."
+      },
+      {
+        "text": "**A 2009 Japanese trial (155 obese adults)** showed that 12 weeks of daily vinegar (15–30 mL) reduced body weight, visceral fat, waist circumference, and triglycerides versus placebo [PMID: 19661687].",
+        "kind": "bullet",
+        "section": "Key findings",
+        "pmids": [
+          "19661687"
+        ],
+        "unwitnessed": false,
+        "verdict": "partially_supported",
+        "verdict_reason": "The abstract confirms a 12-week trial in obese Japanese adults at 15–30 mL/day with reductions in weight, visceral fat, waist circumference, and triglycerides versus placebo, but does not state the sample size of 155 or the year."
+      },
+      {
+        "text": "**A separate 2021 meta-analysis (16 trials, 910 people)** found **no significant effect** of acetic acid on BMI or body fat percentage, contradicting the more positive findings above [PMID: 33436350].",
+        "kind": "bullet",
+        "section": "Key findings",
+        "pmids": [
+          "33436350"
+        ],
+        "unwitnessed": false,
+        "verdict": "supported",
+        "verdict_reason": "The meta-analysis of 16 studies with 910 participants found no significant effects on anthropometric outcomes, which include BMI and body fat percentage."
+      },
+      {
+        "text": "**Two independent critiques** have raised serious concerns about \"improbable data\" and statistical errors in influential ACV-weight-loss trials, suggesting some positive results may be unreliable [PMID: 40771528] [PMID: 39882285].",
+        "kind": "bullet",
+        "section": "Key findings",
+        "pmids": [
+          "40771528",
+          "39882285"
+        ],
+        "unwitnessed": false,
+        "verdict": "partially_supported",
+        "verdict_reason": "With no abstracts available, the titles suggest concerns about improbable data, but the second title ('clarification') may be a response rather than an independent critique, so 'two independent critiques' and 'errors' go beyond the evidence."
+      },
+      {
+        "text": "**ACV may modestly improve blood sugar and cholesterol**, which could benefit metabolic health even apart from weight loss [PMID: 34187442].",
+        "kind": "bullet",
+        "section": "Key findings",
+        "pmids": [
+          "34187442"
+        ],
+        "unwitnessed": false,
+        "verdict": "supported",
+        "verdict_reason": "The meta-analysis found significant reductions in fasting glucose, HbA1c, and total cholesterol with ACV."
+      },
+      {
+        "text": "**ACV carries a real dental risk.** A case report documented significant tooth erosion from daily ACV consumption [PMID: 23373303].",
+        "kind": "bullet",
+        "section": "Key findings",
+        "pmids": [
+          "23373303"
+        ],
+        "unwitnessed": false,
+        "verdict": "supported",
+        "verdict_reason": "The case report documents erosive tooth wear in a 15-year-old girl attributed to daily consumption of a glass of ACV."
+      },
+      {
+        "text": "**Long-term effects beyond 12 weeks** have not been studied. Whether any weight lost stays off is entirely unclear.",
+        "kind": "bullet",
+        "section": "What is unknown",
+        "pmids": [],
+        "unwitnessed": false
+      },
+      {
+        "text": "**How ACV compares to simply eating less or exercising more** — no study has made this head-to-head comparison.",
+        "kind": "bullet",
+        "section": "What is unknown",
+        "pmids": [],
+        "unwitnessed": false
+      },
+      {
+        "text": "**Optimal dose, form (liquid vs. pill), and who benefits most** remain poorly defined; existing studies vary widely in design.",
+        "kind": "bullet",
+        "section": "What is unknown",
+        "pmids": [],
+        "unwitnessed": false
+      },
+      {
+        "text": "Multiple meta-analyses exist, but the underlying trials are small, short, and often rated as having high or unclear risk of bias.",
+        "kind": "sentence",
+        "section": "Confidence: Low to Medium",
+        "pmids": [],
+        "unwitnessed": false
+      },
+      {
+        "text": "Independent researchers have flagged data integrity issues in key studies.",
+        "kind": "sentence",
+        "section": "Confidence: Low to Medium",
+        "pmids": [],
+        "unwitnessed": false
+      },
+      {
+        "text": "The overall signal is weak and contested.",
+        "kind": "sentence",
+        "section": "Confidence: Low to Medium",
+        "pmids": [],
+        "unwitnessed": false
+      }
+    ],
+    "judge": {
+      "model": "claude-opus-5-5",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 6087,
+        "output_tokens": 1262,
+        "output_tokens_details": {
+          "thinking_tokens": 554
+        },
+        "server_tool_use": null,
+        "service_tier": "standard"
+      }
+    }
+  }
+]

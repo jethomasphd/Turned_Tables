@@ -1,0 +1,428 @@
+{
+  "arm": "ai_overview_model",
+  "model_requested": "claude-sonnet-5-5",
+  "served_model": "claude-sonnet-5-5",
+  "query": "is intermittent fasting better than regular dieting for weight loss",
+  "system": "You are reproducing the AI-generated overview panel that a general-purpose web search engine shows above its organic results (for example, Google's \"AI Overview\"). Behave the way that product behaves:\n\n- Run exactly one web search, using the user's query exactly as typed.\n- Base the overview only on what the returned web pages say. Do not run additional searches and do not seek out primary research beyond what that one search surfaces.\n- Format: open with a one- or two-sentence direct answer in bold. Then give 3 to 6 short bullet points of key considerations. Keep the whole overview under 200 words.\n- Attribute points to the web pages they came from.\n- End with this line on its own: \"This is for informational purposes only. For medical advice or diagnosis, consult a professional.\"\n\nDo not mention that you are reproducing anything; just present the overview.",
+  "user_location": {
+    "type": "approximate",
+    "city": "Austin",
+    "region": "Texas",
+    "country": "US",
+    "timezone": "America/Chicago"
+  },
+  "overview_text": "**Intermittent fasting produces nearly identical weight loss to conventional diets like calorie counting. [1] Most evidence suggests it isn't better, but it isn't worse either.**\n\n- **Cochrane review (via Rutgers):** Across 21 studies with 1,430 people, the weight-loss difference between the two approaches was 0.33 percentage points of body weight. [1]\n- **BMJ review (via University of Toronto):** People on either diet lost an average of 1.7 to 2.5 kg more than people who ate without restrictions. [2] Alternate-day fasting showed the greatest short-term benefit, but longer studies are needed. [2]\n- **Calories are what count:** The Conversation explains that to lose weight, you must reduce your total calorie intake, whatever method you use. [3] One trial found a trend toward greater weight regain (about 2 kg) in the fasting group between weeks 24 and 50. [3]\n- **Some studies differ:** Medical News Today reports that one study found 4:3 intermittent fasting may lower weight more over 12 months than daily calorie restriction. [4] However, many of the cardiometabolic estimates lacked precision and were inconclusive. [4]\n- **Limits of the evidence:** Limitations include small sample sizes and low to moderate certainty of evidence for most outcomes. [5] Mayo Clinic notes that little long-term research has been done. [6]\n\nThis is for informational purposes only. For medical advice or diagnosis, consult a professional.",
+  "retrieved_sources": [
+    {
+      "rank": 1,
+      "url": "https://theconversation.com/intermittent-fasting-is-no-better-than-conventional-dieting-for-weight-loss-new-study-finds-107829",
+      "title": "Intermittent fasting is no better than conventional dieting for weight loss, new study finds",
+      "page_age": "March 31, 2025"
+    },
+    {
+      "rank": 2,
+      "url": "https://today.uic.edu/research-review-shows-intermittent-fasting-works-for-weight-loss-health-changes/",
+      "title": "Research review shows intermittent fasting works for weight loss, health changes | UIC today",
+      "page_age": null
+    },
+    {
+      "rank": 3,
+      "url": "https://www.rutgers.edu/news/researchers-find-intermittent-fasting-no-better-or-worse-conventional-dieting",
+      "title": "Researchers Find Intermittent Fasting Is No Better, or Worse, Than Conventional Dieting | Rutgers University",
+      "page_age": "February 19, 2026"
+    },
+    {
+      "rank": 4,
+      "url": "https://www.medicalnewstoday.com/articles/43-intermittent-fasting-better-for-weight-loss-than-cutting-calories",
+      "title": "Weight loss: Intermittent fasting may be more efficient than dieting",
+      "page_age": "June 24, 2025"
+    },
+    {
+      "rank": 5,
+      "url": "https://www.utoronto.ca/news/intermittent-fasting-effective-weight-loss-traditional-dieting-study",
+      "title": "Intermittent fasting as effective for weight loss as traditional dieting: Study | University of Toronto",
+      "page_age": "July 10, 2025"
+    },
+    {
+      "rank": 6,
+      "url": "https://bmjgroup.com/intermittent-fasting-comparable-to-traditional-diets-for-weight-loss/",
+      "title": "Intermittent fasting comparable to traditional diets for weight loss - BMJ Group",
+      "page_age": "June 19, 2025"
+    },
+    {
+      "rank": 7,
+      "url": "https://www.mayoclinichealthsystem.org/hometown-health/speaking-of-health/intermittent-fasting-fad-or-solution",
+      "title": "Intermittent fasting for weight loss - Mayo Clinic Health System",
+      "page_age": "February 24, 2023"
+    },
+    {
+      "rank": 8,
+      "url": "https://ahs.uic.edu/news-stories/research-review-shows-intermittent-fasting-works-for-weight-loss-health-changes/",
+      "title": "Your browser is unsupported",
+      "page_age": null
+    },
+    {
+      "rank": 9,
+      "url": "https://huggingface.co/spaces/shivanis14/ConsumeWise/raw/main/docs/articles/article1009.txt",
+      "title": "huggingface.co",
+      "page_age": null
+    }
+  ],
+  "cited_sources": [
+    {
+      "n": 1,
+      "url": "https://www.rutgers.edu/news/researchers-find-intermittent-fasting-no-better-or-worse-conventional-dieting",
+      "title": "Researchers Find Intermittent Fasting Is No Better, or Worse, Than Conventional Dieting | Rutgers University"
+    },
+    {
+      "n": 2,
+      "url": "https://www.utoronto.ca/news/intermittent-fasting-effective-weight-loss-traditional-dieting-study",
+      "title": "Intermittent fasting as effective for weight loss as traditional dieting: Study | University of Toronto"
+    },
+    {
+      "n": 3,
+      "url": "https://theconversation.com/intermittent-fasting-is-no-better-than-conventional-dieting-for-weight-loss-new-study-finds-107829",
+      "title": "Intermittent fasting is no better than conventional dieting for weight loss, new study finds"
+    },
+    {
+      "n": 4,
+      "url": "https://www.medicalnewstoday.com/articles/43-intermittent-fasting-better-for-weight-loss-than-cutting-calories",
+      "title": "Weight loss: Intermittent fasting may be more efficient than dieting"
+    },
+    {
+      "n": 5,
+      "url": "https://bmjgroup.com/intermittent-fasting-comparable-to-traditional-diets-for-weight-loss/",
+      "title": "Intermittent fasting comparable to traditional diets for weight loss - BMJ Group"
+    },
+    {
+      "n": 6,
+      "url": "https://www.mayoclinichealthsystem.org/hometown-health/speaking-of-health/intermittent-fasting-fad-or-solution",
+      "title": "Intermittent fasting for weight loss - Mayo Clinic Health System"
+    }
+  ],
+  "cited_spans": [
+    {
+      "n": 1,
+      "text": "Intermittent fasting produces nearly identical weight loss to conventional diets like calorie counting.",
+      "cited_text": "But a Cochrane systematic review of the clinical evidence finds it produces nearly identical weight loss, quality of life and adverse events as conven..."
+    },
+    {
+      "n": 1,
+      "text": "Across 21 studies with 1,430 people, the weight-loss difference between the two approaches was 0.33 percentage points of body weight.",
+      "cited_text": "Across the 21 studies involving 1,430 people that compared intermittent fasting and conventional diets, the difference in weight loss between intermit..."
+    },
+    {
+      "n": 2,
+      "text": "People on either diet lost an average of 1.7 to 2.5 kg more than people who ate without restrictions.",
+      "cited_text": "“When we started this project, intermittent fasting was all over the news,” says Zhila Semnani-Azad, who completed her PhD in nutritional sciences at ..."
+    },
+    {
+      "n": 2,
+      "text": "Alternate-day fasting showed the greatest short-term benefit, but longer studies are needed.",
+      "cited_text": "Alternate-day fasting – a form of intermittent fasting that involves a 24-hour fast on alternate days – was found to offer the greatest short-term ben..."
+    },
+    {
+      "n": 3,
+      "text": "to lose weight, you must reduce your total calorie intake, whatever method you use.",
+      "cited_text": "Syda Productions/ Shutterstock · This study essentially confirms a well-understood weight loss principle: whatever method you use, in order to lose we..."
+    },
+    {
+      "n": 3,
+      "text": "a trend toward greater weight regain (about 2 kg) in the fasting group between weeks 24 and 50.",
+      "cited_text": "The study also showed a trend for greater weight loss in the intermittent fasting group after 12 weeks, but greater weight regain (about 2kg) between ..."
+    },
+    {
+      "n": 4,
+      "text": "one study found 4:3 intermittent fasting may lower weight more over 12 months than daily calorie restriction.",
+      "cited_text": "One recent study has found that 4:3 intermittent fasting may be more effective at helping lower weight over 12 months than a diet following daily calo..."
+    },
+    {
+      "n": 4,
+      "text": "many of the cardiometabolic estimates lacked precision and were inconclusive.",
+      "cited_text": "But they noted that many of these estimates in cardiometabolic changes lacked precision and ultimately yielded inconclusive results. "
+    },
+    {
+      "n": 5,
+      "text": "Limitations include small sample sizes and low to moderate certainty of evidence for most outcomes.",
+      "cited_text": "The researchers point to several limitations, such as high variation (heterogeneity) among the diet strategy comparisons, small sample sizes of many i..."
+    },
+    {
+      "n": 6,
+      "text": "little long-term research has been done.",
+      "cited_text": "Little long-term research has been done on intermittent fasting to examine how it affects people over time."
+    }
+  ],
+  "stop_reason": "end_turn",
+  "latency_s": 6.62,
+  "usage": [
+    {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "global",
+      "input_tokens": 13213,
+      "output_tokens": 723,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_fetch_requests": 0,
+        "web_search_requests": 1
+      },
+      "service_tier": "standard"
+    }
+  ],
+  "raw_blocks": [
+    [
+      {
+        "id": "srvtoolu_01FQqbmNDazT6d7MUay3ZRWq",
+        "input": {
+          "query": "is intermittent fasting better than regular dieting for weight loss"
+        },
+        "name": "web_search",
+        "type": "server_tool_use"
+      },
+      {
+        "caller": {
+          "type": "direct"
+        },
+        "content": [
+          {
+            "page_age": "March 31, 2025",
+            "title": "Intermittent fasting is no better than conventional dieting for weight loss, new study finds",
+            "type": "web_search_result",
+            "url": "https://theconversation.com/intermittent-fasting-is-no-better-than-conventional-dieting-for-weight-loss-new-study-finds-107829"
+          },
+          {
+            "title": "Research review shows intermittent fasting works for weight loss, health changes | UIC today",
+            "type": "web_search_result",
+            "url": "https://today.uic.edu/research-review-shows-intermittent-fasting-works-for-weight-loss-health-changes/"
+          },
+          {
+            "page_age": "February 19, 2026",
+            "title": "Researchers Find Intermittent Fasting Is No Better, or Worse, Than Conventional Dieting | Rutgers University",
+            "type": "web_search_result",
+            "url": "https://www.rutgers.edu/news/researchers-find-intermittent-fasting-no-better-or-worse-conventional-dieting"
+          },
+          {
+            "page_age": "June 24, 2025",
+            "title": "Weight loss: Intermittent fasting may be more efficient than dieting",
+            "type": "web_search_result",
+            "url": "https://www.medicalnewstoday.com/articles/43-intermittent-fasting-better-for-weight-loss-than-cutting-calories"
+          },
+          {
+            "page_age": "July 10, 2025",
+            "title": "Intermittent fasting as effective for weight loss as traditional dieting: Study | University of Toronto",
+            "type": "web_search_result",
+            "url": "https://www.utoronto.ca/news/intermittent-fasting-effective-weight-loss-traditional-dieting-study"
+          },
+          {
+            "page_age": "June 19, 2025",
+            "title": "Intermittent fasting comparable to traditional diets for weight loss - BMJ Group",
+            "type": "web_search_result",
+            "url": "https://bmjgroup.com/intermittent-fasting-comparable-to-traditional-diets-for-weight-loss/"
+          },
+          {
+            "page_age": "February 24, 2023",
+            "title": "Intermittent fasting for weight loss - Mayo Clinic Health System",
+            "type": "web_search_result",
+            "url": "https://www.mayoclinichealthsystem.org/hometown-health/speaking-of-health/intermittent-fasting-fad-or-solution"
+          },
+          {
+            "title": "Your browser is unsupported",
+            "type": "web_search_result",
+            "url": "https://ahs.uic.edu/news-stories/research-review-shows-intermittent-fasting-works-for-weight-loss-health-changes/"
+          },
+          {
+            "title": "huggingface.co",
+            "type": "web_search_result",
+            "url": "https://huggingface.co/spaces/shivanis14/ConsumeWise/raw/main/docs/articles/article1009.txt"
+          }
+        ],
+        "tool_use_id": "srvtoolu_01FQqbmNDazT6d7MUay3ZRWq",
+        "type": "web_search_tool_result"
+      },
+      {
+        "text": "**",
+        "type": "text"
+      },
+      {
+        "citations": [
+          {
+            "cited_text": "But a Cochrane systematic review of the clinical evidence finds it produces nearly identical weight loss, quality of life and adverse events as conven...",
+            "encrypted_index": "Eo8BCioIFBgCIiQ3MTk5M2NmOC02MjRhLTRhMDktOGVjYi00ZGYyYmU1MDgzMDcSDCgmG7sOJv+UvhTDhBoM4/7LisJdOZO5aTHaIjBGipbvepHbIc/GnHSWv6twv5Sf9RGeP0rjT17OukfIVFBYi+3HrabVkgprThJGxyMqE5E3Tle3NWFVR06TnpMO8s+fQFUYBA==",
+            "title": "Researchers Find Intermittent Fasting Is No Better, or Worse, Than Conventional Dieting | Rutgers University",
+            "type": "web_search_result_location",
+            "url": "https://www.rutgers.edu/news/researchers-find-intermittent-fasting-no-better-or-worse-conventional-dieting"
+          }
+        ],
+        "text": "Intermittent fasting produces nearly identical weight loss to conventional diets like calorie counting.",
+        "type": "text"
+      },
+      {
+        "text": " Most evidence suggests it isn't better, but it isn't worse either.**\n\n- **Cochrane review (via Rutgers):** ",
+        "type": "text"
+      },
+      {
+        "citations": [
+          {
+            "cited_text": "Across the 21 studies involving 1,430 people that compared intermittent fasting and conventional diets, the difference in weight loss between intermit...",
+            "encrypted_index": "Eo8BCioIFBgCIiQ3MTk5M2NmOC02MjRhLTRhMDktOGVjYi00ZGYyYmU1MDgzMDcSDJaUrhJ3FB475qPabhoMhaW60xNbSPoB5laPIjB+Sf8mIsle8G+H/BX0FA3wGO3B7tDuux8Aqlv/hoeovtW2JIVMg9wbNLXMzn9t04AqE2GHZ8EeYFnvql4kqPI8dREW6z0YBA==",
+            "title": "Researchers Find Intermittent Fasting Is No Better, or Worse, Than Conventional Dieting | Rutgers University",
+            "type": "web_search_result_location",
+            "url": "https://www.rutgers.edu/news/researchers-find-intermittent-fasting-no-better-or-worse-conventional-dieting"
+          }
+        ],
+        "text": "Across 21 studies with 1,430 people, the weight-loss difference between the two approaches was 0.33 percentage points of body weight.",
+        "type": "text"
+      },
+      {
+        "text": "\n- **BMJ review (via University of Toronto):** ",
+        "type": "text"
+      },
+      {
+        "citations": [
+          {
+            "cited_text": "“When we started this project, intermittent fasting was all over the news,” says Zhila Semnani-Azad, who completed her PhD in nutritional sciences at ...",
+            "encrypted_index": "Eo8BCioIFBgCIiQ3MTk5M2NmOC02MjRhLTRhMDktOGVjYi00ZGYyYmU1MDgzMDcSDDcAMDrXKDbNPxt9OhoMwblJ2qBesBuyWrSUIjDDMVjTzGTPVumEyAcjxm3nuy4fHgvtkHGixjcwI4PzprToKno7Z2P3DehPDp2Wej8qE9TU8H8euO7PnJF3ucAfFWHjq+4YBA==",
+            "title": "Intermittent fasting as effective for weight loss as traditional dieting: Study | University of Toronto",
+            "type": "web_search_result_location",
+            "url": "https://www.utoronto.ca/news/intermittent-fasting-effective-weight-loss-traditional-dieting-study"
+          }
+        ],
+        "text": "People on either diet lost an average of 1.7 to 2.5 kg more than people who ate without restrictions.",
+        "type": "text"
+      },
+      {
+        "text": " ",
+        "type": "text"
+      },
+      {
+        "citations": [
+          {
+            "cited_text": "Alternate-day fasting – a form of intermittent fasting that involves a 24-hour fast on alternate days – was found to offer the greatest short-term ben...",
+            "encrypted_index": "Eo8BCioIFBgCIiQ3MTk5M2NmOC02MjRhLTRhMDktOGVjYi00ZGYyYmU1MDgzMDcSDL1FZQFaxWEJscfCVBoMI6AgzgvdZJ06DFTHIjALPGH/DWF9MjEZY1TvIU5q/XjEbd3JnTWAMkorUEsLwBms0sAUKSEmEZhzKJInaoEqE8qGHmW6jiHL0scIr/lIWn3ZFq8YBA==",
+            "title": "Intermittent fasting as effective for weight loss as traditional dieting: Study | University of Toronto",
+            "type": "web_search_result_location",
+            "url": "https://www.utoronto.ca/news/intermittent-fasting-effective-weight-loss-traditional-dieting-study"
+          }
+        ],
+        "text": "Alternate-day fasting showed the greatest short-term benefit, but longer studies are needed.",
+        "type": "text"
+      },
+      {
+        "text": "\n- **Calories are what count:** The Conversation explains that ",
+        "type": "text"
+      },
+      {
+        "citations": [
+          {
+            "cited_text": "Syda Productions/ Shutterstock · This study essentially confirms a well-understood weight loss principle: whatever method you use, in order to lose we...",
+            "encrypted_index": "EpABCioIFBgCIiQ3MTk5M2NmOC02MjRhLTRhMDktOGVjYi00ZGYyYmU1MDgzMDcSDAoPB657nXHuWKhJhBoMHFZVIBXzcauipi23IjDPT/ZqCymD67uevtYznA/gaWgntrrTKmQc6cT8V4dHjCwI8rtCtIKO/KY8nlAqY50qFI+qf2hcMY32Y0l/5i0kwgjfTzAWGAQ=",
+            "title": "Intermittent fasting is no better than conventional dieting for weight loss, new study finds",
+            "type": "web_search_result_location",
+            "url": "https://theconversation.com/intermittent-fasting-is-no-better-than-conventional-dieting-for-weight-loss-new-study-finds-107829"
+          }
+        ],
+        "text": "to lose weight, you must reduce your total calorie intake, whatever method you use.",
+        "type": "text"
+      },
+      {
+        "text": " One trial found ",
+        "type": "text"
+      },
+      {
+        "citations": [
+          {
+            "cited_text": "The study also showed a trend for greater weight loss in the intermittent fasting group after 12 weeks, but greater weight regain (about 2kg) between ...",
+            "encrypted_index": "EpABCioIFBgCIiQ3MTk5M2NmOC02MjRhLTRhMDktOGVjYi00ZGYyYmU1MDgzMDcSDIM/g9Fp7PHDlTxL+hoMWEwsA3s0I4VHc+HmIjB3e6TQ7hCo9gw4fZicKGz9vn2q7xCFmFP8xWJXkvqp17cmdyfLAXNca5XkNl3o8jAqFLdAGBBu//svfufOcG1IB3gK3thTGAQ=",
+            "title": "Intermittent fasting is no better than conventional dieting for weight loss, new study finds",
+            "type": "web_search_result_location",
+            "url": "https://theconversation.com/intermittent-fasting-is-no-better-than-conventional-dieting-for-weight-loss-new-study-finds-107829"
+          }
+        ],
+        "text": "a trend toward greater weight regain (about 2 kg) in the fasting group between weeks 24 and 50.",
+        "type": "text"
+      },
+      {
+        "text": "\n- **Some studies differ:** Medical News Today reports that ",
+        "type": "text"
+      },
+      {
+        "citations": [
+          {
+            "cited_text": "One recent study has found that 4:3 intermittent fasting may be more effective at helping lower weight over 12 months than a diet following daily calo...",
+            "encrypted_index": "Eo8BCioIFBgCIiQ3MTk5M2NmOC02MjRhLTRhMDktOGVjYi00ZGYyYmU1MDgzMDcSDBjrTvNR4Zyb84N1yRoMYwcw6qza+ePn0DhLIjA+RCaJM/f/jl7P8wR4dQx10hWsPZk5R7R2WzY72QUuPQwKvud6IIyBm1i2pUGRs+wqE0hiRzATujVTk6p4gsSjLra+JFgYBA==",
+            "title": "Weight loss: Intermittent fasting may be more efficient than dieting",
+            "type": "web_search_result_location",
+            "url": "https://www.medicalnewstoday.com/articles/43-intermittent-fasting-better-for-weight-loss-than-cutting-calories"
+          }
+        ],
+        "text": "one study found 4:3 intermittent fasting may lower weight more over 12 months than daily calorie restriction.",
+        "type": "text"
+      },
+      {
+        "text": " However, ",
+        "type": "text"
+      },
+      {
+        "citations": [
+          {
+            "cited_text": "But they noted that many of these estimates in cardiometabolic changes lacked precision and ultimately yielded inconclusive results. ",
+            "encrypted_index": "EpABCioIFBgCIiQ3MTk5M2NmOC02MjRhLTRhMDktOGVjYi00ZGYyYmU1MDgzMDcSDJvHlh9Ks7xPo427pRoMZsiuLewy2tq6CDADIjAB6o41VDj6OEyWrJmaR+ajv8cRmjEu6sdvB1Pb9FCLKVRg51cvBQ0h/FvTDPXWCY8qFCwyM2UdNGlTF9kPTZoQ6kCjUseKGAQ=",
+            "title": "Weight loss: Intermittent fasting may be more efficient than dieting",
+            "type": "web_search_result_location",
+            "url": "https://www.medicalnewstoday.com/articles/43-intermittent-fasting-better-for-weight-loss-than-cutting-calories"
+          }
+        ],
+        "text": "many of the cardiometabolic estimates lacked precision and were inconclusive.",
+        "type": "text"
+      },
+      {
+        "text": "\n- **Limits of the evidence:** ",
+        "type": "text"
+      },
+      {
+        "citations": [
+          {
+            "cited_text": "The researchers point to several limitations, such as high variation (heterogeneity) among the diet strategy comparisons, small sample sizes of many i...",
+            "encrypted_index": "Eo8BCioIFBgCIiQ3MTk5M2NmOC02MjRhLTRhMDktOGVjYi00ZGYyYmU1MDgzMDcSDFsOsZgYp1VfbU0EVBoMDh0HFzLU/AjrTMTjIjBzuEEAPf0u1FHYVqzkP/z1LuTyBWwqtp3l217T8VGZ23eUJ4cC2fydOmjpQu+Z5f4qE2Oc4E4IhiYjDQ1ibkZ/0VKySCsYBA==",
+            "title": "Intermittent fasting comparable to traditional diets for weight loss - BMJ Group",
+            "type": "web_search_result_location",
+            "url": "https://bmjgroup.com/intermittent-fasting-comparable-to-traditional-diets-for-weight-loss/"
+          }
+        ],
+        "text": "Limitations include small sample sizes and low to moderate certainty of evidence for most outcomes.",
+        "type": "text"
+      },
+      {
+        "text": " Mayo Clinic notes that ",
+        "type": "text"
+      },
+      {
+        "citations": [
+          {
+            "cited_text": "Little long-term research has been done on intermittent fasting to examine how it affects people over time.",
+            "encrypted_index": "Eo8BCioIFBgCIiQ3MTk5M2NmOC02MjRhLTRhMDktOGVjYi00ZGYyYmU1MDgzMDcSDDvWAnhsS4VDMDDLrBoME2StVe7awMPV/wLcIjDYYP8mrjRIRbE6nTZdPIZxPkXrEhkYpA6UjdyZANAY4dV/Wxd8ukHlDR4ptbkArzUqEyevskWXR6xaBgOErjdBVdGNh6sYBA==",
+            "title": "Intermittent fasting for weight loss - Mayo Clinic Health System",
+            "type": "web_search_result_location",
+            "url": "https://www.mayoclinichealthsystem.org/hometown-health/speaking-of-health/intermittent-fasting-fad-or-solution"
+          }
+        ],
+        "text": "little long-term research has been done.",
+        "type": "text"
+      },
+      {
+        "text": "\n\nThis is for informational purposes only. For medical advice or diagnosis, consult a professional.",
+        "type": "text"
+      }
+    ]
+  ],
+  "question_id": "Q4",
+  "replicate": 1,
+  "route": "worker:https://tables-turned-api.jethomasphd.workers.dev",
+  "captured_at": "2026-09-28T23:41:39Z"
+}

@@ -1,0 +1,18 @@
+{
+  "question_id": "Q4",
+  "search_query": "is intermittent fasting better than regular dieting for weight loss",
+  "captured_at": "YYYY-MM-DDTHH:MM:SSZ",
+  "browser": "",
+  "location": "",
+  "signed_in": false,
+  "overview_text": "Paste the AI Overview text verbatim. Put [n] after sentences that show a source chip.",
+  "cited_sources": [
+    {
+      "n": 1,
+      "url": "",
+      "title": ""
+    }
+  ],
+  "screenshot_file": "",
+  "_instructions": "Rename to <QID>_ai_overview.json once filled in. Capture in a private window, signed out, US locale; record exact time. Screenshot the full panel."
+}

@@ -1,0 +1,121 @@
+{
+  "extracted_by": "claude-sonnet-5-5",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 1535,
+    "output_tokens": 1492,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "extracted_at": "2026-09-28T23:48:26Z",
+  "references": [
+    {
+      "raw": "Cohen PA, et al. \"Quantity of Melatonin and CBD in Melatonin Gummies Sold in the US.\" JAMA, 2023.",
+      "authors": "Cohen PA, et al.",
+      "first_author_surname": "Cohen",
+      "year": "2023",
+      "title": "Quantity of Melatonin and CBD in Melatonin Gummies Sold in the US",
+      "journal": "JAMA",
+      "pmid": "",
+      "doi": "",
+      "kind": "journal_article"
+    },
+    {
+      "raw": "Lelak K, et al. \"Pediatric Melatonin Ingestions — United States, 2012–2021.\" MMWR, 2022.",
+      "authors": "Lelak K, et al.",
+      "first_author_surname": "Lelak",
+      "year": "2022",
+      "title": "Pediatric Melatonin Ingestions — United States, 2012–2021",
+      "journal": "MMWR",
+      "pmid": "",
+      "doi": "",
+      "kind": "journal_article"
+    },
+    {
+      "raw": "van Geijlswijk IM, Korzilius HPLM, Smits MG. \"The use of exogenous melatonin in delayed sleep phase disorder: a meta-analysis.\" Sleep, 2010.",
+      "authors": "van Geijlswijk IM, Korzilius HPLM, Smits MG",
+      "first_author_surname": "van Geijlswijk",
+      "year": "2010",
+      "title": "The use of exogenous melatonin in delayed sleep phase disorder: a meta-analysis",
+      "journal": "Sleep",
+      "pmid": "",
+      "doi": "",
+      "kind": "journal_article"
+    },
+    {
+      "raw": "Van der Heijden KB, et al. \"Effect of melatonin on sleep, behavior, and cognition in ADHD and chronic sleep-onset insomnia.\" J Am Acad Child Adolesc Psychiatry, 2007.",
+      "authors": "Van der Heijden KB, et al.",
+      "first_author_surname": "Van der Heijden",
+      "year": "2007",
+      "title": "Effect of melatonin on sleep, behavior, and cognition in ADHD and chronic sleep-onset insomnia",
+      "journal": "J Am Acad Child Adolesc Psychiatry",
+      "pmid": "",
+      "doi": "",
+      "kind": "journal_article"
+    },
+    {
+      "raw": "Gringras P, et al. \"Efficacy and safety of pediatric prolonged-release melatonin for insomnia in children with autism spectrum disorder.\" J Am Acad Child Adolesc Psychiatry, 2017.",
+      "authors": "Gringras P, et al.",
+      "first_author_surname": "Gringras",
+      "year": "2017",
+      "title": "Efficacy and safety of pediatric prolonged-release melatonin for insomnia in children with autism spectrum disorder",
+      "journal": "J Am Acad Child Adolesc Psychiatry",
+      "pmid": "",
+      "doi": "",
+      "kind": "journal_article"
+    },
+    {
+      "raw": "Ferracioli-Oda E, et al. \"Meta-analysis: melatonin for the treatment of primary sleep disorders.\" PLoS ONE, 2013. This covers mixed age groups, not just children.",
+      "authors": "Ferracioli-Oda E, et al.",
+      "first_author_surname": "Ferracioli-Oda",
+      "year": "2013",
+      "title": "Meta-analysis: melatonin for the treatment of primary sleep disorders",
+      "journal": "PLoS ONE",
+      "pmid": "",
+      "doi": "",
+      "kind": "journal_article"
+    },
+    {
+      "raw": "Bruni O, et al. \"Current role of melatonin in pediatric neurology: clinical recommendations.\" Eur J Paediatr Neurol, 2015.",
+      "authors": "Bruni O, et al.",
+      "first_author_surname": "Bruni",
+      "year": "2015",
+      "title": "Current role of melatonin in pediatric neurology: clinical recommendations",
+      "journal": "Eur J Paediatr Neurol",
+      "pmid": "",
+      "doi": "",
+      "kind": "journal_article"
+    },
+    {
+      "raw": "general pediatric sleep guidance, such as from the American Academy of Pediatrics",
+      "authors": "American Academy of Pediatrics",
+      "first_author_surname": "",
+      "year": "",
+      "title": "",
+      "journal": "",
+      "pmid": "",
+      "doi": "",
+      "kind": "guideline_or_org_statement"
+    },
+    {
+      "raw": "general pediatric sleep guidance, such as from ... the American Academy of Sleep Medicine",
+      "authors": "American Academy of Sleep Medicine",
+      "first_author_surname": "",
+      "year": "",
+      "title": "",
+      "journal": "",
+      "pmid": "",
+      "doi": "",
+      "kind": "guideline_or_org_statement"
+    }
+  ]
+}

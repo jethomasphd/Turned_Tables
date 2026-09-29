@@ -1,0 +1,2002 @@
+{
+  "tablet": {
+    "version": "2.0",
+    "title": "Do probiotics prevent diarrhea from antibiotics?",
+    "session": {
+      "id": "bc9d0b3d-87bc-4f17-8f5d-b200cfac210d",
+      "created": "2026-09-28T23:40:47Z",
+      "sealed": "2026-09-28T23:41:46Z",
+      "status": "sealed"
+    },
+    "intent": {
+      "question": "Do probiotics prevent diarrhea from antibiotics?",
+      "decision_context": "My child was just prescribed amoxicillin and I'm wondering whether to give a probiotic too."
+    },
+    "search": {
+      "queries": [
+        {
+          "query": "probiotics antibiotic-associated diarrhea prevention",
+          "strategy": "Broad search for any literature on probiotics preventing antibiotic-associated diarrhea"
+        },
+        {
+          "query": "(probiotics OR Lactobacillus OR Saccharomyces boulardii OR Bifidobacterium) AND (antibiotic-associated diarrhea OR AAD) AND (prevention OR prophylaxis) AND (systematic review OR meta-analysis)",
+          "strategy": "Targeted search for high-level evidence (systematic reviews and meta-analyses) on specific probiotic strains preventing antibiotic-associated diarrhea"
+        },
+        {
+          "query": "(probiotics OR Lactobacillus OR Saccharomyces boulardii) AND (antibiotic-associated diarrhea) AND (child OR children OR pediatric OR paediatric) AND (randomized controlled trial OR RCT OR meta-analysis)",
+          "strategy": "Focused search for pediatric RCTs and meta-analyses on probiotics co-administered with antibiotics to prevent diarrhea"
+        },
+        {
+          "query": "(probiotics) AND (amoxicillin OR penicillin OR beta-lactam) AND (diarrhea OR diarrhoea) AND (child OR pediatric) AND (prevention)",
+          "strategy": "Narrow search specifically addressing probiotic use alongside amoxicillin or related antibiotics in children to prevent diarrhea"
+        }
+      ],
+      "total_papers_found": 12,
+      "papers_shown": 12
+    },
+    "papers": [
+      {
+        "pmid": "31039287",
+        "doi": "10.1002/14651858.CD004827.pub5",
+        "title": "Probiotics for the prevention of pediatric antibiotic-associated diarrhea.",
+        "authors": [
+          "Guo Qin",
+          "Goldenberg Joshua Z",
+          "Humphrey Claire",
+          "El Dib Regina",
+          "Johnston Bradley C"
+        ],
+        "journal": "The Cochrane database of systematic reviews",
+        "year": 2019,
+        "abstract": "BACKGROUND: Antibiotics alter the microbial balance commonly resulting in antibiotic-associated diarrhea (AAD). Probiotics may prevent AAD via providing gut barrier, restoration of the gut microflora, and other potential mechanisms of action.\n\nOBJECTIVES: The primary objectives were to assess the efficacy and safety of probiotics (any specified strain or dose) used for the prevention of AAD in children.\n\nSEARCH METHODS: MEDLINE, Embase, CENTRAL, CINAHL, and the Web of Science (inception to 28 May 2018) were searched along with registers including the ISRCTN and Clinicaltrials.gov. We also searched the NICE Evidence Services database as well as reference lists from relevant articles.\n\nSELECTION CRITERIA: Randomized, parallel, controlled trials in children (0 to 18 years) receiving antibiotics, that compare probiotics to placebo, active alternative prophylaxis, or no treatment and measure the incidence of diarrhea secondary to antibiotic use were considered for inclusion.\n\nDATA COLLECTION AND ANALYSIS: Study selection, data extraction, and risk of bias assessment were conducted independently by two authors. Dichotomous data (incidence of AAD, adverse events) were combined using a pooled risk ratio (RR) or risk difference (RD), and continuous data (mean duration of diarrhea) as mean difference (MD), along with corresponding 95% confidence interval (95% CI). We calculated the number needed to treat for an additional beneficial outcome (NNTB) where appropriate. For studies reporting on microbiome characteristics using heterogeneous outcomes, we describe the results narratively. The certainty of the evidence was evaluated using GRADE.\n\nMAIN RESULTS: Thirty-three studies (6352 participants) were included. Probiotics assessed included Bacillus spp., Bifidobacterium spp., Clostridium butyricum, Lactobacilli spp., Lactococcus spp., Leuconostoc cremoris, Saccharomyces spp., orStreptococcus spp., alone or in combination. The risk of bias was determined to be high in 20 studies and low in 13 studies. Complete case (patients who did not complete the studies were not included in the analysis) results from 33 trials reporting on the incidence of diarrhea show a precise benefit from probiotics compared to active, placebo or no treatment control.After 5 days to 12 weeks of follow-up, the incidence of AAD in the probiotic group was 8% (259/3232) compared to 19% (598/3120) in the control group (RR 0.45, 95% CI 0.36 to 0.56; I² = 57%, 6352 participants; NNTB 9, 95% CI 7 to 13; moderate certainty evidence). Nineteen studies had loss to follow-up ranging from 1% to 46%. After making assumptions for those lost, the observed benefit was still statistically significant using an extreme plausible intention-to-treat (ITT) analysis, wherein the incidence of AAD in the probiotic group was 12% (436/3551) compared to 19% (664/3468) in the control group (7019 participants; RR 0.61; 95% CI 0.49 to 0.77; P <0.00001; I² = 70%). An a priori available case subgroup analysis exploring heterogeneity indicated that high dose (≥ 5 billion CFUs per day) is more effective than low probiotic dose (< 5 billion CFUs per day), interaction P value = 0.01. For the high dose studies the incidence of AAD in the probiotic group was 8% (162/2029) compared to 23% (462/2009) in the control group (4038 participants; RR 0.37; 95% CI 0.30 to 0.46; P = 0.06; moderate certainty evidence). For the low dose studies the incidence of AAD in the probiotic group was 8% (97/1155) compared to 13% (133/1059) in the control group (2214 participants; RR 0.68; 95% CI 0.46 to 1.01; P = 0.02). Again, assumptions for loss to follow-up using an extreme plausible ITT analysis was statistically significant. For high dose studies the incidence of AAD in the probiotic group was 13% (278/2218) compared to 23% (503/2207) in control group (4425 participants; RR 0.54; 95% CI 0.42 to 0.70; P <0.00001; I² = 68%; moderate certainty evidence).None of the 24 trials (4415 participants) that reported on adverse events reported any serious adverse events attributable to probiotics. Adverse event rates were low. After 5 days to 4 weeks follow-up, 4% (86/2229) of probiotics participants had an adverse event compared to 6% (121/2186) of control participants (RD 0.00; 95% CI -0.01 to 0.01; P < 0.00001; I² = 75%; low certainty evidence). Common adverse events included rash, nausea, gas, flatulence, abdominal bloating, and constipation.After 10 days to 12 weeks of follow-up, eight studies recorded data on our secondary outcome, the mean duration of diarrhea; with probiotics reducing diarrhea duration by almost one day (MD -0.91; 95% CI -1.38 to -0.44; P <0.00001; low certainty evidence). One study reported on microbiome characteristics, reporting no difference in changes with concurrent antibiotic and probiotic use.\n\nAUTHORS' CONCLUSIONS: The overall evidence suggests a moderate protective effect of probiotics for preventing AAD (NNTB 9, 95% CI 7 to 13). Using five criteria to evaluate the credibility of the subgroup analysis on probiotic dose, the results indicate the subgroup effect based on high dose probiotics (≥ 5 billion CFUs per day) was credible. Based on high-dose probiotics, the NNTB to prevent one case of diarrhea is 6 (95% CI 5 to 9). The overall certainty of the evidence for the primary endpoint, incidence of AAD based on high dose probiotics was moderate due to the minor issues with risk of bias and inconsistency related to a diversity of probiotic agents used. Evidence also suggests that probiotics may moderately reduce the duration of diarrhea, a reduction by almost one day. The benefit of high dose probiotics (e.g. Lactobacillus rhamnosus orSaccharomyces boulardii) needs to be confirmed by a large well-designed multi-centered randomized trial. It is premature to draw firm conclusions about the efficacy and safety of 'other' probiotic agents as an adjunct to antibiotics in children. Adverse event rates were low and no serious adverse events were attributable to probiotics. Although no serious adverse events were observed among inpatient and outpatient children, including small studies conducted in the intensive care unit and in the neonatal unit, observational studies not included in this review have reported serious adverse events in severely debilitated or immuno-compromised children with underlying risk factors including central venous catheter use and disorders associated with bacterial/fungal translocation.",
+        "plain_title": "Can Probiotics Prevent Antibiotic-Caused Diarrhea in Children?",
+        "plain_summary": "This large review of studies examined whether giving children probiotics (helpful live bacteria) alongside antibiotics can prevent the diarrhea that antibiotics commonly cause, looking at both how well they work and whether they are safe.",
+        "selected": true,
+        "ranking": {
+          "score": 22,
+          "overlap": 3,
+          "strategies_matched": [
+            "Broad search for any literature on probiotics preventing antibiotic-associated diarrhea",
+            "Targeted search for high-level evidence (systematic reviews and meta-analyses) on specific probiotic strains preventing antibiotic-associated diarrhea",
+            "Focused search for pediatric RCTs and meta-analyses on probiotics co-administered with antibiotics to prevent diarrhea"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis",
+          "Research Support, Non-U.S. Gov't",
+          "Systematic Review"
+        ],
+        "strategy_idx": [
+          0,
+          1,
+          2
+        ],
+        "positions": [
+          1,
+          3,
+          1
+        ]
+      },
+      {
+        "pmid": "26756877",
+        "doi": "10.1097/MPG.0000000000001081",
+        "title": "Probiotics for the Prevention of Antibiotic-Associated Diarrhea in Children.",
+        "authors": [
+          "Szajewska Hania",
+          "Canani Roberto Berni",
+          "Guarino Alfredo",
+          "Hojsak Iva",
+          "Indrio Flavia",
+          "Kolacek Sanja",
+          "Orel Rok",
+          "Shamir Raanan",
+          "Vandenplas Yvan",
+          "van Goudoever Johannes B",
+          "Weizman Zvi"
+        ],
+        "journal": "Journal of pediatric gastroenterology and nutrition",
+        "year": 2016,
+        "abstract": "This article provides recommendations, developed by the Working Group (WG) on Probiotics of the European Society for Pediatric Gastroenterology, Hepatology, and Nutrition, for the use of probiotics for the prevention of antibiotic-associated diarrhea (AAD) in children based on a systematic review of previously completed systematic reviews and of randomized controlled trials published subsequently to these reviews. The use of probiotics for the treatment of AAD is not covered. The recommendations were formulated only if at least 2 randomized controlled trials that used a given probiotic (with strain specification) were available. The quality of evidence (QoE) was assessed using the Grading of Recommendations Assessment, Development, and Evaluation guidelines. If the use of probiotics for preventing AAD is considered because of the existence of risk factors such as class of antibiotic(s), duration of antibiotic treatment, age, need for hospitalization, comorbidities, or previous episodes of AAD diarrhea, the WG recommends using Lactobacillus rhamnosus GG (moderate QoE, strong recommendation) or Saccharomyces boulardii (moderate QoE, strong recommendation). If the use of probiotics for preventing Clostridium difficile-associated diarrhea is considered, the WG suggests using S boulardii (low QoE, conditional recommendation). Other strains or combinations of strains have been tested, but sufficient evidence is still lacking.",
+        "plain_title": "Expert Recommendations on Probiotics to Prevent Antibiotic Diarrhea in Kids",
+        "plain_summary": "A European expert group reviewed the evidence and developed specific recommendations on which probiotic strains children should take to prevent diarrhea caused by antibiotics, requiring at least two high-quality trials before endorsing any particular product.",
+        "selected": true,
+        "ranking": {
+          "score": 17,
+          "overlap": 3,
+          "strategies_matched": [
+            "Broad search for any literature on probiotics preventing antibiotic-associated diarrhea",
+            "Targeted search for high-level evidence (systematic reviews and meta-analyses) on specific probiotic strains preventing antibiotic-associated diarrhea",
+            "Focused search for pediatric RCTs and meta-analyses on probiotics co-administered with antibiotics to prevent diarrhea"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis",
+          "Research Support, Non-U.S. Gov't",
+          "Systematic Review"
+        ],
+        "strategy_idx": [
+          0,
+          1,
+          2
+        ],
+        "positions": [
+          3,
+          5,
+          2
+        ]
+      },
+      {
+        "pmid": "34385227",
+        "doi": "10.1136/bmjopen-2020-043054",
+        "title": "Probiotics for the prevention of antibiotic-associated diarrhoea: a systematic review and meta-analysis.",
+        "authors": [
+          "Goodman Clare",
+          "Keating Georgia",
+          "Georgousopoulou Ekavi",
+          "Hespe Charlotte",
+          "Levett Kate"
+        ],
+        "journal": "BMJ open",
+        "year": 2021,
+        "abstract": "OBJECTIVE: To evaluate existing evidence for the use of probiotics in preventing antibiotic-associated diarrhoea (AAD) in adults.\n\nDESIGN: Systematic review and meta-analysis of randomised controlled trials (RCTs).\n\nDATA SOURCES: We performed a literature search of the electronic databases CINAHL Plus, EMBASE, MEDLINE (Ovid) and Web of Science from database inception to May 2021 as well as hand searching of trial registries and reference lists of related reviews.\n\nSTUDY SELECTION: Two reviewers identified whether RCTs met the following inclusion criteria: adult population to whom antibiotics were administered; a probiotic intervention; a placebo, alternative dose, alternative probiotic strain or no treatment control; and incidence of AAD as the outcome.\n\nDATA EXTRACTION AND SYNTHESIS: Two reviewers independently collected data and assessed risk of bias using preconstructed data extraction forms. We used a random effects model for all analyses. Subgroup analyses were performed to evaluate species-specific and dose-specific response.\n\nRESULTS: Forty-two studies (11,305 participants) were included in this review. The pooled analysis suggests that co-administration of probiotics with antibiotics reduces the risk of AAD in adults by 37% (risk ratio (RR)=0.63 (95% CI 0.54 to 0.73), p<0.00001). The overall quality of the evidence using the Grading of Recommendations, Assessment, Development and Evaluations (GRADE) criteria was found to be moderate. In subgroup analyses, high dose compared with low dose of the same probiotic demonstrated a positive protective effect (RR 0.54 (95% CI 0.38 to 0.76), p<0.01), and only certain species, mainly of the lactobacillus and bifidobacteria genera, were found to be effective. Studies with a low baseline AAD risk did not show any difference in risk but studies with moderate or high baseline AAD risk demonstrated a significant risk reduction.\n\nCONCLUSIONS: Probiotics are effective for preventing AAD. Secondary analyses of higher dosages and certain species have shown increased effectiveness. Our results may not be applicable in clinical scenarios of lower baseline AAD risk.",
+        "plain_title": "Do Probiotics Prevent Antibiotic Diarrhea in Adults?",
+        "plain_summary": "This review combined results from multiple high-quality trials to determine whether adults who take probiotics alongside antibiotics are less likely to develop diarrhea, searching studies published up to May 2021.",
+        "selected": true,
+        "ranking": {
+          "score": 13,
+          "overlap": 2,
+          "strategies_matched": [
+            "Broad search for any literature on probiotics preventing antibiotic-associated diarrhea",
+            "Targeted search for high-level evidence (systematic reviews and meta-analyses) on specific probiotic strains preventing antibiotic-associated diarrhea"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis",
+          "Systematic Review"
+        ],
+        "strategy_idx": [
+          0,
+          1
+        ],
+        "positions": [
+          4,
+          1
+        ]
+      },
+      {
+        "pmid": "29257353",
+        "doi": "10.1002/14651858.CD006095.pub4",
+        "title": "Probiotics for the prevention of Clostridium difficile-associated diarrhea in adults and children.",
+        "authors": [
+          "Goldenberg Joshua Z",
+          "Yap Christina",
+          "Lytvyn Lyubov",
+          "Lo Calvin Ka-Fung",
+          "Beardsley Jennifer",
+          "Mertz Dominik",
+          "Johnston Bradley C"
+        ],
+        "journal": "The Cochrane database of systematic reviews",
+        "year": 2017,
+        "abstract": "BACKGROUND: Antibiotics can disturb gastrointestinal microbiota which may lead to reduced resistance to pathogens such as Clostridium difficile (C. difficile). Probiotics are live microbial preparations that, when administered in adequate amounts, may confer a health benefit to the host, and are a potential C. difficile prevention strategy. Recent clinical practice guidelines do not recommend probiotic prophylaxis, even though probiotics have the highest quality evidence among cited prophylactic therapies.\n\nOBJECTIVES: To assess the efficacy and safety of probiotics for preventing C.difficile-associated diarrhea (CDAD) in adults and children.\n\nSEARCH METHODS: We searched PubMed, EMBASE, CENTRAL, and the Cochrane IBD Group Specialized Register from inception to 21 March 2017. Additionally, we conducted an extensive grey literature search.\n\nSELECTION CRITERIA: Randomized controlled (placebo, alternative prophylaxis, or no treatment control) trials investigating probiotics (any strain, any dose) for prevention of CDAD, or C. difficile infection were considered for inclusion.\n\nDATA COLLECTION AND ANALYSIS: Two authors (independently and in duplicate) extracted data and assessed risk of bias. The primary outcome was the incidence of CDAD. Secondary outcomes included detection of C. difficile infection in stool, adverse events, antibiotic-associated diarrhea (AAD) and length of hospital stay. Dichotomous outcomes (e.g. incidence of CDAD) were pooled using a random-effects model to calculate the risk ratio (RR) and corresponding 95% confidence interval (95% CI). We calculated the number needed to treat for an additional beneficial outcome (NNTB) where appropriate. Continuous outcomes (e.g. length of hospital stay) were pooled using a random-effects model to calculate the mean difference and corresponding 95% CI. Sensitivity analyses were conducted to explore the impact of missing data on efficacy and safety outcomes. For the sensitivity analyses, we assumed that the event rate for those participants in the control group who had missing data was the same as the event rate for those participants in the control group who were successfully followed. For the probiotic group, we calculated effects using the following assumed ratios of event rates in those with missing data in comparison to those successfully followed: 1.5:1, 2:1, 3:1, and 5:1. To explore possible explanations for heterogeneity, a priori subgroup analyses were conducted on probiotic species, dose, adult versus pediatric population, and risk of bias as well as a post hoc subgroup analysis on baseline risk of CDAD (low 0% to 2%; moderate 3% to 5%; high > 5%). The overall quality of the evidence supporting each outcome was independently assessed using the GRADE criteria.\n\nMAIN RESULTS: Thirty-nine studies (9955 participants) met the eligibility requirements for our review. Overall, 27 studies were rated as either high or unclear risk of bias. A complete case analysis (i.e. participants who completed the study) among trials investigating CDAD (31 trials, 8672 participants) suggests that probiotics reduce the risk of CDAD by 60%. The incidence of CDAD was 1.5% (70/4525) in the probiotic group compared to 4.0% (164/4147) in the placebo or no treatment control group (RR 0.40, 95% CI 0.30 to 0.52; GRADE = moderate). Twenty-two of 31 trials had missing CDAD data ranging from 2% to 45%. Our complete case CDAD results proved robust to sensitivity analyses of plausible and worst-plausible assumptions regarding missing outcome data and results were similar whether considering subgroups of trials in adults versus children, inpatients versus outpatients, different probiotic species, lower versus higher doses of probiotics, or studies at high versus low risk of bias. However, in a post hoc analysis, we did observe a subgroup effect with respect to baseline risk of developing CDAD. Trials with a baseline CDAD risk of 0% to 2% and 3% to 5% did not show any difference in risk but trials enrolling participants with a baseline risk of > 5% for developing CDAD demonstrated a large 70% risk reduction (interaction P value = 0.01). Among studies with a baseline risk > 5%, the incidence of CDAD in the probiotic group was 3.1% (43/1370) compared to 11.6% (126/1084) in the control group (13 trials, 2454 participants; RR 0.30, 95% CI 0.21 to 0.42; GRADE = moderate). With respect to detection of C. difficile in the stool pooled complete case results from 15 trials (1214 participants) did not show a reduction in infection rates. C. difficile infection was 15.5% (98/633) in the probiotics group compared to 17.0% (99/581) in the placebo or no treatment control group (RR 0.86, 95% CI 0.67 to 1.10; GRADE = moderate). Adverse events were assessed in 32 studies (8305 participants) and our pooled complete case analysis indicates probiotics reduce the risk of adverse events by 17% (RR 0.83, 95% CI 0.71 to 0.97; GRADE = very low). In both treatment and control groups the most common adverse events included abdominal cramping, nausea, fever, soft stools, flatulence, and taste disturbance.\n\nAUTHORS' CONCLUSIONS: Based on this systematic review and meta-analysis of 31 randomized controlled trials including 8672 patients, moderate certainty evidence suggests that probiotics are effective for preventing CDAD (NNTB = 42 patients, 95% CI 32 to 58). Our post hoc subgroup analyses to explore heterogeneity indicated that probiotics are effective among trials with a CDAD baseline risk >5% (NNTB = 12; moderate certainty evidence), but not among trials with a baseline risk ≤5% (low to moderate certainty evidence). Although adverse effects were reported among 32 included trials, there were more adverse events among patients in the control groups. The short-term use of probiotics appears to be safe and effective when used along with antibiotics in patients who are not immunocompromised or severely debilitated. Despite the need for further research, hospitalized patients, particularly those at high risk of CDAD, should be informed of the potential benefits and harms of probiotics.",
+        "plain_title": "Can Probiotics Prevent C. Difficile Infection From Antibiotics?",
+        "plain_summary": "This review examined whether probiotics can specifically prevent diarrhea caused by C. difficile (a dangerous gut bacterium that can take hold when antibiotics disrupt normal gut bacteria) in both adults and children, noting that probiotics had strong supporting evidence even though clinical guidelines didn't recommend them.",
+        "selected": true,
+        "ranking": {
+          "score": 12,
+          "overlap": 3,
+          "strategies_matched": [
+            "Broad search for any literature on probiotics preventing antibiotic-associated diarrhea",
+            "Targeted search for high-level evidence (systematic reviews and meta-analyses) on specific probiotic strains preventing antibiotic-associated diarrhea",
+            "Focused search for pediatric RCTs and meta-analyses on probiotics co-administered with antibiotics to prevent diarrhea"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis",
+          "Research Support, Non-U.S. Gov't",
+          "Systematic Review"
+        ],
+        "strategy_idx": [
+          0,
+          1,
+          2
+        ],
+        "positions": [
+          8,
+          6,
+          5
+        ]
+      },
+      {
+        "pmid": "40931979",
+        "doi": "10.1002/14651858.CD006095.pub5",
+        "title": "Probiotics for the prevention of Clostridioides difficile-associated diarrhea in adults and children.",
+        "authors": [
+          "Esmaeilinezhad Zahra",
+          "Ghosh Nirjhar Ruth",
+          "Walsh Catharine M",
+          "Steen Jeremy P",
+          "Burgman Angelica M",
+          "Mertz Dominik",
+          "Johnston Bradley C"
+        ],
+        "journal": "The Cochrane database of systematic reviews",
+        "year": 2025,
+        "abstract": "RATIONALE: Antibiotics can disturb gastrointestinal microbiota, which may lead to reduced resistance to pathogens such as Clostridioides difficile. Probiotics are live microbial preparations that, when administered in adequate amounts, may confer a health benefit to the host, and are a potential C difficile infection prevention strategy.\n\nOBJECTIVES: To assess the benefits and harms of probiotics for preventing C difficile-associated diarrhea (CDAD) in adults and children receiving an antibiotic for any reason.\n\nSEARCH METHODS: We searched the Cochrane Central Register of Controlled Trials (CENTRAL), Ovid MEDLINE, and Ovid Embase from 18 March 2017 (search date of the previous version of the review) to 3 March 2025.\n\nELIGIBILITY CRITERIA: We included randomized controlled trials with a placebo, alternative prophylaxis, or no-treatment control investigating probiotics (any strain or dose) for the prevention of CDAD in adults and children receiving an antibiotic for any reason.\n\nOUTCOMES: The critical outcome was incidence of CDAD. Important outcomes included detection of C difficile in stool (i.e. colonization in absence of symptoms), adverse events, antibiotic-associated diarrhea (AAD), and length of hospital stay.\n\nRISK OF BIAS: Two review authors independently assessed risk of bias using Cochrane's RoB 1 tool.\n\nSYNTHESIS METHODS: We pooled dichotomous outcomes (e.g. incidence of CDAD) using a random-effects complete-case model to calculate the risk ratio (RR) and absolute risk reduction (ARR) and corresponding 95% confidence interval (95% CI). We pooled continuous outcomes (e.g. length of hospital stay) using a random-effects model to calculate the mean difference (MD) and corresponding 95% CI. We conducted sensitivity analyses to explore the impact of missing outcome data on benefits and harms outcomes. To investigate heterogeneity, we conducted a priori subgroup analyses on risk of bias, probiotic dose, probiotic species, adults versus children, inpatients versus outpatients, and the event rate in the control group for developing CDAD (low 0% to 2%; moderate 3% to 5%; high > 5%). The certainty of the evidence for each outcome was independently assessed using the GRADE approach.\n\nINCLUDED STUDIES: Eight new studies (n = 4595) met our inclusion criteria, for a total of 47 included studies (n = 15,260). Although we noted a high risk of bias in individual studies for sequence generation or allocation concealment, this did not impact our findings. Around 30% of studies lacked a published protocol or clinical trial registration, and in some cases there were inconsistencies between the reported methods and published results. We noted authors' affiliation with a probiotic company and financial support received from probiotic companies in 28 studies.\n\nSYNTHESIS OF RESULTS: Evidence from 38 trials (13,179 participants) suggests that probiotics may result in a small absolute risk reduction (ARR) of 1.6% (incidence of 1.6% [110/6787] in the probiotic group versus 3.2% [203/6392] in the control group), and a relative risk reduction (RRR) of 50% (RR 0.50, 95% CI 0.38 to 0.64; P < 0.001; low-certainty evidence) in incidence of CDAD. Twenty-seven of 38 trials had missing CDAD data, ranging from 2% to 45%. Our complete-case CDAD results proved robust to sensitivity analyses of plausible and worst-plausible assumptions regarding missing outcome data. Pooled results from 16 trials (1302 participants) suggest that probiotics may result in a small absolute reduction in C difficile in stool (i.e. colonization in absence of symptoms) (ARR 2.1%; incidence of 14.9% [101/677] in the probiotic group versus 16.2% [101/625] in the control group; RR 0.87, 95% CI 0.68 to 1.11; P = 0.27; low-certainty evidence). Thirty-seven studies (11,911 participants) reported on adverse events. Our pooled analysis indicates that probiotics probably result in a small ARR of 1.7% (incidence of 10.9% [669/6148] in the probiotic group versus 12.2% [701/5763] in the control group), and an RRR of 14.0% (RR 0.86, 95% CI 0.72 to 1.01; P = 0.074; moderate-certainty evidence). The most common adverse events in both the treatment and control groups were abdominal cramping, nausea, fever, soft stools, flatulence, and taste disturbance. Pooled results from 40 studies (13,419 participants) suggest that probiotics may result in a large ARR of 9% (incidence of 23% [1592/6901] in the probiotic group versus 27.4% [1787/6518] in the control group), and an RRR of 33% (RR 0.67, 95% CI 0.57 to 0.78; P < 0.001; low-certainty evidence) in incidence of AAD. Only seven trials (6553 participants) investigated length of hospital stay. There is likely little to no difference in length of hospital stay between treatment and control groups (MD -0.07, 95% CI -0.35 to 0.21; P = 0.63; moderate-certainty evidence). We downgraded the certainty of evidence for CDAD and AAD due to the low number of events or publication bias. We observed some variability in CDAD control group event rate (< 2% to > 5%) that may impact the applicability of evidence depending on clinical setting. We downgraded the certainty of evidence for adverse events due to variation between the results of the studies and for hospital stay due to selective reporting.\n\nAUTHORS' CONCLUSIONS: The currently available evidence suggests that probiotics may be effective for preventing CDAD, suggesting that for every 65 people taking probiotics, one case of CDAD may be prevented (number needed to treat for an additional beneficial outcome of 65, 95% CI 48 to 97). There are probably fewer adverse events in the probiotic group. The short-term use of probiotics may have a small absolute benefit, and is likely not associated with adverse effects when used in patient populations receiving systemic antibiotics who are not immunocompromised. Large trials comparing probiotics with placebo in people with a low baseline risk of CDAD are needed.\n\nFUNDING: There was no source of funding for this update.\n\nREGISTRATION: The original review was done in 2013 by Johnston and colleagues, for which the protocol was developed. We followed the methods specified in the 2017 review, while modifying the search strategy and risk of bias assessment for selective reporting for this update.",
+        "plain_title": "Updated Review: Probiotics Against Dangerous C. Difficile Diarrhea",
+        "plain_summary": "This updated review reassessed whether probiotics can prevent diarrhea caused by C. difficile (a harmful gut bacterium that can flourish when antibiotics wipe out protective gut bacteria) in people of all ages taking antibiotics.",
+        "selected": true,
+        "ranking": {
+          "score": 12,
+          "overlap": 3,
+          "strategies_matched": [
+            "Broad search for any literature on probiotics preventing antibiotic-associated diarrhea",
+            "Targeted search for high-level evidence (systematic reviews and meta-analyses) on specific probiotic strains preventing antibiotic-associated diarrhea",
+            "Focused search for pediatric RCTs and meta-analyses on probiotics co-administered with antibiotics to prevent diarrhea"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis",
+          "Systematic Review"
+        ],
+        "strategy_idx": [
+          0,
+          1,
+          2
+        ],
+        "positions": [
+          10,
+          13,
+          10
+        ]
+      },
+      {
+        "pmid": "40426506",
+        "doi": "10.3390/antibiotics14050439",
+        "title": "Effectiveness of Bacillus clausii (O/C, N/R, SIN, T) in the Prevention of Antibiotic-Associated Diarrhea and Gastrointestinal Symptoms: A Systematic Review.",
+        "authors": [
+          "Abreu Ana Teresa",
+          "Vázquez Frías Rodrigo",
+          "Boggio Marzet Christian",
+          "Stefanolo Juan Pablo",
+          "Concha Mejía Alejandro",
+          "Bustos Fernández Luis",
+          "Laudanno Oscar",
+          "Rosa Dimas",
+          "Cruz Serrano Maria Claudia",
+          "Cárdenas Karen",
+          "Zuluaga Julio"
+        ],
+        "journal": "Antibiotics (Basel, Switzerland)",
+        "year": 2025,
+        "abstract": "Background: Dysbiosis and antibiotic-associated diarrhea (AAD) are significant concerns in clinical settings. Probiotics, such as Bacillus clausii (O/C, N/R, SIN, T), a spore-forming bacterium resistant to gastrointestinal conditions and most commonly used antibiotics, emerge as a promising approach. We aim to assess the role of B. clausii in preventing AAD in children and adults during antibiotic therapy. Materials and methods: A systematic literature search was conducted across multiple databases, including MEDLINE, EMBASE, Cochrane Library, LILACS, and SciELO, up to May 2024. Studies were included if they involved B. clausii (O/C, N/R, SIN, T) administration during antibiotic treatment and reported AAD-related outcomes. Results: A total of four studies were included in the review. The studies comprised two randomized controlled trials (RCTs), one meta-analysis of RCTs, and one expert consensus. The primary outcome was the effectiveness of B. clausii (O/C, N/R, SIN, T) in reducing the incidence of diarrhea. Results showed a significant reduction in the risk of AAD and gastrointestinal symptoms in patients receiving it at a dosage of 4 × 109 CFU/day for children and 6 × 109 CFU/day for adolescents and adults for up to 14 days. Conclusions: B. clausii (O/C, N/R, SIN, T) appears to be an effective probiotic for preventing AAD in adults and children. It significantly improves gastrointestinal symptoms associated with antibiotic treatment, including diarrhea, nausea, and epigastric pain. Future studies are recommended to further elucidate its effectiveness in diverse populations, especially in low- and middle-income countries.",
+        "plain_title": "Can a Specific Probiotic Strain Prevent Antibiotic Diarrhea?",
+        "plain_summary": "This review looked at whether Bacillus clausii (a specific spore-forming probiotic that can survive stomach acid and isn't killed by most antibiotics) helps prevent diarrhea and gut symptoms in children and adults taking antibiotics.",
+        "selected": true,
+        "ranking": {
+          "score": 12,
+          "overlap": 3,
+          "strategies_matched": [
+            "Broad search for any literature on probiotics preventing antibiotic-associated diarrhea",
+            "Targeted search for high-level evidence (systematic reviews and meta-analyses) on specific probiotic strains preventing antibiotic-associated diarrhea",
+            "Focused search for pediatric RCTs and meta-analyses on probiotics co-administered with antibiotics to prevent diarrhea"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "strategy_idx": [
+          0,
+          1,
+          2
+        ],
+        "positions": [
+          12,
+          14,
+          11
+        ]
+      },
+      {
+        "pmid": "18542041",
+        "doi": "10.1097/MCG.0b013e3181618ab7",
+        "title": "Probiotics for prevention of antibiotic-associated diarrhea.",
+        "authors": [
+          "Doron Shira Idit",
+          "Hibberd Patricia L",
+          "Gorbach Sherwood L"
+        ],
+        "journal": "Journal of clinical gastroenterology",
+        "year": 2008,
+        "abstract": "Antibiotic-associated diarrhea (AAD) occurs in approximately 25% of patients receiving antibiotics. Hospitalized patients with AAD are at increased risk for nosocomial infections and have a higher mortality. Probiotics are living microorganisms used to restore gut health by changing the intestinal microbiota. Several have been studied for the prevention of AAD. Five meta-analyses of trials of probiotics for the prevention of AAD have been performed. The results showed an overall reduction in the risk of AAD when probiotics were coadministered with antibiotics. McFarland conducted the largest meta-analysis to date analyzing 25 randomized controlled trials of probiotics for the prevention of AAD including 2810 subjects. More than half of the trials demonstrated efficacy of the probiotic. In particular, Lactobacillus GG, Saccharomyces boulardii, and the probiotic mixtures were effective. The Cochrane Database of Systematic Reviews published a review of the literature on the use of probiotics for the prevention of pediatric AAD, including 10 randomized trials testing 1986 children. The per protocol pooled analysis, but not the intent-to-treat analysis, showed that probiotics are effective for preventing AAD with the number needed to treat to prevent 1 case of diarrhea being 10. Lactobacillus GG, Bacillus coagulans, and S. boulardii appeared to be most effective. Probiotics are generally safe, however, they should be used with caution in patients who have compromise of either the immune system or the integrity of the intestinal mucosa, and in the presence of a central venous catheter.",
+        "plain_title": "Overview of Probiotics for Preventing Antibiotic-Caused Diarrhea",
+        "plain_summary": "This review of five previous analyses found that about 25% of patients on antibiotics get diarrhea, and taking probiotics alongside antibiotics generally reduces that risk.",
+        "selected": true,
+        "ranking": {
+          "score": 12,
+          "overlap": 3,
+          "strategies_matched": [
+            "Broad search for any literature on probiotics preventing antibiotic-associated diarrhea",
+            "Targeted search for high-level evidence (systematic reviews and meta-analyses) on specific probiotic strains preventing antibiotic-associated diarrhea",
+            "Focused search for pediatric RCTs and meta-analyses on probiotics co-administered with antibiotics to prevent diarrhea"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article",
+          "Research Support, N.I.H., Extramural",
+          "Review"
+        ],
+        "strategy_idx": [
+          0,
+          1,
+          2
+        ],
+        "positions": [
+          14,
+          22,
+          17
+        ]
+      },
+      {
+        "pmid": "40488914",
+        "doi": "10.1007/s00431-025-06249-8",
+        "title": "Effect of Limosilactobacillus reuteri DSM17938 to prevent antibiotic-associated diarrhea in children: prospective, multi-center, randomized, placebo-controlled clinical trial (PEARL Study).",
+        "authors": [
+          "Dinleyici Ener Cagri",
+          "Ozen Metehan",
+          "Guven Sirin",
+          "Dalgic Nazan",
+          "Karbuz Adem",
+          "Sutcu Murat",
+          "Turel Ozden",
+          "Oz Fatma Nur",
+          "Kirli Ulviye",
+          "Yasar Durmus Sevgi",
+          "Yazar Ahmet Sami",
+          "Cakin Zeynep Ebru",
+          "Vandenplas Yvan",
+          "Kara Ates"
+        ],
+        "journal": "European journal of pediatrics",
+        "year": 2025,
+        "abstract": "UNLABELLED: Antibiotic-associated diarrhea (AAD) is one of the side effects that occur during and after antibiotic use. Some probiotics have strain-specific beneficial effects on AAD development when used in combination with antibiotics. The aim of this study was to evaluate the effect of Limosilactobacillus reuteri DSM 17938 on the prevention of AAD in children. This is a prospective, multicenter, randomized, double-blind, placebo-controlled clinical trial in Türkiye between 2017-2019, among outpatient children with acute otitis media (AOM) or acute rhinosinusitis (ARS). Group 1 (n = 330) received amoxicillin-clavulanate and L. reuteri DSM 17938 (2 × 108 CFU) and Group 2 (n = 324) received amoxicillin-clavulanate and a placebo during the antibiotic treatment or continued for 21 days after antibiotic cessation. The primary end point of this study was the percentage of children with AAD in the first 14, 21, and 56 days of follow-up. Secondary endpoints are the percentage of children with AAD regarding the AOM vs ARS, amoxicillin-clavulanate dose, age groups, and the comparison between 14- and 21-days use of L. reuteri. The percentage of children with AAD was significantly lower in the L. reuteri group compared to the placebo group at 14 days (7.9% vs. 16.7%; RR: 0.47, 95%CI 0.30-0.7; p < 0.001); at 21 days (8.8% vs. 17.9%; RR: 0.49, 95%CI 0.32-0.74;p < 0.001); and at 56 days (9.1% vs. 19.6%; RR: 0.46, 95%CI 0.30-0.69;p < 0.001). The incidence of AAD was also significantly lower in the L. reuteri group at 14, 21 and 56 days among children aged between 6-24 months (p < 0.01, p < 0.01, p < 0.001) or children with AOM (p = 0.0001,p < 0.0001,p < 0.0001). When AAD was observed, the mean duration of diarrhea was longer in the placebo group(p < 0.05).\n\nCONCLUSIONS: This first study with L. reuteri DSM 17938 in a large pediatric outpatient setting showed significant reduction of AAD during the first 14 days of antibiotic use and the 8-week follow-up period.\n\nTRIAL REGISTRATION: NCT02765217 (First Submitted 02.05.2016) ( https://clinicaltrials.gov/study/NCT02765217?term=NCT02765217&rank=1 ).\n\nWHAT IS KNOWN: • Antibiotic associated diarrhea (AAD) is one of the common complications of antibiotic use in children and selected probiotics may have a strain-specific effect to prevent AAD • There are limited studies about the effects of Limosilactobacillus reuteri DSM 17938 on AAD, and no study available in pediatric outpatient setting.\n\nWHAT IS NEW: • Limosilactobacillus reuteri DSM 17938 significantly reduced the incidence of AAD in children at 14-, 21-, and 56- days follow-up. • The effect is mainly observed in children aged between 6 and 24 months or children with AOM.",
+        "plain_title": "Testing a Specific Probiotic to Prevent Antibiotic Diarrhea in Kids",
+        "plain_summary": "In a trial of 330 children in Turkey with ear or sinus infections, researchers tested whether a specific probiotic (Limosilactobacillus reuteri) taken alongside antibiotics could prevent the diarrhea that antibiotics often cause.",
+        "selected": true,
+        "ranking": {
+          "score": 12,
+          "overlap": 2,
+          "strategies_matched": [
+            "Focused search for pediatric RCTs and meta-analyses on probiotics co-administered with antibiotics to prevent diarrhea",
+            "Narrow search specifically addressing probiotic use alongside amoxicillin or related antibiotics in children to prevent diarrhea"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Multicenter Study"
+        ],
+        "strategy_idx": [
+          2,
+          3
+        ],
+        "positions": [
+          9,
+          1
+        ]
+      },
+      {
+        "pmid": "20458757",
+        "doi": "10.3748/wjg.v16.i18.2202",
+        "title": "Systematic review and meta-analysis of Saccharomyces boulardii in adult patients.",
+        "authors": [
+          "McFarland Lynne V"
+        ],
+        "journal": "World journal of gastroenterology",
+        "year": 2010,
+        "abstract": "This article reviews the evidence for efficacy and safety of Saccharomyces boulardii (S. boulardii) for various disease indications in adults based on the peer-reviewed, randomized clinical trials and pre-clinical studies from the published medical literature (Medline, Clinical Trial websites and meeting abstracts) between 1976 and 2009. For meta-analysis, only randomized, blinded controlled trials unrestricted by language were included. Pre-clinical studies, volunteer studies and uncontrolled studies were excluded from the review of efficacy and meta-analysis, but included in the systematic review. Of 31 randomized, placebo-controlled treatment arms in 27 trials (encompassing 5029 study patients), S. boulardii was found to be significantly efficacious and safe in 84% of those treatment arms. A meta-analysis found a significant therapeutic efficacy for S. boulardii in the prevention of antibiotic-associated diarrhea (AAD) (RR = 0.47, 95% CI: 0.35-0.63, P < 0.001). In adults, S. boulardii can be strongly recommended for the prevention of AAD and the traveler's diarrhea. Randomized trials also support the use of this yeast probiotic for prevention of enteral nutrition-related diarrhea and reduction of Helicobacter pylori treatment-related symptoms. S. boulardii shows promise for the prevention of C. difficile disease recurrences; treatment of irritable bowel syndrome, acute adult diarrhea, Crohn's disease, giardiasis, human immunodeficiency virus-related diarrhea; but more supporting evidence is recommended for these indications. The use of S. boulardii as a therapeutic probiotic is evidence-based for both efficacy and safety for several types of diarrhea.",
+        "plain_title": "Review of a Yeast-Based Probiotic for Various Adult Conditions",
+        "plain_summary": "This review examined decades of research on Saccharomyces boulardii (a beneficial yeast used as a probiotic) in adults, including its ability to prevent antibiotic-associated diarrhea and other gut conditions.",
+        "selected": true,
+        "ranking": {
+          "score": 11,
+          "overlap": 2,
+          "strategies_matched": [
+            "Broad search for any literature on probiotics preventing antibiotic-associated diarrhea",
+            "Targeted search for high-level evidence (systematic reviews and meta-analyses) on specific probiotic strains preventing antibiotic-associated diarrhea"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Editorial",
+          "Meta-Analysis",
+          "Systematic Review"
+        ],
+        "strategy_idx": [
+          0,
+          1
+        ],
+        "positions": [
+          21,
+          2
+        ]
+      },
+      {
+        "pmid": "39467682",
+        "doi": "10.7499/j.issn.1008-8830.2401129",
+        "title": "[A prospective randomized controlled study on probiotics for the prevention of antibiotic-associated diarrhea in infants and young children].",
+        "authors": [
+          "Zhang Su-Wei",
+          "Zhi Xian",
+          "Wang Meng-Yu",
+          "Shen Dong-Lin"
+        ],
+        "journal": "Zhongguo dang dai er ke za zhi = Chinese journal of contemporary pediatrics",
+        "year": 2024,
+        "abstract": "OBJECTIVES: To evaluate the preventive effects of Saccharomyces boulardii powder and tetragenous viable Bifidobacterium tablets on antibiotic-associated diarrhea (AAD) in infants and young children.\n\nMETHODS: Children under three years old admitted to the Department of Pediatrics, Affiliated Hospital of Xuzhou Medical University due to non-gastrointestinal infections and requiring antibiotic treatment from July to December 2023 were enrolled. The children were randomly divided into a control group (n=47), a Saccharomyces boulardii group (n=70), and a Bifidobacterium group (n=65) using a random number table method. The control group received antibiotics and symptomatic supportive treatment according to relevant clinical guidelines. In addition to the treatment given to the control group, the Saccharomyces boulardii group and the Bifidobacterium group were respectively administered with Saccharomyces boulardii powder and tetragenous viable Bifidobacterium tablets. Based on the duration of probiotic use (7 days, 14 days, and 21 days), the Saccharomyces boulardii group was further divided into 7 d, 14 d, and 21 d subgroups, and similarly for the Bifidobacterium group. The incidence of AAD and ratio of cocci to bacilli in feces were compared among the groups after treatment.\n\nRESULTS: The incidence rate of AAD in both the Saccharomyces boulardii group and the Bifidobacterium group was lower than that in the control group (P<0.017). The duration of AAD and the length of hospital stay were shorter in the Saccharomyces boulardii and Bifidobacterium groups compared to the control group (P<0.05). In the control group, the ratio of cocci to bacilli in feces on days 7, 14, and 21 was higher than on day 1 (P<0.05). Within-group comparisons showed that the ratio of cocci to bacilli in feces on day 14 in the Bifidobacterium 14 d and 21 d groups were lower than on day 1 (P<0.05); and the ratios on day 14 in the control group, Saccharomyces boulardii 14 d group, Saccharomyces boulardii 21 d group, Bifidobacterium 14 d group, and Bifidobacterium 21 d group were lower than on day 7 (P<0.05). The ratios on day 21 in the control group and the Saccharomyces boulardii 21 d group were lower than on days 7 and 14 (P<0.05). Between-group comparisons indicated that on day 7, the ratios of cocci to bacilli in feces in the Saccharomyces boulardii 7 d, 14 d, 21 d groups, and Bifidobacterium 7 d, 14 d, 21 d groups were all lower than in the control group (P<0.05); on day 14, the ratios of cocci to bacilli in feces 14 d and 21 d groups were lower than in the control group and the Bifidobacterium 7 d group (P<0.05).\n\nCONCLUSIONS: Both Saccharomyces boulardii and tetragenous viable Bifidobacterium can effectively improve gut microbiota and prevent the occurrence of AAD in infants and young children. Compared to short-term treatment, appropriately extending the duration of probiotic therapy can further improve the structure of gut microbiota.\n\n目的: 评价布拉氏酵母菌散及双歧杆菌四联活菌片对婴幼儿抗生素相关性腹泻（antibiotic-associated diarrhea, AAD）的预防作用。方法: 选取2023年7—12月因非胃肠道感染入住徐州医科大学附属医院儿科并需抗生素治疗的3岁以下患儿作为研究对象，采用随机数字表法随机分为对照组（n=47）、布拉氏酵母菌组（n=70）、双歧杆菌组（n=65）。对照组根据相关诊疗规范应用抗生素及对症支持治疗。除对照组采用的治疗外，布拉氏酵母菌组和双歧杆菌组分别加用布拉氏酵母菌散和双歧杆菌四联活菌片治疗，并根据益生菌使用时间将布拉氏酵母菌组分为布拉氏酵母菌7 d、14 d、21 d组和双歧杆菌7 d、14 d、21 d组。比较各组患儿应用抗生素后AAD发生率和粪便球菌与杆菌比例。结果: 布拉氏酵母菌组和双歧杆菌组的AAD发生率均低于对照组（P<0.017）。布拉氏酵母菌组和双歧杆菌组AAD持续时间和住院时间均短于对照组（P<0.05）。对照组在第7天、14天、21天的粪便球菌与杆菌比例均高于第1天（P<0.05）。组内比较显示，双歧杆菌14 d组、21 d组在治疗第14天的粪便球菌与杆菌比例低于第1天（P<0.05）；对照组、布拉酵母菌14 d组、布拉酵母菌21 d组、双歧杆菌14 d组、双歧杆菌21 d组在治疗第14天的粪便球菌与杆菌比例低于第7天（P<0.05）；对照组、布拉氏酵母菌21 d组在治疗第21天时粪便球菌与杆菌比例低于第7天及第14天（P<0.05）。组别间比较显示，第7天时，布拉氏酵母菌7 d、14 d、21 d组以及双歧杆菌7 d、14 d、21 d组粪便球菌与杆菌比例均低于对照组（P<0.05）；第14天时，双歧杆菌14 d组和21 d组粪便球菌与杆菌比例均低于对照组和双歧杆菌7 d组（P<0.05）。结论: 布拉氏酵母菌和双歧杆菌四联活菌均能有效改善肠道菌群，预防婴幼儿AAD的发生；与短期治疗相比，适当延长益生菌疗程可进一步改善肠道菌群结构。.",
+        "plain_title": "Two Probiotics Tested to Prevent Antibiotic Diarrhea in Babies",
+        "plain_summary": "In a trial of 182 hospitalized children under age three needing antibiotics for non-gut infections, researchers compared two different probiotics against no probiotic to see which better prevented antibiotic-caused diarrhea.",
+        "selected": true,
+        "ranking": {
+          "score": 10,
+          "overlap": 2,
+          "strategies_matched": [
+            "Broad search for any literature on probiotics preventing antibiotic-associated diarrhea",
+            "Focused search for pediatric RCTs and meta-analyses on probiotics co-administered with antibiotics to prevent diarrhea"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "English Abstract"
+        ],
+        "strategy_idx": [
+          0,
+          2
+        ],
+        "positions": [
+          11,
+          3
+        ]
+      },
+      {
+        "pmid": "41699149",
+        "doi": "10.1038/s41598-026-39826-4",
+        "title": "Probiotic intervention not beneficial to prevent antibiotic-associated diarrhea in absence of antibiotic-induced microbiome disruption.",
+        "authors": [
+          "Merenstein Daniel",
+          "Grant-Beurmann Silvia",
+          "Sanders Mary Ellen",
+          "Tan Tina",
+          "Burke Brendan",
+          "Kumar Aneesha",
+          "Herbin-Smith Keisha",
+          "Sparenborg Jessy",
+          "D'Amico Frank",
+          "Roberts Bob",
+          "Fraser Claire"
+        ],
+        "journal": "Scientific reports",
+        "year": 2026,
+        "abstract": "Probiotics are live microorganisms that, when administered in adequate amounts, confer a health benefit on the host. One of the most common uses of probiotics is for prevention of antibiotic-associated diarrhea (AAD). Here we report on the PLAY-ON study (Probiotics: Live and Active Yogurt Cultures for Healthy Children ON Antibiotics) which was a randomized, placebo-controlled, double-blinded study in healthy children who were prescribed antibiotics for acute outpatient upper respiratory illnesses, such as bacterial sinusitis or streptococcal pharyngitis. The treating clinician determined the antibiotic, its dosage and duration. Participants received either a control yogurt or a yogurt containing the probiotic, Bifidobacterium animalis subsp. lactisBB-12. Our primary aim was to determine whether the probiotic prevented AAD. The microbiome of participants was examined longitudinally. Diarrhea rates were nearly identical at 2% (3 cases in the active group, 2 cases in the control group); adverse events were also similar between groups. Thus, our study did not find any differences in the incidence of AAD between those who took the probiotic and the control group. The microbiota of both groups returned to baseline by day 14 and assessment of the microbiome showed no difference in levels or types of antibiotic resistance genes. Broad-spectrum antibiotics are associated with higher rates of adverse events, including AAD, than narrow-spectrum antibiotics, as observed in children taking antibiotics for respiratory tract infections3,4.However, if the antibiotic does not significantly disturb the microbiota there may be no discernable role for the probiotic. This hypothesis is supported by the participants who used broad spectrum penicillins had a significantly higher rate of diarrhea compared to narrow spectrum antibiotic users, 9.1% and 0.51% respectively, (p=0.004)This study suggests that prescribing short-course, narrow spectrum antibiotics can reduce microbiome disruptions, concomitant AAD, and the need for probiotic intervention. . The antibiotics used in our study did not disrupt the microbiome to the extent expected, which likely accounted for the low observed incidence of AAD. Importantly, this observation can inform clinicians’ choice of antibiotic, steering them toward equally therapeutic antibiotics that are less disruptive to the microbiota and better tolerated. Although probiotics are often recommended to prevent AAD, our study demonstrates that in the absence of microbiome disruption, they may not provide benefit.",
+        "plain_title": "Probiotics May Not Help When Antibiotics Don't Disrupt Gut Bacteria",
+        "plain_summary": "A trial in healthy children taking antibiotics for common infections like strep throat found that probiotic yogurt did not prevent diarrhea, possibly because the antibiotics used in these cases didn't significantly disrupt the children's gut bacteria in the first place.",
+        "selected": true,
+        "ranking": {
+          "score": 10,
+          "overlap": 2,
+          "strategies_matched": [
+            "Focused search for pediatric RCTs and meta-analyses on probiotics co-administered with antibiotics to prevent diarrhea",
+            "Narrow search specifically addressing probiotic use alongside amoxicillin or related antibiotics in children to prevent diarrhea"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial"
+        ],
+        "strategy_idx": [
+          2,
+          3
+        ],
+        "positions": [
+          13,
+          3
+        ]
+      },
+      {
+        "pmid": "22570464",
+        "doi": "10.1001/jama.2012.3507",
+        "title": "Probiotics for the prevention and treatment of antibiotic-associated diarrhea: a systematic review and meta-analysis.",
+        "authors": [
+          "Hempel Susanne",
+          "Newberry Sydne J",
+          "Maher Alicia R",
+          "Wang Zhen",
+          "Miles Jeremy N V",
+          "Shanman Roberta",
+          "Johnsen Breanne",
+          "Shekelle Paul G"
+        ],
+        "journal": "JAMA",
+        "year": 2012,
+        "abstract": "CONTEXT: Probiotics are live microorganisms intended to confer a health benefit when consumed. One condition for which probiotics have been advocated is the diarrhea that is a common adverse effect of antibiotic use.\n\nOBJECTIVE: To evaluate the evidence for probiotic use in the prevention and treatment of antibiotic-associated diarrhea (AAD).\n\nDATA SOURCES: Twelve electronic databases were searched (DARE, Cochrane Library of Systematic Reviews, CENTRAL, PubMed, EMBASE, CINAHL, AMED, MANTIS, TOXLINE, ToxFILE, NTIS, and AGRICOLA) and references of included studies and reviews were screened from database inception to February 2012, without language restriction.\n\nSTUDY SELECTION: Two independent reviewers identified parallel randomized controlled trials (RCTs) of probiotics (Lactobacillus, Bifidobacterium, Saccharomyces, Streptococcus, Enterococcus, and/or Bacillus) for the prevention or treatment of AAD.\n\nDATA EXTRACTION: Two independent reviewers extracted the data and assessed trial quality.\n\nRESULTS: A total of 82 RCTs met inclusion criteria. The majority used Lactobacillus-based interventions alone or in combination with other genera; strains were poorly documented. The pooled relative risk in a DerSimonian-Laird random-effects meta-analysis of 63 RCTs, which included 11 811 participants, indicated a statistically significant association of probiotic administration with reduction in AAD (relative risk, 0.58; 95% CI, 0.50 to 0.68; P < .001; I(2), 54%; [risk difference, -0.07; 95% CI, -0.10 to -0.05], [number needed to treat, 13; 95% CI, 10.3 to 19.1]) in trials reporting on the number of patients with AAD. This result was relatively insensitive to numerous subgroup analyses. However, there exists significant heterogeneity in pooled results and the evidence is insufficient to determine whether this association varies systematically by population, antibiotic characteristic, or probiotic preparation.\n\nCONCLUSIONS: The pooled evidence suggests that probiotics are associated with a reduction in AAD. More research is needed to determine which probiotics are associated with the greatest efficacy and for which patients receiving which specific antibiotics.",
+        "plain_title": "Large Review: Probiotics Help Prevent and Treat Antibiotic Diarrhea",
+        "plain_summary": "A comprehensive search of 12 databases found evidence supporting that probiotics (beneficial live microorganisms) can both prevent and treat the diarrhea commonly caused by antibiotic use.",
+        "selected": true,
+        "ranking": {
+          "score": 9,
+          "overlap": 2,
+          "strategies_matched": [
+            "Broad search for any literature on probiotics preventing antibiotic-associated diarrhea",
+            "Targeted search for high-level evidence (systematic reviews and meta-analyses) on specific probiotic strains preventing antibiotic-associated diarrhea"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis",
+          "Research Support, N.I.H., Extramural",
+          "Research Support, U.S. Gov't, Non-P.H.S.",
+          "Research Support, U.S. Gov't, P.H.S.",
+          "Systematic Review"
+        ],
+        "strategy_idx": [
+          0,
+          1
+        ],
+        "positions": [
+          7,
+          4
+        ]
+      }
+    ],
+    "prompts": {
+      "search_system": "You are a PubMed search expert. Your job is to turn a plain-English health or science question into optimized PubMed search queries.\n\n## Rules\n1. Generate 3-4 PubMed search queries, from broad to specific.\n2. Use proper MeSH terms and boolean operators (AND, OR) where helpful.\n3. Include relevant synonyms and alternative phrasings.\n4. Prioritize queries that will find systematic reviews, meta-analyses, and RCTs when relevant.\n5. Keep queries concise but effective.\n\n## Output Format\nReturn ONLY a JSON array of objects. No markdown, no explanation, no code fences.\nEach object has:\n- \"query\": the PubMed search string\n- \"strategy\": a brief plain-English description of what this query targets (1 sentence)\n\nExample output:\n[{\"query\":\"vitamin D supplementation respiratory infection children\",\"strategy\":\"Broad search for vitamin D and respiratory infections in children\"},{\"query\":\"(vitamin D OR cholecalciferol) AND (respiratory tract infection OR RTI OR common cold) AND (child OR pediatric) AND (randomized controlled trial OR meta-analysis)\",\"strategy\":\"Targeted search for high-quality trials on vitamin D and respiratory infections in kids\"}]",
+      "summary_system": "You translate medical research paper titles and abstracts into plain language for people without medical training.\n\n## Rules\n1. Use no medical jargon. If a technical concept is essential, explain it in parentheses.\n2. Be specific about findings (numbers, effects) when the abstract provides them.\n3. Each summary should help a non-expert decide if this paper is relevant to their question.\n\n## Output Format\nReturn ONLY a JSON array in the same order as the papers provided. No markdown, no explanation.\nEach object has:\n- \"plain_title\": A clear, jargon-free title (5-12 words)\n- \"plain_summary\": One sentence explaining the key finding or purpose in everyday language",
+      "synthesis_system": "You are a research translator for Tables Turned, a tool that helps regular people understand PubMed research.\n\n## Your Rules\n\n1. **Answer the question first.** Open with a direct, clear answer in 2-3 sentences based on the evidence. This is the most important part.\n2. **Every claim needs receipts.** Cite as [PMID: XXXXX]. If you cannot link a claim to a provided paper, mark it [UNWITNESSED].\n3. **Surface contradictions.** If papers disagree, say so plainly.\n4. **Write in common tongue.** No jargon. If a technical term is unavoidable, translate it in parentheses. Short sentences.\n5. **Do not patronize.** The reader is intelligent and busy.\n6. **State confidence honestly.** Strong, mixed, or thin with reasons.\n7. **Do not hallucinate.** Never invent findings. Never cite a PMID not provided to you.\n\n## Output Format\n\n**CRITICAL: The entire brief must fit on ONE printed page. Be concise. No filler. No padding. Every sentence must earn its place.**\n\nProduce a markdown document with exactly these sections:\n\n# [Short title from the question]\n\n**Question:** [question] · **Context:** [context]\n\n---\n\n## The short answer\n\n[2-3 sentences directly answering the user's question. Lead with what matters most to their decision. Cite key PMIDs inline.]\n\n## Key findings\n\n[4-6 bullet points maximum. Each bullet states one finding in plain language and cites [PMID: XXXXX]. If papers contradict each other, say so in the bullet.]\n\n## What is unknown\n\n[2-3 bullet points: gaps the papers do not address that the reader likely cares about.]\n\n## Confidence: [Low / Medium / High]\n\n[One sentence: why, based on study count, size, consistency, and design quality.]\n\n---\n\n*Generated by Tables Turned. Receipts only.*",
+      "synthesis_user_message": "**Question:** Do probiotics prevent diarrhea from antibiotics?\n**Context:** My child was just prescribed amoxicillin and I'm wondering whether to give a probiotic too.\n\n---\n\n**Papers provided (12):**\n\n### PMID: 31039287\n**Title:** Probiotics for the prevention of pediatric antibiotic-associated diarrhea.\n**Authors:** Guo Qin, Goldenberg Joshua Z, Humphrey Claire, El Dib Regina, Johnston Bradley C\n**Journal:** The Cochrane database of systematic reviews (2019)\n**Abstract:**\nBACKGROUND: Antibiotics alter the microbial balance commonly resulting in antibiotic-associated diarrhea (AAD). Probiotics may prevent AAD via providing gut barrier, restoration of the gut microflora, and other potential mechanisms of action.\n\nOBJECTIVES: The primary objectives were to assess the efficacy and safety of probiotics (any specified strain or dose) used for the prevention of AAD in children.\n\nSEARCH METHODS: MEDLINE, Embase, CENTRAL, CINAHL, and the Web of Science (inception to 28 May 2018) were searched along with registers including the ISRCTN and Clinicaltrials.gov. We also searched the NICE Evidence Services database as well as reference lists from relevant articles.\n\nSELECTION CRITERIA: Randomized, parallel, controlled trials in children (0 to 18 years) receiving antibiotics, that compare probiotics to placebo, active alternative prophylaxis, or no treatment and measure the incidence of diarrhea secondary to antibiotic use were considered for inclusion.\n\nDATA COLLECTION AND ANALYSIS: Study selection, data extraction, and risk of bias assessment were conducted independently by two authors. Dichotomous data (incidence of AAD, adverse events) were combined using a pooled risk ratio (RR) or risk difference (RD), and continuous data (mean duration of diarrhea) as mean difference (MD), along with corresponding 95% confidence interval (95% CI). We calculated the number needed to treat for an additional beneficial outcome (NNTB) where appropriate. For studies reporting on microbiome characteristics using heterogeneous outcomes, we describe the results narratively. The certainty of the evidence was evaluated using GRADE.\n\nMAIN RESULTS: Thirty-three studies (6352 participants) were included. Probiotics assessed included Bacillus spp., Bifidobacterium spp., Clostridium butyricum, Lactobacilli spp., Lactococcus spp., Leuconostoc cremoris, Saccharomyces spp., orStreptococcus spp., alone or in combination. The risk of bias was determined to be high in 20 studies and low in 13 studies. Complete case (patients who did not complete the studies were not included in the analysis) results from 33 trials reporting on the incidence of diarrhea show a precise benefit from probiotics compared to active, placebo or no treatment control.After 5 days to 12 weeks of follow-up, the incidence of AAD in the probiotic group was 8% (259/3232) compared to 19% (598/3120) in the control group (RR 0.45, 95% CI 0.36 to 0.56; I² = 57%, 6352 participants; NNTB 9, 95% CI 7 to 13; moderate certainty evidence). Nineteen studies had loss to follow-up ranging from 1% to 46%. After making assumptions for those lost, the observed benefit was still statistically significant using an extreme plausible intention-to-treat (ITT) analysis, wherein the incidence of AAD in the probiotic group was 12% (436/3551) compared to 19% (664/3468) in the control group (7019 participants; RR 0.61; 95% CI 0.49 to 0.77; P <0.00001; I² = 70%). An a priori available case subgroup analysis exploring heterogeneity indicated that high dose (≥ 5 billion CFUs per day) is more effective than low probiotic dose (< 5 billion CFUs per day), interaction P value = 0.01. For the high dose studies the incidence of AAD in the probiotic group was 8% (162/2029) compared to 23% (462/2009) in the control group (4038 participants; RR 0.37; 95% CI 0.30 to 0.46; P = 0.06; moderate certainty evidence). For the low dose studies the incidence of AAD in the probiotic group was 8% (97/1155) compared to 13% (133/1059) in the control group (2214 participants; RR 0.68; 95% CI 0.46 to 1.01; P = 0.02). Again, assumptions for loss to follow-up using an extreme plausible ITT analysis was statistically significant. For high dose studies the incidence of AAD in the probiotic group was 13% (278/2218) compared to 23% (503/2207) in control group (4425 participants; RR 0.54; 95% CI 0.42 to 0.70; P <0.00001; I² = 68%; moderate certainty evidence).None of the 24 trials (4415 participants) that reported on adverse events reported any serious adverse events attributable to probiotics. Adverse event rates were low. After 5 days to 4 weeks follow-up, 4% (86/2229) of probiotics participants had an adverse event compared to 6% (121/2186) of control participants (RD 0.00; 95% CI -0.01 to 0.01; P < 0.00001; I² = 75%; low certainty evidence). Common adverse events included rash, nausea, gas, flatulence, abdominal bloating, and constipation.After 10 days to 12 weeks of follow-up, eight studies recorded data on our secondary outcome, the mean duration of diarrhea; with probiotics reducing diarrhea duration by almost one day (MD -0.91; 95% CI -1.38 to -0.44; P <0.00001; low certainty evidence). One study reported on microbiome characteristics, reporting no difference in changes with concurrent antibiotic and probiotic use.\n\nAUTHORS' CONCLUSIONS: The overall evidence suggests a moderate protective effect of probiotics for preventing AAD (NNTB 9, 95% CI 7 to 13). Using five criteria to evaluate the credibility of the subgroup analysis on probiotic dose, the results indicate the subgroup effect based on high dose probiotics (≥ 5 billion CFUs per day) was credible. Based on high-dose probiotics, the NNTB to prevent one case of diarrhea is 6 (95% CI 5 to 9). The overall certainty of the evidence for the primary endpoint, incidence of AAD based on high dose probiotics was moderate due to the minor issues with risk of bias and inconsistency related to a diversity of probiotic agents used. Evidence also suggests that probiotics may moderately reduce the duration of diarrhea, a reduction by almost one day. The benefit of high dose probiotics (e.g. Lactobacillus rhamnosus orSaccharomyces boulardii) needs to be confirmed by a large well-designed multi-centered randomized trial. It is premature to draw firm conclusions about the efficacy and safety of 'other' probiotic agents as an adjunct to antibiotics in children. Adverse event rates were low and no serious adverse events were attributable to probiotics. Although no serious adverse events were observed among inpatient and outpatient children, including small studies conducted in the intensive care unit and in the neonatal unit, observational studies not included in this review have reported serious adverse events in severely debilitated or immuno-compromised children with underlying risk factors including central venous catheter use and disorders associated with bacterial/fungal translocation.\n\n---\n\n### PMID: 26756877\n**Title:** Probiotics for the Prevention of Antibiotic-Associated Diarrhea in Children.\n**Authors:** Szajewska Hania, Canani Roberto Berni, Guarino Alfredo, Hojsak Iva, Indrio Flavia et al.\n**Journal:** Journal of pediatric gastroenterology and nutrition (2016)\n**Abstract:**\nThis article provides recommendations, developed by the Working Group (WG) on Probiotics of the European Society for Pediatric Gastroenterology, Hepatology, and Nutrition, for the use of probiotics for the prevention of antibiotic-associated diarrhea (AAD) in children based on a systematic review of previously completed systematic reviews and of randomized controlled trials published subsequently to these reviews. The use of probiotics for the treatment of AAD is not covered. The recommendations were formulated only if at least 2 randomized controlled trials that used a given probiotic (with strain specification) were available. The quality of evidence (QoE) was assessed using the Grading of Recommendations Assessment, Development, and Evaluation guidelines. If the use of probiotics for preventing AAD is considered because of the existence of risk factors such as class of antibiotic(s), duration of antibiotic treatment, age, need for hospitalization, comorbidities, or previous episodes of AAD diarrhea, the WG recommends using Lactobacillus rhamnosus GG (moderate QoE, strong recommendation) or Saccharomyces boulardii (moderate QoE, strong recommendation). If the use of probiotics for preventing Clostridium difficile-associated diarrhea is considered, the WG suggests using S boulardii (low QoE, conditional recommendation). Other strains or combinations of strains have been tested, but sufficient evidence is still lacking.\n\n---\n\n### PMID: 34385227\n**Title:** Probiotics for the prevention of antibiotic-associated diarrhoea: a systematic review and meta-analysis.\n**Authors:** Goodman Clare, Keating Georgia, Georgousopoulou Ekavi, Hespe Charlotte, Levett Kate\n**Journal:** BMJ open (2021)\n**Abstract:**\nOBJECTIVE: To evaluate existing evidence for the use of probiotics in preventing antibiotic-associated diarrhoea (AAD) in adults.\n\nDESIGN: Systematic review and meta-analysis of randomised controlled trials (RCTs).\n\nDATA SOURCES: We performed a literature search of the electronic databases CINAHL Plus, EMBASE, MEDLINE (Ovid) and Web of Science from database inception to May 2021 as well as hand searching of trial registries and reference lists of related reviews.\n\nSTUDY SELECTION: Two reviewers identified whether RCTs met the following inclusion criteria: adult population to whom antibiotics were administered; a probiotic intervention; a placebo, alternative dose, alternative probiotic strain or no treatment control; and incidence of AAD as the outcome.\n\nDATA EXTRACTION AND SYNTHESIS: Two reviewers independently collected data and assessed risk of bias using preconstructed data extraction forms. We used a random effects model for all analyses. Subgroup analyses were performed to evaluate species-specific and dose-specific response.\n\nRESULTS: Forty-two studies (11,305 participants) were included in this review. The pooled analysis suggests that co-administration of probiotics with antibiotics reduces the risk of AAD in adults by 37% (risk ratio (RR)=0.63 (95% CI 0.54 to 0.73), p<0.00001). The overall quality of the evidence using the Grading of Recommendations, Assessment, Development and Evaluations (GRADE) criteria was found to be moderate. In subgroup analyses, high dose compared with low dose of the same probiotic demonstrated a positive protective effect (RR 0.54 (95% CI 0.38 to 0.76), p<0.01), and only certain species, mainly of the lactobacillus and bifidobacteria genera, were found to be effective. Studies with a low baseline AAD risk did not show any difference in risk but studies with moderate or high baseline AAD risk demonstrated a significant risk reduction.\n\nCONCLUSIONS: Probiotics are effective for preventing AAD. Secondary analyses of higher dosages and certain species have shown increased effectiveness. Our results may not be applicable in clinical scenarios of lower baseline AAD risk.\n\n---\n\n### PMID: 29257353\n**Title:** Probiotics for the prevention of Clostridium difficile-associated diarrhea in adults and children.\n**Authors:** Goldenberg Joshua Z, Yap Christina, Lytvyn Lyubov, Lo Calvin Ka-Fung, Beardsley Jennifer et al.\n**Journal:** The Cochrane database of systematic reviews (2017)\n**Abstract:**\nBACKGROUND: Antibiotics can disturb gastrointestinal microbiota which may lead to reduced resistance to pathogens such as Clostridium difficile (C. difficile). Probiotics are live microbial preparations that, when administered in adequate amounts, may confer a health benefit to the host, and are a potential C. difficile prevention strategy. Recent clinical practice guidelines do not recommend probiotic prophylaxis, even though probiotics have the highest quality evidence among cited prophylactic therapies.\n\nOBJECTIVES: To assess the efficacy and safety of probiotics for preventing C.difficile-associated diarrhea (CDAD) in adults and children.\n\nSEARCH METHODS: We searched PubMed, EMBASE, CENTRAL, and the Cochrane IBD Group Specialized Register from inception to 21 March 2017. Additionally, we conducted an extensive grey literature search.\n\nSELECTION CRITERIA: Randomized controlled (placebo, alternative prophylaxis, or no treatment control) trials investigating probiotics (any strain, any dose) for prevention of CDAD, or C. difficile infection were considered for inclusion.\n\nDATA COLLECTION AND ANALYSIS: Two authors (independently and in duplicate) extracted data and assessed risk of bias. The primary outcome was the incidence of CDAD. Secondary outcomes included detection of C. difficile infection in stool, adverse events, antibiotic-associated diarrhea (AAD) and length of hospital stay. Dichotomous outcomes (e.g. incidence of CDAD) were pooled using a random-effects model to calculate the risk ratio (RR) and corresponding 95% confidence interval (95% CI). We calculated the number needed to treat for an additional beneficial outcome (NNTB) where appropriate. Continuous outcomes (e.g. length of hospital stay) were pooled using a random-effects model to calculate the mean difference and corresponding 95% CI. Sensitivity analyses were conducted to explore the impact of missing data on efficacy and safety outcomes. For the sensitivity analyses, we assumed that the event rate for those participants in the control group who had missing data was the same as the event rate for those participants in the control group who were successfully followed. For the probiotic group, we calculated effects using the following assumed ratios of event rates in those with missing data in comparison to those successfully followed: 1.5:1, 2:1, 3:1, and 5:1. To explore possible explanations for heterogeneity, a priori subgroup analyses were conducted on probiotic species, dose, adult versus pediatric population, and risk of bias as well as a post hoc subgroup analysis on baseline risk of CDAD (low 0% to 2%; moderate 3% to 5%; high > 5%). The overall quality of the evidence supporting each outcome was independently assessed using the GRADE criteria.\n\nMAIN RESULTS: Thirty-nine studies (9955 participants) met the eligibility requirements for our review. Overall, 27 studies were rated as either high or unclear risk of bias. A complete case analysis (i.e. participants who completed the study) among trials investigating CDAD (31 trials, 8672 participants) suggests that probiotics reduce the risk of CDAD by 60%. The incidence of CDAD was 1.5% (70/4525) in the probiotic group compared to 4.0% (164/4147) in the placebo or no treatment control group (RR 0.40, 95% CI 0.30 to 0.52; GRADE = moderate). Twenty-two of 31 trials had missing CDAD data ranging from 2% to 45%. Our complete case CDAD results proved robust to sensitivity analyses of plausible and worst-plausible assumptions regarding missing outcome data and results were similar whether considering subgroups of trials in adults versus children, inpatients versus outpatients, different probiotic species, lower versus higher doses of probiotics, or studies at high versus low risk of bias. However, in a post hoc analysis, we did observe a subgroup effect with respect to baseline risk of developing CDAD. Trials with a baseline CDAD risk of 0% to 2% and 3% to 5% did not show any difference in risk but trials enrolling participants with a baseline risk of > 5% for developing CDAD demonstrated a large 70% risk reduction (interaction P value = 0.01). Among studies with a baseline risk > 5%, the incidence of CDAD in the probiotic group was 3.1% (43/1370) compared to 11.6% (126/1084) in the control group (13 trials, 2454 participants; RR 0.30, 95% CI 0.21 to 0.42; GRADE = moderate). With respect to detection of C. difficile in the stool pooled complete case results from 15 trials (1214 participants) did not show a reduction in infection rates. C. difficile infection was 15.5% (98/633) in the probiotics group compared to 17.0% (99/581) in the placebo or no treatment control group (RR 0.86, 95% CI 0.67 to 1.10; GRADE = moderate). Adverse events were assessed in 32 studies (8305 participants) and our pooled complete case analysis indicates probiotics reduce the risk of adverse events by 17% (RR 0.83, 95% CI 0.71 to 0.97; GRADE = very low). In both treatment and control groups the most common adverse events included abdominal cramping, nausea, fever, soft stools, flatulence, and taste disturbance.\n\nAUTHORS' CONCLUSIONS: Based on this systematic review and meta-analysis of 31 randomized controlled trials including 8672 patients, moderate certainty evidence suggests that probiotics are effective for preventing CDAD (NNTB = 42 patients, 95% CI 32 to 58). Our post hoc subgroup analyses to explore heterogeneity indicated that probiotics are effective among trials with a CDAD baseline risk >5% (NNTB = 12; moderate certainty evidence), but not among trials with a baseline risk ≤5% (low to moderate certainty evidence). Although adverse effects were reported among 32 included trials, there were more adverse events among patients in the control groups. The short-term use of probiotics appears to be safe and effective when used along with antibiotics in patients who are not immunocompromised or severely debilitated. Despite the need for further research, hospitalized patients, particularly those at high risk of CDAD, should be informed of the potential benefits and harms of probiotics.\n\n---\n\n### PMID: 40931979\n**Title:** Probiotics for the prevention of Clostridioides difficile-associated diarrhea in adults and children.\n**Authors:** Esmaeilinezhad Zahra, Ghosh Nirjhar Ruth, Walsh Catharine M, Steen Jeremy P, Burgman Angelica M et al.\n**Journal:** The Cochrane database of systematic reviews (2025)\n**Abstract:**\nRATIONALE: Antibiotics can disturb gastrointestinal microbiota, which may lead to reduced resistance to pathogens such as Clostridioides difficile. Probiotics are live microbial preparations that, when administered in adequate amounts, may confer a health benefit to the host, and are a potential C difficile infection prevention strategy.\n\nOBJECTIVES: To assess the benefits and harms of probiotics for preventing C difficile-associated diarrhea (CDAD) in adults and children receiving an antibiotic for any reason.\n\nSEARCH METHODS: We searched the Cochrane Central Register of Controlled Trials (CENTRAL), Ovid MEDLINE, and Ovid Embase from 18 March 2017 (search date of the previous version of the review) to 3 March 2025.\n\nELIGIBILITY CRITERIA: We included randomized controlled trials with a placebo, alternative prophylaxis, or no-treatment control investigating probiotics (any strain or dose) for the prevention of CDAD in adults and children receiving an antibiotic for any reason.\n\nOUTCOMES: The critical outcome was incidence of CDAD. Important outcomes included detection of C difficile in stool (i.e. colonization in absence of symptoms), adverse events, antibiotic-associated diarrhea (AAD), and length of hospital stay.\n\nRISK OF BIAS: Two review authors independently assessed risk of bias using Cochrane's RoB 1 tool.\n\nSYNTHESIS METHODS: We pooled dichotomous outcomes (e.g. incidence of CDAD) using a random-effects complete-case model to calculate the risk ratio (RR) and absolute risk reduction (ARR) and corresponding 95% confidence interval (95% CI). We pooled continuous outcomes (e.g. length of hospital stay) using a random-effects model to calculate the mean difference (MD) and corresponding 95% CI. We conducted sensitivity analyses to explore the impact of missing outcome data on benefits and harms outcomes. To investigate heterogeneity, we conducted a priori subgroup analyses on risk of bias, probiotic dose, probiotic species, adults versus children, inpatients versus outpatients, and the event rate in the control group for developing CDAD (low 0% to 2%; moderate 3% to 5%; high > 5%). The certainty of the evidence for each outcome was independently assessed using the GRADE approach.\n\nINCLUDED STUDIES: Eight new studies (n = 4595) met our inclusion criteria, for a total of 47 included studies (n = 15,260). Although we noted a high risk of bias in individual studies for sequence generation or allocation concealment, this did not impact our findings. Around 30% of studies lacked a published protocol or clinical trial registration, and in some cases there were inconsistencies between the reported methods and published results. We noted authors' affiliation with a probiotic company and financial support received from probiotic companies in 28 studies.\n\nSYNTHESIS OF RESULTS: Evidence from 38 trials (13,179 participants) suggests that probiotics may result in a small absolute risk reduction (ARR) of 1.6% (incidence of 1.6% [110/6787] in the probiotic group versus 3.2% [203/6392] in the control group), and a relative risk reduction (RRR) of 50% (RR 0.50, 95% CI 0.38 to 0.64; P < 0.001; low-certainty evidence) in incidence of CDAD. Twenty-seven of 38 trials had missing CDAD data, ranging from 2% to 45%. Our complete-case CDAD results proved robust to sensitivity analyses of plausible and worst-plausible assumptions regarding missing outcome data. Pooled results from 16 trials (1302 participants) suggest that probiotics may result in a small absolute reduction in C difficile in stool (i.e. colonization in absence of symptoms) (ARR 2.1%; incidence of 14.9% [101/677] in the probiotic group versus 16.2% [101/625] in the control group; RR 0.87, 95% CI 0.68 to 1.11; P = 0.27; low-certainty evidence). Thirty-seven studies (11,911 participants) reported on adverse events. Our pooled analysis indicates that probiotics probably result in a small ARR of 1.7% (incidence of 10.9% [669/6148] in the probiotic group versus 12.2% [701/5763] in the control group), and an RRR of 14.0% (RR 0.86, 95% CI 0.72 to 1.01; P = 0.074; moderate-certainty evidence). The most common adverse events in both the treatment and control groups were abdominal cramping, nausea, fever, soft stools, flatulence, and taste disturbance. Pooled results from 40 studies (13,419 participants) suggest that probiotics may result in a large ARR of 9% (incidence of 23% [1592/6901] in the probiotic group versus 27.4% [1787/6518] in the control group), and an RRR of 33% (RR 0.67, 95% CI 0.57 to 0.78; P < 0.001; low-certainty evidence) in incidence of AAD. Only seven trials (6553 participants) investigated length of hospital stay. There is likely little to no difference in length of hospital stay between treatment and control groups (MD -0.07, 95% CI -0.35 to 0.21; P = 0.63; moderate-certainty evidence). We downgraded the certainty of evidence for CDAD and AAD due to the low number of events or publication bias. We observed some variability in CDAD control group event rate (< 2% to > 5%) that may impact the applicability of evidence depending on clinical setting. We downgraded the certainty of evidence for adverse events due to variation between the results of the studies and for hospital stay due to selective reporting.\n\nAUTHORS' CONCLUSIONS: The currently available evidence suggests that probiotics may be effective for preventing CDAD, suggesting that for every 65 people taking probiotics, one case of CDAD may be prevented (number needed to treat for an additional beneficial outcome of 65, 95% CI 48 to 97). There are probably fewer adverse events in the probiotic group. The short-term use of probiotics may have a small absolute benefit, and is likely not associated with adverse effects when used in patient populations receiving systemic antibiotics who are not immunocompromised. Large trials comparing probiotics with placebo in people with a low baseline risk of CDAD are needed.\n\nFUNDING: There was no source of funding for this update.\n\nREGISTRATION: The original review was done in 2013 by Johnston and colleagues, for which the protocol was developed. We followed the methods specified in the 2017 review, while modifying the search strategy and risk of bias assessment for selective reporting for this update.\n\n---\n\n### PMID: 40426506\n**Title:** Effectiveness of Bacillus clausii (O/C, N/R, SIN, T) in the Prevention of Antibiotic-Associated Diarrhea and Gastrointestinal Symptoms: A Systematic Review.\n**Authors:** Abreu Ana Teresa, Vázquez Frías Rodrigo, Boggio Marzet Christian, Stefanolo Juan Pablo, Concha Mejía Alejandro et al.\n**Journal:** Antibiotics (Basel, Switzerland) (2025)\n**Abstract:**\nBackground: Dysbiosis and antibiotic-associated diarrhea (AAD) are significant concerns in clinical settings. Probiotics, such as Bacillus clausii (O/C, N/R, SIN, T), a spore-forming bacterium resistant to gastrointestinal conditions and most commonly used antibiotics, emerge as a promising approach. We aim to assess the role of B. clausii in preventing AAD in children and adults during antibiotic therapy. Materials and methods: A systematic literature search was conducted across multiple databases, including MEDLINE, EMBASE, Cochrane Library, LILACS, and SciELO, up to May 2024. Studies were included if they involved B. clausii (O/C, N/R, SIN, T) administration during antibiotic treatment and reported AAD-related outcomes. Results: A total of four studies were included in the review. The studies comprised two randomized controlled trials (RCTs), one meta-analysis of RCTs, and one expert consensus. The primary outcome was the effectiveness of B. clausii (O/C, N/R, SIN, T) in reducing the incidence of diarrhea. Results showed a significant reduction in the risk of AAD and gastrointestinal symptoms in patients receiving it at a dosage of 4 × 109 CFU/day for children and 6 × 109 CFU/day for adolescents and adults for up to 14 days. Conclusions: B. clausii (O/C, N/R, SIN, T) appears to be an effective probiotic for preventing AAD in adults and children. It significantly improves gastrointestinal symptoms associated with antibiotic treatment, including diarrhea, nausea, and epigastric pain. Future studies are recommended to further elucidate its effectiveness in diverse populations, especially in low- and middle-income countries.\n\n---\n\n### PMID: 18542041\n**Title:** Probiotics for prevention of antibiotic-associated diarrhea.\n**Authors:** Doron Shira Idit, Hibberd Patricia L, Gorbach Sherwood L\n**Journal:** Journal of clinical gastroenterology (2008)\n**Abstract:**\nAntibiotic-associated diarrhea (AAD) occurs in approximately 25% of patients receiving antibiotics. Hospitalized patients with AAD are at increased risk for nosocomial infections and have a higher mortality. Probiotics are living microorganisms used to restore gut health by changing the intestinal microbiota. Several have been studied for the prevention of AAD. Five meta-analyses of trials of probiotics for the prevention of AAD have been performed. The results showed an overall reduction in the risk of AAD when probiotics were coadministered with antibiotics. McFarland conducted the largest meta-analysis to date analyzing 25 randomized controlled trials of probiotics for the prevention of AAD including 2810 subjects. More than half of the trials demonstrated efficacy of the probiotic. In particular, Lactobacillus GG, Saccharomyces boulardii, and the probiotic mixtures were effective. The Cochrane Database of Systematic Reviews published a review of the literature on the use of probiotics for the prevention of pediatric AAD, including 10 randomized trials testing 1986 children. The per protocol pooled analysis, but not the intent-to-treat analysis, showed that probiotics are effective for preventing AAD with the number needed to treat to prevent 1 case of diarrhea being 10. Lactobacillus GG, Bacillus coagulans, and S. boulardii appeared to be most effective. Probiotics are generally safe, however, they should be used with caution in patients who have compromise of either the immune system or the integrity of the intestinal mucosa, and in the presence of a central venous catheter.\n\n---\n\n### PMID: 40488914\n**Title:** Effect of Limosilactobacillus reuteri DSM17938 to prevent antibiotic-associated diarrhea in children: prospective, multi-center, randomized, placebo-controlled clinical trial (PEARL Study).\n**Authors:** Dinleyici Ener Cagri, Ozen Metehan, Guven Sirin, Dalgic Nazan, Karbuz Adem et al.\n**Journal:** European journal of pediatrics (2025)\n**Abstract:**\nUNLABELLED: Antibiotic-associated diarrhea (AAD) is one of the side effects that occur during and after antibiotic use. Some probiotics have strain-specific beneficial effects on AAD development when used in combination with antibiotics. The aim of this study was to evaluate the effect of Limosilactobacillus reuteri DSM 17938 on the prevention of AAD in children. This is a prospective, multicenter, randomized, double-blind, placebo-controlled clinical trial in Türkiye between 2017-2019, among outpatient children with acute otitis media (AOM) or acute rhinosinusitis (ARS). Group 1 (n = 330) received amoxicillin-clavulanate and L. reuteri DSM 17938 (2 × 108 CFU) and Group 2 (n = 324) received amoxicillin-clavulanate and a placebo during the antibiotic treatment or continued for 21 days after antibiotic cessation. The primary end point of this study was the percentage of children with AAD in the first 14, 21, and 56 days of follow-up. Secondary endpoints are the percentage of children with AAD regarding the AOM vs ARS, amoxicillin-clavulanate dose, age groups, and the comparison between 14- and 21-days use of L. reuteri. The percentage of children with AAD was significantly lower in the L. reuteri group compared to the placebo group at 14 days (7.9% vs. 16.7%; RR: 0.47, 95%CI 0.30-0.7; p < 0.001); at 21 days (8.8% vs. 17.9%; RR: 0.49, 95%CI 0.32-0.74;p < 0.001); and at 56 days (9.1% vs. 19.6%; RR: 0.46, 95%CI 0.30-0.69;p < 0.001). The incidence of AAD was also significantly lower in the L. reuteri group at 14, 21 and 56 days among children aged between 6-24 months (p < 0.01, p < 0.01, p < 0.001) or children with AOM (p = 0.0001,p < 0.0001,p < 0.0001). When AAD was observed, the mean duration of diarrhea was longer in the placebo group(p < 0.05).\n\nCONCLUSIONS: This first study with L. reuteri DSM 17938 in a large pediatric outpatient setting showed significant reduction of AAD during the first 14 days of antibiotic use and the 8-week follow-up period.\n\nTRIAL REGISTRATION: NCT02765217 (First Submitted 02.05.2016) ( https://clinicaltrials.gov/study/NCT02765217?term=NCT02765217&rank=1 ).\n\nWHAT IS KNOWN: • Antibiotic associated diarrhea (AAD) is one of the common complications of antibiotic use in children and selected probiotics may have a strain-specific effect to prevent AAD • There are limited studies about the effects of Limosilactobacillus reuteri DSM 17938 on AAD, and no study available in pediatric outpatient setting.\n\nWHAT IS NEW: • Limosilactobacillus reuteri DSM 17938 significantly reduced the incidence of AAD in children at 14-, 21-, and 56- days follow-up. • The effect is mainly observed in children aged between 6 and 24 months or children with AOM.\n\n---\n\n### PMID: 20458757\n**Title:** Systematic review and meta-analysis of Saccharomyces boulardii in adult patients.\n**Authors:** McFarland Lynne V\n**Journal:** World journal of gastroenterology (2010)\n**Abstract:**\nThis article reviews the evidence for efficacy and safety of Saccharomyces boulardii (S. boulardii) for various disease indications in adults based on the peer-reviewed, randomized clinical trials and pre-clinical studies from the published medical literature (Medline, Clinical Trial websites and meeting abstracts) between 1976 and 2009. For meta-analysis, only randomized, blinded controlled trials unrestricted by language were included. Pre-clinical studies, volunteer studies and uncontrolled studies were excluded from the review of efficacy and meta-analysis, but included in the systematic review. Of 31 randomized, placebo-controlled treatment arms in 27 trials (encompassing 5029 study patients), S. boulardii was found to be significantly efficacious and safe in 84% of those treatment arms. A meta-analysis found a significant therapeutic efficacy for S. boulardii in the prevention of antibiotic-associated diarrhea (AAD) (RR = 0.47, 95% CI: 0.35-0.63, P < 0.001). In adults, S. boulardii can be strongly recommended for the prevention of AAD and the traveler's diarrhea. Randomized trials also support the use of this yeast probiotic for prevention of enteral nutrition-related diarrhea and reduction of Helicobacter pylori treatment-related symptoms. S. boulardii shows promise for the prevention of C. difficile disease recurrences; treatment of irritable bowel syndrome, acute adult diarrhea, Crohn's disease, giardiasis, human immunodeficiency virus-related diarrhea; but more supporting evidence is recommended for these indications. The use of S. boulardii as a therapeutic probiotic is evidence-based for both efficacy and safety for several types of diarrhea.\n\n---\n\n### PMID: 39467682\n**Title:** [A prospective randomized controlled study on probiotics for the prevention of antibiotic-associated diarrhea in infants and young children].\n**Authors:** Zhang Su-Wei, Zhi Xian, Wang Meng-Yu, Shen Dong-Lin\n**Journal:** Zhongguo dang dai er ke za zhi = Chinese journal of contemporary pediatrics (2024)\n**Abstract:**\nOBJECTIVES: To evaluate the preventive effects of Saccharomyces boulardii powder and tetragenous viable Bifidobacterium tablets on antibiotic-associated diarrhea (AAD) in infants and young children.\n\nMETHODS: Children under three years old admitted to the Department of Pediatrics, Affiliated Hospital of Xuzhou Medical University due to non-gastrointestinal infections and requiring antibiotic treatment from July to December 2023 were enrolled. The children were randomly divided into a control group (n=47), a Saccharomyces boulardii group (n=70), and a Bifidobacterium group (n=65) using a random number table method. The control group received antibiotics and symptomatic supportive treatment according to relevant clinical guidelines. In addition to the treatment given to the control group, the Saccharomyces boulardii group and the Bifidobacterium group were respectively administered with Saccharomyces boulardii powder and tetragenous viable Bifidobacterium tablets. Based on the duration of probiotic use (7 days, 14 days, and 21 days), the Saccharomyces boulardii group was further divided into 7 d, 14 d, and 21 d subgroups, and similarly for the Bifidobacterium group. The incidence of AAD and ratio of cocci to bacilli in feces were compared among the groups after treatment.\n\nRESULTS: The incidence rate of AAD in both the Saccharomyces boulardii group and the Bifidobacterium group was lower than that in the control group (P<0.017). The duration of AAD and the length of hospital stay were shorter in the Saccharomyces boulardii and Bifidobacterium groups compared to the control group (P<0.05). In the control group, the ratio of cocci to bacilli in feces on days 7, 14, and 21 was higher than on day 1 (P<0.05). Within-group comparisons showed that the ratio of cocci to bacilli in feces on day 14 in the Bifidobacterium 14 d and 21 d groups were lower than on day 1 (P<0.05); and the ratios on day 14 in the control group, Saccharomyces boulardii 14 d group, Saccharomyces boulardii 21 d group, Bifidobacterium 14 d group, and Bifidobacterium 21 d group were lower than on day 7 (P<0.05). The ratios on day 21 in the control group and the Saccharomyces boulardii 21 d group were lower than on days 7 and 14 (P<0.05). Between-group comparisons indicated that on day 7, the ratios of cocci to bacilli in feces in the Saccharomyces boulardii 7 d, 14 d, 21 d groups, and Bifidobacterium 7 d, 14 d, 21 d groups were all lower than in the control group (P<0.05); on day 14, the ratios of cocci to bacilli in feces 14 d and 21 d groups were lower than in the control group and the Bifidobacterium 7 d group (P<0.05).\n\nCONCLUSIONS: Both Saccharomyces boulardii and tetragenous viable Bifidobacterium can effectively improve gut microbiota and prevent the occurrence of AAD in infants and young children. Compared to short-term treatment, appropriately extending the duration of probiotic therapy can further improve the structure of gut microbiota.\n\n目的: 评价布拉氏酵母菌散及双歧杆菌四联活菌片对婴幼儿抗生素相关性腹泻（antibiotic-associated diarrhea, AAD）的预防作用。方法: 选取2023年7—12月因非胃肠道感染入住徐州医科大学附属医院儿科并需抗生素治疗的3岁以下患儿作为研究对象，采用随机数字表法随机分为对照组（n=47）、布拉氏酵母菌组（n=70）、双歧杆菌组（n=65）。对照组根据相关诊疗规范应用抗生素及对症支持治疗。除对照组采用的治疗外，布拉氏酵母菌组和双歧杆菌组分别加用布拉氏酵母菌散和双歧杆菌四联活菌片治疗，并根据益生菌使用时间将布拉氏酵母菌组分为布拉氏酵母菌7 d、14 d、21 d组和双歧杆菌7 d、14 d、21 d组。比较各组患儿应用抗生素后AAD发生率和粪便球菌与杆菌比例。结果: 布拉氏酵母菌组和双歧杆菌组的AAD发生率均低于对照组（P<0.017）。布拉氏酵母菌组和双歧杆菌组AAD持续时间和住院时间均短于对照组（P<0.05）。对照组在第7天、14天、21天的粪便球菌与杆菌比例均高于第1天（P<0.05）。组内比较显示，双歧杆菌14 d组、21 d组在治疗第14天的粪便球菌与杆菌比例低于第1天（P<0.05）；对照组、布拉酵母菌14 d组、布拉酵母菌21 d组、双歧杆菌14 d组、双歧杆菌21 d组在治疗第14天的粪便球菌与杆菌比例低于第7天（P<0.05）；对照组、布拉氏酵母菌21 d组在治疗第21天时粪便球菌与杆菌比例低于第7天及第14天（P<0.05）。组别间比较显示，第7天时，布拉氏酵母菌7 d、14 d、21 d组以及双歧杆菌7 d、14 d、21 d组粪便球菌与杆菌比例均低于对照组（P<0.05）；第14天时，双歧杆菌14 d组和21 d组粪便球菌与杆菌比例均低于对照组和双歧杆菌7 d组（P<0.05）。结论: 布拉氏酵母菌和双歧杆菌四联活菌均能有效改善肠道菌群，预防婴幼儿AAD的发生；与短期治疗相比，适当延长益生菌疗程可进一步改善肠道菌群结构。.\n\n---\n\n### PMID: 41699149\n**Title:** Probiotic intervention not beneficial to prevent antibiotic-associated diarrhea in absence of antibiotic-induced microbiome disruption.\n**Authors:** Merenstein Daniel, Grant-Beurmann Silvia, Sanders Mary Ellen, Tan Tina, Burke Brendan et al.\n**Journal:** Scientific reports (2026)\n**Abstract:**\nProbiotics are live microorganisms that, when administered in adequate amounts, confer a health benefit on the host. One of the most common uses of probiotics is for prevention of antibiotic-associated diarrhea (AAD). Here we report on the PLAY-ON study (Probiotics: Live and Active Yogurt Cultures for Healthy Children ON Antibiotics) which was a randomized, placebo-controlled, double-blinded study in healthy children who were prescribed antibiotics for acute outpatient upper respiratory illnesses, such as bacterial sinusitis or streptococcal pharyngitis. The treating clinician determined the antibiotic, its dosage and duration. Participants received either a control yogurt or a yogurt containing the probiotic, Bifidobacterium animalis subsp. lactisBB-12. Our primary aim was to determine whether the probiotic prevented AAD. The microbiome of participants was examined longitudinally. Diarrhea rates were nearly identical at 2% (3 cases in the active group, 2 cases in the control group); adverse events were also similar between groups. Thus, our study did not find any differences in the incidence of AAD between those who took the probiotic and the control group. The microbiota of both groups returned to baseline by day 14 and assessment of the microbiome showed no difference in levels or types of antibiotic resistance genes. Broad-spectrum antibiotics are associated with higher rates of adverse events, including AAD, than narrow-spectrum antibiotics, as observed in children taking antibiotics for respiratory tract infections3,4.However, if the antibiotic does not significantly disturb the microbiota there may be no discernable role for the probiotic. This hypothesis is supported by the participants who used broad spectrum penicillins had a significantly higher rate of diarrhea compared to narrow spectrum antibiotic users, 9.1% and 0.51% respectively, (p=0.004)This study suggests that prescribing short-course, narrow spectrum antibiotics can reduce microbiome disruptions, concomitant AAD, and the need for probiotic intervention. . The antibiotics used in our study did not disrupt the microbiome to the extent expected, which likely accounted for the low observed incidence of AAD. Importantly, this observation can inform clinicians’ choice of antibiotic, steering them toward equally therapeutic antibiotics that are less disruptive to the microbiota and better tolerated. Although probiotics are often recommended to prevent AAD, our study demonstrates that in the absence of microbiome disruption, they may not provide benefit.\n\n---\n\n### PMID: 22570464\n**Title:** Probiotics for the prevention and treatment of antibiotic-associated diarrhea: a systematic review and meta-analysis.\n**Authors:** Hempel Susanne, Newberry Sydne J, Maher Alicia R, Wang Zhen, Miles Jeremy N V et al.\n**Journal:** JAMA (2012)\n**Abstract:**\nCONTEXT: Probiotics are live microorganisms intended to confer a health benefit when consumed. One condition for which probiotics have been advocated is the diarrhea that is a common adverse effect of antibiotic use.\n\nOBJECTIVE: To evaluate the evidence for probiotic use in the prevention and treatment of antibiotic-associated diarrhea (AAD).\n\nDATA SOURCES: Twelve electronic databases were searched (DARE, Cochrane Library of Systematic Reviews, CENTRAL, PubMed, EMBASE, CINAHL, AMED, MANTIS, TOXLINE, ToxFILE, NTIS, and AGRICOLA) and references of included studies and reviews were screened from database inception to February 2012, without language restriction.\n\nSTUDY SELECTION: Two independent reviewers identified parallel randomized controlled trials (RCTs) of probiotics (Lactobacillus, Bifidobacterium, Saccharomyces, Streptococcus, Enterococcus, and/or Bacillus) for the prevention or treatment of AAD.\n\nDATA EXTRACTION: Two independent reviewers extracted the data and assessed trial quality.\n\nRESULTS: A total of 82 RCTs met inclusion criteria. The majority used Lactobacillus-based interventions alone or in combination with other genera; strains were poorly documented. The pooled relative risk in a DerSimonian-Laird random-effects meta-analysis of 63 RCTs, which included 11 811 participants, indicated a statistically significant association of probiotic administration with reduction in AAD (relative risk, 0.58; 95% CI, 0.50 to 0.68; P < .001; I(2), 54%; [risk difference, -0.07; 95% CI, -0.10 to -0.05], [number needed to treat, 13; 95% CI, 10.3 to 19.1]) in trials reporting on the number of patients with AAD. This result was relatively insensitive to numerous subgroup analyses. However, there exists significant heterogeneity in pooled results and the evidence is insufficient to determine whether this association varies systematically by population, antibiotic characteristic, or probiotic preparation.\n\nCONCLUSIONS: The pooled evidence suggests that probiotics are associated with a reduction in AAD. More research is needed to determine which probiotics are associated with the greatest efficacy and for which patients receiving which specific antibiotics.\n\n---\n\nBased on these papers, generate a plain-language synthesis brief.\nCRITICAL: The brief MUST fit on ONE printed page. Be direct and concise. Cut all filler.\nAnswer the question first. Every claim must cite PMID(s).\nSurface contradictions. State confidence honestly.\nWrite for a regular person making a real decision.",
+      "model": "claude-opus-4-6"
+    },
+    "synthesis": {
+      "brief_markdown": "\n\n# Do Probiotics Prevent Antibiotic-Associated Diarrhea in Children?\n\n**Question:** Do probiotics prevent diarrhea from antibiotics? · **Context:** My child was just prescribed amoxicillin and I'm wondering whether to give a probiotic too.\n\n---\n\n## The short answer\n\nYes, probiotics significantly reduce the chance of antibiotic-associated diarrhea (AAD) in children. A large Cochrane review of 33 trials (6,352 kids) found probiotics cut AAD roughly in half — from 19% down to 8% — meaning you'd need to give about 9 children probiotics to prevent one case of diarrhea [PMID: 31039287]. **However**, the benefit depends on the probiotic strain, the dose, and how disruptive the antibiotic is. One well-designed trial found that when kids took narrow-spectrum antibiotics (like plain amoxicillin) and had very low diarrhea rates to begin with (~2%), a probiotic added no benefit [PMID: 41699149].\n\n## Key findings\n\n- **Overall, probiotics work.** Pooled data from 63 trials (11,811 participants, adults and children) showed a 42% relative reduction in AAD risk (NNT ~13) [PMID: 22570464]. The pediatric-specific Cochrane review found an even larger effect (55% reduction, NNT 9) [PMID: 31039287].\n- **Higher doses work better.** At ≥5 billion CFU/day, AAD dropped from 23% to 8% (NNT 6). Lower doses showed a smaller, borderline benefit [PMID: 31039287].\n- **Best-studied strains in children: *Lactobacillus rhamnosus* GG and *Saccharomyces boulardii*.** European pediatric guidelines give both a strong recommendation based on moderate-quality evidence [PMID: 26756877]. A large trial also supports *L. reuteri* DSM 17938 specifically in children on amoxicillin-clavulanate [PMID: 40488914].\n- **If the antibiotic barely disrupts the gut, probiotics may not help.** In a trial where children received short-course, narrow-spectrum antibiotics (including amoxicillin), diarrhea rates were only ~2% and the probiotic (*B. lactis* BB-12) did nothing extra [PMID: 41699149]. This is an important nuance for your situation with plain amoxicillin.\n- **Probiotics appear safe in otherwise healthy children.** Across 24 pediatric trials, no serious adverse events were attributed to probiotics. Minor side effects (gas, rash, nausea) occurred at similar rates in probiotic and placebo groups [PMID: 31039287].\n- **Benefit is clearest when baseline diarrhea risk is moderate-to-high** (e.g., broad-spectrum antibiotics, longer courses, hospitalized children). Studies with low baseline risk showed little or no benefit [PMID: 34385227] [PMID: 41699149].\n\n## What is unknown\n\n- **Whether plain amoxicillin (narrow-spectrum) causes enough gut disruption to warrant a probiotic.** Most positive trials used broader-spectrum antibiotics like amoxicillin-clavulanate. Evidence for amoxicillin alone is thin [PMID: 41699149].\n- **Optimal duration of probiotic use.** Some data suggest longer courses improve gut flora more, but clear pediatric dosing timelines are lacking [PMID: 39467682].\n- **Long-term effects on the developing microbiome** from routine probiotic use in children remain unstudied in these trials.\n\n## Confidence: Medium\n\nStrong evidence that probiotics reduce AAD in children overall, but the benefit is most clear with broad-spectrum antibiotics at high probiotic doses. For your specific scenario — a healthy child on plain amoxicillin — the benefit may be small or negligible, since diarrhea risk is already low with narrow-spectrum antibiotics.\n\n---\n\n*Generated by Tables Turned. Receipts only.*"
+    },
+    "provenance": [
+      {
+        "timestamp": "2026-09-28T23:40:47Z",
+        "action": "search_started",
+        "detail": "Do probiotics prevent diarrhea from antibiotics?"
+      },
+      {
+        "timestamp": "2026-09-28T23:40:53Z",
+        "action": "search_queries_generated",
+        "detail": "probiotics antibiotic-associated diarrhea prevention | (probiotics OR Lactobacillus OR Saccharomyces boulardii OR Bifidobacterium) AND (antibiotic-associated diarrhea OR AAD) AND (prevention OR prophylaxis) AND (systematic review OR meta-analysis) | (probiotics OR Lactobacillus OR Saccharomyces boulardii) AND (antibiotic-associated diarrhea) AND (child OR children OR pediatric OR paediatric) AND (randomized controlled trial OR RCT OR meta-analysis) | (probiotics) AND (amoxicillin OR penicillin OR beta-lactam) AND (diarrhea OR diarrhoea) AND (child OR pediatric) AND (prevention)"
+      },
+      {
+        "timestamp": "2026-09-28T23:40:54Z",
+        "action": "pubmed_searched",
+        "detail": "\"probiotics antibiotic-associated diarrhea prevention\" -> 502 total, fetched 25"
+      },
+      {
+        "timestamp": "2026-09-28T23:40:56Z",
+        "action": "pubmed_searched",
+        "detail": "\"(probiotics OR Lactobacillus OR Saccharomyces boulardii OR Bifidobacterium) AND (antibiotic-associated diarrhea OR AAD) AND (prevention OR prophylaxis) AND (systematic review OR meta-analysis)\" -> 89 total, fetched 25"
+      },
+      {
+        "timestamp": "2026-09-28T23:40:57Z",
+        "action": "pubmed_searched",
+        "detail": "\"(probiotics OR Lactobacillus OR Saccharomyces boulardii) AND (antibiotic-associated diarrhea) AND (child OR children OR pediatric OR paediatric) AND (randomized controlled trial OR RCT OR meta-analysis)\" -> 94 total, fetched 25"
+      },
+      {
+        "timestamp": "2026-09-28T23:40:58Z",
+        "action": "pubmed_searched",
+        "detail": "\"(probiotics) AND (amoxicillin OR penicillin OR beta-lactam) AND (diarrhea OR diarrhoea) AND (child OR pediatric) AND (prevention)\" -> 12 total, fetched 12"
+      },
+      {
+        "timestamp": "2026-09-28T23:40:59Z",
+        "action": "papers_ranked",
+        "detail": "61 papers scored. Top 12 selected (scores 22-9). Method: cross-strategy overlap (x3) + PubMed position weight."
+      },
+      {
+        "timestamp": "2026-09-28T23:41:20Z",
+        "action": "plain_summaries_generated",
+        "detail": "12 papers translated"
+      },
+      {
+        "timestamp": "2026-09-28T23:41:20Z",
+        "action": "papers_selected_for_synthesis",
+        "detail": "12 papers"
+      },
+      {
+        "timestamp": "2026-09-28T23:41:46Z",
+        "action": "synthesis_generated",
+        "detail": "3506 chars, 12 papers"
+      }
+    ]
+  },
+  "telemetry": {
+    "prompt_sha256": {
+      "SEARCH_SYSTEM": "0a2d1ccd7d4c77e0f5441613fc38edb45f36237befa5723d030b9244d27b607e",
+      "SUMMARY_SYSTEM": "7726ec6a8d32f245ff4d3b8ecb20668a8b440756e31f4106cb36a69dea75243b",
+      "SYNTH_SYSTEM": "dbda0a2b78e23926f4a986a6d6f9d0ed42a9090ed3128819e380e0c82beddde4"
+    },
+    "search_depth": 25,
+    "search_sort": "relevance",
+    "per_query": [
+      {
+        "query": "probiotics antibiotic-associated diarrhea prevention",
+        "strategy": "Broad search for any literature on probiotics preventing antibiotic-associated diarrhea",
+        "total_hits": 502,
+        "returned": [
+          "31039287",
+          "35727573",
+          "26756877",
+          "34385227",
+          "33234881",
+          "36011108",
+          "22570464",
+          "29257353",
+          "35794520",
+          "40931979",
+          "39467682",
+          "40426506",
+          "36219218",
+          "18542041",
+          "26695080",
+          "19584499",
+          "32109021",
+          "17443557",
+          "22071814",
+          "29023420",
+          "20458757",
+          "34913660",
+          "32087535",
+          "39060738",
+          "16633131"
+        ],
+        "querytranslation": "(\"probiotic s\"[All Fields] OR \"probiotical\"[All Fields] OR \"probiotics\"[MeSH Terms] OR \"probiotics\"[All Fields] OR \"probiotic\"[All Fields]) AND \"antibiotic-associated\"[All Fields] AND (\"diarrhea\"[MeSH Terms] OR \"diarrhea\"[All Fields] OR \"diarrheas\"[All Fields] OR \"diarrhoea\"[All Fields] OR \"diarrhoeas\"[All Fields]) AND (\"prevent\"[All Fields] OR \"preventability\"[All Fields] OR \"preventable\"[All Fields] OR \"preventative\"[All Fields] OR \"preventatively\"[All Fields] OR \"preventatives\"[All Fields] OR \"prevented\"[All Fields] OR \"preventing\"[All Fields] OR \"prevention and control\"[MeSH Subheading] OR (\"prevention\"[All Fields] AND \"control\"[All Fields]) OR \"prevention and control\"[All Fields] OR \"prevention\"[All Fields] OR \"prevention s\"[All Fields] OR \"preventions\"[All Fields] OR \"preventive\"[All Fields] OR \"preventively\"[All Fields] OR \"preventives\"[All Fields] OR \"prevents\"[All Fields])"
+      },
+      {
+        "query": "(probiotics OR Lactobacillus OR Saccharomyces boulardii OR Bifidobacterium) AND (antibiotic-associated diarrhea OR AAD) AND (prevention OR prophylaxis) AND (systematic review OR meta-analysis)",
+        "strategy": "Targeted search for high-level evidence (systematic reviews and meta-analyses) on specific probiotic strains preventing antibiotic-associated diarrhea",
+        "total_hits": 89,
+        "returned": [
+          "34385227",
+          "20458757",
+          "31039287",
+          "22570464",
+          "26756877",
+          "29257353",
+          "29868585",
+          "35794520",
+          "38286962",
+          "33234881",
+          "30586435",
+          "28185664",
+          "40931979",
+          "40426506",
+          "34913660",
+          "25933485",
+          "22531096",
+          "26216624",
+          "29023420",
+          "23362517",
+          "26447963",
+          "18542041",
+          "27688016",
+          "29511547",
+          "16635227"
+        ],
+        "querytranslation": "(\"probiotic s\"[All Fields] OR \"probiotical\"[All Fields] OR \"probiotics\"[MeSH Terms] OR \"probiotics\"[All Fields] OR \"probiotic\"[All Fields] OR (\"lactobacillus\"[MeSH Terms] OR \"lactobacillus\"[All Fields]) OR (\"saccharomyces boulardii\"[MeSH Terms] OR (\"saccharomyces\"[All Fields] AND \"boulardii\"[All Fields]) OR \"saccharomyces boulardii\"[All Fields]) OR (\"bifidobacterium\"[MeSH Terms] OR \"bifidobacterium\"[All Fields])) AND ((\"antibiotic-associated\"[All Fields] AND (\"diarrhea\"[MeSH Terms] OR \"diarrhea\"[All Fields] OR \"diarrheas\"[All Fields] OR \"diarrhoea\"[All Fields] OR \"diarrhoeas\"[All Fields])) OR (\"adv alzheimer dis\"[Journal] OR \"aad\"[All Fields])) AND (\"prevent\"[All Fields] OR \"preventability\"[All Fields] OR \"preventable\"[All Fields] OR \"preventative\"[All Fields] OR \"preventatively\"[All Fields] OR \"preventatives\"[All Fields] OR \"prevented\"[All Fields] OR \"preventing\"[All Fields] OR \"prevention and control\"[MeSH Subheading] OR (\"prevention\"[All Fields] AND \"control\"[All Fields]) OR \"prevention and control\"[All Fields] OR \"prevention\"[All Fields] OR \"prevention s\"[All Fields] OR \"preventions\"[All Fields] OR \"preventive\"[All Fields] OR \"preventively\"[All Fields] OR \"preventives\"[All Fields] OR \"prevents\"[All Fields] OR (\"prevention and control\"[MeSH Subheading] OR (\"prevention\"[All Fields] AND \"control\"[All Fields]) OR \"prevention and control\"[All Fields] OR \"prophylaxis\"[All Fields] OR \"prophylaxies\"[All Fields] OR \"prophylaxy\"[All Fields])) AND (\"systematic review\"[Publication Type] OR \"systematic reviews as topic\"[MeSH Terms] OR \"systematic review\"[All Fields] OR (\"meta analysis\"[Publication Type] OR \"meta analysis as topic\"[MeSH Terms] OR \"meta analysis\"[All Fields]))"
+      },
+      {
+        "query": "(probiotics OR Lactobacillus OR Saccharomyces boulardii) AND (antibiotic-associated diarrhea) AND (child OR children OR pediatric OR paediatric) AND (randomized controlled trial OR RCT OR meta-analysis)",
+        "strategy": "Focused search for pediatric RCTs and meta-analyses on probiotics co-administered with antibiotics to prevent diarrhea",
+        "total_hits": 94,
+        "returned": [
+          "31039287",
+          "26756877",
+          "39467682",
+          "38967929",
+          "29257353",
+          "38286962",
+          "41422017",
+          "30586435",
+          "40488914",
+          "40931979",
+          "40426506",
+          "19096876",
+          "41699149",
+          "31354938",
+          "22858373",
+          "16908901",
+          "18542041",
+          "40716758",
+          "26548336",
+          "27688016",
+          "29259371",
+          "26447963",
+          "28640662",
+          "26955289",
+          "37020353"
+        ],
+        "querytranslation": "(\"probiotic s\"[All Fields] OR \"probiotical\"[All Fields] OR \"probiotics\"[MeSH Terms] OR \"probiotics\"[All Fields] OR \"probiotic\"[All Fields] OR (\"lactobacillus\"[MeSH Terms] OR \"lactobacillus\"[All Fields]) OR (\"saccharomyces boulardii\"[MeSH Terms] OR (\"saccharomyces\"[All Fields] AND \"boulardii\"[All Fields]) OR \"saccharomyces boulardii\"[All Fields])) AND (\"antibiotic-associated\"[All Fields] AND (\"diarrhea\"[MeSH Terms] OR \"diarrhea\"[All Fields] OR \"diarrheas\"[All Fields] OR \"diarrhoea\"[All Fields] OR \"diarrhoeas\"[All Fields])) AND (\"child\"[MeSH Terms] OR \"child\"[All Fields] OR \"children\"[All Fields] OR \"child s\"[All Fields] OR \"children s\"[All Fields] OR \"childrens\"[All Fields] OR \"childs\"[All Fields] OR (\"child\"[MeSH Terms] OR \"child\"[All Fields] OR \"children\"[All Fields] OR \"child s\"[All Fields] OR \"children s\"[All Fields] OR \"childrens\"[All Fields] OR \"childs\"[All Fields]) OR (\"paediatrics\"[All Fields] OR \"pediatrics\"[MeSH Terms] OR \"pediatrics\"[All Fields] OR \"paediatric\"[All Fields] OR \"pediatric\"[All Fields]) OR (\"paediatrics\"[All Fields] OR \"pediatrics\"[MeSH Terms] OR \"pediatrics\"[All Fields] OR \"paediatric\"[All Fields] OR \"pediatric\"[All Fields])) AND (\"randomized controlled trial\"[Publication Type] OR \"randomized controlled trials as topic\"[MeSH Terms] OR \"randomized controlled trial\"[All Fields] OR \"randomised controlled trial\"[All Fields] OR \"RCT\"[All Fields] OR (\"meta analysis\"[Publication Type] OR \"meta analysis as topic\"[MeSH Terms] OR \"meta analysis\"[All Fields]))"
+      },
+      {
+        "query": "(probiotics) AND (amoxicillin OR penicillin OR beta-lactam) AND (diarrhea OR diarrhoea) AND (child OR pediatric) AND (prevention)",
+        "strategy": "Narrow search specifically addressing probiotic use alongside amoxicillin or related antibiotics in children to prevent diarrhea",
+        "total_hits": 12,
+        "returned": [
+          "40488914",
+          "23059802",
+          "41699149",
+          "32506933",
+          "33642554",
+          "32207209",
+          "15357564",
+          "27111772",
+          "25866729",
+          "28827186",
+          "41971733",
+          "41486369"
+        ],
+        "querytranslation": "(\"probiotic s\"[All Fields] OR \"probiotical\"[All Fields] OR \"probiotics\"[MeSH Terms] OR \"probiotics\"[All Fields] OR \"probiotic\"[All Fields]) AND (\"amoxicillin\"[Supplementary Concept] OR \"amoxicillin\"[All Fields] OR \"amoxicillin\"[MeSH Terms] OR \"amoxicilline\"[All Fields] OR \"amoxicillins\"[All Fields] OR (\"benzylpenicillins\"[All Fields] OR \"penicillin g\"[Supplementary Concept] OR \"penicillin g\"[All Fields] OR \"benzylpenicillin\"[All Fields] OR \"penicillin g\"[MeSH Terms] OR \"penicilline\"[All Fields] OR \"penicillines\"[All Fields] OR \"penicillins\"[Supplementary Concept] OR \"penicillins\"[All Fields] OR \"penicillin\"[All Fields] OR \"penicillins\"[MeSH Terms]) OR (\"beta lactams\"[Supplementary Concept] OR \"beta lactams\"[All Fields] OR \"beta lactam\"[All Fields] OR \"beta lactams\"[MeSH Terms] OR (\"beta\"[All Fields] AND \"lactam\"[All Fields]))) AND (\"diarrhea\"[MeSH Terms] OR \"diarrhea\"[All Fields] OR \"diarrheas\"[All Fields] OR \"diarrhoea\"[All Fields] OR \"diarrhoeas\"[All Fields] OR (\"diarrhea\"[MeSH Terms] OR \"diarrhea\"[All Fields] OR \"diarrheas\"[All Fields] OR \"diarrhoea\"[All Fields] OR \"diarrhoeas\"[All Fields])) AND (\"child\"[MeSH Terms] OR \"child\"[All Fields] OR \"children\"[All Fields] OR \"child s\"[All Fields] OR \"children s\"[All Fields] OR \"childrens\"[All Fields] OR \"childs\"[All Fields] OR (\"paediatrics\"[All Fields] OR \"pediatrics\"[MeSH Terms] OR \"pediatrics\"[All Fields] OR \"paediatric\"[All Fields] OR \"pediatric\"[All Fields])) AND (\"prevent\"[All Fields] OR \"preventability\"[All Fields] OR \"preventable\"[All Fields] OR \"preventative\"[All Fields] OR \"preventatively\"[All Fields] OR \"preventatives\"[All Fields] OR \"prevented\"[All Fields] OR \"preventing\"[All Fields] OR \"prevention and control\"[MeSH Subheading] OR (\"prevention\"[All Fields] AND \"control\"[All Fields]) OR \"prevention and control\"[All Fields] OR \"prevention\"[All Fields] OR \"prevention s\"[All Fields] OR \"preventions\"[All Fields] OR \"preventive\"[All Fields] OR \"preventively\"[All Fields] OR \"preventives\"[All Fields] OR \"prevents\"[All Fields])"
+      }
+    ],
+    "candidate_pool": [
+      {
+        "pmid": "31039287",
+        "title": "Probiotics for the prevention of pediatric antibiotic-associated diarrhea.",
+        "year": 2019,
+        "score": 22,
+        "overlap": 3,
+        "strategy_idx": [
+          0,
+          1,
+          2
+        ],
+        "positions": [
+          1,
+          3,
+          1
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis",
+          "Research Support, Non-U.S. Gov't",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "26756877",
+        "title": "Probiotics for the Prevention of Antibiotic-Associated Diarrhea in Children.",
+        "year": 2016,
+        "score": 17,
+        "overlap": 3,
+        "strategy_idx": [
+          0,
+          1,
+          2
+        ],
+        "positions": [
+          3,
+          5,
+          2
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis",
+          "Research Support, Non-U.S. Gov't",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "34385227",
+        "title": "Probiotics for the prevention of antibiotic-associated diarrhoea: a systematic review and meta-analysis.",
+        "year": 2021,
+        "score": 13,
+        "overlap": 2,
+        "strategy_idx": [
+          0,
+          1
+        ],
+        "positions": [
+          4,
+          1
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "29257353",
+        "title": "Probiotics for the prevention of Clostridium difficile-associated diarrhea in adults and children.",
+        "year": 2017,
+        "score": 12,
+        "overlap": 3,
+        "strategy_idx": [
+          0,
+          1,
+          2
+        ],
+        "positions": [
+          8,
+          6,
+          5
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis",
+          "Research Support, Non-U.S. Gov't",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "40931979",
+        "title": "Probiotics for the prevention of Clostridioides difficile-associated diarrhea in adults and children.",
+        "year": 2025,
+        "score": 12,
+        "overlap": 3,
+        "strategy_idx": [
+          0,
+          1,
+          2
+        ],
+        "positions": [
+          10,
+          13,
+          10
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "40426506",
+        "title": "Effectiveness of Bacillus clausii (O/C, N/R, SIN, T) in the Prevention of Antibiotic-Associated Diarrhea and Gastrointestinal Symptoms: A Systematic Review.",
+        "year": 2025,
+        "score": 12,
+        "overlap": 3,
+        "strategy_idx": [
+          0,
+          1,
+          2
+        ],
+        "positions": [
+          12,
+          14,
+          11
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "18542041",
+        "title": "Probiotics for prevention of antibiotic-associated diarrhea.",
+        "year": 2008,
+        "score": 12,
+        "overlap": 3,
+        "strategy_idx": [
+          0,
+          1,
+          2
+        ],
+        "positions": [
+          14,
+          22,
+          17
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Research Support, N.I.H., Extramural",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "40488914",
+        "title": "Effect of Limosilactobacillus reuteri DSM17938 to prevent antibiotic-associated diarrhea in children: prospective, multi-center, randomized, placebo-controlled clinical trial (PEARL Study).",
+        "year": 2025,
+        "score": 12,
+        "overlap": 2,
+        "strategy_idx": [
+          2,
+          3
+        ],
+        "positions": [
+          9,
+          1
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Multicenter Study"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "20458757",
+        "title": "Systematic review and meta-analysis of Saccharomyces boulardii in adult patients.",
+        "year": 2010,
+        "score": 11,
+        "overlap": 2,
+        "strategy_idx": [
+          0,
+          1
+        ],
+        "positions": [
+          21,
+          2
+        ],
+        "publication_types": [
+          "Editorial",
+          "Meta-Analysis",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "39467682",
+        "title": "[A prospective randomized controlled study on probiotics for the prevention of antibiotic-associated diarrhea in infants and young children].",
+        "year": 2024,
+        "score": 10,
+        "overlap": 2,
+        "strategy_idx": [
+          0,
+          2
+        ],
+        "positions": [
+          11,
+          3
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "English Abstract"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "41699149",
+        "title": "Probiotic intervention not beneficial to prevent antibiotic-associated diarrhea in absence of antibiotic-induced microbiome disruption.",
+        "year": 2026,
+        "score": 10,
+        "overlap": 2,
+        "strategy_idx": [
+          2,
+          3
+        ],
+        "positions": [
+          13,
+          3
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "22570464",
+        "title": "Probiotics for the prevention and treatment of antibiotic-associated diarrhea: a systematic review and meta-analysis.",
+        "year": 2012,
+        "score": 9,
+        "overlap": 2,
+        "strategy_idx": [
+          0,
+          1
+        ],
+        "positions": [
+          7,
+          4
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis",
+          "Research Support, N.I.H., Extramural",
+          "Research Support, U.S. Gov't, Non-P.H.S.",
+          "Research Support, U.S. Gov't, P.H.S.",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "33234881",
+        "title": "Probiotics for the Prevention of Antibiotic-associated Diarrhea in Adults: A Meta-Analysis of Randomized Placebo-Controlled Trials.",
+        "year": 2021,
+        "score": 8,
+        "overlap": 2,
+        "strategy_idx": [
+          0,
+          1
+        ],
+        "positions": [
+          5,
+          10
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "35794520",
+        "title": "Early use of probiotics might prevent antibiotic-associated diarrhea in elderly (>65 years): a systematic review and meta-analysis.",
+        "year": 2022,
+        "score": 8,
+        "overlap": 2,
+        "strategy_idx": [
+          0,
+          1
+        ],
+        "positions": [
+          9,
+          8
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis",
+          "Systematic Review",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "29023420",
+        "title": "Probiotics for the Prevention of Antibiotic-Associated Diarrhea in Outpatients-A Systematic Review and Meta-Analysis.",
+        "year": 2017,
+        "score": 8,
+        "overlap": 2,
+        "strategy_idx": [
+          0,
+          1
+        ],
+        "positions": [
+          20,
+          19
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "34913660",
+        "title": "Probiotics for Preventing Antibiotic-Associated Diarrhea.",
+        "year": 2021,
+        "score": 8,
+        "overlap": 2,
+        "strategy_idx": [
+          0,
+          1
+        ],
+        "positions": [
+          22,
+          15
+        ],
+        "publication_types": [
+          "Journal Article"
+        ],
+        "has_abstract": false
+      },
+      {
+        "pmid": "38286962",
+        "title": "Can the Evidence-Based Use of Probiotics (Notably Saccharomyces boulardii CNCM I-745 and Lactobacillus rhamnosus GG) Mitigate the Clinical Effects of Antibiotic-Associated Dysbiosis?",
+        "year": 2024,
+        "score": 8,
+        "overlap": 2,
+        "strategy_idx": [
+          1,
+          2
+        ],
+        "positions": [
+          9,
+          6
+        ],
+        "publication_types": [
+          "Journal Article"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "30586435",
+        "title": "Choosing an appropriate probiotic product for your patient: An evidence-based practical guide.",
+        "year": 2018,
+        "score": 8,
+        "overlap": 2,
+        "strategy_idx": [
+          1,
+          2
+        ],
+        "positions": [
+          11,
+          8
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Research Support, Non-U.S. Gov't",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "26447963",
+        "title": "Probiotics for Prevention and Treatment of Diarrhea.",
+        "year": 2015,
+        "score": 8,
+        "overlap": 2,
+        "strategy_idx": [
+          1,
+          2
+        ],
+        "positions": [
+          21,
+          22
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "27688016",
+        "title": "Probiotics for the Prevention of Pediatric Antibiotic-Associated Diarrhea.",
+        "year": 2016,
+        "score": 8,
+        "overlap": 2,
+        "strategy_idx": [
+          1,
+          2
+        ],
+        "positions": [
+          23,
+          20
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Comment"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "35727573",
+        "title": "Multispecies Probiotic for the Prevention of Antibiotic-Associated Diarrhea in Children: A Randomized Clinical Trial.",
+        "year": 2022,
+        "score": 7,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          2
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Multicenter Study",
+          "Randomized Controlled Trial",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "23059802",
+        "title": "[Probiotics for the prevention of antibiotic-induced diarrhea].",
+        "year": 2012,
+        "score": 7,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          2
+        ],
+        "publication_types": [
+          "English Abstract",
+          "Journal Article"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "38967929",
+        "title": "Probiotics and Antibiotic-Induced Microbial Aberrations in Children: A Secondary Analysis of a Randomized Clinical Trial.",
+        "year": 2024,
+        "score": 5,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          4
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "32506933",
+        "title": "Rates and determinants of antibiotics and probiotics prescription to children in Asia-Pacific countries.",
+        "year": 2020,
+        "score": 5,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          4
+        ],
+        "publication_types": [
+          "Journal Article"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "36011108",
+        "title": "Probiotics for the Prevention of Antibiotic-Associated Diarrhea.",
+        "year": 2022,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          6
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "36219218",
+        "title": "Probiotics for the Management of Pediatric Gastrointestinal Disorders: Position Paper of the ESPGHAN Special Interest Group on Gut Microbiota and Modifications.",
+        "year": 2023,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          13
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Consensus Statement"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "26695080",
+        "title": "Probiotics for the prevention of pediatric antibiotic-associated diarrhea.",
+        "year": 2015,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          15
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis",
+          "Research Support, Non-U.S. Gov't",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "19584499",
+        "title": "Probiotics.",
+        "year": 2009,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          16
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "32109021",
+        "title": "Probiotics to Prevent Antibiotic-Associated Diarrhea in Children.",
+        "year": 2020,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          17
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "has_abstract": false
+      },
+      {
+        "pmid": "17443557",
+        "title": "Probiotics for the prevention of pediatric antibiotic-associated diarrhea.",
+        "year": 2007,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          18
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "22071814",
+        "title": "Probiotics for the prevention of pediatric antibiotic-associated diarrhea.",
+        "year": 2011,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          19
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis",
+          "Research Support, Non-U.S. Gov't",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "32087535",
+        "title": "Molecular mechanisms of probiotic prevention of antibiotic-associated diarrhea.",
+        "year": 2020,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          23
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Research Support, N.I.H., Extramural",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "39060738",
+        "title": "Clostridioides difficile Infections: Prevention and Treatment Strategies.",
+        "year": 2024,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          24
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "16633131",
+        "title": "Probiotics for the prevention of antibiotic-associated diarrhea and Clostridium difficile diarrhea.",
+        "year": 2006,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          25
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "29868585",
+        "title": "Strain-Specificity and Disease-Specificity of Probiotic Efficacy: A Systematic Review and Meta-Analysis.",
+        "year": 2018,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          7
+        ],
+        "publication_types": [
+          "Journal Article"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "28185664",
+        "title": "Review of the role of probiotics in gastrointestinal diseases in adults.",
+        "year": 2017,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          12
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "25933485",
+        "title": "Yogurt for treating antibiotic-associated diarrhea: Systematic review and meta-analysis.",
+        "year": 2015,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          16
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis",
+          "Research Support, Non-U.S. Gov't",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "22531096",
+        "title": "Meta-analysis: probiotics in antibiotic-associated diarrhoea.",
+        "year": 2012,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          17
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "26216624",
+        "title": "Systematic review with meta-analysis: Saccharomyces boulardii in the prevention of antibiotic-associated diarrhoea.",
+        "year": 2015,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          18
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis",
+          "Research Support, Non-U.S. Gov't",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "23362517",
+        "title": "Probiotics for the prevention of Clostridium difficile-associated diarrhea: a systematic review and meta-analysis.",
+        "year": 2012,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          20
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis",
+          "Research Support, Non-U.S. Gov't",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "29511547",
+        "title": "Comparative efficacy and tolerability of probiotics for antibiotic-associated diarrhea: Systematic review with network meta-analysis.",
+        "year": 2018,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          24
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "16635227",
+        "title": "Meta-analysis of probiotics for the prevention of antibiotic associated diarrhea and the treatment of Clostridium difficile disease.",
+        "year": 2006,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          25
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "41422017",
+        "title": "Effect of multispecies probiotics on autism symptoms: protocol for a randomized controlled trial (PROBAUT).",
+        "year": 2025,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          7
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Clinical Trial Protocol"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "19096876",
+        "title": "Saccharomyces boulardii in childhood.",
+        "year": 2009,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          12
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "31354938",
+        "title": "Probiotics and prebiotics in clinical tests: an update.",
+        "year": 2019,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          14
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "22858373",
+        "title": "Probiotics for infectious diseases: more drugs, less dietary supplementation.",
+        "year": 2012,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          15
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "16908901",
+        "title": "Probiotics for pediatric antibiotic-associated diarrhea: a meta-analysis of randomized placebo-controlled trials.",
+        "year": 2006,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          16
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "40716758",
+        "title": "Effects of spore-forming probiotic Bacillus subtilis HU58™ in children with antibiotic-associated diarrhoea: a randomised, double-blind, placebo-controlled trial.",
+        "year": 2025,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          18
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "26548336",
+        "title": "Probiotics: a proactive approach to health. A symposium report.",
+        "year": 2015,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          19
+        ],
+        "publication_types": [
+          "Conference Proceedings",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "29259371",
+        "title": "Probiotics for gastrointestinal disorders: Proposed recommendations for children of the Asia-Pacific region.",
+        "year": 2017,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          21
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "28640662",
+        "title": "Using probiotics in clinical practice: Where are we now? A review of existing meta-analyses.",
+        "year": 2017,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          23
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "26955289",
+        "title": "Probiotics are effective at preventing Clostridium difficile-associated diarrhea: a systematic review and meta-analysis.",
+        "year": 2016,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          24
+        ],
+        "publication_types": [
+          "Journal Article"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "37020353",
+        "title": "Baseline gut microbiome impacts probiotics Bacillus licheniformis CMCC63516 in modulating the gut microbiome and preventing antibiotic-associated diarrhea: A double-blind, randomized controlled trial.",
+        "year": 2023,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          25
+        ],
+        "publication_types": [
+          "Randomized Controlled Trial",
+          "Letter",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": false
+      },
+      {
+        "pmid": "33642554",
+        "title": "Probiotic Prescription Status of Pediatric Patients with Otitis Media Receiving Oral Amoxicillin or Amoxicillin/Clavulanate from April 2016 to March 2017 Using a Japanese Health Insurance Claims Database.",
+        "year": 2021,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          5
+        ],
+        "publication_types": [
+          "Journal Article"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "32207209",
+        "title": "Effect of probiotics during vonoprazan-containing triple therapy on gut microbiota in Helicobacter pylori infection: A randomized controlled trial.",
+        "year": 2020,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          6
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "15357564",
+        "title": "The probiotic effect of Saccharomyces boulardii in a pediatric age group.",
+        "year": 2004,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          7
+        ],
+        "publication_types": [
+          "Clinical Trial",
+          "Controlled Clinical Trial",
+          "Journal Article"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "27111772",
+        "title": "Lactobacillus rhamnosus GG Intake Modifies Preschool Children's Intestinal Microbiota, Alleviates Penicillin-Associated Changes, and Reduces Antibiotic Use.",
+        "year": 2016,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          8
+        ],
+        "publication_types": [
+          "Controlled Clinical Trial",
+          "Journal Article",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "25866729",
+        "title": "The Efficacy of Saccharomyces boulardii CNCM I-745 in Addition to Standard Helicobacter pylori Eradication Treatment in Children.",
+        "year": 2015,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          9
+        ],
+        "publication_types": [
+          "Journal Article"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "28827186",
+        "title": "Probiotics and antibiotic-associated diarrhea in children: A review and new evidence on Lactobacillus rhamnosus GG during and after antibiotic treatment.",
+        "year": 2018,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          10
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "41971733",
+        "title": "Role of Bifidobacterium breve PRL2020 in reducing symptoms of antibiotic-associated diarrhea in children.",
+        "year": 2026,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          11
+        ],
+        "publication_types": [
+          "Journal Article"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "41486369",
+        "title": "Systematic review: Limosilactobacillus reuteri DSM 17938 for preventing antibiotic-associated diarrhoea in children.",
+        "year": 2026,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          12
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      }
+    ],
+    "timings": {
+      "query_generation_s": 6.15,
+      "retrieval_s": 5.11,
+      "translation_s": 21.8,
+      "synthesis_s": 25.86,
+      "synthesis_first_token_s": 2.16,
+      "total_s": 58.92
+    },
+    "usage": {
+      "search": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 344,
+        "output_tokens": 321,
+        "output_tokens_details": null,
+        "server_tool_use": null,
+        "service_tier": "standard"
+      },
+      "summary": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 2533,
+        "output_tokens": 1105,
+        "output_tokens_details": null,
+        "server_tool_use": null,
+        "service_tier": "standard"
+      },
+      "synthesis": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 12666,
+        "output_tokens": 995,
+        "output_tokens_details": null,
+        "server_tool_use": null,
+        "service_tier": "standard"
+      }
+    },
+    "synthesis_stop_reason": "end_turn",
+    "served_model": "claude-opus-4-6"
+  },
+  "run": {
+    "question_id": "Q5",
+    "replicate": 1,
+    "route": "worker:https://tables-turned-api.jethomasphd.workers.dev",
+    "captured_at": "2026-09-28T23:41:46Z"
+  }
+}

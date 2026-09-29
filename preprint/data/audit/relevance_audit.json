@@ -1,0 +1,1114 @@
+[
+  {
+    "question_id": "Q1",
+    "replicate": 1,
+    "papers": [
+      {
+        "pmid": "33540815",
+        "title": "Melatonin: From Pharmacokinetics to Clinical Use in Autism Spectrum Disorder.",
+        "relevance": "directly_relevant",
+        "reason": "Reviews melatonin effects on sleep latency and quality in children with ASD, including side effects.",
+        "cited": true,
+        "score": 16,
+        "overlap": 3
+      },
+      {
+        "pmid": "28875581",
+        "title": "European guideline for the diagnosis and treatment of insomnia.",
+        "relevance": "tangential",
+        "reason": "Insomnia guideline focused on adults; only indirectly informs pediatric melatonin use.",
+        "cited": true,
+        "score": 14,
+        "overlap": 3
+      },
+      {
+        "pmid": "31982581",
+        "title": "Sleep, Growth, and Puberty After 2 Years of Prolonged-Release Melatonin in Children With Autism Spectrum Disorder.",
+        "relevance": "directly_relevant",
+        "reason": "Long-term melatonin in children: sleep outcomes plus growth and puberty safety.",
+        "cited": true,
+        "score": 13,
+        "overlap": 3
+      },
+      {
+        "pmid": "36179487",
+        "title": "Efficacy of melatonin for chronic insomnia: Systematic reviews and meta-analyses.",
+        "relevance": "directly_relevant",
+        "reason": "Meta-analysis finds melatonin improves sleep onset and total sleep time in children and adolescents.",
+        "cited": true,
+        "score": 13,
+        "overlap": 3
+      },
+      {
+        "pmid": "31207606",
+        "title": "Sleep deficiency and chronic pain: potential underlying mechanisms and clinical implications.",
+        "relevance": "off_topic",
+        "reason": "About sleep and chronic pain mechanisms, not melatonin for kids' sleep.",
+        "cited": false,
+        "score": 12,
+        "overlap": 2
+      },
+      {
+        "pmid": "35120753",
+        "title": "[Therapeutic approaches for sleep and rhythms disorders in children with ASD].",
+        "relevance": "directly_relevant",
+        "reason": "Reviews therapeutic approaches, likely including melatonin, for sleep-onset insomnia in children with ASD.",
+        "cited": false,
+        "score": 12,
+        "overlap": 3
+      },
+      {
+        "pmid": "29096777",
+        "title": "Efficacy and Safety of Pediatric Prolonged-Release Melatonin for Insomnia in Children With Autism Spectrum Disorder.",
+        "relevance": "directly_relevant",
+        "reason": "RCT of melatonin versus placebo for pediatric insomnia.",
+        "cited": true,
+        "score": 12,
+        "overlap": 3
+      },
+      {
+        "pmid": "23691095",
+        "title": "Meta-analysis: melatonin for the treatment of primary sleep disorders.",
+        "relevance": "directly_relevant",
+        "reason": "Meta-analysis of melatonin for sleep latency in adults and children with primary sleep disorders.",
+        "cited": true,
+        "score": 12,
+        "overlap": 2
+      },
+      {
+        "pmid": "29318587",
+        "title": "New perspectives on the role of melatonin in human sleep, circadian rhythms and their regulation.",
+        "relevance": "tangential",
+        "reason": "Mechanistic review of melatonin and sleep with only brief mention of pediatric use.",
+        "cited": false,
+        "score": 10,
+        "overlap": 2
+      },
+      {
+        "pmid": "38625388",
+        "title": "European expert guidance on management of sleep onset insomnia and melatonin use in typically developing children.",
+        "relevance": "directly_relevant",
+        "reason": "Expert guidance on melatonin for sleep-onset insomnia in typically developing children, matching the question.",
+        "cited": true,
+        "score": 8,
+        "overlap": 1
+      },
+      {
+        "pmid": "31638842",
+        "title": "Pharmacotherapeutic management of sleep disorders in children with neurodevelopmental disorders.",
+        "relevance": "directly_relevant",
+        "reason": "Review of pediatric sleep drugs, including melatonin recommendations, in children with neurodevelopmental disorders.",
+        "cited": true,
+        "score": 8,
+        "overlap": 2
+      },
+      {
+        "pmid": "36603513",
+        "title": "Sleep interventions for children with attention deficit hyperactivity disorder (ADHD): A systematic literature review.",
+        "relevance": "directly_relevant",
+        "reason": "Systematic review of sleep interventions, likely including melatonin, in school-age children with ADHD.",
+        "cited": true,
+        "score": 8,
+        "overlap": 2
+      }
+    ],
+    "counts": {
+      "directly_relevant": 9,
+      "tangential": 2,
+      "off_topic": 1
+    },
+    "off_topic_cited": [],
+    "judge": {
+      "model": "claude-opus-5-5",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 4766,
+        "output_tokens": 722,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "server_tool_use": null,
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "question_id": "Q1",
+    "replicate": 2,
+    "papers": [
+      {
+        "pmid": "35843245",
+        "title": "Comparative effects of pharmacological interventions for the acute and long-term management of insomnia disorder in adults: a systematic review and network meta-analysis.",
+        "relevance": "tangential",
+        "reason": "Adult insomnia drug network meta-analysis; includes melatonin but not children.",
+        "cited": true,
+        "score": 16,
+        "overlap": 2
+      },
+      {
+        "pmid": "31982581",
+        "title": "Sleep, Growth, and Puberty After 2 Years of Prolonged-Release Melatonin in Children With Autism Spectrum Disorder.",
+        "relevance": "directly_relevant",
+        "reason": "Long-term melatonin effects on sleep and growth in children, albeit autism population.",
+        "cited": true,
+        "score": 13,
+        "overlap": 3
+      },
+      {
+        "pmid": "36179487",
+        "title": "Efficacy of melatonin for chronic insomnia: Systematic reviews and meta-analyses.",
+        "relevance": "directly_relevant",
+        "reason": "Meta-analysis showing melatonin improves sleep onset latency and total sleep time in children with insomnia.",
+        "cited": true,
+        "score": 13,
+        "overlap": 3
+      },
+      {
+        "pmid": "40768003",
+        "title": "Factors influencing the effect of melatonin on sleep quality in children with autism spectrum disorder: a systematic review and meta-analysis.",
+        "relevance": "directly_relevant",
+        "reason": "Meta-analysis of melatonin effects on sleep in children, though limited to autism.",
+        "cited": false,
+        "score": 12,
+        "overlap": 3
+      },
+      {
+        "pmid": "29720494",
+        "title": "Melatonin for the management of sleep problems in children with neurodevelopmental disorders: a systematic review and meta-analysis.",
+        "relevance": "directly_relevant",
+        "reason": "Meta-analysis of melatonin efficacy and safety for pediatric sleep problems in neurodevelopmental disorders.",
+        "cited": true,
+        "score": 12,
+        "overlap": 3
+      },
+      {
+        "pmid": "35120753",
+        "title": "[Therapeutic approaches for sleep and rhythms disorders in children with ASD].",
+        "relevance": "tangential",
+        "reason": "Narrative review of sleep treatments in children with ASD; indirect relevance.",
+        "cited": false,
+        "score": 12,
+        "overlap": 3
+      },
+      {
+        "pmid": "29096777",
+        "title": "Efficacy and Safety of Pediatric Prolonged-Release Melatonin for Insomnia in Children With Autism Spectrum Disorder.",
+        "relevance": "directly_relevant",
+        "reason": "RCT of melatonin for pediatric insomnia, albeit in autism population.",
+        "cited": true,
+        "score": 12,
+        "overlap": 3
+      },
+      {
+        "pmid": "23691095",
+        "title": "Meta-analysis: melatonin for the treatment of primary sleep disorders.",
+        "relevance": "directly_relevant",
+        "reason": "Meta-analysis of melatonin for primary sleep disorders including children; sleep latency outcomes.",
+        "cited": true,
+        "score": 11,
+        "overlap": 2
+      },
+      {
+        "pmid": "30710339",
+        "title": "Oral melatonin for non-respiratory sleep disturbance in children with neurodisabilities: systematic review and meta-analyses.",
+        "relevance": "directly_relevant",
+        "reason": "Meta-analysis of melatonin for sleep in children with neurodisabilities.",
+        "cited": true,
+        "score": 10,
+        "overlap": 2
+      },
+      {
+        "pmid": "28875581",
+        "title": "European guideline for the diagnosis and treatment of insomnia.",
+        "relevance": "tangential",
+        "reason": "Adult insomnia guideline; background on melatonin use only.",
+        "cited": false,
+        "score": 10,
+        "overlap": 2
+      },
+      {
+        "pmid": "30311830",
+        "title": "Systematic review of light exposure impact on human circadian rhythm.",
+        "relevance": "off_topic",
+        "reason": "Light exposure and circadian rhythm; not about melatonin supplementation in kids.",
+        "cited": false,
+        "score": 9,
+        "overlap": 2
+      },
+      {
+        "pmid": "38625388",
+        "title": "European expert guidance on management of sleep onset insomnia and melatonin use in typically developing children.",
+        "relevance": "directly_relevant",
+        "reason": "Expert guidance on melatonin for sleep onset insomnia in typically developing children—matches the question closely.",
+        "cited": true,
+        "score": 8,
+        "overlap": 1
+      }
+    ],
+    "counts": {
+      "tangential": 3,
+      "directly_relevant": 8,
+      "off_topic": 1
+    },
+    "off_topic_cited": [],
+    "judge": {
+      "model": "claude-opus-5-5",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 4816,
+        "output_tokens": 692,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "server_tool_use": null,
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "question_id": "Q1",
+    "replicate": 3,
+    "papers": [
+      {
+        "pmid": "36179487",
+        "title": "Efficacy of melatonin for chronic insomnia: Systematic reviews and meta-analyses.",
+        "relevance": "directly_relevant",
+        "reason": "Meta-analysis showing melatonin improves sleep onset latency and total sleep time in children/adolescents with insomnia.",
+        "cited": true,
+        "score": 22,
+        "overlap": 4
+      },
+      {
+        "pmid": "38625388",
+        "title": "European expert guidance on management of sleep onset insomnia and melatonin use in typically developing children.",
+        "relevance": "directly_relevant",
+        "reason": "Expert guidance on melatonin use for sleep onset insomnia in typically developing children, matching the question.",
+        "cited": true,
+        "score": 19,
+        "overlap": 3
+      },
+      {
+        "pmid": "35120753",
+        "title": "[Therapeutic approaches for sleep and rhythms disorders in children with ASD].",
+        "relevance": "tangential",
+        "reason": "Sleep treatment approaches in children with autism; adjacent population.",
+        "cited": false,
+        "score": 19,
+        "overlap": 4
+      },
+      {
+        "pmid": "31982581",
+        "title": "Sleep, Growth, and Puberty After 2 Years of Prolonged-Release Melatonin in Children With Autism Spectrum Disorder.",
+        "relevance": "tangential",
+        "reason": "Long-term melatonin effects on sleep and growth in autistic children; safety info is useful but the population differs.",
+        "cited": true,
+        "score": 16,
+        "overlap": 3
+      },
+      {
+        "pmid": "29096777",
+        "title": "Efficacy and Safety of Pediatric Prolonged-Release Melatonin for Insomnia in Children With Autism Spectrum Disorder.",
+        "relevance": "tangential",
+        "reason": "RCT of melatonin for insomnia in children with ASD; adjacent population.",
+        "cited": true,
+        "score": 12,
+        "overlap": 3
+      },
+      {
+        "pmid": "23691095",
+        "title": "Meta-analysis: melatonin for the treatment of primary sleep disorders.",
+        "relevance": "directly_relevant",
+        "reason": "Meta-analysis of melatonin vs placebo for primary sleep disorders, including children.",
+        "cited": true,
+        "score": 12,
+        "overlap": 2
+      },
+      {
+        "pmid": "28875581",
+        "title": "European guideline for the diagnosis and treatment of insomnia.",
+        "relevance": "off_topic",
+        "reason": "Insomnia guideline limited to adults.",
+        "cited": false,
+        "score": 11,
+        "overlap": 2
+      },
+      {
+        "pmid": "30311830",
+        "title": "Systematic review of light exposure impact on human circadian rhythm.",
+        "relevance": "off_topic",
+        "reason": "Light exposure and circadian rhythm; not about melatonin supplements in kids.",
+        "cited": false,
+        "score": 8,
+        "overlap": 2
+      },
+      {
+        "pmid": "38738544",
+        "title": "The management of sleep disturbances in children with attention-deficit/hyperactivity disorder (ADHD): an update of the literature.",
+        "relevance": "tangential",
+        "reason": "Sleep interventions, including melatonin, in children with ADHD; adjacent population.",
+        "cited": false,
+        "score": 8,
+        "overlap": 2
+      },
+      {
+        "pmid": "40768003",
+        "title": "Factors influencing the effect of melatonin on sleep quality in children with autism spectrum disorder: a systematic review and meta-analysis.",
+        "relevance": "tangential",
+        "reason": "Meta-analysis of melatonin in children with autism; adjacent population.",
+        "cited": false,
+        "score": 8,
+        "overlap": 2
+      },
+      {
+        "pmid": "25535358",
+        "title": "Evening use of light-emitting eReaders negatively affects sleep, circadian timing, and next-morning alertness.",
+        "relevance": "off_topic",
+        "reason": "eReader light effects on sleep in adults; not about melatonin supplementation.",
+        "cited": true,
+        "score": 8,
+        "overlap": 2
+      },
+      {
+        "pmid": "33540815",
+        "title": "Melatonin: From Pharmacokinetics to Clinical Use in Autism Spectrum Disorder.",
+        "relevance": "tangential",
+        "reason": "Review of melatonin pharmacokinetics and side effects in ASD; background information.",
+        "cited": false,
+        "score": 8,
+        "overlap": 2
+      }
+    ],
+    "counts": {
+      "directly_relevant": 3,
+      "tangential": 6,
+      "off_topic": 3
+    },
+    "off_topic_cited": [
+      "25535358"
+    ],
+    "judge": {
+      "model": "claude-opus-5-5",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 4716,
+        "output_tokens": 656,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "server_tool_use": null,
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "question_id": "Q2",
+    "replicate": 1,
+    "papers": [
+      {
+        "pmid": "36578889",
+        "title": "Efficacy and Safety of Semaglutide for Weight Loss in Obesity Without Diabetes: A Systematic Review and Meta-Analysis.",
+        "relevance": "directly_relevant",
+        "reason": "Meta-analysis of semaglutide safety (GI, serious AEs, discontinuation) for weight loss in non-diabetics.",
+        "cited": true,
+        "score": 21,
+        "overlap": 4
+      },
+      {
+        "pmid": "33567185",
+        "title": "Once-Weekly Semaglutide in Adults with Overweight or Obesity.",
+        "relevance": "directly_relevant",
+        "reason": "STEP 1 pivotal RCT of semaglutide 2.4 mg for weight loss reporting efficacy and adverse events.",
+        "cited": true,
+        "score": 21,
+        "overlap": 3
+      },
+      {
+        "pmid": "35441470",
+        "title": "Weight regain and cardiometabolic effects after withdrawal of semaglutide: The STEP 1 trial extension.",
+        "relevance": "tangential",
+        "reason": "Examines weight regain after stopping semaglutide; informs long-term considerations, not adverse event safety directly.",
+        "cited": true,
+        "score": 20,
+        "overlap": 3
+      },
+      {
+        "pmid": "40353578",
+        "title": "Tirzepatide as Compared with Semaglutide for the Treatment of Obesity.",
+        "relevance": "tangential",
+        "reason": "Head-to-head tirzepatide vs semaglutide trial focused on efficacy; some safety comparison possible.",
+        "cited": false,
+        "score": 16,
+        "overlap": 4
+      },
+      {
+        "pmid": "36216945",
+        "title": "Two-year effects of semaglutide in adults with overweight or obesity: the STEP 5 trial.",
+        "relevance": "directly_relevant",
+        "reason": "Two-year RCT assessing efficacy and safety of semaglutide 2.4 mg for obesity.",
+        "cited": true,
+        "score": 16,
+        "overlap": 4
+      },
+      {
+        "pmid": "40961952",
+        "title": "Once-weekly semaglutide 7·2 mg in adults with obesity (STEP UP): a randomised, controlled, phase 3b trial.",
+        "relevance": "tangential",
+        "reason": "Tests higher 7.2 mg dose; safety data relevant but not the standard prescribed dose.",
+        "cited": false,
+        "score": 16,
+        "overlap": 4
+      },
+      {
+        "pmid": "33625476",
+        "title": "Effect of Subcutaneous Semaglutide vs Placebo as an Adjunct to Intensive Behavioral Therapy on Body Weight in Adults With Overweight or Obesity: The STEP 3 Randomized Clinical Trial.",
+        "relevance": "directly_relevant",
+        "reason": "STEP 3 RCT of semaglutide for weight loss reporting adverse events.",
+        "cited": true,
+        "score": 15,
+        "overlap": 3
+      },
+      {
+        "pmid": "37952131",
+        "title": "Semaglutide and Cardiovascular Outcomes in Obesity without Diabetes.",
+        "relevance": "directly_relevant",
+        "reason": "SELECT trial: cardiovascular safety/outcomes of semaglutide in obesity without diabetes.",
+        "cited": true,
+        "score": 15,
+        "overlap": 2
+      },
+      {
+        "pmid": "40934115",
+        "title": "Oral Semaglutide at a Dose of 25 mg in Adults with Overweight or Obesity.",
+        "relevance": "tangential",
+        "reason": "Oral semaglutide formulation for weight loss; related but differs from injectable Ozempic.",
+        "cited": false,
+        "score": 14,
+        "overlap": 3
+      },
+      {
+        "pmid": "34305810",
+        "title": "Safety of Semaglutide.",
+        "relevance": "directly_relevant",
+        "reason": "Review dedicated to semaglutide adverse events and safety concerns.",
+        "cited": true,
+        "score": 12,
+        "overlap": 3
+      },
+      {
+        "pmid": "39761578",
+        "title": "Efficacy and Safety of Glucagon-Like Peptide-1 Receptor Agonists for Weight Loss Among Adults Without Diabetes : A Systematic Review of Randomized Controlled Trials.",
+        "relevance": "directly_relevant",
+        "reason": "Systematic review of GLP-1 RA safety for weight loss in non-diabetics, including semaglutide.",
+        "cited": false,
+        "score": 12,
+        "overlap": 3
+      },
+      {
+        "pmid": "40196933",
+        "title": "Real-world evidence on the utilization, clinical and comparative effectiveness, and adverse effects of newer GLP-1RA-based weight-loss therapies.",
+        "relevance": "directly_relevant",
+        "reason": "Real-world review of adverse effects of semaglutide and other GLP-1RA weight-loss therapies.",
+        "cited": true,
+        "score": 12,
+        "overlap": 3
+      }
+    ],
+    "counts": {
+      "directly_relevant": 8,
+      "tangential": 4
+    },
+    "off_topic_cited": [],
+    "judge": {
+      "model": "claude-opus-5-5",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 5198,
+        "output_tokens": 754,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "server_tool_use": null,
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "question_id": "Q3",
+    "replicate": 1,
+    "papers": [
+      {
+        "pmid": "28202713",
+        "title": "Vitamin D supplementation to prevent acute respiratory tract infections: systematic review and meta-analysis of individual participant data.",
+        "relevance": "directly_relevant",
+        "reason": "IPD meta-analysis of RCTs on vitamin D supplementation preventing acute respiratory infections, including colds.",
+        "cited": true,
+        "score": 19,
+        "overlap": 3
+      },
+      {
+        "pmid": "39993397",
+        "title": "Vitamin D supplementation to prevent acute respiratory infections: systematic review and meta-analysis of stratified aggregate data.",
+        "relevance": "directly_relevant",
+        "reason": "Most recent updated meta-analysis of vitamin D RCTs for preventing acute respiratory infections.",
+        "cited": true,
+        "score": 17,
+        "overlap": 3
+      },
+      {
+        "pmid": "32342851",
+        "title": "Zinc Supplementation Reduces Common Cold Duration among Healthy Adults: A Systematic Review of Randomized Controlled Trials with Micronutrients Supplementation.",
+        "relevance": "directly_relevant",
+        "reason": "Systematic review includes vitamin D trials on common cold incidence in healthy adults.",
+        "cited": true,
+        "score": 16,
+        "overlap": 3
+      },
+      {
+        "pmid": "30675873",
+        "title": "Vitamin D supplementation to prevent acute respiratory infections: individual participant data meta-analysis.",
+        "relevance": "directly_relevant",
+        "reason": "IPD meta-analysis of vitamin D for preventing acute respiratory infections.",
+        "cited": true,
+        "score": 15,
+        "overlap": 3
+      },
+      {
+        "pmid": "28357899",
+        "title": "[Not Available].",
+        "relevance": "off_topic",
+        "reason": "No title or abstract available to judge.",
+        "cited": false,
+        "score": 14,
+        "overlap": 2
+      },
+      {
+        "pmid": "33798465",
+        "title": "Vitamin D supplementation to prevent acute respiratory infections: a systematic review and meta-analysis of aggregate data from randomised controlled trials.",
+        "relevance": "directly_relevant",
+        "reason": "Updated meta-analysis of RCTs on vitamin D preventing acute respiratory infections.",
+        "cited": true,
+        "score": 12,
+        "overlap": 3
+      },
+      {
+        "pmid": "38732592",
+        "title": "The Efficacy of Multivitamin, Vitamin A, Vitamin B, Vitamin C, and Vitamin D Supplements in the Prevention and Management of COVID-19 and Long-COVID: An Updated Systematic Review and Meta-Analysis of Randomized Clinical Trials.",
+        "relevance": "tangential",
+        "reason": "Covers vitamin D for COVID-19, a related respiratory infection but not colds.",
+        "cited": false,
+        "score": 10,
+        "overlap": 2
+      },
+      {
+        "pmid": "37686873",
+        "title": "Infections and Autoimmunity-The Immune System and Vitamin D: A Systematic Review.",
+        "relevance": "tangential",
+        "reason": "Mechanistic review of vitamin D and immunity against infections; background only.",
+        "cited": false,
+        "score": 10,
+        "overlap": 2
+      },
+      {
+        "pmid": "38828931",
+        "title": "Vitamin D for the Prevention of Disease: An Endocrine Society Clinical Practice Guideline.",
+        "relevance": "directly_relevant",
+        "reason": "Clinical guideline on vitamin D supplementation for disease prevention, including respiratory infections, in general populations.",
+        "cited": true,
+        "score": 8,
+        "overlap": 1
+      },
+      {
+        "pmid": "33472840",
+        "title": "Effect of micronutrient supplements on influenza and other respiratory tract infections among adults: a systematic review and meta-analysis.",
+        "relevance": "directly_relevant",
+        "reason": "Meta-analysis showing vitamin D effect on respiratory infection risk and duration in adults.",
+        "cited": false,
+        "score": 8,
+        "overlap": 2
+      },
+      {
+        "pmid": "40969681",
+        "title": "Comparative effectiveness of oral nutritional supplements in preventing respiratory tract infections among adults: a systematic review and network meta-analysis.",
+        "relevance": "directly_relevant",
+        "reason": "Network meta-analysis comparing supplements, likely including vitamin D, for preventing respiratory infections in adults.",
+        "cited": true,
+        "score": 7,
+        "overlap": 1
+      },
+      {
+        "pmid": "33481482",
+        "title": "Influence of Vitamin D Supplementation by Simulated Sunlight or Oral D3 on Respiratory Infection during Military Training.",
+        "relevance": "directly_relevant",
+        "reason": "RCT of oral vitamin D3 in winter on upper respiratory infections/common cold.",
+        "cited": false,
+        "score": 6,
+        "overlap": 1
+      }
+    ],
+    "counts": {
+      "directly_relevant": 9,
+      "off_topic": 1,
+      "tangential": 2
+    },
+    "off_topic_cited": [],
+    "judge": {
+      "model": "claude-opus-5-5",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 4769,
+        "output_tokens": 702,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "server_tool_use": null,
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "question_id": "Q4",
+    "replicate": 1,
+    "papers": [
+      {
+        "pmid": "40533200",
+        "title": "Intermittent fasting strategies and their effects on body weight and other cardiometabolic risk factors: systematic review and network meta-analysis of randomised clinical trials.",
+        "relevance": "directly_relevant",
+        "reason": "Network meta-analysis of RCTs comparing intermittent fasting strategies with continuous energy restriction, with body weight as the primary outcome.",
+        "cited": true,
+        "score": 24,
+        "overlap": 4
+      },
+      {
+        "pmid": "36349432",
+        "title": "A meta-analysis comparing the effectiveness of alternate day fasting, the 5:2 diet, and time-restricted eating for weight loss.",
+        "relevance": "directly_relevant",
+        "reason": "Meta-analysis comparing intermittent fasting regimens against traditional caloric restriction for weight loss.",
+        "cited": true,
+        "score": 14,
+        "overlap": 3
+      },
+      {
+        "pmid": "40163873",
+        "title": "The Effect of 4:3 Intermittent Fasting on Weight Loss at 12 Months : A Randomized Clinical Trial.",
+        "relevance": "directly_relevant",
+        "reason": "12-month RCT comparing 4:3 intermittent fasting with daily caloric restriction on weight loss.",
+        "cited": true,
+        "score": 12,
+        "overlap": 3
+      },
+      {
+        "pmid": "40554393",
+        "title": "Intermittent fasting for weight loss in night shift workers: a three-arm, superiority randomised clinical trial.",
+        "relevance": "directly_relevant",
+        "reason": "RCT comparing intermittent fasting with continuous energy restriction on weight loss; the population is night shift workers.",
+        "cited": true,
+        "score": 12,
+        "overlap": 3
+      },
+      {
+        "pmid": "39458528",
+        "title": "Is Fasting Superior to Continuous Caloric Restriction for Weight Loss and Metabolic Outcomes in Obese Adults? A Systematic Review and Meta-Analysis of Randomized Clinical Trials.",
+        "relevance": "directly_relevant",
+        "reason": "Meta-analysis comparing fasting-based strategies with continuous caloric restriction on weight in obese adults.",
+        "cited": true,
+        "score": 12,
+        "overlap": 3
+      },
+      {
+        "pmid": "40733010",
+        "title": "Effects of 4:3 Intermittent Fasting on Eating Behaviors and Appetite Hormones: A Secondary Analysis of a 12-Month Behavioral Weight Loss Intervention.",
+        "relevance": "tangential",
+        "reason": "Secondary analysis of an IF vs daily restriction trial focused on eating behaviors and appetite hormones rather than weight itself.",
+        "cited": true,
+        "score": 12,
+        "overlap": 2
+      },
+      {
+        "pmid": "38956175",
+        "title": "The effects of intermittent fasting on body composition and cardiometabolic health in adults with prediabetes or type 2 diabetes: A systematic review and meta-analysis.",
+        "relevance": "tangential",
+        "reason": "IF vs control/calorie restriction on weight, but limited to people with prediabetes or type 2 diabetes.",
+        "cited": false,
+        "score": 12,
+        "overlap": 3
+      },
+      {
+        "pmid": "39485353",
+        "title": "Meal Timing and Anthropometric and Metabolic Outcomes: A Systematic Review and Meta-Analysis.",
+        "relevance": "tangential",
+        "reason": "Covers meal timing strategies including time-restricted eating, but is not a direct comparison of IF with standard dieting.",
+        "cited": false,
+        "score": 12,
+        "overlap": 3
+      },
+      {
+        "pmid": "35565749",
+        "title": "Intermittent Fasting versus Continuous Calorie Restriction: Which Is Better for Weight Loss?",
+        "relevance": "directly_relevant",
+        "reason": "Meta-analysis comparing IF with continuous calorie restriction for weight loss in people with overweight or obesity.",
+        "cited": false,
+        "score": 10,
+        "overlap": 2
+      },
+      {
+        "pmid": "38201996",
+        "title": "Intermittent Fasting: Does It Affect Sports Performance? A Systematic Review.",
+        "relevance": "off_topic",
+        "reason": "Focuses on sports performance in athletes, not a comparison of weight loss between diets.",
+        "cited": false,
+        "score": 10,
+        "overlap": 2
+      },
+      {
+        "pmid": "36575144",
+        "title": "Intermittent fasting and protein pacing are superior to caloric restriction for weight and visceral fat loss.",
+        "relevance": "directly_relevant",
+        "reason": "Trial comparing IF with protein pacing against caloric restriction on weight loss.",
+        "cited": false,
+        "score": 9,
+        "overlap": 2
+      },
+      {
+        "pmid": "38904963",
+        "title": "A 5:2 Intermittent Fasting Meal Replacement Diet and Glycemic Control for Adults With Diabetes: The EARLY Randomized Clinical Trial.",
+        "relevance": "tangential",
+        "reason": "5:2 fasting diet compared with diabetes medications for glycemic control, not with regular dieting.",
+        "cited": true,
+        "score": 9,
+        "overlap": 2
+      }
+    ],
+    "counts": {
+      "directly_relevant": 7,
+      "tangential": 4,
+      "off_topic": 1
+    },
+    "off_topic_cited": [],
+    "judge": {
+      "model": "claude-opus-5-5",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 5235,
+        "output_tokens": 772,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "server_tool_use": null,
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "question_id": "Q5",
+    "replicate": 1,
+    "papers": [
+      {
+        "pmid": "31039287",
+        "title": "Probiotics for the prevention of pediatric antibiotic-associated diarrhea.",
+        "relevance": "directly_relevant",
+        "reason": "Cochrane review of probiotics preventing AAD in children.",
+        "cited": true,
+        "score": 22,
+        "overlap": 3
+      },
+      {
+        "pmid": "26756877",
+        "title": "Probiotics for the Prevention of Antibiotic-Associated Diarrhea in Children.",
+        "relevance": "directly_relevant",
+        "reason": "ESPGHAN recommendations on probiotics for pediatric AAD prevention.",
+        "cited": true,
+        "score": 17,
+        "overlap": 3
+      },
+      {
+        "pmid": "34385227",
+        "title": "Probiotics for the prevention of antibiotic-associated diarrhoea: a systematic review and meta-analysis.",
+        "relevance": "directly_relevant",
+        "reason": "Meta-analysis of probiotics preventing AAD, though in adults.",
+        "cited": true,
+        "score": 13,
+        "overlap": 2
+      },
+      {
+        "pmid": "29257353",
+        "title": "Probiotics for the prevention of Clostridium difficile-associated diarrhea in adults and children.",
+        "relevance": "tangential",
+        "reason": "Focuses on C. difficile diarrhea, a specific subtype of antibiotic-related diarrhea.",
+        "cited": false,
+        "score": 12,
+        "overlap": 3
+      },
+      {
+        "pmid": "40931979",
+        "title": "Probiotics for the prevention of Clostridioides difficile-associated diarrhea in adults and children.",
+        "relevance": "tangential",
+        "reason": "Updated review on C. difficile diarrhea prevention, related but narrower outcome.",
+        "cited": false,
+        "score": 12,
+        "overlap": 3
+      },
+      {
+        "pmid": "40426506",
+        "title": "Effectiveness of Bacillus clausii (O/C, N/R, SIN, T) in the Prevention of Antibiotic-Associated Diarrhea and Gastrointestinal Symptoms: A Systematic Review.",
+        "relevance": "directly_relevant",
+        "reason": "Systematic review of B. clausii for AAD prevention in children and adults.",
+        "cited": false,
+        "score": 12,
+        "overlap": 3
+      },
+      {
+        "pmid": "18542041",
+        "title": "Probiotics for prevention of antibiotic-associated diarrhea.",
+        "relevance": "directly_relevant",
+        "reason": "Review of probiotics for AAD prevention summarizing meta-analyses.",
+        "cited": false,
+        "score": 12,
+        "overlap": 3
+      },
+      {
+        "pmid": "40488914",
+        "title": "Effect of Limosilactobacillus reuteri DSM17938 to prevent antibiotic-associated diarrhea in children: prospective, multi-center, randomized, placebo-controlled clinical trial (PEARL Study).",
+        "relevance": "directly_relevant",
+        "reason": "RCT of L. reuteri preventing AAD in children on amoxicillin-clavulanate.",
+        "cited": true,
+        "score": 12,
+        "overlap": 2
+      },
+      {
+        "pmid": "20458757",
+        "title": "Systematic review and meta-analysis of Saccharomyces boulardii in adult patients.",
+        "relevance": "tangential",
+        "reason": "S. boulardii meta-analysis in adults across multiple indications including AAD.",
+        "cited": false,
+        "score": 11,
+        "overlap": 2
+      },
+      {
+        "pmid": "39467682",
+        "title": "[A prospective randomized controlled study on probiotics for the prevention of antibiotic-associated diarrhea in infants and young children].",
+        "relevance": "directly_relevant",
+        "reason": "RCT of probiotics preventing AAD in young children.",
+        "cited": true,
+        "score": 10,
+        "overlap": 2
+      },
+      {
+        "pmid": "41699149",
+        "title": "Probiotic intervention not beneficial to prevent antibiotic-associated diarrhea in absence of antibiotic-induced microbiome disruption.",
+        "relevance": "directly_relevant",
+        "reason": "RCT of probiotic yogurt for AAD prevention in outpatient children.",
+        "cited": true,
+        "score": 10,
+        "overlap": 2
+      },
+      {
+        "pmid": "22570464",
+        "title": "Probiotics for the prevention and treatment of antibiotic-associated diarrhea: a systematic review and meta-analysis.",
+        "relevance": "directly_relevant",
+        "reason": "Meta-analysis of probiotics for AAD prevention and treatment.",
+        "cited": true,
+        "score": 9,
+        "overlap": 2
+      }
+    ],
+    "counts": {
+      "directly_relevant": 9,
+      "tangential": 3
+    },
+    "off_topic_cited": [],
+    "judge": {
+      "model": "claude-opus-5-5",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 5072,
+        "output_tokens": 649,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "server_tool_use": null,
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "question_id": "Q6",
+    "replicate": 1,
+    "papers": [
+      {
+        "pmid": "41010525",
+        "title": "Effect of Apple Cider Vinegar Intake on Body Composition in Humans with Type 2 Diabetes and/or Overweight: A Systematic Review and Meta-Analysis of Randomized Controlled Trials.",
+        "relevance": "directly_relevant",
+        "reason": "Meta-analysis of RCTs on apple cider vinegar and body weight/composition.",
+        "cited": true,
+        "score": 26,
+        "overlap": 4
+      },
+      {
+        "pmid": "19661687",
+        "title": "Vinegar intake reduces body weight, body fat mass, and serum triglyceride levels in obese Japanese subjects.",
+        "relevance": "directly_relevant",
+        "reason": "Double-blind RCT showing vinegar intake reduced body weight and fat in obese adults.",
+        "cited": true,
+        "score": 12,
+        "overlap": 2
+      },
+      {
+        "pmid": "39882285",
+        "title": "Comprehensive clarification of statistical and data concerns on the effects of apple cider vinegar on weight loss.",
+        "relevance": "directly_relevant",
+        "reason": "Addresses data concerns about an ACV weight loss trial, relevant to evidence reliability.",
+        "cited": true,
+        "score": 8,
+        "overlap": 1
+      },
+      {
+        "pmid": "39064748",
+        "title": "Daily Vinegar Ingestion Improves Depression and Enhances Niacin Metabolism in Overweight Adults: A Randomized Controlled Trial.",
+        "relevance": "tangential",
+        "reason": "Vinegar RCT in overweight adults but focused on depression, not weight loss.",
+        "cited": false,
+        "score": 8,
+        "overlap": 2
+      },
+      {
+        "pmid": "7702107",
+        "title": "Agent Orange in Vietnam.",
+        "relevance": "off_topic",
+        "reason": "Agent Orange, unrelated.",
+        "cited": false,
+        "score": 8,
+        "overlap": 1
+      },
+      {
+        "pmid": "40771528",
+        "title": "Improbable data characteristics and extreme effects of apple cider vinegar on weight loss.",
+        "relevance": "directly_relevant",
+        "reason": "Critiques implausible data in an ACV weight loss study, informing credibility of claims.",
+        "cited": true,
+        "score": 7,
+        "overlap": 1
+      },
+      {
+        "pmid": "34187442",
+        "title": "The effect of apple cider vinegar on lipid profiles and glycemic parameters: a systematic review and meta-analysis of randomized clinical trials.",
+        "relevance": "tangential",
+        "reason": "ACV meta-analysis on lipids and glucose, not weight.",
+        "cited": true,
+        "score": 7,
+        "overlap": 1
+      },
+      {
+        "pmid": "33116305",
+        "title": "snRNA-seq reveals a subpopulation of adipocytes that regulates thermogenesis.",
+        "relevance": "off_topic",
+        "reason": "Adipocyte snRNA-seq in mice; acetate signaling mechanism only remotely related.",
+        "cited": false,
+        "score": 7,
+        "overlap": 1
+      },
+      {
+        "pmid": "33436350",
+        "title": "Effect of Dietary Acetic Acid Supplementation on Plasma Glucose, Lipid Profiles, and Body Mass Index in Human Adults: A Systematic Review and Meta-analysis.",
+        "relevance": "directly_relevant",
+        "reason": "Meta-analysis of acetic acid/vinegar supplementation including BMI outcomes.",
+        "cited": true,
+        "score": 7,
+        "overlap": 1
+      },
+      {
+        "pmid": "23373303",
+        "title": "[Unhealthy weight loss. Erosion by apple cider vinegar].",
+        "relevance": "tangential",
+        "reason": "Case report of tooth erosion from ACV used for weight loss; relevant harm.",
+        "cited": true,
+        "score": 5,
+        "overlap": 1
+      },
+      {
+        "pmid": "37356723",
+        "title": "Fecal microbiota transplantation in obesity metabolism: A meta analysis and systematic review.",
+        "relevance": "off_topic",
+        "reason": "Fecal microbiota transplant for obesity, different intervention.",
+        "cited": false,
+        "score": 5,
+        "overlap": 1
+      },
+      {
+        "pmid": "7024720",
+        "title": "The metabolic effects of dichloroacetate.",
+        "relevance": "off_topic",
+        "reason": "Dichloroacetate metabolic effects, unrelated to vinegar.",
+        "cited": false,
+        "score": 5,
+        "overlap": 1
+      }
+    ],
+    "counts": {
+      "directly_relevant": 5,
+      "tangential": 3,
+      "off_topic": 4
+    },
+    "off_topic_cited": [],
+    "judge": {
+      "model": "claude-opus-5-5",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 3520,
+        "output_tokens": 647,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "server_tool_use": null,
+        "service_tier": "standard"
+      }
+    }
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "name": "tables-turned-preprint",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Builds the Tables Turned preprint (.docx) from manuscript/manuscript.md and the frozen study data.",
+  "scripts": {
+    "build": "node scripts/05_build_preprint.js"
+  },
+  "dependencies": {
+    "docx": "^9.8.1"
+  }
+}

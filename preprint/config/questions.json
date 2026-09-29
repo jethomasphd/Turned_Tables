@@ -1,0 +1,61 @@
+{
+  "_about": "Benchmark questions for the Tables Turned preprint. Each question is posed to every arm. 'question' + 'context' feed the Tables Turned form fields; 'search_query' is what a person would type into a search box (AI Overview arm); 'chat_prompt' is what a person would type into a free chatbot (Claude free arm). All three carry the same information.",
+  "followup_prompt": "Can you list the specific scientific studies this is based on? Please include the authors, year, journal, and PubMed ID for each.",
+  "questions": [
+    {
+      "id": "Q1",
+      "slug": "melatonin_kids",
+      "flagship": true,
+      "topic": "Pediatric supplement",
+      "question": "Does melatonin help kids sleep?",
+      "context": "My 7-year-old has trouble falling asleep. Deciding whether to try melatonin gummies before school starts.",
+      "search_query": "does melatonin help kids sleep",
+      "chat_prompt": "Does melatonin help kids sleep? My 7-year-old has trouble falling asleep and I'm deciding whether to try melatonin gummies before school starts."
+    },
+    {
+      "id": "Q2",
+      "slug": "ozempic_safety",
+      "topic": "Prescription drug",
+      "question": "Is Ozempic safe?",
+      "context": "My doctor suggested semaglutide for weight loss and I want to understand the risks before I start.",
+      "search_query": "is ozempic safe",
+      "chat_prompt": "Is Ozempic safe? My doctor suggested semaglutide for weight loss and I want to understand the risks before I start."
+    },
+    {
+      "id": "Q3",
+      "slug": "vitamin_d_colds",
+      "topic": "Prevention supplement",
+      "question": "Does vitamin D prevent colds?",
+      "context": "Deciding whether to give my family vitamin D supplements this winter.",
+      "search_query": "does vitamin d prevent colds",
+      "chat_prompt": "Does vitamin D prevent colds? I'm deciding whether to give my family vitamin D supplements this winter."
+    },
+    {
+      "id": "Q4",
+      "slug": "intermittent_fasting",
+      "topic": "Diet",
+      "question": "Is intermittent fasting better than regular dieting for losing weight?",
+      "context": "Choosing a diet plan to lose about 20 pounds this year.",
+      "search_query": "is intermittent fasting better than regular dieting for weight loss",
+      "chat_prompt": "Is intermittent fasting better than regular dieting for losing weight? I'm choosing a diet plan to lose about 20 pounds this year."
+    },
+    {
+      "id": "Q5",
+      "slug": "probiotics_antibiotics",
+      "topic": "Pediatric supplement",
+      "question": "Do probiotics prevent diarrhea from antibiotics?",
+      "context": "My child was just prescribed amoxicillin and I'm wondering whether to give a probiotic too.",
+      "search_query": "do probiotics prevent diarrhea from antibiotics",
+      "chat_prompt": "Do probiotics prevent diarrhea from antibiotics? My child was just prescribed amoxicillin and I'm wondering whether to give a probiotic too."
+    },
+    {
+      "id": "Q6",
+      "slug": "acv_weight_loss",
+      "topic": "Wellness trend",
+      "question": "Does apple cider vinegar help with weight loss?",
+      "context": "Seen it all over social media; deciding whether it is worth buying.",
+      "search_query": "does apple cider vinegar help with weight loss",
+      "chat_prompt": "Does apple cider vinegar help with weight loss? I've seen it all over social media and I'm deciding whether it's worth buying."
+    }
+  ]
+}
