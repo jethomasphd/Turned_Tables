@@ -1,0 +1,1459 @@
+[
+  {
+    "question_id": "Q1",
+    "replicate": 1,
+    "file": "data/comparators/Q1_melatonin_kids/ai_overview_model_run_1.json",
+    "retrieved": [
+      {
+        "rank": 1,
+        "url": "https://www.sleepfoundation.org/melatonin/melatonin-for-children",
+        "title": "Melatonin for Kids: An Overview",
+        "page_age": "March 31, 2026",
+        "class": "Health media & nonprofits"
+      },
+      {
+        "rank": 2,
+        "url": "https://www.uclahealth.org/news/article/what-know-about-using-melatonin-help-kids-sleep",
+        "title": "What to know about using melatonin to help kids sleep | UCLA Health",
+        "page_age": "December 27, 2023",
+        "class": "Academic medical center"
+      },
+      {
+        "rank": 3,
+        "url": "https://childmind.org/article/melatonin-for-kids-is-it-safe/",
+        "title": "Melatonin for Kids: Is It Safe? - Child Mind Institute",
+        "page_age": "August 28, 2026",
+        "class": "Health media & nonprofits"
+      },
+      {
+        "rank": 4,
+        "url": "https://aasm.org/rethinking-the-use-of-melatonin-as-a-sleep-aid-for-kids/",
+        "title": "Rethinking the use of melatonin as a sleep aid for kids",
+        "page_age": "September 16, 2024",
+        "class": "Professional society"
+      },
+      {
+        "rank": 5,
+        "url": "https://www.mayoclinichealthsystem.org/hometown-health/speaking-of-health/melatonin-use-in-children",
+        "title": "Melatonin use in children: Is a sleep aid supplement safe?",
+        "page_age": "March 21, 2024",
+        "class": "Academic medical center"
+      },
+      {
+        "rank": 6,
+        "url": "https://www.healthychildren.org/English/healthy-living/sleep/Pages/melatonin-and-childrens-sleep.aspx",
+        "title": "Melatonin for Kids: What Parents Should Know About This Sleep Aid - HealthyChildren.org",
+        "page_age": null,
+        "class": "Professional society"
+      },
+      {
+        "rank": 7,
+        "url": "https://www.health.harvard.edu/blog/new-advice-on-melatonin-use-in-children-202210062832",
+        "title": "New advice on melatonin use in children - Harvard Health",
+        "page_age": "October 6, 2022",
+        "class": "Academic medical center"
+      },
+      {
+        "rank": 8,
+        "url": "https://www.childrenscolorado.org/just-ask-childrens/articles/melatonin/",
+        "title": "Is Melatonin Safe for Kids? A Guide to Sleep, Side Effects ...",
+        "page_age": null,
+        "class": "Academic medical center"
+      },
+      {
+        "rank": 9,
+        "url": "https://clinicaltrials.gov/study/NCT05971212",
+        "title": "Sleep Support for Children With Neurodevelopmental Disorders",
+        "page_age": null,
+        "class": "Government / public health"
+      },
+      {
+        "rank": 10,
+        "url": "https://answers.childrenshospital.org/melatonin-for-children/",
+        "title": "Melatonin for kids: Is it effective? Is it safe? - Boston Children's Answers",
+        "page_age": "June 13, 2022",
+        "class": "Academic medical center"
+      }
+    ],
+    "cited": [
+      {
+        "n": 1,
+        "url": "https://childmind.org/article/melatonin-for-kids-is-it-safe/",
+        "title": "Melatonin for Kids: Is It Safe? - Child Mind Institute",
+        "class": "Health media & nonprofits"
+      },
+      {
+        "n": 2,
+        "url": "https://www.sleepfoundation.org/melatonin/melatonin-for-children",
+        "title": "Melatonin for Kids: An Overview",
+        "class": "Health media & nonprofits"
+      },
+      {
+        "n": 3,
+        "url": "https://www.uclahealth.org/news/article/what-know-about-using-melatonin-help-kids-sleep",
+        "title": "What to know about using melatonin to help kids sleep | UCLA Health",
+        "class": "Academic medical center"
+      },
+      {
+        "n": 4,
+        "url": "https://www.healthychildren.org/English/healthy-living/sleep/Pages/melatonin-and-childrens-sleep.aspx",
+        "title": "Melatonin for Kids: What Parents Should Know About This Sleep Aid - HealthyChildren.org",
+        "class": "Professional society"
+      }
+    ],
+    "claims": [
+      {
+        "text": "**Mixed evidence:** Research in children is limited, though studies of select groups show promising results [2] (Sleep Foundation). A UCLA Health sleep specialist says there is little evidence that supplements help kids fall asleep [3].",
+        "kind": "bullet",
+        "section": "Melatonin can help some children fall asleep, especially kids with autism or ADHD, but it doesn't help them stay asleep. [1] Evidence is limited, and experts generally treat it as a short-term aid, not a first-line fix.",
+        "source_ns": [
+          2,
+          3
+        ],
+        "verdict": "supported",
+        "verdict_reason": "Sleep Foundation says research in children is limited but studies of select groups are promising, and UCLA's Dr. Kashani notes little evidence that melatonin supplements help kids fall asleep."
+      },
+      {
+        "text": "**Best-supported uses:** Delayed sleep-wake phase disorder [1] (Child Mind Institute), and some neurodevelopmental disorders such as autism or ADHD [4] (HealthyChildren.org).",
+        "kind": "bullet",
+        "section": "Melatonin can help some children fall asleep, especially kids with autism or ADHD, but it doesn't help them stay asleep. [1] Evidence is limited, and experts generally treat it as a short-term aid, not a first-line fix.",
+        "source_ns": [
+          1,
+          4
+        ],
+        "verdict": "supported",
+        "verdict_reason": "Child Mind Institute says melatonin can help with delayed sleep-wake phase disorder, and HealthyChildren.org says it may help children with neurodevelopmental disorders such as autism or ADHD."
+      },
+      {
+        "text": "**Try habits first:** It isn't a sleeping pill and should be used only after talking with your pediatrician and establishing healthy sleep habits [4] (HealthyChildren.org).",
+        "kind": "bullet",
+        "section": "Melatonin can help some children fall asleep, especially kids with autism or ADHD, but it doesn't help them stay asleep. [1] Evidence is limited, and experts generally treat it as a short-term aid, not a first-line fix.",
+        "source_ns": [
+          4
+        ],
+        "verdict": "supported",
+        "verdict_reason": "HealthyChildren.org states melatonin is not a sleeping pill and should only be used after discussion with a pediatrician and preestablished (healthy sleep habits), though the excerpt is truncated."
+      },
+      {
+        "text": "**Dosing and quality:** Experts suggest starting low and going slow [1]. Supplements aren't tightly regulated, so contents may differ from the label. Look for the USP designation. [1]",
+        "kind": "bullet",
+        "section": "Melatonin can help some children fall asleep, especially kids with autism or ADHD, but it doesn't help them stay asleep. [1] Evidence is limited, and experts generally treat it as a short-term aid, not a first-line fix.",
+        "source_ns": [
+          1
+        ],
+        "verdict": "partially_supported",
+        "verdict_reason": "The source supports 'start low and go slow' and that contents may differ from the label, but the provided text does not mention the USP designation."
+      },
+      {
+        "text": "**Safety unknowns:** The FDA hasn't approved melatonin for kids' sleep disorders [2], and there is little long-term research in children [1]. Sleep Foundation says it's not recommended for kids younger than 5 [2].",
+        "kind": "bullet",
+        "section": "Melatonin can help some children fall asleep, especially kids with autism or ADHD, but it doesn't help them stay asleep. [1] Evidence is limited, and experts generally treat it as a short-term aid, not a first-line fix.",
+        "source_ns": [
+          1,
+          2
+        ],
+        "verdict": "supported",
+        "verdict_reason": "Sleep Foundation states the FDA has not approved melatonin for kids' sleep disorders and that it is not recommended under age 5, and Child Mind Institute notes little long-term research in children."
+      }
+    ],
+    "judge": {
+      "model": "claude-opus-5-5",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 2457,
+        "output_tokens": 779,
+        "output_tokens_details": {
+          "thinking_tokens": 352
+        },
+        "server_tool_use": null,
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "question_id": "Q1",
+    "replicate": 2,
+    "file": "data/comparators/Q1_melatonin_kids/ai_overview_model_run_2.json",
+    "retrieved": [
+      {
+        "rank": 1,
+        "url": "https://www.sleepfoundation.org/melatonin/melatonin-for-children",
+        "title": "Melatonin for Kids: An Overview",
+        "page_age": "March 31, 2026",
+        "class": "Health media & nonprofits"
+      },
+      {
+        "rank": 2,
+        "url": "https://www.uclahealth.org/news/article/what-know-about-using-melatonin-help-kids-sleep",
+        "title": "What to know about using melatonin to help kids sleep | UCLA Health",
+        "page_age": "December 27, 2023",
+        "class": "Academic medical center"
+      },
+      {
+        "rank": 3,
+        "url": "https://childmind.org/article/melatonin-for-kids-is-it-safe/",
+        "title": "Melatonin for Kids: Is It Safe? - Child Mind Institute",
+        "page_age": "August 28, 2026",
+        "class": "Health media & nonprofits"
+      },
+      {
+        "rank": 4,
+        "url": "https://aasm.org/rethinking-the-use-of-melatonin-as-a-sleep-aid-for-kids/",
+        "title": "Rethinking the use of melatonin as a sleep aid for kids",
+        "page_age": "September 16, 2024",
+        "class": "Professional society"
+      },
+      {
+        "rank": 5,
+        "url": "https://www.mayoclinichealthsystem.org/hometown-health/speaking-of-health/melatonin-use-in-children",
+        "title": "Melatonin use in children: Is a sleep aid supplement safe?",
+        "page_age": "March 21, 2024",
+        "class": "Academic medical center"
+      },
+      {
+        "rank": 6,
+        "url": "https://www.healthychildren.org/English/healthy-living/sleep/Pages/melatonin-and-childrens-sleep.aspx",
+        "title": "Melatonin for Kids: What Parents Should Know About This Sleep Aid - HealthyChildren.org",
+        "page_age": null,
+        "class": "Professional society"
+      },
+      {
+        "rank": 7,
+        "url": "https://www.health.harvard.edu/blog/new-advice-on-melatonin-use-in-children-202210062832",
+        "title": "New advice on melatonin use in children - Harvard Health",
+        "page_age": "October 6, 2022",
+        "class": "Academic medical center"
+      },
+      {
+        "rank": 8,
+        "url": "https://www.childrenscolorado.org/just-ask-childrens/articles/melatonin/",
+        "title": "Is Melatonin Safe for Kids? A Guide to Sleep, Side Effects ...",
+        "page_age": null,
+        "class": "Academic medical center"
+      },
+      {
+        "rank": 9,
+        "url": "https://clinicaltrials.gov/study/NCT05971212",
+        "title": "Sleep Support for Children With Neurodevelopmental Disorders",
+        "page_age": null,
+        "class": "Government / public health"
+      },
+      {
+        "rank": 10,
+        "url": "https://answers.childrenshospital.org/melatonin-for-children/",
+        "title": "Melatonin for kids: Is it effective? Is it safe? - Boston Children's Answers",
+        "page_age": "June 13, 2022",
+        "class": "Academic medical center"
+      }
+    ],
+    "cited": [
+      {
+        "n": 1,
+        "url": "https://childmind.org/article/melatonin-for-kids-is-it-safe/",
+        "title": "Melatonin for Kids: Is It Safe? - Child Mind Institute",
+        "class": "Health media & nonprofits"
+      },
+      {
+        "n": 2,
+        "url": "https://www.sleepfoundation.org/melatonin/melatonin-for-children",
+        "title": "Melatonin for Kids: An Overview",
+        "class": "Health media & nonprofits"
+      },
+      {
+        "n": 3,
+        "url": "https://www.uclahealth.org/news/article/what-know-about-using-melatonin-help-kids-sleep",
+        "title": "What to know about using melatonin to help kids sleep | UCLA Health",
+        "class": "Academic medical center"
+      },
+      {
+        "n": 4,
+        "url": "https://www.healthychildren.org/English/healthy-living/sleep/Pages/melatonin-and-childrens-sleep.aspx",
+        "title": "Melatonin for Kids: What Parents Should Know About This Sleep Aid - HealthyChildren.org",
+        "class": "Professional society"
+      },
+      {
+        "n": 5,
+        "url": "https://www.mayoclinichealthsystem.org/hometown-health/speaking-of-health/melatonin-use-in-children",
+        "title": "Melatonin use in children: Is a sleep aid supplement safe?",
+        "class": "Academic medical center"
+      }
+    ],
+    "claims": [
+      {
+        "text": "**Mixed evidence:** Sleep Foundation says research in children is limited, but studies of select groups show promising results. [2] A UCLA Health sleep specialist says there's little evidence that supplements help kids fall asleep. [3]",
+        "kind": "bullet",
+        "section": "Melatonin can help some children fall asleep, especially kids with autism or ADHD, but it doesn't help them stay asleep. [1] Experts see it as a short-term aid, not a first-line fix.",
+        "source_ns": [
+          2,
+          3
+        ],
+        "verdict": "supported",
+        "verdict_reason": "Source [2] says research in children is limited but studies of select groups are promising, and source [3] quotes a UCLA sleep specialist saying there's little evidence melatonin helps kids fall asleep."
+      },
+      {
+        "text": "**Best-supported uses:** Child Mind Institute says melatonin can help with circadian rhythm issues like delayed sleep-wake phase disorder. [1] HealthyChildren.org says it may help some older children and teens reset sleep schedules. [4]",
+        "kind": "bullet",
+        "section": "Melatonin can help some children fall asleep, especially kids with autism or ADHD, but it doesn't help them stay asleep. [1] Experts see it as a short-term aid, not a first-line fix.",
+        "source_ns": [
+          1,
+          4
+        ],
+        "verdict": "supported",
+        "verdict_reason": "Source [1] says melatonin can help with circadian rhythm issues like delayed sleep-wake phase disorder, and source [4] says it may help some older children and teens reset sleep schedules."
+      },
+      {
+        "text": "**Not a sleeping pill:** HealthyChildren.org says to use it only after talking with your pediatrician and establishing healthy sleep habits. [4] Mayo Clinic suggests a consistent nighttime routine [5] and stopping screens 30–60 minutes before bed. [5]",
+        "kind": "bullet",
+        "section": "Melatonin can help some children fall asleep, especially kids with autism or ADHD, but it doesn't help them stay asleep. [1] Experts see it as a short-term aid, not a first-line fix.",
+        "source_ns": [
+          4,
+          5
+        ],
+        "verdict": "supported",
+        "verdict_reason": "Source [4] says to use melatonin only after talking with a pediatrician and establishing healthy sleep habits, and source [5] recommends a consistent nighttime routine and stopping screens 30 minutes to an hour before bed."
+      },
+      {
+        "text": "**Dosing:** Child Mind Institute says to \"start low and go slow.\" [1] It reports that more than 5 mg isn't much more effective and is more likely to cause side effects. [1]",
+        "kind": "bullet",
+        "section": "Melatonin can help some children fall asleep, especially kids with autism or ADHD, but it doesn't help them stay asleep. [1] Experts see it as a short-term aid, not a first-line fix.",
+        "source_ns": [
+          1
+        ],
+        "verdict": "supported",
+        "verdict_reason": "Source [1] says 'start low and go slow' and that more than 5 mg isn't much more effective and is more likely to cause side effects."
+      },
+      {
+        "text": "**Safety and quality:** The FDA has not approved melatonin for kids for sleep disorders. [2] Also, products may contain much more or less melatonin than labeled. Look for a USP designation. [1] Long-term safety data are limited.",
+        "kind": "bullet",
+        "section": "Melatonin can help some children fall asleep, especially kids with autism or ADHD, but it doesn't help them stay asleep. [1] Experts see it as a short-term aid, not a first-line fix.",
+        "source_ns": [
+          1,
+          2
+        ],
+        "verdict": "partially_supported",
+        "verdict_reason": "The FDA non-approval and label-inaccuracy points are supported, but the provided text of [1] is truncated before any USP recommendation, and the claim about limited long-term safety data appears in neither source."
+      }
+    ],
+    "judge": {
+      "model": "claude-opus-5-5",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 2511,
+        "output_tokens": 562,
+        "output_tokens_details": {
+          "thinking_tokens": 126
+        },
+        "server_tool_use": null,
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "question_id": "Q1",
+    "replicate": 3,
+    "file": "data/comparators/Q1_melatonin_kids/ai_overview_model_run_3.json",
+    "retrieved": [
+      {
+        "rank": 1,
+        "url": "https://www.sleepfoundation.org/melatonin/melatonin-for-children",
+        "title": "Melatonin for Kids: An Overview",
+        "page_age": "March 31, 2026",
+        "class": "Health media & nonprofits"
+      },
+      {
+        "rank": 2,
+        "url": "https://www.uclahealth.org/news/article/what-know-about-using-melatonin-help-kids-sleep",
+        "title": "What to know about using melatonin to help kids sleep | UCLA Health",
+        "page_age": "December 27, 2023",
+        "class": "Academic medical center"
+      },
+      {
+        "rank": 3,
+        "url": "https://childmind.org/article/melatonin-for-kids-is-it-safe/",
+        "title": "Melatonin for Kids: Is It Safe? - Child Mind Institute",
+        "page_age": "August 28, 2026",
+        "class": "Health media & nonprofits"
+      },
+      {
+        "rank": 4,
+        "url": "https://aasm.org/rethinking-the-use-of-melatonin-as-a-sleep-aid-for-kids/",
+        "title": "Rethinking the use of melatonin as a sleep aid for kids",
+        "page_age": "September 16, 2024",
+        "class": "Professional society"
+      },
+      {
+        "rank": 5,
+        "url": "https://www.mayoclinichealthsystem.org/hometown-health/speaking-of-health/melatonin-use-in-children",
+        "title": "Melatonin use in children: Is a sleep aid supplement safe?",
+        "page_age": "March 21, 2024",
+        "class": "Academic medical center"
+      },
+      {
+        "rank": 6,
+        "url": "https://www.healthychildren.org/English/healthy-living/sleep/Pages/melatonin-and-childrens-sleep.aspx",
+        "title": "Melatonin for Kids: What Parents Should Know About This Sleep Aid - HealthyChildren.org",
+        "page_age": null,
+        "class": "Professional society"
+      },
+      {
+        "rank": 7,
+        "url": "https://www.health.harvard.edu/blog/new-advice-on-melatonin-use-in-children-202210062832",
+        "title": "New advice on melatonin use in children - Harvard Health",
+        "page_age": "October 6, 2022",
+        "class": "Academic medical center"
+      },
+      {
+        "rank": 8,
+        "url": "https://www.childrenscolorado.org/just-ask-childrens/articles/melatonin/",
+        "title": "Is Melatonin Safe for Kids? A Guide to Sleep, Side Effects ...",
+        "page_age": null,
+        "class": "Academic medical center"
+      },
+      {
+        "rank": 9,
+        "url": "https://clinicaltrials.gov/study/NCT05971212",
+        "title": "Sleep Support for Children With Neurodevelopmental Disorders",
+        "page_age": null,
+        "class": "Government / public health"
+      },
+      {
+        "rank": 10,
+        "url": "https://answers.childrenshospital.org/melatonin-for-children/",
+        "title": "Melatonin for kids: Is it effective? Is it safe? - Boston Children's Answers",
+        "page_age": "June 13, 2022",
+        "class": "Academic medical center"
+      }
+    ],
+    "cited": [
+      {
+        "n": 1,
+        "url": "https://childmind.org/article/melatonin-for-kids-is-it-safe/",
+        "title": "Melatonin for Kids: Is It Safe? - Child Mind Institute",
+        "class": "Health media & nonprofits"
+      },
+      {
+        "n": 2,
+        "url": "https://www.sleepfoundation.org/melatonin/melatonin-for-children",
+        "title": "Melatonin for Kids: An Overview",
+        "class": "Health media & nonprofits"
+      },
+      {
+        "n": 3,
+        "url": "https://www.uclahealth.org/news/article/what-know-about-using-melatonin-help-kids-sleep",
+        "title": "What to know about using melatonin to help kids sleep | UCLA Health",
+        "class": "Academic medical center"
+      },
+      {
+        "n": 4,
+        "url": "https://www.healthychildren.org/English/healthy-living/sleep/Pages/melatonin-and-childrens-sleep.aspx",
+        "title": "Melatonin for Kids: What Parents Should Know About This Sleep Aid - HealthyChildren.org",
+        "class": "Professional society"
+      }
+    ],
+    "claims": [
+      {
+        "text": "**Mixed evidence:** Sleep Foundation calls it a possible short-term strategy, though research in children is limited. [2] UCLA Health's sleep specialist says there is little evidence that it helps kids fall asleep. [3]",
+        "kind": "bullet",
+        "section": "Melatonin can help some children fall asleep, especially kids with autism or ADHD, but it doesn't help them stay asleep. [1] Evidence is mixed, and experts advise using it only short-term.",
+        "source_ns": [
+          2,
+          3
+        ],
+        "verdict": "supported",
+        "verdict_reason": "Sleep Foundation calls melatonin a possible short-term strategy and notes that research in children is limited, and UCLA's Dr. Kashani says there is little evidence it helps kids fall asleep."
+      },
+      {
+        "text": "**Best-supported uses:** Child Mind Institute says it can help with circadian rhythm issues such as delayed sleep-wake phase disorder. [1] HealthyChildren.org (AAP) adds that it may help some older children and teens reset sleep schedules. [4]",
+        "kind": "bullet",
+        "section": "Melatonin can help some children fall asleep, especially kids with autism or ADHD, but it doesn't help them stay asleep. [1] Evidence is mixed, and experts advise using it only short-term.",
+        "source_ns": [
+          1,
+          4
+        ],
+        "verdict": "supported",
+        "verdict_reason": "Child Mind Institute says melatonin can help with circadian rhythm issues like delayed sleep-wake phase disorder, and HealthyChildren.org says it may help some older children and teens reset sleep schedules."
+      },
+      {
+        "text": "**Not a first step:** HealthyChildren.org says it is not a sleeping pill. It should be used only after talking with your pediatrician and setting healthy sleep habits. [4]",
+        "kind": "bullet",
+        "section": "Melatonin can help some children fall asleep, especially kids with autism or ADHD, but it doesn't help them stay asleep. [1] Evidence is mixed, and experts advise using it only short-term.",
+        "source_ns": [
+          4
+        ],
+        "verdict": "supported",
+        "verdict_reason": "HealthyChildren.org states melatonin is NOT a sleeping pill and should only be used after a discussion with a pediatrician and pre-established habits, though the habits wording is truncated in the excerpt."
+      },
+      {
+        "text": "**Dosing:** Child Mind Institute says to start low and go slow. [1]",
+        "kind": "bullet",
+        "section": "Melatonin can help some children fall asleep, especially kids with autism or ADHD, but it doesn't help them stay asleep. [1] Evidence is mixed, and experts advise using it only short-term.",
+        "source_ns": [
+          1
+        ],
+        "verdict": "supported",
+        "verdict_reason": "Child Mind Institute states that experts agree to start low and go slow."
+      },
+      {
+        "text": "**Safety:** Short-term risk appears low, but long-term data in children is scarce. [1] Supplements aren't tightly regulated, so actual melatonin content may differ from the label. [1]",
+        "kind": "bullet",
+        "section": "Melatonin can help some children fall asleep, especially kids with autism or ADHD, but it doesn't help them stay asleep. [1] Evidence is mixed, and experts advise using it only short-term.",
+        "source_ns": [
+          1
+        ],
+        "verdict": "supported",
+        "verdict_reason": "Child Mind Institute says melatonin appears relatively low risk short-term with little long-term research in children, and that loosely regulated products may contain more or less than labeled."
+      },
+      {
+        "text": "**Age:** Sleep Foundation says it isn't recommended for kids under 5. [2]",
+        "kind": "bullet",
+        "section": "Melatonin can help some children fall asleep, especially kids with autism or ADHD, but it doesn't help them stay asleep. [1] Evidence is mixed, and experts advise using it only short-term.",
+        "source_ns": [
+          2
+        ],
+        "verdict": "supported",
+        "verdict_reason": "Sleep Foundation states melatonin is not recommended for kids younger than 5 years old."
+      }
+    ],
+    "judge": {
+      "model": "claude-opus-5-5",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 2388,
+        "output_tokens": 668,
+        "output_tokens_details": {
+          "thinking_tokens": 211
+        },
+        "server_tool_use": null,
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "question_id": "Q2",
+    "replicate": 1,
+    "file": "data/comparators/Q2_ozempic_safety/ai_overview_model_run_1.json",
+    "retrieved": [
+      {
+        "rank": 1,
+        "url": "https://resources.healthgrades.com/drugs/drugs-is-ozempic-safe",
+        "title": "Is Ozempic Safe? Here’s What to Know",
+        "page_age": "July 17, 2025",
+        "class": "News & other"
+      },
+      {
+        "rank": 2,
+        "url": "https://integrishealth.org/resources/on-your-health/2024/june/is-ozempic-safe-for-weight-loss",
+        "title": "Is Ozempic Safe for Weight Loss? | INTEGRIS Health",
+        "page_age": null,
+        "class": "News & other"
+      },
+      {
+        "rank": 3,
+        "url": "https://www.today.com/health/diet-fitness/is-ozempic-safe-rcna183494",
+        "title": "Is Ozempic Safe For Weight Loss? Doctors Share Benefits And Risks",
+        "page_age": "December 19, 2025",
+        "class": "News & other"
+      },
+      {
+        "rank": 4,
+        "url": "https://www.goodrx.com/ozempic/ozempic-for-weight-loss",
+        "title": "Ozempic for Weight Loss: Does It Work, and Is It Safe? - GoodRx",
+        "page_age": "1 month ago",
+        "class": "Health media & nonprofits"
+      },
+      {
+        "rank": 5,
+        "url": "https://www.poison.org/articles/can-ozempic-help-me-lose-weight",
+        "title": "Is Ozempic safe? | Poison Control",
+        "page_age": null,
+        "class": "News & other"
+      },
+      {
+        "rank": 6,
+        "url": "https://withinhealth.com/learn/articles/semaglutide-ozempic-weight-loss-risks",
+        "title": "Dangers of Taking Ozempic for Weight Loss | What You Need to Know",
+        "page_age": "July 10, 2026",
+        "class": "Health media & nonprofits"
+      },
+      {
+        "rank": 7,
+        "url": "https://www.ozempic.com/",
+        "title": "Ozempic® (semaglutide) GLP-1 RA for Type 2 Diabetes",
+        "page_age": "4 days ago",
+        "class": "Commercial / retail"
+      },
+      {
+        "rank": 8,
+        "url": "https://health.usnews.com/wellness/articles/is-ozempic-safe-and-effective-for-weight-loss",
+        "title": "Ozempic for Weight Loss & Diabetes: Doses, Side Effects & Cost | U.S. News",
+        "page_age": "March 27, 2026",
+        "class": "News & other"
+      },
+      {
+        "rank": 9,
+        "url": "https://www.forbes.com/health/weight-loss/ozempic-for-weight-loss/",
+        "title": "Ozempic For Weight Loss: Is It Safe And What Do Experts Say?",
+        "page_age": "August 3, 2026",
+        "class": "News & other"
+      }
+    ],
+    "cited": [
+      {
+        "n": 1,
+        "url": "https://health.usnews.com/wellness/articles/is-ozempic-safe-and-effective-for-weight-loss",
+        "title": "Ozempic for Weight Loss & Diabetes: Doses, Side Effects & Cost | U.S. News",
+        "class": "News & other"
+      },
+      {
+        "n": 2,
+        "url": "https://integrishealth.org/resources/on-your-health/2024/june/is-ozempic-safe-for-weight-loss",
+        "title": "Is Ozempic Safe for Weight Loss? | INTEGRIS Health",
+        "class": "News & other"
+      },
+      {
+        "n": 3,
+        "url": "https://resources.healthgrades.com/drugs/drugs-is-ozempic-safe",
+        "title": "Is Ozempic Safe? Here’s What to Know",
+        "class": "News & other"
+      },
+      {
+        "n": 4,
+        "url": "https://www.goodrx.com/ozempic/ozempic-for-weight-loss",
+        "title": "Ozempic for Weight Loss: Does It Work, and Is It Safe? - GoodRx",
+        "class": "Health media & nonprofits"
+      },
+      {
+        "n": 5,
+        "url": "https://www.forbes.com/health/weight-loss/ozempic-for-weight-loss/",
+        "title": "Ozempic For Weight Loss: Is It Safe And What Do Experts Say?",
+        "class": "News & other"
+      },
+      {
+        "n": 6,
+        "url": "https://www.today.com/health/diet-fitness/is-ozempic-safe-rcna183494",
+        "title": "Is Ozempic Safe For Weight Loss? Doctors Share Benefits And Risks",
+        "class": "News & other"
+      }
+    ],
+    "claims": [
+      {
+        "text": "**Approved use:** Ozempic has been clinically shown to lower A1C in people with type 2 diabetes and is generally considered safe under proper supervision [2] (INTEGRIS Health).",
+        "kind": "bullet",
+        "section": "Ozempic can be safe for some people when a health care provider prescribes and monitors it, but it isn't appropriate for everyone. [1] Whether it's safe for you depends on your medical history.",
+        "source_ns": [
+          2
+        ],
+        "verdict": "supported",
+        "verdict_reason": "The source states nearly verbatim that Ozempic has been clinically shown to lower A1C in type 2 diabetes and is generally considered safe under proper supervision."
+      },
+      {
+        "text": "**Common side effects:** These are mostly digestive, such as nausea, diarrhea and constipation. They often improve as the body adjusts to the dose [1] (U.S. News).",
+        "kind": "bullet",
+        "section": "Ozempic can be safe for some people when a health care provider prescribes and monitors it, but it isn't appropriate for everyone. [1] Whether it's safe for you depends on your medical history.",
+        "source_ns": [
+          1
+        ],
+        "verdict": "supported",
+        "verdict_reason": "The source says common side effects are gastrointestinal (nausea, diarrhea, constipation) and often improve as the body adjusts."
+      },
+      {
+        "text": "**Boxed warning:** Ozempic has a boxed warning about thyroid cancer risk. [3] Doctors typically won't prescribe it to people with a personal or family history of medullary thyroid cancer, or with MEN 2 [3] (Healthgrades).",
+        "kind": "bullet",
+        "section": "Ozempic can be safe for some people when a health care provider prescribes and monitors it, but it isn't appropriate for everyone. [1] Whether it's safe for you depends on your medical history.",
+        "source_ns": [
+          3
+        ],
+        "verdict": "partially_supported",
+        "verdict_reason": "The source confirms the boxed warning and that doctors avoid prescribing to people with thyroid cancer risk factors, but the visible text is cut off at 'a persona...' and never names medullary thyroid cancer or MEN 2."
+      },
+      {
+        "text": "**Weight loss:** Ozempic isn't FDA approved for weight loss [4]. Wegovy, a higher-dose version, is approved for weight loss [4] (GoodRx). Weight may return after you stop the drug. [4]",
+        "kind": "bullet",
+        "section": "Ozempic can be safe for some people when a health care provider prescribes and monitors it, but it isn't appropriate for everyone. [1] Whether it's safe for you depends on your medical history.",
+        "source_ns": [
+          4
+        ],
+        "verdict": "supported",
+        "verdict_reason": "The source states Ozempic isn't FDA approved for weight loss, Wegovy is a higher-dose version approved for weight loss, and rebound weight gain is possible after stopping."
+      },
+      {
+        "text": "**Children:** No research shows whether Ozempic is safe or effective for children [5] (Forbes).",
+        "kind": "bullet",
+        "section": "Ozempic can be safe for some people when a health care provider prescribes and monitors it, but it isn't appropriate for everyone. [1] Whether it's safe for you depends on your medical history.",
+        "source_ns": [
+          5
+        ],
+        "verdict": "supported",
+        "verdict_reason": "The source states that no research indicates whether Ozempic is safe or effective for children."
+      },
+      {
+        "text": "**Long-term use:** A large study in Nature Medicine linked GLP-1 drugs to an 11% higher arthritis risk [6] (TODAY).",
+        "kind": "bullet",
+        "section": "Ozempic can be safe for some people when a health care provider prescribes and monitors it, but it isn't appropriate for everyone. [1] Whether it's safe for you depends on your medical history.",
+        "source_ns": [
+          6
+        ],
+        "verdict": "supported",
+        "verdict_reason": "The source reports that a large Nature Medicine study associated GLP-1 drug use with an 11% increase in arthritis risk."
+      }
+    ],
+    "judge": {
+      "model": "claude-opus-5-5",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 1721,
+        "output_tokens": 704,
+        "output_tokens_details": {
+          "thinking_tokens": 257
+        },
+        "server_tool_use": null,
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "question_id": "Q3",
+    "replicate": 1,
+    "file": "data/comparators/Q3_vitamin_d_colds/ai_overview_model_run_1.json",
+    "retrieved": [
+      {
+        "rank": 1,
+        "url": "https://www.goodrx.com/conditions/vitamin-d-deficiency/vitamin-d-and-colds",
+        "title": "Does Vitamin D Work for Colds? - GoodRx",
+        "page_age": "December 12, 2025",
+        "class": "Health media & nonprofits"
+      },
+      {
+        "rank": 2,
+        "url": "https://www.uclahealth.org/news/article/ask-the-doctors-can-vitamin-d-protect-against-colds-and-flu",
+        "title": "Ask the Doctors - Can vitamin D protect against colds and flu? | UCLA Health",
+        "page_age": "August 7, 2018",
+        "class": "Academic medical center"
+      },
+      {
+        "rank": 3,
+        "url": "https://theconversation.com/vitamin-d-supplements-may-reduce-the-duration-of-the-common-cold-172433",
+        "title": "Vitamin D supplements may reduce the duration of the common cold",
+        "page_age": "March 20, 2026",
+        "class": "Health media & nonprofits"
+      },
+      {
+        "rank": 4,
+        "url": "https://news.harvard.edu/gazette/story/2017/02/study-confirms-vitamin-d-protects-against-cold-and-flu/",
+        "title": "Study confirms vitamin D protects against colds and flu — Harvard Gazette",
+        "page_age": "February 22, 2017",
+        "class": "Academic medical center"
+      },
+      {
+        "rank": 5,
+        "url": "https://www.pharmacytimes.com/view/vitamin-d-helps-the-immune-system-during-cold-and-flu-season",
+        "title": "Vitamin D Helps the Immune System During Cold and Flu Season | Pharmacy Times",
+        "page_age": "May 13, 2026",
+        "class": "News & other"
+      },
+      {
+        "rank": 6,
+        "url": "https://hms.harvard.edu/news/vitamin-d-does-not-prevent-colds-or-infections-study-finds",
+        "title": "vitamin d does not prevent colds or infections study finds",
+        "page_age": null,
+        "class": "Academic medical center"
+      },
+      {
+        "rank": 7,
+        "url": "https://www.foxnews.com/health/vitamin-d-doesnt-fight-off-colds.print",
+        "title": "Print Print    Close Close",
+        "page_age": null,
+        "class": "News & other"
+      },
+      {
+        "rank": 8,
+        "url": "https://www.npr.org/sections/health-shots/2012/10/02/162181151/vitamin-d-no-help-for-colds",
+        "title": "vitamin d no help for colds",
+        "page_age": null,
+        "class": "News & other"
+      },
+      {
+        "rank": 9,
+        "url": "https://www.nbcnews.com/health/health-news/vitamin-d-doesnt-actually-fight-colds-study-says-flna6240846",
+        "title": "Vitamin D doesn't actually fight off colds, study says",
+        "page_age": null,
+        "class": "News & other"
+      }
+    ],
+    "cited": [
+      {
+        "n": 1,
+        "url": "https://www.goodrx.com/conditions/vitamin-d-deficiency/vitamin-d-and-colds",
+        "title": "Does Vitamin D Work for Colds? - GoodRx",
+        "class": "Health media & nonprofits"
+      },
+      {
+        "n": 2,
+        "url": "https://www.uclahealth.org/news/article/ask-the-doctors-can-vitamin-d-protect-against-colds-and-flu",
+        "title": "Ask the Doctors - Can vitamin D protect against colds and flu? | UCLA Health",
+        "class": "Academic medical center"
+      },
+      {
+        "n": 3,
+        "url": "https://news.harvard.edu/gazette/story/2017/02/study-confirms-vitamin-d-protects-against-cold-and-flu/",
+        "title": "Study confirms vitamin D protects against colds and flu — Harvard Gazette",
+        "class": "Academic medical center"
+      },
+      {
+        "n": 4,
+        "url": "https://www.nbcnews.com/health/health-news/vitamin-d-doesnt-actually-fight-colds-study-says-flna6240846",
+        "title": "Vitamin D doesn't actually fight off colds, study says",
+        "class": "News & other"
+      }
+    ],
+    "claims": [
+      {
+        "text": "**Low levels:** UCLA Health says vitamin D seems to reduce colds and flu in people with very low levels. It says most of the population doesn't have levels that low. [2]",
+        "kind": "bullet",
+        "section": "For most people, vitamin D doesn't directly lower the chance of catching a cold. [1] It may help people who are deficient.",
+        "source_ns": [
+          2
+        ],
+        "verdict": "supported",
+        "verdict_reason": "The source says vitamin D seems to decrease colds and flu in people with exceedingly low levels, a level it describes as not commonly seen, which matches the claim."
+      },
+      {
+        "text": "**Meta-analysis:** A BMJ meta-analysis covered 25 randomized trials with more than 11,000 participants. [3] According to the Harvard Gazette, daily or weekly doses helped most in people with severe deficiency, and all participants saw some benefit. [3]",
+        "kind": "bullet",
+        "section": "For most people, vitamin D doesn't directly lower the chance of catching a cold. [1] It may help people who are deficient.",
+        "source_ns": [
+          3
+        ],
+        "verdict": "partially_supported",
+        "verdict_reason": "The source confirms 25 RCTs with over 11,000 participants and the greatest benefit in the most deficient, but nothing provided states that all participants saw some benefit."
+      },
+      {
+        "text": "**Dosing:** Occasional high doses did not produce significant benefits [3] (Harvard Gazette).",
+        "kind": "bullet",
+        "section": "For most people, vitamin D doesn't directly lower the chance of catching a cold. [1] It may help people who are deficient.",
+        "source_ns": [
+          3
+        ],
+        "verdict": "supported",
+        "verdict_reason": "The source states that administering occasional high doses of vitamin D did not produce significant benefits."
+      },
+      {
+        "text": "**Normal levels:** In a New Zealand trial, people taking high monthly doses were as likely to catch colds as those on placebo. [4] NBC News notes that even the placebo group had sufficient vitamin D. [4]",
+        "kind": "bullet",
+        "section": "For most people, vitamin D doesn't directly lower the chance of catching a cold. [1] It may help people who are deficient.",
+        "source_ns": [
+          4
+        ],
+        "verdict": "partially_supported",
+        "verdict_reason": "The source supports equal cold rates with high monthly doses and sufficient levels in the placebo group, but it does not identify the trial as taking place in New Zealand."
+      },
+      {
+        "text": "**Mixed evidence:** GoodRx says some reviews found that people with normal levels may get slightly fewer colds. [1]",
+        "kind": "bullet",
+        "section": "For most people, vitamin D doesn't directly lower the chance of catching a cold. [1] It may help people who are deficient.",
+        "source_ns": [
+          1
+        ],
+        "verdict": "supported",
+        "verdict_reason": "GoodRx states that some reviews show vitamin D taken with already normal levels may reduce the number of colds, but only slightly."
+      }
+    ],
+    "judge": {
+      "model": "claude-opus-5-5",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 1665,
+        "output_tokens": 591,
+        "output_tokens_details": {
+          "thinking_tokens": 234
+        },
+        "server_tool_use": null,
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "question_id": "Q4",
+    "replicate": 1,
+    "file": "data/comparators/Q4_intermittent_fasting/ai_overview_model_run_1.json",
+    "retrieved": [
+      {
+        "rank": 1,
+        "url": "https://theconversation.com/intermittent-fasting-is-no-better-than-conventional-dieting-for-weight-loss-new-study-finds-107829",
+        "title": "Intermittent fasting is no better than conventional dieting for weight loss, new study finds",
+        "page_age": "March 31, 2025",
+        "class": "Health media & nonprofits"
+      },
+      {
+        "rank": 2,
+        "url": "https://today.uic.edu/research-review-shows-intermittent-fasting-works-for-weight-loss-health-changes/",
+        "title": "Research review shows intermittent fasting works for weight loss, health changes | UIC today",
+        "page_age": null,
+        "class": "Academic medical center"
+      },
+      {
+        "rank": 3,
+        "url": "https://www.rutgers.edu/news/researchers-find-intermittent-fasting-no-better-or-worse-conventional-dieting",
+        "title": "Researchers Find Intermittent Fasting Is No Better, or Worse, Than Conventional Dieting | Rutgers University",
+        "page_age": "February 19, 2026",
+        "class": "Academic medical center"
+      },
+      {
+        "rank": 4,
+        "url": "https://www.medicalnewstoday.com/articles/43-intermittent-fasting-better-for-weight-loss-than-cutting-calories",
+        "title": "Weight loss: Intermittent fasting may be more efficient than dieting",
+        "page_age": "June 24, 2025",
+        "class": "Health media & nonprofits"
+      },
+      {
+        "rank": 5,
+        "url": "https://www.utoronto.ca/news/intermittent-fasting-effective-weight-loss-traditional-dieting-study",
+        "title": "Intermittent fasting as effective for weight loss as traditional dieting: Study | University of Toronto",
+        "page_age": "July 10, 2025",
+        "class": "News & other"
+      },
+      {
+        "rank": 6,
+        "url": "https://bmjgroup.com/intermittent-fasting-comparable-to-traditional-diets-for-weight-loss/",
+        "title": "Intermittent fasting comparable to traditional diets for weight loss - BMJ Group",
+        "page_age": "June 19, 2025",
+        "class": "News & other"
+      },
+      {
+        "rank": 7,
+        "url": "https://www.mayoclinichealthsystem.org/hometown-health/speaking-of-health/intermittent-fasting-fad-or-solution",
+        "title": "Intermittent fasting for weight loss - Mayo Clinic Health System",
+        "page_age": "February 24, 2023",
+        "class": "Academic medical center"
+      },
+      {
+        "rank": 8,
+        "url": "https://ahs.uic.edu/news-stories/research-review-shows-intermittent-fasting-works-for-weight-loss-health-changes/",
+        "title": "Your browser is unsupported",
+        "page_age": null,
+        "class": "Academic medical center"
+      },
+      {
+        "rank": 9,
+        "url": "https://huggingface.co/spaces/shivanis14/ConsumeWise/raw/main/docs/articles/article1009.txt",
+        "title": "huggingface.co",
+        "page_age": null,
+        "class": "News & other"
+      }
+    ],
+    "cited": [
+      {
+        "n": 1,
+        "url": "https://www.rutgers.edu/news/researchers-find-intermittent-fasting-no-better-or-worse-conventional-dieting",
+        "title": "Researchers Find Intermittent Fasting Is No Better, or Worse, Than Conventional Dieting | Rutgers University",
+        "class": "Academic medical center"
+      },
+      {
+        "n": 2,
+        "url": "https://www.utoronto.ca/news/intermittent-fasting-effective-weight-loss-traditional-dieting-study",
+        "title": "Intermittent fasting as effective for weight loss as traditional dieting: Study | University of Toronto",
+        "class": "News & other"
+      },
+      {
+        "n": 3,
+        "url": "https://theconversation.com/intermittent-fasting-is-no-better-than-conventional-dieting-for-weight-loss-new-study-finds-107829",
+        "title": "Intermittent fasting is no better than conventional dieting for weight loss, new study finds",
+        "class": "Health media & nonprofits"
+      },
+      {
+        "n": 4,
+        "url": "https://www.medicalnewstoday.com/articles/43-intermittent-fasting-better-for-weight-loss-than-cutting-calories",
+        "title": "Weight loss: Intermittent fasting may be more efficient than dieting",
+        "class": "Health media & nonprofits"
+      },
+      {
+        "n": 5,
+        "url": "https://bmjgroup.com/intermittent-fasting-comparable-to-traditional-diets-for-weight-loss/",
+        "title": "Intermittent fasting comparable to traditional diets for weight loss - BMJ Group",
+        "class": "News & other"
+      },
+      {
+        "n": 6,
+        "url": "https://www.mayoclinichealthsystem.org/hometown-health/speaking-of-health/intermittent-fasting-fad-or-solution",
+        "title": "Intermittent fasting for weight loss - Mayo Clinic Health System",
+        "class": "Academic medical center"
+      }
+    ],
+    "claims": [
+      {
+        "text": "**Cochrane review (via Rutgers):** Across 21 studies with 1,430 people, the weight-loss difference between the two approaches was 0.33 percentage points of body weight. [1]",
+        "kind": "bullet",
+        "section": "Intermittent fasting produces nearly identical weight loss to conventional diets like calorie counting. [1] Most evidence suggests it isn't better, but it isn't worse either.",
+        "source_ns": [
+          1
+        ],
+        "verdict": "partially_supported",
+        "verdict_reason": "The source confirms 21 studies with 1,430 people and nearly identical weight loss, but the excerpt is cut off before any figure, so the specific 0.33 percentage point difference cannot be verified."
+      },
+      {
+        "text": "**BMJ review (via University of Toronto):** People on either diet lost an average of 1.7 to 2.5 kg more than people who ate without restrictions. [2] Alternate-day fasting showed the greatest short-term benefit, but longer studies are needed. [2]",
+        "kind": "bullet",
+        "section": "Intermittent fasting produces nearly identical weight loss to conventional diets like calorie counting. [1] Most evidence suggests it isn't better, but it isn't worse either.",
+        "source_ns": [
+          2
+        ],
+        "verdict": "partially_supported",
+        "verdict_reason": "The source supports alternate-day fasting offering the greatest short-term benefit, but the 1.7 to 2.5 kg figure versus unrestricted eating and the call for longer studies do not appear in the provided text."
+      },
+      {
+        "text": "**Calories are what count:** The Conversation explains that to lose weight, you must reduce your total calorie intake, whatever method you use. [3] One trial found a trend toward greater weight regain (about 2 kg) in the fasting group between weeks 24 and 50. [3]",
+        "kind": "bullet",
+        "section": "Intermittent fasting produces nearly identical weight loss to conventional diets like calorie counting. [1] Most evidence suggests it isn't better, but it isn't worse either.",
+        "source_ns": [
+          3
+        ],
+        "verdict": "partially_supported",
+        "verdict_reason": "The source supports the calorie-reduction principle and about 2 kg of greater regain in the fasting group, but the text is truncated before the 'weeks 24 and 50' timeframe, so that detail cannot be verified."
+      },
+      {
+        "text": "**Some studies differ:** Medical News Today reports that one study found 4:3 intermittent fasting may lower weight more over 12 months than daily calorie restriction. [4] However, many of the cardiometabolic estimates lacked precision and were inconclusive. [4]",
+        "kind": "bullet",
+        "section": "Intermittent fasting produces nearly identical weight loss to conventional diets like calorie counting. [1] Most evidence suggests it isn't better, but it isn't worse either.",
+        "source_ns": [
+          4
+        ],
+        "verdict": "supported",
+        "verdict_reason": "The source states that 4:3 intermittent fasting may be more effective at lowering weight over 12 months than daily calorie restriction, and that many cardiometabolic estimates lacked precision and were inconclusive."
+      },
+      {
+        "text": "**Limits of the evidence:** Limitations include small sample sizes and low to moderate certainty of evidence for most outcomes. [5] Mayo Clinic notes that little long-term research has been done. [6]",
+        "kind": "bullet",
+        "section": "Intermittent fasting produces nearly identical weight loss to conventional diets like calorie counting. [1] Most evidence suggests it isn't better, but it isn't worse either.",
+        "source_ns": [
+          5,
+          6
+        ],
+        "verdict": "partially_supported",
+        "verdict_reason": "Small sample sizes and Mayo Clinic's note on limited long-term research are supported, but 'low to moderate certainty of evidence for most outcomes' does not appear in the truncated BMJ text."
+      }
+    ],
+    "judge": {
+      "model": "claude-opus-5-5",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 1831,
+        "output_tokens": 860,
+        "output_tokens_details": {
+          "thinking_tokens": 384
+        },
+        "server_tool_use": null,
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "question_id": "Q5",
+    "replicate": 1,
+    "file": "data/comparators/Q5_probiotics_antibiotics/ai_overview_model_run_1.json",
+    "retrieved": [
+      {
+        "rank": 1,
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9437377/",
+        "title": "Do Probiotics Prevent Clostridium difficile-Associated Diarrhea?",
+        "page_age": null,
+        "class": "Peer-reviewed literature"
+      },
+      {
+        "rank": 2,
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5745464/",
+        "title": "Probiotics for the Prevention of Antibiotic-Associated Diarrhea in Outpatients—A Systematic Review and Meta-Analysis",
+        "page_age": null,
+        "class": "Peer-reviewed literature"
+      },
+      {
+        "rank": 3,
+        "url": "https://ubiehealth.com/doctors-note/probiotics-antibiotic-side-effects-10-wk3-exp3",
+        "title": "Can probiotics prevent antibiotic side effects? | Ubie Doctor's Note",
+        "page_age": "November 7, 2025",
+        "class": "Health media & nonprofits"
+      },
+      {
+        "rank": 4,
+        "url": "https://www.cochrane.org/evidence/CD004827_probiotics-prevention-antibiotic-associated-diarrhea-children",
+        "title": "Probiotics for the prevention of antibiotic-associated diarrhea in children | Cochrane",
+        "page_age": "June 19, 2025",
+        "class": "News & other"
+      },
+      {
+        "rank": 5,
+        "url": "https://www.aafp.org/pubs/afp/issues/2021/1200/od1.html",
+        "title": "Probiotics for Preventing Antibiotic-Associated Diarrhea | AFP",
+        "page_age": "December 15, 2021",
+        "class": "Peer-reviewed literature"
+      },
+      {
+        "rank": 6,
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5745464/",
+        "title": "Probiotics for the Prevention of Antibiotic-Associated Diarrhea in Outpatients—A Systematic Review and Meta-Analysis - PMC",
+        "page_age": null,
+        "class": "Peer-reviewed literature"
+      },
+      {
+        "rank": 7,
+        "url": "https://health.clevelandclinic.org/how-to-prevent-diarrhea-while-you-take-antibiotics",
+        "title": "How to Prevent Diarrhea While You Take Antibiotics",
+        "page_age": "January 24, 2020",
+        "class": "Academic medical center"
+      },
+      {
+        "rank": 8,
+        "url": "https://www.webmd.com/digestive-disorders/probiotics-diarrhea",
+        "title": "Probiotics for Diarrhea: Types, Uses, Side Effects, Benefits",
+        "page_age": "February 18, 2026",
+        "class": "Health media & nonprofits"
+      },
+      {
+        "rank": 9,
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9408191/",
+        "title": "Probiotics for the Prevention of Antibiotic-Associated Diarrhea - PMC",
+        "page_age": null,
+        "class": "Peer-reviewed literature"
+      },
+      {
+        "rank": 10,
+        "url": "https://www.healthline.com/nutrition/probiotics-for-diarrhea",
+        "title": "Probiotics for Diarrhea: Benefits, Types, and Side Effects",
+        "page_age": "October 28, 2024",
+        "class": "Health media & nonprofits"
+      }
+    ],
+    "cited": [
+      {
+        "n": 1,
+        "url": "https://www.cochrane.org/evidence/CD004827_probiotics-prevention-antibiotic-associated-diarrhea-children",
+        "title": "Probiotics for the prevention of antibiotic-associated diarrhea in children | Cochrane",
+        "class": "News & other"
+      },
+      {
+        "n": 2,
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5745464/",
+        "title": "Probiotics for the Prevention of Antibiotic-Associated Diarrhea in Outpatients—A Systematic Review and Meta-Analysis - PMC",
+        "class": "Peer-reviewed literature"
+      },
+      {
+        "n": 3,
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9437377/",
+        "title": "Do Probiotics Prevent Clostridium difficile-Associated Diarrhea?",
+        "class": "Peer-reviewed literature"
+      },
+      {
+        "n": 4,
+        "url": "https://health.clevelandclinic.org/how-to-prevent-diarrhea-while-you-take-antibiotics",
+        "title": "How to Prevent Diarrhea While You Take Antibiotics",
+        "class": "Academic medical center"
+      },
+      {
+        "n": 5,
+        "url": "https://www.webmd.com/digestive-disorders/probiotics-diarrhea",
+        "title": "Probiotics for Diarrhea: Types, Uses, Side Effects, Benefits",
+        "class": "Health media & nonprofits"
+      }
+    ],
+    "claims": [
+      {
+        "text": "**Children:** A Cochrane review found AAD in 8% of children taking probiotics versus 19% of controls. About 1 case was prevented for every 9 children treated. [1]",
+        "kind": "bullet",
+        "section": "Probiotics often reduce the risk of antibiotic-associated diarrhea (AAD), but the evidence is mixed and depends on the strain and the population.",
+        "source_ns": [
+          1
+        ],
+        "verdict": "supported",
+        "verdict_reason": "The source reports AAD in 8% of the probiotic group versus 19% of controls, an 11% absolute reduction, which works out to roughly 1 case prevented per 9 children treated."
+      },
+      {
+        "text": "**Outpatients:** A meta-analysis reported a 51% lower risk of AAD, with moderate-quality evidence. [2] Only 18% of the included studies had a low risk of bias, and those studies did not find a statistically significant reduction. [2]",
+        "kind": "bullet",
+        "section": "Probiotics often reduce the risk of antibiotic-associated diarrhea (AAD), but the evidence is mixed and depends on the strain and the population.",
+        "source_ns": [
+          2
+        ],
+        "verdict": "partially_supported",
+        "verdict_reason": "The source states the 51% risk reduction, the moderate-quality evidence and that only 18% of studies had low risk of bias, but the provided text does not show that those low-risk studies found no significant reduction."
+      },
+      {
+        "text": "**Conflicting results:** A large trial in inpatients aged 65 and older found no evidence that a multistrain lactobacilli and bifidobacteria product prevented AAD. [3]",
+        "kind": "bullet",
+        "section": "Probiotics often reduce the risk of antibiotic-associated diarrhea (AAD), but the evidence is mixed and depends on the strain and the population.",
+        "source_ns": [
+          3
+        ],
+        "verdict": "partially_supported",
+        "verdict_reason": "The source states that no evidence was found for the multistrain lactobacilli and bifidobacteria preparation, but it does not mention a large trial or inpatients aged 65 and older."
+      },
+      {
+        "text": "**Strains:** Cleveland Clinic says the most commonly studied for AAD are Lactobacillus rhamnosus-based and Saccharomyces boulardii-based probiotics. [4]",
+        "kind": "bullet",
+        "section": "Probiotics often reduce the risk of antibiotic-associated diarrhea (AAD), but the evidence is mixed and depends on the strain and the population.",
+        "source_ns": [
+          4
+        ],
+        "verdict": "supported",
+        "verdict_reason": "The Cleveland Clinic text names Lactobacillus rhamnosus-based and Saccharomyces boulardii-based probiotics as the most commonly studied for AAD, matching the claim nearly word for word."
+      },
+      {
+        "text": "**Timing:** WebMD says taking probiotics before, during, and for several days after antibiotics may lower your chances of diarrhea. [5]",
+        "kind": "bullet",
+        "section": "Probiotics often reduce the risk of antibiotic-associated diarrhea (AAD), but the evidence is mixed and depends on the strain and the population.",
+        "source_ns": [
+          5
+        ],
+        "verdict": "supported",
+        "verdict_reason": "WebMD states that taking probiotics before, during and several days after treatment may cut the chances of diarrhea."
+      },
+      {
+        "text": "**Safety:** Probiotics could be harmful for people with immune deficiencies or those who are severely debilitated. [4] Cleveland Clinic advises asking your doctor before taking any. [4]",
+        "kind": "bullet",
+        "section": "Probiotics often reduce the risk of antibiotic-associated diarrhea (AAD), but the evidence is mixed and depends on the strain and the population.",
+        "source_ns": [
+          4
+        ],
+        "verdict": "supported",
+        "verdict_reason": "Cleveland Clinic says probiotics could possibly be harmful for immune-deficient or severely debilitated people and advises asking a doctor before taking any."
+      }
+    ],
+    "judge": {
+      "model": "claude-opus-5-5",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 1843,
+        "output_tokens": 826,
+        "output_tokens_details": {
+          "thinking_tokens": 334
+        },
+        "server_tool_use": null,
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "question_id": "Q6",
+    "replicate": 1,
+    "file": "data/comparators/Q6_acv_weight_loss/ai_overview_model_run_1.json",
+    "retrieved": [
+      {
+        "rank": 1,
+        "url": "https://www.goodrx.com/conditions/weight-loss/apple-cider-vinegar-burn-fat-weight-loss",
+        "title": "Apple Cider Vinegar for Weight Loss: Does It Work? - GoodRx",
+        "page_age": "5 days ago",
+        "class": "Health media & nonprofits"
+      },
+      {
+        "rank": 2,
+        "url": "https://health.clevelandclinic.org/can-apple-cider-vinegar-help-with-weight-loss",
+        "title": "Does Apple Cider Vinegar Help You Lose Weight?",
+        "page_age": "March 27, 2024",
+        "class": "Academic medical center"
+      },
+      {
+        "rank": 3,
+        "url": "https://www.mayoclinic.org/healthy-lifestyle/weight-loss/expert-answers/apple-cider-vinegar-for-weight-loss/faq-20058394",
+        "title": "Apple cider vinegar for weight loss - Mayo Clinic",
+        "page_age": null,
+        "class": "Academic medical center"
+      },
+      {
+        "rank": 4,
+        "url": "https://www.hollandandbarrett.com/the-health-hub/weight-management/weight-loss/how-to-take-apple-cider-vinegar-for-weight-loss/",
+        "title": "How Does Apple Cider Vinegar Help with Weight Loss? | H&B",
+        "page_age": "June 17, 2025",
+        "class": "News & other"
+      },
+      {
+        "rank": 5,
+        "url": "https://www.bswhealth.com/blog/apple-cider-vinegar-for-weight-loss-does-it-really-work",
+        "title": "Apple cider vinegar for weight loss: Does it really work?",
+        "page_age": null,
+        "class": "Health media & nonprofits"
+      },
+      {
+        "rank": 6,
+        "url": "https://www.goodreads.com/author_blog_posts/25642737-can-apple-cider-vinegar-help-you-lose-weight?tab=book",
+        "title": "Can Apple Cider Vinegar Help You Lose Weight?",
+        "page_age": null,
+        "class": "News & other"
+      },
+      {
+        "rank": 7,
+        "url": "https://sites.coecis.cornell.edu/jsm292/?p=50254",
+        "title": "sites.coecis.cornell.edu",
+        "page_age": null,
+        "class": "Academic medical center"
+      },
+      {
+        "rank": 8,
+        "url": "https://www.health.harvard.edu/blog/apple-cider-vinegar-diet-does-it-really-work-2018042513703",
+        "title": "Apple cider vinegar for weight loss: Does it really work?",
+        "page_age": null,
+        "class": "Academic medical center"
+      },
+      {
+        "rank": 9,
+        "url": "https://sites.coecis.cornell.edu/jsm292/?p=47509",
+        "title": "sites.coecis.cornell.edu",
+        "page_age": null,
+        "class": "Academic medical center"
+      }
+    ],
+    "cited": [
+      {
+        "n": 1,
+        "url": "https://www.goodrx.com/conditions/weight-loss/apple-cider-vinegar-burn-fat-weight-loss",
+        "title": "Apple Cider Vinegar for Weight Loss: Does It Work? - GoodRx",
+        "class": "Health media & nonprofits"
+      },
+      {
+        "n": 2,
+        "url": "https://health.clevelandclinic.org/can-apple-cider-vinegar-help-with-weight-loss",
+        "title": "Does Apple Cider Vinegar Help You Lose Weight?",
+        "class": "Academic medical center"
+      },
+      {
+        "n": 3,
+        "url": "https://www.health.harvard.edu/blog/apple-cider-vinegar-diet-does-it-really-work-2018042513703",
+        "title": "Apple cider vinegar for weight loss: Does it really work?",
+        "class": "Academic medical center"
+      },
+      {
+        "n": 4,
+        "url": "https://www.mayoclinic.org/healthy-lifestyle/weight-loss/expert-answers/apple-cider-vinegar-for-weight-loss/faq-20058394",
+        "title": "Apple cider vinegar for weight loss - Mayo Clinic",
+        "class": "Academic medical center"
+      },
+      {
+        "n": 5,
+        "url": "https://www.bswhealth.com/blog/apple-cider-vinegar-for-weight-loss-does-it-really-work",
+        "title": "Apple cider vinegar for weight loss: Does it really work?",
+        "class": "Health media & nonprofits"
+      }
+    ],
+    "claims": [
+      {
+        "text": "**Small studies:** A Japanese study found people who drank 1–2 tbsp of vinegar daily lost 2–4 lbs over 12 weeks [1] (GoodRx).",
+        "kind": "bullet",
+        "section": "Apple cider vinegar (ACV) probably doesn't cause meaningful weight loss. Some small studies show modest losses, but experts say the evidence isn't strong enough to recommend it.",
+        "source_ns": [
+          1
+        ],
+        "verdict": "partially_supported",
+        "verdict_reason": "The source reports 2–4 lbs lost over 12 weeks with 1–2 tbsp of vinegar daily, but the excerpt never says the study was Japanese or small."
+      },
+      {
+        "text": "**Weak evidence:** Cleveland Clinic says the evidence comes from small, poorly designed studies. [2] Harvard Health says the evidence for vinegar as a reliable long-term way to lose weight isn't compelling. [3]",
+        "kind": "bullet",
+        "section": "Apple cider vinegar (ACV) probably doesn't cause meaningful weight loss. Some small studies show modest losses, but experts say the evidence isn't strong enough to recommend it.",
+        "source_ns": [
+          2,
+          3
+        ],
+        "verdict": "partially_supported",
+        "verdict_reason": "Cleveland Clinic explicitly calls the studies small and poorly designed, but the Harvard excerpt is cut off before stating that the evidence isn't compelling."
+      },
+      {
+        "text": "**Appetite:** A 2022 meta-analysis found mixed results at best for short-term appetite suppression [2] (Cleveland Clinic).",
+        "kind": "bullet",
+        "section": "Apple cider vinegar (ACV) probably doesn't cause meaningful weight loss. Some small studies show modest losses, but experts say the evidence isn't strong enough to recommend it.",
+        "source_ns": [
+          2
+        ],
+        "verdict": "not_supported",
+        "verdict_reason": "The Cleveland Clinic excerpt mentions a 2018 study but says nothing about a 2022 meta-analysis or mixed appetite-suppression results."
+      },
+      {
+        "text": "**Mayo Clinic:** ACV isn't likely to cause weight loss. [4] It may also interact with some medicines, including diuretics and insulin. [4]",
+        "kind": "bullet",
+        "section": "Apple cider vinegar (ACV) probably doesn't cause meaningful weight loss. Some small studies show modest losses, but experts say the evidence isn't strong enough to recommend it.",
+        "source_ns": [
+          4
+        ],
+        "verdict": "supported",
+        "verdict_reason": "Mayo Clinic states ACV isn't likely to cause weight loss and may affect medicines including diuretics and insulin."
+      },
+      {
+        "text": "**Side effects:** It can wear down tooth enamel over time, so always dilute it [5] (Baylor Scott & White Health).",
+        "kind": "bullet",
+        "section": "Apple cider vinegar (ACV) probably doesn't cause meaningful weight loss. Some small studies show modest losses, but experts say the evidence isn't strong enough to recommend it.",
+        "source_ns": [
+          5
+        ],
+        "verdict": "supported",
+        "verdict_reason": "Baylor Scott & White states ACV can wear down tooth enamel over time and advises always diluting it."
+      },
+      {
+        "text": "**Bottom line:** Burning more calories than you take in is what counts, so focus on a balanced diet and more physical activity [4] (Mayo Clinic).",
+        "kind": "bullet",
+        "section": "Apple cider vinegar (ACV) probably doesn't cause meaningful weight loss. Some small studies show modest losses, but experts say the evidence isn't strong enough to recommend it.",
+        "source_ns": [
+          4
+        ],
+        "verdict": "supported",
+        "verdict_reason": "Mayo Clinic states the key is burning more calories than you take in and advises a balanced diet and more physical activity."
+      }
+    ],
+    "judge": {
+      "model": "claude-opus-5-5",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 1938,
+        "output_tokens": 695,
+        "output_tokens_details": {
+          "thinking_tokens": 261
+        },
+        "server_tool_use": null,
+        "service_tier": "standard"
+      }
+    }
+  }
+]

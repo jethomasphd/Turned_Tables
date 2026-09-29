@@ -1,0 +1,110 @@
+{
+  "extracted_by": "claude-sonnet-5-5",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 1568,
+    "output_tokens": 1452,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "extracted_at": "2026-09-28T23:49:06Z",
+  "references": [
+    {
+      "raw": "Cohen PA, et al. \"Quantity of Melatonin and CBD in Melatonin Gummies Sold in the US.\" JAMA, 2023. Most products tested were mislabeled, and actual melatonin ranged from about 74% to 347% of the labeled amount.",
+      "authors": "Cohen PA, et al.",
+      "first_author_surname": "Cohen",
+      "year": "2023",
+      "title": "Quantity of Melatonin and CBD in Melatonin Gummies Sold in the US",
+      "journal": "JAMA",
+      "pmid": "",
+      "doi": "",
+      "kind": "journal_article"
+    },
+    {
+      "raw": "Lelak K, et al. \"Pediatric Melatonin Ingestions — United States, 2012-2021.\" MMWR (CDC), 2022. Reported a large rise in poison control calls for children.",
+      "authors": "Lelak K, et al.",
+      "first_author_surname": "Lelak",
+      "year": "2022",
+      "title": "Pediatric Melatonin Ingestions — United States, 2012-2021",
+      "journal": "MMWR",
+      "pmid": "",
+      "doi": "",
+      "kind": "journal_article"
+    },
+    {
+      "raw": "Abdelgadir IS, Gordon MA, Akobeng AK. \"Melatonin for the management of sleep problems in children with neurodevelopmental disorders: a systematic review and meta-analysis.\" Archives of Disease in Childhood, 2018.",
+      "authors": "Abdelgadir IS, Gordon MA, Akobeng AK",
+      "first_author_surname": "Abdelgadir",
+      "year": "2018",
+      "title": "Melatonin for the management of sleep problems in children with neurodevelopmental disorders: a systematic review and meta-analysis",
+      "journal": "Archives of Disease in Childhood",
+      "pmid": "",
+      "doi": "",
+      "kind": "journal_article"
+    },
+    {
+      "raw": "Gringras P, et al. Trial of prolonged-release melatonin for insomnia in children with autism spectrum disorder. Journal of the American Academy of Child & Adolescent Psychiatry, 2017.",
+      "authors": "Gringras P, et al.",
+      "first_author_surname": "Gringras",
+      "year": "2017",
+      "title": "Trial of prolonged-release melatonin for insomnia in children with autism spectrum disorder",
+      "journal": "Journal of the American Academy of Child & Adolescent Psychiatry",
+      "pmid": "",
+      "doi": "",
+      "kind": "journal_article"
+    },
+    {
+      "raw": "Van Geijlswijk IM, Korzilius HPLM, Smits MG. \"The use of exogenous melatonin in delayed sleep phase disorder: a meta-analysis.\" Sleep, 2010.",
+      "authors": "Van Geijlswijk IM, Korzilius HPLM, Smits MG",
+      "first_author_surname": "Van Geijlswijk",
+      "year": "2010",
+      "title": "The use of exogenous melatonin in delayed sleep phase disorder: a meta-analysis",
+      "journal": "Sleep",
+      "pmid": "",
+      "doi": "",
+      "kind": "journal_article"
+    },
+    {
+      "raw": "Hoebert M, et al. Long-term follow-up of melatonin treatment in children with ADHD and chronic sleep onset insomnia. Journal of Pineal Research, 2009.",
+      "authors": "Hoebert M, et al.",
+      "first_author_surname": "Hoebert",
+      "year": "2009",
+      "title": "Long-term follow-up of melatonin treatment in children with ADHD and chronic sleep onset insomnia",
+      "journal": "Journal of Pineal Research",
+      "pmid": "",
+      "doi": "",
+      "kind": "journal_article"
+    },
+    {
+      "raw": "Bruni O, et al. \"Current role of melatonin in pediatric neurology: clinical recommendations.\" European Journal of Paediatric Neurology, 2015.",
+      "authors": "Bruni O, et al.",
+      "first_author_surname": "Bruni",
+      "year": "2015",
+      "title": "Current role of melatonin in pediatric neurology: clinical recommendations",
+      "journal": "European Journal of Paediatric Neurology",
+      "pmid": "",
+      "doi": "",
+      "kind": "journal_article"
+    },
+    {
+      "raw": "the American Academy of Pediatrics (HealthyChildren.org) and your pediatrician are good next steps.",
+      "authors": "American Academy of Pediatrics",
+      "first_author_surname": "",
+      "year": "",
+      "title": "",
+      "journal": "",
+      "pmid": "",
+      "doi": "",
+      "kind": "guideline_or_org_statement"
+    }
+  ]
+}

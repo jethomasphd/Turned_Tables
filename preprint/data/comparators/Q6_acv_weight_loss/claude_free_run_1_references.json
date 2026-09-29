@@ -1,0 +1,66 @@
+{
+  "extracted_by": "claude-sonnet-5-5",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 1544,
+    "output_tokens": 1114,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "extracted_at": "2026-09-28T23:50:57Z",
+  "references": [
+    {
+      "raw": "Kondo T, Kishi M, Fushimi T, Ugajin S, Kaga T. \"Vinegar intake reduces body weight, body fat mass, and serum triglyceride levels in obese Japanese subjects.\" Biosci Biotechnol Biochem. 2009;73(8):1837-1843. PMID: 19661687 (fairly confident). This is the Japanese 12-week trial of about 150 adults.",
+      "authors": "Kondo T, Kishi M, Fushimi T, Ugajin S, Kaga T",
+      "first_author_surname": "Kondo",
+      "year": "2009",
+      "title": "Vinegar intake reduces body weight, body fat mass, and serum triglyceride levels in obese Japanese subjects.",
+      "journal": "Biosci Biotechnol Biochem",
+      "pmid": "19661687",
+      "doi": "",
+      "kind": "journal_article"
+    },
+    {
+      "raw": "Darzi J, Frost GS, Montaser R, Yap J, Robertson MD. \"Influence of the tolerability of vinegar as an oral source of short-chain fatty acids on appetite control and food intake.\" Int J Obes. 2014;38(5):675-681. PMID: I don't remember it. This is the study suggesting nausea may drive some of the reduced appetite.",
+      "authors": "Darzi J, Frost GS, Montaser R, Yap J, Robertson MD",
+      "first_author_surname": "Darzi",
+      "year": "2014",
+      "title": "Influence of the tolerability of vinegar as an oral source of short-chain fatty acids on appetite control and food intake.",
+      "journal": "Int J Obes",
+      "pmid": "",
+      "doi": "",
+      "kind": "journal_article"
+    },
+    {
+      "raw": "Abou-Khalil R, et al. \"Apple cider vinegar for weight management in Lebanese adolescents and young adults with overweight and obesity: a randomised, double-blind, placebo-controlled study.\" BMJ Nutrition, Prevention & Health. 2024. PMID: I don't remember it. This is the 2024 study I said was criticized and, I believe, retracted. Check the journal's site for its current status.",
+      "authors": "Abou-Khalil R, et al.",
+      "first_author_surname": "Abou-Khalil",
+      "year": "2024",
+      "title": "Apple cider vinegar for weight management in Lebanese adolescents and young adults with overweight and obesity: a randomised, double-blind, placebo-controlled study.",
+      "journal": "BMJ Nutrition, Prevention & Health",
+      "pmid": "",
+      "doi": "",
+      "kind": "journal_article"
+    },
+    {
+      "raw": "Östman E, Granfeldt Y, Persson L, Björck I. \"Vinegar supplementation lowers glucose and insulin responses and increases satiety after a bread meal in healthy subjects.\" Eur J Clin Nutr. 2005;59(9):983-988. PMID: I don't remember it. This is a small study on fullness and post-meal blood sugar.",
+      "authors": "Östman E, Granfeldt Y, Persson L, Björck I",
+      "first_author_surname": "Östman",
+      "year": "2005",
+      "title": "Vinegar supplementation lowers glucose and insulin responses and increases satiety after a bread meal in healthy subjects.",
+      "journal": "Eur J Clin Nutr",
+      "pmid": "",
+      "doi": "",
+      "kind": "journal_article"
+    }
+  ]
+}

@@ -1,0 +1,2381 @@
+[
+  {
+    "question_id": "Q1",
+    "replicate": 1,
+    "file": "data/comparators/Q1_melatonin_kids/claude_free_run_1.json",
+    "declined_pmids": true,
+    "pmids_offered": [],
+    "references": [
+      {
+        "ref": {
+          "raw": "Cohen PA, et al. \"Quantity of Melatonin and CBD in Melatonin Gummies Sold in the US.\" JAMA, 2023.",
+          "authors": "Cohen PA, et al.",
+          "first_author_surname": "Cohen",
+          "year": "2023",
+          "title": "Quantity of Melatonin and CBD in Melatonin Gummies Sold in the US",
+          "journal": "JAMA",
+          "pmid": "",
+          "doi": "",
+          "kind": "journal_article"
+        },
+        "status": "verified",
+        "pmid_status": "none_given",
+        "match_source": "pubmed",
+        "best_similarity": 1.0,
+        "matched": {
+          "pmid": "37097362",
+          "title": "Quantity of Melatonin and CBD in Melatonin Gummies Sold in the US.",
+          "authors": [
+            "Cohen PA",
+            "Avula B",
+            "Wang YH",
+            "Katragunta K",
+            "Khan I"
+          ],
+          "journal": "JAMA",
+          "source": "JAMA",
+          "year": 2023,
+          "pubtypes": [
+            "Journal Article"
+          ],
+          "doi": "10.1001/jama.2023.2296",
+          "via": "title_terms"
+        },
+        "near_miss": null,
+        "matched_is_retracted": false,
+        "matched_year": 2023,
+        "matched_first_author": "Cohen PA"
+      },
+      {
+        "ref": {
+          "raw": "Lelak K, et al. \"Pediatric Melatonin Ingestions — United States, 2012–2021.\" MMWR, 2022.",
+          "authors": "Lelak K, et al.",
+          "first_author_surname": "Lelak",
+          "year": "2022",
+          "title": "Pediatric Melatonin Ingestions — United States, 2012–2021",
+          "journal": "MMWR",
+          "pmid": "",
+          "doi": "",
+          "kind": "journal_article"
+        },
+        "status": "verified",
+        "pmid_status": "none_given",
+        "match_source": "pubmed",
+        "best_similarity": 1.0,
+        "matched": {
+          "pmid": "35653284",
+          "title": "Pediatric Melatonin Ingestions - United States, 2012-2021.",
+          "authors": [
+            "Lelak K",
+            "Vohra V",
+            "Neuman MI",
+            "Toce MS",
+            "Sethuraman U"
+          ],
+          "journal": "MMWR. Morbidity and mortality weekly report",
+          "source": "MMWR Morb Mortal Wkly Rep",
+          "year": 2022,
+          "pubtypes": [
+            "Journal Article"
+          ],
+          "doi": "10.15585/mmwr.mm7122a1",
+          "via": "title_terms"
+        },
+        "near_miss": null,
+        "matched_is_retracted": false,
+        "matched_year": 2022,
+        "matched_first_author": "Lelak K"
+      },
+      {
+        "ref": {
+          "raw": "van Geijlswijk IM, Korzilius HPLM, Smits MG. \"The use of exogenous melatonin in delayed sleep phase disorder: a meta-analysis.\" Sleep, 2010.",
+          "authors": "van Geijlswijk IM, Korzilius HPLM, Smits MG",
+          "first_author_surname": "van Geijlswijk",
+          "year": "2010",
+          "title": "The use of exogenous melatonin in delayed sleep phase disorder: a meta-analysis",
+          "journal": "Sleep",
+          "pmid": "",
+          "doi": "",
+          "kind": "journal_article"
+        },
+        "status": "verified",
+        "pmid_status": "none_given",
+        "match_source": "pubmed",
+        "best_similarity": 1.0,
+        "matched": {
+          "pmid": "21120122",
+          "title": "The use of exogenous melatonin in delayed sleep phase disorder: a meta-analysis.",
+          "authors": [
+            "van Geijlswijk IM",
+            "Korzilius HP",
+            "Smits MG"
+          ],
+          "journal": "Sleep",
+          "source": "Sleep",
+          "year": 2010,
+          "pubtypes": [
+            "Journal Article",
+            "Meta-Analysis",
+            "Review"
+          ],
+          "doi": "10.1093/sleep/33.12.1605",
+          "via": "title_terms"
+        },
+        "near_miss": null,
+        "matched_is_retracted": false,
+        "matched_year": 2010,
+        "matched_first_author": "van Geijlswijk IM"
+      },
+      {
+        "ref": {
+          "raw": "Van der Heijden KB, et al. \"Effect of melatonin on sleep, behavior, and cognition in ADHD and chronic sleep-onset insomnia.\" J Am Acad Child Adolesc Psychiatry, 2007.",
+          "authors": "Van der Heijden KB, et al.",
+          "first_author_surname": "Van der Heijden",
+          "year": "2007",
+          "title": "Effect of melatonin on sleep, behavior, and cognition in ADHD and chronic sleep-onset insomnia",
+          "journal": "J Am Acad Child Adolesc Psychiatry",
+          "pmid": "",
+          "doi": "",
+          "kind": "journal_article"
+        },
+        "status": "verified",
+        "pmid_status": "none_given",
+        "match_source": "pubmed",
+        "best_similarity": 1.0,
+        "matched": {
+          "pmid": "17242627",
+          "title": "Effect of melatonin on sleep, behavior, and cognition in ADHD and chronic sleep-onset insomnia.",
+          "authors": [
+            "Van der Heijden KB",
+            "Smits MG",
+            "Van Someren EJ",
+            "Ridderinkhof KR",
+            "Gunning WB"
+          ],
+          "journal": "Journal of the American Academy of Child and Adolescent Psychiatry",
+          "source": "J Am Acad Child Adolesc Psychiatry",
+          "year": 2007,
+          "pubtypes": [
+            "Journal Article",
+            "Multicenter Study",
+            "Randomized Controlled Trial",
+            "Research Support, Non-U.S. Gov't"
+          ],
+          "doi": "10.1097/01.chi.0000246055.76167.0d",
+          "via": "title_terms"
+        },
+        "near_miss": null,
+        "matched_is_retracted": false,
+        "matched_year": 2007,
+        "matched_first_author": "Van der Heijden KB"
+      },
+      {
+        "ref": {
+          "raw": "Gringras P, et al. \"Efficacy and safety of pediatric prolonged-release melatonin for insomnia in children with autism spectrum disorder.\" J Am Acad Child Adolesc Psychiatry, 2017.",
+          "authors": "Gringras P, et al.",
+          "first_author_surname": "Gringras",
+          "year": "2017",
+          "title": "Efficacy and safety of pediatric prolonged-release melatonin for insomnia in children with autism spectrum disorder",
+          "journal": "J Am Acad Child Adolesc Psychiatry",
+          "pmid": "",
+          "doi": "",
+          "kind": "journal_article"
+        },
+        "status": "verified",
+        "pmid_status": "none_given",
+        "match_source": "pubmed",
+        "best_similarity": 1.0,
+        "matched": {
+          "pmid": "29096777",
+          "title": "Efficacy and Safety of Pediatric Prolonged-Release Melatonin for Insomnia in Children With Autism Spectrum Disorder.",
+          "authors": [
+            "Gringras P",
+            "Nir T",
+            "Breddy J",
+            "Frydman-Marom A",
+            "Findling RL"
+          ],
+          "journal": "Journal of the American Academy of Child and Adolescent Psychiatry",
+          "source": "J Am Acad Child Adolesc Psychiatry",
+          "year": 2017,
+          "pubtypes": [
+            "Journal Article",
+            "Randomized Controlled Trial"
+          ],
+          "doi": "10.1016/j.jaac.2017.09.414",
+          "via": "title_terms"
+        },
+        "near_miss": null,
+        "matched_is_retracted": false,
+        "matched_year": 2017,
+        "matched_first_author": "Gringras P"
+      },
+      {
+        "ref": {
+          "raw": "Ferracioli-Oda E, et al. \"Meta-analysis: melatonin for the treatment of primary sleep disorders.\" PLoS ONE, 2013. This covers mixed age groups, not just children.",
+          "authors": "Ferracioli-Oda E, et al.",
+          "first_author_surname": "Ferracioli-Oda",
+          "year": "2013",
+          "title": "Meta-analysis: melatonin for the treatment of primary sleep disorders",
+          "journal": "PLoS ONE",
+          "pmid": "",
+          "doi": "",
+          "kind": "journal_article"
+        },
+        "status": "verified",
+        "pmid_status": "none_given",
+        "match_source": "pubmed",
+        "best_similarity": 1.0,
+        "matched": {
+          "pmid": "23691095",
+          "title": "Meta-analysis: melatonin for the treatment of primary sleep disorders.",
+          "authors": [
+            "Ferracioli-Oda E",
+            "Qawasmi A",
+            "Bloch MH"
+          ],
+          "journal": "PloS one",
+          "source": "PLoS One",
+          "year": 2013,
+          "pubtypes": [
+            "Journal Article",
+            "Meta-Analysis",
+            "Research Support, N.I.H., Extramural",
+            "Research Support, Non-U.S. Gov't"
+          ],
+          "doi": "10.1371/journal.pone.0063773",
+          "via": "title_terms"
+        },
+        "near_miss": null,
+        "matched_is_retracted": false,
+        "matched_year": 2013,
+        "matched_first_author": "Ferracioli-Oda E"
+      },
+      {
+        "ref": {
+          "raw": "Bruni O, et al. \"Current role of melatonin in pediatric neurology: clinical recommendations.\" Eur J Paediatr Neurol, 2015.",
+          "authors": "Bruni O, et al.",
+          "first_author_surname": "Bruni",
+          "year": "2015",
+          "title": "Current role of melatonin in pediatric neurology: clinical recommendations",
+          "journal": "Eur J Paediatr Neurol",
+          "pmid": "",
+          "doi": "",
+          "kind": "journal_article"
+        },
+        "status": "verified",
+        "pmid_status": "none_given",
+        "match_source": "pubmed",
+        "best_similarity": 1.0,
+        "matched": {
+          "pmid": "25553845",
+          "title": "Current role of melatonin in pediatric neurology: clinical recommendations.",
+          "authors": [
+            "Bruni O",
+            "Alonso-Alconada D",
+            "Besag F",
+            "Biran V",
+            "Braam W",
+            "Cortese S",
+            "Moavero R",
+            "Parisi P",
+            "Smits M",
+            "Van der Heijden K",
+            "Curatolo P"
+          ],
+          "journal": "European journal of paediatric neurology : EJPN : official journal of the European Paediatric Neurology Society",
+          "source": "Eur J Paediatr Neurol",
+          "year": 2015,
+          "pubtypes": [
+            "Journal Article",
+            "Review"
+          ],
+          "doi": "10.1016/j.ejpn.2014.12.007",
+          "via": "title_terms"
+        },
+        "near_miss": null,
+        "matched_is_retracted": false,
+        "matched_year": 2015,
+        "matched_first_author": "Bruni O"
+      },
+      {
+        "ref": {
+          "raw": "general pediatric sleep guidance, such as from the American Academy of Pediatrics",
+          "authors": "American Academy of Pediatrics",
+          "first_author_surname": "",
+          "year": "",
+          "title": "",
+          "journal": "",
+          "pmid": "",
+          "doi": "",
+          "kind": "guideline_or_org_statement"
+        },
+        "status": "non_article_source",
+        "pmid_status": "none_given",
+        "matched": null,
+        "best_similarity": null,
+        "match_source": null,
+        "matched_is_retracted": false
+      },
+      {
+        "ref": {
+          "raw": "general pediatric sleep guidance, such as from ... the American Academy of Sleep Medicine",
+          "authors": "American Academy of Sleep Medicine",
+          "first_author_surname": "",
+          "year": "",
+          "title": "",
+          "journal": "",
+          "pmid": "",
+          "doi": "",
+          "kind": "guideline_or_org_statement"
+        },
+        "status": "non_article_source",
+        "pmid_status": "none_given",
+        "matched": null,
+        "best_similarity": null,
+        "match_source": null,
+        "matched_is_retracted": false
+      }
+    ],
+    "status_counts": {
+      "verified": 7,
+      "non_article_source": 2
+    }
+  },
+  {
+    "question_id": "Q1",
+    "replicate": 2,
+    "file": "data/comparators/Q1_melatonin_kids/claude_free_run_2.json",
+    "declined_pmids": true,
+    "pmids_offered": [],
+    "references": [
+      {
+        "ref": {
+          "raw": "Cohen PA et al. JAMA, 2023. \"Quantity of Melatonin and CBD in Melatonin Gummies Sold in the US.\" This is the study that found labeled and actual amounts differed widely, with some products containing CBD.",
+          "authors": "Cohen PA et al.",
+          "first_author_surname": "Cohen",
+          "year": "2023",
+          "title": "Quantity of Melatonin and CBD in Melatonin Gummies Sold in the US",
+          "journal": "JAMA",
+          "pmid": "",
+          "doi": "",
+          "kind": "journal_article"
+        },
+        "status": "verified",
+        "pmid_status": "none_given",
+        "match_source": "pubmed",
+        "best_similarity": 1.0,
+        "matched": {
+          "pmid": "37097362",
+          "title": "Quantity of Melatonin and CBD in Melatonin Gummies Sold in the US.",
+          "authors": [
+            "Cohen PA",
+            "Avula B",
+            "Wang YH",
+            "Katragunta K",
+            "Khan I"
+          ],
+          "journal": "JAMA",
+          "source": "JAMA",
+          "year": 2023,
+          "pubtypes": [
+            "Journal Article"
+          ],
+          "doi": "10.1001/jama.2023.2296",
+          "via": "title_terms"
+        },
+        "near_miss": null,
+        "matched_is_retracted": false,
+        "matched_year": 2023,
+        "matched_first_author": "Cohen PA"
+      },
+      {
+        "ref": {
+          "raw": "Erland LAE, Saxena PK. Journal of Clinical Sleep Medicine, 2017. It found large variability in melatonin content across supplements.",
+          "authors": "Erland LAE, Saxena PK",
+          "first_author_surname": "Erland",
+          "year": "2017",
+          "title": "",
+          "journal": "Journal of Clinical Sleep Medicine",
+          "pmid": "",
+          "doi": "",
+          "kind": "journal_article"
+        },
+        "status": "locatable_no_title",
+        "pmid_status": "none_given",
+        "match_source": "pubmed",
+        "best_similarity": 0.0,
+        "matched": {
+          "pmid": "27855744",
+          "title": "Melatonin Natural Health Products and Supplements: Presence of Serotonin and Significant Variability of Melatonin Content.",
+          "authors": [
+            "Erland LA",
+            "Saxena PK"
+          ],
+          "journal": "Journal of clinical sleep medicine : JCSM : official publication of the American Academy of Sleep Medicine",
+          "source": "J Clin Sleep Med",
+          "year": 2017,
+          "pubtypes": [
+            "Journal Article"
+          ],
+          "doi": "10.5664/jcsm.6462",
+          "via": "author_year"
+        },
+        "near_miss": null,
+        "matched_is_retracted": false,
+        "matched_year": 2017,
+        "matched_first_author": "Erland LA"
+      },
+      {
+        "ref": {
+          "raw": "Lelak K et al. MMWR (CDC), 2022. \"Pediatric Melatonin Ingestions — United States, 2012–2021.\"",
+          "authors": "Lelak K et al.",
+          "first_author_surname": "Lelak",
+          "year": "2022",
+          "title": "Pediatric Melatonin Ingestions — United States, 2012–2021",
+          "journal": "MMWR",
+          "pmid": "",
+          "doi": "",
+          "kind": "journal_article"
+        },
+        "status": "verified",
+        "pmid_status": "none_given",
+        "match_source": "pubmed",
+        "best_similarity": 1.0,
+        "matched": {
+          "pmid": "35653284",
+          "title": "Pediatric Melatonin Ingestions - United States, 2012-2021.",
+          "authors": [
+            "Lelak K",
+            "Vohra V",
+            "Neuman MI",
+            "Toce MS",
+            "Sethuraman U"
+          ],
+          "journal": "MMWR. Morbidity and mortality weekly report",
+          "source": "MMWR Morb Mortal Wkly Rep",
+          "year": 2022,
+          "pubtypes": [
+            "Journal Article"
+          ],
+          "doi": "10.15585/mmwr.mm7122a1",
+          "via": "title_terms"
+        },
+        "near_miss": null,
+        "matched_is_retracted": false,
+        "matched_year": 2022,
+        "matched_first_author": "Lelak K"
+      },
+      {
+        "ref": {
+          "raw": "Gringras P et al. Journal of the American Academy of Child & Adolescent Psychiatry, 2017. A trial of prolonged-release melatonin in children with autism spectrum disorder.",
+          "authors": "Gringras P et al.",
+          "first_author_surname": "Gringras",
+          "year": "2017",
+          "title": "",
+          "journal": "Journal of the American Academy of Child & Adolescent Psychiatry",
+          "pmid": "",
+          "doi": "",
+          "kind": "journal_article"
+        },
+        "status": "locatable_no_title",
+        "pmid_status": "none_given",
+        "match_source": "pubmed",
+        "best_similarity": 0.0,
+        "matched": {
+          "pmid": "29096777",
+          "title": "Efficacy and Safety of Pediatric Prolonged-Release Melatonin for Insomnia in Children With Autism Spectrum Disorder.",
+          "authors": [
+            "Gringras P",
+            "Nir T",
+            "Breddy J",
+            "Frydman-Marom A",
+            "Findling RL"
+          ],
+          "journal": "Journal of the American Academy of Child and Adolescent Psychiatry",
+          "source": "J Am Acad Child Adolesc Psychiatry",
+          "year": 2017,
+          "pubtypes": [
+            "Journal Article",
+            "Randomized Controlled Trial"
+          ],
+          "doi": "10.1016/j.jaac.2017.09.414",
+          "via": "author_year_journal"
+        },
+        "near_miss": null,
+        "matched_is_retracted": false,
+        "matched_year": 2017,
+        "matched_first_author": "Gringras P"
+      },
+      {
+        "ref": {
+          "raw": "Van Geijlswijk IM et al. Psychopharmacology, 2010. A dose-finding study of melatonin for childhood sleep-onset insomnia.",
+          "authors": "Van Geijlswijk IM et al.",
+          "first_author_surname": "Van Geijlswijk",
+          "year": "2010",
+          "title": "",
+          "journal": "Psychopharmacology",
+          "pmid": "",
+          "doi": "",
+          "kind": "journal_article"
+        },
+        "status": "locatable_no_title",
+        "pmid_status": "none_given",
+        "match_source": "pubmed",
+        "best_similarity": 0.0,
+        "matched": {
+          "pmid": "20668840",
+          "title": "Dose finding of melatonin for chronic idiopathic childhood sleep onset insomnia: an RCT.",
+          "authors": [
+            "van Geijlswijk IM",
+            "van der Heijden KB",
+            "Egberts AC",
+            "Korzilius HP",
+            "Smits MG"
+          ],
+          "journal": "Psychopharmacology",
+          "source": "Psychopharmacology (Berl)",
+          "year": 2010,
+          "pubtypes": [
+            "Journal Article",
+            "Randomized Controlled Trial"
+          ],
+          "doi": "10.1007/s00213-010-1962-0",
+          "via": "author_year_journal"
+        },
+        "near_miss": null,
+        "matched_is_retracted": false,
+        "matched_year": 2010,
+        "matched_first_author": "van Geijlswijk IM"
+      },
+      {
+        "ref": {
+          "raw": "Van Geijlswijk IM et al. Sleep, 2010. A meta-analysis of melatonin for delayed sleep phase disorder.",
+          "authors": "Van Geijlswijk IM et al.",
+          "first_author_surname": "Van Geijlswijk",
+          "year": "2010",
+          "title": "",
+          "journal": "Sleep",
+          "pmid": "",
+          "doi": "",
+          "kind": "journal_article"
+        },
+        "status": "locatable_no_title",
+        "pmid_status": "none_given",
+        "match_source": "pubmed",
+        "best_similarity": 0.0,
+        "matched": {
+          "pmid": "21120122",
+          "title": "The use of exogenous melatonin in delayed sleep phase disorder: a meta-analysis.",
+          "authors": [
+            "van Geijlswijk IM",
+            "Korzilius HP",
+            "Smits MG"
+          ],
+          "journal": "Sleep",
+          "source": "Sleep",
+          "year": 2010,
+          "pubtypes": [
+            "Journal Article",
+            "Meta-Analysis",
+            "Review"
+          ],
+          "doi": "10.1093/sleep/33.12.1605",
+          "via": "author_year_journal"
+        },
+        "near_miss": null,
+        "matched_is_retracted": false,
+        "matched_year": 2010,
+        "matched_first_author": "van Geijlswijk IM"
+      },
+      {
+        "ref": {
+          "raw": "The American Academy of Sleep Medicine issued a health advisory on melatonin use in children in 2022",
+          "authors": "American Academy of Sleep Medicine",
+          "first_author_surname": "",
+          "year": "2022",
+          "title": "",
+          "journal": "",
+          "pmid": "",
+          "doi": "",
+          "kind": "guideline_or_org_statement"
+        },
+        "status": "non_article_source",
+        "pmid_status": "none_given",
+        "matched": null,
+        "best_similarity": null,
+        "match_source": null,
+        "matched_is_retracted": false
+      },
+      {
+        "ref": {
+          "raw": "the American Academy of Pediatrics has parent-facing guidance",
+          "authors": "American Academy of Pediatrics",
+          "first_author_surname": "",
+          "year": "",
+          "title": "",
+          "journal": "",
+          "pmid": "",
+          "doi": "",
+          "kind": "guideline_or_org_statement"
+        },
+        "status": "non_article_source",
+        "pmid_status": "none_given",
+        "matched": null,
+        "best_similarity": null,
+        "match_source": null,
+        "matched_is_retracted": false
+      }
+    ],
+    "status_counts": {
+      "verified": 2,
+      "locatable_no_title": 4,
+      "non_article_source": 2
+    }
+  },
+  {
+    "question_id": "Q1",
+    "replicate": 3,
+    "file": "data/comparators/Q1_melatonin_kids/claude_free_run_3.json",
+    "declined_pmids": true,
+    "pmids_offered": [],
+    "references": [
+      {
+        "ref": {
+          "raw": "Cohen PA, et al. \"Quantity of Melatonin and CBD in Melatonin Gummies Sold in the US.\" JAMA, 2023. Most products tested were mislabeled, and actual melatonin ranged from about 74% to 347% of the labeled amount.",
+          "authors": "Cohen PA, et al.",
+          "first_author_surname": "Cohen",
+          "year": "2023",
+          "title": "Quantity of Melatonin and CBD in Melatonin Gummies Sold in the US",
+          "journal": "JAMA",
+          "pmid": "",
+          "doi": "",
+          "kind": "journal_article"
+        },
+        "status": "verified",
+        "pmid_status": "none_given",
+        "match_source": "pubmed",
+        "best_similarity": 1.0,
+        "matched": {
+          "pmid": "37097362",
+          "title": "Quantity of Melatonin and CBD in Melatonin Gummies Sold in the US.",
+          "authors": [
+            "Cohen PA",
+            "Avula B",
+            "Wang YH",
+            "Katragunta K",
+            "Khan I"
+          ],
+          "journal": "JAMA",
+          "source": "JAMA",
+          "year": 2023,
+          "pubtypes": [
+            "Journal Article"
+          ],
+          "doi": "10.1001/jama.2023.2296",
+          "via": "title_terms"
+        },
+        "near_miss": null,
+        "matched_is_retracted": false,
+        "matched_year": 2023,
+        "matched_first_author": "Cohen PA"
+      },
+      {
+        "ref": {
+          "raw": "Lelak K, et al. \"Pediatric Melatonin Ingestions — United States, 2012-2021.\" MMWR (CDC), 2022. Reported a large rise in poison control calls for children.",
+          "authors": "Lelak K, et al.",
+          "first_author_surname": "Lelak",
+          "year": "2022",
+          "title": "Pediatric Melatonin Ingestions — United States, 2012-2021",
+          "journal": "MMWR",
+          "pmid": "",
+          "doi": "",
+          "kind": "journal_article"
+        },
+        "status": "verified",
+        "pmid_status": "none_given",
+        "match_source": "pubmed",
+        "best_similarity": 1.0,
+        "matched": {
+          "pmid": "35653284",
+          "title": "Pediatric Melatonin Ingestions - United States, 2012-2021.",
+          "authors": [
+            "Lelak K",
+            "Vohra V",
+            "Neuman MI",
+            "Toce MS",
+            "Sethuraman U"
+          ],
+          "journal": "MMWR. Morbidity and mortality weekly report",
+          "source": "MMWR Morb Mortal Wkly Rep",
+          "year": 2022,
+          "pubtypes": [
+            "Journal Article"
+          ],
+          "doi": "10.15585/mmwr.mm7122a1",
+          "via": "title_terms"
+        },
+        "near_miss": null,
+        "matched_is_retracted": false,
+        "matched_year": 2022,
+        "matched_first_author": "Lelak K"
+      },
+      {
+        "ref": {
+          "raw": "Abdelgadir IS, Gordon MA, Akobeng AK. \"Melatonin for the management of sleep problems in children with neurodevelopmental disorders: a systematic review and meta-analysis.\" Archives of Disease in Childhood, 2018.",
+          "authors": "Abdelgadir IS, Gordon MA, Akobeng AK",
+          "first_author_surname": "Abdelgadir",
+          "year": "2018",
+          "title": "Melatonin for the management of sleep problems in children with neurodevelopmental disorders: a systematic review and meta-analysis",
+          "journal": "Archives of Disease in Childhood",
+          "pmid": "",
+          "doi": "",
+          "kind": "journal_article"
+        },
+        "status": "verified",
+        "pmid_status": "none_given",
+        "match_source": "pubmed",
+        "best_similarity": 1.0,
+        "matched": {
+          "pmid": "29720494",
+          "title": "Melatonin for the management of sleep problems in children with neurodevelopmental disorders: a systematic review and meta-analysis.",
+          "authors": [
+            "Abdelgadir IS",
+            "Gordon MA",
+            "Akobeng AK"
+          ],
+          "journal": "Archives of disease in childhood",
+          "source": "Arch Dis Child",
+          "year": 2018,
+          "pubtypes": [
+            "Journal Article",
+            "Meta-Analysis",
+            "Systematic Review"
+          ],
+          "doi": "10.1136/archdischild-2017-314181",
+          "via": "title_terms"
+        },
+        "near_miss": null,
+        "matched_is_retracted": false,
+        "matched_year": 2018,
+        "matched_first_author": "Abdelgadir IS"
+      },
+      {
+        "ref": {
+          "raw": "Gringras P, et al. Trial of prolonged-release melatonin for insomnia in children with autism spectrum disorder. Journal of the American Academy of Child & Adolescent Psychiatry, 2017.",
+          "authors": "Gringras P, et al.",
+          "first_author_surname": "Gringras",
+          "year": "2017",
+          "title": "Trial of prolonged-release melatonin for insomnia in children with autism spectrum disorder",
+          "journal": "Journal of the American Academy of Child & Adolescent Psychiatry",
+          "pmid": "",
+          "doi": "",
+          "kind": "journal_article"
+        },
+        "status": "exists_paraphrased",
+        "pmid_status": "none_given",
+        "match_source": "pubmed",
+        "best_similarity": 0.8365,
+        "matched": {
+          "pmid": "29096777",
+          "title": "Efficacy and Safety of Pediatric Prolonged-Release Melatonin for Insomnia in Children With Autism Spectrum Disorder.",
+          "authors": [
+            "Gringras P",
+            "Nir T",
+            "Breddy J",
+            "Frydman-Marom A",
+            "Findling RL"
+          ],
+          "journal": "Journal of the American Academy of Child and Adolescent Psychiatry",
+          "source": "J Am Acad Child Adolesc Psychiatry",
+          "year": 2017,
+          "pubtypes": [
+            "Journal Article",
+            "Randomized Controlled Trial"
+          ],
+          "doi": "10.1016/j.jaac.2017.09.414",
+          "via": "title_freetext"
+        },
+        "near_miss": null,
+        "matched_is_retracted": false,
+        "matched_year": 2017,
+        "matched_first_author": "Gringras P"
+      },
+      {
+        "ref": {
+          "raw": "Van Geijlswijk IM, Korzilius HPLM, Smits MG. \"The use of exogenous melatonin in delayed sleep phase disorder: a meta-analysis.\" Sleep, 2010.",
+          "authors": "Van Geijlswijk IM, Korzilius HPLM, Smits MG",
+          "first_author_surname": "Van Geijlswijk",
+          "year": "2010",
+          "title": "The use of exogenous melatonin in delayed sleep phase disorder: a meta-analysis",
+          "journal": "Sleep",
+          "pmid": "",
+          "doi": "",
+          "kind": "journal_article"
+        },
+        "status": "verified",
+        "pmid_status": "none_given",
+        "match_source": "pubmed",
+        "best_similarity": 1.0,
+        "matched": {
+          "pmid": "21120122",
+          "title": "The use of exogenous melatonin in delayed sleep phase disorder: a meta-analysis.",
+          "authors": [
+            "van Geijlswijk IM",
+            "Korzilius HP",
+            "Smits MG"
+          ],
+          "journal": "Sleep",
+          "source": "Sleep",
+          "year": 2010,
+          "pubtypes": [
+            "Journal Article",
+            "Meta-Analysis",
+            "Review"
+          ],
+          "doi": "10.1093/sleep/33.12.1605",
+          "via": "title_terms"
+        },
+        "near_miss": null,
+        "matched_is_retracted": false,
+        "matched_year": 2010,
+        "matched_first_author": "van Geijlswijk IM"
+      },
+      {
+        "ref": {
+          "raw": "Hoebert M, et al. Long-term follow-up of melatonin treatment in children with ADHD and chronic sleep onset insomnia. Journal of Pineal Research, 2009.",
+          "authors": "Hoebert M, et al.",
+          "first_author_surname": "Hoebert",
+          "year": "2009",
+          "title": "Long-term follow-up of melatonin treatment in children with ADHD and chronic sleep onset insomnia",
+          "journal": "Journal of Pineal Research",
+          "pmid": "",
+          "doi": "",
+          "kind": "journal_article"
+        },
+        "status": "verified",
+        "pmid_status": "none_given",
+        "match_source": "pubmed",
+        "best_similarity": 1.0,
+        "matched": {
+          "pmid": "19486273",
+          "title": "Long-term follow-up of melatonin treatment in children with ADHD and chronic sleep onset insomnia.",
+          "authors": [
+            "Hoebert M",
+            "van der Heijden KB",
+            "van Geijlswijk IM",
+            "Smits MG"
+          ],
+          "journal": "Journal of pineal research",
+          "source": "J Pineal Res",
+          "year": 2009,
+          "pubtypes": [
+            "Journal Article"
+          ],
+          "doi": "10.1111/j.1600-079X.2009.00681.x",
+          "via": "title_terms"
+        },
+        "near_miss": null,
+        "matched_is_retracted": false,
+        "matched_year": 2009,
+        "matched_first_author": "Hoebert M"
+      },
+      {
+        "ref": {
+          "raw": "Bruni O, et al. \"Current role of melatonin in pediatric neurology: clinical recommendations.\" European Journal of Paediatric Neurology, 2015.",
+          "authors": "Bruni O, et al.",
+          "first_author_surname": "Bruni",
+          "year": "2015",
+          "title": "Current role of melatonin in pediatric neurology: clinical recommendations",
+          "journal": "European Journal of Paediatric Neurology",
+          "pmid": "",
+          "doi": "",
+          "kind": "journal_article"
+        },
+        "status": "verified",
+        "pmid_status": "none_given",
+        "match_source": "pubmed",
+        "best_similarity": 1.0,
+        "matched": {
+          "pmid": "25553845",
+          "title": "Current role of melatonin in pediatric neurology: clinical recommendations.",
+          "authors": [
+            "Bruni O",
+            "Alonso-Alconada D",
+            "Besag F",
+            "Biran V",
+            "Braam W",
+            "Cortese S",
+            "Moavero R",
+            "Parisi P",
+            "Smits M",
+            "Van der Heijden K",
+            "Curatolo P"
+          ],
+          "journal": "European journal of paediatric neurology : EJPN : official journal of the European Paediatric Neurology Society",
+          "source": "Eur J Paediatr Neurol",
+          "year": 2015,
+          "pubtypes": [
+            "Journal Article",
+            "Review"
+          ],
+          "doi": "10.1016/j.ejpn.2014.12.007",
+          "via": "title_terms"
+        },
+        "near_miss": null,
+        "matched_is_retracted": false,
+        "matched_year": 2015,
+        "matched_first_author": "Bruni O"
+      },
+      {
+        "ref": {
+          "raw": "the American Academy of Pediatrics (HealthyChildren.org) and your pediatrician are good next steps.",
+          "authors": "American Academy of Pediatrics",
+          "first_author_surname": "",
+          "year": "",
+          "title": "",
+          "journal": "",
+          "pmid": "",
+          "doi": "",
+          "kind": "guideline_or_org_statement"
+        },
+        "status": "non_article_source",
+        "pmid_status": "none_given",
+        "matched": null,
+        "best_similarity": null,
+        "match_source": null,
+        "matched_is_retracted": false
+      }
+    ],
+    "status_counts": {
+      "verified": 6,
+      "exists_paraphrased": 1,
+      "non_article_source": 1
+    }
+  },
+  {
+    "question_id": "Q2",
+    "replicate": 1,
+    "file": "data/comparators/Q2_ozempic_safety/claude_free_run_1.json",
+    "declined_pmids": true,
+    "pmids_offered": [
+      "33567185",
+      "33667417",
+      "35441470",
+      "37952131",
+      "27633186",
+      "35344001",
+      "37796527",
+      "38182782"
+    ],
+    "references": [
+      {
+        "ref": {
+          "raw": "Wilding JPH, et al. *Once-Weekly Semaglutide in Adults with Overweight or Obesity* (STEP 1). N Engl J Med. 2021. PMID: 33567185.",
+          "authors": "Wilding JPH, et al.",
+          "first_author_surname": "Wilding",
+          "year": "2021",
+          "title": "Once-Weekly Semaglutide in Adults with Overweight or Obesity",
+          "journal": "N Engl J Med",
+          "pmid": "33567185",
+          "doi": "",
+          "kind": "journal_article"
+        },
+        "status": "verified",
+        "pmid_status": "correct",
+        "match_source": "pubmed",
+        "best_similarity": 1.0,
+        "matched": {
+          "pmid": "33567185",
+          "title": "Once-Weekly Semaglutide in Adults with Overweight or Obesity.",
+          "authors": [
+            "Wilding JPH",
+            "Batterham RL",
+            "Calanna S",
+            "Davies M",
+            "Van Gaal LF",
+            "Lingvay I",
+            "McGowan BM",
+            "Rosenstock J",
+            "Tran MTD",
+            "Wadden TA",
+            "Wharton S",
+            "Yokote K",
+            "Zeuthen N",
+            "Kushner RF",
+            "STEP 1 Study Group"
+          ],
+          "journal": "The New England journal of medicine",
+          "source": "N Engl J Med",
+          "year": 2021,
+          "pubtypes": [
+            "Journal Article",
+            "Multicenter Study",
+            "Randomized Controlled Trial",
+            "Research Support, Non-U.S. Gov't"
+          ],
+          "doi": "10.1056/NEJMoa2032183",
+          "via": "supplied_pmid"
+        },
+        "near_miss": null,
+        "matched_is_retracted": false,
+        "matched_year": 2021,
+        "matched_first_author": "Wilding JPH"
+      },
+      {
+        "ref": {
+          "raw": "Davies M, et al. *Semaglutide 2.4 mg once a week in adults with overweight or obesity, and type 2 diabetes* (STEP 2). Lancet. 2021. PMID: 33667417.",
+          "authors": "Davies M, et al.",
+          "first_author_surname": "Davies",
+          "year": "2021",
+          "title": "Semaglutide 2.4 mg once a week in adults with overweight or obesity, and type 2 diabetes",
+          "journal": "Lancet",
+          "pmid": "33667417",
+          "doi": "",
+          "kind": "journal_article"
+        },
+        "status": "verified",
+        "pmid_status": "correct",
+        "match_source": "pubmed",
+        "best_similarity": 0.95,
+        "matched": {
+          "pmid": "33667417",
+          "title": "Semaglutide 2·4 mg once a week in adults with overweight or obesity, and type 2 diabetes (STEP 2): a randomised, double-blind, double-dummy, placebo-controlled, phase 3 trial.",
+          "authors": [
+            "Davies M",
+            "Færch L",
+            "Jeppesen OK",
+            "Pakseresht A",
+            "Pedersen SD",
+            "Perreault L",
+            "Rosenstock J",
+            "Shimomura I",
+            "Viljoen A",
+            "Wadden TA",
+            "Lingvay I",
+            "STEP 2 Study Group"
+          ],
+          "journal": "Lancet (London, England)",
+          "source": "Lancet",
+          "year": 2021,
+          "pubtypes": [
+            "Clinical Trial, Phase III",
+            "Journal Article",
+            "Multicenter Study",
+            "Randomized Controlled Trial",
+            "Research Support, Non-U.S. Gov't",
+            "Equivalence Trial"
+          ],
+          "doi": "10.1016/S0140-6736(21)00213-0",
+          "via": "supplied_pmid"
+        },
+        "near_miss": null,
+        "matched_is_retracted": false,
+        "matched_year": 2021,
+        "matched_first_author": "Davies M"
+      },
+      {
+        "ref": {
+          "raw": "Wilding JPH, et al. *Weight regain and cardiometabolic effects after withdrawal of semaglutide: the STEP 1 trial extension.* Diabetes Obes Metab. 2022. PMID: 35441470.",
+          "authors": "Wilding JPH, et al.",
+          "first_author_surname": "Wilding",
+          "year": "2022",
+          "title": "Weight regain and cardiometabolic effects after withdrawal of semaglutide: the STEP 1 trial extension.",
+          "journal": "Diabetes Obes Metab",
+          "pmid": "35441470",
+          "doi": "",
+          "kind": "journal_article"
+        },
+        "status": "verified",
+        "pmid_status": "correct",
+        "match_source": "pubmed",
+        "best_similarity": 1.0,
+        "matched": {
+          "pmid": "35441470",
+          "title": "Weight regain and cardiometabolic effects after withdrawal of semaglutide: The STEP 1 trial extension.",
+          "authors": [
+            "Wilding JPH",
+            "Batterham RL",
+            "Davies M",
+            "Van Gaal LF",
+            "Kandler K",
+            "Konakli K",
+            "Lingvay I",
+            "McGowan BM",
+            "Oral TK",
+            "Rosenstock J",
+            "Wadden TA",
+            "Wharton S",
+            "Yokote K",
+            "Kushner RF",
+            "STEP 1 Study Group"
+          ],
+          "journal": "Diabetes, obesity & metabolism",
+          "source": "Diabetes Obes Metab",
+          "year": 2022,
+          "pubtypes": [
+            "Journal Article",
+            "Randomized Controlled Trial",
+            "Research Support, Non-U.S. Gov't"
+          ],
+          "doi": "10.1111/dom.14725",
+          "via": "supplied_pmid"
+        },
+        "near_miss": null,
+        "matched_is_retracted": false,
+        "matched_year": 2022,
+        "matched_first_author": "Wilding JPH"
+      },
+      {
+        "ref": {
+          "raw": "Lincoff AM, et al. *Semaglutide and Cardiovascular Outcomes in Obesity without Diabetes* (SELECT). N Engl J Med. 2023. PMID: 37952131.",
+          "authors": "Lincoff AM, et al.",
+          "first_author_surname": "Lincoff",
+          "year": "2023",
+          "title": "Semaglutide and Cardiovascular Outcomes in Obesity without Diabetes",
+          "journal": "N Engl J Med",
+          "pmid": "37952131",
+          "doi": "",
+          "kind": "journal_article"
+        },
+        "status": "verified",
+        "pmid_status": "correct",
+        "match_source": "pubmed",
+        "best_similarity": 1.0,
+        "matched": {
+          "pmid": "37952131",
+          "title": "Semaglutide and Cardiovascular Outcomes in Obesity without Diabetes.",
+          "authors": [
+            "Lincoff AM",
+            "Brown-Frandsen K",
+            "Colhoun HM",
+            "Deanfield J",
+            "Emerson SS",
+            "Esbjerg S",
+            "Hardt-Lindberg S",
+            "Hovingh GK",
+            "Kahn SE",
+            "Kushner RF",
+            "Lingvay I",
+            "Oral TK",
+            "Michelsen MM",
+            "Plutzky J",
+            "Tornøe CW",
+            "Ryan DH",
+            "SELECT Trial Investigators"
+          ],
+          "journal": "The New England journal of medicine",
+          "source": "N Engl J Med",
+          "year": 2023,
+          "pubtypes": [
+            "Equivalence Trial",
+            "Journal Article",
+            "Multicenter Study",
+            "Randomized Controlled Trial"
+          ],
+          "doi": "10.1056/NEJMoa2307563",
+          "via": "supplied_pmid"
+        },
+        "near_miss": null,
+        "matched_is_retracted": false,
+        "matched_year": 2023,
+        "matched_first_author": "Lincoff AM"
+      },
+      {
+        "ref": {
+          "raw": "Marso SP, et al. *Semaglutide and Cardiovascular Outcomes in Patients with Type 2 Diabetes* (SUSTAIN-6). N Engl J Med. 2016. PMID: 27633186.",
+          "authors": "Marso SP, et al.",
+          "first_author_surname": "Marso",
+          "year": "2016",
+          "title": "Semaglutide and Cardiovascular Outcomes in Patients with Type 2 Diabetes",
+          "journal": "N Engl J Med",
+          "pmid": "27633186",
+          "doi": "",
+          "kind": "journal_article"
+        },
+        "status": "verified",
+        "pmid_status": "correct",
+        "match_source": "pubmed",
+        "best_similarity": 1.0,
+        "matched": {
+          "pmid": "27633186",
+          "title": "Semaglutide and Cardiovascular Outcomes in Patients with Type 2 Diabetes.",
+          "authors": [
+            "Marso SP",
+            "Bain SC",
+            "Consoli A",
+            "Eliaschewitz FG",
+            "Jódar E",
+            "Leiter LA",
+            "Lingvay I",
+            "Rosenstock J",
+            "Seufert J",
+            "Warren ML",
+            "Woo V",
+            "Hansen O",
+            "Holst AG",
+            "Pettersson J",
+            "Vilsbøll T",
+            "SUSTAIN-6 Investigators"
+          ],
+          "journal": "The New England journal of medicine",
+          "source": "N Engl J Med",
+          "year": 2016,
+          "pubtypes": [
+            "Journal Article",
+            "Multicenter Study",
+            "Randomized Controlled Trial"
+          ],
+          "doi": "10.1056/NEJMoa1607141",
+          "via": "supplied_pmid"
+        },
+        "near_miss": null,
+        "matched_is_retracted": false,
+        "matched_year": 2016,
+        "matched_first_author": "Marso SP"
+      },
+      {
+        "ref": {
+          "raw": "He L, et al. *Association of Glucagon-Like Peptide-1 Receptor Agonist Use With Risk of Gallbladder and Biliary Diseases: A Systematic Review and Meta-analysis.* JAMA Intern Med. 2022. PMID: 35344001.",
+          "authors": "He L, et al.",
+          "first_author_surname": "He",
+          "year": "2022",
+          "title": "Association of Glucagon-Like Peptide-1 Receptor Agonist Use With Risk of Gallbladder and Biliary Diseases: A Systematic Review and Meta-analysis.",
+          "journal": "JAMA Intern Med",
+          "pmid": "35344001",
+          "doi": "",
+          "kind": "journal_article"
+        },
+        "status": "verified",
+        "pmid_status": "correct",
+        "match_source": "pubmed",
+        "best_similarity": 0.95,
+        "matched": {
+          "pmid": "35344001",
+          "title": "Association of Glucagon-Like Peptide-1 Receptor Agonist Use With Risk of Gallbladder and Biliary Diseases: A Systematic Review and Meta-analysis of Randomized Clinical Trials.",
+          "authors": [
+            "He L",
+            "Wang J",
+            "Ping F",
+            "Yang N",
+            "Huang J",
+            "Li Y",
+            "Xu L",
+            "Li W",
+            "Zhang H"
+          ],
+          "journal": "JAMA internal medicine",
+          "source": "JAMA Intern Med",
+          "year": 2022,
+          "pubtypes": [
+            "Journal Article",
+            "Meta-Analysis",
+            "Systematic Review"
+          ],
+          "doi": "10.1001/jamainternmed.2022.0338",
+          "via": "supplied_pmid"
+        },
+        "near_miss": null,
+        "matched_is_retracted": false,
+        "matched_year": 2022,
+        "matched_first_author": "He L"
+      },
+      {
+        "ref": {
+          "raw": "Sodhi M, et al. *Risk of Gastrointestinal Adverse Events Associated With GLP-1 Receptor Agonists for Weight Loss.* JAMA. 2023. PMID: 37796527.",
+          "authors": "Sodhi M, et al.",
+          "first_author_surname": "Sodhi",
+          "year": "2023",
+          "title": "Risk of Gastrointestinal Adverse Events Associated With GLP-1 Receptor Agonists for Weight Loss.",
+          "journal": "JAMA",
+          "pmid": "37796527",
+          "doi": "",
+          "kind": "journal_article"
+        },
+        "status": "verified",
+        "pmid_status": "correct",
+        "match_source": "pubmed",
+        "best_similarity": 0.9135,
+        "matched": {
+          "pmid": "37796527",
+          "title": "Risk of Gastrointestinal Adverse Events Associated With Glucagon-Like Peptide-1 Receptor Agonists for Weight Loss.",
+          "authors": [
+            "Sodhi M",
+            "Rezaeianzadeh R",
+            "Kezouh A",
+            "Etminan M"
+          ],
+          "journal": "JAMA",
+          "source": "JAMA",
+          "year": 2023,
+          "pubtypes": [
+            "Journal Article"
+          ],
+          "doi": "10.1001/jama.2023.19574",
+          "via": "supplied_pmid"
+        },
+        "near_miss": null,
+        "matched_is_retracted": false,
+        "matched_year": 2023,
+        "matched_first_author": "Sodhi M"
+      },
+      {
+        "ref": {
+          "raw": "Wang W, et al. *Association of semaglutide with risk of suicidal ideation in a real-world cohort.* Nat Med. 2024. PMID: 38182782.",
+          "authors": "Wang W, et al.",
+          "first_author_surname": "Wang",
+          "year": "2024",
+          "title": "Association of semaglutide with risk of suicidal ideation in a real-world cohort.",
+          "journal": "Nat Med",
+          "pmid": "38182782",
+          "doi": "",
+          "kind": "journal_article"
+        },
+        "status": "verified",
+        "pmid_status": "correct",
+        "match_source": "pubmed",
+        "best_similarity": 1.0,
+        "matched": {
+          "pmid": "38182782",
+          "title": "Association of semaglutide with risk of suicidal ideation in a real-world cohort.",
+          "authors": [
+            "Wang W",
+            "Volkow ND",
+            "Berger NA",
+            "Davis PB",
+            "Kaelber DC",
+            "Xu R"
+          ],
+          "journal": "Nature medicine",
+          "source": "Nat Med",
+          "year": 2024,
+          "pubtypes": [
+            "Journal Article",
+            "Research Support, N.I.H., Extramural"
+          ],
+          "doi": "10.1038/s41591-023-02672-2",
+          "via": "supplied_pmid"
+        },
+        "near_miss": null,
+        "matched_is_retracted": false,
+        "matched_year": 2024,
+        "matched_first_author": "Wang W"
+      },
+      {
+        "ref": {
+          "raw": "The FDA prescribing information for Wegovy and Ozempic is the source for the thyroid C-cell tumor boxed warning (based on rodent data), pregnancy guidance, and contraindications.",
+          "authors": "FDA",
+          "first_author_surname": "",
+          "year": "",
+          "title": "",
+          "journal": "",
+          "pmid": "",
+          "doi": "",
+          "kind": "guideline_or_org_statement"
+        },
+        "status": "non_article_source",
+        "pmid_status": "none_given",
+        "matched": null,
+        "best_similarity": null,
+        "match_source": null,
+        "matched_is_retracted": false
+      },
+      {
+        "ref": {
+          "raw": "The FDA and other regulators' communications cover compounded semaglutide concerns and the anesthesia and aspiration guidance.",
+          "authors": "FDA and other regulators",
+          "first_author_surname": "",
+          "year": "",
+          "title": "",
+          "journal": "",
+          "pmid": "",
+          "doi": "",
+          "kind": "guideline_or_org_statement"
+        },
+        "status": "non_article_source",
+        "pmid_status": "none_given",
+        "matched": null,
+        "best_similarity": null,
+        "match_source": null,
+        "matched_is_retracted": false
+      }
+    ],
+    "status_counts": {
+      "verified": 8,
+      "non_article_source": 2
+    }
+  },
+  {
+    "question_id": "Q3",
+    "replicate": 1,
+    "file": "data/comparators/Q3_vitamin_d_colds/claude_free_run_1.json",
+    "declined_pmids": true,
+    "pmids_offered": [
+      "28202713",
+      "36215226",
+      "30415629"
+    ],
+    "references": [
+      {
+        "ref": {
+          "raw": "Martineau AR, Jolliffe DA, Hooper RL, et al. Vitamin D supplementation to prevent acute respiratory tract infections: systematic review and meta-analysis of individual participant data. BMJ. 2017;356:i6583. PMID: 28202713 (fairly confident)",
+          "authors": "Martineau AR, Jolliffe DA, Hooper RL, et al.",
+          "first_author_surname": "Martineau",
+          "year": "2017",
+          "title": "Vitamin D supplementation to prevent acute respiratory tract infections: systematic review and meta-analysis of individual participant data",
+          "journal": "BMJ",
+          "pmid": "28202713",
+          "doi": "",
+          "kind": "journal_article"
+        },
+        "status": "verified",
+        "pmid_status": "correct",
+        "match_source": "pubmed",
+        "best_similarity": 1.0,
+        "matched": {
+          "pmid": "28202713",
+          "title": "Vitamin D supplementation to prevent acute respiratory tract infections: systematic review and meta-analysis of individual participant data.",
+          "authors": [
+            "Martineau AR",
+            "Jolliffe DA",
+            "Hooper RL",
+            "Greenberg L",
+            "Aloia JF",
+            "Bergman P",
+            "Dubnov-Raz G",
+            "Esposito S",
+            "Ganmaa D",
+            "Ginde AA",
+            "Goodall EC",
+            "Grant CC",
+            "Griffiths CJ",
+            "Janssens W",
+            "Laaksi I",
+            "Manaseki-Holland S",
+            "Mauger D",
+            "Murdoch DR",
+            "Neale R",
+            "Rees JR",
+            "Simpson S Jr",
+            "Stelmach I",
+            "Kumar GT",
+            "Urashima M",
+            "Camargo CA Jr"
+          ],
+          "journal": "BMJ (Clinical research ed.)",
+          "source": "BMJ",
+          "year": 2017,
+          "pubtypes": [
+            "Journal Article",
+            "Meta-Analysis",
+            "Systematic Review"
+          ],
+          "doi": "10.1136/bmj.i6583",
+          "via": "supplied_pmid"
+        },
+        "near_miss": null,
+        "matched_is_retracted": false,
+        "matched_year": 2017,
+        "matched_first_author": "Martineau AR"
+      },
+      {
+        "ref": {
+          "raw": "Jolliffe DA, Holt H, Greenig M, et al. Effect of a test-and-treat approach to vitamin D supplementation on risk of all cause acute respiratory tract infection and covid-19 (CORONAVIT): phase 3, randomised, controlled, open-label trial. BMJ. 2022;378:e071230. PMID: 36215226 (moderately confident)",
+          "authors": "Jolliffe DA, Holt H, Greenig M, et al.",
+          "first_author_surname": "Jolliffe",
+          "year": "2022",
+          "title": "Effect of a test-and-treat approach to vitamin D supplementation on risk of all cause acute respiratory tract infection and covid-19 (CORONAVIT): phase 3, randomised, controlled, open-label trial",
+          "journal": "BMJ",
+          "pmid": "36215226",
+          "doi": "",
+          "kind": "journal_article"
+        },
+        "status": "verified",
+        "pmid_status": "correct",
+        "match_source": "pubmed",
+        "best_similarity": 0.9655,
+        "matched": {
+          "pmid": "36215226",
+          "title": "Effect of a test-and-treat approach to vitamin D supplementation on risk of all cause acute respiratory tract infection and covid-19: phase 3 randomised controlled trial (CORONAVIT).",
+          "authors": [
+            "Jolliffe DA",
+            "Holt H",
+            "Greenig M",
+            "Talaei M",
+            "Perdek N",
+            "Pfeffer P",
+            "Vivaldi G",
+            "Maltby S",
+            "Symons J",
+            "Barlow NL",
+            "Normandale A",
+            "Garcha R",
+            "Richter AG",
+            "Faustini SE",
+            "Orton C",
+            "Ford D",
+            "Lyons RA",
+            "Davies GA",
+            "Kee F",
+            "Griffiths CJ",
+            "Norrie J",
+            "Sheikh A",
+            "Shaheen SO",
+            "Relton C",
+            "Martineau AR"
+          ],
+          "journal": "BMJ (Clinical research ed.)",
+          "source": "BMJ",
+          "year": 2022,
+          "pubtypes": [
+            "Clinical Trial, Phase III",
+            "Journal Article",
+            "Randomized Controlled Trial"
+          ],
+          "doi": "10.1136/bmj-2022-071230",
+          "via": "supplied_pmid"
+        },
+        "near_miss": null,
+        "matched_is_retracted": false,
+        "matched_year": 2022,
+        "matched_first_author": "Jolliffe DA"
+      },
+      {
+        "ref": {
+          "raw": "Manson JE, Cook NR, Lee IM, et al. Vitamin D supplements and prevention of cancer and cardiovascular disease (VITAL). N Engl J Med. 2019;380:33-44. PMID: 30415629 (moderately confident)",
+          "authors": "Manson JE, Cook NR, Lee IM, et al.",
+          "first_author_surname": "Manson",
+          "year": "2019",
+          "title": "Vitamin D supplements and prevention of cancer and cardiovascular disease (VITAL)",
+          "journal": "N Engl J Med",
+          "pmid": "30415629",
+          "doi": "",
+          "kind": "journal_article"
+        },
+        "status": "verified",
+        "pmid_status": "correct",
+        "match_source": "pubmed",
+        "best_similarity": 0.9605,
+        "matched": {
+          "pmid": "30415629",
+          "title": "Vitamin D Supplements and Prevention of Cancer and Cardiovascular Disease.",
+          "authors": [
+            "Manson JE",
+            "Cook NR",
+            "Lee IM",
+            "Christen W",
+            "Bassuk SS",
+            "Mora S",
+            "Gibson H",
+            "Gordon D",
+            "Copeland T",
+            "D'Agostino D",
+            "Friedenberg G",
+            "Ridge C",
+            "Bubes V",
+            "Giovannucci EL",
+            "Willett WC",
+            "Buring JE",
+            "VITAL Research Group"
+          ],
+          "journal": "The New England journal of medicine",
+          "source": "N Engl J Med",
+          "year": 2019,
+          "pubtypes": [
+            "Journal Article",
+            "Multicenter Study",
+            "Randomized Controlled Trial",
+            "Research Support, N.I.H., Extramural"
+          ],
+          "doi": "10.1056/NEJMoa1809944",
+          "via": "supplied_pmid"
+        },
+        "near_miss": null,
+        "matched_is_retracted": false,
+        "matched_year": 2019,
+        "matched_first_author": "Manson JE"
+      },
+      {
+        "ref": {
+          "raw": "Aglipay M, et al. JAMA. 2017. A Canadian trial of high-dose vs standard-dose vitamin D in young children, which found no reduction in viral respiratory infections. I don't remember the PMID.",
+          "authors": "Aglipay M, et al.",
+          "first_author_surname": "Aglipay",
+          "year": "2017",
+          "title": "",
+          "journal": "JAMA",
+          "pmid": "",
+          "doi": "",
+          "kind": "journal_article"
+        },
+        "status": "locatable_no_title",
+        "pmid_status": "none_given",
+        "match_source": "pubmed",
+        "best_similarity": 0.0,
+        "matched": {
+          "pmid": "29209716",
+          "title": "Vitamin D Supplementation and Upper Respiratory Tract Infections in Children-Reply.",
+          "authors": [
+            "Aglipay M",
+            "Maguire JL"
+          ],
+          "journal": "JAMA",
+          "source": "JAMA",
+          "year": 2017,
+          "pubtypes": [
+            "Letter",
+            "Comment"
+          ],
+          "doi": "10.1001/jama.2017.15154",
+          "via": "author_year_journal"
+        },
+        "near_miss": null,
+        "matched_is_retracted": false,
+        "matched_year": 2017,
+        "matched_first_author": "Aglipay M"
+      },
+      {
+        "ref": {
+          "raw": "Pham H, et al. D-Health Trial analysis of acute respiratory infection in older Australians, Lancet Diabetes Endocrinol, around 2021. I'm not sure of the details or PMID.",
+          "authors": "Pham H, et al.",
+          "first_author_surname": "Pham",
+          "year": "2021",
+          "title": "D-Health Trial analysis of acute respiratory infection in older Australians",
+          "journal": "Lancet Diabetes Endocrinol",
+          "pmid": "",
+          "doi": "",
+          "kind": "journal_article"
+        },
+        "status": "exists_paraphrased",
+        "pmid_status": "none_given",
+        "match_source": "pubmed",
+        "best_similarity": 0.6926,
+        "matched": {
+          "pmid": "33444565",
+          "title": "The effect of vitamin D supplementation on acute respiratory tract infection in older Australian adults: an analysis of data from the D-Health Trial.",
+          "authors": [
+            "Pham H",
+            "Waterhouse M",
+            "Baxter C",
+            "Duarte Romero B",
+            "McLeod DSA",
+            "Armstrong BK",
+            "Ebeling PR",
+            "English DR",
+            "Hartel G",
+            "Kimlin MG",
+            "Martineau AR",
+            "O'Connell R",
+            "van der Pols JC",
+            "Venn AJ",
+            "Webb PM",
+            "Whiteman DC",
+            "Neale RE"
+          ],
+          "journal": "The lancet. Diabetes & endocrinology",
+          "source": "Lancet Diabetes Endocrinol",
+          "year": 2021,
+          "pubtypes": [
+            "Journal Article",
+            "Research Support, Non-U.S. Gov't"
+          ],
+          "doi": "10.1016/S2213-8587(20)30380-6",
+          "via": "title_terms"
+        },
+        "near_miss": null,
+        "matched_is_retracted": false,
+        "matched_year": 2021,
+        "matched_first_author": "Pham H"
+      },
+      {
+        "ref": {
+          "raw": "NHS guidance on vitamin D (400 IU/10 mcg daily in autumn and winter)",
+          "authors": "",
+          "first_author_surname": "",
+          "year": "",
+          "title": "NHS guidance on vitamin D",
+          "journal": "",
+          "pmid": "",
+          "doi": "",
+          "kind": "guideline_or_org_statement"
+        },
+        "status": "non_article_source",
+        "pmid_status": "none_given",
+        "matched": null,
+        "best_similarity": null,
+        "match_source": null,
+        "matched_is_retracted": false
+      },
+      {
+        "ref": {
+          "raw": "NIH Office of Dietary Supplements, Vitamin D fact sheet (intake and upper limits)",
+          "authors": "NIH Office of Dietary Supplements",
+          "first_author_surname": "",
+          "year": "",
+          "title": "Vitamin D fact sheet",
+          "journal": "",
+          "pmid": "",
+          "doi": "",
+          "kind": "guideline_or_org_statement"
+        },
+        "status": "non_article_source",
+        "pmid_status": "none_given",
+        "matched": null,
+        "best_similarity": null,
+        "match_source": null,
+        "matched_is_retracted": false
+      },
+      {
+        "ref": {
+          "raw": "National Academy of Medicine (Institute of Medicine) 2011 Dietary Reference Intakes for calcium and vitamin D",
+          "authors": "National Academy of Medicine (Institute of Medicine)",
+          "first_author_surname": "",
+          "year": "2011",
+          "title": "Dietary Reference Intakes for calcium and vitamin D",
+          "journal": "",
+          "pmid": "",
+          "doi": "",
+          "kind": "guideline_or_org_statement"
+        },
+        "status": "non_article_source",
+        "pmid_status": "none_given",
+        "matched": null,
+        "best_similarity": null,
+        "match_source": null,
+        "matched_is_retracted": false
+      }
+    ],
+    "status_counts": {
+      "verified": 3,
+      "locatable_no_title": 1,
+      "exists_paraphrased": 1,
+      "non_article_source": 3
+    }
+  },
+  {
+    "question_id": "Q4",
+    "replicate": 1,
+    "file": "data/comparators/Q4_intermittent_fasting/claude_free_run_1.json",
+    "declined_pmids": true,
+    "pmids_offered": [],
+    "references": [
+      {
+        "ref": {
+          "raw": "Trepanowski et al., 2017, JAMA Internal Medicine. \"Effect of Alternate-Day Fasting on Weight Loss, Weight Maintenance, and Cardioprotection Among Metabolically Healthy Obese Adults.\" At 12 months, alternate-day fasting and daily calorie restriction produced similar weight loss, and the fasting group had a higher dropout rate.",
+          "authors": "Trepanowski et al.",
+          "first_author_surname": "Trepanowski",
+          "year": "2017",
+          "title": "Effect of Alternate-Day Fasting on Weight Loss, Weight Maintenance, and Cardioprotection Among Metabolically Healthy Obese Adults",
+          "journal": "JAMA Internal Medicine",
+          "pmid": "",
+          "doi": "",
+          "kind": "journal_article"
+        },
+        "status": "verified",
+        "pmid_status": "none_given",
+        "match_source": "pubmed",
+        "best_similarity": 0.95,
+        "matched": {
+          "pmid": "28459931",
+          "title": "Effect of Alternate-Day Fasting on Weight Loss, Weight Maintenance, and Cardioprotection Among Metabolically Healthy Obese Adults: A Randomized Clinical Trial.",
+          "authors": [
+            "Trepanowski JF",
+            "Kroeger CM",
+            "Barnosky A",
+            "Klempel MC",
+            "Bhutani S",
+            "Hoddy KK",
+            "Gabel K",
+            "Freels S",
+            "Rigdon J",
+            "Rood J",
+            "Ravussin E",
+            "Varady KA"
+          ],
+          "journal": "JAMA internal medicine",
+          "source": "JAMA Intern Med",
+          "year": 2017,
+          "pubtypes": [
+            "Journal Article",
+            "Randomized Controlled Trial"
+          ],
+          "doi": "10.1001/jamainternmed.2017.0936",
+          "via": "title_terms"
+        },
+        "near_miss": null,
+        "matched_is_retracted": false,
+        "matched_year": 2017,
+        "matched_first_author": "Trepanowski JF"
+      },
+      {
+        "ref": {
+          "raw": "Liu et al., 2022, New England Journal of Medicine. \"Calorie Restriction with or without Time-Restricted Eating in Weight Loss.\" Adding an 8-hour eating window to calorie restriction gave no additional weight loss at 12 months.",
+          "authors": "Liu et al.",
+          "first_author_surname": "Liu",
+          "year": "2022",
+          "title": "Calorie Restriction with or without Time-Restricted Eating in Weight Loss",
+          "journal": "New England Journal of Medicine",
+          "pmid": "",
+          "doi": "",
+          "kind": "journal_article"
+        },
+        "status": "verified",
+        "pmid_status": "none_given",
+        "match_source": "pubmed",
+        "best_similarity": 1.0,
+        "matched": {
+          "pmid": "35443107",
+          "title": "Calorie Restriction with or without Time-Restricted Eating in Weight Loss.",
+          "authors": [
+            "Liu D",
+            "Huang Y",
+            "Huang C",
+            "Yang S",
+            "Wei X",
+            "Zhang P",
+            "Guo D",
+            "Lin J",
+            "Xu B",
+            "Li C",
+            "He H",
+            "He J",
+            "Liu S",
+            "Shi L",
+            "Xue Y",
+            "Zhang H"
+          ],
+          "journal": "The New England journal of medicine",
+          "source": "N Engl J Med",
+          "year": 2022,
+          "pubtypes": [
+            "Comparative Study",
+            "Journal Article",
+            "Randomized Controlled Trial",
+            "Research Support, Non-U.S. Gov't"
+          ],
+          "doi": "10.1056/NEJMoa2114833",
+          "via": "author_year_terms"
+        },
+        "near_miss": null,
+        "matched_is_retracted": false,
+        "matched_year": 2022,
+        "matched_first_author": "Liu D"
+      },
+      {
+        "ref": {
+          "raw": "Lowe et al., 2020, JAMA Internal Medicine. \"Effects of Time-Restricted Eating on Weight Loss and Other Metabolic Parameters in Women and Men With Overweight and Obesity\" (the TREAT trial). Time-restricted eating did not produce significantly more weight loss than a control group eating three meals a day.",
+          "authors": "Lowe et al.",
+          "first_author_surname": "Lowe",
+          "year": "2020",
+          "title": "Effects of Time-Restricted Eating on Weight Loss and Other Metabolic Parameters in Women and Men With Overweight and Obesity",
+          "journal": "JAMA Internal Medicine",
+          "pmid": "",
+          "doi": "",
+          "kind": "journal_article"
+        },
+        "status": "verified",
+        "pmid_status": "none_given",
+        "match_source": "pubmed",
+        "best_similarity": 0.95,
+        "matched": {
+          "pmid": "32986097",
+          "title": "Effects of Time-Restricted Eating on Weight Loss and Other Metabolic Parameters in Women and Men With Overweight and Obesity: The TREAT Randomized Clinical Trial.",
+          "authors": [
+            "Lowe DA",
+            "Wu N",
+            "Rohdin-Bibby L",
+            "Moore AH",
+            "Kelly N",
+            "Liu YE",
+            "Philip E",
+            "Vittinghoff E",
+            "Heymsfield SB",
+            "Olgin JE",
+            "Shepherd JA",
+            "Weiss EJ"
+          ],
+          "journal": "JAMA internal medicine",
+          "source": "JAMA Intern Med",
+          "year": 2020,
+          "pubtypes": [
+            "Journal Article",
+            "Randomized Controlled Trial",
+            "Research Support, N.I.H., Extramural",
+            "Research Support, Non-U.S. Gov't"
+          ],
+          "doi": "10.1001/jamainternmed.2020.4153",
+          "via": "title_terms"
+        },
+        "near_miss": null,
+        "matched_is_retracted": false,
+        "matched_year": 2020,
+        "matched_first_author": "Lowe DA"
+      },
+      {
+        "ref": {
+          "raw": "Sundfør et al., 2018, Nutrition, Metabolism and Cardiovascular Diseases. A trial of continuous versus intermittent (5:2-style) energy restriction. I recall similar outcomes, but I'm less certain of the exact title and details.",
+          "authors": "Sundfør et al.",
+          "first_author_surname": "Sundfør",
+          "year": "2018",
+          "title": "",
+          "journal": "Nutrition, Metabolism and Cardiovascular Diseases",
+          "pmid": "",
+          "doi": "",
+          "kind": "journal_article"
+        },
+        "status": "locatable_no_title",
+        "pmid_status": "none_given",
+        "match_source": "pubmed",
+        "best_similarity": 0.0,
+        "matched": {
+          "pmid": "29778565",
+          "title": "Effect of intermittent versus continuous energy restriction on weight loss, maintenance and cardiometabolic risk: A randomized 1-year trial.",
+          "authors": [
+            "Sundfør TM",
+            "Svendsen M",
+            "Tonstad S"
+          ],
+          "journal": "Nutrition, metabolism, and cardiovascular diseases : NMCD",
+          "source": "Nutr Metab Cardiovasc Dis",
+          "year": 2018,
+          "pubtypes": [
+            "Comparative Study",
+            "Journal Article",
+            "Randomized Controlled Trial"
+          ],
+          "doi": "10.1016/j.numecd.2018.03.009",
+          "via": "author_year"
+        },
+        "near_miss": null,
+        "matched_is_retracted": false,
+        "matched_year": 2018,
+        "matched_first_author": "Sundfør TM"
+      },
+      {
+        "ref": {
+          "raw": "Cioffi et al., 2018, Journal of Translational Medicine. A meta-analysis of intermittent versus continuous energy restriction. Weight loss and cardiometabolic outcomes were broadly similar.",
+          "authors": "Cioffi et al.",
+          "first_author_surname": "Cioffi",
+          "year": "2018",
+          "title": "",
+          "journal": "Journal of Translational Medicine",
+          "pmid": "",
+          "doi": "",
+          "kind": "journal_article"
+        },
+        "status": "locatable_no_title",
+        "pmid_status": "none_given",
+        "match_source": "pubmed",
+        "best_similarity": 0.0,
+        "matched": {
+          "pmid": "30583725",
+          "title": "Intermittent versus continuous energy restriction on weight loss and cardiometabolic outcomes: a systematic review and meta-analysis of randomized controlled trials.",
+          "authors": [
+            "Cioffi I",
+            "Evangelista A",
+            "Ponzo V",
+            "Ciccone G",
+            "Soldati L",
+            "Santarpia L",
+            "Contaldo F",
+            "Pasanisi F",
+            "Ghigo E",
+            "Bo S"
+          ],
+          "journal": "Journal of translational medicine",
+          "source": "J Transl Med",
+          "year": 2018,
+          "pubtypes": [
+            "Comparative Study",
+            "Journal Article",
+            "Meta-Analysis",
+            "Systematic Review"
+          ],
+          "doi": "10.1186/s12967-018-1748-4",
+          "via": "author_year_journal"
+        },
+        "near_miss": null,
+        "matched_is_retracted": false,
+        "matched_year": 2018,
+        "matched_first_author": "Cioffi I"
+      },
+      {
+        "ref": {
+          "raw": "Patikorn et al., 2021, JAMA Network Open. \"Intermittent Fasting and Obesity-Related Health Outcomes: An Umbrella Review of Meta-analyses of Randomized Clinical Trials.\" Found modest benefits versus no intervention, with little difference versus continuous restriction.",
+          "authors": "Patikorn et al.",
+          "first_author_surname": "Patikorn",
+          "year": "2021",
+          "title": "Intermittent Fasting and Obesity-Related Health Outcomes: An Umbrella Review of Meta-analyses of Randomized Clinical Trials",
+          "journal": "JAMA Network Open",
+          "pmid": "",
+          "doi": "",
+          "kind": "journal_article"
+        },
+        "status": "verified",
+        "pmid_status": "none_given",
+        "match_source": "pubmed",
+        "best_similarity": 1.0,
+        "matched": {
+          "pmid": "34919135",
+          "title": "Intermittent Fasting and Obesity-Related Health Outcomes: An Umbrella Review of Meta-analyses of Randomized Clinical Trials.",
+          "authors": [
+            "Patikorn C",
+            "Roubal K",
+            "Veettil SK",
+            "Chandran V",
+            "Pham T",
+            "Lee YY",
+            "Giovannucci EL",
+            "Varady KA",
+            "Chaiyakunapruk N"
+          ],
+          "journal": "JAMA network open",
+          "source": "JAMA Netw Open",
+          "year": 2021,
+          "pubtypes": [
+            "Journal Article",
+            "Systematic Review"
+          ],
+          "doi": "10.1001/jamanetworkopen.2021.39558",
+          "via": "title_terms"
+        },
+        "near_miss": null,
+        "matched_is_retracted": false,
+        "matched_year": 2021,
+        "matched_first_author": "Patikorn C"
+      }
+    ],
+    "status_counts": {
+      "verified": 4,
+      "locatable_no_title": 2
+    }
+  },
+  {
+    "question_id": "Q5",
+    "replicate": 1,
+    "file": "data/comparators/Q5_probiotics_antibiotics/claude_free_run_1.json",
+    "declined_pmids": true,
+    "pmids_offered": [
+      "31039287",
+      "26756877",
+      "32531291"
+    ],
+    "references": [
+      {
+        "ref": {
+          "raw": "Guo Q, Goldenberg JZ, Humphrey C, El Dib R, Johnston BC. Probiotics for the prevention of pediatric antibiotic-associated diarrhea. Cochrane Database of Systematic Reviews. 2019;4:CD004827. PMID: 31039287 (fairly confident)",
+          "authors": "Guo Q, Goldenberg JZ, Humphrey C, El Dib R, Johnston BC",
+          "first_author_surname": "Guo",
+          "year": "2019",
+          "title": "Probiotics for the prevention of pediatric antibiotic-associated diarrhea",
+          "journal": "Cochrane Database of Systematic Reviews",
+          "pmid": "31039287",
+          "doi": "",
+          "kind": "journal_article"
+        },
+        "status": "verified",
+        "pmid_status": "correct",
+        "match_source": "pubmed",
+        "best_similarity": 1.0,
+        "matched": {
+          "pmid": "31039287",
+          "title": "Probiotics for the prevention of pediatric antibiotic-associated diarrhea.",
+          "authors": [
+            "Guo Q",
+            "Goldenberg JZ",
+            "Humphrey C",
+            "El Dib R",
+            "Johnston BC"
+          ],
+          "journal": "The Cochrane database of systematic reviews",
+          "source": "Cochrane Database Syst Rev",
+          "year": 2019,
+          "pubtypes": [
+            "Journal Article",
+            "Meta-Analysis",
+            "Research Support, Non-U.S. Gov't",
+            "Systematic Review"
+          ],
+          "doi": "10.1002/14651858.CD004827.pub5",
+          "via": "supplied_pmid"
+        },
+        "near_miss": null,
+        "matched_is_retracted": false,
+        "matched_year": 2019,
+        "matched_first_author": "Guo Q"
+      },
+      {
+        "ref": {
+          "raw": "Szajewska H, Canani RB, Guarino A, et al. Probiotics for the prevention of antibiotic-associated diarrhea in children. Journal of Pediatric Gastroenterology and Nutrition. 2016;62(3):495-506. PMID: 26756877 (fairly confident)",
+          "authors": "Szajewska H, Canani RB, Guarino A, et al.",
+          "first_author_surname": "Szajewska",
+          "year": "2016",
+          "title": "Probiotics for the prevention of antibiotic-associated diarrhea in children",
+          "journal": "Journal of Pediatric Gastroenterology and Nutrition",
+          "pmid": "26756877",
+          "doi": "",
+          "kind": "guideline_or_org_statement"
+        },
+        "status": "verified",
+        "pmid_status": "correct",
+        "match_source": "pubmed",
+        "best_similarity": 1.0,
+        "matched": {
+          "pmid": "26756877",
+          "title": "Probiotics for the Prevention of Antibiotic-Associated Diarrhea in Children.",
+          "authors": [
+            "Szajewska H",
+            "Canani RB",
+            "Guarino A",
+            "Hojsak I",
+            "Indrio F",
+            "Kolacek S",
+            "Orel R",
+            "Shamir R",
+            "Vandenplas Y",
+            "van Goudoever JB",
+            "Weizman Z",
+            "ESPGHAN Working Group for ProbioticsPrebiotics"
+          ],
+          "journal": "Journal of pediatric gastroenterology and nutrition",
+          "source": "J Pediatr Gastroenterol Nutr",
+          "year": 2016,
+          "pubtypes": [
+            "Journal Article",
+            "Meta-Analysis",
+            "Research Support, Non-U.S. Gov't",
+            "Systematic Review"
+          ],
+          "doi": "10.1097/MPG.0000000000001081",
+          "via": "supplied_pmid"
+        },
+        "near_miss": null,
+        "matched_is_retracted": false,
+        "matched_year": 2016,
+        "matched_first_author": "Szajewska H"
+      },
+      {
+        "ref": {
+          "raw": "Su GL, Ko CW, Bercik P, et al. AGA Clinical Practice Guidelines on the Role of Probiotics in the Management of Gastrointestinal Disorders. Gastroenterology. 2020;159(2):697-705. PMID: 32531291 (fairly confident)",
+          "authors": "Su GL, Ko CW, Bercik P, et al.",
+          "first_author_surname": "Su",
+          "year": "2020",
+          "title": "AGA Clinical Practice Guidelines on the Role of Probiotics in the Management of Gastrointestinal Disorders",
+          "journal": "Gastroenterology",
+          "pmid": "32531291",
+          "doi": "",
+          "kind": "guideline_or_org_statement"
+        },
+        "status": "verified",
+        "pmid_status": "correct",
+        "match_source": "pubmed",
+        "best_similarity": 1.0,
+        "matched": {
+          "pmid": "32531291",
+          "title": "AGA Clinical Practice Guidelines on the Role of Probiotics in the Management of Gastrointestinal Disorders.",
+          "authors": [
+            "Su GL",
+            "Ko CW",
+            "Bercik P",
+            "Falck-Ytter Y",
+            "Sultan S",
+            "Weizman AV",
+            "Morgan RL"
+          ],
+          "journal": "Gastroenterology",
+          "source": "Gastroenterology",
+          "year": 2020,
+          "pubtypes": [
+            "Journal Article",
+            "Practice Guideline"
+          ],
+          "doi": "10.1053/j.gastro.2020.05.059",
+          "via": "supplied_pmid"
+        },
+        "near_miss": null,
+        "matched_is_retracted": false,
+        "matched_year": 2020,
+        "matched_first_author": "Su GL"
+      }
+    ],
+    "status_counts": {
+      "verified": 3
+    }
+  },
+  {
+    "question_id": "Q6",
+    "replicate": 1,
+    "file": "data/comparators/Q6_acv_weight_loss/claude_free_run_1.json",
+    "declined_pmids": true,
+    "pmids_offered": [
+      "19661687"
+    ],
+    "references": [
+      {
+        "ref": {
+          "raw": "Kondo T, Kishi M, Fushimi T, Ugajin S, Kaga T. \"Vinegar intake reduces body weight, body fat mass, and serum triglyceride levels in obese Japanese subjects.\" Biosci Biotechnol Biochem. 2009;73(8):1837-1843. PMID: 19661687 (fairly confident). This is the Japanese 12-week trial of about 150 adults.",
+          "authors": "Kondo T, Kishi M, Fushimi T, Ugajin S, Kaga T",
+          "first_author_surname": "Kondo",
+          "year": "2009",
+          "title": "Vinegar intake reduces body weight, body fat mass, and serum triglyceride levels in obese Japanese subjects.",
+          "journal": "Biosci Biotechnol Biochem",
+          "pmid": "19661687",
+          "doi": "",
+          "kind": "journal_article"
+        },
+        "status": "verified",
+        "pmid_status": "correct",
+        "match_source": "pubmed",
+        "best_similarity": 1.0,
+        "matched": {
+          "pmid": "19661687",
+          "title": "Vinegar intake reduces body weight, body fat mass, and serum triglyceride levels in obese Japanese subjects.",
+          "authors": [
+            "Kondo T",
+            "Kishi M",
+            "Fushimi T",
+            "Ugajin S",
+            "Kaga T"
+          ],
+          "journal": "Bioscience, biotechnology, and biochemistry",
+          "source": "Biosci Biotechnol Biochem",
+          "year": 2009,
+          "pubtypes": [
+            "Journal Article",
+            "Randomized Controlled Trial"
+          ],
+          "doi": "10.1271/bbb.90231",
+          "via": "supplied_pmid"
+        },
+        "near_miss": null,
+        "matched_is_retracted": false,
+        "matched_year": 2009,
+        "matched_first_author": "Kondo T"
+      },
+      {
+        "ref": {
+          "raw": "Darzi J, Frost GS, Montaser R, Yap J, Robertson MD. \"Influence of the tolerability of vinegar as an oral source of short-chain fatty acids on appetite control and food intake.\" Int J Obes. 2014;38(5):675-681. PMID: I don't remember it. This is the study suggesting nausea may drive some of the reduced appetite.",
+          "authors": "Darzi J, Frost GS, Montaser R, Yap J, Robertson MD",
+          "first_author_surname": "Darzi",
+          "year": "2014",
+          "title": "Influence of the tolerability of vinegar as an oral source of short-chain fatty acids on appetite control and food intake.",
+          "journal": "Int J Obes",
+          "pmid": "",
+          "doi": "",
+          "kind": "journal_article"
+        },
+        "status": "verified",
+        "pmid_status": "none_given",
+        "match_source": "pubmed",
+        "best_similarity": 1.0,
+        "matched": {
+          "pmid": "23979220",
+          "title": "Influence of the tolerability of vinegar as an oral source of short-chain fatty acids on appetite control and food intake.",
+          "authors": [
+            "Darzi J",
+            "Frost GS",
+            "Montaser R",
+            "Yap J",
+            "Robertson MD"
+          ],
+          "journal": "International journal of obesity (2005)",
+          "source": "Int J Obes (Lond)",
+          "year": 2014,
+          "pubtypes": [
+            "Journal Article",
+            "Randomized Controlled Trial",
+            "Research Support, Non-U.S. Gov't"
+          ],
+          "doi": "10.1038/ijo.2013.157",
+          "via": "title_terms"
+        },
+        "near_miss": null,
+        "matched_is_retracted": false,
+        "matched_year": 2014,
+        "matched_first_author": "Darzi J"
+      },
+      {
+        "ref": {
+          "raw": "Abou-Khalil R, et al. \"Apple cider vinegar for weight management in Lebanese adolescents and young adults with overweight and obesity: a randomised, double-blind, placebo-controlled study.\" BMJ Nutrition, Prevention & Health. 2024. PMID: I don't remember it. This is the 2024 study I said was criticized and, I believe, retracted. Check the journal's site for its current status.",
+          "authors": "Abou-Khalil R, et al.",
+          "first_author_surname": "Abou-Khalil",
+          "year": "2024",
+          "title": "Apple cider vinegar for weight management in Lebanese adolescents and young adults with overweight and obesity: a randomised, double-blind, placebo-controlled study.",
+          "journal": "BMJ Nutrition, Prevention & Health",
+          "pmid": "",
+          "doi": "",
+          "kind": "journal_article"
+        },
+        "status": "verified",
+        "pmid_status": "none_given",
+        "match_source": "pubmed",
+        "best_similarity": 1.0,
+        "matched": {
+          "pmid": "38966098",
+          "title": "Apple cider vinegar for weight management in Lebanese adolescents and young adults with overweight and obesity: a randomised, double-blind, placebo-controlled study.",
+          "authors": [
+            "Abou-Khalil R",
+            "Andary J",
+            "El-Hayek E"
+          ],
+          "journal": "BMJ nutrition, prevention & health",
+          "source": "BMJ Nutr Prev Health",
+          "year": 2024,
+          "pubtypes": [
+            "Journal Article",
+            "Retracted Publication"
+          ],
+          "doi": "10.1136/bmjnph-2023-000823",
+          "via": "title_terms"
+        },
+        "near_miss": null,
+        "matched_is_retracted": true,
+        "matched_year": 2024,
+        "matched_first_author": "Abou-Khalil R"
+      },
+      {
+        "ref": {
+          "raw": "Östman E, Granfeldt Y, Persson L, Björck I. \"Vinegar supplementation lowers glucose and insulin responses and increases satiety after a bread meal in healthy subjects.\" Eur J Clin Nutr. 2005;59(9):983-988. PMID: I don't remember it. This is a small study on fullness and post-meal blood sugar.",
+          "authors": "Östman E, Granfeldt Y, Persson L, Björck I",
+          "first_author_surname": "Östman",
+          "year": "2005",
+          "title": "Vinegar supplementation lowers glucose and insulin responses and increases satiety after a bread meal in healthy subjects.",
+          "journal": "Eur J Clin Nutr",
+          "pmid": "",
+          "doi": "",
+          "kind": "journal_article"
+        },
+        "status": "verified",
+        "pmid_status": "none_given",
+        "match_source": "pubmed",
+        "best_similarity": 1.0,
+        "matched": {
+          "pmid": "16015276",
+          "title": "Vinegar supplementation lowers glucose and insulin responses and increases satiety after a bread meal in healthy subjects.",
+          "authors": [
+            "Ostman E",
+            "Granfeldt Y",
+            "Persson L",
+            "Björck I"
+          ],
+          "journal": "European journal of clinical nutrition",
+          "source": "Eur J Clin Nutr",
+          "year": 2005,
+          "pubtypes": [
+            "Journal Article",
+            "Randomized Controlled Trial",
+            "Research Support, Non-U.S. Gov't"
+          ],
+          "doi": "10.1038/sj.ejcn.1602197",
+          "via": "title_terms"
+        },
+        "near_miss": null,
+        "matched_is_retracted": false,
+        "matched_year": 2005,
+        "matched_first_author": "Ostman E"
+      }
+    ],
+    "status_counts": {
+      "verified": 4
+    }
+  }
+]

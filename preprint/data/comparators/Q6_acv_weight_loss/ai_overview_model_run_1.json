@@ -1,0 +1,376 @@
+{
+  "arm": "ai_overview_model",
+  "model_requested": "claude-sonnet-5-5",
+  "served_model": "claude-sonnet-5-5",
+  "query": "does apple cider vinegar help with weight loss",
+  "system": "You are reproducing the AI-generated overview panel that a general-purpose web search engine shows above its organic results (for example, Google's \"AI Overview\"). Behave the way that product behaves:\n\n- Run exactly one web search, using the user's query exactly as typed.\n- Base the overview only on what the returned web pages say. Do not run additional searches and do not seek out primary research beyond what that one search surfaces.\n- Format: open with a one- or two-sentence direct answer in bold. Then give 3 to 6 short bullet points of key considerations. Keep the whole overview under 200 words.\n- Attribute points to the web pages they came from.\n- End with this line on its own: \"This is for informational purposes only. For medical advice or diagnosis, consult a professional.\"\n\nDo not mention that you are reproducing anything; just present the overview.",
+  "user_location": {
+    "type": "approximate",
+    "city": "Austin",
+    "region": "Texas",
+    "country": "US",
+    "timezone": "America/Chicago"
+  },
+  "overview_text": "**Apple cider vinegar (ACV) probably doesn't cause meaningful weight loss. Some small studies show modest losses, but experts say the evidence isn't strong enough to recommend it.**\n\n- **Small studies:** A Japanese study found people who drank 1–2 tbsp of vinegar daily lost 2–4 lbs over 12 weeks [1] (GoodRx).\n- **Weak evidence:** Cleveland Clinic says the evidence comes from small, poorly designed studies. [2] Harvard Health says the evidence for vinegar as a reliable long-term way to lose weight isn't compelling. [3]\n- **Appetite:** A 2022 meta-analysis found mixed results at best for short-term appetite suppression [2] (Cleveland Clinic).\n- **Mayo Clinic:** ACV isn't likely to cause weight loss. [4] It may also interact with some medicines, including diuretics and insulin. [4]\n- **Side effects:** It can wear down tooth enamel over time, so always dilute it [5] (Baylor Scott & White Health).\n- **Bottom line:** Burning more calories than you take in is what counts, so focus on a balanced diet and more physical activity [4] (Mayo Clinic).\n\nThis is for informational purposes only. For medical advice or diagnosis, consult a professional.",
+  "retrieved_sources": [
+    {
+      "rank": 1,
+      "url": "https://www.goodrx.com/conditions/weight-loss/apple-cider-vinegar-burn-fat-weight-loss",
+      "title": "Apple Cider Vinegar for Weight Loss: Does It Work? - GoodRx",
+      "page_age": "5 days ago"
+    },
+    {
+      "rank": 2,
+      "url": "https://health.clevelandclinic.org/can-apple-cider-vinegar-help-with-weight-loss",
+      "title": "Does Apple Cider Vinegar Help You Lose Weight?",
+      "page_age": "March 27, 2024"
+    },
+    {
+      "rank": 3,
+      "url": "https://www.mayoclinic.org/healthy-lifestyle/weight-loss/expert-answers/apple-cider-vinegar-for-weight-loss/faq-20058394",
+      "title": "Apple cider vinegar for weight loss - Mayo Clinic",
+      "page_age": null
+    },
+    {
+      "rank": 4,
+      "url": "https://www.hollandandbarrett.com/the-health-hub/weight-management/weight-loss/how-to-take-apple-cider-vinegar-for-weight-loss/",
+      "title": "How Does Apple Cider Vinegar Help with Weight Loss? | H&B",
+      "page_age": "June 17, 2025"
+    },
+    {
+      "rank": 5,
+      "url": "https://www.bswhealth.com/blog/apple-cider-vinegar-for-weight-loss-does-it-really-work",
+      "title": "Apple cider vinegar for weight loss: Does it really work?",
+      "page_age": null
+    },
+    {
+      "rank": 6,
+      "url": "https://www.goodreads.com/author_blog_posts/25642737-can-apple-cider-vinegar-help-you-lose-weight?tab=book",
+      "title": "Can Apple Cider Vinegar Help You Lose Weight?",
+      "page_age": null
+    },
+    {
+      "rank": 7,
+      "url": "https://sites.coecis.cornell.edu/jsm292/?p=50254",
+      "title": "sites.coecis.cornell.edu",
+      "page_age": null
+    },
+    {
+      "rank": 8,
+      "url": "https://www.health.harvard.edu/blog/apple-cider-vinegar-diet-does-it-really-work-2018042513703",
+      "title": "Apple cider vinegar for weight loss: Does it really work?",
+      "page_age": null
+    },
+    {
+      "rank": 9,
+      "url": "https://sites.coecis.cornell.edu/jsm292/?p=47509",
+      "title": "sites.coecis.cornell.edu",
+      "page_age": null
+    }
+  ],
+  "cited_sources": [
+    {
+      "n": 1,
+      "url": "https://www.goodrx.com/conditions/weight-loss/apple-cider-vinegar-burn-fat-weight-loss",
+      "title": "Apple Cider Vinegar for Weight Loss: Does It Work? - GoodRx"
+    },
+    {
+      "n": 2,
+      "url": "https://health.clevelandclinic.org/can-apple-cider-vinegar-help-with-weight-loss",
+      "title": "Does Apple Cider Vinegar Help You Lose Weight?"
+    },
+    {
+      "n": 3,
+      "url": "https://www.health.harvard.edu/blog/apple-cider-vinegar-diet-does-it-really-work-2018042513703",
+      "title": "Apple cider vinegar for weight loss: Does it really work?"
+    },
+    {
+      "n": 4,
+      "url": "https://www.mayoclinic.org/healthy-lifestyle/weight-loss/expert-answers/apple-cider-vinegar-for-weight-loss/faq-20058394",
+      "title": "Apple cider vinegar for weight loss - Mayo Clinic"
+    },
+    {
+      "n": 5,
+      "url": "https://www.bswhealth.com/blog/apple-cider-vinegar-for-weight-loss-does-it-really-work",
+      "title": "Apple cider vinegar for weight loss: Does it really work?"
+    }
+  ],
+  "cited_spans": [
+    {
+      "n": 1,
+      "text": "A Japanese study found people who drank 1–2 tbsp of vinegar daily lost 2–4 lbs over 12 weeks",
+      "cited_text": "The researchers found that people who drank a daily beverage with 1 tbsp to 2 tbsp of vinegar lost 2 lbs to 4 lbs after 12 weeks. "
+    },
+    {
+      "n": 2,
+      "text": "Cleveland Clinic says the evidence comes from small, poorly designed studies.",
+      "cited_text": "The evidence that apple cider vinegar aids weight loss comes from small, poorly designed studies. "
+    },
+    {
+      "n": 3,
+      "text": "the evidence for vinegar as a reliable long-term way to lose weight isn't compelling.",
+      "cited_text": "In all, the scientific evidence that vinegar consumption (whether of the apple cider variety or not) is a reliable, long-term means of losing excess w..."
+    },
+    {
+      "n": 2,
+      "text": "A 2022 meta-analysis found mixed results at best for short-term appetite suppression",
+      "cited_text": "Hope climbed still higher when a 2018 study reported that participants who consumed 1 to 2 tablespoons of apple cider vinegar a day significantly decr..."
+    },
+    {
+      "n": 4,
+      "text": "ACV isn't likely to cause weight loss.",
+      "cited_text": "Apple cider vinegar isn&#x27;t likely to cause weight loss. "
+    },
+    {
+      "n": 4,
+      "text": "may also interact with some medicines, including diuretics and insulin.",
+      "cited_text": "Apple cider vinegar may affect some medicines. These include common high blood pressure treatments called diuretics and the diabetes medicine called i..."
+    },
+    {
+      "n": 5,
+      "text": "It can wear down tooth enamel over time, so always dilute it",
+      "cited_text": "Over time, it can wear down the protective enamel on your teeth. To help prevent this, always dilute it. "
+    },
+    {
+      "n": 4,
+      "text": "Burning more calories than you take in is what counts, so focus on a balanced diet and more physical activity",
+      "cited_text": "The key is to burn more calories than you take in from food and drinks. So focus on eating a balanced diet and getting more physical activity."
+    }
+  ],
+  "stop_reason": "end_turn",
+  "latency_s": 6.11,
+  "usage": [
+    {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "global",
+      "input_tokens": 14660,
+      "output_tokens": 647,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_fetch_requests": 0,
+        "web_search_requests": 1
+      },
+      "service_tier": "standard"
+    }
+  ],
+  "raw_blocks": [
+    [
+      {
+        "id": "srvtoolu_01PitF6fvt3E3g1YyJF2NPKR",
+        "input": {
+          "query": "does apple cider vinegar help with weight loss"
+        },
+        "name": "web_search",
+        "type": "server_tool_use"
+      },
+      {
+        "caller": {
+          "type": "direct"
+        },
+        "content": [
+          {
+            "page_age": "5 days ago",
+            "title": "Apple Cider Vinegar for Weight Loss: Does It Work? - GoodRx",
+            "type": "web_search_result",
+            "url": "https://www.goodrx.com/conditions/weight-loss/apple-cider-vinegar-burn-fat-weight-loss"
+          },
+          {
+            "page_age": "March 27, 2024",
+            "title": "Does Apple Cider Vinegar Help You Lose Weight?",
+            "type": "web_search_result",
+            "url": "https://health.clevelandclinic.org/can-apple-cider-vinegar-help-with-weight-loss"
+          },
+          {
+            "title": "Apple cider vinegar for weight loss - Mayo Clinic",
+            "type": "web_search_result",
+            "url": "https://www.mayoclinic.org/healthy-lifestyle/weight-loss/expert-answers/apple-cider-vinegar-for-weight-loss/faq-20058394"
+          },
+          {
+            "page_age": "June 17, 2025",
+            "title": "How Does Apple Cider Vinegar Help with Weight Loss? | H&B",
+            "type": "web_search_result",
+            "url": "https://www.hollandandbarrett.com/the-health-hub/weight-management/weight-loss/how-to-take-apple-cider-vinegar-for-weight-loss/"
+          },
+          {
+            "title": "Apple cider vinegar for weight loss: Does it really work?",
+            "type": "web_search_result",
+            "url": "https://www.bswhealth.com/blog/apple-cider-vinegar-for-weight-loss-does-it-really-work"
+          },
+          {
+            "title": "Can Apple Cider Vinegar Help You Lose Weight?",
+            "type": "web_search_result",
+            "url": "https://www.goodreads.com/author_blog_posts/25642737-can-apple-cider-vinegar-help-you-lose-weight?tab=book"
+          },
+          {
+            "title": "sites.coecis.cornell.edu",
+            "type": "web_search_result",
+            "url": "https://sites.coecis.cornell.edu/jsm292/?p=50254"
+          },
+          {
+            "title": "Apple cider vinegar for weight loss: Does it really work?",
+            "type": "web_search_result",
+            "url": "https://www.health.harvard.edu/blog/apple-cider-vinegar-diet-does-it-really-work-2018042513703"
+          },
+          {
+            "title": "sites.coecis.cornell.edu",
+            "type": "web_search_result",
+            "url": "https://sites.coecis.cornell.edu/jsm292/?p=47509"
+          }
+        ],
+        "tool_use_id": "srvtoolu_01PitF6fvt3E3g1YyJF2NPKR",
+        "type": "web_search_tool_result"
+      },
+      {
+        "text": "**Apple cider vinegar (ACV) probably doesn't cause meaningful weight loss. Some small studies show modest losses, but experts say the evidence isn't strong enough to recommend it.**\n\n- **Small studies:** ",
+        "type": "text"
+      },
+      {
+        "citations": [
+          {
+            "cited_text": "The researchers found that people who drank a daily beverage with 1 tbsp to 2 tbsp of vinegar lost 2 lbs to 4 lbs after 12 weeks. ",
+            "encrypted_index": "Eo8BCioIFBgCIiQ3MTk5M2NmOC02MjRhLTRhMDktOGVjYi00ZGYyYmU1MDgzMDcSDEOgRjj0wyWExPxT+RoMNa4MQ91WuReDWAAwIjAqey/3iZPWYlX+PU8sk5y87rU/e0DHhxbh6g6U8JmTCLcu0V5VwadH/BeOiVT9L38qE6kHfRcAhAQFu8roXcAK4DAyqYcYBA==",
+            "title": "Apple Cider Vinegar for Weight Loss: Does It Work? - GoodRx",
+            "type": "web_search_result_location",
+            "url": "https://www.goodrx.com/conditions/weight-loss/apple-cider-vinegar-burn-fat-weight-loss"
+          }
+        ],
+        "text": "A Japanese study found people who drank 1–2 tbsp of vinegar daily lost 2–4 lbs over 12 weeks",
+        "type": "text"
+      },
+      {
+        "text": " (GoodRx).\n- **Weak evidence:** ",
+        "type": "text"
+      },
+      {
+        "citations": [
+          {
+            "cited_text": "The evidence that apple cider vinegar aids weight loss comes from small, poorly designed studies. ",
+            "encrypted_index": "Eo8BCioIFBgCIiQ3MTk5M2NmOC02MjRhLTRhMDktOGVjYi00ZGYyYmU1MDgzMDcSDL4bAQCKApddmoi9yhoMC5Iz/AjEbjZZs1xHIjAkKB09I92iFVGuoIAtnbVyF2fUlOPyuUnjO9yv5ajtuQ3BA6Rrtn8QCel69ph+3FQqE8Vo2tcDkj5poca2eQelDd+n1PgYBA==",
+            "title": "Does Apple Cider Vinegar Help You Lose Weight?",
+            "type": "web_search_result_location",
+            "url": "https://health.clevelandclinic.org/can-apple-cider-vinegar-help-with-weight-loss"
+          }
+        ],
+        "text": "Cleveland Clinic says the evidence comes from small, poorly designed studies.",
+        "type": "text"
+      },
+      {
+        "text": " Harvard Health says ",
+        "type": "text"
+      },
+      {
+        "citations": [
+          {
+            "cited_text": "In all, the scientific evidence that vinegar consumption (whether of the apple cider variety or not) is a reliable, long-term means of losing excess w...",
+            "encrypted_index": "EpABCioIFBgCIiQ3MTk5M2NmOC02MjRhLTRhMDktOGVjYi00ZGYyYmU1MDgzMDcSDM7yB6MHmqSr6bHOOBoMN9h09fdA2GdFlH70IjCYU6OmnImg4tKT5Z32aEw9hTZwLgk0hGdRVgzmMXOyw34TjXzmHUaxXLr5azUgr+4qFNVvls9QAFh/2s++2V1WWs8ecye1GAQ=",
+            "title": "Apple cider vinegar for weight loss: Does it really work?",
+            "type": "web_search_result_location",
+            "url": "https://www.health.harvard.edu/blog/apple-cider-vinegar-diet-does-it-really-work-2018042513703"
+          }
+        ],
+        "text": "the evidence for vinegar as a reliable long-term way to lose weight isn't compelling.",
+        "type": "text"
+      },
+      {
+        "text": "\n- **Appetite:** ",
+        "type": "text"
+      },
+      {
+        "citations": [
+          {
+            "cited_text": "Hope climbed still higher when a 2018 study reported that participants who consumed 1 to 2 tablespoons of apple cider vinegar a day significantly decr...",
+            "encrypted_index": "EpABCioIFBgCIiQ3MTk5M2NmOC02MjRhLTRhMDktOGVjYi00ZGYyYmU1MDgzMDcSDJX0erH7oVhOQCtnShoMUWjB8gyOivVz0P5vIjClcZ1fpE30o9ih7WYl0vy6OmupA98a8V85Fl9DJBkCZj2gEsczxUZ1B4WlO4mIGHEqFI6iXIsf1nOy8d8ojTBlr/cx81EqGAQ=",
+            "title": "Does Apple Cider Vinegar Help You Lose Weight?",
+            "type": "web_search_result_location",
+            "url": "https://health.clevelandclinic.org/can-apple-cider-vinegar-help-with-weight-loss"
+          }
+        ],
+        "text": "A 2022 meta-analysis found mixed results at best for short-term appetite suppression",
+        "type": "text"
+      },
+      {
+        "text": " (Cleveland Clinic).\n- **Mayo Clinic:** ",
+        "type": "text"
+      },
+      {
+        "citations": [
+          {
+            "cited_text": "Apple cider vinegar isn&#x27;t likely to cause weight loss. ",
+            "encrypted_index": "Eo8BCioIFBgCIiQ3MTk5M2NmOC02MjRhLTRhMDktOGVjYi00ZGYyYmU1MDgzMDcSDKTKH7oQ/npG5Mb9VRoMqUrL7RXteaL6483DIjARDafUinkQDUHsuWkuynGCDGnZZHQfQ5RZcvAcxhaJukaenzPtn/kyBZuzSiff46EqE/9ZvSk1mLhB8rPez89QEmyhiXUYBA==",
+            "title": "Apple cider vinegar for weight loss - Mayo Clinic",
+            "type": "web_search_result_location",
+            "url": "https://www.mayoclinic.org/healthy-lifestyle/weight-loss/expert-answers/apple-cider-vinegar-for-weight-loss/faq-20058394"
+          }
+        ],
+        "text": "ACV isn't likely to cause weight loss.",
+        "type": "text"
+      },
+      {
+        "text": " It ",
+        "type": "text"
+      },
+      {
+        "citations": [
+          {
+            "cited_text": "Apple cider vinegar may affect some medicines. These include common high blood pressure treatments called diuretics and the diabetes medicine called i...",
+            "encrypted_index": "EpEBCioIFBgCIiQ3MTk5M2NmOC02MjRhLTRhMDktOGVjYi00ZGYyYmU1MDgzMDcSDO6qSOiI4UUC0QcQvBoMtCnioSoqiJ2l7E9cIjASpttTlPbm/oNdJTEa3Z6B1tqFfxBGz51tK22I6UFWi/ZpGBckeQJrrR+016ImFfQqFUqLkDQG7LMjXynz5bwR5inOqJ4vbhgE",
+            "title": "Apple cider vinegar for weight loss - Mayo Clinic",
+            "type": "web_search_result_location",
+            "url": "https://www.mayoclinic.org/healthy-lifestyle/weight-loss/expert-answers/apple-cider-vinegar-for-weight-loss/faq-20058394"
+          }
+        ],
+        "text": "may also interact with some medicines, including diuretics and insulin.",
+        "type": "text"
+      },
+      {
+        "text": "\n- **Side effects:** ",
+        "type": "text"
+      },
+      {
+        "citations": [
+          {
+            "cited_text": "Over time, it can wear down the protective enamel on your teeth. To help prevent this, always dilute it. ",
+            "encrypted_index": "EpEBCioIFBgCIiQ3MTk5M2NmOC02MjRhLTRhMDktOGVjYi00ZGYyYmU1MDgzMDcSDGc9qzDDyvKhjaWYUhoM2T4eX2lUHMS+HkrkIjCzPFb5JVvb66uymp0vzSWAxf08Sj3GlVgpG7UXkSQqPqapDylVYMJj80Fqo/GVhusqFRJULdqUyFBh3SHU22mc1LYS9xywIhgE",
+            "title": "Apple cider vinegar for weight loss: Does it really work?",
+            "type": "web_search_result_location",
+            "url": "https://www.bswhealth.com/blog/apple-cider-vinegar-for-weight-loss-does-it-really-work"
+          }
+        ],
+        "text": "It can wear down tooth enamel over time, so always dilute it",
+        "type": "text"
+      },
+      {
+        "text": " (Baylor Scott & White Health).\n- **Bottom line:** ",
+        "type": "text"
+      },
+      {
+        "citations": [
+          {
+            "cited_text": "The key is to burn more calories than you take in from food and drinks. So focus on eating a balanced diet and getting more physical activity.",
+            "encrypted_index": "EpMBCioIFBgCIiQ3MTk5M2NmOC02MjRhLTRhMDktOGVjYi00ZGYyYmU1MDgzMDcSDGHwbpPZIZvKXlwSahoMgalfihSpKelSvDmoIjCtN8kfBgZxQb2AEax9ZEzYX2kqK6txD8erlWd9BX+kZJA34bOWgvguIMU6eQx/1FAqF4/F6eHcY7j0omI1BgxafBbI/BoN2RQwGAQ=",
+            "title": "Apple cider vinegar for weight loss - Mayo Clinic",
+            "type": "web_search_result_location",
+            "url": "https://www.mayoclinic.org/healthy-lifestyle/weight-loss/expert-answers/apple-cider-vinegar-for-weight-loss/faq-20058394"
+          }
+        ],
+        "text": "Burning more calories than you take in is what counts, so focus on a balanced diet and more physical activity",
+        "type": "text"
+      },
+      {
+        "text": " (Mayo Clinic).\n\nThis is for informational purposes only. For medical advice or diagnosis, consult a professional.",
+        "type": "text"
+      }
+    ]
+  ],
+  "question_id": "Q6",
+  "replicate": 1,
+  "route": "worker:https://tables-turned-api.jethomasphd.workers.dev",
+  "captured_at": "2026-09-28T23:42:38Z"
+}

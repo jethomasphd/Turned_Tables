@@ -1,0 +1,2321 @@
+{
+  "tablet": {
+    "version": "2.0",
+    "title": "Is intermittent fasting better than regular dieting for losing weight?",
+    "session": {
+      "id": "387c6528-da41-4c92-9514-f2d459fb7967",
+      "created": "2026-09-28T23:39:40Z",
+      "sealed": "2026-09-28T23:40:47Z",
+      "status": "sealed"
+    },
+    "intent": {
+      "question": "Is intermittent fasting better than regular dieting for losing weight?",
+      "decision_context": "Choosing a diet plan to lose about 20 pounds this year."
+    },
+    "search": {
+      "queries": [
+        {
+          "query": "intermittent fasting weight loss",
+          "strategy": "Broad search to capture all literature on intermittent fasting and weight loss"
+        },
+        {
+          "query": "(intermittent fasting OR time-restricted eating OR alternate day fasting OR 5:2 diet) AND (weight loss OR weight reduction OR body weight) AND (continuous energy restriction OR caloric restriction OR conventional diet) AND (comparison OR comparative)",
+          "strategy": "Targeted search comparing intermittent fasting to conventional calorie-restricted diets for weight loss"
+        },
+        {
+          "query": "(intermittent fasting OR time-restricted feeding OR alternate-day fasting) AND (weight loss OR body composition OR obesity) AND (randomized controlled trial[pt] OR meta-analysis[pt] OR systematic review[pt])",
+          "strategy": "Focused search for high-quality evidence (RCTs, meta-analyses, systematic reviews) on intermittent fasting and weight loss outcomes"
+        },
+        {
+          "query": "(\"intermittent fasting\"[MeSH] OR \"fasting\"[MeSH] OR time-restricted eating) AND (\"weight loss\"[MeSH] OR \"body weight\"[MeSH] OR \"obesity\"[MeSH]) AND (\"caloric restriction\"[MeSH] OR continuous energy restriction) AND (adherence OR sustainability OR long-term) AND (randomized controlled trial[pt] OR meta-analysis[pt])",
+          "strategy": "Narrow search emphasizing long-term adherence and sustainability of intermittent fasting vs conventional dieting, relevant for a practical year-long weight loss goal"
+        }
+      ],
+      "total_papers_found": 12,
+      "papers_shown": 12
+    },
+    "papers": [
+      {
+        "pmid": "40533200",
+        "doi": "10.1136/bmj-2024-082007",
+        "title": "Intermittent fasting strategies and their effects on body weight and other cardiometabolic risk factors: systematic review and network meta-analysis of randomised clinical trials.",
+        "authors": [
+          "Semnani-Azad Zhila",
+          "Khan Tauseef A",
+          "Chiavaroli Laura",
+          "Chen Victoria",
+          "Bhatt Hardil Anup",
+          "Chen Alisia",
+          "Chiang Nicholas",
+          "Oguntala Julianah",
+          "Kabisch Stefan",
+          "Lau David Cw",
+          "Wharton Sean",
+          "Sharma Arya M",
+          "Harris Leanne",
+          "Leiter Lawrence A",
+          "Hill James O",
+          "Hu Frank B",
+          "Lean Michael Ej",
+          "Kahleová Hana",
+          "Rahelic Dario",
+          "Salas-Salvadó Jordi",
+          "Kendall Cyril Wc",
+          "Sievenpiper John L"
+        ],
+        "journal": "BMJ (Clinical research ed.)",
+        "year": 2025,
+        "abstract": "OBJECTIVE: To assess the effect of intermittent fasting diets, with continuous energy restriction or unrestricted (ad-libitum) diets on intermediate cardiometabolic outcomes from randomised clinical trials.\n\nDESIGN: Systematic review and network meta-analysis.\n\nDATA SOURCES: Medline, Embase, and central databases from inception to 14 November 2024.\n\nELIGIBILITY CRITERIA FOR SELECTING STUDIES: Randomised clinical trials comparing the association of intermittent fasting diets (alternate day fasting, time restricted eating, and whole day fasting), continuous energy restriction, and ad-libitum diets were included.\n\nMAIN OUTCOMES: Outcomes included body weight (primary) and measures of anthropometry, glucose metabolism, lipid profiles, blood pressure, C-reactive protein, and markers of liver disease.\n\nDATA SYNTHESIS: A network meta-analysis based on a frequentist framework was performed with data expressed as mean difference with 95% confidence intervals (CIs). The certainty of the evidence was assessed using grading of recommendations assessment, development, and evaluation (GRADE).\n\nRESULTS: 99 randomised clinical trials involving 6582 adults of varying health conditions (720 healthy, 5862 existing health conditions) were identified. All intermittent fasting and continuous energy restriction diet strategies reduced body weight when compared with ad-libitum diet. Compared with continuous energy restriction, alternate day fasting was the only form of intermittent fasting diet strategy to show benefit in body weight reduction (mean difference -1.29 kg (95% CI -1.99 to -0.59), moderate certainty of evidence). Additionally, alternate day fasting showed a trivial reduction in body weight compared with both time restricted eating and whole day fasting (mean difference -1.69 kg (-2.49 to -0.88) and -1.05 kg (-1.90 to -0.19), respectively, both with moderate certainty of evidence). Estimates were similar among trials with less than 24 weeks follow-up (n=76); however, moderate-to-long-term trials (≥24 weeks, n=17) only showed benefits in weight reduction in diet strategies compared with ad-libitum. Furthermore, in comparisons between intermittent fasting strategies, alternate day fasting lowered total cholesterol, triglycerides, and non-high density lipoprotein compared with time restricted eating. Compared with whole day fasting, however, time restricted eating resulted in a small increase in total cholesterol, low density lipoprotein cholesterol, and non-high density lipoprotein cholesterol. No differences were noted between intermittent fasting, continuous energy restriction, and ad-libitum diets for HbA1c and high density lipoprotein.\n\nCONCLUSIONS: Minor differences were noted between some intermittent fasting diets and continuous energy restriction, with some benefit of weight loss with alternate day fasting in shorter duration trials. The current evidence provides some indication that intermittent fasting diets have similar benefits to continuous energy restriction for weight loss and cardiometabolic risk factors. Longer duration trials are needed to further substantiate these findings.\n\nTRIAL REGISTRATION: ClinicalTrials.gov NCT05309057.",
+        "plain_title": "Large Review Compares Intermittent Fasting to Regular Dieting for Weight Loss",
+        "plain_summary": "This large-scale analysis combined results from many clinical trials to compare different intermittent fasting approaches (like eating only during certain hours or fasting every other day) against traditional steady calorie-cutting and unrestricted diets, looking at weight loss and heart health markers.",
+        "selected": true,
+        "ranking": {
+          "score": 24,
+          "overlap": 4,
+          "strategies_matched": [
+            "Broad search to capture all literature on intermittent fasting and weight loss",
+            "Targeted search comparing intermittent fasting to conventional calorie-restricted diets for weight loss",
+            "Focused search for high-quality evidence (RCTs, meta-analyses, systematic reviews) on intermittent fasting and weight loss outcomes",
+            "Narrow search emphasizing long-term adherence and sustainability of intermittent fasting vs conventional dieting, relevant for a practical year-long weight loss goal"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article",
+          "Network Meta-Analysis",
+          "Systematic Review"
+        ],
+        "strategy_idx": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "positions": [
+          4,
+          1,
+          2,
+          25
+        ]
+      },
+      {
+        "pmid": "36349432",
+        "doi": "10.1002/oby.23568",
+        "title": "A meta-analysis comparing the effectiveness of alternate day fasting, the 5:2 diet, and time-restricted eating for weight loss.",
+        "authors": [
+          "Elortegui Pascual Paloma",
+          "Rolands Maryann R",
+          "Eldridge Alison L",
+          "Kassis Amira",
+          "Mainardi Fabio",
+          "Lê Kim-Anne",
+          "Karagounis Leonidas G",
+          "Gut Philipp",
+          "Varady Krista A"
+        ],
+        "journal": "Obesity (Silver Spring, Md.)",
+        "year": 2023,
+        "abstract": "OBJECTIVE: The objective of this meta-analysis was to compare the effectiveness of different intermittent fasting (IF) regimens on weight loss, in the general population, and compare these to traditional caloric energy restriction (CER).\n\nMETHODS: Three databases were searched from 2011 to June 2021 for randomized controlled trials (RCTs) that assessed weight loss and IF, including alternate day fasting (ADF), the 5:2 diet, and time-restricted eating (TRE). A random effect network analysis was used to compare the effectiveness between the three regimens. Meta-regression analysis was presented as weighted mean differences of body weight loss.\n\nRESULTS: The exploratory random effects network analysis of 24 RCTs (n = 1768) ranked ADF as the most effective, followed by CER and TRE. The meta-analysis showed that IF regimens resulted in similar weight loss to CER (mean difference 0.26 kg, 95% CI: -0.31 to 0.84; p = 0.37). Compliance was generally high (>80%) in trials shorter than 3 months.\n\nCONCLUSIONS: The present meta-analysis concludes that IF is comparable to CER and a promising alternative for weight loss. Among the three regimens, ADF showed the highest effectiveness for weight loss, followed by CER and TRE. Further well-powered RCTs with longer durations of intervention are required to draw solid conclusions.",
+        "plain_title": "Comparing Three Types of Intermittent Fasting for Weight Loss",
+        "plain_summary": "This analysis of multiple studies compared three popular fasting schedules — every-other-day fasting, the 5:2 diet (eating normally 5 days and very little on 2 days), and time-restricted eating (limiting eating to certain hours) — against each other and against traditional calorie-cutting to see which leads to more weight loss.",
+        "selected": true,
+        "ranking": {
+          "score": 14,
+          "overlap": 3,
+          "strategies_matched": [
+            "Broad search to capture all literature on intermittent fasting and weight loss",
+            "Targeted search comparing intermittent fasting to conventional calorie-restricted diets for weight loss",
+            "Focused search for high-quality evidence (RCTs, meta-analyses, systematic reviews) on intermittent fasting and weight loss outcomes"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Meta-Analysis",
+          "Journal Article",
+          "Review",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "strategy_idx": [
+          0,
+          1,
+          2
+        ],
+        "positions": [
+          17,
+          3,
+          7
+        ]
+      },
+      {
+        "pmid": "40163873",
+        "doi": "10.7326/ANNALS-24-01631",
+        "title": "The Effect of 4:3 Intermittent Fasting on Weight Loss at 12 Months : A Randomized Clinical Trial.",
+        "authors": [
+          "Catenacci Victoria A",
+          "Ostendorf Danielle M",
+          "Pan Zhaoxing",
+          "Kaizer Laura K",
+          "Creasy Seth A",
+          "Zaman Adnin",
+          "Caldwell Ann E",
+          "Dahle Jared",
+          "Swanson Bryan",
+          "Breit Matthew J",
+          "Bing Kristen",
+          "Wayland Liza T",
+          "Panter Shelby L",
+          "Scorsone Jared J",
+          "Bessesen Daniel H",
+          "MacLean Paul",
+          "Melanson Edward L"
+        ],
+        "journal": "Annals of internal medicine",
+        "year": 2025,
+        "abstract": "BACKGROUND: Long-term (≥12 months) randomized trials evaluating the efficacy of intermittent fasting (IMF) as a dietary weight loss strategy are limited. Furthermore, no studies have compared IMF versus daily caloric restriction (DCR) when both interventions are provided in the context of a guidelines-based behavioral weight loss program.\n\nOBJECTIVE: To compare the effects of 4:3 IMF versus DCR on changes in weight at 12 months, with comprehensive behavioral support provided to both groups.\n\nDESIGN: Randomized clinical trial. (ClinicalTrials.gov: NCT03411356).\n\nSETTING: Denver, Colorado, and surrounding metropolitan area.\n\nPARTICIPANTS: Adults aged 18 to 60 years with body mass index (BMI) of 27 to 46 kg/m2.\n\nINTERVENTION: The IMF group was instructed to restrict energy intake by 80% on 3 nonconsecutive days per week, with ad libitum intake (no restriction) the other 4 days (4:3 IMF). The DCR group was instructed to reduce daily energy intake by 34% to match the weekly energy deficit of 4:3 IMF. Both groups received a high-intensity comprehensive behavioral weight loss program that included group-based behavioral support and a recommendation to increase moderate-intensity physical activity to 300 minutes per week.\n\nMEASUREMENTS: The primary outcome was change in body weight (in kilograms) at 12 months.\n\nRESULTS: Of the 165 (4:3 IMF, n = 84; DCR, n = 81) randomly assigned participants (mean age, 42 years [SD, 9]; mean BMI, 34.1 kg/m2 [SD, 4.4]; 73.9% female), 125 completed the trial. In an intention-to-treat analysis, 4:3 IMF showed greater reductions in weight than DCR at 12 months (mean difference, 2.89 kg [95% CI, 5.65 to 0.14 kg]; P = 0.040).\n\nLIMITATION: Limited generalizability.\n\nCONCLUSION: Compared with DCR, 4:3 IMF resulted in modestly greater weight loss among adults with overweight or obesity enrolled in a 12-month, high-intensity, comprehensive behavioral weight loss program.\n\nPRIMARY FUNDING SOURCE: National Institute of Diabetes and Digestive and Kidney Diseases.",
+        "plain_title": "Year-Long Study Compares Fasting Three Days a Week to Daily Dieting",
+        "plain_summary": "In a 12-month clinical trial, researchers compared a 4:3 fasting plan (eating very little on 3 days per week and normally on 4 days) to daily calorie restriction, with both groups receiving the same behavioral coaching, to see which approach led to more weight loss over a full year.",
+        "selected": true,
+        "ranking": {
+          "score": 12,
+          "overlap": 3,
+          "strategies_matched": [
+            "Broad search to capture all literature on intermittent fasting and weight loss",
+            "Targeted search comparing intermittent fasting to conventional calorie-restricted diets for weight loss",
+            "Focused search for high-quality evidence (RCTs, meta-analyses, systematic reviews) on intermittent fasting and weight loss outcomes"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Comparative Study",
+          "Research Support, N.I.H., Extramural"
+        ],
+        "strategy_idx": [
+          0,
+          1,
+          2
+        ],
+        "positions": [
+          7,
+          14,
+          24
+        ]
+      },
+      {
+        "pmid": "40554393",
+        "doi": "10.1016/j.ebiom.2025.105803",
+        "title": "Intermittent fasting for weight loss in night shift workers: a three-arm, superiority randomised clinical trial.",
+        "authors": [
+          "Bonham Maxine P",
+          "Leung Gloria K W",
+          "Rogers Michelle",
+          "Davis Rochelle",
+          "Clark Angela B",
+          "Davis Corinne",
+          "Phoi Yan Yin",
+          "Ware Robert S",
+          "El-Heneidy Asmaa",
+          "Kellow Nicole J",
+          "Dorrian Jillian",
+          "Banks Siobhan",
+          "Sletten Tracey L",
+          "Huggins Catherine E",
+          "Coates Alison M"
+        ],
+        "journal": "EBioMedicine",
+        "year": 2025,
+        "abstract": "BACKGROUND: Weight gain and an increased risk of developing type 2 diabetes are recognised consequences of night shift work. We tested the effectiveness of two modified intermittent fasting (IF) strategies compared with continuous energy restriction (CER) on weight loss and improvements in insulin resistance in night shift workers.\n\nMETHODS: A parallel group, three-arm randomised superiority clinical trial (Melbourne and Adelaide) recruited night shift workers (aged ≥ 25 and ≤ 65 years) with overweight/obesity. Participants were randomised by minimisation (site, age, gender) 1:1:1 to CER or one of two modified IF strategies. For 24 weeks participants followed a diet of 2100 kJ/d for two days of the week (modified IF) either on days off/day shift (IF:2D) or whilst on night shift (IF:2N) and followed their usual diet on the remaining five days. Co-primary outcomes were body weight and insulin resistance measured by the Homeostatic Model Assessment for Insulin Resistance (HOMA-IR) at 24-weeks. Participants and those assessing weight outcomes were not blinded to group assignment. Researchers assessing biochemical outcomes and study statistician were blinded to group assignment. Between-group differences were calculated using mixed-effects regression models.\n\nFINDINGS: From October 2019 to February 2022, 250 participants (CER = 85; IF:2D = 83; IF:2N = 82) were randomised (mean (SD) age 46.8 (9.8) years; 133 women (53.2%)), with 170 (68%) completing. No significant difference between either modified IF strategy and CER for body weight; IF:2D vs CER (mean difference (MD) = -0.2 kg [95% CI -6.4 to 5.9]) and IF:2N vs CER (MD = -0.6 kg [95% CI -6.8 to 5.6]) and insulin resistance; IF:2D vs CER (MD = -0.1 [95% CI -1.0 to 0.8]) and IF:2N vs CER (MD = -0.3 [95% CI -0.5 to 1.2]) were observed. For secondary outcomes, those randomised to IF:2D had lower total and LDL cholesterol compared to CER ((MD = -23.2 mg/dL [95% CI -34.8 to -11.6]) and (MD = -19.3 mg/dL [95% CI -30.9 to -7.7]) respectively). In a completer's analysis, favourable changes in body weight, insulin resistance, body composition, blood pressure, and cardiometabolic markers were observed within all groups. No serious trial related adverse events were reported.\n\nINTERPRETATION: At 24 weeks, weight and HOMA-IR were not different between the modified IF groups compared with CER. Clinically significant improvements in weight and metabolic health were achieved for the majority of night shift workers who remained in the intervention at 24 weeks.\n\nFUNDING: National Health and Medical Research Council (APP1159762). ANZCTR registry, ACTRN-12619001035112.",
+        "plain_title": "Testing Intermittent Fasting for Night Shift Workers' Weight Loss",
+        "plain_summary": "This clinical trial tested whether two modified intermittent fasting plans could help night shift workers — who are prone to weight gain and diabetes risk — lose more weight and improve blood sugar control compared to a traditional daily calorie-cutting diet.",
+        "selected": true,
+        "ranking": {
+          "score": 12,
+          "overlap": 3,
+          "strategies_matched": [
+            "Broad search to capture all literature on intermittent fasting and weight loss",
+            "Targeted search comparing intermittent fasting to conventional calorie-restricted diets for weight loss",
+            "Focused search for high-quality evidence (RCTs, meta-analyses, systematic reviews) on intermittent fasting and weight loss outcomes"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Equivalence Trial",
+          "Journal Article"
+        ],
+        "strategy_idx": [
+          0,
+          1,
+          2
+        ],
+        "positions": [
+          15,
+          6,
+          19
+        ]
+      },
+      {
+        "pmid": "39458528",
+        "doi": "10.3390/nu16203533",
+        "title": "Is Fasting Superior to Continuous Caloric Restriction for Weight Loss and Metabolic Outcomes in Obese Adults? A Systematic Review and Meta-Analysis of Randomized Clinical Trials.",
+        "authors": [
+          "Siles-Guerrero Víctor",
+          "Romero-Márquez Jose M",
+          "García-Pérez Rosa Natalia",
+          "Novo-Rodríguez Cristina",
+          "Guardia-Baena Juan Manuel",
+          "Hayón-Ponce María",
+          "Tenorio-Jiménez Carmen",
+          "López-de-la-Torre-Casares Martín",
+          "Muñoz-Garach Araceli"
+        ],
+        "journal": "Nutrients",
+        "year": 2024,
+        "abstract": "BACKGROUND: fasting-based strategies (FBS) and continuous caloric restriction (CCR) are popular methods for weight loss and improving metabolic health. FBS alternates between eating and fasting periods, while CCR reduces daily calorie intake consistently. Both aim to create a calorie deficit, but it is still uncertain as to which is more effective for short- and long-term weight and metabolic outcomes.\n\nOBJECTIVES: this systematic review and meta-analysis aimed to compare the effectiveness of FBS and CCR on these parameters in obese adults.\n\nMETHODS: after screening 342 articles, 10 randomized controlled trials (RCTs) with 623 participants were included.\n\nRESULTS: both interventions led to weight loss, with a reduction of 5.5 to 6.5 kg observed at the six-month mark. However, the results showed that FBS led to slightly greater short-term reductions in body weight (-0.94 kg, p = 0.004) and fat mass (-1.08 kg, p = 0.0001) compared to CCR, although these differences are not clinically significant. Both interventions had similar effects on lean mass, waist and hip circumference, blood pressure, lipid profiles, and glucose metabolism. However, FBS improved insulin sensitivity, with significant reductions in fasting insulin (-7.46 pmol/L, p = 0.02) and HOMA-IR (-0.14, p = 0.02).\n\nCONCLUSIONS: despite these short-term benefits, FBS did not show superior long-term outcomes compared to CCR. Both strategies are effective for weight management, but more research is needed to explore the long-term clinical relevance of FBS in obese populations.",
+        "plain_title": "Does Fasting Beat Daily Calorie Cutting for Obese Adults?",
+        "plain_summary": "This analysis of 10 clinical trials in adults with obesity compared fasting-based diets to steady daily calorie reduction, trying to determine which approach is more effective for both short-term and long-term weight loss and metabolic health improvements.",
+        "selected": true,
+        "ranking": {
+          "score": 12,
+          "overlap": 3,
+          "strategies_matched": [
+            "Broad search to capture all literature on intermittent fasting and weight loss",
+            "Targeted search comparing intermittent fasting to conventional calorie-restricted diets for weight loss",
+            "Focused search for high-quality evidence (RCTs, meta-analyses, systematic reviews) on intermittent fasting and weight loss outcomes"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Comparative Study",
+          "Journal Article",
+          "Meta-Analysis",
+          "Systematic Review"
+        ],
+        "strategy_idx": [
+          0,
+          1,
+          2
+        ],
+        "positions": [
+          16,
+          16,
+          21
+        ]
+      },
+      {
+        "pmid": "40733010",
+        "doi": "10.3390/nu17142385",
+        "title": "Effects of 4:3 Intermittent Fasting on Eating Behaviors and Appetite Hormones: A Secondary Analysis of a 12-Month Behavioral Weight Loss Intervention.",
+        "authors": [
+          "Breit Matthew J",
+          "Caldwell Ann E",
+          "Ostendorf Danielle M",
+          "Pan Zhaoxing",
+          "Creasy Seth A",
+          "Swanson Bryan",
+          "Clark Kevin",
+          "Hill Emily B",
+          "MacLean Paul S",
+          "Bessesen Daniel H",
+          "Melanson Edward L",
+          "Catenacci Victoria A"
+        ],
+        "journal": "Nutrients",
+        "year": 2025,
+        "abstract": "BACKGROUND/OBJECTIVES: Daily caloric restriction (DCR) is a common dietary weight loss strategy, but leads to metabolic and behavioral adaptations, including maladaptive eating behaviors and dysregulated appetite. Intermittent fasting (IMF) may mitigate these effects by offering diet flexibility during energy restriction. This secondary analysis compared changes in eating behaviors and appetite-related hormones between 4:3 intermittent fasting (4:3 IMF) and DCR and examined their association with weight loss over 12 months.\n\nMETHODS: Adults with overweight or obesity were randomized to 4:3 IMF or DCR for 12 months. Both randomized groups received a matched targeted weekly dietary energy deficit (34%), comprehensive group-based behavioral support, and a prescription to increase moderate-intensity aerobic activity to 300 min/week. Eating behaviors were assessed using validated questionnaires at baseline and months 3, 6, and 12. Fasting levels of leptin, ghrelin, peptide YY, brain-derived neurotrophic factor, and adiponectin were measured at baseline and months 6 and 12. Linear mixed models and Pearson correlations were used to evaluate outcomes.\n\nRESULTS: Included in this analysis were 165 adults (mean ± SD; age 42 ± 9 years, BMI 34.2 ± 4.3 kg/m2, 74% female) randomized to 4:3 IMF (n = 84) or DCR (n = 81). At 12 months, binge eating and uncontrolled eating scores decreased in 4:3 IMF but increased in DCR (p < 0.01 for between-group differences). Among 4:3 IMF, greater weight loss was associated with decreased uncontrolled eating (r = -0.27, p = 0.03), emotional eating (r = -0.37, p < 0.01), and increased cognitive restraint (r = 0.35, p < 0.01) at 12 months. There were no between-group differences in changes in fasting appetite-related hormones at any time point.\n\nCONCLUSIONS: Compared to DCR, 4:3 IMF exhibited improved binge eating and uncontrolled eating behaviors at 12 months. This may, in part, explain the greater weight loss achieved by 4:3 IMF versus DCR. Future studies should examine mechanisms underlying eating behavior changes with 4:3 IMF and their long-term sustainability.",
+        "plain_title": "Does Fasting Three Days Weekly Reduce Hunger and Cravings?",
+        "plain_summary": "This follow-up analysis from a 12-month weight loss study examined whether fasting on 3 days per week led to better eating behaviors and healthier appetite hormone levels compared to daily calorie restriction, since traditional dieting often triggers increased hunger and problematic eating patterns.",
+        "selected": true,
+        "ranking": {
+          "score": 12,
+          "overlap": 2,
+          "strategies_matched": [
+            "Broad search to capture all literature on intermittent fasting and weight loss",
+            "Narrow search emphasizing long-term adherence and sustainability of intermittent fasting vs conventional dieting, relevant for a practical year-long weight loss goal"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial"
+        ],
+        "strategy_idx": [
+          0,
+          3
+        ],
+        "positions": [
+          22,
+          1
+        ]
+      },
+      {
+        "pmid": "38956175",
+        "doi": "10.1111/dom.15730",
+        "title": "The effects of intermittent fasting on body composition and cardiometabolic health in adults with prediabetes or type 2 diabetes: A systematic review and meta-analysis.",
+        "authors": [
+          "Khalafi Mousa",
+          "Habibi Maleki Aref",
+          "Symonds Michael E",
+          "Rosenkranz Sara K",
+          "Rohani Hadi",
+          "Ehsanifar Mahsa"
+        ],
+        "journal": "Diabetes, obesity & metabolism",
+        "year": 2024,
+        "abstract": "AIM: To perform a meta-analysis to investigate the effects of intermittent fasting (IF), as compared with either a control diet (CON) and/or calorie restriction (CR), on body composition and cardiometabolic health in individuals with prediabetes and type 2 diabetes (T2D).\n\nMETHODS: PubMed, Web of Science, and Scopus were searched from their inception to March 2024 to identify original randomized trials with parallel or crossover designs that studied the effects of IF on body composition and cardiometabolic health. Weighted mean differences (WMDs) or standardized mean differences with 95% confidence intervals (CIs) were calculated using random-effects models.\n\nRESULTS: Overall, 14 studies involving 1101 adults with prediabetes or T2D were included in the meta-analysis. IF decreased body weight (WMD -4.56 kg [95% CI -6.23 to -2.83]; p = 0.001), body mass index (BMI; WMD -1.99 kg.m2 [95% CI -2.74 to -1.23]; p = 0.001), glycated haemoglobin (HbA1c; WMD -0.81% [95% CI -1.24 to -0.38]; p = 0.001), fasting glucose (WMD -0.36 mmol/L [95% CI -0.63 to -0.09]; p = 0.008), total cholesterol (WMD -0.31 mmol/L [95% CI -0.60 to -0.02]; p = 0.03) and triglycerides (WMD -0.14 mmol/L [95% CI -0.27 to -0.01]; p = 0.02), but did not significantly decrease fat mass, insulin, low-densitiy lipoprotein, high-density lipoprotein, or blood pressure as compared with CON. Furthermore, IF decreased body weight (WMD -1.14 kg [95% CI -1.69 to -0.60]; p = 0.001) and BMI (WMD -0.43 kg.m2 [95% CI -0.58 to -0.27]; p = 0.001), but did not significantly affect fat mass, lean body mass, visceral fat, insulin, HbA1c, lipid profiles or blood pressure.\n\nCONCLUSION: Intermittent fasting is effective for weight loss and specific cardiometabolic health markers in individuals with prediabetes or T2D. Additionally, IF is associated with a reduction in body weight and BMI compared to CR, without effects on glycaemic markers, lipid profiles or blood pressure.",
+        "plain_title": "Intermittent Fasting Effects for People with Diabetes or Prediabetes",
+        "plain_summary": "This analysis of multiple studies examined whether intermittent fasting helps people who already have prediabetes or type 2 diabetes lose body fat and improve heart and metabolic health, compared to either a regular diet or traditional calorie restriction.",
+        "selected": true,
+        "ranking": {
+          "score": 12,
+          "overlap": 3,
+          "strategies_matched": [
+            "Broad search to capture all literature on intermittent fasting and weight loss",
+            "Targeted search comparing intermittent fasting to conventional calorie-restricted diets for weight loss",
+            "Focused search for high-quality evidence (RCTs, meta-analyses, systematic reviews) on intermittent fasting and weight loss outcomes"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis",
+          "Systematic Review"
+        ],
+        "strategy_idx": [
+          0,
+          1,
+          2
+        ],
+        "positions": [
+          23,
+          20,
+          9
+        ]
+      },
+      {
+        "pmid": "39485353",
+        "doi": "10.1001/jamanetworkopen.2024.42163",
+        "title": "Meal Timing and Anthropometric and Metabolic Outcomes: A Systematic Review and Meta-Analysis.",
+        "authors": [
+          "Liu Hiu Yee",
+          "Eso Ashley A",
+          "Cook Nathan",
+          "O'Neill Hayley M",
+          "Albarqouni Loai"
+        ],
+        "journal": "JAMA network open",
+        "year": 2024,
+        "abstract": "IMPORTANCE: Meal timing strategies, such as time-restricted eating (TRE), reducing meal frequency, or altering calorie distribution across the day, have gained interest for their potential to enhance weight loss and metabolic health, particularly in managing chronic diseases, yet their long-term benefits are not known.\n\nOBJECTIVE: To evaluate the association between meal timing strategies (≥12 weeks) and anthropometric and metabolic indicators.\n\nDATA SOURCES: Medline, Embase, CINAHL, and Cochrane CENTRAL were searched from inception to October 17, 2023.\n\nSTUDY SELECTION: Randomized clinical trials, regardless of language and publication date, involving adults 18 years and older, evaluating within-day meal timing patterns for 12 or more weeks, and reporting anthropometric measures were included. Studies were excluded if participants had eating disorders, prior significant weight change, underwent bariatric surgery, were pregnant, or if controlled variables differed between groups.\n\nDATA EXTRACTION AND SYNTHESIS: Study quality was determined via Risk of Bias 2.0 tool. Data were extracted independently by multiple reviewers. Preferred Reporting Items for Systematic Reviews and Meta-analyses guidelines were used. Meta-analysis was performed using random-effects model on pooled continuous outcomes with 2 or more studies.\n\nMAIN OUTCOME AND MEASURES: Weight change in kilograms, reported as between-group mean difference with 95% CIs.\n\nRESULTS: Sixty-nine reports of 29 randomized clinical trials including 2485 individuals (1703 [69%] female; mean [SD] age, 44 [9.5] years; and mean [SD] body mass index, 33 [3.5]) were included. Study interventions included TRE (17 studies), meal frequency (8 studies), and calorie distribution (4 studies). There were some concerns of risk of bias for 7 studies and high concerns for 22 studies. Statistically significant weight change was observed in TRE when compared with control (-1.37 kg; 95% CI, -1.99 to -0.75 kg). Lower meal frequency and earlier caloric distribution were also both associated with greater change (-1.85 kg; 95% CI, -3.55 to -0.13 kg; and -1.75 kg; 95% CI, -2.37 to -1.13 kg, respectively).\n\nCONCLUSIONS AND RELEVANCE: The findings of this meta-analysis suggest that TRE, lower meal frequency, and earlier caloric distribution in the day may reduce weight compared with standard care and/or nutritional advice; however, the effect sizes found were small and of uncertain clinical importance. High heterogeneity and risk of bias among included studies led to concerns about the certainty of the underpinning evidence. Further research, including trials with larger sample sizes, standardized interventions with prescribed or matched energy intake, and longer follow-up, are needed.",
+        "plain_title": "Does When You Eat Matter for Weight and Health?",
+        "plain_summary": "This review of clinical trials lasting at least 12 weeks examined whether meal timing strategies — such as limiting eating to certain hours, eating fewer meals, or shifting more calories to earlier in the day — lead to meaningful weight loss and metabolic improvements over the long term.",
+        "selected": true,
+        "ranking": {
+          "score": 12,
+          "overlap": 3,
+          "strategies_matched": [
+            "Targeted search comparing intermittent fasting to conventional calorie-restricted diets for weight loss",
+            "Focused search for high-quality evidence (RCTs, meta-analyses, systematic reviews) on intermittent fasting and weight loss outcomes",
+            "Narrow search emphasizing long-term adherence and sustainability of intermittent fasting vs conventional dieting, relevant for a practical year-long weight loss goal"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review",
+          "Meta-Analysis",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "strategy_idx": [
+          1,
+          2,
+          3
+        ],
+        "positions": [
+          15,
+          22,
+          17
+        ]
+      },
+      {
+        "pmid": "35565749",
+        "doi": "10.3390/nu14091781",
+        "title": "Intermittent Fasting versus Continuous Calorie Restriction: Which Is Better for Weight Loss?",
+        "authors": [
+          "Zhang Qing",
+          "Zhang Caishun",
+          "Wang Haidan",
+          "Ma Zhengye",
+          "Liu Defeng",
+          "Guan Xiaohan",
+          "Liu Yixin",
+          "Fu Yanwen",
+          "Cui Mingxuan",
+          "Dong Jing"
+        ],
+        "journal": "Nutrients",
+        "year": 2022,
+        "abstract": "We conducted a systematic review and meta-analysis of randomized clinical trials and pilot trial studies to compare the effectiveness of intermittent fasting (IF) and continuous calorie restriction (CCR) in overweight and obese people. The parameters included body mass index (BMI), body weight, and other metabolism-related indicators. A systematic search in PubMed, Embase, Cochrane Library, and Web of Science was conducted up to January 2022. Standardized mean differences (SMDs) with 95% confidence intervals (CIs) were used to measure the effectiveness. Publication bias was assessed using Egger's test. The stability of the results was evaluated using sensitivity analyses. The significance of body weight change (SMD = -0.21, 95% CI (-0.40, -0.02) p = 0.028) was more significant after IF than CCR. There was no significant difference in BMI (SMD = 0.02, 95% CI (-0.16, 0.20) p = 0.848) between IF and CCR. These findings suggest that IF may be superior to CCR for weight loss in some respects.",
+        "plain_title": "Review Asks Whether Fasting or Daily Dieting Works Better",
+        "plain_summary": "This analysis of clinical trials in overweight and obese people directly compared intermittent fasting to traditional daily calorie-cutting, measuring differences in body weight, BMI (a ratio of weight to height), and other health markers to determine which diet approach is more effective.",
+        "selected": true,
+        "ranking": {
+          "score": 10,
+          "overlap": 2,
+          "strategies_matched": [
+            "Broad search to capture all literature on intermittent fasting and weight loss",
+            "Focused search for high-quality evidence (RCTs, meta-analyses, systematic reviews) on intermittent fasting and weight loss outcomes"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis",
+          "Systematic Review"
+        ],
+        "strategy_idx": [
+          0,
+          2
+        ],
+        "positions": [
+          3,
+          10
+        ]
+      },
+      {
+        "pmid": "38201996",
+        "doi": "10.3390/nu16010168",
+        "title": "Intermittent Fasting: Does It Affect Sports Performance? A Systematic Review.",
+        "authors": [
+          "Conde-Pipó Javier",
+          "Mora-Fernandez Agustín",
+          "Martinez-Bebia Manuel",
+          "Gimenez-Blasi Nuria",
+          "Lopez-Moro Alejandro",
+          "Latorre José Antonio",
+          "Almendros-Ruiz Antonio",
+          "Requena Bernardo",
+          "Mariscal-Arcas Miguel"
+        ],
+        "journal": "Nutrients",
+        "year": 2024,
+        "abstract": "Intermittent fasting is one of the most popular types of diet at the moment because it is an effective nutritional strategy in terms of weight loss. The main objective of this review is to analyze the effects that intermittent fasting has on sports performance. We analyzed physical capacities: aerobic capacity, anaerobic capacity, strength, and power, as well as their effect on body composition. For this, a bibliographic search was carried out in several databases where 25 research articles were analyzed to clarify these objectives. Inclusion criteria: dates between 2013 and present, free full texts, studies conducted in adult human athletes, English and/or Spanish languages, and if it has been considered that intermittent fasting is mainly linked to sports practice and that this obtains a result in terms of performance or physical capacities. This review was registered in PROSPERO with code ref. 407024, and an evaluation of the quality or risk of bias was performed. After this analysis, results were obtained regarding the improvement of body composition and the maintenance of muscle mass. An influence of intermittent fasting on sports performance and body composition is observed. It can be concluded that intermittent fasting provides benefits in terms of body composition without reducing physical performance, maintenance of lean mass, and improvements in maximum power. But despite this, it is necessary to carry out new studies focusing on the sports field since the samples have been very varied. Additionally, the difference in hours of intermittent fasting should be studied, especially in the case of overnight fasting.",
+        "plain_title": "Does Intermittent Fasting Help or Hurt Athletic Performance?",
+        "plain_summary": "This review of 25 studies examined whether intermittent fasting — while effective for weight loss — affects athletic abilities like endurance, strength, power, and body composition in people who exercise or play sports.",
+        "selected": true,
+        "ranking": {
+          "score": 10,
+          "overlap": 2,
+          "strategies_matched": [
+            "Broad search to capture all literature on intermittent fasting and weight loss",
+            "Focused search for high-quality evidence (RCTs, meta-analyses, systematic reviews) on intermittent fasting and weight loss outcomes"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Systematic Review",
+          "Journal Article"
+        ],
+        "strategy_idx": [
+          0,
+          2
+        ],
+        "positions": [
+          14,
+          3
+        ]
+      },
+      {
+        "pmid": "36575144",
+        "doi": "10.1002/oby.23660",
+        "title": "Intermittent fasting and protein pacing are superior to caloric restriction for weight and visceral fat loss.",
+        "authors": [
+          "Arciero Paul J",
+          "Poe Michelle",
+          "Mohr Alex E",
+          "Ives Stephen J",
+          "Arciero Autumn",
+          "Sweazea Karen L",
+          "Gumpricht Eric",
+          "Arciero Karen M"
+        ],
+        "journal": "Obesity (Silver Spring, Md.)",
+        "year": 2023,
+        "abstract": "OBJECTIVE: This study compared intermittent fasting and protein pacing (IF-P) versus a heart-healthy caloric restriction (CR) diet, matched for energy intake and physical activity energy expenditure, on body weight, total and visceral fat mass, and cardiometabolic health outcomes in adults with obesity.\n\nMETHODS: IF-P (n = 21) and CR (n = 20) were assessed pre- (week 0), mid- (week 5), and post- (week 9) intervention.\n\nRESULTS: Both groups reduced (p < 0.05) weight, total and visceral fat mass, blood pressure and lipids, and desire to eat food and increased proportion of fat-free mass. IF-P resulted in greater (p < 0.05) reductions in weight (-9% vs. -5%), total (-16% vs. -9%) and visceral (-33% vs. -14%) fat mass, and desire to eat (-17% vs. 1%) and increased fat-free mass percent (6% vs. 3%) compared with CR. These improvements were despite similar weekly total energy intake (IF-P, 9470 ± 550 vs. CR, 9095 ± 608 kcal/wk; p = 0.90) and physical activity energy expenditure (IF-P, 300 ± 150 vs. CR, 350 ± 200 kcal/d; p = 0.79).\n\nCONCLUSIONS: IF-P and CR optimize weight loss, body composition, cardiometabolic health, and hunger management, with IF-P providing greater benefits.",
+        "plain_title": "Fasting Plus High Protein Beat Traditional Dieting for Belly Fat",
+        "plain_summary": "In a 9-week study, people with obesity who combined intermittent fasting with regular high-protein meals lost more weight and significantly more belly fat (the dangerous fat around organs) than those following a traditional heart-healthy calorie-cutting diet, even though both groups ate the same number of calories and exercised the same amount.",
+        "selected": true,
+        "ranking": {
+          "score": 9,
+          "overlap": 2,
+          "strategies_matched": [
+            "Broad search to capture all literature on intermittent fasting and weight loss",
+            "Targeted search comparing intermittent fasting to conventional calorie-restricted diets for weight loss"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "strategy_idx": [
+          0,
+          1
+        ],
+        "positions": [
+          5,
+          4
+        ]
+      },
+      {
+        "pmid": "38904963",
+        "doi": "10.1001/jamanetworkopen.2024.16786",
+        "title": "A 5:2 Intermittent Fasting Meal Replacement Diet and Glycemic Control for Adults With Diabetes: The EARLY Randomized Clinical Trial.",
+        "authors": [
+          "Guo Lixin",
+          "Xi Yue",
+          "Jin Wenbo",
+          "Yuan Huijuan",
+          "Qin Guijun",
+          "Chen Shuchun",
+          "Zhang Lihui",
+          "Liu Yu",
+          "Cheng Xingbo",
+          "Liu Wen",
+          "Yu Dongni"
+        ],
+        "journal": "JAMA network open",
+        "year": 2024,
+        "abstract": "IMPORTANCE: An intermittent fasting plan consisting of 2 nonconsecutive fasting days and 5 days of habitual intake per week and meal replacement diet (5:2 MR) could provide additional benefits to patients with type 2 diabetes.\n\nOBJECTIVE: To evaluate the effect of the 5:2 MR on glycemic control among patients with early type 2 diabetes compared with metformin and empagliflozin.\n\nDESIGN, SETTING, AND PARTICIPANTS: The EARLY (Exploration of Treatment of Newly Diagnosed Overweight/Obese Type 2 Diabetes Mellitus) study is a randomized, open-label, active parallel-controlled clinical trial conducted between November 13, 2020, and December 29, 2022, in 9 centers across China. A total of 509 eligible patients underwent screening, out of which 405 were randomly assigned to 3 groups and included in the intention-to-treat analysis.\n\nINTERVENTIONS: Patients were randomly allocated in a 1:1:1 ratio to receive either metformin, empagliflozin, or 5:2 MR. The treatment was 16 weeks, with an 8-week follow-up.\n\nMAIN OUTCOMES AND MEASURES: The primary end point was the change in hemoglobin A1c (HbA1c) level from baseline to 16 weeks. Secondary end points included changes in body weight, anthropometric measurements, and biochemical parameters.\n\nRESULTS: Of the 405 randomized participants (265 men [65.4%]; mean [SD] age, 45.5 [11.0] years; mean [SD] body mass index, 29.5 [4.1]; and mean [SD] HbA1c level, 7.9% [0.6%]), 332 completed the 16-week treatment. From baseline to week 16, participants in the 5:2 MR group showed the greatest reduction in HbA1c (least-squares mean [LSM], -1.9% [SE, 0.2%]), significantly greater than patients receiving metformin (LSM, -1.6% [SE, 0.2%]; adjusted LSM difference, -0.3% [95% CI, -0.4% to -0.1%]) and empagliflozin (LSM, -1.5% [SE, 0.2%]; adjusted LSM difference, -0.4% [95% CI, -0.6% to -0.2%]). At week 16, the mean weight loss in the 5:2 MR group (LSM, -9.7 kg [SE, 2.2 kg]) was greater than that in the metformin group (LSM, -5.5 kg [SE, 2.3 kg]) and empagliflozin group (LSM, -5.8 kg [SE, 2.3 kg]).\n\nCONCLUSIONS AND RELEVANCE: This randomized clinical trial of Chinese adults with overweight or obesity and with early type 2 diabetes found that 5:2 MR could improve glycemic outcomes and weight loss in the short term compared with metformin or empagliflozin, making it a promising initial intervention and early management for type 2 diabetes.\n\nTRIAL REGISTRATION: Chinese Clinical Trial Registry Identifier: ChiCTR2000040656.",
+        "plain_title": "Fasting Two Days a Week Tested Against Diabetes Medications",
+        "plain_summary": "This clinical trial tested whether a 5:2 fasting diet (eating very little on 2 days per week with meal replacements) could control blood sugar in people newly diagnosed with type 2 diabetes as effectively as standard diabetes medications like metformin and empagliflozin.",
+        "selected": true,
+        "ranking": {
+          "score": 9,
+          "overlap": 2,
+          "strategies_matched": [
+            "Broad search to capture all literature on intermittent fasting and weight loss",
+            "Focused search for high-quality evidence (RCTs, meta-analyses, systematic reviews) on intermittent fasting and weight loss outcomes"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Multicenter Study",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "strategy_idx": [
+          0,
+          2
+        ],
+        "positions": [
+          12,
+          4
+        ]
+      }
+    ],
+    "prompts": {
+      "search_system": "You are a PubMed search expert. Your job is to turn a plain-English health or science question into optimized PubMed search queries.\n\n## Rules\n1. Generate 3-4 PubMed search queries, from broad to specific.\n2. Use proper MeSH terms and boolean operators (AND, OR) where helpful.\n3. Include relevant synonyms and alternative phrasings.\n4. Prioritize queries that will find systematic reviews, meta-analyses, and RCTs when relevant.\n5. Keep queries concise but effective.\n\n## Output Format\nReturn ONLY a JSON array of objects. No markdown, no explanation, no code fences.\nEach object has:\n- \"query\": the PubMed search string\n- \"strategy\": a brief plain-English description of what this query targets (1 sentence)\n\nExample output:\n[{\"query\":\"vitamin D supplementation respiratory infection children\",\"strategy\":\"Broad search for vitamin D and respiratory infections in children\"},{\"query\":\"(vitamin D OR cholecalciferol) AND (respiratory tract infection OR RTI OR common cold) AND (child OR pediatric) AND (randomized controlled trial OR meta-analysis)\",\"strategy\":\"Targeted search for high-quality trials on vitamin D and respiratory infections in kids\"}]",
+      "summary_system": "You translate medical research paper titles and abstracts into plain language for people without medical training.\n\n## Rules\n1. Use no medical jargon. If a technical concept is essential, explain it in parentheses.\n2. Be specific about findings (numbers, effects) when the abstract provides them.\n3. Each summary should help a non-expert decide if this paper is relevant to their question.\n\n## Output Format\nReturn ONLY a JSON array in the same order as the papers provided. No markdown, no explanation.\nEach object has:\n- \"plain_title\": A clear, jargon-free title (5-12 words)\n- \"plain_summary\": One sentence explaining the key finding or purpose in everyday language",
+      "synthesis_system": "You are a research translator for Tables Turned, a tool that helps regular people understand PubMed research.\n\n## Your Rules\n\n1. **Answer the question first.** Open with a direct, clear answer in 2-3 sentences based on the evidence. This is the most important part.\n2. **Every claim needs receipts.** Cite as [PMID: XXXXX]. If you cannot link a claim to a provided paper, mark it [UNWITNESSED].\n3. **Surface contradictions.** If papers disagree, say so plainly.\n4. **Write in common tongue.** No jargon. If a technical term is unavoidable, translate it in parentheses. Short sentences.\n5. **Do not patronize.** The reader is intelligent and busy.\n6. **State confidence honestly.** Strong, mixed, or thin with reasons.\n7. **Do not hallucinate.** Never invent findings. Never cite a PMID not provided to you.\n\n## Output Format\n\n**CRITICAL: The entire brief must fit on ONE printed page. Be concise. No filler. No padding. Every sentence must earn its place.**\n\nProduce a markdown document with exactly these sections:\n\n# [Short title from the question]\n\n**Question:** [question] · **Context:** [context]\n\n---\n\n## The short answer\n\n[2-3 sentences directly answering the user's question. Lead with what matters most to their decision. Cite key PMIDs inline.]\n\n## Key findings\n\n[4-6 bullet points maximum. Each bullet states one finding in plain language and cites [PMID: XXXXX]. If papers contradict each other, say so in the bullet.]\n\n## What is unknown\n\n[2-3 bullet points: gaps the papers do not address that the reader likely cares about.]\n\n## Confidence: [Low / Medium / High]\n\n[One sentence: why, based on study count, size, consistency, and design quality.]\n\n---\n\n*Generated by Tables Turned. Receipts only.*",
+      "synthesis_user_message": "**Question:** Is intermittent fasting better than regular dieting for losing weight?\n**Context:** Choosing a diet plan to lose about 20 pounds this year.\n\n---\n\n**Papers provided (12):**\n\n### PMID: 40533200\n**Title:** Intermittent fasting strategies and their effects on body weight and other cardiometabolic risk factors: systematic review and network meta-analysis of randomised clinical trials.\n**Authors:** Semnani-Azad Zhila, Khan Tauseef A, Chiavaroli Laura, Chen Victoria, Bhatt Hardil Anup et al.\n**Journal:** BMJ (Clinical research ed.) (2025)\n**Abstract:**\nOBJECTIVE: To assess the effect of intermittent fasting diets, with continuous energy restriction or unrestricted (ad-libitum) diets on intermediate cardiometabolic outcomes from randomised clinical trials.\n\nDESIGN: Systematic review and network meta-analysis.\n\nDATA SOURCES: Medline, Embase, and central databases from inception to 14 November 2024.\n\nELIGIBILITY CRITERIA FOR SELECTING STUDIES: Randomised clinical trials comparing the association of intermittent fasting diets (alternate day fasting, time restricted eating, and whole day fasting), continuous energy restriction, and ad-libitum diets were included.\n\nMAIN OUTCOMES: Outcomes included body weight (primary) and measures of anthropometry, glucose metabolism, lipid profiles, blood pressure, C-reactive protein, and markers of liver disease.\n\nDATA SYNTHESIS: A network meta-analysis based on a frequentist framework was performed with data expressed as mean difference with 95% confidence intervals (CIs). The certainty of the evidence was assessed using grading of recommendations assessment, development, and evaluation (GRADE).\n\nRESULTS: 99 randomised clinical trials involving 6582 adults of varying health conditions (720 healthy, 5862 existing health conditions) were identified. All intermittent fasting and continuous energy restriction diet strategies reduced body weight when compared with ad-libitum diet. Compared with continuous energy restriction, alternate day fasting was the only form of intermittent fasting diet strategy to show benefit in body weight reduction (mean difference -1.29 kg (95% CI -1.99 to -0.59), moderate certainty of evidence). Additionally, alternate day fasting showed a trivial reduction in body weight compared with both time restricted eating and whole day fasting (mean difference -1.69 kg (-2.49 to -0.88) and -1.05 kg (-1.90 to -0.19), respectively, both with moderate certainty of evidence). Estimates were similar among trials with less than 24 weeks follow-up (n=76); however, moderate-to-long-term trials (≥24 weeks, n=17) only showed benefits in weight reduction in diet strategies compared with ad-libitum. Furthermore, in comparisons between intermittent fasting strategies, alternate day fasting lowered total cholesterol, triglycerides, and non-high density lipoprotein compared with time restricted eating. Compared with whole day fasting, however, time restricted eating resulted in a small increase in total cholesterol, low density lipoprotein cholesterol, and non-high density lipoprotein cholesterol. No differences were noted between intermittent fasting, continuous energy restriction, and ad-libitum diets for HbA1c and high density lipoprotein.\n\nCONCLUSIONS: Minor differences were noted between some intermittent fasting diets and continuous energy restriction, with some benefit of weight loss with alternate day fasting in shorter duration trials. The current evidence provides some indication that intermittent fasting diets have similar benefits to continuous energy restriction for weight loss and cardiometabolic risk factors. Longer duration trials are needed to further substantiate these findings.\n\nTRIAL REGISTRATION: ClinicalTrials.gov NCT05309057.\n\n---\n\n### PMID: 36349432\n**Title:** A meta-analysis comparing the effectiveness of alternate day fasting, the 5:2 diet, and time-restricted eating for weight loss.\n**Authors:** Elortegui Pascual Paloma, Rolands Maryann R, Eldridge Alison L, Kassis Amira, Mainardi Fabio et al.\n**Journal:** Obesity (Silver Spring, Md.) (2023)\n**Abstract:**\nOBJECTIVE: The objective of this meta-analysis was to compare the effectiveness of different intermittent fasting (IF) regimens on weight loss, in the general population, and compare these to traditional caloric energy restriction (CER).\n\nMETHODS: Three databases were searched from 2011 to June 2021 for randomized controlled trials (RCTs) that assessed weight loss and IF, including alternate day fasting (ADF), the 5:2 diet, and time-restricted eating (TRE). A random effect network analysis was used to compare the effectiveness between the three regimens. Meta-regression analysis was presented as weighted mean differences of body weight loss.\n\nRESULTS: The exploratory random effects network analysis of 24 RCTs (n = 1768) ranked ADF as the most effective, followed by CER and TRE. The meta-analysis showed that IF regimens resulted in similar weight loss to CER (mean difference 0.26 kg, 95% CI: -0.31 to 0.84; p = 0.37). Compliance was generally high (>80%) in trials shorter than 3 months.\n\nCONCLUSIONS: The present meta-analysis concludes that IF is comparable to CER and a promising alternative for weight loss. Among the three regimens, ADF showed the highest effectiveness for weight loss, followed by CER and TRE. Further well-powered RCTs with longer durations of intervention are required to draw solid conclusions.\n\n---\n\n### PMID: 40163873\n**Title:** The Effect of 4:3 Intermittent Fasting on Weight Loss at 12 Months : A Randomized Clinical Trial.\n**Authors:** Catenacci Victoria A, Ostendorf Danielle M, Pan Zhaoxing, Kaizer Laura K, Creasy Seth A et al.\n**Journal:** Annals of internal medicine (2025)\n**Abstract:**\nBACKGROUND: Long-term (≥12 months) randomized trials evaluating the efficacy of intermittent fasting (IMF) as a dietary weight loss strategy are limited. Furthermore, no studies have compared IMF versus daily caloric restriction (DCR) when both interventions are provided in the context of a guidelines-based behavioral weight loss program.\n\nOBJECTIVE: To compare the effects of 4:3 IMF versus DCR on changes in weight at 12 months, with comprehensive behavioral support provided to both groups.\n\nDESIGN: Randomized clinical trial. (ClinicalTrials.gov: NCT03411356).\n\nSETTING: Denver, Colorado, and surrounding metropolitan area.\n\nPARTICIPANTS: Adults aged 18 to 60 years with body mass index (BMI) of 27 to 46 kg/m2.\n\nINTERVENTION: The IMF group was instructed to restrict energy intake by 80% on 3 nonconsecutive days per week, with ad libitum intake (no restriction) the other 4 days (4:3 IMF). The DCR group was instructed to reduce daily energy intake by 34% to match the weekly energy deficit of 4:3 IMF. Both groups received a high-intensity comprehensive behavioral weight loss program that included group-based behavioral support and a recommendation to increase moderate-intensity physical activity to 300 minutes per week.\n\nMEASUREMENTS: The primary outcome was change in body weight (in kilograms) at 12 months.\n\nRESULTS: Of the 165 (4:3 IMF, n = 84; DCR, n = 81) randomly assigned participants (mean age, 42 years [SD, 9]; mean BMI, 34.1 kg/m2 [SD, 4.4]; 73.9% female), 125 completed the trial. In an intention-to-treat analysis, 4:3 IMF showed greater reductions in weight than DCR at 12 months (mean difference, 2.89 kg [95% CI, 5.65 to 0.14 kg]; P = 0.040).\n\nLIMITATION: Limited generalizability.\n\nCONCLUSION: Compared with DCR, 4:3 IMF resulted in modestly greater weight loss among adults with overweight or obesity enrolled in a 12-month, high-intensity, comprehensive behavioral weight loss program.\n\nPRIMARY FUNDING SOURCE: National Institute of Diabetes and Digestive and Kidney Diseases.\n\n---\n\n### PMID: 40554393\n**Title:** Intermittent fasting for weight loss in night shift workers: a three-arm, superiority randomised clinical trial.\n**Authors:** Bonham Maxine P, Leung Gloria K W, Rogers Michelle, Davis Rochelle, Clark Angela B et al.\n**Journal:** EBioMedicine (2025)\n**Abstract:**\nBACKGROUND: Weight gain and an increased risk of developing type 2 diabetes are recognised consequences of night shift work. We tested the effectiveness of two modified intermittent fasting (IF) strategies compared with continuous energy restriction (CER) on weight loss and improvements in insulin resistance in night shift workers.\n\nMETHODS: A parallel group, three-arm randomised superiority clinical trial (Melbourne and Adelaide) recruited night shift workers (aged ≥ 25 and ≤ 65 years) with overweight/obesity. Participants were randomised by minimisation (site, age, gender) 1:1:1 to CER or one of two modified IF strategies. For 24 weeks participants followed a diet of 2100 kJ/d for two days of the week (modified IF) either on days off/day shift (IF:2D) or whilst on night shift (IF:2N) and followed their usual diet on the remaining five days. Co-primary outcomes were body weight and insulin resistance measured by the Homeostatic Model Assessment for Insulin Resistance (HOMA-IR) at 24-weeks. Participants and those assessing weight outcomes were not blinded to group assignment. Researchers assessing biochemical outcomes and study statistician were blinded to group assignment. Between-group differences were calculated using mixed-effects regression models.\n\nFINDINGS: From October 2019 to February 2022, 250 participants (CER = 85; IF:2D = 83; IF:2N = 82) were randomised (mean (SD) age 46.8 (9.8) years; 133 women (53.2%)), with 170 (68%) completing. No significant difference between either modified IF strategy and CER for body weight; IF:2D vs CER (mean difference (MD) = -0.2 kg [95% CI -6.4 to 5.9]) and IF:2N vs CER (MD = -0.6 kg [95% CI -6.8 to 5.6]) and insulin resistance; IF:2D vs CER (MD = -0.1 [95% CI -1.0 to 0.8]) and IF:2N vs CER (MD = -0.3 [95% CI -0.5 to 1.2]) were observed. For secondary outcomes, those randomised to IF:2D had lower total and LDL cholesterol compared to CER ((MD = -23.2 mg/dL [95% CI -34.8 to -11.6]) and (MD = -19.3 mg/dL [95% CI -30.9 to -7.7]) respectively). In a completer's analysis, favourable changes in body weight, insulin resistance, body composition, blood pressure, and cardiometabolic markers were observed within all groups. No serious trial related adverse events were reported.\n\nINTERPRETATION: At 24 weeks, weight and HOMA-IR were not different between the modified IF groups compared with CER. Clinically significant improvements in weight and metabolic health were achieved for the majority of night shift workers who remained in the intervention at 24 weeks.\n\nFUNDING: National Health and Medical Research Council (APP1159762). ANZCTR registry, ACTRN-12619001035112.\n\n---\n\n### PMID: 39458528\n**Title:** Is Fasting Superior to Continuous Caloric Restriction for Weight Loss and Metabolic Outcomes in Obese Adults? A Systematic Review and Meta-Analysis of Randomized Clinical Trials.\n**Authors:** Siles-Guerrero Víctor, Romero-Márquez Jose M, García-Pérez Rosa Natalia, Novo-Rodríguez Cristina, Guardia-Baena Juan Manuel et al.\n**Journal:** Nutrients (2024)\n**Abstract:**\nBACKGROUND: fasting-based strategies (FBS) and continuous caloric restriction (CCR) are popular methods for weight loss and improving metabolic health. FBS alternates between eating and fasting periods, while CCR reduces daily calorie intake consistently. Both aim to create a calorie deficit, but it is still uncertain as to which is more effective for short- and long-term weight and metabolic outcomes.\n\nOBJECTIVES: this systematic review and meta-analysis aimed to compare the effectiveness of FBS and CCR on these parameters in obese adults.\n\nMETHODS: after screening 342 articles, 10 randomized controlled trials (RCTs) with 623 participants were included.\n\nRESULTS: both interventions led to weight loss, with a reduction of 5.5 to 6.5 kg observed at the six-month mark. However, the results showed that FBS led to slightly greater short-term reductions in body weight (-0.94 kg, p = 0.004) and fat mass (-1.08 kg, p = 0.0001) compared to CCR, although these differences are not clinically significant. Both interventions had similar effects on lean mass, waist and hip circumference, blood pressure, lipid profiles, and glucose metabolism. However, FBS improved insulin sensitivity, with significant reductions in fasting insulin (-7.46 pmol/L, p = 0.02) and HOMA-IR (-0.14, p = 0.02).\n\nCONCLUSIONS: despite these short-term benefits, FBS did not show superior long-term outcomes compared to CCR. Both strategies are effective for weight management, but more research is needed to explore the long-term clinical relevance of FBS in obese populations.\n\n---\n\n### PMID: 40733010\n**Title:** Effects of 4:3 Intermittent Fasting on Eating Behaviors and Appetite Hormones: A Secondary Analysis of a 12-Month Behavioral Weight Loss Intervention.\n**Authors:** Breit Matthew J, Caldwell Ann E, Ostendorf Danielle M, Pan Zhaoxing, Creasy Seth A et al.\n**Journal:** Nutrients (2025)\n**Abstract:**\nBACKGROUND/OBJECTIVES: Daily caloric restriction (DCR) is a common dietary weight loss strategy, but leads to metabolic and behavioral adaptations, including maladaptive eating behaviors and dysregulated appetite. Intermittent fasting (IMF) may mitigate these effects by offering diet flexibility during energy restriction. This secondary analysis compared changes in eating behaviors and appetite-related hormones between 4:3 intermittent fasting (4:3 IMF) and DCR and examined their association with weight loss over 12 months.\n\nMETHODS: Adults with overweight or obesity were randomized to 4:3 IMF or DCR for 12 months. Both randomized groups received a matched targeted weekly dietary energy deficit (34%), comprehensive group-based behavioral support, and a prescription to increase moderate-intensity aerobic activity to 300 min/week. Eating behaviors were assessed using validated questionnaires at baseline and months 3, 6, and 12. Fasting levels of leptin, ghrelin, peptide YY, brain-derived neurotrophic factor, and adiponectin were measured at baseline and months 6 and 12. Linear mixed models and Pearson correlations were used to evaluate outcomes.\n\nRESULTS: Included in this analysis were 165 adults (mean ± SD; age 42 ± 9 years, BMI 34.2 ± 4.3 kg/m2, 74% female) randomized to 4:3 IMF (n = 84) or DCR (n = 81). At 12 months, binge eating and uncontrolled eating scores decreased in 4:3 IMF but increased in DCR (p < 0.01 for between-group differences). Among 4:3 IMF, greater weight loss was associated with decreased uncontrolled eating (r = -0.27, p = 0.03), emotional eating (r = -0.37, p < 0.01), and increased cognitive restraint (r = 0.35, p < 0.01) at 12 months. There were no between-group differences in changes in fasting appetite-related hormones at any time point.\n\nCONCLUSIONS: Compared to DCR, 4:3 IMF exhibited improved binge eating and uncontrolled eating behaviors at 12 months. This may, in part, explain the greater weight loss achieved by 4:3 IMF versus DCR. Future studies should examine mechanisms underlying eating behavior changes with 4:3 IMF and their long-term sustainability.\n\n---\n\n### PMID: 38956175\n**Title:** The effects of intermittent fasting on body composition and cardiometabolic health in adults with prediabetes or type 2 diabetes: A systematic review and meta-analysis.\n**Authors:** Khalafi Mousa, Habibi Maleki Aref, Symonds Michael E, Rosenkranz Sara K, Rohani Hadi et al.\n**Journal:** Diabetes, obesity & metabolism (2024)\n**Abstract:**\nAIM: To perform a meta-analysis to investigate the effects of intermittent fasting (IF), as compared with either a control diet (CON) and/or calorie restriction (CR), on body composition and cardiometabolic health in individuals with prediabetes and type 2 diabetes (T2D).\n\nMETHODS: PubMed, Web of Science, and Scopus were searched from their inception to March 2024 to identify original randomized trials with parallel or crossover designs that studied the effects of IF on body composition and cardiometabolic health. Weighted mean differences (WMDs) or standardized mean differences with 95% confidence intervals (CIs) were calculated using random-effects models.\n\nRESULTS: Overall, 14 studies involving 1101 adults with prediabetes or T2D were included in the meta-analysis. IF decreased body weight (WMD -4.56 kg [95% CI -6.23 to -2.83]; p = 0.001), body mass index (BMI; WMD -1.99 kg.m2 [95% CI -2.74 to -1.23]; p = 0.001), glycated haemoglobin (HbA1c; WMD -0.81% [95% CI -1.24 to -0.38]; p = 0.001), fasting glucose (WMD -0.36 mmol/L [95% CI -0.63 to -0.09]; p = 0.008), total cholesterol (WMD -0.31 mmol/L [95% CI -0.60 to -0.02]; p = 0.03) and triglycerides (WMD -0.14 mmol/L [95% CI -0.27 to -0.01]; p = 0.02), but did not significantly decrease fat mass, insulin, low-densitiy lipoprotein, high-density lipoprotein, or blood pressure as compared with CON. Furthermore, IF decreased body weight (WMD -1.14 kg [95% CI -1.69 to -0.60]; p = 0.001) and BMI (WMD -0.43 kg.m2 [95% CI -0.58 to -0.27]; p = 0.001), but did not significantly affect fat mass, lean body mass, visceral fat, insulin, HbA1c, lipid profiles or blood pressure.\n\nCONCLUSION: Intermittent fasting is effective for weight loss and specific cardiometabolic health markers in individuals with prediabetes or T2D. Additionally, IF is associated with a reduction in body weight and BMI compared to CR, without effects on glycaemic markers, lipid profiles or blood pressure.\n\n---\n\n### PMID: 39485353\n**Title:** Meal Timing and Anthropometric and Metabolic Outcomes: A Systematic Review and Meta-Analysis.\n**Authors:** Liu Hiu Yee, Eso Ashley A, Cook Nathan, O'Neill Hayley M, Albarqouni Loai\n**Journal:** JAMA network open (2024)\n**Abstract:**\nIMPORTANCE: Meal timing strategies, such as time-restricted eating (TRE), reducing meal frequency, or altering calorie distribution across the day, have gained interest for their potential to enhance weight loss and metabolic health, particularly in managing chronic diseases, yet their long-term benefits are not known.\n\nOBJECTIVE: To evaluate the association between meal timing strategies (≥12 weeks) and anthropometric and metabolic indicators.\n\nDATA SOURCES: Medline, Embase, CINAHL, and Cochrane CENTRAL were searched from inception to October 17, 2023.\n\nSTUDY SELECTION: Randomized clinical trials, regardless of language and publication date, involving adults 18 years and older, evaluating within-day meal timing patterns for 12 or more weeks, and reporting anthropometric measures were included. Studies were excluded if participants had eating disorders, prior significant weight change, underwent bariatric surgery, were pregnant, or if controlled variables differed between groups.\n\nDATA EXTRACTION AND SYNTHESIS: Study quality was determined via Risk of Bias 2.0 tool. Data were extracted independently by multiple reviewers. Preferred Reporting Items for Systematic Reviews and Meta-analyses guidelines were used. Meta-analysis was performed using random-effects model on pooled continuous outcomes with 2 or more studies.\n\nMAIN OUTCOME AND MEASURES: Weight change in kilograms, reported as between-group mean difference with 95% CIs.\n\nRESULTS: Sixty-nine reports of 29 randomized clinical trials including 2485 individuals (1703 [69%] female; mean [SD] age, 44 [9.5] years; and mean [SD] body mass index, 33 [3.5]) were included. Study interventions included TRE (17 studies), meal frequency (8 studies), and calorie distribution (4 studies). There were some concerns of risk of bias for 7 studies and high concerns for 22 studies. Statistically significant weight change was observed in TRE when compared with control (-1.37 kg; 95% CI, -1.99 to -0.75 kg). Lower meal frequency and earlier caloric distribution were also both associated with greater change (-1.85 kg; 95% CI, -3.55 to -0.13 kg; and -1.75 kg; 95% CI, -2.37 to -1.13 kg, respectively).\n\nCONCLUSIONS AND RELEVANCE: The findings of this meta-analysis suggest that TRE, lower meal frequency, and earlier caloric distribution in the day may reduce weight compared with standard care and/or nutritional advice; however, the effect sizes found were small and of uncertain clinical importance. High heterogeneity and risk of bias among included studies led to concerns about the certainty of the underpinning evidence. Further research, including trials with larger sample sizes, standardized interventions with prescribed or matched energy intake, and longer follow-up, are needed.\n\n---\n\n### PMID: 35565749\n**Title:** Intermittent Fasting versus Continuous Calorie Restriction: Which Is Better for Weight Loss?\n**Authors:** Zhang Qing, Zhang Caishun, Wang Haidan, Ma Zhengye, Liu Defeng et al.\n**Journal:** Nutrients (2022)\n**Abstract:**\nWe conducted a systematic review and meta-analysis of randomized clinical trials and pilot trial studies to compare the effectiveness of intermittent fasting (IF) and continuous calorie restriction (CCR) in overweight and obese people. The parameters included body mass index (BMI), body weight, and other metabolism-related indicators. A systematic search in PubMed, Embase, Cochrane Library, and Web of Science was conducted up to January 2022. Standardized mean differences (SMDs) with 95% confidence intervals (CIs) were used to measure the effectiveness. Publication bias was assessed using Egger's test. The stability of the results was evaluated using sensitivity analyses. The significance of body weight change (SMD = -0.21, 95% CI (-0.40, -0.02) p = 0.028) was more significant after IF than CCR. There was no significant difference in BMI (SMD = 0.02, 95% CI (-0.16, 0.20) p = 0.848) between IF and CCR. These findings suggest that IF may be superior to CCR for weight loss in some respects.\n\n---\n\n### PMID: 38201996\n**Title:** Intermittent Fasting: Does It Affect Sports Performance? A Systematic Review.\n**Authors:** Conde-Pipó Javier, Mora-Fernandez Agustín, Martinez-Bebia Manuel, Gimenez-Blasi Nuria, Lopez-Moro Alejandro et al.\n**Journal:** Nutrients (2024)\n**Abstract:**\nIntermittent fasting is one of the most popular types of diet at the moment because it is an effective nutritional strategy in terms of weight loss. The main objective of this review is to analyze the effects that intermittent fasting has on sports performance. We analyzed physical capacities: aerobic capacity, anaerobic capacity, strength, and power, as well as their effect on body composition. For this, a bibliographic search was carried out in several databases where 25 research articles were analyzed to clarify these objectives. Inclusion criteria: dates between 2013 and present, free full texts, studies conducted in adult human athletes, English and/or Spanish languages, and if it has been considered that intermittent fasting is mainly linked to sports practice and that this obtains a result in terms of performance or physical capacities. This review was registered in PROSPERO with code ref. 407024, and an evaluation of the quality or risk of bias was performed. After this analysis, results were obtained regarding the improvement of body composition and the maintenance of muscle mass. An influence of intermittent fasting on sports performance and body composition is observed. It can be concluded that intermittent fasting provides benefits in terms of body composition without reducing physical performance, maintenance of lean mass, and improvements in maximum power. But despite this, it is necessary to carry out new studies focusing on the sports field since the samples have been very varied. Additionally, the difference in hours of intermittent fasting should be studied, especially in the case of overnight fasting.\n\n---\n\n### PMID: 36575144\n**Title:** Intermittent fasting and protein pacing are superior to caloric restriction for weight and visceral fat loss.\n**Authors:** Arciero Paul J, Poe Michelle, Mohr Alex E, Ives Stephen J, Arciero Autumn et al.\n**Journal:** Obesity (Silver Spring, Md.) (2023)\n**Abstract:**\nOBJECTIVE: This study compared intermittent fasting and protein pacing (IF-P) versus a heart-healthy caloric restriction (CR) diet, matched for energy intake and physical activity energy expenditure, on body weight, total and visceral fat mass, and cardiometabolic health outcomes in adults with obesity.\n\nMETHODS: IF-P (n = 21) and CR (n = 20) were assessed pre- (week 0), mid- (week 5), and post- (week 9) intervention.\n\nRESULTS: Both groups reduced (p < 0.05) weight, total and visceral fat mass, blood pressure and lipids, and desire to eat food and increased proportion of fat-free mass. IF-P resulted in greater (p < 0.05) reductions in weight (-9% vs. -5%), total (-16% vs. -9%) and visceral (-33% vs. -14%) fat mass, and desire to eat (-17% vs. 1%) and increased fat-free mass percent (6% vs. 3%) compared with CR. These improvements were despite similar weekly total energy intake (IF-P, 9470 ± 550 vs. CR, 9095 ± 608 kcal/wk; p = 0.90) and physical activity energy expenditure (IF-P, 300 ± 150 vs. CR, 350 ± 200 kcal/d; p = 0.79).\n\nCONCLUSIONS: IF-P and CR optimize weight loss, body composition, cardiometabolic health, and hunger management, with IF-P providing greater benefits.\n\n---\n\n### PMID: 38904963\n**Title:** A 5:2 Intermittent Fasting Meal Replacement Diet and Glycemic Control for Adults With Diabetes: The EARLY Randomized Clinical Trial.\n**Authors:** Guo Lixin, Xi Yue, Jin Wenbo, Yuan Huijuan, Qin Guijun et al.\n**Journal:** JAMA network open (2024)\n**Abstract:**\nIMPORTANCE: An intermittent fasting plan consisting of 2 nonconsecutive fasting days and 5 days of habitual intake per week and meal replacement diet (5:2 MR) could provide additional benefits to patients with type 2 diabetes.\n\nOBJECTIVE: To evaluate the effect of the 5:2 MR on glycemic control among patients with early type 2 diabetes compared with metformin and empagliflozin.\n\nDESIGN, SETTING, AND PARTICIPANTS: The EARLY (Exploration of Treatment of Newly Diagnosed Overweight/Obese Type 2 Diabetes Mellitus) study is a randomized, open-label, active parallel-controlled clinical trial conducted between November 13, 2020, and December 29, 2022, in 9 centers across China. A total of 509 eligible patients underwent screening, out of which 405 were randomly assigned to 3 groups and included in the intention-to-treat analysis.\n\nINTERVENTIONS: Patients were randomly allocated in a 1:1:1 ratio to receive either metformin, empagliflozin, or 5:2 MR. The treatment was 16 weeks, with an 8-week follow-up.\n\nMAIN OUTCOMES AND MEASURES: The primary end point was the change in hemoglobin A1c (HbA1c) level from baseline to 16 weeks. Secondary end points included changes in body weight, anthropometric measurements, and biochemical parameters.\n\nRESULTS: Of the 405 randomized participants (265 men [65.4%]; mean [SD] age, 45.5 [11.0] years; mean [SD] body mass index, 29.5 [4.1]; and mean [SD] HbA1c level, 7.9% [0.6%]), 332 completed the 16-week treatment. From baseline to week 16, participants in the 5:2 MR group showed the greatest reduction in HbA1c (least-squares mean [LSM], -1.9% [SE, 0.2%]), significantly greater than patients receiving metformin (LSM, -1.6% [SE, 0.2%]; adjusted LSM difference, -0.3% [95% CI, -0.4% to -0.1%]) and empagliflozin (LSM, -1.5% [SE, 0.2%]; adjusted LSM difference, -0.4% [95% CI, -0.6% to -0.2%]). At week 16, the mean weight loss in the 5:2 MR group (LSM, -9.7 kg [SE, 2.2 kg]) was greater than that in the metformin group (LSM, -5.5 kg [SE, 2.3 kg]) and empagliflozin group (LSM, -5.8 kg [SE, 2.3 kg]).\n\nCONCLUSIONS AND RELEVANCE: This randomized clinical trial of Chinese adults with overweight or obesity and with early type 2 diabetes found that 5:2 MR could improve glycemic outcomes and weight loss in the short term compared with metformin or empagliflozin, making it a promising initial intervention and early management for type 2 diabetes.\n\nTRIAL REGISTRATION: Chinese Clinical Trial Registry Identifier: ChiCTR2000040656.\n\n---\n\nBased on these papers, generate a plain-language synthesis brief.\nCRITICAL: The brief MUST fit on ONE printed page. Be direct and concise. Cut all filler.\nAnswer the question first. Every claim must cite PMID(s).\nSurface contradictions. State confidence honestly.\nWrite for a regular person making a real decision.",
+      "model": "claude-opus-4-6"
+    },
+    "synthesis": {
+      "brief_markdown": "\n\n# Intermittent Fasting vs. Regular Dieting for Weight Loss\n\n**Question:** Is intermittent fasting better than regular dieting for losing weight? · **Context:** Choosing a diet plan to lose about 20 pounds this year.\n\n---\n\n## The short answer\n\nFor most people, intermittent fasting and traditional calorie-cutting produce **nearly identical weight loss**. The largest meta-analysis (99 trials, 6,582 people) found only minor differences, with one exception: alternate-day fasting edged out continuous dieting by about 1.3 kg (~3 lbs) in shorter trials [PMID: 40533200]. One well-designed 12-month trial found that a 4:3 fasting schedule (eat very little 3 days/week) beat daily calorie restriction by about 6 lbs, possibly because it reduced binge eating [PMID: 40163873]. Bottom line: pick whichever approach you can actually stick with for a full year.\n\n## Key findings\n\n- **Overall, fasting ≈ regular dieting.** The largest network meta-analysis found all fasting types and continuous restriction produced similar weight loss vs. each other, with differences generally under 2 kg [PMID: 40533200]. A second meta-analysis of 24 trials agreed [PMID: 36349432].\n- **Alternate-day fasting may have a slight edge.** It was the only fasting type to outperform continuous restriction (by ~1.3 kg), but this advantage disappeared in trials lasting 6+ months [PMID: 40533200] [PMID: 36349432].\n- **One 12-month trial favored 4:3 fasting.** Participants fasting 3 days/week lost ~2.9 kg more than daily dieters, with less binge eating and uncontrolled eating [PMID: 40163873] [PMID: 40733010].\n- **Short-term fasting may burn slightly more fat.** One meta-analysis found fasting produced about 1 kg more fat loss than continuous restriction in the short term, but this didn't hold long-term [PMID: 39458528].\n- **A 5:2 plan with meal replacements showed strong results in diabetics**—9.7 kg lost in 16 weeks—but this combined fasting with meal replacements and was only studied short-term in people with type 2 diabetes [PMID: 38904963].\n- **Night shift workers saw no difference** between 5:2 fasting and continuous restriction at 24 weeks [PMID: 40554393].\n\n## What is unknown\n\n- **Long-term data (1+ years) is scarce.** Only one provided trial lasted 12 months [PMID: 40163873]. Whether fasting advantages persist or fade beyond a year is unclear [PMID: 40533200].\n- **Adherence is the wild card.** Compliance was high in short trials (>80%), but real-world stickability over a full year—which matters most for losing 20 lbs—is poorly studied [PMID: 36349432].\n- **Who benefits most?** There's little data on whether fasting works better for specific people (by age, activity level, or eating patterns).\n\n## Confidence: Medium\n\nMultiple large meta-analyses agree on the core finding (no major difference), but long-term trials are few and short-term advantages for fasting are small and inconsistent. The one positive 12-month trial is a single study with limited generalizability.\n\n---\n\n*Generated by Tables Turned. Receipts only.*"
+    },
+    "provenance": [
+      {
+        "timestamp": "2026-09-28T23:39:40Z",
+        "action": "search_started",
+        "detail": "Is intermittent fasting better than regular dieting for losing weight?"
+      },
+      {
+        "timestamp": "2026-09-28T23:39:48Z",
+        "action": "search_queries_generated",
+        "detail": "intermittent fasting weight loss | (intermittent fasting OR time-restricted eating OR alternate day fasting OR 5:2 diet) AND (weight loss OR weight reduction OR body weight) AND (continuous energy restriction OR caloric restriction OR conventional diet) AND (comparison OR comparative) | (intermittent fasting OR time-restricted feeding OR alternate-day fasting) AND (weight loss OR body composition OR obesity) AND (randomized controlled trial[pt] OR meta-analysis[pt] OR systematic review[pt]) | (\"intermittent fasting\"[MeSH] OR \"fasting\"[MeSH] OR time-restricted eating) AND (\"weight loss\"[MeSH] OR \"body weight\"[MeSH] OR \"obesity\"[MeSH]) AND (\"caloric restriction\"[MeSH] OR continuous energy restriction) AND (adherence OR sustainability OR long-term) AND (randomized controlled trial[pt] OR meta-analysis[pt])"
+      },
+      {
+        "timestamp": "2026-09-28T23:39:49Z",
+        "action": "pubmed_searched",
+        "detail": "\"intermittent fasting weight loss\" -> 751 total, fetched 25"
+      },
+      {
+        "timestamp": "2026-09-28T23:39:52Z",
+        "action": "pubmed_searched",
+        "detail": "\"(intermittent fasting OR time-restricted eating OR alternate day fasting OR 5:2 diet) AND (weight loss OR weight reduction OR body weight) AND (continuous energy restriction OR caloric restriction OR conventional diet) AND (comparison OR comparative)\" -> 421 total, fetched 25"
+      },
+      {
+        "timestamp": "2026-09-28T23:39:53Z",
+        "action": "pubmed_searched",
+        "detail": "\"(intermittent fasting OR time-restricted feeding OR alternate-day fasting) AND (weight loss OR body composition OR obesity) AND (randomized controlled trial[pt] OR meta-analysis[pt] OR systematic review[pt])\" -> 451 total, fetched 25"
+      },
+      {
+        "timestamp": "2026-09-28T23:39:55Z",
+        "action": "pubmed_searched",
+        "detail": "\"(\"intermittent fasting\"[MeSH] OR \"fasting\"[MeSH] OR time-restricted eating) AND (\"weight loss\"[MeSH] OR \"body weight\"[MeSH] OR \"obesity\"[MeSH]) AND (\"caloric restriction\"[MeSH] OR continuous energy restriction) AND (adherence OR sustainability OR long-term) AND (randomized controlled trial[pt] OR meta-analysis[pt])\" -> 64 total, fetched 25"
+      },
+      {
+        "timestamp": "2026-09-28T23:39:56Z",
+        "action": "papers_ranked",
+        "detail": "73 papers scored. Top 12 selected (scores 24-9). Method: cross-strategy overlap (x3) + PubMed position weight."
+      },
+      {
+        "timestamp": "2026-09-28T23:40:22Z",
+        "action": "plain_summaries_generated",
+        "detail": "12 papers translated"
+      },
+      {
+        "timestamp": "2026-09-28T23:40:22Z",
+        "action": "papers_selected_for_synthesis",
+        "detail": "12 papers"
+      },
+      {
+        "timestamp": "2026-09-28T23:40:47Z",
+        "action": "synthesis_generated",
+        "detail": "3029 chars, 12 papers"
+      }
+    ]
+  },
+  "telemetry": {
+    "prompt_sha256": {
+      "SEARCH_SYSTEM": "0a2d1ccd7d4c77e0f5441613fc38edb45f36237befa5723d030b9244d27b607e",
+      "SUMMARY_SYSTEM": "7726ec6a8d32f245ff4d3b8ecb20668a8b440756e31f4106cb36a69dea75243b",
+      "SYNTH_SYSTEM": "dbda0a2b78e23926f4a986a6d6f9d0ed42a9090ed3128819e380e0c82beddde4"
+    },
+    "search_depth": 25,
+    "search_sort": "relevance",
+    "per_query": [
+      {
+        "query": "intermittent fasting weight loss",
+        "strategy": "Broad search to capture all literature on intermittent fasting and weight loss",
+        "total_hits": 751,
+        "returned": [
+          "35194176",
+          "38955141",
+          "35565749",
+          "40533200",
+          "36575144",
+          "35050952",
+          "40163873",
+          "37906749",
+          "31525701",
+          "29754952",
+          "38932663",
+          "38904963",
+          "38901423",
+          "38201996",
+          "40554393",
+          "39458528",
+          "36349432",
+          "37630851",
+          "37572827",
+          "34135111",
+          "29124370",
+          "40733010",
+          "38956175",
+          "37299567",
+          "34474513"
+        ],
+        "querytranslation": "(\"intermittent fasting\"[MeSH Terms] OR (\"intermittent\"[All Fields] AND \"fasting\"[All Fields]) OR \"intermittent fasting\"[All Fields]) AND (\"weight loss\"[MeSH Terms] OR (\"weight\"[All Fields] AND \"loss\"[All Fields]) OR \"weight loss\"[All Fields])"
+      },
+      {
+        "query": "(intermittent fasting OR time-restricted eating OR alternate day fasting OR 5:2 diet) AND (weight loss OR weight reduction OR body weight) AND (continuous energy restriction OR caloric restriction OR conventional diet) AND (comparison OR comparative)",
+        "strategy": "Targeted search comparing intermittent fasting to conventional calorie-restricted diets for weight loss",
+        "total_hits": 421,
+        "returned": [
+          "40533200",
+          "38719726",
+          "36349432",
+          "36575144",
+          "33017844",
+          "40554393",
+          "37786321",
+          "28459931",
+          "40970462",
+          "39003957",
+          "39973006",
+          "38638032",
+          "37299567",
+          "40163873",
+          "39485353",
+          "39458528",
+          "39771001",
+          "39143654",
+          "30646030",
+          "38956175",
+          "39447676",
+          "20921964",
+          "33512717",
+          "41692034",
+          "33693835"
+        ],
+        "querytranslation": "(\"intermittent fasting\"[MeSH Terms] OR (\"intermittent\"[All Fields] AND \"fasting\"[All Fields]) OR \"intermittent fasting\"[All Fields] OR (\"intermittent fasting\"[MeSH Terms] OR (\"intermittent\"[All Fields] AND \"fasting\"[All Fields]) OR \"intermittent fasting\"[All Fields] OR (\"time\"[All Fields] AND \"restricted\"[All Fields] AND \"eating\"[All Fields]) OR \"time restricted eating\"[All Fields]) OR ((\"alternance\"[All Fields] OR \"alternances\"[All Fields] OR \"alternant\"[All Fields] OR \"alternants\"[All Fields] OR \"alternate\"[All Fields] OR \"alternated\"[All Fields] OR \"alternately\"[All Fields] OR \"alternates\"[All Fields] OR \"alternating\"[All Fields] OR \"alternation\"[All Fields] OR \"alternations\"[All Fields] OR \"alternative\"[All Fields] OR \"alternatively\"[All Fields] OR \"alternatives\"[All Fields]) AND \"day\"[All Fields] AND (\"fasted\"[All Fields] OR \"fasting\"[MeSH Terms] OR \"fasting\"[All Fields] OR \"fastings\"[All Fields] OR \"fasts\"[All Fields])) OR (\"5 2\"[All Fields] AND (\"diet\"[MeSH Terms] OR \"diet\"[All Fields]))) AND (\"weight loss\"[MeSH Terms] OR (\"weight\"[All Fields] AND \"loss\"[All Fields]) OR \"weight loss\"[All Fields] OR (\"weight loss\"[MeSH Terms] OR (\"weight\"[All Fields] AND \"loss\"[All Fields]) OR \"weight loss\"[All Fields] OR (\"weight\"[All Fields] AND \"reduction\"[All Fields]) OR \"weight reduction\"[All Fields]) OR (\"body weight\"[MeSH Terms] OR (\"body\"[All Fields] AND \"weight\"[All Fields]) OR \"body weight\"[All Fields])) AND (((\"continual\"[All Fields] OR \"continually\"[All Fields] OR \"continuance\"[All Fields] OR \"continuation\"[All Fields] OR \"continuations\"[All Fields] OR \"continue\"[All Fields] OR \"continued\"[All Fields] OR \"continuer\"[All Fields] OR \"continuers\"[All Fields] OR \"continues\"[All Fields] OR \"continuing\"[All Fields] OR \"continuities\"[All Fields] OR \"continuity\"[All Fields] OR \"continuous\"[All Fields] OR \"continuously\"[All Fields]) AND (\"energie\"[All Fields] OR \"energies\"[All Fields] OR \"energy\"[All Fields]) AND (\"restrict\"[All Fields] OR \"restricted\"[All Fields] OR \"restricting\"[All Fields] OR \"restriction\"[All Fields] OR \"restrictions\"[All Fields] OR \"restrictive\"[All Fields] OR \"restrictiveness\"[All Fields] OR \"restricts\"[All Fields])) OR (\"caloric restriction\"[MeSH Terms] OR (\"caloric\"[All Fields] AND \"restriction\"[All Fields]) OR \"caloric restriction\"[All Fields]) OR ((\"conventional\"[All Fields] OR \"conventionals\"[All Fields]) AND (\"diet\"[MeSH Terms] OR \"diet\"[All Fields]))) AND (\"comparison\"[All Fields] OR \"comparisons\"[All Fields] OR (\"comparabilities\"[All Fields] OR \"comparability\"[All Fields] OR \"comparable\"[All Fields] OR \"comparables\"[All Fields] OR \"comparably\"[All Fields] OR \"comparative\"[All Fields] OR \"comparatively\"[All Fields] OR \"comparatives\"[All Fields] OR \"comparator\"[All Fields] OR \"comparators\"[All Fields] OR \"compared\"[All Fields] OR \"compares\"[All Fields] OR \"comparing\"[All Fields]))"
+      },
+      {
+        "query": "(intermittent fasting OR time-restricted feeding OR alternate-day fasting) AND (weight loss OR body composition OR obesity) AND (randomized controlled trial[pt] OR meta-analysis[pt] OR systematic review[pt])",
+        "strategy": "Focused search for high-quality evidence (RCTs, meta-analyses, systematic reviews) on intermittent fasting and weight loss outcomes",
+        "total_hits": 451,
+        "returned": [
+          "39454570",
+          "40533200",
+          "38201996",
+          "38904963",
+          "38901423",
+          "37028708",
+          "36349432",
+          "33259790",
+          "38956175",
+          "35565749",
+          "35050952",
+          "31471173",
+          "38932663",
+          "33017844",
+          "35579171",
+          "38354947",
+          "33302500",
+          "31151228",
+          "40554393",
+          "28459931",
+          "39458528",
+          "39485353",
+          "38886740",
+          "40163873",
+          "33308259"
+        ],
+        "querytranslation": "(\"intermittent fasting\"[MeSH Terms] OR (\"intermittent\"[All Fields] AND \"fasting\"[All Fields]) OR \"intermittent fasting\"[All Fields] OR (\"intermittent fasting\"[MeSH Terms] OR (\"intermittent\"[All Fields] AND \"fasting\"[All Fields]) OR \"intermittent fasting\"[All Fields] OR (\"time\"[All Fields] AND \"restricted\"[All Fields] AND \"feeding\"[All Fields]) OR \"time restricted feeding\"[All Fields]) OR (\"alternate-day\"[All Fields] AND (\"fasted\"[All Fields] OR \"fasting\"[MeSH Terms] OR \"fasting\"[All Fields] OR \"fastings\"[All Fields] OR \"fasts\"[All Fields]))) AND (\"weight loss\"[MeSH Terms] OR (\"weight\"[All Fields] AND \"loss\"[All Fields]) OR \"weight loss\"[All Fields] OR (\"body composition\"[MeSH Terms] OR (\"body\"[All Fields] AND \"composition\"[All Fields]) OR \"body composition\"[All Fields]) OR (\"obeses\"[All Fields] OR \"obesity\"[MeSH Terms] OR \"obesity\"[All Fields] OR \"obese\"[All Fields] OR \"obesities\"[All Fields] OR \"obesity s\"[All Fields])) AND (\"randomized controlled trial\"[Publication Type] OR \"meta-analysis\"[Publication Type] OR \"systematic review\"[Publication Type])"
+      },
+      {
+        "query": "(\"intermittent fasting\"[MeSH] OR \"fasting\"[MeSH] OR time-restricted eating) AND (\"weight loss\"[MeSH] OR \"body weight\"[MeSH] OR \"obesity\"[MeSH]) AND (\"caloric restriction\"[MeSH] OR continuous energy restriction) AND (adherence OR sustainability OR long-term) AND (randomized controlled trial[pt] OR meta-analysis[pt])",
+        "strategy": "Narrow search emphasizing long-term adherence and sustainability of intermittent fasting vs conventional dieting, relevant for a practical year-long weight loss goal",
+        "total_hits": 64,
+        "returned": [
+          "40733010",
+          "34835953",
+          "41684452",
+          "34040199",
+          "22735163",
+          "42277575",
+          "39732588",
+          "33293678",
+          "41766355",
+          "40598397",
+          "40055608",
+          "39464252",
+          "37364268",
+          "29353535",
+          "42092517",
+          "40732984",
+          "39485353",
+          "36319597",
+          "35443107",
+          "34274552",
+          "30646030",
+          "29424957",
+          "28791787",
+          "40731344",
+          "40533200"
+        ],
+        "querytranslation": "(\"intermittent fasting\"[MeSH Terms] OR \"fasting\"[MeSH Terms] OR (\"intermittent fasting\"[MeSH Terms] OR (\"intermittent\"[All Fields] AND \"fasting\"[All Fields]) OR \"intermittent fasting\"[All Fields] OR (\"time\"[All Fields] AND \"restricted\"[All Fields] AND \"eating\"[All Fields]) OR \"time restricted eating\"[All Fields])) AND (\"weight loss\"[MeSH Terms] OR \"body weight\"[MeSH Terms] OR \"obesity\"[MeSH Terms]) AND (\"caloric restriction\"[MeSH Terms] OR ((\"continual\"[All Fields] OR \"continually\"[All Fields] OR \"continuance\"[All Fields] OR \"continuation\"[All Fields] OR \"continuations\"[All Fields] OR \"continue\"[All Fields] OR \"continued\"[All Fields] OR \"continuer\"[All Fields] OR \"continuers\"[All Fields] OR \"continues\"[All Fields] OR \"continuing\"[All Fields] OR \"continuities\"[All Fields] OR \"continuity\"[All Fields] OR \"continuous\"[All Fields] OR \"continuously\"[All Fields]) AND (\"energie\"[All Fields] OR \"energies\"[All Fields] OR \"energy\"[All Fields]) AND (\"restrict\"[All Fields] OR \"restricted\"[All Fields] OR \"restricting\"[All Fields] OR \"restriction\"[All Fields] OR \"restrictions\"[All Fields] OR \"restrictive\"[All Fields] OR \"restrictiveness\"[All Fields] OR \"restricts\"[All Fields]))) AND (\"adherance\"[All Fields] OR \"adhere\"[All Fields] OR \"adhered\"[All Fields] OR \"adherence\"[All Fields] OR \"adherences\"[All Fields] OR \"adherent\"[All Fields] OR \"adherents\"[All Fields] OR \"adherer\"[All Fields] OR \"adherers\"[All Fields] OR \"adheres\"[All Fields] OR \"adhering\"[All Fields] OR (\"sustain\"[All Fields] OR \"sustainability\"[All Fields] OR \"sustainable\"[All Fields] OR \"sustainably\"[All Fields] OR \"sustained\"[All Fields] OR \"sustaining\"[All Fields] OR \"sustainment\"[All Fields] OR \"sustains\"[All Fields]) OR \"long-term\"[All Fields]) AND (\"randomized controlled trial\"[Publication Type] OR \"meta-analysis\"[Publication Type])"
+      }
+    ],
+    "candidate_pool": [
+      {
+        "pmid": "40533200",
+        "title": "Intermittent fasting strategies and their effects on body weight and other cardiometabolic risk factors: systematic review and network meta-analysis of randomised clinical trials.",
+        "year": 2025,
+        "score": 24,
+        "overlap": 4,
+        "strategy_idx": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "positions": [
+          4,
+          1,
+          2,
+          25
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Network Meta-Analysis",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "36349432",
+        "title": "A meta-analysis comparing the effectiveness of alternate day fasting, the 5:2 diet, and time-restricted eating for weight loss.",
+        "year": 2023,
+        "score": 14,
+        "overlap": 3,
+        "strategy_idx": [
+          0,
+          1,
+          2
+        ],
+        "positions": [
+          17,
+          3,
+          7
+        ],
+        "publication_types": [
+          "Meta-Analysis",
+          "Journal Article",
+          "Review",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "40163873",
+        "title": "The Effect of 4:3 Intermittent Fasting on Weight Loss at 12 Months : A Randomized Clinical Trial.",
+        "year": 2025,
+        "score": 12,
+        "overlap": 3,
+        "strategy_idx": [
+          0,
+          1,
+          2
+        ],
+        "positions": [
+          7,
+          14,
+          24
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Comparative Study",
+          "Research Support, N.I.H., Extramural"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "40554393",
+        "title": "Intermittent fasting for weight loss in night shift workers: a three-arm, superiority randomised clinical trial.",
+        "year": 2025,
+        "score": 12,
+        "overlap": 3,
+        "strategy_idx": [
+          0,
+          1,
+          2
+        ],
+        "positions": [
+          15,
+          6,
+          19
+        ],
+        "publication_types": [
+          "Equivalence Trial",
+          "Journal Article"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "39458528",
+        "title": "Is Fasting Superior to Continuous Caloric Restriction for Weight Loss and Metabolic Outcomes in Obese Adults? A Systematic Review and Meta-Analysis of Randomized Clinical Trials.",
+        "year": 2024,
+        "score": 12,
+        "overlap": 3,
+        "strategy_idx": [
+          0,
+          1,
+          2
+        ],
+        "positions": [
+          16,
+          16,
+          21
+        ],
+        "publication_types": [
+          "Comparative Study",
+          "Journal Article",
+          "Meta-Analysis",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "40733010",
+        "title": "Effects of 4:3 Intermittent Fasting on Eating Behaviors and Appetite Hormones: A Secondary Analysis of a 12-Month Behavioral Weight Loss Intervention.",
+        "year": 2025,
+        "score": 12,
+        "overlap": 2,
+        "strategy_idx": [
+          0,
+          3
+        ],
+        "positions": [
+          22,
+          1
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "38956175",
+        "title": "The effects of intermittent fasting on body composition and cardiometabolic health in adults with prediabetes or type 2 diabetes: A systematic review and meta-analysis.",
+        "year": 2024,
+        "score": 12,
+        "overlap": 3,
+        "strategy_idx": [
+          0,
+          1,
+          2
+        ],
+        "positions": [
+          23,
+          20,
+          9
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "39485353",
+        "title": "Meal Timing and Anthropometric and Metabolic Outcomes: A Systematic Review and Meta-Analysis.",
+        "year": 2024,
+        "score": 12,
+        "overlap": 3,
+        "strategy_idx": [
+          1,
+          2,
+          3
+        ],
+        "positions": [
+          15,
+          22,
+          17
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review",
+          "Meta-Analysis",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "35565749",
+        "title": "Intermittent Fasting versus Continuous Calorie Restriction: Which Is Better for Weight Loss?",
+        "year": 2022,
+        "score": 10,
+        "overlap": 2,
+        "strategy_idx": [
+          0,
+          2
+        ],
+        "positions": [
+          3,
+          10
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "38201996",
+        "title": "Intermittent Fasting: Does It Affect Sports Performance? A Systematic Review.",
+        "year": 2024,
+        "score": 10,
+        "overlap": 2,
+        "strategy_idx": [
+          0,
+          2
+        ],
+        "positions": [
+          14,
+          3
+        ],
+        "publication_types": [
+          "Systematic Review",
+          "Journal Article"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "36575144",
+        "title": "Intermittent fasting and protein pacing are superior to caloric restriction for weight and visceral fat loss.",
+        "year": 2023,
+        "score": 9,
+        "overlap": 2,
+        "strategy_idx": [
+          0,
+          1
+        ],
+        "positions": [
+          5,
+          4
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "38904963",
+        "title": "A 5:2 Intermittent Fasting Meal Replacement Diet and Glycemic Control for Adults With Diabetes: The EARLY Randomized Clinical Trial.",
+        "year": 2024,
+        "score": 9,
+        "overlap": 2,
+        "strategy_idx": [
+          0,
+          2
+        ],
+        "positions": [
+          12,
+          4
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Multicenter Study",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "35194176",
+        "title": "Clinical application of intermittent fasting for weight loss: progress and future directions.",
+        "year": 2022,
+        "score": 8,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          1
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review",
+          "Research Support, N.I.H., Extramural"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "35050952",
+        "title": "Intermittent Fasting in Weight Loss and Cardiometabolic Risk Reduction: A Randomized Controlled Trial.",
+        "year": 2022,
+        "score": 8,
+        "overlap": 2,
+        "strategy_idx": [
+          0,
+          2
+        ],
+        "positions": [
+          6,
+          11
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "38932663",
+        "title": "Effect of intermittent fasting 16:8 and 14:10 compared with control-group on weight reduction and metabolic outcomes in obesity with type 2 diabetes patients: A randomized controlled trial.",
+        "year": 2024,
+        "score": 8,
+        "overlap": 2,
+        "strategy_idx": [
+          0,
+          2
+        ],
+        "positions": [
+          11,
+          13
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "38901423",
+        "title": "Brain responses to intermittent fasting and the healthy living diet in older adults.",
+        "year": 2024,
+        "score": 8,
+        "overlap": 2,
+        "strategy_idx": [
+          0,
+          2
+        ],
+        "positions": [
+          13,
+          5
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "37299567",
+        "title": "The Effect of Intermittent Fasting on Appetite: A Systematic Review and Meta-Analysis.",
+        "year": 2023,
+        "score": 8,
+        "overlap": 2,
+        "strategy_idx": [
+          0,
+          1
+        ],
+        "positions": [
+          24,
+          13
+        ],
+        "publication_types": [
+          "Meta-Analysis",
+          "Systematic Review",
+          "Journal Article"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "33017844",
+        "title": "Intermittent Fasting Improves Cardiometabolic Risk Factors and Alters Gut Microbiota in Metabolic Syndrome Patients.",
+        "year": 2021,
+        "score": 8,
+        "overlap": 2,
+        "strategy_idx": [
+          1,
+          2
+        ],
+        "positions": [
+          5,
+          14
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Multicenter Study",
+          "Randomized Controlled Trial",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "28459931",
+        "title": "Effect of Alternate-Day Fasting on Weight Loss, Weight Maintenance, and Cardioprotection Among Metabolically Healthy Obese Adults: A Randomized Clinical Trial.",
+        "year": 2017,
+        "score": 8,
+        "overlap": 2,
+        "strategy_idx": [
+          1,
+          2
+        ],
+        "positions": [
+          8,
+          20
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "30646030",
+        "title": "Effect of Intermittent Compared With Continuous Energy Restricted Diet on Glycemic Control in Patients With Type 2 Diabetes: A Randomized Noninferiority Trial.",
+        "year": 2018,
+        "score": 8,
+        "overlap": 2,
+        "strategy_idx": [
+          1,
+          3
+        ],
+        "positions": [
+          19,
+          21
+        ],
+        "publication_types": [
+          "Comparative Study",
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Research Support, Non-U.S. Gov't",
+          "Equivalence Trial"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "39454570",
+        "title": "Effects of healthy low-carbohydrate diet and time-restricted eating on weight and gut microbiome in adults with overweight or obesity: Feeding RCT.",
+        "year": 2024,
+        "score": 8,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          1
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "38955141",
+        "title": "Health Benefits of Intermittent Fasting.",
+        "year": 2024,
+        "score": 7,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          2
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review",
+          "Research Support, N.I.H., Extramural"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "38719726",
+        "title": "Intermittent fasting influences immunity and metabolism.",
+        "year": 2024,
+        "score": 7,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          2
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "34835953",
+        "title": "Time-Limited Eating and Continuous Glucose Monitoring in Adolescents with Obesity: A Pilot Study.",
+        "year": 2021,
+        "score": 7,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          2
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "41684452",
+        "title": "Maintained diabetes remission among normal BMI individuals achieved without ongoing intervention: a three-year follow-up study of intermittent calorie restriction.",
+        "year": 2025,
+        "score": 6,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          3
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "34040199",
+        "title": "Effects of intermittent (5:2) or continuous energy restriction on basal and postprandial metabolism: a randomised study in normal-weight, young participants.",
+        "year": 2022,
+        "score": 5,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          4
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "37906749",
+        "title": "[Intermittent fasting and human metabolic health].",
+        "year": 2023,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          8
+        ],
+        "publication_types": [
+          "Review",
+          "English Abstract",
+          "Journal Article"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "31525701",
+        "title": "Scientific evidence of diets for weight loss: Different macronutrient composition, intermittent fasting, and popular diets.",
+        "year": 2020,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          9
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "29754952",
+        "title": "Early Time-Restricted Feeding Improves Insulin Sensitivity, Blood Pressure, and Oxidative Stress Even without Weight Loss in Men with Prediabetes.",
+        "year": 2018,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          10
+        ],
+        "publication_types": [
+          "Controlled Clinical Trial",
+          "Journal Article"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "37630851",
+        "title": "Intermittent Fasting and Its Effects on Weight, Glycemia, Lipids, and Blood Pressure: A Narrative Review.",
+        "year": 2023,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          18
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "37572827",
+        "title": "Intermittent fasting: A promising dietary intervention for autoimmune diseases.",
+        "year": 2023,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          19
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "34135111",
+        "title": "A randomized controlled trial to isolate the effects of fasting and energy restriction on weight loss and metabolic health in lean adults.",
+        "year": 2021,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          20
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "29124370",
+        "title": "Popular Weight Loss Strategies: a Review of Four Weight Loss Techniques.",
+        "year": 2017,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          21
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "34474513",
+        "title": "Effects of Intermittent Fasting on the Circulating Levels and Circadian Rhythms of Hormones.",
+        "year": 2021,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          25
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Research Support, Non-U.S. Gov't",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "37786321",
+        "title": "Metabolic changes with intermittent fasting.",
+        "year": 2024,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          7
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "40970462",
+        "title": "Fasting Mimicking Diets Reverse Accelerated Biological Aging in Multiple Sclerosis.",
+        "year": 2025,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          9
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "39003957",
+        "title": "Intermittent fasting, calorie restriction, and a ketogenic diet improve mitochondrial function by reducing lipopolysaccharide signaling in monocytes during obesity: A randomized clinical trial.",
+        "year": 2024,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          10
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "39973006",
+        "title": "Time-restricted eating, caloric reduction, and unrestricted eating effects on weight and metabolism: a randomized trial.",
+        "year": 2025,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          11
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "38638032",
+        "title": "Effect of 5:2 Regimens: Energy-Restricted Diet or Low-Volume High-Intensity Interval Training Combined With Resistance Exercise on Glycemic Control and Cardiometabolic Health in Adults With Overweight/Obesity and Type 2 Diabetes: A Three-Arm Randomized Controlled Trial.",
+        "year": 2024,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          12
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "39771001",
+        "title": "Development and Pragmatic Randomized Controlled Trial of Healthy Ketogenic Diet Versus Energy-Restricted Diet on Weight Loss in Adults with Obesity.",
+        "year": 2024,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          17
+        ],
+        "publication_types": [
+          "Comparative Study",
+          "Journal Article",
+          "Pragmatic Clinical Trial",
+          "Randomized Controlled Trial"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "39143654",
+        "title": "The effects of time-restricted eating alone or in combination with probiotic supplementation in comparison with a calorie-restricted diet on endocrine and metabolic profiles in women with polycystic ovary syndrome: A randomized clinical trial.",
+        "year": 2024,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          18
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Comparative Study",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "39447676",
+        "title": "Intermittent compared with continuous calorie restriction for treatment of metabolic dysfunction-associated steatotic liver disease: a randomized clinical trial.",
+        "year": 2025,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          21
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Comparative Study",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "20921964",
+        "title": "The effects of intermittent or continuous energy restriction on weight loss and metabolic disease risk markers: a randomized trial in young overweight women.",
+        "year": 2011,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          22
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "33512717",
+        "title": "Intermittent fasting for the prevention of cardiovascular disease.",
+        "year": 2021,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          23
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Research Support, Non-U.S. Gov't",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "41692034",
+        "title": "Intermittent fasting for adults with overweight or obesity.",
+        "year": 2026,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          24
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review",
+          "Meta-Analysis"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "33693835",
+        "title": "Dietary Blueberry and Soluble Fiber Supplementation Reduces Risk of Gestational Diabetes in Women with Obesity in a Randomized Controlled Trial.",
+        "year": 2021,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          25
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Research Support, N.I.H., Extramural",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "37028708",
+        "title": "Nutrition and Exercise Interventions to Improve Body Composition for Persons with Overweight or Obesity Near Retirement Age: A Systematic Review and Network Meta-Analysis of Randomized Controlled Trials.",
+        "year": 2023,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          6
+        ],
+        "publication_types": [
+          "Systematic Review",
+          "Journal Article",
+          "Research Support, Non-U.S. Gov't",
+          "Network Meta-Analysis"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "33259790",
+        "title": "Prolonged, Controlled Daytime versus Delayed Eating Impacts Weight and Metabolism.",
+        "year": 2021,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          8
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Research Support, N.I.H., Extramural",
+          "Research Support, U.S. Gov't, Non-P.H.S."
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "31471173",
+        "title": "Alternate Day Fasting Improves Physiological and Molecular Markers of Aging in Healthy, Non-obese Humans.",
+        "year": 2019,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          12
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Research Support, N.I.H., Intramural",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "35579171",
+        "title": "Isocaloric-restricted Mediterranean Diet and Chinese Diets High or Low in Plants in Adults With Prediabetes.",
+        "year": 2022,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          15
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "38354947",
+        "title": "Risks and Benefits of Intermittent Fasting for the Aging Cardiovascular System.",
+        "year": 2024,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          16
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review",
+          "Research Support, N.I.H., Extramural",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "33302500",
+        "title": "Food Timing, Circadian Rhythm and Chrononutrition: A Systematic Review of Time-Restricted Eating's Effects on Human Health.",
+        "year": 2020,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          17
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "31151228",
+        "title": "Early Time-Restricted Feeding Improves 24-Hour Glucose Levels and Affects Markers of the Circadian Clock, Aging, and Autophagy in Humans.",
+        "year": 2019,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          18
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "38886740",
+        "title": "Effects of DASH diet with or without time-restricted eating in the management of stage 1 primary hypertension: a randomized controlled trial.",
+        "year": 2024,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          23
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "33308259",
+        "title": "Time-restricted eating effects on performance, immune function, and body composition in elite cyclists: a randomized controlled trial.",
+        "year": 2020,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          25
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "22735163",
+        "title": "Short- and long-term effects of continuous versus intermittent restrictive diet approaches on body composition and the metabolic profile in overweight and obese postmenopausal women: a pilot study.",
+        "year": 2012,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          5
+        ],
+        "publication_types": [
+          "Comparative Study",
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "42277575",
+        "title": "Effect of Time-Restricted Eating on Metabolic Adaptation in Adults With Severe Obesity During Early Phase of Weight Loss.",
+        "year": 2026,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          6
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "39732588",
+        "title": "Is isocaloric intermittent fasting superior to calorie restriction? A systematic review and meta-analysis of RCTs.",
+        "year": 2025,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          7
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review",
+          "Meta-Analysis"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "33293678",
+        "title": "Effectiveness of an intermittent fasting diet versus continuous energy restriction on anthropometric measurements, body composition and lipid profile in overweight and obese adults: a meta-analysis.",
+        "year": 2021,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          8
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "41766355",
+        "title": "Caloric restriction and time-restricted eating in older adults with overweight or obesity: The Health, Aging, and Later-Life Outcomes Pilot Study.",
+        "year": 2026,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          9
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "40598397",
+        "title": "Effect of a ketogenic diet, time-restricted eating, or alternate-day fasting on weight loss in adults with obesity: a randomized clinical trial.",
+        "year": 2025,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          10
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "40055608",
+        "title": "The effects of intermittent fasting on anthropometric indices, glycemic profile, chemotherapy-related toxicity, and subjective perception in gynecological and breast cancer patients: a systematic review and meta-analysis.",
+        "year": 2025,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          11
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review",
+          "Meta-Analysis"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "39464252",
+        "title": "Randomized Controlled Feasibility Trial of Late 8-Hour Time-Restricted Eating for Adolescents With Type 2 Diabetes.",
+        "year": 2024,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          12
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Research Support, N.I.H., Extramural"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "37364268",
+        "title": "Time-Restricted Eating Without Calorie Counting for Weight Loss in a Racially Diverse Population : A Randomized Controlled Trial.",
+        "year": 2023,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          13
+        ],
+        "publication_types": [
+          "Randomized Controlled Trial",
+          "Journal Article",
+          "Research Support, N.I.H., Extramural"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "29353535",
+        "title": "Eating behavior traits of successful weight losers during 12 months of alternate-day fasting: An exploratory analysis of a randomized controlled trial.",
+        "year": 2018,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          14
+        ],
+        "publication_types": [
+          "Comparative Study",
+          "Journal Article",
+          "Randomized Controlled Trial"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "42092517",
+        "title": "The effectiveness of 5:2 intermittent fasting compared with continuous caloric restriction in the treatment of recurrent weight gain after metabolic bariatric surgery: A non-inferiority, short-term, pilot feasibility study.",
+        "year": 2026,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          15
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Comparative Study"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "40732984",
+        "title": "Gut Microbiota Shifts After a Weight Loss Program in Adults with Obesity: The WLM3P Study.",
+        "year": 2025,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          16
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "36319597",
+        "title": "The basis and design for time-restricted eating compared with daily calorie restriction for weight loss and colorectal cancer risk reduction trial (TRE-CRC trial).",
+        "year": 2022,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          18
+        ],
+        "publication_types": [
+          "Randomized Controlled Trial",
+          "Journal Article",
+          "Research Support, N.I.H., Extramural"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "35443107",
+        "title": "Calorie Restriction with or without Time-Restricted Eating in Weight Loss.",
+        "year": 2022,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          19
+        ],
+        "publication_types": [
+          "Comparative Study",
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "34274552",
+        "title": "Eight weeks of intermittent fasting versus calorie restriction does not alter eating behaviors, mood, sleep quality, quality of life and cognitive performance in women with overweight.",
+        "year": 2021,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          20
+        ],
+        "publication_types": [
+          "Comparative Study",
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "29424957",
+        "title": "HNF1A variant, energy-reduced diets and insulin resistance improvement during weight loss: The POUNDS Lost trial and DIRECT.",
+        "year": 2018,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          22
+        ],
+        "publication_types": [
+          "Comparative Study",
+          "Journal Article",
+          "Multicenter Study",
+          "Randomized Controlled Trial",
+          "Research Support, N.I.H., Extramural",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "28791787",
+        "title": "Is two days of intermittent energy restriction per week a feasible weight loss approach in obese males? A randomised pilot study.",
+        "year": 2018,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          23
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "40731344",
+        "title": "The impact of intermittent fasting on body composition and cardiometabolic outcomes in overweight and obese adults: a systematic review and meta-analysis of randomized controlled trials.",
+        "year": 2025,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          24
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review",
+          "Meta-Analysis"
+        ],
+        "has_abstract": true
+      }
+    ],
+    "timings": {
+      "query_generation_s": 7.74,
+      "retrieval_s": 7.51,
+      "translation_s": 25.82,
+      "synthesis_s": 25.7,
+      "synthesis_first_token_s": 2.87,
+      "total_s": 66.78
+    },
+    "usage": {
+      "search": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 339,
+        "output_tokens": 346,
+        "output_tokens_details": null,
+        "server_tool_use": null,
+        "service_tier": "standard"
+      },
+      "summary": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 2536,
+        "output_tokens": 1172,
+        "output_tokens_details": null,
+        "server_tool_use": null,
+        "service_tier": "standard"
+      },
+      "synthesis": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 8246,
+        "output_tokens": 849,
+        "output_tokens_details": null,
+        "server_tool_use": null,
+        "service_tier": "standard"
+      }
+    },
+    "synthesis_stop_reason": "end_turn",
+    "served_model": "claude-opus-4-6"
+  },
+  "run": {
+    "question_id": "Q4",
+    "replicate": 1,
+    "route": "worker:https://tables-turned-api.jethomasphd.workers.dev",
+    "captured_at": "2026-09-28T23:40:47Z"
+  }
+}

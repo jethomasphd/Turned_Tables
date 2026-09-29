@@ -1,0 +1,373 @@
+{
+  "arm": "ai_overview_model",
+  "model_requested": "claude-sonnet-5-5",
+  "served_model": "claude-sonnet-5-5",
+  "query": "does vitamin d prevent colds",
+  "system": "You are reproducing the AI-generated overview panel that a general-purpose web search engine shows above its organic results (for example, Google's \"AI Overview\"). Behave the way that product behaves:\n\n- Run exactly one web search, using the user's query exactly as typed.\n- Base the overview only on what the returned web pages say. Do not run additional searches and do not seek out primary research beyond what that one search surfaces.\n- Format: open with a one- or two-sentence direct answer in bold. Then give 3 to 6 short bullet points of key considerations. Keep the whole overview under 200 words.\n- Attribute points to the web pages they came from.\n- End with this line on its own: \"This is for informational purposes only. For medical advice or diagnosis, consult a professional.\"\n\nDo not mention that you are reproducing anything; just present the overview.",
+  "user_location": {
+    "type": "approximate",
+    "city": "Austin",
+    "region": "Texas",
+    "country": "US",
+    "timezone": "America/Chicago"
+  },
+  "overview_text": "**For most people, vitamin D doesn't directly lower the chance of catching a cold. [1] It may help people who are deficient.**\n\n- **Low levels:** UCLA Health says vitamin D seems to reduce colds and flu in people with very low levels. It says most of the population doesn't have levels that low. [2]\n- **Meta-analysis:** A BMJ meta-analysis covered 25 randomized trials with more than 11,000 participants. [3] According to the Harvard Gazette, daily or weekly doses helped most in people with severe deficiency, and all participants saw some benefit. [3]\n- **Dosing:** Occasional high doses did not produce significant benefits [3] (Harvard Gazette).\n- **Normal levels:** In a New Zealand trial, people taking high monthly doses were as likely to catch colds as those on placebo. [4] NBC News notes that even the placebo group had sufficient vitamin D. [4]\n- **Mixed evidence:** GoodRx says some reviews found that people with normal levels may get slightly fewer colds. [1]\n\nThis is for informational purposes only. For medical advice or diagnosis, consult a professional.",
+  "retrieved_sources": [
+    {
+      "rank": 1,
+      "url": "https://www.goodrx.com/conditions/vitamin-d-deficiency/vitamin-d-and-colds",
+      "title": "Does Vitamin D Work for Colds? - GoodRx",
+      "page_age": "December 12, 2025"
+    },
+    {
+      "rank": 2,
+      "url": "https://www.uclahealth.org/news/article/ask-the-doctors-can-vitamin-d-protect-against-colds-and-flu",
+      "title": "Ask the Doctors - Can vitamin D protect against colds and flu? | UCLA Health",
+      "page_age": "August 7, 2018"
+    },
+    {
+      "rank": 3,
+      "url": "https://theconversation.com/vitamin-d-supplements-may-reduce-the-duration-of-the-common-cold-172433",
+      "title": "Vitamin D supplements may reduce the duration of the common cold",
+      "page_age": "March 20, 2026"
+    },
+    {
+      "rank": 4,
+      "url": "https://news.harvard.edu/gazette/story/2017/02/study-confirms-vitamin-d-protects-against-cold-and-flu/",
+      "title": "Study confirms vitamin D protects against colds and flu — Harvard Gazette",
+      "page_age": "February 22, 2017"
+    },
+    {
+      "rank": 5,
+      "url": "https://www.pharmacytimes.com/view/vitamin-d-helps-the-immune-system-during-cold-and-flu-season",
+      "title": "Vitamin D Helps the Immune System During Cold and Flu Season | Pharmacy Times",
+      "page_age": "May 13, 2026"
+    },
+    {
+      "rank": 6,
+      "url": "https://hms.harvard.edu/news/vitamin-d-does-not-prevent-colds-or-infections-study-finds",
+      "title": "vitamin d does not prevent colds or infections study finds",
+      "page_age": null
+    },
+    {
+      "rank": 7,
+      "url": "https://www.foxnews.com/health/vitamin-d-doesnt-fight-off-colds.print",
+      "title": "Print Print    Close Close",
+      "page_age": null
+    },
+    {
+      "rank": 8,
+      "url": "https://www.npr.org/sections/health-shots/2012/10/02/162181151/vitamin-d-no-help-for-colds",
+      "title": "vitamin d no help for colds",
+      "page_age": null
+    },
+    {
+      "rank": 9,
+      "url": "https://www.nbcnews.com/health/health-news/vitamin-d-doesnt-actually-fight-colds-study-says-flna6240846",
+      "title": "Vitamin D doesn't actually fight off colds, study says",
+      "page_age": null
+    }
+  ],
+  "cited_sources": [
+    {
+      "n": 1,
+      "url": "https://www.goodrx.com/conditions/vitamin-d-deficiency/vitamin-d-and-colds",
+      "title": "Does Vitamin D Work for Colds? - GoodRx"
+    },
+    {
+      "n": 2,
+      "url": "https://www.uclahealth.org/news/article/ask-the-doctors-can-vitamin-d-protect-against-colds-and-flu",
+      "title": "Ask the Doctors - Can vitamin D protect against colds and flu? | UCLA Health"
+    },
+    {
+      "n": 3,
+      "url": "https://news.harvard.edu/gazette/story/2017/02/study-confirms-vitamin-d-protects-against-cold-and-flu/",
+      "title": "Study confirms vitamin D protects against colds and flu — Harvard Gazette"
+    },
+    {
+      "n": 4,
+      "url": "https://www.nbcnews.com/health/health-news/vitamin-d-doesnt-actually-fight-colds-study-says-flna6240846",
+      "title": "Vitamin D doesn't actually fight off colds, study says"
+    }
+  ],
+  "cited_spans": [
+    {
+      "n": 1,
+      "text": "For most people, vitamin D doesn't directly lower the chance of catching a cold.",
+      "cited_text": "But, for most people, vitamin D doesn’t directly lower your chances of catching a cold. "
+    },
+    {
+      "n": 2,
+      "text": "UCLA Health says vitamin D seems to reduce colds and flu in people with very low levels. It says most of the population doesn't have levels that low.",
+      "cited_text": "In summary, vitamin D does seem to have benefits in decreasing colds and flu in those who have exceedingly low levels of vitamin D -- a level not seen..."
+    },
+    {
+      "n": 3,
+      "text": "A BMJ meta-analysis covered 25 randomized trials with more than 11,000 participants.",
+      "cited_text": "The study, a participant data meta-analysis of 25 randomized controlled trials including more than 11,000 participants, has been published online in T..."
+    },
+    {
+      "n": 3,
+      "text": "daily or weekly doses helped most in people with severe deficiency, and all participants saw some benefit.",
+      "cited_text": "The investigators found that daily or weekly supplementation had the greatest benefit for individuals with the most significant vitamin D deficiency (..."
+    },
+    {
+      "n": 3,
+      "text": "Occasional high doses did not produce significant benefits",
+      "cited_text": "Administering occasional high doses of vitamin D did not produce significant benefits. "
+    },
+    {
+      "n": 4,
+      "text": "In a New Zealand trial, people taking high monthly doses were as likely to catch colds as those on placebo.",
+      "cited_text": "In the study, participants who took high doses of vitamin D supplements every month for more than a year were just as likely to catch colds as those w..."
+    },
+    {
+      "n": 4,
+      "text": "even the placebo group had sufficient vitamin D.",
+      "cited_text": "However, the study researchers noted that even the participants in their study who took a placebo had sufficient levels of the nutrient. "
+    },
+    {
+      "n": 1,
+      "text": "some reviews found that people with normal levels may get slightly fewer colds.",
+      "cited_text": "Some reviews of the research show that taking vitamin D when you already have normal levels may · reduce the number of colds you get, but only slightl..."
+    }
+  ],
+  "stop_reason": "end_turn",
+  "latency_s": 11.58,
+  "usage": [
+    {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "global",
+      "input_tokens": 13675,
+      "output_tokens": 568,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_fetch_requests": 0,
+        "web_search_requests": 1
+      },
+      "service_tier": "standard"
+    }
+  ],
+  "raw_blocks": [
+    [
+      {
+        "id": "srvtoolu_019jbTtTxsVrEB3D9oLDAMP6",
+        "input": {
+          "query": "does vitamin d prevent colds"
+        },
+        "name": "web_search",
+        "type": "server_tool_use"
+      },
+      {
+        "caller": {
+          "type": "direct"
+        },
+        "content": [
+          {
+            "page_age": "December 12, 2025",
+            "title": "Does Vitamin D Work for Colds? - GoodRx",
+            "type": "web_search_result",
+            "url": "https://www.goodrx.com/conditions/vitamin-d-deficiency/vitamin-d-and-colds"
+          },
+          {
+            "page_age": "August 7, 2018",
+            "title": "Ask the Doctors - Can vitamin D protect against colds and flu? | UCLA Health",
+            "type": "web_search_result",
+            "url": "https://www.uclahealth.org/news/article/ask-the-doctors-can-vitamin-d-protect-against-colds-and-flu"
+          },
+          {
+            "page_age": "March 20, 2026",
+            "title": "Vitamin D supplements may reduce the duration of the common cold",
+            "type": "web_search_result",
+            "url": "https://theconversation.com/vitamin-d-supplements-may-reduce-the-duration-of-the-common-cold-172433"
+          },
+          {
+            "page_age": "February 22, 2017",
+            "title": "Study confirms vitamin D protects against colds and flu — Harvard Gazette",
+            "type": "web_search_result",
+            "url": "https://news.harvard.edu/gazette/story/2017/02/study-confirms-vitamin-d-protects-against-cold-and-flu/"
+          },
+          {
+            "page_age": "May 13, 2026",
+            "title": "Vitamin D Helps the Immune System During Cold and Flu Season | Pharmacy Times",
+            "type": "web_search_result",
+            "url": "https://www.pharmacytimes.com/view/vitamin-d-helps-the-immune-system-during-cold-and-flu-season"
+          },
+          {
+            "title": "vitamin d does not prevent colds or infections study finds",
+            "type": "web_search_result",
+            "url": "https://hms.harvard.edu/news/vitamin-d-does-not-prevent-colds-or-infections-study-finds"
+          },
+          {
+            "title": "Print Print    Close Close",
+            "type": "web_search_result",
+            "url": "https://www.foxnews.com/health/vitamin-d-doesnt-fight-off-colds.print"
+          },
+          {
+            "title": "vitamin d no help for colds",
+            "type": "web_search_result",
+            "url": "https://www.npr.org/sections/health-shots/2012/10/02/162181151/vitamin-d-no-help-for-colds"
+          },
+          {
+            "title": "Vitamin D doesn't actually fight off colds, study says",
+            "type": "web_search_result",
+            "url": "https://www.nbcnews.com/health/health-news/vitamin-d-doesnt-actually-fight-colds-study-says-flna6240846"
+          }
+        ],
+        "tool_use_id": "srvtoolu_019jbTtTxsVrEB3D9oLDAMP6",
+        "type": "web_search_tool_result"
+      },
+      {
+        "text": "**",
+        "type": "text"
+      },
+      {
+        "citations": [
+          {
+            "cited_text": "But, for most people, vitamin D doesn’t directly lower your chances of catching a cold. ",
+            "encrypted_index": "Eo8BCioIFBgCIiQ3MTk5M2NmOC02MjRhLTRhMDktOGVjYi00ZGYyYmU1MDgzMDcSDOggb2SpqkfegfgkrhoMLxXfUj8Vrrx2lcl9IjAqGdnJ8eIM/vUJrisRUWfD479W5conbM3pArQPv8nu+cJQxW85gtw46cQHHACQuVQqE2R0uw/tsJTKfgBpCGmZV7W/B/sYBA==",
+            "title": "Does Vitamin D Work for Colds? - GoodRx",
+            "type": "web_search_result_location",
+            "url": "https://www.goodrx.com/conditions/vitamin-d-deficiency/vitamin-d-and-colds"
+          }
+        ],
+        "text": "For most people, vitamin D doesn't directly lower the chance of catching a cold.",
+        "type": "text"
+      },
+      {
+        "text": " It may help people who are deficient.**\n\n- **Low levels:** ",
+        "type": "text"
+      },
+      {
+        "citations": [
+          {
+            "cited_text": "In summary, vitamin D does seem to have benefits in decreasing colds and flu in those who have exceedingly low levels of vitamin D -- a level not seen...",
+            "encrypted_index": "Eo8BCioIFBgCIiQ3MTk5M2NmOC02MjRhLTRhMDktOGVjYi00ZGYyYmU1MDgzMDcSDDu9N6fpuqywncDYlRoMI0JMNhrSMkgJPzwKIjBWsrkHsYyUOZl/0Vw2ZtDXFXt1o6wsNcCoM6/6FyrhoxKfXfkH4c30tqKVI7+uyNcqE71WnjpGyudUgHFHay9Gfk7U6TsYBA==",
+            "title": "Ask the Doctors - Can vitamin D protect against colds and flu? | UCLA Health",
+            "type": "web_search_result_location",
+            "url": "https://www.uclahealth.org/news/article/ask-the-doctors-can-vitamin-d-protect-against-colds-and-flu"
+          }
+        ],
+        "text": "UCLA Health says vitamin D seems to reduce colds and flu in people with very low levels. It says most of the population doesn't have levels that low.",
+        "type": "text"
+      },
+      {
+        "text": "\n- **Meta-analysis:** ",
+        "type": "text"
+      },
+      {
+        "citations": [
+          {
+            "cited_text": "The study, a participant data meta-analysis of 25 randomized controlled trials including more than 11,000 participants, has been published online in T...",
+            "encrypted_index": "Eo8BCioIFBgCIiQ3MTk5M2NmOC02MjRhLTRhMDktOGVjYi00ZGYyYmU1MDgzMDcSDOZ8eUCsNw+uaqrcChoM4qUwzoNqLFV9SM+QIjBnQWU2ekfA3oLtq1/KxGKaaiGE7yu9qVO3jl2rPUq1PBna/NG9uP0QC7KSUnmbKrwqE1XewP5elUsvyClJy5aS6ypEVCkYBA==",
+            "title": "Study confirms vitamin D protects against colds and flu — Harvard Gazette",
+            "type": "web_search_result_location",
+            "url": "https://news.harvard.edu/gazette/story/2017/02/study-confirms-vitamin-d-protects-against-cold-and-flu/"
+          }
+        ],
+        "text": "A BMJ meta-analysis covered 25 randomized trials with more than 11,000 participants.",
+        "type": "text"
+      },
+      {
+        "text": " According to the Harvard Gazette, ",
+        "type": "text"
+      },
+      {
+        "citations": [
+          {
+            "cited_text": "The investigators found that daily or weekly supplementation had the greatest benefit for individuals with the most significant vitamin D deficiency (...",
+            "encrypted_index": "Eo8BCioIFBgCIiQ3MTk5M2NmOC02MjRhLTRhMDktOGVjYi00ZGYyYmU1MDgzMDcSDGjjs2viImp5mTKcrBoMGOpN2YwfkZxu4H7/IjClHkicL0juxglbgt8s9nsoRbA0H/xVupIbxFjECJCpV2OsXc5cwXJAvduRfbUjRcMqE0GBBPcLblanKcKwuj38e1EbZ3QYBA==",
+            "title": "Study confirms vitamin D protects against colds and flu — Harvard Gazette",
+            "type": "web_search_result_location",
+            "url": "https://news.harvard.edu/gazette/story/2017/02/study-confirms-vitamin-d-protects-against-cold-and-flu/"
+          }
+        ],
+        "text": "daily or weekly doses helped most in people with severe deficiency, and all participants saw some benefit.",
+        "type": "text"
+      },
+      {
+        "text": "\n- **Dosing:** ",
+        "type": "text"
+      },
+      {
+        "citations": [
+          {
+            "cited_text": "Administering occasional high doses of vitamin D did not produce significant benefits. ",
+            "encrypted_index": "Eo8BCioIFBgCIiQ3MTk5M2NmOC02MjRhLTRhMDktOGVjYi00ZGYyYmU1MDgzMDcSDEtu8E7t//auNaKPdxoMwgxM8L6TsULJE3KwIjA/rtHK9a9fQPUFcYlyWkbyMzfeAQqMFozc7DM2XaOr/oW+Uur+o5Ve7WZVK3cZKucqE+UaIexbGaPg/AuiJw0Q0Z5fEywYBA==",
+            "title": "Study confirms vitamin D protects against colds and flu — Harvard Gazette",
+            "type": "web_search_result_location",
+            "url": "https://news.harvard.edu/gazette/story/2017/02/study-confirms-vitamin-d-protects-against-cold-and-flu/"
+          }
+        ],
+        "text": "Occasional high doses did not produce significant benefits",
+        "type": "text"
+      },
+      {
+        "text": " (Harvard Gazette).\n- **Normal levels:** ",
+        "type": "text"
+      },
+      {
+        "citations": [
+          {
+            "cited_text": "In the study, participants who took high doses of vitamin D supplements every month for more than a year were just as likely to catch colds as those w...",
+            "encrypted_index": "Eo8BCioIFBgCIiQ3MTk5M2NmOC02MjRhLTRhMDktOGVjYi00ZGYyYmU1MDgzMDcSDIlhmNQMxMqy0T2XmBoM+KfpTlcivzVRxP3/IjB2GXWwCYfQ2UPTrf4izEdrG1hP4Hz+dIZnV7Xae8VYB5f1cNI7+JSrw7o+bSRU9ogqE8UQJrCgXYR0FxikFg6F/cK6kckYBA==",
+            "title": "Vitamin D doesn't actually fight off colds, study says",
+            "type": "web_search_result_location",
+            "url": "https://www.nbcnews.com/health/health-news/vitamin-d-doesnt-actually-fight-colds-study-says-flna6240846"
+          }
+        ],
+        "text": "In a New Zealand trial, people taking high monthly doses were as likely to catch colds as those on placebo.",
+        "type": "text"
+      },
+      {
+        "text": " NBC News notes that ",
+        "type": "text"
+      },
+      {
+        "citations": [
+          {
+            "cited_text": "However, the study researchers noted that even the participants in their study who took a placebo had sufficient levels of the nutrient. ",
+            "encrypted_index": "Eo8BCioIFBgCIiQ3MTk5M2NmOC02MjRhLTRhMDktOGVjYi00ZGYyYmU1MDgzMDcSDD/7dwd52lojkVmyUhoM9W1itYAo9PbFa0VRIjAeASmWjs3Xx/12YAjm3/2tVI98IyXCVcC+OPLTejTbdhra9SmOQmqXdc/H/Hed0YIqE8KQvl6yUS3UU8xe/dzURjJ4tkUYBA==",
+            "title": "Vitamin D doesn't actually fight off colds, study says",
+            "type": "web_search_result_location",
+            "url": "https://www.nbcnews.com/health/health-news/vitamin-d-doesnt-actually-fight-colds-study-says-flna6240846"
+          }
+        ],
+        "text": "even the placebo group had sufficient vitamin D.",
+        "type": "text"
+      },
+      {
+        "text": "\n- **Mixed evidence:** GoodRx says ",
+        "type": "text"
+      },
+      {
+        "citations": [
+          {
+            "cited_text": "Some reviews of the research show that taking vitamin D when you already have normal levels may · reduce the number of colds you get, but only slightl...",
+            "encrypted_index": "Eo8BCioIFBgCIiQ3MTk5M2NmOC02MjRhLTRhMDktOGVjYi00ZGYyYmU1MDgzMDcSDHE8NCL9xf+fMBebTBoM/Zt8TH4VZodX6QYxIjCCo8d+/YE+30F4Ebyy6E3WfBs4HJwzlLlumbZUJAthAOFTKOLatArPTRQUAuFeZp4qE8gePPGSksTnKkrAPCcWugI1IxsYBA==",
+            "title": "Does Vitamin D Work for Colds? - GoodRx",
+            "type": "web_search_result_location",
+            "url": "https://www.goodrx.com/conditions/vitamin-d-deficiency/vitamin-d-and-colds"
+          }
+        ],
+        "text": "some reviews found that people with normal levels may get slightly fewer colds.",
+        "type": "text"
+      },
+      {
+        "text": "\n\nThis is for informational purposes only. For medical advice or diagnosis, consult a professional.",
+        "type": "text"
+      }
+    ]
+  ],
+  "question_id": "Q3",
+  "replicate": 1,
+  "route": "worker:https://tables-turned-api.jethomasphd.workers.dev",
+  "captured_at": "2026-09-28T23:41:07Z"
+}

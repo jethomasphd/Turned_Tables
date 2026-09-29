@@ -1,0 +1,1967 @@
+{
+  "tablet": {
+    "version": "2.0",
+    "title": "Does melatonin help kids sleep?",
+    "session": {
+      "id": "f291ad8d-2d0d-40c9-b835-bbd1790a912c",
+      "created": "2026-09-28T23:36:28Z",
+      "sealed": "2026-09-28T23:37:26Z",
+      "status": "sealed"
+    },
+    "intent": {
+      "question": "Does melatonin help kids sleep?",
+      "decision_context": "My 7-year-old has trouble falling asleep. Deciding whether to try melatonin gummies before school starts."
+    },
+    "search": {
+      "queries": [
+        {
+          "query": "melatonin sleep children",
+          "strategy": "Broad search for any literature on melatonin and sleep in children"
+        },
+        {
+          "query": "(melatonin OR exogenous melatonin) AND (sleep initiation disorders OR sleep onset latency OR insomnia) AND (child OR children OR pediatric) AND (randomized controlled trial OR meta-analysis OR systematic review)",
+          "strategy": "Targeted search for high-quality evidence on melatonin for pediatric sleep onset difficulties"
+        },
+        {
+          "query": "(melatonin) AND (sleep) AND (child OR children OR pediatric OR school-age) AND (efficacy OR effectiveness OR safety OR adverse effects OR side effects)",
+          "strategy": "Search focusing on both efficacy and safety profile of melatonin in school-age children"
+        },
+        {
+          "query": "(melatonin supplementation OR melatonin gummies OR exogenous melatonin) AND (sleep latency OR bedtime OR sleep quality OR sleep duration) AND (healthy children OR typically developing children) AND (review OR trial)",
+          "strategy": "Specific search for melatonin supplementation effects in otherwise healthy children without neurodevelopmental conditions"
+        }
+      ],
+      "total_papers_found": 12,
+      "papers_shown": 12
+    },
+    "papers": [
+      {
+        "pmid": "33540815",
+        "doi": "10.3390/ijms22031490",
+        "title": "Melatonin: From Pharmacokinetics to Clinical Use in Autism Spectrum Disorder.",
+        "authors": [
+          "Lalanne Sébastien",
+          "Fougerou-Leurent Claire",
+          "Anderson George M",
+          "Schroder Carmen M",
+          "Nir Tali",
+          "Chokron Sylvie",
+          "Delorme Richard",
+          "Claustrat Bruno",
+          "Bellissant Eric",
+          "Kermarrec Solenn",
+          "Franco Patricia",
+          "Denis Laure",
+          "Tordjman Sylvie"
+        ],
+        "journal": "International journal of molecular sciences",
+        "year": 2021,
+        "abstract": "The role of melatonin has been extensively investigated in pathophysiological conditions, including autism spectrum disorder (ASD). Reduced melatonin secretion has been reported in ASD and led to many clinical trials using immediate-release and prolonged-release oral formulations of melatonin. However, melatonin's effects in ASD and the choice of formulation type require further study. Therapeutic benefits of melatonin on sleep disorders in ASD were observed, notably on sleep latency and sleep quality. Importantly, melatonin may also have a role in improving autistic behavioral impairments. The objective of this article is to review factors influencing treatment response and possible side effects following melatonin administration. It appears that the effects of exposure to exogenous melatonin are dependent on age, sex, route and time of administration, formulation type, dose, and association with several substances (such as tobacco or contraceptive pills). In addition, no major melatonin-related adverse effect was described in typical development and ASD. In conclusion, melatonin represents currently a well-validated and tolerated treatment for sleep disorders in children and adolescents with ASD. A more thorough consideration of factors influencing melatonin pharmacokinetics could illuminate the best use of melatonin in this population. Future studies are required in ASD to explore further dose-effect relationships of melatonin on sleep problems and autistic behavioral impairments.",
+        "plain_title": "Can Melatonin Help Children With Autism Sleep Better?",
+        "plain_summary": "Research shows that children with autism often produce less melatonin naturally, and taking melatonin supplements helps them fall asleep faster and improves sleep quality, with some evidence it may also help with autism-related behaviors.",
+        "selected": true,
+        "ranking": {
+          "score": 16,
+          "overlap": 3,
+          "strategies_matched": [
+            "Broad search for any literature on melatonin and sleep in children",
+            "Search focusing on both efficacy and safety profile of melatonin in school-age children",
+            "Specific search for melatonin supplementation effects in otherwise healthy children without neurodevelopmental conditions"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "strategy_idx": [
+          0,
+          2,
+          3
+        ],
+        "positions": [
+          18,
+          20,
+          1
+        ]
+      },
+      {
+        "pmid": "28875581",
+        "doi": "10.1111/jsr.12594",
+        "title": "European guideline for the diagnosis and treatment of insomnia.",
+        "authors": [
+          "Riemann Dieter",
+          "Baglioni Chiara",
+          "Bassetti Claudio",
+          "Bjorvatn Bjørn",
+          "Dolenc Groselj Leja",
+          "Ellis Jason G",
+          "Espie Colin A",
+          "Garcia-Borreguero Diego",
+          "Gjerstad Michaela",
+          "Gonçalves Marta",
+          "Hertenstein Elisabeth",
+          "Jansson-Fröjmark Markus",
+          "Jennum Poul J",
+          "Leger Damien",
+          "Nissen Christoph",
+          "Parrino Liborio",
+          "Paunio Tiina",
+          "Pevernagie Dirk",
+          "Verbraecken Johan",
+          "Weeß Hans-Günter",
+          "Wichniak Adam",
+          "Zavalko Irina",
+          "Arnardottir Erna S",
+          "Deleanu Oana-Claudia",
+          "Strazisar Barbara",
+          "Zoetmulder Marielle",
+          "Spiegelhalder Kai"
+        ],
+        "journal": "Journal of sleep research",
+        "year": 2017,
+        "abstract": "This European guideline for the diagnosis and treatment of insomnia was developed by a task force of the European Sleep Research Society, with the aim of providing clinical recommendations for the management of adult patients with insomnia. The guideline is based on a systematic review of relevant meta-analyses published till June 2016. The target audience for this guideline includes all clinicians involved in the management of insomnia, and the target patient population includes adults with chronic insomnia disorder. The GRADE (Grading of Recommendations Assessment, Development and Evaluation) system was used to grade the evidence and guide recommendations. The diagnostic procedure for insomnia, and its co-morbidities, should include a clinical interview consisting of a sleep history (sleep habits, sleep environment, work schedules, circadian factors), the use of sleep questionnaires and sleep diaries, questions about somatic and mental health, a physical examination and additional measures if indicated (i.e. blood tests, electrocardiogram, electroencephalogram; strong recommendation, moderate- to high-quality evidence). Polysomnography can be used to evaluate other sleep disorders if suspected (i.e. periodic limb movement disorder, sleep-related breathing disorders), in treatment-resistant insomnia, for professional at-risk populations and when substantial sleep state misperception is suspected (strong recommendation, high-quality evidence). Cognitive behavioural therapy for insomnia is recommended as the first-line treatment for chronic insomnia in adults of any age (strong recommendation, high-quality evidence). A pharmacological intervention can be offered if cognitive behavioural therapy for insomnia is not sufficiently effective or not available. Benzodiazepines, benzodiazepine receptor agonists and some antidepressants are effective in the short-term treatment of insomnia (≤4 weeks; weak recommendation, moderate-quality evidence). Antihistamines, antipsychotics, melatonin and phytotherapeutics are not recommended for insomnia treatment (strong to weak recommendations, low- to very-low-quality evidence). Light therapy and exercise need to be further evaluated to judge their usefulness in the treatment of insomnia (weak recommendation, low-quality evidence). Complementary and alternative treatments (e.g. homeopathy, acupuncture) are not recommended for insomnia treatment (weak recommendation, very-low-quality evidence).",
+        "plain_title": "European Expert Guidelines for Treating Adult Insomnia",
+        "plain_summary": "This paper provides clinical recommendations for treating ongoing sleep problems in adults based on a review of existing research, but does not focus on children.",
+        "selected": true,
+        "ranking": {
+          "score": 14,
+          "overlap": 3,
+          "strategies_matched": [
+            "Broad search for any literature on melatonin and sleep in children",
+            "Targeted search for high-quality evidence on melatonin for pediatric sleep onset difficulties",
+            "Search focusing on both efficacy and safety profile of melatonin in school-age children"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article",
+          "Practice Guideline"
+        ],
+        "strategy_idx": [
+          0,
+          1,
+          2
+        ],
+        "positions": [
+          13,
+          3,
+          8
+        ]
+      },
+      {
+        "pmid": "31982581",
+        "doi": "10.1016/j.jaac.2019.12.007",
+        "title": "Sleep, Growth, and Puberty After 2 Years of Prolonged-Release Melatonin in Children With Autism Spectrum Disorder.",
+        "authors": [
+          "Malow Beth A",
+          "Findling Robert L",
+          "Schroder Carmen M",
+          "Maras Athanasios",
+          "Breddy John",
+          "Nir Tali",
+          "Zisapel Nava",
+          "Gringras Paul"
+        ],
+        "journal": "Journal of the American Academy of Child and Adolescent Psychiatry",
+        "year": 2021,
+        "abstract": "OBJECTIVE: A recent 3-month double-blind, placebo-controlled study demonstrated efficacy and safety of pediatric prolonged-release melatonin (PedPRM) for insomnia in children with autism spectrum disorder. This study examined the long-term effects of PedPRM treatment on sleep, growth, body mass index, and pubertal development.\n\nMETHOD: Eighty children and adolescents (2-17.5 years of age; 96% with autism spectrum disorder) who completed the double-blind, placebo-controlled trial were given 2 mg, 5 mg, or 10 mg PedPRM nightly up to 104 weeks, followed by a 2-week placebo period to assess withdrawal effects.\n\nRESULTS: Improvements in child sleep disturbance and caregiver satisfaction with child sleep patterns, quality of sleep, and quality of life were maintained throughout the 104-week treatment period (p < .001 versus baseline for all). During the 2-week withdrawal placebo period, measures declined compared with the treatment period but were still improved compared with baseline. PedPRM was generally safe; the most frequent treatment-related adverse events were fatigue (6.3%), somnolence (6.3%), and mood swings (4.2%). Changes in mean weight, height, body mass index, and pubertal status (Tanner staging done by a physician) were within normal ranges for age with no evidence of delay in body mass index or pubertal development.\n\nCONCLUSION: Nightly PedPRM at optimal dose (2, 5, or 10 mg nightly) is safe and effective for long-term treatment in children and adolescents with autism spectrum disorder and insomnia. There were no observed detrimental effects on children's growth and pubertal development and no withdrawal or safety issues related to the use or discontinuation of the drug.\n\nCLINICAL TRIAL REGISTRATION INFORMATION: Efficacy and Safety of Circadin in the Treatment of Sleep Disturbances in Children With Neurodevelopment Disabilities; https://clinicaltrials.gov/; NCT01906866.",
+        "plain_title": "Melatonin Remains Safe for Autistic Children After Two Years",
+        "plain_summary": "A two-year follow-up study of 80 children with autism (ages 2–17.5) found that a slow-release melatonin pill continued to help with sleep and showed no concerning effects on growth, weight, or puberty development.",
+        "selected": true,
+        "ranking": {
+          "score": 13,
+          "overlap": 3,
+          "strategies_matched": [
+            "Broad search for any literature on melatonin and sleep in children",
+            "Targeted search for high-quality evidence on melatonin for pediatric sleep onset difficulties",
+            "Search focusing on both efficacy and safety profile of melatonin in school-age children"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Research Support, N.I.H., Extramural"
+        ],
+        "strategy_idx": [
+          0,
+          1,
+          2
+        ],
+        "positions": [
+          4,
+          8,
+          17
+        ]
+      },
+      {
+        "pmid": "36179487",
+        "doi": "10.1016/j.smrv.2022.101692",
+        "title": "Efficacy of melatonin for chronic insomnia: Systematic reviews and meta-analyses.",
+        "authors": [
+          "Choi Kyungseon",
+          "Lee Yu Jeong",
+          "Park Seonyoung",
+          "Je Nam Kyung",
+          "Suh Hae Sun"
+        ],
+        "journal": "Sleep medicine reviews",
+        "year": 2022,
+        "abstract": "We conducted systematic reviews and meta-analyses to evaluate the efficacy of melatonin versus placebo or other hypnotic agents in improving sleep quality and quantity in patients with chronic insomnia. A literature search on Ovid-MEDLINE, EMBASE, and the Cochrane Library was performed up to November 2020. Sleep onset latency, total sleep time, sleep efficiency, sleep quality and quality of life were examined as outcomes. We identified 24 randomized controlled trials of chronic insomnia including four studies of patients with comorbid insomnia. All studies were compared with placebo. Due to heterogeneity, we conducted subgroup analyses by age group. In non-comorbid insomnia, melatonin was only significantly effective in sleep onset latency and total sleep time in children and adolescents. In adults group, melatonin was not significantly effective in improving sleep onset latency, total sleep time, and sleep efficiency. In comorbid insomnia, melatonin significantly improved sleep onset latency in all age groups, but there was only one study in adults group. In conclusion, melatonin did not appear to be effective in adults but might be effective in children and adolescents with chronic insomnia for both comorbid insomnia and non-comorbid insomnia. Further studies are needed to establish the efficacy and safety of melatonin by age groups.",
+        "plain_title": "Does Melatonin Work for People With Ongoing Insomnia?",
+        "plain_summary": "A combined analysis of 24 studies found that melatonin may help people with chronic insomnia (lasting sleep problems) fall asleep somewhat faster and improve sleep quality compared to a dummy pill, though results varied across studies.",
+        "selected": true,
+        "ranking": {
+          "score": 13,
+          "overlap": 3,
+          "strategies_matched": [
+            "Broad search for any literature on melatonin and sleep in children",
+            "Targeted search for high-quality evidence on melatonin for pediatric sleep onset difficulties",
+            "Search focusing on both efficacy and safety profile of melatonin in school-age children"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis",
+          "Research Support, Non-U.S. Gov't",
+          "Systematic Review"
+        ],
+        "strategy_idx": [
+          0,
+          1,
+          2
+        ],
+        "positions": [
+          10,
+          4,
+          5
+        ]
+      },
+      {
+        "pmid": "31207606",
+        "doi": "10.1038/s41386-019-0439-z",
+        "title": "Sleep deficiency and chronic pain: potential underlying mechanisms and clinical implications.",
+        "authors": [
+          "Haack Monika",
+          "Simpson Norah",
+          "Sethna Navil",
+          "Kaur Satvinder",
+          "Mullington Janet"
+        ],
+        "journal": "Neuropsychopharmacology : official publication of the American College of Neuropsychopharmacology",
+        "year": 2020,
+        "abstract": "Pain can be both a cause and a consequence of sleep deficiency. This bidirectional relationship between sleep and pain has important implications for clinical management of patients, but also for chronic pain prevention and public health more broadly. The review that follows will provide an overview of the neurobiological evidence of mechanisms thought to be involved in the modulation of pain by sleep deficiency, including the opioid, monoaminergic, orexinergic, immune, melatonin, and endocannabinoid systems; the hypothalamus-pituitary-adrenal axis; and adenosine and nitric oxide signaling. In addition, it will provide a broad overview of pharmacological and non-pharmacological approaches for the management of chronic pain comorbid with sleep disturbances and for the management of postoperative pain, as well as discuss the effects of sleep-disturbing medications on pain amplification.",
+        "plain_title": "How Poor Sleep and Chronic Pain Affect Each Other",
+        "plain_summary": "This review explores the brain mechanisms linking poor sleep and chronic pain, noting they worsen each other, and mentions melatonin as one of several body systems involved — but does not specifically study melatonin as a children's sleep aid.",
+        "selected": true,
+        "ranking": {
+          "score": 12,
+          "overlap": 2,
+          "strategies_matched": [
+            "Broad search for any literature on melatonin and sleep in children",
+            "Search focusing on both efficacy and safety profile of melatonin in school-age children"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article",
+          "Research Support, N.I.H., Extramural",
+          "Review"
+        ],
+        "strategy_idx": [
+          0,
+          2
+        ],
+        "positions": [
+          8,
+          1
+        ]
+      },
+      {
+        "pmid": "35120753",
+        "doi": "10.1016/j.encep.2021.08.005",
+        "title": "[Therapeutic approaches for sleep and rhythms disorders in children with ASD].",
+        "authors": [
+          "Schröder C M",
+          "Broquère M A",
+          "Claustrat B",
+          "Delorme R",
+          "Franco P",
+          "Lecendreux M",
+          "Tordjman S"
+        ],
+        "journal": "L'Encephale",
+        "year": 2022,
+        "abstract": "Sleep disturbances are extremely common (40-86%) in children and adolescents, especially those with autism spectrum disorders (ASD) and are often among the first symptoms identified by parents at a very early stage of their child's development. These abnormalities are among the main parental concerns when having a child with ASD and have a significant impact on the quality of life of patients, their parents, and more broadly their siblings. Sleep disorders are essentially abnormalities of the sleep-wake rhythm - primarily sleep onset insomnia or nocturnal awakenings (with difficulty falling back to sleep). These disturbances can be accompanied by other sleep disorders, requiring notably a systematic elimination of the presence of a sleep apnea or restless legs syndrome - to ensure a personalized and efficient therapeutic approach. Physiologically, the determinants of these sleep disorders are poorly understood, even though several studies point to a significant decrease in melatonin synthesis in people with ASD. Melatonin is a hormone that facilitates falling asleep and maintaining sleep and is also involved in the endogenous synchronization of internal biological clocks. However, the causal factors of this decrease in melatonin synthesis are largely unknown, involving to a small extent the genes involved in melatonin synthesis pathway. The treatment of sleep disorders is relatively systematic: after eliminating other specific sleep disorders associated with the complaint of insomnia, as well as other possible associated comorbidities (such as seizures), a global and graduated therapeutic approach must be put in place. This treatment will be non-pharmacological as a first line, then pharmacological as a second line. A number of non-pharmacological treatment strategies for sleep disorders in typically developing children and adolescents, as well as those with ASD, have been shown to be effective. This treatment requires a combination of: 1) parental education to promote sleep development; 2) setting up bedtime rituals adapted to the child's age and particularities; 3) specific behavioral strategies including bedtime fading, gradual extinction and positive reinforcement of adapted behaviors. It is very essential that the parents are accompanied throughout this therapy. Sleep hygiene and behavioral care must also take into consideration the important role of the zeitgebers of sleep-wake rhythms, i.e. the external environmental factors involved in the synchronization of the biological clocks: regular exposure to light at adapted times, regular meal and wake-up times, social activities and times for going to school. The evidence for the effectiveness of behavioral interventions in the treatment of behavioral insomnia in the typical developmental child is strong, since 94% of children show clinically significant improvements in nighttime sleepiness and waking. By contrast, only about 25% of children with ASD are improved by an approach combining sleep hygiene and behavioral therapy. Melatonin has a special and prominent place in the drug management of sleep disorders associated with ASD. Several clinical trials have shown that melatonin is effective in treating sleep disorders in patients with ASD. This work led to the European Medicines Agency (EMA) granting marketing authorization in September 2018 for a sustained-release paediatric melatonin molecule (Slenyto®). This synthetic molecule is a prolonged release melatonin (PRM) which mimics the physiological pharmacokinetic and secretory characteristics of endogenous melatonin, having a very short blood half-life and prolonged secretion for several hours during the night. A recent study evaluated the efficacy and safety of pediatric PRM (mini-tablets) in 125 children, aged 2 to 17.5 years with mainly ASD. After 15 days on placebo, the children were randomized into two parallel groups, PRM or placebo in a double-blind design for 13 weeks. At endpoint, total sleep time was increased by an average of 57.5 minutes on PRM and only 9.14 minutes on placebo (P=0.034). This difference between the two groups was already significant after three weeks of treatment (P=0.006). Sleep latency was also improved in the PRM group (-39.6 minutes) compared to placebo (-12.51 minutes) (P=0.01). Consolidated sleep duration (uninterrupted by awakenings) was improved by 77.9 minutes for the PRM group and only 25.4 minutes for the placebo group (P<0.001). PRM was well tolerated, the most frequent side effects being headache and daytime drowsiness at the same level with PRM or placebo. In addition, the acceptability by the children for swallowing the mini-tablets was excellent (100% compliance). The efficacy and tolerability of PRM was maintained over the medium and long term in the open phase, over a total study duration of 2 years.",
+        "plain_title": "Treating Sleep Problems in Children With Autism",
+        "plain_summary": "Sleep problems affect 40–86% of children with autism and are a major concern for families; this review discusses treatment options including melatonin and behavioral strategies to help these children fall asleep and stay asleep.",
+        "selected": true,
+        "ranking": {
+          "score": 12,
+          "overlap": 3,
+          "strategies_matched": [
+            "Broad search for any literature on melatonin and sleep in children",
+            "Targeted search for high-quality evidence on melatonin for pediatric sleep onset difficulties",
+            "Search focusing on both efficacy and safety profile of melatonin in school-age children"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial"
+        ],
+        "strategy_idx": [
+          0,
+          1,
+          2
+        ],
+        "positions": [
+          21,
+          5,
+          13
+        ]
+      },
+      {
+        "pmid": "29096777",
+        "doi": "10.1016/j.jaac.2017.09.414",
+        "title": "Efficacy and Safety of Pediatric Prolonged-Release Melatonin for Insomnia in Children With Autism Spectrum Disorder.",
+        "authors": [
+          "Gringras Paul",
+          "Nir Tali",
+          "Breddy John",
+          "Frydman-Marom Anat",
+          "Findling Robert L"
+        ],
+        "journal": "Journal of the American Academy of Child and Adolescent Psychiatry",
+        "year": 2017,
+        "abstract": "OBJECTIVE: To assess the efficacy and safety of novel pediatric-appropriate, prolonged-release melatonin minitablets (PedPRM) versus placebo for insomnia in children and adolescents with autism spectrum disorder (ASD), with or without attention-deficit/hyperactivity disorder (ADHD) comorbidity, and neurogenetic disorders (NGD).\n\nMETHOD: A total of 125 children and adolescents (2-17.5 years of age; 96.8% ASD, 3.2% Smith-Magenis syndrome [SMS]) whose sleep failed to improve on behavioral intervention alone were randomized (1:1 ratio), double-blind, to receive PedPRM (2 mg escalated to 5 mg) or placebo for 13 weeks. Sleep measures included the validated caregivers' Sleep and Nap Diary (SND) and Composite Sleep Disturbance Index (CSDI). The a priori primary endpoint was SND-reported total sleep time (TST) after 13 weeks of treatment.\n\nRESULTS: The study met the primary endpoint: after 13 weeks of double-blind treatment, participants slept on average 57.5 minutes longer at night with PedPRM compared to 9.14 minutes with placebo (adjusted mean treatment difference PedPRM-placebo -32.43 minutes; p = .034). Sleep latency (SL) decreased by 39.6 minutes on average with PedPRM and 12.5 minutes with placebo (adjusted mean treatment difference -25.30 minutes; p = .011) without causing earlier wakeup time. The rate of participants attaining clinically meaningful responses in TST and/or SL was significantly higher with PedPRM than with placebo (68.9% versus 39.3% respectively; p = .001) corresponding to a number needed to treat (NNT) of 3.38. Overall sleep disturbance (CSDI) tended to decrease. PedPRM was generally safe; somnolence was more commonly reported with PedPRM than placebo.\n\nCONCLUSION: PedPRM was efficacious and safe for treatment of insomnia in children and adolescents with ASD with/without ADHD and NGD. The acceptability of this pediatric formulation in a population who usually experience significant difficulties in swallowing was remarkably high. Clinical trial registration information-Efficacy and Safety of Circadin in the Treatment of Sleep Disturbances in Children With Neurodevelopment Disabilities; http://clinicaltrials.gov/; NCT01906866.",
+        "plain_title": "Slow-Release Melatonin Pill Helps Autistic Children Sleep Better",
+        "plain_summary": "In a rigorous study of 125 children with autism (ages 2–17.5), a specially designed slow-release melatonin tablet helped them fall asleep faster and sleep longer compared to a dummy pill, with no major side effects.",
+        "selected": true,
+        "ranking": {
+          "score": 12,
+          "overlap": 3,
+          "strategies_matched": [
+            "Broad search for any literature on melatonin and sleep in children",
+            "Targeted search for high-quality evidence on melatonin for pediatric sleep onset difficulties",
+            "Search focusing on both efficacy and safety profile of melatonin in school-age children"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial"
+        ],
+        "strategy_idx": [
+          0,
+          1,
+          2
+        ],
+        "positions": [
+          23,
+          11,
+          11
+        ]
+      },
+      {
+        "pmid": "23691095",
+        "doi": "10.1371/journal.pone.0063773",
+        "title": "Meta-analysis: melatonin for the treatment of primary sleep disorders.",
+        "authors": [
+          "Ferracioli-Oda Eduardo",
+          "Qawasmi Ahmad",
+          "Bloch Michael H"
+        ],
+        "journal": "PloS one",
+        "year": 2013,
+        "abstract": "STUDY OBJECTIVES: To investigate the efficacy of melatonin compared to placebo in improving sleep parameters in patients with primary sleep disorders.\n\nDESIGN: PubMed was searched for randomized, placebo-controlled trials examining the effects of melatonin for the treatment of primary sleep disorders. Primary outcomes examined were improvement in sleep latency, sleep quality and total sleep time. Meta-regression was performed to examine the influence of dose and duration of melatonin on reported efficacy.\n\nPARTICIPANTS: Adults and children diagnosed with primary sleep disorders.\n\nINTERVENTIONS: Melatonin compared to placebo.\n\nRESULTS: Nineteen studies involving 1683 subjects were included in this meta-analysis. Melatonin demonstrated significant efficacy in reducing sleep latency (weighted mean difference (WMD) = 7.06 minutes [95% CI 4.37 to 9.75], Z = 5.15, p<0.001) and increasing total sleep time (WMD = 8.25 minutes [95% CI 1.74 to 14.75], Z = 2.48, p = 0.013). Trials with longer duration and using higher doses of melatonin demonstrated greater effects on decreasing sleep latency and increasing total sleep time. Overall sleep quality was significantly improved in subjects taking melatonin (standardized mean difference = 0.22 [95% CI: 0.12 to 0.32], Z = 4.52, p<0.001) compared to placebo. No significant effects of trial duration and melatonin dose were observed on sleep quality.\n\nCONCLUSION: This meta-analysis demonstrates that melatonin decreases sleep onset latency, increases total sleep time and improves overall sleep quality. The effects of melatonin on sleep are modest but do not appear to dissipate with continued melatonin use. Although the absolute benefit of melatonin compared to placebo is smaller than other pharmacological treatments for insomnia, melatonin may have a role in the treatment of insomnia given its relatively benign side-effect profile compared to these agents.",
+        "plain_title": "Melatonin Helps People Fall Asleep Faster Overall",
+        "plain_summary": "A combined analysis of multiple studies in both adults and children with sleep disorders found that melatonin significantly reduced the time it takes to fall asleep, improved sleep quality, and increased total sleep time compared to a dummy pill.",
+        "selected": true,
+        "ranking": {
+          "score": 12,
+          "overlap": 2,
+          "strategies_matched": [
+            "Targeted search for high-quality evidence on melatonin for pediatric sleep onset difficulties",
+            "Search focusing on both efficacy and safety profile of melatonin in school-age children"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis",
+          "Research Support, N.I.H., Extramural",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "strategy_idx": [
+          1,
+          2
+        ],
+        "positions": [
+          2,
+          4
+        ]
+      },
+      {
+        "pmid": "29318587",
+        "doi": "10.1111/bph.14116",
+        "title": "New perspectives on the role of melatonin in human sleep, circadian rhythms and their regulation.",
+        "authors": [
+          "Zisapel Nava"
+        ],
+        "journal": "British journal of pharmacology",
+        "year": 2018,
+        "abstract": "In mammals, a central circadian clock, located in the suprachiasmatic nuclei (SCN) of the hypothalamus, tunes the innate circadian physiological rhythms to the ambient 24 h light-dark cycle to invigorate and optimize the internal temporal order. The SCN-activated, light-inhibited production of melatonin conveys the message of darkness to the clock and induces night-state physiological functions, for example, sleep/wake blood pressure and metabolism. Clinically meaningful effects of melatonin treatment have been demonstrated in placebo-controlled trials in humans, particularly in disorders associated with diminished or misaligned melatonin rhythms, for example, circadian rhythm-related sleep disorders, jet lag and shift work, insomnia in children with neurodevelopmental disorders, poor (non-restorative) sleep quality, non-dipping nocturnal blood pressure (nocturnal hypertension) and Alzheimer's disease (AD). The diminished production of melatonin at the very early stages of AD, the role of melatonin in the restorative value of sleep (perceived sleep quality) and its sleep-anticipating effects resulting in attenuated activation of certain brain networks are gaining a new perspective as the role of poor sleep quality in the build-up of β amyloid, particularly in the precuneus, is unravelled. As a result of the recently discovered relationship between circadian clock, sleep and neurodegeneration, new prospects of using melatonin for early intervention, to promote healthy physical and mental ageing, are of prime interest in view of the emerging link to the aetiology of Alzheimer's disease. LINKED ARTICLES: This article is part of a themed section on Recent Developments in Research of Melatonin and its Potential Therapeutic Applications. To view the other articles in this section visit http://onlinelibrary.wiley.com/doi/10.1111/bph.v175.16/issuetoc.",
+        "plain_title": "How Melatonin Regulates Sleep and Body Rhythms",
+        "plain_summary": "This review explains how melatonin, a hormone triggered by darkness, signals the body that it's nighttime and promotes sleep, and notes that melatonin supplements have shown meaningful benefits in studies — particularly for people whose internal body clocks are disrupted.",
+        "selected": true,
+        "ranking": {
+          "score": 10,
+          "overlap": 2,
+          "strategies_matched": [
+            "Broad search for any literature on melatonin and sleep in children",
+            "Search focusing on both efficacy and safety profile of melatonin in school-age children"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "strategy_idx": [
+          0,
+          2
+        ],
+        "positions": [
+          3,
+          16
+        ]
+      },
+      {
+        "pmid": "38625388",
+        "doi": "10.1007/s00431-024-05556-w",
+        "title": "European expert guidance on management of sleep onset insomnia and melatonin use in typically developing children.",
+        "authors": [
+          "Bruni Oliviero",
+          "Breda Maria",
+          "Nobili Lino",
+          "Fietze Ingo",
+          "Capdevila Oscar Ramon Sans",
+          "Gronfier Claude"
+        ],
+        "journal": "European journal of pediatrics",
+        "year": 2024,
+        "abstract": "Sleeping problems are prevalent among children and adolescents, often leading to frequent consultations with pediatricians. While cognitive-behavioral therapy has shown effectiveness, especially in the short term, there is a lack of globally endorsed guidelines for the use of pharmaceuticals or over-the-counter remedies in managing sleep onset insomnia. An expert panel of pediatric sleep specialists and chronobiologists met in October 2023 to develop practical recommendations for pediatricians on the management of sleep onset insomnia in typically developing children. When sleep onset insomnia is present in otherwise healthy children, the management should follow a stepwise approach. Practical sleep hygiene indications and adaptive bedtime routine, followed by behavioral therapies, must be the first step. When these measures are not effective, low-dose melatonin, administered 30-60 min before bedtime, might be helpful in children over 2 years old. Melatonin use should be monitored by pediatricians to evaluate the efficacy as well as the presence of adverse effects.    Conclusion: Low-dose melatonin is a useful strategy for managing sleep onset insomnia in healthy children who have not improved or have responded insufficiently to sleep hygiene and behavioral interventions.",
+        "plain_title": "European Expert Advice on Melatonin for Children's Sleep",
+        "plain_summary": "A panel of children's sleep specialists developed practical guidance for pediatricians on managing sleep-onset problems in otherwise healthy children, including when and how to use melatonin when behavioral strategies alone aren't enough.",
+        "selected": true,
+        "ranking": {
+          "score": 8,
+          "overlap": 1,
+          "strategies_matched": [
+            "Broad search for any literature on melatonin and sleep in children"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article",
+          "Practice Guideline",
+          "Review"
+        ],
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          1
+        ]
+      },
+      {
+        "pmid": "31638842",
+        "doi": "10.1080/14656566.2019.1674283",
+        "title": "Pharmacotherapeutic management of sleep disorders in children with neurodevelopmental disorders.",
+        "authors": [
+          "Bruni Oliviero",
+          "Angriman Marco",
+          "Melegari Maria Grazia",
+          "Ferri Raffaele"
+        ],
+        "journal": "Expert opinion on pharmacotherapy",
+        "year": 2019,
+        "abstract": "Introduction: Sleep disturbances are highly prevalent in children with neurodevelopmental disabilities. Without appropriate treatment, sleep disorders can become chronic and last for many years. However, there are no sleep medications approved by the United States Food and Drug Administration and only one has been approved by the European Medicines Agency for pediatric insomnia; thus, most medications are prescribed off-label.Areas covered: In this narrative review, the authors highlight and summarize the most common drugs and supplements used for the treatment of sleep problems in children with neurodevelopmental disabilities. Recommendations are formulated regarding the use of melatonin and melatonin receptor agonists, sedating antidepressants, antipsychotics, antihistamines, gabapentin, clonidine and orexin receptor antagonists, and benzodiazepines and hypnotic benzodiazepine receptor agonists.Expert opinion: The choice of pharmacological agents and their dosage should be individualized taking into consideration multiple factors, including the severity and type of sleep problem and the associated neurological pathology. Melatonin is widely used and safe in children with neurodevelopmental conditions. Gabapentin, clonidine, trazodone, and mirtazapine hold promise but require further study. Supplements (iron, vitamin D, and 5-hydroxytryptophan) might be helpful. Due to the lack of clinical data, there is still uncertainty concerning dosing regimens and tolerability.",
+        "plain_title": "Medications Used for Sleep Problems in Children With Disabilities",
+        "plain_summary": "This review covers the most common drugs and supplements, including melatonin, used to treat sleep problems in children with developmental conditions, noting that almost all are prescribed without official government approval for pediatric use.",
+        "selected": true,
+        "ranking": {
+          "score": 8,
+          "overlap": 2,
+          "strategies_matched": [
+            "Broad search for any literature on melatonin and sleep in children",
+            "Search focusing on both efficacy and safety profile of melatonin in school-age children"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "strategy_idx": [
+          0,
+          2
+        ],
+        "positions": [
+          5,
+          15
+        ]
+      },
+      {
+        "pmid": "36603513",
+        "doi": "10.1016/j.sleep.2022.12.021",
+        "title": "Sleep interventions for children with attention deficit hyperactivity disorder (ADHD): A systematic literature review.",
+        "authors": [
+          "Larsson I",
+          "Aili K",
+          "Lönn M",
+          "Svedberg P",
+          "Nygren J M",
+          "Ivarsson A",
+          "Johansson P"
+        ],
+        "journal": "Sleep medicine",
+        "year": 2023,
+        "abstract": "OBJECTIVE/BACKGROUND: Healthy sleep is particularly important for children with attention deficit hyperactivity disorder (ADHD), as sleep disturbances might aggravate disease symptoms. This review aims to synthesize and report evidence on the effectiveness of sleep interventions in increasing sleep, quality of life (QoL), and ADHD symptoms among children with ADHD.\n\nPATIENTS/METHODS: The systematic literature review follows the Cochrane Collaboration methodology recommendations for literature reviews. Four databases were used based on the population, intervention, control and outcome (PICO) framework. Controlled trials with minimum 20 children in each group, aged 6-18, and published from 2005 and onwards were included. Results from the studies were reported in forest plots and three of the seven review outcomes were synthesized in meta-analyses.\n\nRESULTS: The search identified 7710 records; of which 4808 abstracts were screened. After fulltext-screening of 99 papers, eight papers from five studies were included. The studies included behavioral sleep interventions and pharmacological interventions using melatonin and eszopiclone. For six of the seven outcomes, the effect sizes were small to moderate and the certainty of the evidence was low. For one outcome, sleep disturbances, the effect size was a moderate -0.49 standardized mean differences (95% confidence interval -0.65;-0.33), with a moderate certainty of evidence for the behavioral interventions for children aged 5-13 years with ADHD.\n\nCONCLUSIONS: This review identified few and heterogeneous studies. A moderate certainty of evidence for a moderate effect size was only obtained for sleep disturbances from the behavioral interventions. A low certainty of the evidence for a moderate effect size was found for the total sleep time from the pharmacological intervention using melatonin and one behavioral intervention, which indicates that these sleep interventions impact sleep quantity and quality among children with ADHD.",
+        "plain_title": "Do Sleep Treatments Help Children With ADHD Sleep Better?",
+        "plain_summary": "A review of studies on children with ADHD found that sleep-focused treatments — including melatonin, behavioral approaches, and other strategies — can help improve sleep, quality of life, and possibly ADHD symptoms in these children.",
+        "selected": true,
+        "ranking": {
+          "score": 8,
+          "overlap": 2,
+          "strategies_matched": [
+            "Broad search for any literature on melatonin and sleep in children",
+            "Search focusing on both efficacy and safety profile of melatonin in school-age children"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Systematic Review",
+          "Journal Article",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "strategy_idx": [
+          0,
+          2
+        ],
+        "positions": [
+          7,
+          22
+        ]
+      }
+    ],
+    "prompts": {
+      "search_system": "You are a PubMed search expert. Your job is to turn a plain-English health or science question into optimized PubMed search queries.\n\n## Rules\n1. Generate 3-4 PubMed search queries, from broad to specific.\n2. Use proper MeSH terms and boolean operators (AND, OR) where helpful.\n3. Include relevant synonyms and alternative phrasings.\n4. Prioritize queries that will find systematic reviews, meta-analyses, and RCTs when relevant.\n5. Keep queries concise but effective.\n\n## Output Format\nReturn ONLY a JSON array of objects. No markdown, no explanation, no code fences.\nEach object has:\n- \"query\": the PubMed search string\n- \"strategy\": a brief plain-English description of what this query targets (1 sentence)\n\nExample output:\n[{\"query\":\"vitamin D supplementation respiratory infection children\",\"strategy\":\"Broad search for vitamin D and respiratory infections in children\"},{\"query\":\"(vitamin D OR cholecalciferol) AND (respiratory tract infection OR RTI OR common cold) AND (child OR pediatric) AND (randomized controlled trial OR meta-analysis)\",\"strategy\":\"Targeted search for high-quality trials on vitamin D and respiratory infections in kids\"}]",
+      "summary_system": "You translate medical research paper titles and abstracts into plain language for people without medical training.\n\n## Rules\n1. Use no medical jargon. If a technical concept is essential, explain it in parentheses.\n2. Be specific about findings (numbers, effects) when the abstract provides them.\n3. Each summary should help a non-expert decide if this paper is relevant to their question.\n\n## Output Format\nReturn ONLY a JSON array in the same order as the papers provided. No markdown, no explanation.\nEach object has:\n- \"plain_title\": A clear, jargon-free title (5-12 words)\n- \"plain_summary\": One sentence explaining the key finding or purpose in everyday language",
+      "synthesis_system": "You are a research translator for Tables Turned, a tool that helps regular people understand PubMed research.\n\n## Your Rules\n\n1. **Answer the question first.** Open with a direct, clear answer in 2-3 sentences based on the evidence. This is the most important part.\n2. **Every claim needs receipts.** Cite as [PMID: XXXXX]. If you cannot link a claim to a provided paper, mark it [UNWITNESSED].\n3. **Surface contradictions.** If papers disagree, say so plainly.\n4. **Write in common tongue.** No jargon. If a technical term is unavoidable, translate it in parentheses. Short sentences.\n5. **Do not patronize.** The reader is intelligent and busy.\n6. **State confidence honestly.** Strong, mixed, or thin with reasons.\n7. **Do not hallucinate.** Never invent findings. Never cite a PMID not provided to you.\n\n## Output Format\n\n**CRITICAL: The entire brief must fit on ONE printed page. Be concise. No filler. No padding. Every sentence must earn its place.**\n\nProduce a markdown document with exactly these sections:\n\n# [Short title from the question]\n\n**Question:** [question] · **Context:** [context]\n\n---\n\n## The short answer\n\n[2-3 sentences directly answering the user's question. Lead with what matters most to their decision. Cite key PMIDs inline.]\n\n## Key findings\n\n[4-6 bullet points maximum. Each bullet states one finding in plain language and cites [PMID: XXXXX]. If papers contradict each other, say so in the bullet.]\n\n## What is unknown\n\n[2-3 bullet points: gaps the papers do not address that the reader likely cares about.]\n\n## Confidence: [Low / Medium / High]\n\n[One sentence: why, based on study count, size, consistency, and design quality.]\n\n---\n\n*Generated by Tables Turned. Receipts only.*",
+      "synthesis_user_message": "**Question:** Does melatonin help kids sleep?\n**Context:** My 7-year-old has trouble falling asleep. Deciding whether to try melatonin gummies before school starts.\n\n---\n\n**Papers provided (12):**\n\n### PMID: 33540815\n**Title:** Melatonin: From Pharmacokinetics to Clinical Use in Autism Spectrum Disorder.\n**Authors:** Lalanne Sébastien, Fougerou-Leurent Claire, Anderson George M, Schroder Carmen M, Nir Tali et al.\n**Journal:** International journal of molecular sciences (2021)\n**Abstract:**\nThe role of melatonin has been extensively investigated in pathophysiological conditions, including autism spectrum disorder (ASD). Reduced melatonin secretion has been reported in ASD and led to many clinical trials using immediate-release and prolonged-release oral formulations of melatonin. However, melatonin's effects in ASD and the choice of formulation type require further study. Therapeutic benefits of melatonin on sleep disorders in ASD were observed, notably on sleep latency and sleep quality. Importantly, melatonin may also have a role in improving autistic behavioral impairments. The objective of this article is to review factors influencing treatment response and possible side effects following melatonin administration. It appears that the effects of exposure to exogenous melatonin are dependent on age, sex, route and time of administration, formulation type, dose, and association with several substances (such as tobacco or contraceptive pills). In addition, no major melatonin-related adverse effect was described in typical development and ASD. In conclusion, melatonin represents currently a well-validated and tolerated treatment for sleep disorders in children and adolescents with ASD. A more thorough consideration of factors influencing melatonin pharmacokinetics could illuminate the best use of melatonin in this population. Future studies are required in ASD to explore further dose-effect relationships of melatonin on sleep problems and autistic behavioral impairments.\n\n---\n\n### PMID: 28875581\n**Title:** European guideline for the diagnosis and treatment of insomnia.\n**Authors:** Riemann Dieter, Baglioni Chiara, Bassetti Claudio, Bjorvatn Bjørn, Dolenc Groselj Leja et al.\n**Journal:** Journal of sleep research (2017)\n**Abstract:**\nThis European guideline for the diagnosis and treatment of insomnia was developed by a task force of the European Sleep Research Society, with the aim of providing clinical recommendations for the management of adult patients with insomnia. The guideline is based on a systematic review of relevant meta-analyses published till June 2016. The target audience for this guideline includes all clinicians involved in the management of insomnia, and the target patient population includes adults with chronic insomnia disorder. The GRADE (Grading of Recommendations Assessment, Development and Evaluation) system was used to grade the evidence and guide recommendations. The diagnostic procedure for insomnia, and its co-morbidities, should include a clinical interview consisting of a sleep history (sleep habits, sleep environment, work schedules, circadian factors), the use of sleep questionnaires and sleep diaries, questions about somatic and mental health, a physical examination and additional measures if indicated (i.e. blood tests, electrocardiogram, electroencephalogram; strong recommendation, moderate- to high-quality evidence). Polysomnography can be used to evaluate other sleep disorders if suspected (i.e. periodic limb movement disorder, sleep-related breathing disorders), in treatment-resistant insomnia, for professional at-risk populations and when substantial sleep state misperception is suspected (strong recommendation, high-quality evidence). Cognitive behavioural therapy for insomnia is recommended as the first-line treatment for chronic insomnia in adults of any age (strong recommendation, high-quality evidence). A pharmacological intervention can be offered if cognitive behavioural therapy for insomnia is not sufficiently effective or not available. Benzodiazepines, benzodiazepine receptor agonists and some antidepressants are effective in the short-term treatment of insomnia (≤4 weeks; weak recommendation, moderate-quality evidence). Antihistamines, antipsychotics, melatonin and phytotherapeutics are not recommended for insomnia treatment (strong to weak recommendations, low- to very-low-quality evidence). Light therapy and exercise need to be further evaluated to judge their usefulness in the treatment of insomnia (weak recommendation, low-quality evidence). Complementary and alternative treatments (e.g. homeopathy, acupuncture) are not recommended for insomnia treatment (weak recommendation, very-low-quality evidence).\n\n---\n\n### PMID: 31982581\n**Title:** Sleep, Growth, and Puberty After 2 Years of Prolonged-Release Melatonin in Children With Autism Spectrum Disorder.\n**Authors:** Malow Beth A, Findling Robert L, Schroder Carmen M, Maras Athanasios, Breddy John et al.\n**Journal:** Journal of the American Academy of Child and Adolescent Psychiatry (2021)\n**Abstract:**\nOBJECTIVE: A recent 3-month double-blind, placebo-controlled study demonstrated efficacy and safety of pediatric prolonged-release melatonin (PedPRM) for insomnia in children with autism spectrum disorder. This study examined the long-term effects of PedPRM treatment on sleep, growth, body mass index, and pubertal development.\n\nMETHOD: Eighty children and adolescents (2-17.5 years of age; 96% with autism spectrum disorder) who completed the double-blind, placebo-controlled trial were given 2 mg, 5 mg, or 10 mg PedPRM nightly up to 104 weeks, followed by a 2-week placebo period to assess withdrawal effects.\n\nRESULTS: Improvements in child sleep disturbance and caregiver satisfaction with child sleep patterns, quality of sleep, and quality of life were maintained throughout the 104-week treatment period (p < .001 versus baseline for all). During the 2-week withdrawal placebo period, measures declined compared with the treatment period but were still improved compared with baseline. PedPRM was generally safe; the most frequent treatment-related adverse events were fatigue (6.3%), somnolence (6.3%), and mood swings (4.2%). Changes in mean weight, height, body mass index, and pubertal status (Tanner staging done by a physician) were within normal ranges for age with no evidence of delay in body mass index or pubertal development.\n\nCONCLUSION: Nightly PedPRM at optimal dose (2, 5, or 10 mg nightly) is safe and effective for long-term treatment in children and adolescents with autism spectrum disorder and insomnia. There were no observed detrimental effects on children's growth and pubertal development and no withdrawal or safety issues related to the use or discontinuation of the drug.\n\nCLINICAL TRIAL REGISTRATION INFORMATION: Efficacy and Safety of Circadin in the Treatment of Sleep Disturbances in Children With Neurodevelopment Disabilities; https://clinicaltrials.gov/; NCT01906866.\n\n---\n\n### PMID: 36179487\n**Title:** Efficacy of melatonin for chronic insomnia: Systematic reviews and meta-analyses.\n**Authors:** Choi Kyungseon, Lee Yu Jeong, Park Seonyoung, Je Nam Kyung, Suh Hae Sun\n**Journal:** Sleep medicine reviews (2022)\n**Abstract:**\nWe conducted systematic reviews and meta-analyses to evaluate the efficacy of melatonin versus placebo or other hypnotic agents in improving sleep quality and quantity in patients with chronic insomnia. A literature search on Ovid-MEDLINE, EMBASE, and the Cochrane Library was performed up to November 2020. Sleep onset latency, total sleep time, sleep efficiency, sleep quality and quality of life were examined as outcomes. We identified 24 randomized controlled trials of chronic insomnia including four studies of patients with comorbid insomnia. All studies were compared with placebo. Due to heterogeneity, we conducted subgroup analyses by age group. In non-comorbid insomnia, melatonin was only significantly effective in sleep onset latency and total sleep time in children and adolescents. In adults group, melatonin was not significantly effective in improving sleep onset latency, total sleep time, and sleep efficiency. In comorbid insomnia, melatonin significantly improved sleep onset latency in all age groups, but there was only one study in adults group. In conclusion, melatonin did not appear to be effective in adults but might be effective in children and adolescents with chronic insomnia for both comorbid insomnia and non-comorbid insomnia. Further studies are needed to establish the efficacy and safety of melatonin by age groups.\n\n---\n\n### PMID: 31207606\n**Title:** Sleep deficiency and chronic pain: potential underlying mechanisms and clinical implications.\n**Authors:** Haack Monika, Simpson Norah, Sethna Navil, Kaur Satvinder, Mullington Janet\n**Journal:** Neuropsychopharmacology : official publication of the American College of Neuropsychopharmacology (2020)\n**Abstract:**\nPain can be both a cause and a consequence of sleep deficiency. This bidirectional relationship between sleep and pain has important implications for clinical management of patients, but also for chronic pain prevention and public health more broadly. The review that follows will provide an overview of the neurobiological evidence of mechanisms thought to be involved in the modulation of pain by sleep deficiency, including the opioid, monoaminergic, orexinergic, immune, melatonin, and endocannabinoid systems; the hypothalamus-pituitary-adrenal axis; and adenosine and nitric oxide signaling. In addition, it will provide a broad overview of pharmacological and non-pharmacological approaches for the management of chronic pain comorbid with sleep disturbances and for the management of postoperative pain, as well as discuss the effects of sleep-disturbing medications on pain amplification.\n\n---\n\n### PMID: 35120753\n**Title:** [Therapeutic approaches for sleep and rhythms disorders in children with ASD].\n**Authors:** Schröder C M, Broquère M A, Claustrat B, Delorme R, Franco P et al.\n**Journal:** L'Encephale (2022)\n**Abstract:**\nSleep disturbances are extremely common (40-86%) in children and adolescents, especially those with autism spectrum disorders (ASD) and are often among the first symptoms identified by parents at a very early stage of their child's development. These abnormalities are among the main parental concerns when having a child with ASD and have a significant impact on the quality of life of patients, their parents, and more broadly their siblings. Sleep disorders are essentially abnormalities of the sleep-wake rhythm - primarily sleep onset insomnia or nocturnal awakenings (with difficulty falling back to sleep). These disturbances can be accompanied by other sleep disorders, requiring notably a systematic elimination of the presence of a sleep apnea or restless legs syndrome - to ensure a personalized and efficient therapeutic approach. Physiologically, the determinants of these sleep disorders are poorly understood, even though several studies point to a significant decrease in melatonin synthesis in people with ASD. Melatonin is a hormone that facilitates falling asleep and maintaining sleep and is also involved in the endogenous synchronization of internal biological clocks. However, the causal factors of this decrease in melatonin synthesis are largely unknown, involving to a small extent the genes involved in melatonin synthesis pathway. The treatment of sleep disorders is relatively systematic: after eliminating other specific sleep disorders associated with the complaint of insomnia, as well as other possible associated comorbidities (such as seizures), a global and graduated therapeutic approach must be put in place. This treatment will be non-pharmacological as a first line, then pharmacological as a second line. A number of non-pharmacological treatment strategies for sleep disorders in typically developing children and adolescents, as well as those with ASD, have been shown to be effective. This treatment requires a combination of: 1) parental education to promote sleep development; 2) setting up bedtime rituals adapted to the child's age and particularities; 3) specific behavioral strategies including bedtime fading, gradual extinction and positive reinforcement of adapted behaviors. It is very essential that the parents are accompanied throughout this therapy. Sleep hygiene and behavioral care must also take into consideration the important role of the zeitgebers of sleep-wake rhythms, i.e. the external environmental factors involved in the synchronization of the biological clocks: regular exposure to light at adapted times, regular meal and wake-up times, social activities and times for going to school. The evidence for the effectiveness of behavioral interventions in the treatment of behavioral insomnia in the typical developmental child is strong, since 94% of children show clinically significant improvements in nighttime sleepiness and waking. By contrast, only about 25% of children with ASD are improved by an approach combining sleep hygiene and behavioral therapy. Melatonin has a special and prominent place in the drug management of sleep disorders associated with ASD. Several clinical trials have shown that melatonin is effective in treating sleep disorders in patients with ASD. This work led to the European Medicines Agency (EMA) granting marketing authorization in September 2018 for a sustained-release paediatric melatonin molecule (Slenyto®). This synthetic molecule is a prolonged release melatonin (PRM) which mimics the physiological pharmacokinetic and secretory characteristics of endogenous melatonin, having a very short blood half-life and prolonged secretion for several hours during the night. A recent study evaluated the efficacy and safety of pediatric PRM (mini-tablets) in 125 children, aged 2 to 17.5 years with mainly ASD. After 15 days on placebo, the children were randomized into two parallel groups, PRM or placebo in a double-blind design for 13 weeks. At endpoint, total sleep time was increased by an average of 57.5 minutes on PRM and only 9.14 minutes on placebo (P=0.034). This difference between the two groups was already significant after three weeks of treatment (P=0.006). Sleep latency was also improved in the PRM group (-39.6 minutes) compared to placebo (-12.51 minutes) (P=0.01). Consolidated sleep duration (uninterrupted by awakenings) was improved by 77.9 minutes for the PRM group and only 25.4 minutes for the placebo group (P<0.001). PRM was well tolerated, the most frequent side effects being headache and daytime drowsiness at the same level with PRM or placebo. In addition, the acceptability by the children for swallowing the mini-tablets was excellent (100% compliance). The efficacy and tolerability of PRM was maintained over the medium and long term in the open phase, over a total study duration of 2 years.\n\n---\n\n### PMID: 29096777\n**Title:** Efficacy and Safety of Pediatric Prolonged-Release Melatonin for Insomnia in Children With Autism Spectrum Disorder.\n**Authors:** Gringras Paul, Nir Tali, Breddy John, Frydman-Marom Anat, Findling Robert L\n**Journal:** Journal of the American Academy of Child and Adolescent Psychiatry (2017)\n**Abstract:**\nOBJECTIVE: To assess the efficacy and safety of novel pediatric-appropriate, prolonged-release melatonin minitablets (PedPRM) versus placebo for insomnia in children and adolescents with autism spectrum disorder (ASD), with or without attention-deficit/hyperactivity disorder (ADHD) comorbidity, and neurogenetic disorders (NGD).\n\nMETHOD: A total of 125 children and adolescents (2-17.5 years of age; 96.8% ASD, 3.2% Smith-Magenis syndrome [SMS]) whose sleep failed to improve on behavioral intervention alone were randomized (1:1 ratio), double-blind, to receive PedPRM (2 mg escalated to 5 mg) or placebo for 13 weeks. Sleep measures included the validated caregivers' Sleep and Nap Diary (SND) and Composite Sleep Disturbance Index (CSDI). The a priori primary endpoint was SND-reported total sleep time (TST) after 13 weeks of treatment.\n\nRESULTS: The study met the primary endpoint: after 13 weeks of double-blind treatment, participants slept on average 57.5 minutes longer at night with PedPRM compared to 9.14 minutes with placebo (adjusted mean treatment difference PedPRM-placebo -32.43 minutes; p = .034). Sleep latency (SL) decreased by 39.6 minutes on average with PedPRM and 12.5 minutes with placebo (adjusted mean treatment difference -25.30 minutes; p = .011) without causing earlier wakeup time. The rate of participants attaining clinically meaningful responses in TST and/or SL was significantly higher with PedPRM than with placebo (68.9% versus 39.3% respectively; p = .001) corresponding to a number needed to treat (NNT) of 3.38. Overall sleep disturbance (CSDI) tended to decrease. PedPRM was generally safe; somnolence was more commonly reported with PedPRM than placebo.\n\nCONCLUSION: PedPRM was efficacious and safe for treatment of insomnia in children and adolescents with ASD with/without ADHD and NGD. The acceptability of this pediatric formulation in a population who usually experience significant difficulties in swallowing was remarkably high. Clinical trial registration information-Efficacy and Safety of Circadin in the Treatment of Sleep Disturbances in Children With Neurodevelopment Disabilities; http://clinicaltrials.gov/; NCT01906866.\n\n---\n\n### PMID: 23691095\n**Title:** Meta-analysis: melatonin for the treatment of primary sleep disorders.\n**Authors:** Ferracioli-Oda Eduardo, Qawasmi Ahmad, Bloch Michael H\n**Journal:** PloS one (2013)\n**Abstract:**\nSTUDY OBJECTIVES: To investigate the efficacy of melatonin compared to placebo in improving sleep parameters in patients with primary sleep disorders.\n\nDESIGN: PubMed was searched for randomized, placebo-controlled trials examining the effects of melatonin for the treatment of primary sleep disorders. Primary outcomes examined were improvement in sleep latency, sleep quality and total sleep time. Meta-regression was performed to examine the influence of dose and duration of melatonin on reported efficacy.\n\nPARTICIPANTS: Adults and children diagnosed with primary sleep disorders.\n\nINTERVENTIONS: Melatonin compared to placebo.\n\nRESULTS: Nineteen studies involving 1683 subjects were included in this meta-analysis. Melatonin demonstrated significant efficacy in reducing sleep latency (weighted mean difference (WMD) = 7.06 minutes [95% CI 4.37 to 9.75], Z = 5.15, p<0.001) and increasing total sleep time (WMD = 8.25 minutes [95% CI 1.74 to 14.75], Z = 2.48, p = 0.013). Trials with longer duration and using higher doses of melatonin demonstrated greater effects on decreasing sleep latency and increasing total sleep time. Overall sleep quality was significantly improved in subjects taking melatonin (standardized mean difference = 0.22 [95% CI: 0.12 to 0.32], Z = 4.52, p<0.001) compared to placebo. No significant effects of trial duration and melatonin dose were observed on sleep quality.\n\nCONCLUSION: This meta-analysis demonstrates that melatonin decreases sleep onset latency, increases total sleep time and improves overall sleep quality. The effects of melatonin on sleep are modest but do not appear to dissipate with continued melatonin use. Although the absolute benefit of melatonin compared to placebo is smaller than other pharmacological treatments for insomnia, melatonin may have a role in the treatment of insomnia given its relatively benign side-effect profile compared to these agents.\n\n---\n\n### PMID: 29318587\n**Title:** New perspectives on the role of melatonin in human sleep, circadian rhythms and their regulation.\n**Authors:** Zisapel Nava\n**Journal:** British journal of pharmacology (2018)\n**Abstract:**\nIn mammals, a central circadian clock, located in the suprachiasmatic nuclei (SCN) of the hypothalamus, tunes the innate circadian physiological rhythms to the ambient 24 h light-dark cycle to invigorate and optimize the internal temporal order. The SCN-activated, light-inhibited production of melatonin conveys the message of darkness to the clock and induces night-state physiological functions, for example, sleep/wake blood pressure and metabolism. Clinically meaningful effects of melatonin treatment have been demonstrated in placebo-controlled trials in humans, particularly in disorders associated with diminished or misaligned melatonin rhythms, for example, circadian rhythm-related sleep disorders, jet lag and shift work, insomnia in children with neurodevelopmental disorders, poor (non-restorative) sleep quality, non-dipping nocturnal blood pressure (nocturnal hypertension) and Alzheimer's disease (AD). The diminished production of melatonin at the very early stages of AD, the role of melatonin in the restorative value of sleep (perceived sleep quality) and its sleep-anticipating effects resulting in attenuated activation of certain brain networks are gaining a new perspective as the role of poor sleep quality in the build-up of β amyloid, particularly in the precuneus, is unravelled. As a result of the recently discovered relationship between circadian clock, sleep and neurodegeneration, new prospects of using melatonin for early intervention, to promote healthy physical and mental ageing, are of prime interest in view of the emerging link to the aetiology of Alzheimer's disease. LINKED ARTICLES: This article is part of a themed section on Recent Developments in Research of Melatonin and its Potential Therapeutic Applications. To view the other articles in this section visit http://onlinelibrary.wiley.com/doi/10.1111/bph.v175.16/issuetoc.\n\n---\n\n### PMID: 38625388\n**Title:** European expert guidance on management of sleep onset insomnia and melatonin use in typically developing children.\n**Authors:** Bruni Oliviero, Breda Maria, Nobili Lino, Fietze Ingo, Capdevila Oscar Ramon Sans et al.\n**Journal:** European journal of pediatrics (2024)\n**Abstract:**\nSleeping problems are prevalent among children and adolescents, often leading to frequent consultations with pediatricians. While cognitive-behavioral therapy has shown effectiveness, especially in the short term, there is a lack of globally endorsed guidelines for the use of pharmaceuticals or over-the-counter remedies in managing sleep onset insomnia. An expert panel of pediatric sleep specialists and chronobiologists met in October 2023 to develop practical recommendations for pediatricians on the management of sleep onset insomnia in typically developing children. When sleep onset insomnia is present in otherwise healthy children, the management should follow a stepwise approach. Practical sleep hygiene indications and adaptive bedtime routine, followed by behavioral therapies, must be the first step. When these measures are not effective, low-dose melatonin, administered 30-60 min before bedtime, might be helpful in children over 2 years old. Melatonin use should be monitored by pediatricians to evaluate the efficacy as well as the presence of adverse effects.    Conclusion: Low-dose melatonin is a useful strategy for managing sleep onset insomnia in healthy children who have not improved or have responded insufficiently to sleep hygiene and behavioral interventions.\n\n---\n\n### PMID: 31638842\n**Title:** Pharmacotherapeutic management of sleep disorders in children with neurodevelopmental disorders.\n**Authors:** Bruni Oliviero, Angriman Marco, Melegari Maria Grazia, Ferri Raffaele\n**Journal:** Expert opinion on pharmacotherapy (2019)\n**Abstract:**\nIntroduction: Sleep disturbances are highly prevalent in children with neurodevelopmental disabilities. Without appropriate treatment, sleep disorders can become chronic and last for many years. However, there are no sleep medications approved by the United States Food and Drug Administration and only one has been approved by the European Medicines Agency for pediatric insomnia; thus, most medications are prescribed off-label.Areas covered: In this narrative review, the authors highlight and summarize the most common drugs and supplements used for the treatment of sleep problems in children with neurodevelopmental disabilities. Recommendations are formulated regarding the use of melatonin and melatonin receptor agonists, sedating antidepressants, antipsychotics, antihistamines, gabapentin, clonidine and orexin receptor antagonists, and benzodiazepines and hypnotic benzodiazepine receptor agonists.Expert opinion: The choice of pharmacological agents and their dosage should be individualized taking into consideration multiple factors, including the severity and type of sleep problem and the associated neurological pathology. Melatonin is widely used and safe in children with neurodevelopmental conditions. Gabapentin, clonidine, trazodone, and mirtazapine hold promise but require further study. Supplements (iron, vitamin D, and 5-hydroxytryptophan) might be helpful. Due to the lack of clinical data, there is still uncertainty concerning dosing regimens and tolerability.\n\n---\n\n### PMID: 36603513\n**Title:** Sleep interventions for children with attention deficit hyperactivity disorder (ADHD): A systematic literature review.\n**Authors:** Larsson I, Aili K, Lönn M, Svedberg P, Nygren J M et al.\n**Journal:** Sleep medicine (2023)\n**Abstract:**\nOBJECTIVE/BACKGROUND: Healthy sleep is particularly important for children with attention deficit hyperactivity disorder (ADHD), as sleep disturbances might aggravate disease symptoms. This review aims to synthesize and report evidence on the effectiveness of sleep interventions in increasing sleep, quality of life (QoL), and ADHD symptoms among children with ADHD.\n\nPATIENTS/METHODS: The systematic literature review follows the Cochrane Collaboration methodology recommendations for literature reviews. Four databases were used based on the population, intervention, control and outcome (PICO) framework. Controlled trials with minimum 20 children in each group, aged 6-18, and published from 2005 and onwards were included. Results from the studies were reported in forest plots and three of the seven review outcomes were synthesized in meta-analyses.\n\nRESULTS: The search identified 7710 records; of which 4808 abstracts were screened. After fulltext-screening of 99 papers, eight papers from five studies were included. The studies included behavioral sleep interventions and pharmacological interventions using melatonin and eszopiclone. For six of the seven outcomes, the effect sizes were small to moderate and the certainty of the evidence was low. For one outcome, sleep disturbances, the effect size was a moderate -0.49 standardized mean differences (95% confidence interval -0.65;-0.33), with a moderate certainty of evidence for the behavioral interventions for children aged 5-13 years with ADHD.\n\nCONCLUSIONS: This review identified few and heterogeneous studies. A moderate certainty of evidence for a moderate effect size was only obtained for sleep disturbances from the behavioral interventions. A low certainty of the evidence for a moderate effect size was found for the total sleep time from the pharmacological intervention using melatonin and one behavioral intervention, which indicates that these sleep interventions impact sleep quantity and quality among children with ADHD.\n\n---\n\nBased on these papers, generate a plain-language synthesis brief.\nCRITICAL: The brief MUST fit on ONE printed page. Be direct and concise. Cut all filler.\nAnswer the question first. Every claim must cite PMID(s).\nSurface contradictions. State confidence honestly.\nWrite for a regular person making a real decision.",
+      "model": "claude-opus-4-6"
+    },
+    "synthesis": {
+      "brief_markdown": "# Does Melatonin Help Kids Fall Asleep?\n\n**Question:** Does melatonin help kids sleep? · **Context:** My 7-year-old has trouble falling asleep. Deciding whether to try melatonin gummies before school starts.\n\n---\n\n## The short answer\n\nYes, melatonin helps children fall asleep faster and sleep somewhat longer, and it appears safe in the short and medium term. A meta-analysis of 24 trials found melatonin was significantly effective at reducing the time to fall asleep and increasing total sleep time specifically in children and adolescents [PMID: 36179487]. However, European pediatric sleep experts recommend trying good sleep habits and consistent bedtime routines *first*, and using low-dose melatonin only if those steps aren't enough [PMID: 38625388].\n\n## Key findings\n\n- **Kids fall asleep faster.** Across studies, melatonin reduced sleep onset latency (time to fall asleep) by roughly 25–40 minutes compared to placebo in children [PMID: 29096777, PMID: 36179487].\n- **Kids sleep a bit longer.** Total sleep time increased modestly — around 8 minutes in a broad meta-analysis of all ages [PMID: 23691095], but more substantially (~58 minutes) in children with neurodevelopmental conditions [PMID: 29096777].\n- **Effects are stronger in kids than adults.** One meta-analysis found melatonin was *not* significantly effective in adults with chronic insomnia but *was* effective in children and adolescents [PMID: 36179487]. A European adult insomnia guideline does not recommend melatonin for adult insomnia [PMID: 28875581].\n- **Safety profile is reassuring.** A 2-year study in children found no concerning effects on growth, weight, or puberty. Most common side effects were fatigue and daytime sleepiness [PMID: 31982581]. Multiple reviews describe melatonin as well-tolerated [PMID: 33540815, PMID: 31638842].\n- **Experts say behavioral strategies come first.** A 2024 European expert panel recommends sleep hygiene and bedtime routines as step one; low-dose melatonin (given 30–60 min before bed) as step two for children over age 2 who don't improve [PMID: 38625388].\n- **Most strong evidence is in kids with autism/ADHD, not typically developing kids.** The largest controlled trials studied children with neurodevelopmental disorders [PMID: 29096777, PMID: 36603513]. Evidence in otherwise healthy children exists but is thinner.\n\n## What is unknown\n\n- **Optimal dose and formulation for a typical 7-year-old.** Most rigorous trials used pharmaceutical-grade prolonged-release tablets, not over-the-counter gummies, which vary widely in actual melatonin content [UNWITNESSED from these papers].\n- **Long-term effects in typically developing children.** The 2-year safety data come from children with autism [PMID: 31982581]; comparable long-term data for healthy kids are lacking.\n- **Whether stopping melatonin leads to rebound sleep problems.** One study showed some decline after withdrawal but not back to baseline [PMID: 31982581]; more data are needed.\n\n## Confidence: Medium\n\nStrong evidence that melatonin helps children fall asleep faster, but the best-controlled trials are mostly in kids with autism or ADHD, not typically developing children. Safety data are reassuring but limited beyond 2 years. The recommendation to try sleep hygiene first is consistent across sources.\n\n---\n\n*Generated by Tables Turned. Receipts only.*"
+    },
+    "provenance": [
+      {
+        "timestamp": "2026-09-28T23:36:28Z",
+        "action": "search_started",
+        "detail": "Does melatonin help kids sleep?"
+      },
+      {
+        "timestamp": "2026-09-28T23:36:35Z",
+        "action": "search_queries_generated",
+        "detail": "melatonin sleep children | (melatonin OR exogenous melatonin) AND (sleep initiation disorders OR sleep onset latency OR insomnia) AND (child OR children OR pediatric) AND (randomized controlled trial OR meta-analysis OR systematic review) | (melatonin) AND (sleep) AND (child OR children OR pediatric OR school-age) AND (efficacy OR effectiveness OR safety OR adverse effects OR side effects) | (melatonin supplementation OR melatonin gummies OR exogenous melatonin) AND (sleep latency OR bedtime OR sleep quality OR sleep duration) AND (healthy children OR typically developing children) AND (review OR trial)"
+      },
+      {
+        "timestamp": "2026-09-28T23:36:36Z",
+        "action": "pubmed_searched",
+        "detail": "\"melatonin sleep children\" -> 1199 total, fetched 25"
+      },
+      {
+        "timestamp": "2026-09-28T23:36:38Z",
+        "action": "pubmed_searched",
+        "detail": "\"(melatonin OR exogenous melatonin) AND (sleep initiation disorders OR sleep onset latency OR insomnia) AND (child OR children OR pediatric) AND (randomized controlled trial OR meta-analysis OR systematic review)\" -> 125 total, fetched 25"
+      },
+      {
+        "timestamp": "2026-09-28T23:36:39Z",
+        "action": "pubmed_searched",
+        "detail": "\"(melatonin) AND (sleep) AND (child OR children OR pediatric OR school-age) AND (efficacy OR effectiveness OR safety OR adverse effects OR side effects)\" -> 797 total, fetched 25"
+      },
+      {
+        "timestamp": "2026-09-28T23:36:40Z",
+        "action": "pubmed_searched",
+        "detail": "\"(melatonin supplementation OR melatonin gummies OR exogenous melatonin) AND (sleep latency OR bedtime OR sleep quality OR sleep duration) AND (healthy children OR typically developing children) AND (review OR trial)\" -> 9 total, fetched 9"
+      },
+      {
+        "timestamp": "2026-09-28T23:36:40Z",
+        "action": "papers_ranked",
+        "detail": "59 papers scored. Top 12 selected (scores 16-8). Method: cross-strategy overlap (x3) + PubMed position weight."
+      },
+      {
+        "timestamp": "2026-09-28T23:37:02Z",
+        "action": "plain_summaries_generated",
+        "detail": "12 papers translated"
+      },
+      {
+        "timestamp": "2026-09-28T23:37:02Z",
+        "action": "papers_selected_for_synthesis",
+        "detail": "12 papers"
+      },
+      {
+        "timestamp": "2026-09-28T23:37:26Z",
+        "action": "synthesis_generated",
+        "detail": "3354 chars, 12 papers"
+      }
+    ]
+  },
+  "telemetry": {
+    "prompt_sha256": {
+      "SEARCH_SYSTEM": "0a2d1ccd7d4c77e0f5441613fc38edb45f36237befa5723d030b9244d27b607e",
+      "SUMMARY_SYSTEM": "7726ec6a8d32f245ff4d3b8ecb20668a8b440756e31f4106cb36a69dea75243b",
+      "SYNTH_SYSTEM": "dbda0a2b78e23926f4a986a6d6f9d0ed42a9090ed3128819e380e0c82beddde4"
+    },
+    "search_depth": 25,
+    "search_sort": "relevance",
+    "per_query": [
+      {
+        "query": "melatonin sleep children",
+        "strategy": "Broad search for any literature on melatonin and sleep in children",
+        "total_hits": 1199,
+        "returned": [
+          "38625388",
+          "39923609",
+          "29318587",
+          "31982581",
+          "31638842",
+          "30710339",
+          "36603513",
+          "31207606",
+          "30311830",
+          "36179487",
+          "38302207",
+          "38738544",
+          "28875581",
+          "31722088",
+          "42560676",
+          "40768003",
+          "25535358",
+          "33540815",
+          "29720494",
+          "31982807",
+          "35120753",
+          "37950776",
+          "29096777",
+          "39524005",
+          "23696337"
+        ],
+        "querytranslation": "(\"melatonin\"[Supplementary Concept] OR \"melatonin\"[All Fields] OR \"melatonin\"[MeSH Terms] OR \"melatonin s\"[All Fields] OR \"melatonine\"[All Fields] OR \"melatonins\"[All Fields]) AND (\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep s\"[All Fields]) AND (\"child\"[MeSH Terms] OR \"child\"[All Fields] OR \"children\"[All Fields] OR \"child s\"[All Fields] OR \"children s\"[All Fields] OR \"childrens\"[All Fields] OR \"childs\"[All Fields])"
+      },
+      {
+        "query": "(melatonin OR exogenous melatonin) AND (sleep initiation disorders OR sleep onset latency OR insomnia) AND (child OR children OR pediatric) AND (randomized controlled trial OR meta-analysis OR systematic review)",
+        "strategy": "Targeted search for high-quality evidence on melatonin for pediatric sleep onset difficulties",
+        "total_hits": 125,
+        "returned": [
+          "35843245",
+          "23691095",
+          "28875581",
+          "36179487",
+          "35120753",
+          "33164742",
+          "40768003",
+          "31982581",
+          "30132686",
+          "33164741",
+          "29096777",
+          "38738544",
+          "38442500",
+          "39923608",
+          "32051244",
+          "37950776",
+          "24050742",
+          "36446459",
+          "19567841",
+          "36612875",
+          "25862116",
+          "27409075",
+          "26055866",
+          "28258648",
+          "36562403"
+        ],
+        "querytranslation": "(\"melatonin\"[Supplementary Concept] OR \"melatonin\"[All Fields] OR \"melatonin\"[MeSH Terms] OR \"melatonin s\"[All Fields] OR \"melatonine\"[All Fields] OR \"melatonins\"[All Fields] OR ((\"exogeneous\"[All Fields] OR \"exogeneously\"[All Fields] OR \"exogenic\"[All Fields] OR \"exogenous\"[All Fields] OR \"exogenously\"[All Fields]) AND (\"melatonin\"[Supplementary Concept] OR \"melatonin\"[All Fields] OR \"melatonin\"[MeSH Terms] OR \"melatonin s\"[All Fields] OR \"melatonine\"[All Fields] OR \"melatonins\"[All Fields]))) AND (((\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep s\"[All Fields]) AND (\"initial\"[All Fields] OR \"initially\"[All Fields] OR \"initials\"[All Fields] OR \"initiate\"[All Fields] OR \"initiated\"[All Fields] OR \"initiates\"[All Fields] OR \"initiating\"[All Fields] OR \"initiation\"[All Fields] OR \"initiations\"[All Fields] OR \"initiator\"[All Fields] OR \"initiators\"[All Fields]) AND (\"disease\"[MeSH Terms] OR \"disease\"[All Fields] OR \"disorder\"[All Fields] OR \"disorders\"[All Fields] OR \"disorder s\"[All Fields] OR \"disordes\"[All Fields])) OR (\"sleep latency\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"latency\"[All Fields]) OR \"sleep latency\"[All Fields] OR (\"sleep\"[All Fields] AND \"onset\"[All Fields] AND \"latency\"[All Fields]) OR \"sleep onset latency\"[All Fields]) OR (\"insomnia s\"[All Fields] OR \"sleep initiation and maintenance disorders\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"initiation\"[All Fields] AND \"maintenance\"[All Fields] AND \"disorders\"[All Fields]) OR \"sleep initiation and maintenance disorders\"[All Fields] OR \"insomnia\"[All Fields] OR \"insomnias\"[All Fields])) AND (\"child\"[MeSH Terms] OR \"child\"[All Fields] OR \"children\"[All Fields] OR \"child s\"[All Fields] OR \"children s\"[All Fields] OR \"childrens\"[All Fields] OR \"childs\"[All Fields] OR (\"child\"[MeSH Terms] OR \"child\"[All Fields] OR \"children\"[All Fields] OR \"child s\"[All Fields] OR \"children s\"[All Fields] OR \"childrens\"[All Fields] OR \"childs\"[All Fields]) OR (\"paediatrics\"[All Fields] OR \"pediatrics\"[MeSH Terms] OR \"pediatrics\"[All Fields] OR \"paediatric\"[All Fields] OR \"pediatric\"[All Fields])) AND (\"randomized controlled trial\"[Publication Type] OR \"randomized controlled trials as topic\"[MeSH Terms] OR \"randomized controlled trial\"[All Fields] OR \"randomised controlled trial\"[All Fields] OR (\"meta analysis\"[Publication Type] OR \"meta analysis as topic\"[MeSH Terms] OR \"meta analysis\"[All Fields]) OR (\"systematic review\"[Publication Type] OR \"systematic reviews as topic\"[MeSH Terms] OR \"systematic review\"[All Fields]))"
+      },
+      {
+        "query": "(melatonin) AND (sleep) AND (child OR children OR pediatric OR school-age) AND (efficacy OR effectiveness OR safety OR adverse effects OR side effects)",
+        "strategy": "Search focusing on both efficacy and safety profile of melatonin in school-age children",
+        "total_hits": 797,
+        "returned": [
+          "31207606",
+          "36235587",
+          "41475385",
+          "23691095",
+          "36179487",
+          "30311830",
+          "38302207",
+          "28875581",
+          "26223759",
+          "25535358",
+          "29096777",
+          "25779601",
+          "35120753",
+          "28607474",
+          "31638842",
+          "29318587",
+          "31982581",
+          "30132686",
+          "23040905",
+          "33540815",
+          "40278958",
+          "36603513",
+          "39853578",
+          "36239049",
+          "31722088"
+        ],
+        "querytranslation": "(\"melatonin\"[Supplementary Concept] OR \"melatonin\"[All Fields] OR \"melatonin\"[MeSH Terms] OR \"melatonin s\"[All Fields] OR \"melatonine\"[All Fields] OR \"melatonins\"[All Fields]) AND (\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep s\"[All Fields]) AND (\"child\"[MeSH Terms] OR \"child\"[All Fields] OR \"children\"[All Fields] OR \"child s\"[All Fields] OR \"children s\"[All Fields] OR \"childrens\"[All Fields] OR \"childs\"[All Fields] OR (\"child\"[MeSH Terms] OR \"child\"[All Fields] OR \"children\"[All Fields] OR \"child s\"[All Fields] OR \"children s\"[All Fields] OR \"childrens\"[All Fields] OR \"childs\"[All Fields]) OR (\"paediatrics\"[All Fields] OR \"pediatrics\"[MeSH Terms] OR \"pediatrics\"[All Fields] OR \"paediatric\"[All Fields] OR \"pediatric\"[All Fields]) OR \"school-age\"[All Fields]) AND (\"efficacies\"[All Fields] OR \"efficacious\"[All Fields] OR \"efficaciously\"[All Fields] OR \"efficaciousness\"[All Fields] OR \"efficacy\"[All Fields] OR (\"effect\"[All Fields] OR \"effecting\"[All Fields] OR \"effective\"[All Fields] OR \"effectively\"[All Fields] OR \"effectiveness\"[All Fields] OR \"effectivenesses\"[All Fields] OR \"effectives\"[All Fields] OR \"effectivities\"[All Fields] OR \"effectivity\"[All Fields] OR \"effects\"[All Fields]) OR (\"safety\"[MeSH Terms] OR \"safety\"[All Fields] OR \"safeties\"[All Fields]) OR (\"adverse effects\"[MeSH Subheading] OR (\"adverse\"[All Fields] AND \"effects\"[All Fields]) OR \"adverse effects\"[All Fields]) OR (\"adverse effects\"[MeSH Subheading] OR (\"adverse\"[All Fields] AND \"effects\"[All Fields]) OR \"adverse effects\"[All Fields] OR (\"side\"[All Fields] AND \"effects\"[All Fields]) OR \"side effects\"[All Fields]))"
+      },
+      {
+        "query": "(melatonin supplementation OR melatonin gummies OR exogenous melatonin) AND (sleep latency OR bedtime OR sleep quality OR sleep duration) AND (healthy children OR typically developing children) AND (review OR trial)",
+        "strategy": "Specific search for melatonin supplementation effects in otherwise healthy children without neurodevelopmental conditions",
+        "total_hits": 9,
+        "returned": [
+          "33540815",
+          "9566656",
+          "15043687",
+          "29654045",
+          "11061525",
+          "32352572",
+          "34167809",
+          "41481289",
+          "18020480"
+        ],
+        "querytranslation": "(((\"melatonin\"[Supplementary Concept] OR \"melatonin\"[All Fields] OR \"melatonin\"[MeSH Terms] OR \"melatonin s\"[All Fields] OR \"melatonine\"[All Fields] OR \"melatonins\"[All Fields]) AND (\"supplemental\"[All Fields] OR \"supplementating\"[All Fields] OR \"supplementation\"[All Fields] OR \"supplementation s\"[All Fields] OR \"supplementations\"[All Fields] OR \"supplemention\"[All Fields])) OR ((\"melatonin\"[Supplementary Concept] OR \"melatonin\"[All Fields] OR \"melatonin\"[MeSH Terms] OR \"melatonin s\"[All Fields] OR \"melatonine\"[All Fields] OR \"melatonins\"[All Fields]) AND (\"gummies\"[All Fields] OR \"gummy\"[All Fields])) OR ((\"exogeneous\"[All Fields] OR \"exogeneously\"[All Fields] OR \"exogenic\"[All Fields] OR \"exogenous\"[All Fields] OR \"exogenously\"[All Fields]) AND (\"melatonin\"[Supplementary Concept] OR \"melatonin\"[All Fields] OR \"melatonin\"[MeSH Terms] OR \"melatonin s\"[All Fields] OR \"melatonine\"[All Fields] OR \"melatonins\"[All Fields]))) AND (\"sleep latency\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"latency\"[All Fields]) OR \"sleep latency\"[All Fields] OR (\"bedtime\"[All Fields] OR \"bedtimes\"[All Fields]) OR (\"sleep quality\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"quality\"[All Fields]) OR \"sleep quality\"[All Fields]) OR (\"sleep duration\"[MeSH Terms] OR (\"sleep\"[All Fields] AND \"duration\"[All Fields]) OR \"sleep duration\"[All Fields])) AND (((\"healthies\"[All Fields] OR \"healthy\"[All Fields]) AND (\"child\"[MeSH Terms] OR \"child\"[All Fields] OR \"children\"[All Fields] OR \"child s\"[All Fields] OR \"children s\"[All Fields] OR \"childrens\"[All Fields] OR \"childs\"[All Fields])) OR ((\"typical\"[All Fields] OR \"typically\"[All Fields] OR \"typicals\"[All Fields]) AND (\"develop\"[All Fields] OR \"develope\"[All Fields] OR \"developed\"[All Fields] OR \"developer\"[All Fields] OR \"developer s\"[All Fields] OR \"developers\"[All Fields] OR \"developing\"[All Fields] OR \"developments\"[All Fields] OR \"develops\"[All Fields] OR \"growth and development\"[MeSH Subheading] OR (\"growth\"[All Fields] AND \"development\"[All Fields]) OR \"growth and development\"[All Fields] OR \"development\"[All Fields]) AND (\"child\"[MeSH Terms] OR \"child\"[All Fields] OR \"children\"[All Fields] OR \"child s\"[All Fields] OR \"children s\"[All Fields] OR \"childrens\"[All Fields] OR \"childs\"[All Fields]))) AND (\"review\"[Publication Type] OR \"review literature as topic\"[MeSH Terms] OR \"review\"[All Fields] OR (\"clinical trials as topic\"[MeSH Terms] OR (\"clinical\"[All Fields] AND \"trials\"[All Fields] AND \"topic\"[All Fields]) OR \"clinical trials as topic\"[All Fields] OR \"trial\"[All Fields] OR \"trial s\"[All Fields] OR \"trialed\"[All Fields] OR \"trialing\"[All Fields] OR \"trials\"[All Fields]))"
+      }
+    ],
+    "candidate_pool": [
+      {
+        "pmid": "33540815",
+        "title": "Melatonin: From Pharmacokinetics to Clinical Use in Autism Spectrum Disorder.",
+        "year": 2021,
+        "score": 16,
+        "overlap": 3,
+        "strategy_idx": [
+          0,
+          2,
+          3
+        ],
+        "positions": [
+          18,
+          20,
+          1
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "28875581",
+        "title": "European guideline for the diagnosis and treatment of insomnia.",
+        "year": 2017,
+        "score": 14,
+        "overlap": 3,
+        "strategy_idx": [
+          0,
+          1,
+          2
+        ],
+        "positions": [
+          13,
+          3,
+          8
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Practice Guideline"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "31982581",
+        "title": "Sleep, Growth, and Puberty After 2 Years of Prolonged-Release Melatonin in Children With Autism Spectrum Disorder.",
+        "year": 2021,
+        "score": 13,
+        "overlap": 3,
+        "strategy_idx": [
+          0,
+          1,
+          2
+        ],
+        "positions": [
+          4,
+          8,
+          17
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Research Support, N.I.H., Extramural"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "36179487",
+        "title": "Efficacy of melatonin for chronic insomnia: Systematic reviews and meta-analyses.",
+        "year": 2022,
+        "score": 13,
+        "overlap": 3,
+        "strategy_idx": [
+          0,
+          1,
+          2
+        ],
+        "positions": [
+          10,
+          4,
+          5
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis",
+          "Research Support, Non-U.S. Gov't",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "31207606",
+        "title": "Sleep deficiency and chronic pain: potential underlying mechanisms and clinical implications.",
+        "year": 2020,
+        "score": 12,
+        "overlap": 2,
+        "strategy_idx": [
+          0,
+          2
+        ],
+        "positions": [
+          8,
+          1
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Research Support, N.I.H., Extramural",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "35120753",
+        "title": "[Therapeutic approaches for sleep and rhythms disorders in children with ASD].",
+        "year": 2022,
+        "score": 12,
+        "overlap": 3,
+        "strategy_idx": [
+          0,
+          1,
+          2
+        ],
+        "positions": [
+          21,
+          5,
+          13
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "29096777",
+        "title": "Efficacy and Safety of Pediatric Prolonged-Release Melatonin for Insomnia in Children With Autism Spectrum Disorder.",
+        "year": 2017,
+        "score": 12,
+        "overlap": 3,
+        "strategy_idx": [
+          0,
+          1,
+          2
+        ],
+        "positions": [
+          23,
+          11,
+          11
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "23691095",
+        "title": "Meta-analysis: melatonin for the treatment of primary sleep disorders.",
+        "year": 2013,
+        "score": 12,
+        "overlap": 2,
+        "strategy_idx": [
+          1,
+          2
+        ],
+        "positions": [
+          2,
+          4
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis",
+          "Research Support, N.I.H., Extramural",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "29318587",
+        "title": "New perspectives on the role of melatonin in human sleep, circadian rhythms and their regulation.",
+        "year": 2018,
+        "score": 10,
+        "overlap": 2,
+        "strategy_idx": [
+          0,
+          2
+        ],
+        "positions": [
+          3,
+          16
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "38625388",
+        "title": "European expert guidance on management of sleep onset insomnia and melatonin use in typically developing children.",
+        "year": 2024,
+        "score": 8,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          1
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Practice Guideline",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "31638842",
+        "title": "Pharmacotherapeutic management of sleep disorders in children with neurodevelopmental disorders.",
+        "year": 2019,
+        "score": 8,
+        "overlap": 2,
+        "strategy_idx": [
+          0,
+          2
+        ],
+        "positions": [
+          5,
+          15
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "36603513",
+        "title": "Sleep interventions for children with attention deficit hyperactivity disorder (ADHD): A systematic literature review.",
+        "year": 2023,
+        "score": 8,
+        "overlap": 2,
+        "strategy_idx": [
+          0,
+          2
+        ],
+        "positions": [
+          7,
+          22
+        ],
+        "publication_types": [
+          "Systematic Review",
+          "Journal Article",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "30311830",
+        "title": "Systematic review of light exposure impact on human circadian rhythm.",
+        "year": 2019,
+        "score": 8,
+        "overlap": 2,
+        "strategy_idx": [
+          0,
+          2
+        ],
+        "positions": [
+          9,
+          6
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Research Support, Non-U.S. Gov't",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "38302207",
+        "title": "Autism Spectrum Disorder and Sleep.",
+        "year": 2024,
+        "score": 8,
+        "overlap": 2,
+        "strategy_idx": [
+          0,
+          2
+        ],
+        "positions": [
+          11,
+          7
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "38738544",
+        "title": "The management of sleep disturbances in children with attention-deficit/hyperactivity disorder (ADHD): an update of the literature.",
+        "year": 2024,
+        "score": 8,
+        "overlap": 2,
+        "strategy_idx": [
+          0,
+          1
+        ],
+        "positions": [
+          12,
+          12
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "31722088",
+        "title": "Adverse Events Associated with Melatonin for the Treatment of Primary or Secondary Sleep Disorders: A Systematic Review.",
+        "year": 2019,
+        "score": 8,
+        "overlap": 2,
+        "strategy_idx": [
+          0,
+          2
+        ],
+        "positions": [
+          14,
+          25
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "40768003",
+        "title": "Factors influencing the effect of melatonin on sleep quality in children with autism spectrum disorder: a systematic review and meta-analysis.",
+        "year": 2025,
+        "score": 8,
+        "overlap": 2,
+        "strategy_idx": [
+          0,
+          1
+        ],
+        "positions": [
+          16,
+          7
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review",
+          "Meta-Analysis",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "25535358",
+        "title": "Evening use of light-emitting eReaders negatively affects sleep, circadian timing, and next-morning alertness.",
+        "year": 2015,
+        "score": 8,
+        "overlap": 2,
+        "strategy_idx": [
+          0,
+          2
+        ],
+        "positions": [
+          17,
+          10
+        ],
+        "publication_types": [
+          "Clinical Trial",
+          "Journal Article",
+          "Research Support, N.I.H., Extramural",
+          "Research Support, Non-U.S. Gov't",
+          "Research Support, U.S. Gov't, Non-P.H.S."
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "37950776",
+        "title": "Comparing the Effectiveness of Physical Exercise Intervention and Melatonin Supplement in Improving Sleep Quality in Children with ASD.",
+        "year": 2024,
+        "score": 8,
+        "overlap": 2,
+        "strategy_idx": [
+          0,
+          1
+        ],
+        "positions": [
+          22,
+          16
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Comparative Study"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "35843245",
+        "title": "Comparative effects of pharmacological interventions for the acute and long-term management of insomnia disorder in adults: a systematic review and network meta-analysis.",
+        "year": 2022,
+        "score": 8,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          1
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Network Meta-Analysis",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "30132686",
+        "title": "Long-Term Efficacy and Safety of Pediatric Prolonged-Release Melatonin for Insomnia in Children with Autism Spectrum Disorder.",
+        "year": 2018,
+        "score": 8,
+        "overlap": 2,
+        "strategy_idx": [
+          1,
+          2
+        ],
+        "positions": [
+          9,
+          18
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "39923609",
+        "title": "Melatonin use in typically developing (TD) children: International Pediatric Sleep Association (IPSA) Expert Consensus Recommendations for Healthcare Providers.",
+        "year": 2025,
+        "score": 7,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          2
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Practice Guideline",
+          "Consensus Statement"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "36235587",
+        "title": "Is Melatonin the \"Next Vitamin D\"?: A Review of Emerging Science, Clinical Uses, Safety, and Dietary Supplements.",
+        "year": 2022,
+        "score": 7,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          2
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "9566656",
+        "title": "Sleep dysfunction in Rett syndrome: a trial of exogenous melatonin treatment.",
+        "year": 1998,
+        "score": 7,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          2
+        ],
+        "publication_types": [
+          "Clinical Trial",
+          "Comparative Study",
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "41475385",
+        "title": "Pediatric Insomnia.",
+        "year": 2026,
+        "score": 6,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          3
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "15043687",
+        "title": "Blood pressure response to melatonin in type 1 diabetes.",
+        "year": 2004,
+        "score": 6,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          3
+        ],
+        "publication_types": [
+          "Clinical Trial",
+          "Comparative Study",
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Research Support, Non-U.S. Gov't",
+          "Research Support, U.S. Gov't, P.H.S."
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "29654045",
+        "title": "Study protocol for a randomised controlled trial examining the association between physical activity and sleep quality in children with autism spectrum disorder based on the melatonin-mediated mechanism model.",
+        "year": 2018,
+        "score": 5,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          4
+        ],
+        "publication_types": [
+          "Clinical Trial Protocol",
+          "Journal Article",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "30710339",
+        "title": "Oral melatonin for non-respiratory sleep disturbance in children with neurodisabilities: systematic review and meta-analyses.",
+        "year": 2019,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          6
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis",
+          "Research Support, Non-U.S. Gov't",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "42560676",
+        "title": "Melatonin Use and Polysomnographic Sleep Architecture in Children.",
+        "year": 2026,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          15
+        ],
+        "publication_types": [
+          "Journal Article"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "29720494",
+        "title": "Melatonin for the management of sleep problems in children with neurodevelopmental disorders: a systematic review and meta-analysis.",
+        "year": 2018,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          19
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "31982807",
+        "title": "Efficacy and safety of melatonin for sleep onset insomnia in children and adolescents: a meta-analysis of randomized controlled trials.",
+        "year": 2020,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          20
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "39524005",
+        "title": "Research progress on melatonin, 5-HT, and orexin in sleep disorders of children with autism spectrum disorder.",
+        "year": 2025,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          24
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "23696337",
+        "title": "[Disturbed sleep in children with ADHD: is there a place for melatonin as a treatment option?].",
+        "year": 2013,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          25
+        ],
+        "publication_types": [
+          "English Abstract",
+          "Journal Article",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "33164742",
+        "title": "Behavioral and psychological treatments for chronic insomnia disorder in adults: an American Academy of Sleep Medicine clinical practice guideline.",
+        "year": 2021,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          6
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Practice Guideline",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "33164741",
+        "title": "Behavioral and psychological treatments for chronic insomnia disorder in adults: an American Academy of Sleep Medicine systematic review, meta-analysis, and GRADE assessment.",
+        "year": 2021,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          10
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis",
+          "Research Support, Non-U.S. Gov't",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "38442500",
+        "title": "The impact of the physical activity intervention on sleep in children and adolescents with autism spectrum disorder: A systematic review and meta-analysis.",
+        "year": 2024,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          13
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "39923608",
+        "title": "Clinical practice guidelines for switching or deprescribing hypnotic medications for chronic insomnia: Results of European neuropsychopharmacology and sleep expert's consensus group.",
+        "year": 2025,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          14
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review",
+          "Practice Guideline"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "32051244",
+        "title": "Practice guideline: Treatment for insomnia and disrupted sleep behavior in children and adolescents with autism spectrum disorder: Report of the Guideline Development, Dissemination, and Implementation Subcommittee of the American Academy of Neurology.",
+        "year": 2020,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          15
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Practice Guideline",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "24050742",
+        "title": "Melatonin in autism spectrum disorders.",
+        "year": 2014,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          17
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "36446459",
+        "title": "Melatonin for sleep disorders in children with neurodevelopmental disorders: protocol for a systematic review with meta-analysis and Trial Sequential Analysis of randomised clinical trials.",
+        "year": 2022,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          18
+        ],
+        "publication_types": [
+          "Clinical Trial Protocol",
+          "Journal Article"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "19567841",
+        "title": "Melatonin for primary insomnia?",
+        "year": 2009,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          19
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "36612875",
+        "title": "Efficacy of Liposomal Melatonin in sleep EEG in Childhood: A Double Blind Case Control Study.",
+        "year": 2022,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          20
+        ],
+        "publication_types": [
+          "Randomized Controlled Trial",
+          "Journal Article",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "25862116",
+        "title": "Melatonin improves sleep in children with epilepsy: a randomized, double-blind, crossover study.",
+        "year": 2015,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          21
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Research Support, N.I.H., Extramural",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "27409075",
+        "title": "Proceedings of the 3rd IPLeiria's International Health Congress : Leiria, Portugal. 6-7 May 2016.",
+        "year": 2016,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          22
+        ],
+        "publication_types": [
+          "Journal Article"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "26055866",
+        "title": "Melatonin Treatment in Children with Developmental Disabilities.",
+        "year": 2015,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          23
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Research Support, N.I.H., Extramural",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "28258648",
+        "title": "Effectiveness of Sleep-Based Interventions for Children with Autism Spectrum Disorder: A Meta-Synthesis.",
+        "year": 2017,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          24
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "36562403",
+        "title": "Adverse events in long-term studies of exogenous melatonin.",
+        "year": 2022,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          25
+        ],
+        "publication_types": [
+          "Review",
+          "Journal Article"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "26223759",
+        "title": "Safety of melatonin.",
+        "year": 2015,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          9
+        ],
+        "publication_types": [
+          "Letter",
+          "Comment"
+        ],
+        "has_abstract": false
+      },
+      {
+        "pmid": "25779601",
+        "title": "Paediatric use of melatonin.",
+        "year": 2015,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          12
+        ],
+        "publication_types": [
+          "Letter",
+          "Comment"
+        ],
+        "has_abstract": false
+      },
+      {
+        "pmid": "28607474",
+        "title": "Irregular sleep/wake patterns are associated with poorer academic performance and delayed circadian and sleep/wake timing.",
+        "year": 2017,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          14
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Research Support, N.I.H., Extramural",
+          "Research Support, U.S. Gov't, Non-P.H.S."
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "23040905",
+        "title": "Pediatric sleep pharmacology.",
+        "year": 2012,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          19
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "40278958",
+        "title": "Melatonin supplementation: new insights into health and disease.",
+        "year": 2025,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          21
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "39853578",
+        "title": "Nutraceuticals and Headache 2024: Riboflavin, Coenzyme Q10, Feverfew, Magnesium, Melatonin, and Butterbur.",
+        "year": 2025,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          23
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "36239049",
+        "title": "Health advisory: melatonin use in children.",
+        "year": 2023,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          24
+        ],
+        "publication_types": [
+          "Journal Article"
+        ],
+        "has_abstract": false
+      },
+      {
+        "pmid": "11061525",
+        "title": "High nocturnal melatonin in adolescents with chronic fatigue syndrome.",
+        "year": 2000,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          5
+        ],
+        "publication_types": [
+          "Clinical Trial",
+          "Journal Article",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "32352572",
+        "title": "Endogenous Melatonin Levels and Therapeutic Use of Exogenous Melatonin in Migraine: Systematic Review and Meta-Analysis.",
+        "year": 2020,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          6
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "34167809",
+        "title": "Endogenous melatonin levels and therapeutic use of exogenous melatonin in tension type headache: A systematic review.",
+        "year": 2021,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          7
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "41481289",
+        "title": "Melatonin Use in Young Children: A Systematic Review.",
+        "year": 2026,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          8
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "18020480",
+        "title": "Role of the melatonin system in the control of sleep: therapeutic implications.",
+        "year": 2007,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          9
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "has_abstract": true
+      }
+    ],
+    "timings": {
+      "query_generation_s": 6.63,
+      "retrieval_s": 5.14,
+      "translation_s": 21.58,
+      "synthesis_s": 24.55,
+      "synthesis_first_token_s": 1.92,
+      "total_s": 57.89
+    },
+    "usage": {
+      "search": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 346,
+        "output_tokens": 257,
+        "output_tokens_details": null,
+        "server_tool_use": null,
+        "service_tier": "standard"
+      },
+      "summary": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 2285,
+        "output_tokens": 1011,
+        "output_tokens_details": null,
+        "server_tool_use": null,
+        "service_tier": "standard"
+      },
+      "synthesis": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 7111,
+        "output_tokens": 878,
+        "output_tokens_details": null,
+        "server_tool_use": null,
+        "service_tier": "standard"
+      }
+    },
+    "synthesis_stop_reason": "end_turn",
+    "served_model": "claude-opus-4-6"
+  },
+  "run": {
+    "question_id": "Q1",
+    "replicate": 1,
+    "route": "worker:https://tables-turned-api.jethomasphd.workers.dev",
+    "captured_at": "2026-09-28T23:37:26Z"
+  }
+}

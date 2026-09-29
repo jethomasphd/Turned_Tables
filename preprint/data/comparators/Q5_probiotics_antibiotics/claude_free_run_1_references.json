@@ -1,0 +1,55 @@
+{
+  "extracted_by": "claude-sonnet-5-5",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 1426,
+    "output_tokens": 737,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "extracted_at": "2026-09-28T23:50:42Z",
+  "references": [
+    {
+      "raw": "Guo Q, Goldenberg JZ, Humphrey C, El Dib R, Johnston BC. Probiotics for the prevention of pediatric antibiotic-associated diarrhea. Cochrane Database of Systematic Reviews. 2019;4:CD004827. PMID: 31039287 (fairly confident)",
+      "authors": "Guo Q, Goldenberg JZ, Humphrey C, El Dib R, Johnston BC",
+      "first_author_surname": "Guo",
+      "year": "2019",
+      "title": "Probiotics for the prevention of pediatric antibiotic-associated diarrhea",
+      "journal": "Cochrane Database of Systematic Reviews",
+      "pmid": "31039287",
+      "doi": "",
+      "kind": "journal_article"
+    },
+    {
+      "raw": "Szajewska H, Canani RB, Guarino A, et al. Probiotics for the prevention of antibiotic-associated diarrhea in children. Journal of Pediatric Gastroenterology and Nutrition. 2016;62(3):495-506. PMID: 26756877 (fairly confident)",
+      "authors": "Szajewska H, Canani RB, Guarino A, et al.",
+      "first_author_surname": "Szajewska",
+      "year": "2016",
+      "title": "Probiotics for the prevention of antibiotic-associated diarrhea in children",
+      "journal": "Journal of Pediatric Gastroenterology and Nutrition",
+      "pmid": "26756877",
+      "doi": "",
+      "kind": "guideline_or_org_statement"
+    },
+    {
+      "raw": "Su GL, Ko CW, Bercik P, et al. AGA Clinical Practice Guidelines on the Role of Probiotics in the Management of Gastrointestinal Disorders. Gastroenterology. 2020;159(2):697-705. PMID: 32531291 (fairly confident)",
+      "authors": "Su GL, Ko CW, Bercik P, et al.",
+      "first_author_surname": "Su",
+      "year": "2020",
+      "title": "AGA Clinical Practice Guidelines on the Role of Probiotics in the Management of Gastrointestinal Disorders",
+      "journal": "Gastroenterology",
+      "pmid": "32531291",
+      "doi": "",
+      "kind": "guideline_or_org_statement"
+    }
+  ]
+}

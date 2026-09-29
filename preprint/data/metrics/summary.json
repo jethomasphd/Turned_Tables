@@ -1,0 +1,623 @@
+{
+  "questions": [
+    {
+      "id": "Q1",
+      "question": "Does melatonin help kids sleep?",
+      "context": "My 7-year-old has trouble falling asleep. Deciding whether to try melatonin gummies before school starts.",
+      "topic": "Pediatric supplement"
+    },
+    {
+      "id": "Q2",
+      "question": "Is Ozempic safe?",
+      "context": "My doctor suggested semaglutide for weight loss and I want to understand the risks before I start.",
+      "topic": "Prescription drug"
+    },
+    {
+      "id": "Q3",
+      "question": "Does vitamin D prevent colds?",
+      "context": "Deciding whether to give my family vitamin D supplements this winter.",
+      "topic": "Prevention supplement"
+    },
+    {
+      "id": "Q4",
+      "question": "Is intermittent fasting better than regular dieting for losing weight?",
+      "context": "Choosing a diet plan to lose about 20 pounds this year.",
+      "topic": "Diet"
+    },
+    {
+      "id": "Q5",
+      "question": "Do probiotics prevent diarrhea from antibiotics?",
+      "context": "My child was just prescribed amoxicillin and I'm wondering whether to give a probiotic too.",
+      "topic": "Pediatric supplement"
+    },
+    {
+      "id": "Q6",
+      "question": "Does apple cider vinegar help with weight loss?",
+      "context": "Seen it all over social media; deciding whether it is worth buying.",
+      "topic": "Wellness trend"
+    }
+  ],
+  "arms": {
+    "tables_turned": {
+      "n_runs": 6,
+      "claims": 88,
+      "cited": 59,
+      "pct_cited": 67.0,
+      "supported": 33,
+      "partial": 24,
+      "not_supported": 2,
+      "fkgl_mean": 10.1,
+      "fkgl_range": [
+        8.68,
+        10.9
+      ],
+      "words_mean": 367,
+      "latency_median_s": 59.2,
+      "cost_mean_usd": 0.112,
+      "sources_mean": 7.5,
+      "pct_supported_of_cited": 55.9,
+      "pct_partial_of_cited": 40.7,
+      "pct_not_supported_of_cited": 3.4,
+      "findings_supported": 27,
+      "findings_partial": 22,
+      "findings_not_supported": 0,
+      "findings_claims": 54,
+      "findings_cited": 49,
+      "findings_pct_cited": 90.7
+    },
+    "ai_overview_model": {
+      "n_runs": 6,
+      "claims": 33,
+      "cited": 33,
+      "pct_cited": 100.0,
+      "supported": 20,
+      "partial": 12,
+      "not_supported": 1,
+      "fkgl_mean": 8.2,
+      "fkgl_range": [
+        6.99,
+        10.43
+      ],
+      "words_mean": 164,
+      "latency_median_s": 6.4,
+      "cost_mean_usd": 0.045,
+      "sources_mean": 5,
+      "pct_supported_of_cited": 60.6,
+      "pct_partial_of_cited": 36.4,
+      "pct_not_supported_of_cited": 3.0
+    },
+    "claude_free": {
+      "n_runs": 6,
+      "claims": 121,
+      "cited": 0,
+      "pct_cited": 0.0,
+      "supported": 0,
+      "partial": 0,
+      "not_supported": 0,
+      "fkgl_mean": 7.5,
+      "fkgl_range": [
+        6.05,
+        9.43
+      ],
+      "words_mean": 361,
+      "latency_median_s": 11.0,
+      "cost_mean_usd": 0.012,
+      "sources_mean": 6.7,
+      "pct_supported_of_cited": null,
+      "pct_partial_of_cited": null,
+      "pct_not_supported_of_cited": null
+    }
+  },
+  "tt_integrity": {
+    "runs": 8,
+    "cited_pmids": 59,
+    "resolved": 59,
+    "in_corpus": 59,
+    "out_of_corpus": 0,
+    "unwitnessed_markers": 1,
+    "retracted_in_corpus": 0,
+    "corpus_coverage_mean": 0.615
+  },
+  "telemetry": [
+    {
+      "qid": "Q1",
+      "n_strategies": 4,
+      "hits_per_strategy": [
+        1199,
+        125,
+        797,
+        9
+      ],
+      "hits_total": 2130,
+      "pool": 59,
+      "top12_multi_strategy": 11,
+      "score_range": [
+        8,
+        16
+      ],
+      "ties_at_cutoff": 12,
+      "cited": 9,
+      "coverage": 0.75,
+      "unwitnessed": 1,
+      "designs_top12": {
+        "Narrative review": 4,
+        "Guideline / consensus": 2,
+        "Randomized trial": 3,
+        "Systematic review / meta-analysis": 3
+      },
+      "timings": {
+        "query_generation_s": 6.63,
+        "retrieval_s": 5.14,
+        "translation_s": 21.58,
+        "synthesis_s": 24.55,
+        "synthesis_first_token_s": 1.92,
+        "total_s": 57.89
+      },
+      "tokens_in": 9742,
+      "tokens_out": 2146,
+      "cost_usd": 0.1024,
+      "queries": [
+        "melatonin sleep children",
+        "(melatonin OR exogenous melatonin) AND (sleep initiation disorders OR sleep onset latency OR insomnia) AND (child OR children OR pediatric) AND (randomized controlled trial OR meta-analysis OR systematic review)",
+        "(melatonin) AND (sleep) AND (child OR children OR pediatric OR school-age) AND (efficacy OR effectiveness OR safety OR adverse effects OR side effects)",
+        "(melatonin supplementation OR melatonin gummies OR exogenous melatonin) AND (sleep latency OR bedtime OR sleep quality OR sleep duration) AND (healthy children OR typically developing children) AND (review OR trial)"
+      ]
+    },
+    {
+      "qid": "Q2",
+      "n_strategies": 4,
+      "hits_per_strategy": [
+        620,
+        1843,
+        291,
+        1194
+      ],
+      "hits_total": 3948,
+      "pool": 52,
+      "top12_multi_strategy": 12,
+      "score_range": [
+        12,
+        21
+      ],
+      "ties_at_cutoff": 8,
+      "cited": 8,
+      "coverage": 0.667,
+      "unwitnessed": 0,
+      "designs_top12": {
+        "Systematic review / meta-analysis": 2,
+        "Randomized trial": 8,
+        "Narrative review": 2
+      },
+      "timings": {
+        "query_generation_s": 7.49,
+        "retrieval_s": 5.48,
+        "translation_s": 24.9,
+        "synthesis_s": 24.54,
+        "synthesis_first_token_s": 1.86,
+        "total_s": 62.43
+      },
+      "tokens_in": 12904,
+      "tokens_out": 2397,
+      "cost_usd": 0.1244,
+      "queries": [
+        "semaglutide safety weight loss",
+        "(semaglutide OR Ozempic OR Wegovy) AND (safety OR adverse effects OR side effects OR tolerability) AND (obesity OR overweight OR weight loss OR weight management)",
+        "(semaglutide OR Ozempic OR Wegovy) AND (adverse effects OR drug-related side effects OR risk) AND (obesity OR overweight) AND (randomized controlled trial[pt] OR systematic review[pt] OR meta-analysis[pt])",
+        "(semaglutide) AND (pancreatitis OR thyroid cancer OR gallbladder OR gastroparesis OR cardiovascular OR suicidal ideation OR kidney OR nausea OR gastrointestinal) AND (obesity OR weight) AND (safety OR adverse)"
+      ]
+    },
+    {
+      "qid": "Q3",
+      "n_strategies": 4,
+      "hits_per_strategy": [
+        11,
+        905,
+        364,
+        51
+      ],
+      "hits_total": 1331,
+      "pool": 72,
+      "top12_multi_strategy": 9,
+      "score_range": [
+        6,
+        19
+      ],
+      "ties_at_cutoff": 1,
+      "cited": 7,
+      "coverage": 0.583,
+      "unwitnessed": 0,
+      "designs_top12": {
+        "Systematic review / meta-analysis": 8,
+        "Randomized trial": 2,
+        "Guideline / consensus": 1,
+        "Other / not typed": 1
+      },
+      "timings": {
+        "query_generation_s": 6.67,
+        "retrieval_s": 6.15,
+        "translation_s": 23.31,
+        "synthesis_s": 23.34,
+        "synthesis_first_token_s": 1.92,
+        "total_s": 59.46
+      },
+      "tokens_in": 11671,
+      "tokens_out": 2168,
+      "cost_usd": 0.1126,
+      "queries": [
+        "vitamin D supplementation common cold prevention",
+        "(vitamin D OR cholecalciferol OR calcifediol) AND (respiratory tract infection OR common cold OR upper respiratory infection OR URTI) AND (prevention OR prophylaxis)",
+        "(vitamin D OR cholecalciferol) AND (acute respiratory tract infection OR common cold OR influenza OR upper respiratory infection) AND (randomized controlled trial[pt] OR meta-analysis[pt] OR systematic review[pt])",
+        "(\"Vitamin D\"[MeSH] OR \"Cholecalciferol\"[MeSH]) AND (\"Respiratory Tract Infections\"[MeSH] OR \"Common Cold\"[MeSH]) AND (\"Dietary Supplements\"[MeSH] OR supplementation) AND (\"Prevention and Control\"[Subheading] OR prevention) AND (systematic review[pt] OR meta-analysis[pt])"
+      ]
+    },
+    {
+      "qid": "Q4",
+      "n_strategies": 4,
+      "hits_per_strategy": [
+        751,
+        421,
+        451,
+        64
+      ],
+      "hits_total": 1687,
+      "pool": 73,
+      "top12_multi_strategy": 12,
+      "score_range": [
+        9,
+        24
+      ],
+      "ties_at_cutoff": 2,
+      "cited": 7,
+      "coverage": 0.583,
+      "unwitnessed": 0,
+      "designs_top12": {
+        "Systematic review / meta-analysis": 7,
+        "Randomized trial": 3,
+        "Other / not typed": 2
+      },
+      "timings": {
+        "query_generation_s": 7.74,
+        "retrieval_s": 7.51,
+        "translation_s": 25.82,
+        "synthesis_s": 25.7,
+        "synthesis_first_token_s": 2.87,
+        "total_s": 66.78
+      },
+      "tokens_in": 11121,
+      "tokens_out": 2367,
+      "cost_usd": 0.1148,
+      "queries": [
+        "intermittent fasting weight loss",
+        "(intermittent fasting OR time-restricted eating OR alternate day fasting OR 5:2 diet) AND (weight loss OR weight reduction OR body weight) AND (continuous energy restriction OR caloric restriction OR conventional diet) AND (comparison OR comparative)",
+        "(intermittent fasting OR time-restricted feeding OR alternate-day fasting) AND (weight loss OR body composition OR obesity) AND (randomized controlled trial[pt] OR meta-analysis[pt] OR systematic review[pt])",
+        "(\"intermittent fasting\"[MeSH] OR \"fasting\"[MeSH] OR time-restricted eating) AND (\"weight loss\"[MeSH] OR \"body weight\"[MeSH] OR \"obesity\"[MeSH]) AND (\"caloric restriction\"[MeSH] OR continuous energy restriction) AND (adherence OR sustainability OR long-term) AND (randomized controlled trial[pt] OR meta-analysis[pt])"
+      ]
+    },
+    {
+      "qid": "Q5",
+      "n_strategies": 4,
+      "hits_per_strategy": [
+        502,
+        89,
+        94,
+        12
+      ],
+      "hits_total": 697,
+      "pool": 61,
+      "top12_multi_strategy": 12,
+      "score_range": [
+        9,
+        22
+      ],
+      "ties_at_cutoff": 1,
+      "cited": 7,
+      "coverage": 0.583,
+      "unwitnessed": 0,
+      "designs_top12": {
+        "Systematic review / meta-analysis": 7,
+        "Narrative review": 2,
+        "Randomized trial": 3
+      },
+      "timings": {
+        "query_generation_s": 6.15,
+        "retrieval_s": 5.11,
+        "translation_s": 21.8,
+        "synthesis_s": 25.86,
+        "synthesis_first_token_s": 2.16,
+        "total_s": 58.92
+      },
+      "tokens_in": 15543,
+      "tokens_out": 2421,
+      "cost_usd": 0.1382,
+      "queries": [
+        "probiotics antibiotic-associated diarrhea prevention",
+        "(probiotics OR Lactobacillus OR Saccharomyces boulardii OR Bifidobacterium) AND (antibiotic-associated diarrhea OR AAD) AND (prevention OR prophylaxis) AND (systematic review OR meta-analysis)",
+        "(probiotics OR Lactobacillus OR Saccharomyces boulardii) AND (antibiotic-associated diarrhea) AND (child OR children OR pediatric OR paediatric) AND (randomized controlled trial OR RCT OR meta-analysis)",
+        "(probiotics) AND (amoxicillin OR penicillin OR beta-lactam) AND (diarrhea OR diarrhoea) AND (child OR pediatric) AND (prevention)"
+      ]
+    },
+    {
+      "qid": "Q6",
+      "n_strategies": 4,
+      "hits_per_strategy": [
+        11,
+        459,
+        621,
+        2
+      ],
+      "hits_total": 1093,
+      "pool": 58,
+      "top12_multi_strategy": 3,
+      "score_range": [
+        5,
+        26
+      ],
+      "ties_at_cutoff": 3,
+      "cited": 7,
+      "coverage": 0.583,
+      "unwitnessed": 0,
+      "designs_top12": {
+        "Systematic review / meta-analysis": 4,
+        "Randomized trial": 2,
+        "Other / not typed": 5,
+        "Narrative review": 1
+      },
+      "timings": {
+        "query_generation_s": 6.12,
+        "retrieval_s": 5.96,
+        "translation_s": 21.94,
+        "synthesis_s": 19.55,
+        "synthesis_first_token_s": 1.72,
+        "total_s": 53.57
+      },
+      "tokens_in": 6773,
+      "tokens_out": 1877,
+      "cost_usd": 0.0808,
+      "queries": [
+        "apple cider vinegar weight loss",
+        "(apple cider vinegar OR acetic acid) AND (weight loss OR body weight OR obesity OR body mass index OR BMI) AND (randomized controlled trial OR clinical trial OR meta-analysis)",
+        "(vinegar OR acetic acid) AND (body composition OR adiposity OR waist circumference OR body fat) AND (humans[MeSH])",
+        "(apple cider vinegar OR vinegar dietary supplement) AND (weight management OR anti-obesity OR appetite OR satiety) AND (systematic review OR meta-analysis)"
+      ]
+    }
+  ],
+  "telemetry_totals": {
+    "hits_median": 1509.0,
+    "hits_range": [
+      697,
+      3948
+    ],
+    "pool_median": 60.0,
+    "pool_range": [
+      52,
+      73
+    ],
+    "multi_strategy_share": 0.819,
+    "latency_median_s": 59.19,
+    "latency_range_s": [
+      53.57,
+      66.78
+    ],
+    "first_token_median_s": 1.92,
+    "cost_mean_usd": 0.112,
+    "stage_median_s": {
+      "query_generation_s": 6.65,
+      "retrieval_s": 5.720000000000001,
+      "translation_s": 22.625,
+      "synthesis_s": 24.545
+    }
+  },
+  "evidence": {
+    "tt_design": {
+      "Q1": {
+        "Systematic review / meta-analysis": 3,
+        "Guideline / consensus": 2,
+        "Randomized trial": 2,
+        "Narrative review": 2
+      },
+      "Q2": {
+        "Narrative review": 2,
+        "Randomized trial": 5,
+        "Systematic review / meta-analysis": 1
+      },
+      "Q3": {
+        "Systematic review / meta-analysis": 5,
+        "Guideline / consensus": 1,
+        "Other / not typed": 1
+      },
+      "Q4": {
+        "Systematic review / meta-analysis": 3,
+        "Randomized trial": 3,
+        "Other / not typed": 1
+      },
+      "Q5": {
+        "Systematic review / meta-analysis": 4,
+        "Randomized trial": 3
+      },
+      "Q6": {
+        "Systematic review / meta-analysis": 3,
+        "Randomized trial": 1,
+        "Other / not typed": 3
+      }
+    },
+    "tt_design_total": {
+      "Systematic review / meta-analysis": 19,
+      "Guideline / consensus": 3,
+      "Randomized trial": 14,
+      "Narrative review": 4,
+      "Other / not typed": 5
+    },
+    "tt_years_median": 2022,
+    "tt_share_2021plus": 0.733,
+    "ao_cited_class": {
+      "Q1": {
+        "Health media & nonprofits": 2,
+        "Academic / hospital": 1,
+        "Professional society": 1
+      },
+      "Q2": {
+        "News & other": 3,
+        "Academic / hospital": 1,
+        "Health media & nonprofits": 2
+      },
+      "Q3": {
+        "Health media & nonprofits": 1,
+        "Academic / hospital": 2,
+        "News & other": 1
+      },
+      "Q4": {
+        "Academic / hospital": 3,
+        "Health media & nonprofits": 2,
+        "News & other": 1
+      },
+      "Q5": {
+        "Peer-reviewed literature": 3,
+        "Academic / hospital": 1,
+        "Health media & nonprofits": 1
+      },
+      "Q6": {
+        "Health media & nonprofits": 1,
+        "Academic / hospital": 4
+      }
+    },
+    "ao_cited_class_total": {
+      "Health media & nonprofits": 9,
+      "Academic / hospital": 12,
+      "Professional society": 1,
+      "News & other": 5,
+      "Peer-reviewed literature": 3
+    },
+    "ao_retrieved_class_total": {
+      "Health media & nonprofits": 12,
+      "Academic / hospital": 19,
+      "Professional society": 2,
+      "Government / public health": 1,
+      "News & other": 12,
+      "Commercial / retail": 4,
+      "Peer-reviewed literature": 6
+    },
+    "ao_retrieved_total": 56,
+    "cf_status": {
+      "Q1": {
+        "verified": 7,
+        "non_article_source": 2
+      },
+      "Q2": {
+        "verified": 8,
+        "non_article_source": 2
+      },
+      "Q3": {
+        "verified": 3,
+        "locatable_no_title": 1,
+        "exists_paraphrased": 1,
+        "non_article_source": 3
+      },
+      "Q4": {
+        "verified": 4,
+        "locatable_no_title": 2
+      },
+      "Q5": {
+        "verified": 3
+      },
+      "Q6": {
+        "verified": 4
+      }
+    },
+    "cf_status_total": {
+      "verified": 29,
+      "non_article_source": 7,
+      "locatable_no_title": 3,
+      "exists_paraphrased": 1
+    },
+    "cf_years_median": 2019,
+    "cf_share_2021plus": 0.424,
+    "cf_pmid_status": {
+      "correct": 15
+    },
+    "cf_retracted": [
+      {
+        "qid": "Q6",
+        "title": "Apple cider vinegar for weight management in Lebanese adolescents and young adults with overweight and obesity: a randomised, double-blind, placebo-controlled study.",
+        "pmid": "38966098"
+      }
+    ],
+    "cf_declined_pmids_runs": 8,
+    "cf_runs": 8
+  },
+  "stability_Q1": {
+    "tt_top12_jaccard": 0.504,
+    "tt_top12_in_all_runs": 7,
+    "tt_cited_jaccard": 0.491,
+    "tt_cited_in_all_runs": 5,
+    "tt_identical_queries_first": true,
+    "cf_ref_pmid_jaccard": 0.481,
+    "cf_ref_in_all_runs": 4,
+    "ao_cited_jaccard": 0.867,
+    "ao_retrieved_jaccard": 1.0,
+    "tt_confidence": [
+      "Medium",
+      "Medium",
+      "Medium-High"
+    ]
+  },
+  "relevance": {
+    "counts": {
+      "directly_relevant": 47,
+      "tangential": 18,
+      "off_topic": 7
+    },
+    "n": 72,
+    "per_question": {
+      "Q1": {
+        "directly_relevant": 9,
+        "tangential": 2,
+        "off_topic": 1
+      },
+      "Q2": {
+        "directly_relevant": 8,
+        "tangential": 4
+      },
+      "Q3": {
+        "directly_relevant": 9,
+        "off_topic": 1,
+        "tangential": 2
+      },
+      "Q4": {
+        "directly_relevant": 7,
+        "tangential": 4,
+        "off_topic": 1
+      },
+      "Q5": {
+        "directly_relevant": 9,
+        "tangential": 3
+      },
+      "Q6": {
+        "directly_relevant": 5,
+        "tangential": 3,
+        "off_topic": 4
+      }
+    },
+    "off_topic_cited_primary": 0,
+    "off_topic_cited_all": [
+      {
+        "qid": "Q1",
+        "rep": 3,
+        "pmids": [
+          "25535358"
+        ]
+      }
+    ],
+    "cited_relevance": {
+      "directly_relevant": 39,
+      "tangential": 6
+    }
+  },
+  "manual_ai_overview": {},
+  "study_cost_usd": 2.57,
+  "pubmed_total": {
+    "count": 41216535,
+    "retrieved_at": "2026-09-29T00:08:44Z",
+    "query": "all[sb]"
+  },
+  "n_api_runs": 24
+}

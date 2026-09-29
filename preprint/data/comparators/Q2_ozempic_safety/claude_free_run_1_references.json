@@ -1,0 +1,132 @@
+{
+  "extracted_by": "claude-sonnet-5-5",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 1839,
+    "output_tokens": 1781,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "extracted_at": "2026-09-28T23:49:31Z",
+  "references": [
+    {
+      "raw": "Wilding JPH, et al. *Once-Weekly Semaglutide in Adults with Overweight or Obesity* (STEP 1). N Engl J Med. 2021. PMID: 33567185.",
+      "authors": "Wilding JPH, et al.",
+      "first_author_surname": "Wilding",
+      "year": "2021",
+      "title": "Once-Weekly Semaglutide in Adults with Overweight or Obesity",
+      "journal": "N Engl J Med",
+      "pmid": "33567185",
+      "doi": "",
+      "kind": "journal_article"
+    },
+    {
+      "raw": "Davies M, et al. *Semaglutide 2.4 mg once a week in adults with overweight or obesity, and type 2 diabetes* (STEP 2). Lancet. 2021. PMID: 33667417.",
+      "authors": "Davies M, et al.",
+      "first_author_surname": "Davies",
+      "year": "2021",
+      "title": "Semaglutide 2.4 mg once a week in adults with overweight or obesity, and type 2 diabetes",
+      "journal": "Lancet",
+      "pmid": "33667417",
+      "doi": "",
+      "kind": "journal_article"
+    },
+    {
+      "raw": "Wilding JPH, et al. *Weight regain and cardiometabolic effects after withdrawal of semaglutide: the STEP 1 trial extension.* Diabetes Obes Metab. 2022. PMID: 35441470.",
+      "authors": "Wilding JPH, et al.",
+      "first_author_surname": "Wilding",
+      "year": "2022",
+      "title": "Weight regain and cardiometabolic effects after withdrawal of semaglutide: the STEP 1 trial extension.",
+      "journal": "Diabetes Obes Metab",
+      "pmid": "35441470",
+      "doi": "",
+      "kind": "journal_article"
+    },
+    {
+      "raw": "Lincoff AM, et al. *Semaglutide and Cardiovascular Outcomes in Obesity without Diabetes* (SELECT). N Engl J Med. 2023. PMID: 37952131.",
+      "authors": "Lincoff AM, et al.",
+      "first_author_surname": "Lincoff",
+      "year": "2023",
+      "title": "Semaglutide and Cardiovascular Outcomes in Obesity without Diabetes",
+      "journal": "N Engl J Med",
+      "pmid": "37952131",
+      "doi": "",
+      "kind": "journal_article"
+    },
+    {
+      "raw": "Marso SP, et al. *Semaglutide and Cardiovascular Outcomes in Patients with Type 2 Diabetes* (SUSTAIN-6). N Engl J Med. 2016. PMID: 27633186.",
+      "authors": "Marso SP, et al.",
+      "first_author_surname": "Marso",
+      "year": "2016",
+      "title": "Semaglutide and Cardiovascular Outcomes in Patients with Type 2 Diabetes",
+      "journal": "N Engl J Med",
+      "pmid": "27633186",
+      "doi": "",
+      "kind": "journal_article"
+    },
+    {
+      "raw": "He L, et al. *Association of Glucagon-Like Peptide-1 Receptor Agonist Use With Risk of Gallbladder and Biliary Diseases: A Systematic Review and Meta-analysis.* JAMA Intern Med. 2022. PMID: 35344001.",
+      "authors": "He L, et al.",
+      "first_author_surname": "He",
+      "year": "2022",
+      "title": "Association of Glucagon-Like Peptide-1 Receptor Agonist Use With Risk of Gallbladder and Biliary Diseases: A Systematic Review and Meta-analysis.",
+      "journal": "JAMA Intern Med",
+      "pmid": "35344001",
+      "doi": "",
+      "kind": "journal_article"
+    },
+    {
+      "raw": "Sodhi M, et al. *Risk of Gastrointestinal Adverse Events Associated With GLP-1 Receptor Agonists for Weight Loss.* JAMA. 2023. PMID: 37796527.",
+      "authors": "Sodhi M, et al.",
+      "first_author_surname": "Sodhi",
+      "year": "2023",
+      "title": "Risk of Gastrointestinal Adverse Events Associated With GLP-1 Receptor Agonists for Weight Loss.",
+      "journal": "JAMA",
+      "pmid": "37796527",
+      "doi": "",
+      "kind": "journal_article"
+    },
+    {
+      "raw": "Wang W, et al. *Association of semaglutide with risk of suicidal ideation in a real-world cohort.* Nat Med. 2024. PMID: 38182782.",
+      "authors": "Wang W, et al.",
+      "first_author_surname": "Wang",
+      "year": "2024",
+      "title": "Association of semaglutide with risk of suicidal ideation in a real-world cohort.",
+      "journal": "Nat Med",
+      "pmid": "38182782",
+      "doi": "",
+      "kind": "journal_article"
+    },
+    {
+      "raw": "The FDA prescribing information for Wegovy and Ozempic is the source for the thyroid C-cell tumor boxed warning (based on rodent data), pregnancy guidance, and contraindications.",
+      "authors": "FDA",
+      "first_author_surname": "",
+      "year": "",
+      "title": "",
+      "journal": "",
+      "pmid": "",
+      "doi": "",
+      "kind": "guideline_or_org_statement"
+    },
+    {
+      "raw": "The FDA and other regulators' communications cover compounded semaglutide concerns and the anesthesia and aspiration guidance.",
+      "authors": "FDA and other regulators",
+      "first_author_surname": "",
+      "year": "",
+      "title": "",
+      "journal": "",
+      "pmid": "",
+      "doi": "",
+      "kind": "guideline_or_org_statement"
+    }
+  ]
+}

@@ -1,0 +1,429 @@
+{
+  "arm": "ai_overview_model",
+  "model_requested": "claude-sonnet-5-5",
+  "served_model": "claude-sonnet-5-5",
+  "query": "is ozempic safe",
+  "system": "You are reproducing the AI-generated overview panel that a general-purpose web search engine shows above its organic results (for example, Google's \"AI Overview\"). Behave the way that product behaves:\n\n- Run exactly one web search, using the user's query exactly as typed.\n- Base the overview only on what the returned web pages say. Do not run additional searches and do not seek out primary research beyond what that one search surfaces.\n- Format: open with a one- or two-sentence direct answer in bold. Then give 3 to 6 short bullet points of key considerations. Keep the whole overview under 200 words.\n- Attribute points to the web pages they came from.\n- End with this line on its own: \"This is for informational purposes only. For medical advice or diagnosis, consult a professional.\"\n\nDo not mention that you are reproducing anything; just present the overview.",
+  "user_location": {
+    "type": "approximate",
+    "city": "Austin",
+    "region": "Texas",
+    "country": "US",
+    "timezone": "America/Chicago"
+  },
+  "overview_text": "**Ozempic can be safe for some people when a health care provider prescribes and monitors it, but it isn't appropriate for everyone. [1] Whether it's safe for you depends on your medical history.**\n\n- **Approved use:** Ozempic has been clinically shown to lower A1C in people with type 2 diabetes and is generally considered safe under proper supervision [2] (INTEGRIS Health).\n- **Common side effects:** These are mostly digestive, such as nausea, diarrhea and constipation. They often improve as the body adjusts to the dose [1] (U.S. News).\n- **Boxed warning:** Ozempic has a boxed warning about thyroid cancer risk. [3] Doctors typically won't prescribe it to people with a personal or family history of medullary thyroid cancer, or with MEN 2 [3] (Healthgrades).\n- **Weight loss:** Ozempic isn't FDA approved for weight loss [4]. Wegovy, a higher-dose version, is approved for weight loss [4] (GoodRx). Weight may return after you stop the drug. [4]\n- **Children:** No research shows whether Ozempic is safe or effective for children [5] (Forbes).\n- **Long-term use:** A large study in Nature Medicine linked GLP-1 drugs to an 11% higher arthritis risk [6] (TODAY).\n\nThis is for informational purposes only. For medical advice or diagnosis, consult a professional.",
+  "retrieved_sources": [
+    {
+      "rank": 1,
+      "url": "https://resources.healthgrades.com/drugs/drugs-is-ozempic-safe",
+      "title": "Is Ozempic Safe? Here’s What to Know",
+      "page_age": "July 17, 2025"
+    },
+    {
+      "rank": 2,
+      "url": "https://integrishealth.org/resources/on-your-health/2024/june/is-ozempic-safe-for-weight-loss",
+      "title": "Is Ozempic Safe for Weight Loss? | INTEGRIS Health",
+      "page_age": null
+    },
+    {
+      "rank": 3,
+      "url": "https://www.today.com/health/diet-fitness/is-ozempic-safe-rcna183494",
+      "title": "Is Ozempic Safe For Weight Loss? Doctors Share Benefits And Risks",
+      "page_age": "December 19, 2025"
+    },
+    {
+      "rank": 4,
+      "url": "https://www.goodrx.com/ozempic/ozempic-for-weight-loss",
+      "title": "Ozempic for Weight Loss: Does It Work, and Is It Safe? - GoodRx",
+      "page_age": "1 month ago"
+    },
+    {
+      "rank": 5,
+      "url": "https://www.poison.org/articles/can-ozempic-help-me-lose-weight",
+      "title": "Is Ozempic safe? | Poison Control",
+      "page_age": null
+    },
+    {
+      "rank": 6,
+      "url": "https://withinhealth.com/learn/articles/semaglutide-ozempic-weight-loss-risks",
+      "title": "Dangers of Taking Ozempic for Weight Loss | What You Need to Know",
+      "page_age": "July 10, 2026"
+    },
+    {
+      "rank": 7,
+      "url": "https://www.ozempic.com/",
+      "title": "Ozempic® (semaglutide) GLP-1 RA for Type 2 Diabetes",
+      "page_age": "4 days ago"
+    },
+    {
+      "rank": 8,
+      "url": "https://health.usnews.com/wellness/articles/is-ozempic-safe-and-effective-for-weight-loss",
+      "title": "Ozempic for Weight Loss & Diabetes: Doses, Side Effects & Cost | U.S. News",
+      "page_age": "March 27, 2026"
+    },
+    {
+      "rank": 9,
+      "url": "https://www.forbes.com/health/weight-loss/ozempic-for-weight-loss/",
+      "title": "Ozempic For Weight Loss: Is It Safe And What Do Experts Say?",
+      "page_age": "August 3, 2026"
+    }
+  ],
+  "cited_sources": [
+    {
+      "n": 1,
+      "url": "https://health.usnews.com/wellness/articles/is-ozempic-safe-and-effective-for-weight-loss",
+      "title": "Ozempic for Weight Loss & Diabetes: Doses, Side Effects & Cost | U.S. News"
+    },
+    {
+      "n": 2,
+      "url": "https://integrishealth.org/resources/on-your-health/2024/june/is-ozempic-safe-for-weight-loss",
+      "title": "Is Ozempic Safe for Weight Loss? | INTEGRIS Health"
+    },
+    {
+      "n": 3,
+      "url": "https://resources.healthgrades.com/drugs/drugs-is-ozempic-safe",
+      "title": "Is Ozempic Safe? Here’s What to Know"
+    },
+    {
+      "n": 4,
+      "url": "https://www.goodrx.com/ozempic/ozempic-for-weight-loss",
+      "title": "Ozempic for Weight Loss: Does It Work, and Is It Safe? - GoodRx"
+    },
+    {
+      "n": 5,
+      "url": "https://www.forbes.com/health/weight-loss/ozempic-for-weight-loss/",
+      "title": "Ozempic For Weight Loss: Is It Safe And What Do Experts Say?"
+    },
+    {
+      "n": 6,
+      "url": "https://www.today.com/health/diet-fitness/is-ozempic-safe-rcna183494",
+      "title": "Is Ozempic Safe For Weight Loss? Doctors Share Benefits And Risks"
+    }
+  ],
+  "cited_spans": [
+    {
+      "n": 1,
+      "text": "Ozempic can be safe for some people when a health care provider prescribes and monitors it, but it isn't appropriate for everyone.",
+      "cited_text": "Ozempic can be safe for some people when prescribed and monitored by a health care provider, but it is not appropriate for everyone. "
+    },
+    {
+      "n": 2,
+      "text": "Ozempic has been clinically shown to lower A1C in people with type 2 diabetes and is generally considered safe under proper supervision",
+      "cited_text": "Ozempic has been clinically shown to help lower A1C for people with type 2 diabetes and it is generally considered safe to use under proper supervisio..."
+    },
+    {
+      "n": 1,
+      "text": "These are mostly digestive, such as nausea, diarrhea and constipation. They often improve as the body adjusts to the dose",
+      "cited_text": "Common Ozempic side effects are gastrointestinal in nature (nausea, diarrhea, constipation), but often improve as the body adjusts to the semaglutide ..."
+    },
+    {
+      "n": 3,
+      "text": "Ozempic has a boxed warning about thyroid cancer risk.",
+      "cited_text": "Ozempic has a boxed warning about the risk of thyroid cancer. "
+    },
+    {
+      "n": 3,
+      "text": "Doctors typically won't prescribe it to people with a personal or family history of medullary thyroid cancer, or with MEN 2",
+      "cited_text": "To be safe, doctors typically won’t prescribe Ozempic for people with factors that increase their risk of thyroid cancer. \n\nThese include: • a persona..."
+    },
+    {
+      "n": 4,
+      "text": "Ozempic isn't FDA approved for weight loss",
+      "cited_text": "Ozempic isn’t FDA approved for weight loss, but many people using Ozempic lose weight as a side effect. "
+    },
+    {
+      "n": 4,
+      "text": "Wegovy, a higher-dose version, is approved for weight loss",
+      "cited_text": "Wegovy, a higher-dose version of Ozempic, is approved for weight loss in certain adults and adolescents ages 12 and older. "
+    },
+    {
+      "n": 4,
+      "text": "Weight may return after you stop the drug.",
+      "cited_text": "If you’re prescribed either one to lose weight, it’s possible to have rebound weight gain after stopping it."
+    },
+    {
+      "n": 5,
+      "text": "No research shows whether Ozempic is safe or effective for children",
+      "cited_text": "Furthermore, no research indicates whether Ozempic is safe or effective for children. "
+    },
+    {
+      "n": 6,
+      "text": "A large study in Nature Medicine linked GLP-1 drugs to an 11% higher arthritis risk",
+      "cited_text": "The use of GLP-1 drugs is associated with an 11% increase in arthritis risk, according to a large study published in Nature Medicine in January 2025. "
+    }
+  ],
+  "stop_reason": "end_turn",
+  "latency_s": 9.25,
+  "usage": [
+    {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "global",
+      "input_tokens": 14174,
+      "output_tokens": 696,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_fetch_requests": 0,
+        "web_search_requests": 1
+      },
+      "service_tier": "standard"
+    }
+  ],
+  "raw_blocks": [
+    [
+      {
+        "id": "srvtoolu_01QY1G3QscVB861x3ca3zXxp",
+        "input": {
+          "query": "is ozempic safe"
+        },
+        "name": "web_search",
+        "type": "server_tool_use"
+      },
+      {
+        "caller": {
+          "type": "direct"
+        },
+        "content": [
+          {
+            "page_age": "July 17, 2025",
+            "title": "Is Ozempic Safe? Here’s What to Know",
+            "type": "web_search_result",
+            "url": "https://resources.healthgrades.com/drugs/drugs-is-ozempic-safe"
+          },
+          {
+            "title": "Is Ozempic Safe for Weight Loss? | INTEGRIS Health",
+            "type": "web_search_result",
+            "url": "https://integrishealth.org/resources/on-your-health/2024/june/is-ozempic-safe-for-weight-loss"
+          },
+          {
+            "page_age": "December 19, 2025",
+            "title": "Is Ozempic Safe For Weight Loss? Doctors Share Benefits And Risks",
+            "type": "web_search_result",
+            "url": "https://www.today.com/health/diet-fitness/is-ozempic-safe-rcna183494"
+          },
+          {
+            "page_age": "1 month ago",
+            "title": "Ozempic for Weight Loss: Does It Work, and Is It Safe? - GoodRx",
+            "type": "web_search_result",
+            "url": "https://www.goodrx.com/ozempic/ozempic-for-weight-loss"
+          },
+          {
+            "title": "Is Ozempic safe? | Poison Control",
+            "type": "web_search_result",
+            "url": "https://www.poison.org/articles/can-ozempic-help-me-lose-weight"
+          },
+          {
+            "page_age": "July 10, 2026",
+            "title": "Dangers of Taking Ozempic for Weight Loss | What You Need to Know",
+            "type": "web_search_result",
+            "url": "https://withinhealth.com/learn/articles/semaglutide-ozempic-weight-loss-risks"
+          },
+          {
+            "page_age": "4 days ago",
+            "title": "Ozempic® (semaglutide) GLP-1 RA for Type 2 Diabetes",
+            "type": "web_search_result",
+            "url": "https://www.ozempic.com/"
+          },
+          {
+            "page_age": "March 27, 2026",
+            "title": "Ozempic for Weight Loss & Diabetes: Doses, Side Effects & Cost | U.S. News",
+            "type": "web_search_result",
+            "url": "https://health.usnews.com/wellness/articles/is-ozempic-safe-and-effective-for-weight-loss"
+          },
+          {
+            "page_age": "August 3, 2026",
+            "title": "Ozempic For Weight Loss: Is It Safe And What Do Experts Say?",
+            "type": "web_search_result",
+            "url": "https://www.forbes.com/health/weight-loss/ozempic-for-weight-loss/"
+          }
+        ],
+        "tool_use_id": "srvtoolu_01QY1G3QscVB861x3ca3zXxp",
+        "type": "web_search_tool_result"
+      },
+      {
+        "text": "**",
+        "type": "text"
+      },
+      {
+        "citations": [
+          {
+            "cited_text": "Ozempic can be safe for some people when prescribed and monitored by a health care provider, but it is not appropriate for everyone. ",
+            "encrypted_index": "Eo8BCioIFBgCIiQ3MTk5M2NmOC02MjRhLTRhMDktOGVjYi00ZGYyYmU1MDgzMDcSDAUjoDzVIwCAPdaZiRoMrbaY32tex1fd3AGeIjDZn6DsT3+S6dUSGD+69znQ9mCp9xI9Z9hIbg7fn5c2/yPjBYdNz+9rohjSScGNbQcqE/wUHObkwYPk8d5kHarHSEe3JwgYBA==",
+            "title": "Ozempic for Weight Loss & Diabetes: Doses, Side Effects & Cost | U.S. News",
+            "type": "web_search_result_location",
+            "url": "https://health.usnews.com/wellness/articles/is-ozempic-safe-and-effective-for-weight-loss"
+          }
+        ],
+        "text": "Ozempic can be safe for some people when a health care provider prescribes and monitors it, but it isn't appropriate for everyone.",
+        "type": "text"
+      },
+      {
+        "text": " Whether it's safe for you depends on your medical history.**\n\n- **Approved use:** ",
+        "type": "text"
+      },
+      {
+        "citations": [
+          {
+            "cited_text": "Ozempic has been clinically shown to help lower A1C for people with type 2 diabetes and it is generally considered safe to use under proper supervisio...",
+            "encrypted_index": "Eo8BCioIFBgCIiQ3MTk5M2NmOC02MjRhLTRhMDktOGVjYi00ZGYyYmU1MDgzMDcSDEtFkxeHH9lnc7XIxxoMlY/tV5DOAA5wGkDmIjDoiHB8GBBnUmrFEVsPQBrM58PZzkaGXZZSm/uqq/VbcHe4C1cvAmcf/C4zi05l4aEqE7NZ7U6ds/vtxScTfXCQp2M8MWMYBA==",
+            "title": "Is Ozempic Safe for Weight Loss? | INTEGRIS Health",
+            "type": "web_search_result_location",
+            "url": "https://integrishealth.org/resources/on-your-health/2024/june/is-ozempic-safe-for-weight-loss"
+          }
+        ],
+        "text": "Ozempic has been clinically shown to lower A1C in people with type 2 diabetes and is generally considered safe under proper supervision",
+        "type": "text"
+      },
+      {
+        "text": " (INTEGRIS Health).\n- **Common side effects:** ",
+        "type": "text"
+      },
+      {
+        "citations": [
+          {
+            "cited_text": "Common Ozempic side effects are gastrointestinal in nature (nausea, diarrhea, constipation), but often improve as the body adjusts to the semaglutide ...",
+            "encrypted_index": "Eo8BCioIFBgCIiQ3MTk5M2NmOC02MjRhLTRhMDktOGVjYi00ZGYyYmU1MDgzMDcSDDaUsbpcQMIXW7y/MxoMrw8Yzzw5SyRkcTAYIjDNwL0w4d6uaEIf2C2o13PqSZKurilcVA2SvUOAAHag+xBdrEdsg284PLMskGgwJBUqEwga6ib+5wlLJKy3tS+9AB9CYXkYBA==",
+            "title": "Ozempic for Weight Loss & Diabetes: Doses, Side Effects & Cost | U.S. News",
+            "type": "web_search_result_location",
+            "url": "https://health.usnews.com/wellness/articles/is-ozempic-safe-and-effective-for-weight-loss"
+          }
+        ],
+        "text": "These are mostly digestive, such as nausea, diarrhea and constipation. They often improve as the body adjusts to the dose",
+        "type": "text"
+      },
+      {
+        "text": " (U.S. News).\n- **Boxed warning:** ",
+        "type": "text"
+      },
+      {
+        "citations": [
+          {
+            "cited_text": "Ozempic has a boxed warning about the risk of thyroid cancer. ",
+            "encrypted_index": "Eo8BCioIFBgCIiQ3MTk5M2NmOC02MjRhLTRhMDktOGVjYi00ZGYyYmU1MDgzMDcSDJabhbl0+8Ul9OeetBoMhhtbjf/eucDhpzLxIjDfGg6P1JobvQAOMTOJoGZLMWcPu43U/Rxy9dzoMt60D9azQ3q+gafRSBvdmBRs5JQqEwDUwV4EwfXLbCWwYWwU5pZRdGMYBA==",
+            "title": "Is Ozempic Safe? Here’s What to Know",
+            "type": "web_search_result_location",
+            "url": "https://resources.healthgrades.com/drugs/drugs-is-ozempic-safe"
+          }
+        ],
+        "text": "Ozempic has a boxed warning about thyroid cancer risk.",
+        "type": "text"
+      },
+      {
+        "text": " ",
+        "type": "text"
+      },
+      {
+        "citations": [
+          {
+            "cited_text": "To be safe, doctors typically won’t prescribe Ozempic for people with factors that increase their risk of thyroid cancer. \n\nThese include: • a persona...",
+            "encrypted_index": "EpMBCioIFBgCIiQ3MTk5M2NmOC02MjRhLTRhMDktOGVjYi00ZGYyYmU1MDgzMDcSDHvRtiV5hdT4PBMXIxoMa3v3TP7hkRv/glPhIjDg+8aY3C7bVuzqFEDAUwK+WVz3unW0dOjjcxzAT8V6sT5ny0FgTDP9BoEtZsLWwT0qFzYvBulHfypzg3/Ps109IFsWCCU9av9uGAQ=",
+            "title": "Is Ozempic Safe? Here’s What to Know",
+            "type": "web_search_result_location",
+            "url": "https://resources.healthgrades.com/drugs/drugs-is-ozempic-safe"
+          }
+        ],
+        "text": "Doctors typically won't prescribe it to people with a personal or family history of medullary thyroid cancer, or with MEN 2",
+        "type": "text"
+      },
+      {
+        "text": " (Healthgrades).\n- **Weight loss:** ",
+        "type": "text"
+      },
+      {
+        "citations": [
+          {
+            "cited_text": "Ozempic isn’t FDA approved for weight loss, but many people using Ozempic lose weight as a side effect. ",
+            "encrypted_index": "EpABCioIFBgCIiQ3MTk5M2NmOC02MjRhLTRhMDktOGVjYi00ZGYyYmU1MDgzMDcSDP16lB1MScgoPAaDSBoMWj6G0TyohwP2scnPIjDuZR2U/dAuGxKg6PVhiCVNEyCUW75mZ089+Jr1N/WPlihib/wr4zMFWGToytWrTwgqFKYSHA1tUCk1woYg/pFAge3x4pEGGAQ=",
+            "title": "Ozempic for Weight Loss: Does It Work, and Is It Safe? - GoodRx",
+            "type": "web_search_result_location",
+            "url": "https://www.goodrx.com/ozempic/ozempic-for-weight-loss"
+          }
+        ],
+        "text": "Ozempic isn't FDA approved for weight loss",
+        "type": "text"
+      },
+      {
+        "text": ". ",
+        "type": "text"
+      },
+      {
+        "citations": [
+          {
+            "cited_text": "Wegovy, a higher-dose version of Ozempic, is approved for weight loss in certain adults and adolescents ages 12 and older. ",
+            "encrypted_index": "EpABCioIFBgCIiQ3MTk5M2NmOC02MjRhLTRhMDktOGVjYi00ZGYyYmU1MDgzMDcSDLP2fWj8+IEhTbvXcRoMOM5pZoGR8RHoEbEbIjDreVwTEHtBYQy0bihyQrLS30ew+kt7Opcrfuq/xZSZz6OdmeNYojYMHWS01uEZjmwqFLBbdrntOhQBgaq1xcSrZgbdzV87GAQ=",
+            "title": "Ozempic for Weight Loss: Does It Work, and Is It Safe? - GoodRx",
+            "type": "web_search_result_location",
+            "url": "https://www.goodrx.com/ozempic/ozempic-for-weight-loss"
+          }
+        ],
+        "text": "Wegovy, a higher-dose version, is approved for weight loss",
+        "type": "text"
+      },
+      {
+        "text": " (GoodRx). ",
+        "type": "text"
+      },
+      {
+        "citations": [
+          {
+            "cited_text": "If you’re prescribed either one to lose weight, it’s possible to have rebound weight gain after stopping it.",
+            "encrypted_index": "EpABCioIFBgCIiQ3MTk5M2NmOC02MjRhLTRhMDktOGVjYi00ZGYyYmU1MDgzMDcSDAsi9n3dS+Vlec1sTxoMr30B1LwwMfFNiXFpIjCSf8fiRzyfkM4NY3bHeeTHJjlOuIwuVp2Q2jLY/qJq0aPSBbsG7a3R6sj9tDSpv7AqFNLR6RaOHlaypm7tkjYLqZuNdgR4GAQ=",
+            "title": "Ozempic for Weight Loss: Does It Work, and Is It Safe? - GoodRx",
+            "type": "web_search_result_location",
+            "url": "https://www.goodrx.com/ozempic/ozempic-for-weight-loss"
+          }
+        ],
+        "text": "Weight may return after you stop the drug.",
+        "type": "text"
+      },
+      {
+        "text": "\n- **Children:** ",
+        "type": "text"
+      },
+      {
+        "citations": [
+          {
+            "cited_text": "Furthermore, no research indicates whether Ozempic is safe or effective for children. ",
+            "encrypted_index": "Eo8BCioIFBgCIiQ3MTk5M2NmOC02MjRhLTRhMDktOGVjYi00ZGYyYmU1MDgzMDcSDEM47lK8xVcPlqc2OhoMi06Uwv3vf1lfyeKAIjBnzRZ6stpG7y83W3zWvhJu/QIeanp2u1QDHb4jZEJ9y3o7ZD+H27eMrulrRvOGTygqE0CxR+KpuYKRq3amKW/TkYwwbZMYBA==",
+            "title": "Ozempic For Weight Loss: Is It Safe And What Do Experts Say?",
+            "type": "web_search_result_location",
+            "url": "https://www.forbes.com/health/weight-loss/ozempic-for-weight-loss/"
+          }
+        ],
+        "text": "No research shows whether Ozempic is safe or effective for children",
+        "type": "text"
+      },
+      {
+        "text": " (Forbes).\n- **Long-term use:** ",
+        "type": "text"
+      },
+      {
+        "citations": [
+          {
+            "cited_text": "The use of GLP-1 drugs is associated with an 11% increase in arthritis risk, according to a large study published in Nature Medicine in January 2025. ",
+            "encrypted_index": "EpABCioIFBgCIiQ3MTk5M2NmOC02MjRhLTRhMDktOGVjYi00ZGYyYmU1MDgzMDcSDPkvDdI58bAHkJT6HBoMkKrYN50OttmkdjydIjANwKLGvFJS5D3FkytgDHrxfX2Olt0dI6sEVD4c6assnMBG0pkUXVlWXpNnQt80fqgqFJGqIlOr8iwjJrtXdfrbPh+OVQfwGAQ=",
+            "title": "Is Ozempic Safe For Weight Loss? Doctors Share Benefits And Risks",
+            "type": "web_search_result_location",
+            "url": "https://www.today.com/health/diet-fitness/is-ozempic-safe-rcna183494"
+          }
+        ],
+        "text": "A large study in Nature Medicine linked GLP-1 drugs to an 11% higher arthritis risk",
+        "type": "text"
+      },
+      {
+        "text": " (TODAY).\n\nThis is for informational purposes only. For medical advice or diagnosis, consult a professional.",
+        "type": "text"
+      }
+    ]
+  ],
+  "question_id": "Q2",
+  "replicate": 1,
+  "route": "worker:https://tables-turned-api.jethomasphd.workers.dev",
+  "captured_at": "2026-09-28T23:40:26Z"
+}

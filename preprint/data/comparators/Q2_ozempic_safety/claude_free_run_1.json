@@ -1,0 +1,63 @@
+{
+  "arm": "claude_free",
+  "model_requested": "claude-sonnet-5-5",
+  "served_model": "claude-sonnet-5-5",
+  "turns": [
+    {
+      "role": "user",
+      "text": "Is Ozempic safe? My doctor suggested semaglutide for weight loss and I want to understand the risks before I start."
+    },
+    {
+      "role": "assistant",
+      "text": "For most people who are good candidates, semaglutide is considered reasonably safe, and it has substantial evidence behind it. Like any medication, it has real risks worth understanding.\n\n**Brand names**\nOzempic is semaglutide approved for type 2 diabetes. Wegovy is the same drug at a higher maximum dose, approved for weight loss. Doctors sometimes prescribe either for weight loss, but check which one you're getting and that your insurance and dose plan match.\n\n**Common side effects (very common, usually mild to moderate)**\n- Nausea, vomiting, diarrhea, constipation\n- Abdominal pain, bloating, burping, acid reflux\n- Fatigue, decreased appetite\n\nThese are most common when starting or increasing the dose, and they often fade over time. Doses are increased gradually to reduce them. Eating smaller meals and avoiding greasy or very rich food helps many people.\n\n**Less common but serious risks**\n- **Gallbladder problems** (gallstones, inflammation), which are more likely with rapid weight loss\n- **Pancreatitis:** severe, persistent abdominal pain, sometimes radiating to the back, needs urgent care\n- **Dehydration and kidney injury,** usually from prolonged vomiting or diarrhea\n- **Low blood sugar,** mainly if you also take insulin or sulfonylureas\n- **Diabetic retinopathy complications** in people with diabetes\n- **Gastroparesis or severe GI problems,** which are still being studied\n- **Rare reports of intestinal blockage**\n- **Mood changes:** current evidence hasn't shown a clear link to suicidal thoughts, but regulators keep monitoring, so mention any mood changes\n\n**Who shouldn't take it**\n- Personal or family history of **medullary thyroid cancer** or **MEN2** syndrome. Semaglutide carries a boxed warning because thyroid tumors appeared in rodents. Whether this happens in humans is unclear.\n- Pregnancy, or planning to become pregnant. It's usually stopped about 2 months before trying to conceive.\n- History of pancreatitis, gallbladder disease, severe GI disease, or diabetic eye disease: these call for extra caution.\n\n**Other things to know**\n- **Muscle loss:** Some of the weight lost is lean mass. Adequate protein and resistance training help.\n- **Weight regain:** Most people regain much of the weight if they stop the medication, so it's often a long-term treatment.\n- **Compounded or \"research\" semaglutide:** Avoid products from unregulated sources. Quality and dosing can vary, and there have been dosing errors and safety reports. Use an FDA-approved product from a pharmacy.\n- **Surgery or anesthesia:** Tell your care team you take it, because delayed stomach emptying can raise aspiration risk.\n\n**Benefits**\nIn clinical trials, people lost about 15% of body weight on average with Wegovy. It also reduced heart attack and stroke risk in people with cardiovascular disease and excess weight, and it improves blood sugar and other markers.\n\n**Questions to ask your doctor**\n- Does my medical or family history raise any specific risks?\n- How will my other medications be affected?\n- What is the dosing schedule, and what should I do if side effects are bad?\n- How long do you expect me to be on it, and what's the plan afterward?\n- What nutrition and exercise should I pair with it?\n\n**Seek urgent care for** severe or persistent abdominal pain, repeated vomiting, signs of dehydration, yellowing skin or eyes, a lump or swelling in the neck, trouble swallowing, or an allergic reaction.\n\nIf you tell me about your health history or medications, I can help you think through which of these points matter most for you, though your doctor is the one who can make that call.",
+      "stop_reason": "end_turn",
+      "latency_s": 11.47,
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 48,
+        "output_tokens": 1383,
+        "output_tokens_details": {
+          "thinking_tokens": 121
+        },
+        "server_tool_use": null,
+        "service_tier": "standard"
+      }
+    },
+    {
+      "role": "user",
+      "text": "Can you list the specific scientific studies this is based on? Please include the authors, year, journal, and PubMed ID for each."
+    },
+    {
+      "role": "assistant",
+      "text": "I can't look things up in real time, and I sometimes get PubMed IDs wrong, so treat the PMIDs below as a starting point and verify each by searching the title in PubMed. I'm most confident in the author, journal, and year details for the major trials.\n\n**Weight loss efficacy**\n1. Wilding JPH, et al. *Once-Weekly Semaglutide in Adults with Overweight or Obesity* (STEP 1). N Engl J Med. 2021. PMID: 33567185. This is the source of the ~15% average weight loss figure.\n2. Davies M, et al. *Semaglutide 2.4 mg once a week in adults with overweight or obesity, and type 2 diabetes* (STEP 2). Lancet. 2021. PMID: 33667417.\n\n**Weight regain after stopping**\n3. Wilding JPH, et al. *Weight regain and cardiometabolic effects after withdrawal of semaglutide: the STEP 1 trial extension.* Diabetes Obes Metab. 2022. PMID: 35441470.\n\n**Cardiovascular outcomes**\n4. Lincoff AM, et al. *Semaglutide and Cardiovascular Outcomes in Obesity without Diabetes* (SELECT). N Engl J Med. 2023. PMID: 37952131.\n5. Marso SP, et al. *Semaglutide and Cardiovascular Outcomes in Patients with Type 2 Diabetes* (SUSTAIN-6). N Engl J Med. 2016. PMID: 27633186. This trial also raised the diabetic retinopathy complication signal.\n\n**GI and gallbladder safety**\n6. He L, et al. *Association of Glucagon-Like Peptide-1 Receptor Agonist Use With Risk of Gallbladder and Biliary Diseases: A Systematic Review and Meta-analysis.* JAMA Intern Med. 2022. PMID: 35344001.\n7. Sodhi M, et al. *Risk of Gastrointestinal Adverse Events Associated With GLP-1 Receptor Agonists for Weight Loss.* JAMA. 2023. PMID: 37796527. This covers pancreatitis, gastroparesis, and bowel obstruction.\n\n**Mood and suicidality**\n8. Wang W, et al. *Association of semaglutide with risk of suicidal ideation in a real-world cohort.* Nat Med. 2024. PMID: 38182782.\n\n**Sources that aren't single studies**\n- The **FDA prescribing information for Wegovy and Ozempic** is the source for the thyroid C-cell tumor boxed warning (based on rodent data), pregnancy guidance, and contraindications.\n- The **FDA and other regulators' communications** cover compounded semaglutide concerns and the anesthesia and aspiration guidance.\n- For lean mass loss, I was drawing on body composition substudies and reviews, not one definitive paper. I don't want to guess at a citation there.\n\nSome points in my earlier answer, like lean mass loss, rare intestinal obstruction, and the mood question, come from a mix of trial data, observational studies, and regulatory labeling. That evidence is weaker than the randomized trial data for weight loss and cardiovascular outcomes.\n\nTo check any of these, search the title on pubmed.ncbi.nlm.nih.gov or paste the PMID into the search bar and confirm the title matches. Your doctor or pharmacist can also point you to the current prescribing information.",
+      "stop_reason": "end_turn",
+      "latency_s": 16.63,
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 1474,
+        "output_tokens": 2320,
+        "output_tokens_details": {
+          "thinking_tokens": 1151
+        },
+        "server_tool_use": null,
+        "service_tier": "standard"
+      }
+    }
+  ],
+  "question_id": "Q2",
+  "replicate": 1,
+  "route": "worker:https://tables-turned-api.jethomasphd.workers.dev",
+  "captured_at": "2026-09-28T23:40:17Z"
+}

@@ -1,0 +1,110 @@
+{
+  "extracted_by": "claude-sonnet-5-5",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 1625,
+    "output_tokens": 1447,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "extracted_at": "2026-09-28T23:50:01Z",
+  "references": [
+    {
+      "raw": "Martineau AR, Jolliffe DA, Hooper RL, et al. Vitamin D supplementation to prevent acute respiratory tract infections: systematic review and meta-analysis of individual participant data. BMJ. 2017;356:i6583. PMID: 28202713 (fairly confident)",
+      "authors": "Martineau AR, Jolliffe DA, Hooper RL, et al.",
+      "first_author_surname": "Martineau",
+      "year": "2017",
+      "title": "Vitamin D supplementation to prevent acute respiratory tract infections: systematic review and meta-analysis of individual participant data",
+      "journal": "BMJ",
+      "pmid": "28202713",
+      "doi": "",
+      "kind": "journal_article"
+    },
+    {
+      "raw": "Jolliffe DA, Holt H, Greenig M, et al. Effect of a test-and-treat approach to vitamin D supplementation on risk of all cause acute respiratory tract infection and covid-19 (CORONAVIT): phase 3, randomised, controlled, open-label trial. BMJ. 2022;378:e071230. PMID: 36215226 (moderately confident)",
+      "authors": "Jolliffe DA, Holt H, Greenig M, et al.",
+      "first_author_surname": "Jolliffe",
+      "year": "2022",
+      "title": "Effect of a test-and-treat approach to vitamin D supplementation on risk of all cause acute respiratory tract infection and covid-19 (CORONAVIT): phase 3, randomised, controlled, open-label trial",
+      "journal": "BMJ",
+      "pmid": "36215226",
+      "doi": "",
+      "kind": "journal_article"
+    },
+    {
+      "raw": "Manson JE, Cook NR, Lee IM, et al. Vitamin D supplements and prevention of cancer and cardiovascular disease (VITAL). N Engl J Med. 2019;380:33-44. PMID: 30415629 (moderately confident)",
+      "authors": "Manson JE, Cook NR, Lee IM, et al.",
+      "first_author_surname": "Manson",
+      "year": "2019",
+      "title": "Vitamin D supplements and prevention of cancer and cardiovascular disease (VITAL)",
+      "journal": "N Engl J Med",
+      "pmid": "30415629",
+      "doi": "",
+      "kind": "journal_article"
+    },
+    {
+      "raw": "Aglipay M, et al. JAMA. 2017. A Canadian trial of high-dose vs standard-dose vitamin D in young children, which found no reduction in viral respiratory infections. I don't remember the PMID.",
+      "authors": "Aglipay M, et al.",
+      "first_author_surname": "Aglipay",
+      "year": "2017",
+      "title": "",
+      "journal": "JAMA",
+      "pmid": "",
+      "doi": "",
+      "kind": "journal_article"
+    },
+    {
+      "raw": "Pham H, et al. D-Health Trial analysis of acute respiratory infection in older Australians, Lancet Diabetes Endocrinol, around 2021. I'm not sure of the details or PMID.",
+      "authors": "Pham H, et al.",
+      "first_author_surname": "Pham",
+      "year": "2021",
+      "title": "D-Health Trial analysis of acute respiratory infection in older Australians",
+      "journal": "Lancet Diabetes Endocrinol",
+      "pmid": "",
+      "doi": "",
+      "kind": "journal_article"
+    },
+    {
+      "raw": "NHS guidance on vitamin D (400 IU/10 mcg daily in autumn and winter)",
+      "authors": "",
+      "first_author_surname": "",
+      "year": "",
+      "title": "NHS guidance on vitamin D",
+      "journal": "",
+      "pmid": "",
+      "doi": "",
+      "kind": "guideline_or_org_statement"
+    },
+    {
+      "raw": "NIH Office of Dietary Supplements, Vitamin D fact sheet (intake and upper limits)",
+      "authors": "NIH Office of Dietary Supplements",
+      "first_author_surname": "",
+      "year": "",
+      "title": "Vitamin D fact sheet",
+      "journal": "",
+      "pmid": "",
+      "doi": "",
+      "kind": "guideline_or_org_statement"
+    },
+    {
+      "raw": "National Academy of Medicine (Institute of Medicine) 2011 Dietary Reference Intakes for calcium and vitamin D",
+      "authors": "National Academy of Medicine (Institute of Medicine)",
+      "first_author_surname": "",
+      "year": "2011",
+      "title": "Dietary Reference Intakes for calcium and vitamin D",
+      "journal": "",
+      "pmid": "",
+      "doi": "",
+      "kind": "guideline_or_org_statement"
+    }
+  ]
+}

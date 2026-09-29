@@ -1,0 +1,16 @@
+Comparator arms ['claude_free', 'ai_overview_model'] | route=worker:https://tables-turned-api.jethomasphd.workers.dev | 5 question(s)
+[Q2] claude_free rep 1 ... 3615 + 2823 chars
+[Q2] ai_overview_model rep 1 ... 9 retrieved, 6 cited, 204 words
+[Q3] claude_free rep 1 ... 2104 + 2432 chars
+[Q3] ai_overview_model rep 1 ... 9 retrieved, 4 cited, 175 words
+[Q4] claude_free rep 1 ... 2389 + 2594 chars
+[Q4] ai_overview_model rep 1 ... 9 retrieved, 6 cited, 222 words
+[Q5] claude_free rep 1 ... 1945 + 1928 chars
+[Q5] ai_overview_model rep 1 ... 10 retrieved, 5 cited, 195 words
+[Q6] claude_free rep 1 ... 1826 + 2305 chars
+[Q6] ai_overview_model rep 1 ... 9 retrieved, 5 cited, 184 words
+Comparator arms ['claude_free', 'ai_overview_model'] | route=worker:https://tables-turned-api.jethomasphd.workers.dev | 1 question(s)
+[Q1] claude_free rep 2 ... 2283 + 2094 chars
+[Q1] ai_overview_model rep 2 ... 10 retrieved, 5 cited, 225 words
+[Q1] claude_free rep 3 ... 2088 + 2321 chars
+[Q1] ai_overview_model rep 3 ... 10 retrieved, 4 cited, 199 words

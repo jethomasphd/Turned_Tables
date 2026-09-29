@@ -1,0 +1,110 @@
+{
+  "extracted_by": "claude-sonnet-5-5",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 1450,
+    "output_tokens": 1117,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "extracted_at": "2026-09-28T23:48:49Z",
+  "references": [
+    {
+      "raw": "Cohen PA et al. JAMA, 2023. \"Quantity of Melatonin and CBD in Melatonin Gummies Sold in the US.\" This is the study that found labeled and actual amounts differed widely, with some products containing CBD.",
+      "authors": "Cohen PA et al.",
+      "first_author_surname": "Cohen",
+      "year": "2023",
+      "title": "Quantity of Melatonin and CBD in Melatonin Gummies Sold in the US",
+      "journal": "JAMA",
+      "pmid": "",
+      "doi": "",
+      "kind": "journal_article"
+    },
+    {
+      "raw": "Erland LAE, Saxena PK. Journal of Clinical Sleep Medicine, 2017. It found large variability in melatonin content across supplements.",
+      "authors": "Erland LAE, Saxena PK",
+      "first_author_surname": "Erland",
+      "year": "2017",
+      "title": "",
+      "journal": "Journal of Clinical Sleep Medicine",
+      "pmid": "",
+      "doi": "",
+      "kind": "journal_article"
+    },
+    {
+      "raw": "Lelak K et al. MMWR (CDC), 2022. \"Pediatric Melatonin Ingestions — United States, 2012–2021.\"",
+      "authors": "Lelak K et al.",
+      "first_author_surname": "Lelak",
+      "year": "2022",
+      "title": "Pediatric Melatonin Ingestions — United States, 2012–2021",
+      "journal": "MMWR",
+      "pmid": "",
+      "doi": "",
+      "kind": "journal_article"
+    },
+    {
+      "raw": "Gringras P et al. Journal of the American Academy of Child & Adolescent Psychiatry, 2017. A trial of prolonged-release melatonin in children with autism spectrum disorder.",
+      "authors": "Gringras P et al.",
+      "first_author_surname": "Gringras",
+      "year": "2017",
+      "title": "",
+      "journal": "Journal of the American Academy of Child & Adolescent Psychiatry",
+      "pmid": "",
+      "doi": "",
+      "kind": "journal_article"
+    },
+    {
+      "raw": "Van Geijlswijk IM et al. Psychopharmacology, 2010. A dose-finding study of melatonin for childhood sleep-onset insomnia.",
+      "authors": "Van Geijlswijk IM et al.",
+      "first_author_surname": "Van Geijlswijk",
+      "year": "2010",
+      "title": "",
+      "journal": "Psychopharmacology",
+      "pmid": "",
+      "doi": "",
+      "kind": "journal_article"
+    },
+    {
+      "raw": "Van Geijlswijk IM et al. Sleep, 2010. A meta-analysis of melatonin for delayed sleep phase disorder.",
+      "authors": "Van Geijlswijk IM et al.",
+      "first_author_surname": "Van Geijlswijk",
+      "year": "2010",
+      "title": "",
+      "journal": "Sleep",
+      "pmid": "",
+      "doi": "",
+      "kind": "journal_article"
+    },
+    {
+      "raw": "The American Academy of Sleep Medicine issued a health advisory on melatonin use in children in 2022",
+      "authors": "American Academy of Sleep Medicine",
+      "first_author_surname": "",
+      "year": "2022",
+      "title": "",
+      "journal": "",
+      "pmid": "",
+      "doi": "",
+      "kind": "guideline_or_org_statement"
+    },
+    {
+      "raw": "the American Academy of Pediatrics has parent-facing guidance",
+      "authors": "American Academy of Pediatrics",
+      "first_author_surname": "",
+      "year": "",
+      "title": "",
+      "journal": "",
+      "pmid": "",
+      "doi": "",
+      "kind": "guideline_or_org_statement"
+    }
+  ]
+}

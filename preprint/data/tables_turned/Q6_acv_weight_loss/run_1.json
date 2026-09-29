@@ -1,0 +1,1815 @@
+{
+  "tablet": {
+    "version": "2.0",
+    "title": "Does apple cider vinegar help with weight loss?",
+    "session": {
+      "id": "dd8cc060-7881-4c37-886a-239ba8eed7f6",
+      "created": "2026-09-28T23:41:46Z",
+      "sealed": "2026-09-28T23:42:40Z",
+      "status": "sealed"
+    },
+    "intent": {
+      "question": "Does apple cider vinegar help with weight loss?",
+      "decision_context": "Seen it all over social media; deciding whether it is worth buying."
+    },
+    "search": {
+      "queries": [
+        {
+          "query": "apple cider vinegar weight loss",
+          "strategy": "Broad search to capture any studies linking apple cider vinegar to weight loss"
+        },
+        {
+          "query": "(apple cider vinegar OR acetic acid) AND (weight loss OR body weight OR obesity OR body mass index OR BMI) AND (randomized controlled trial OR clinical trial OR meta-analysis)",
+          "strategy": "Targeted search for high-quality clinical evidence on vinegar or acetic acid and weight reduction outcomes"
+        },
+        {
+          "query": "(vinegar OR acetic acid) AND (body composition OR adiposity OR waist circumference OR body fat) AND (humans[MeSH])",
+          "strategy": "Broader search using the active component (acetic acid) and additional body composition endpoints in human studies"
+        },
+        {
+          "query": "(apple cider vinegar OR vinegar dietary supplement) AND (weight management OR anti-obesity OR appetite OR satiety) AND (systematic review OR meta-analysis)",
+          "strategy": "Focused search for systematic reviews and meta-analyses summarizing the evidence on vinegar for weight management and appetite control"
+        }
+      ],
+      "total_papers_found": 12,
+      "papers_shown": 12
+    },
+    "papers": [
+      {
+        "pmid": "41010525",
+        "doi": "10.3390/nu17183000",
+        "title": "Effect of Apple Cider Vinegar Intake on Body Composition in Humans with Type 2 Diabetes and/or Overweight: A Systematic Review and Meta-Analysis of Randomized Controlled Trials.",
+        "authors": [
+          "Castagna Alberto",
+          "Ferro Yvelise",
+          "Noto Francesca Rita",
+          "Bruno Rossella",
+          "Aragao Guimaraes Analucia",
+          "Pujia Carmelo",
+          "Mazza Elisa",
+          "Maurotti Samantha",
+          "Montalcini Tiziana",
+          "Pujia Arturo"
+        ],
+        "journal": "Nutrients",
+        "year": 2025,
+        "abstract": "Background: Apple cider vinegar (ACV) is a naturally fermented beverage with potential metabolic health benefits; however, its effects on weight loss remain controversial. This systematic review and meta-analysis of randomized controlled trials (RCTs) was conducted to assess the effect of ACV on anthropometric measurements in adults. Methods: We performed a systematic search of PubMed, Web of Science, Scopus, and CENTRAL up to March 2025 for randomized controlled trials (RCTs) in adults (≥18 years) evaluating the effects of ACV for ≥4 weeks on body composition parameters. Primary outcomes included changes in body weight, BMI, waist circumference, and other anthropometric measures. Risk of bias was assessed using the Revised Cochrane Risk-of-bias tool. Results: Out of 2961 reports screened, 10 RCTs comprising a total of 789 participants were eligible for inclusion in this meta-analysis. The pooled results using a random-effects model showed that daily ACV intake significantly reduced body weight [SMD: -0.39; 95% CI: -0.63, -0.15; p = 0.001; I2 = 62%], BMI [SMD: -0.65; 95% CI: -1.05, -0.26; p = 0.001; I2 = 83%], and WC [SMD: -0.34; 95% CI: -0.67, -0.02; p = 0.04; I2 = 61%]. However, no significant effects of ACV were observed on the other body composition parameters analyzed. Sensitivity analyses excluding high-risk-of-bias studies confirmed the robustness of ACV's beneficial effects on body weight and BMI. Subgroup analyses suggested that ACV consumption significantly improved anthropometric parameters when administered for up to 12 weeks, at a dose of 30 mL/day, and in adults who were overweight, obese, or had type 2 diabetes. Conclusions: Overall, this meta-analysis suggests that ACV supplementation may be a promising and accessible adjunctive strategy for short-term weight management in adults with excess body weight or metabolic complications.",
+        "plain_title": "Does Apple Cider Vinegar Help Overweight or Diabetic People Lose Weight?",
+        "plain_summary": "This study combined results from multiple controlled experiments and found that apple cider vinegar may have some effects on body measurements in overweight or diabetic adults, though the full findings are not provided in the available summary.",
+        "selected": true,
+        "ranking": {
+          "score": 26,
+          "overlap": 4,
+          "strategies_matched": [
+            "Broad search to capture any studies linking apple cider vinegar to weight loss",
+            "Targeted search for high-quality clinical evidence on vinegar or acetic acid and weight reduction outcomes",
+            "Broader search using the active component (acetic acid) and additional body composition endpoints in human studies",
+            "Focused search for systematic reviews and meta-analyses summarizing the evidence on vinegar for weight management and appetite control"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review",
+          "Meta-Analysis"
+        ],
+        "strategy_idx": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "positions": [
+          3,
+          1,
+          5,
+          1
+        ]
+      },
+      {
+        "pmid": "19661687",
+        "doi": "10.1271/bbb.90231",
+        "title": "Vinegar intake reduces body weight, body fat mass, and serum triglyceride levels in obese Japanese subjects.",
+        "authors": [
+          "Kondo Tomoo",
+          "Kishi Mikiya",
+          "Fushimi Takashi",
+          "Ugajin Shinobu",
+          "Kaga Takayuki"
+        ],
+        "journal": "Bioscience, biotechnology, and biochemistry",
+        "year": 2009,
+        "abstract": "Acetic acid (AcOH), a main component of vinegar, recently was found to suppress body fat accumulation in animal studies. Hence we investigated the effects of vinegar intake on the reduction of body fat mass in obese Japanese in a double-blind trial. The subjects were randomly assigned to three groups of similar body weight, body mass index (BMI), and waist circumference. During the 12-week treatment period, the subjects in each group ingested 500 ml daily of a beverage containing either 15 ml of vinegar (750 mg AcOH), 30 ml of vinegar (1,500 mg AcOH), or 0 ml of vinegar (0 mg AcOH, placebo). Body weight, BMI, visceral fat area, waist circumference, and serum triglyceride levels were significantly lower in both vinegar intake groups than in the placebo group. In conclusion, daily intake of vinegar might be useful in the prevention of metabolic syndrome by reducing obesity.",
+        "plain_title": "Daily Vinegar Drinks Reduced Weight and Body Fat in Obese People",
+        "plain_summary": "In a 12-week study of obese Japanese adults, those who drank a beverage containing vinegar daily (either a low or high dose) lost more body weight, body fat, and had lower blood fat levels compared to those who drank a placebo.",
+        "selected": true,
+        "ranking": {
+          "score": 12,
+          "overlap": 2,
+          "strategies_matched": [
+            "Targeted search for high-quality clinical evidence on vinegar or acetic acid and weight reduction outcomes",
+            "Broader search using the active component (acetic acid) and additional body composition endpoints in human studies"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial"
+        ],
+        "strategy_idx": [
+          1,
+          2
+        ],
+        "positions": [
+          3,
+          3
+        ]
+      },
+      {
+        "pmid": "39882285",
+        "doi": "10.1136/bmjnph-2024-001102",
+        "title": "Comprehensive clarification of statistical and data concerns on the effects of apple cider vinegar on weight loss.",
+        "authors": [
+          "Abou-Khalil Rony",
+          "El-Hayek Elissar"
+        ],
+        "journal": "BMJ nutrition, prevention & health",
+        "year": 2024,
+        "abstract": null,
+        "plain_title": "Researchers Question Data Accuracy in Apple Cider Vinegar Weight Loss Study",
+        "plain_summary": "This paper raises concerns about statistical errors and questionable data in a previously published study that claimed apple cider vinegar helps with weight loss.",
+        "selected": true,
+        "ranking": {
+          "score": 8,
+          "overlap": 1,
+          "strategies_matched": [
+            "Broad search to capture any studies linking apple cider vinegar to weight loss"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article"
+        ],
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          1
+        ]
+      },
+      {
+        "pmid": "39064748",
+        "doi": "10.3390/nu16142305",
+        "title": "Daily Vinegar Ingestion Improves Depression and Enhances Niacin Metabolism in Overweight Adults: A Randomized Controlled Trial.",
+        "authors": [
+          "Barrong Haley",
+          "Coven Hannah",
+          "Lish Alexandra",
+          "Fessler Samantha N",
+          "Jasbi Paniz",
+          "Johnston Carol S"
+        ],
+        "journal": "Nutrients",
+        "year": 2024,
+        "abstract": "Depressive disorders are the most prevalent mental health conditions in the world. The commonly prescribed antidepressant medications can have serious side effects, and their efficacy varies widely. Thus, simple, effective adjunct therapies are needed. Vinegar, a fermented acetic acid solution, is emerging as a healthful dietary supplement linked to favorable outcomes for blood glucose management, heart disease risk, and adiposity reduction, and a recent report suggests vinegar may improve symptoms of depression. This randomized controlled study examined the 4-week change in scores for the Center for Epidemiological Studies Depression (CES-D) questionnaire and the Patient Health Questionnaire (PHQ-9) in healthy overweight adults ingesting 2.95 g acetic acid (4 tablespoons vinegar) vs. 0.025 g acetic acid (one vinegar pill) daily. A secondary objective explored possible underlying mechanisms using metabolomics analyses. At week 4, mean CES-D scores fell 26% and 5% for VIN and CON participants respectively, a non-significant difference between groups, and mean PHQ-9 scores fell 42% and 18% for VIN and CON participants (p = 0.036). Metabolomics analyses revealed increased nicotinamide concentrations and upregulation of the NAD+ salvage pathway for VIN participants compared to controls, metabolic alterations previously linked to improved mood. Thus, daily vinegar ingestion over four weeks improved self-reported depression symptomology in healthy overweight adults, and enhancements in niacin metabolism may factor into this improvement.",
+        "plain_title": "Daily Vinegar May Help Improve Mood in Overweight Adults",
+        "plain_summary": "A 4-week controlled study found that overweight adults who consumed vinegar daily showed improvements in depression symptoms and changes in certain nutrient-processing pathways, suggesting vinegar may have mental health benefits beyond its physical effects.",
+        "selected": true,
+        "ranking": {
+          "score": 8,
+          "overlap": 2,
+          "strategies_matched": [
+            "Targeted search for high-quality clinical evidence on vinegar or acetic acid and weight reduction outcomes",
+            "Broader search using the active component (acetic acid) and additional body composition endpoints in human studies"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial"
+        ],
+        "strategy_idx": [
+          1,
+          2
+        ],
+        "positions": [
+          20,
+          16
+        ]
+      },
+      {
+        "pmid": "7702107",
+        "doi": "10.2105/ajph.85.4.476",
+        "title": "Agent Orange in Vietnam.",
+        "authors": [
+          "Dwyer J H",
+          "Flesch-Janys D"
+        ],
+        "journal": "American journal of public health",
+        "year": 1995,
+        "abstract": null,
+        "plain_title": "Study About the Chemical Agent Orange Used in Vietnam",
+        "plain_summary": "This paper is about Agent Orange, a chemical used during the Vietnam War, and is not related to apple cider vinegar or weight loss.",
+        "selected": true,
+        "ranking": {
+          "score": 8,
+          "overlap": 1,
+          "strategies_matched": [
+            "Broader search using the active component (acetic acid) and additional body composition endpoints in human studies"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Editorial",
+          "Comment"
+        ],
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          1
+        ]
+      },
+      {
+        "pmid": "40771528",
+        "doi": "10.1136/bmjnph-2024-000997",
+        "title": "Improbable data characteristics and extreme effects of apple cider vinegar on weight loss.",
+        "authors": [
+          "Malbouby Vahid",
+          "Trexler Eric T",
+          "Heathers James"
+        ],
+        "journal": "BMJ nutrition, prevention & health",
+        "year": 2025,
+        "abstract": null,
+        "plain_title": "Researchers Flag Unlikely Results in Vinegar Weight Loss Study",
+        "plain_summary": "This paper argues that a widely cited study claiming dramatic weight loss from apple cider vinegar contains data patterns that appear statistically implausible, casting doubt on those results.",
+        "selected": true,
+        "ranking": {
+          "score": 7,
+          "overlap": 1,
+          "strategies_matched": [
+            "Broad search to capture any studies linking apple cider vinegar to weight loss"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Letter",
+          "Comment"
+        ],
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          2
+        ]
+      },
+      {
+        "pmid": "34187442",
+        "doi": "10.1186/s12906-021-03351-w",
+        "title": "The effect of apple cider vinegar on lipid profiles and glycemic parameters: a systematic review and meta-analysis of randomized clinical trials.",
+        "authors": [
+          "Hadi Amir",
+          "Pourmasoumi Makan",
+          "Najafgholizadeh Ameneh",
+          "Clark Cain C T",
+          "Esmaillzadeh Ahmad"
+        ],
+        "journal": "BMC complementary medicine and therapies",
+        "year": 2021,
+        "abstract": "BACKGROUND: Elevated lipid profiles and impaired glucose homeostasis are risk factors for several cardiovascular diseases (CVDs), which, subsequently, represent a leading cause of early mortality, worldwide. The aim of the current study was to conduct a systematic review and meta-analysis of the effect of apple cider vinegar (ACV) on lipid profiles and glycemic parameters in adults.\n\nMETHODS: A systematic search was conducted in electronic databases, including Medline, Scopus, Cochrane Library, and Web of Knowledge, from database inception to January 2020. All clinical trials which investigated the effect of ACV on lipid profiles and glycemic indicators were included. Studies were excluded if ACV was used in combination with other interventions or when the duration of intervention was < 2 weeks. To account for between-study heterogeneity, we performed meta-analysis using a random-effects model.\n\nRESULTS: Overall, nine studies, including 10 study arms, were included in this meta-analysis. We found that ACV consumption significantly decreased serum total cholesterol (- 6.06 mg/dL; 95% CI: - 10.95, - 1.17; I2: 39%), fasting plasma glucose (- 7.97 mg/dL; 95% CI: - 13.74, - 2.21; I2: 75%), and HbA1C concentrations (- 0.50; 95% CI: - 0.90, - 0.09; I2: 91%). No significant effect of ACV consumption was found on serum LDL-C, HDL-C, fasting insulin concentrations, or HOMA-IR. The stratified analysis revealed a significant reduction of serum TC and TG in a subgroup of patients with type 2 diabetes, those who took ≤15 mL/day of ACV, and those who consumed ACV for > 8-weeks, respectively. Furthermore, ACV consumption significantly decreased FPG levels in a subgroup of studies that administered ACV for > 8-weeks. Further, ACV intake appeared to elicit an increase in FPG and HDL-C concentrations in apparently healthy participants.\n\nCONCLUSION: We found a significant favorable effect of ACV consumption on FPG and blood lipid levels.",
+        "plain_title": "Does Apple Cider Vinegar Improve Cholesterol and Blood Sugar Levels?",
+        "plain_summary": "This review combined results from multiple clinical trials to determine whether apple cider vinegar affects cholesterol and blood sugar levels in adults, which are important risk factors for heart disease.",
+        "selected": true,
+        "ranking": {
+          "score": 7,
+          "overlap": 1,
+          "strategies_matched": [
+            "Targeted search for high-quality clinical evidence on vinegar or acetic acid and weight reduction outcomes"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis",
+          "Systematic Review"
+        ],
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          2
+        ]
+      },
+      {
+        "pmid": "33116305",
+        "doi": "10.1038/s41586-020-2856-x",
+        "title": "snRNA-seq reveals a subpopulation of adipocytes that regulates thermogenesis.",
+        "authors": [
+          "Sun Wenfei",
+          "Dong Hua",
+          "Balaz Miroslav",
+          "Slyper Michal",
+          "Drokhlyansky Eugene",
+          "Colleluori Georgia",
+          "Giordano Antonio",
+          "Kovanicova Zuzana",
+          "Stefanicka Patrik",
+          "Balazova Lucia",
+          "Ding Lianggong",
+          "Husted Anna Sofie",
+          "Rudofsky Gottfried",
+          "Ukropec Jozef",
+          "Cinti Saverio",
+          "Schwartz Thue W",
+          "Regev Aviv",
+          "Wolfrum Christian"
+        ],
+        "journal": "Nature",
+        "year": 2020,
+        "abstract": "Adipose tissue is usually classified on the basis of its function as white, brown or beige (brite)1. It is an important regulator of systemic metabolism, as shown by the fact that dysfunctional adipose tissue in obesity leads to a variety of secondary metabolic complications2,3. In addition, adipose tissue functions as a signalling hub that regulates systemic metabolism through paracrine and endocrine signals4. Here we use single-nucleus RNA-sequencing (snRNA-seq) analysis in mice and humans to characterize adipocyte heterogeneity. We identify a rare subpopulation of adipocytes in mice that increases in abundance at higher temperatures, and we show that this subpopulation regulates the activity of neighbouring adipocytes through acetate-mediated modulation of their thermogenic capacity. Human adipose tissue contains higher numbers of cells of this subpopulation, which could explain the lower thermogenic activity of human compared to mouse adipose tissue and suggests that targeting this pathway could be used to restore thermogenic activity.",
+        "plain_title": "Scientists Discover a Special Type of Fat Cell That Burns Energy",
+        "plain_summary": "Using advanced cell-analysis technology, researchers identified a rare type of fat cell in mice and humans that helps regulate body heat and energy use — this is basic biology research unrelated to apple cider vinegar.",
+        "selected": true,
+        "ranking": {
+          "score": 7,
+          "overlap": 1,
+          "strategies_matched": [
+            "Broader search using the active component (acetic acid) and additional body composition endpoints in human studies"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          2
+        ]
+      },
+      {
+        "pmid": "33436350",
+        "doi": "10.1016/j.jand.2020.12.002",
+        "title": "Effect of Dietary Acetic Acid Supplementation on Plasma Glucose, Lipid Profiles, and Body Mass Index in Human Adults: A Systematic Review and Meta-analysis.",
+        "authors": [
+          "Valdes Daniela S",
+          "So Daniel",
+          "Gill Paul A",
+          "Kellow Nicole J"
+        ],
+        "journal": "Journal of the Academy of Nutrition and Dietetics",
+        "year": 2021,
+        "abstract": "BACKGROUND: Acetic acid is a short-chain fatty acid that has demonstrated biomedical potential as a dietary therapeutic agent for the management of chronic and metabolic illness comorbidities. In human beings, its consumption may improve glucose regulation and insulin sensitivity in individuals with cardiometabolic conditions and type 2 diabetes mellitus. Published clinical trial evidence evaluating its sustained supplementation effects on metabolic outcomes is inconsistent.\n\nOBJECTIVE: This systematic review and meta-analysis summarized available evidence on potential therapeutic effects of dietary acetic acid supplementation via consumption of acetic acid-rich beverages and food sources on metabolic and anthropometric outcomes.\n\nMETHODS: A systematic search was conducted in Medline, Scopus, EMBASE, CINAHL Plus, and Web of Science from database inception until October 2020. Randomized controlled trials conducted in adults evaluating the effect of dietary acetic acid supplementation for a minimum of 1 week were included. Meta-analyses were performed using a random-effects model on fasting blood glucose (FBG), triacylglycerol (TAG), high-density lipoprotein (HDL), low-density lipoprotein (LDL), glycated hemoglobin (HbA1c), body mass index (BMI), and body fat percentage. Statistical heterogeneity was assessed by calculation of Q and I2 statistics, and publication bias was assessed by calculation of Egger's regression asymmetry and Begg's test.\n\nRESULTS: Sixteen studies were included, involving 910 participants who consumed between 750 and 3600 mg acetic acid daily in interventions lasting an average of 8 weeks. Dietary acetic acid supplementation resulted in significant reductions in TAG concentrations in overweight and obese but otherwise healthy individuals (mean difference [MD] = -20.51 mg/dL [95% confidence intervals = -32.98, -8.04], P = .001) and people with type 2 diabetes (MD = -7.37 mg/dL [-10.15, -4.59], P < .001). Additionally, acetic acid supplementation significantly reduced FBG levels (MD = -35.73 mg/dL [-63.79, -7.67], P = .01) in subjects with type 2 diabetes compared with placebo and low-dose comparators. No other changes were seen for other metabolic or anthropometric outcomes assessed. Five of the 16 studies did not specify the dose of acetic acid delivered, and no studies measured blood acetate concentrations. Only one study controlled for background acetic acid-rich food consumption during intervention periods. Most studies had an unclear or high risk of bias.\n\nCONCLUSION: Supplementation with dietary acetic acid is well tolerated, has no adverse side effects, and has clinical potential to reduce plasma TAG and FBG concentrations in individuals with type 2 diabetes, and to reduce TAG levels in people who are overweight or obese. No significant effects of dietary acetic acid consumption were seen on HbA1c, HDL, or anthropometric markers. High-quality, longer-term studies in larger cohorts are required to confirm whether dietary acetic acid can act as an adjuvant therapeutic agent in metabolic comorbidities management.",
+        "plain_title": "Can Vinegar's Main Ingredient Improve Blood Sugar, Cholesterol, and Weight?",
+        "plain_summary": "This review of clinical trials examined whether regular consumption of acetic acid (the active ingredient in vinegar) helps improve blood sugar, cholesterol, and body weight, but found that existing study results were inconsistent.",
+        "selected": true,
+        "ranking": {
+          "score": 7,
+          "overlap": 1,
+          "strategies_matched": [
+            "Focused search for systematic reviews and meta-analyses summarizing the evidence on vinegar for weight management and appetite control"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis",
+          "Systematic Review"
+        ],
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          2
+        ]
+      },
+      {
+        "pmid": "23373303",
+        "doi": "10.5177/ntvt.2012.12.12192",
+        "title": "[Unhealthy weight loss. Erosion by apple cider vinegar].",
+        "authors": [
+          "Gambon D L",
+          "Brand H S",
+          "Veerman E C I"
+        ],
+        "journal": "Nederlands tijdschrift voor tandheelkunde",
+        "year": 2012,
+        "abstract": "Erosive tooth wear was diagnosed in the dentition of a 15-year-old girl with a Moroccan background. After an anamnesis, extensive analysis of possible risk factors and a study of the pattern of erosion, it was concluded that the erosive tooth wear was induced by daily consumption of a glass of apple cider vinegar Further investigation revealed that in North-African culture, women have used apple cider vinegar to achieve weight loss for generations. Bodybuilders are also known to make use of this method of weight reduction.",
+        "plain_title": "Teen's Tooth Damage Caused by Drinking Apple Cider Vinegar Daily",
+        "plain_summary": "A 15-year-old girl suffered significant tooth erosion from drinking a glass of apple cider vinegar every day as a weight loss method, a practice traditionally used in some North African cultures and by bodybuilders.",
+        "selected": true,
+        "ranking": {
+          "score": 5,
+          "overlap": 1,
+          "strategies_matched": [
+            "Broad search to capture any studies linking apple cider vinegar to weight loss"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Case Reports",
+          "English Abstract",
+          "Journal Article"
+        ],
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          4
+        ]
+      },
+      {
+        "pmid": "37356723",
+        "doi": "10.1016/j.diabres.2023.110803",
+        "title": "Fecal microbiota transplantation in obesity metabolism: A meta analysis and systematic review.",
+        "authors": [
+          "Zecheng Li",
+          "Donghai Liu",
+          "Runchuan Gu",
+          "Yuan Qiao",
+          "Qi Jin",
+          "Yijia Zhang",
+          "Shuaman Ran",
+          "Xiaoqi Liu",
+          "Yi Wang",
+          "Ni Mao",
+          "Yijin Qin",
+          "Liang Peng",
+          "Jun Wang"
+        ],
+        "journal": "Diabetes research and clinical practice",
+        "year": 2023,
+        "abstract": "OBJECTIVE: The effect of fecal microbiota transplantation (FMT) on microbiota engraftment in patients with metabolic syndrome remains unclear. This systematic review employed a meta-analysis of RCTs for assessment on the role of FMT in treating obesity and metabolic syndrome, and its impact on clinically relevant parameters.\n\nMETHOD: Major databases and grey literatures were searched identifying RCTs comparing FMT of lean donors with placebo in obese/metabolic syndrome patients. Studies using any form of placebo were included. Variations in the parameters before and after treatment were calculated followed by meta-analyses.\n\nRESULT: Ten studies met the inclusion criteria and a total of 334 patients were included for further analysis. Clinically significant parameters associated with obesity and metabolic syndrome were explored and FMT was identified significantly and negatively associated with most indices of abdominal adiposity including caloric intake, fasting glucose, HOMA-IR, systolic blood pressure, diastolic blood pressure, total cholesterol, HDL, LDL, triglycerides and CRP, Obesity parameters including fasting glucose and acetic acid were increased following FMT.\n\nCONCLUSION: FMT is more advantageous for obese patients with elevated blood pressure, disordered glucose and insulin metabolism, and elevated blood lipids. The study of metabolic factors in obese patients will be our starting point in the future.",
+        "plain_title": "Can Transplanting Gut Bacteria From Thin People Help With Obesity?",
+        "plain_summary": "This review of controlled studies examined whether transferring gut bacteria from lean donors into obese patients helps with weight loss and metabolic health — this is unrelated to apple cider vinegar.",
+        "selected": true,
+        "ranking": {
+          "score": 5,
+          "overlap": 1,
+          "strategies_matched": [
+            "Targeted search for high-quality clinical evidence on vinegar or acetic acid and weight reduction outcomes"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Meta-Analysis",
+          "Systematic Review",
+          "Journal Article"
+        ],
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          4
+        ]
+      },
+      {
+        "pmid": "7024720",
+        "doi": "10.1016/0026-0495(81)90105-0",
+        "title": "The metabolic effects of dichloroacetate.",
+        "authors": [
+          "Crabb D W",
+          "Yount E A",
+          "Harris R A"
+        ],
+        "journal": "Metabolism: clinical and experimental",
+        "year": 1981,
+        "abstract": null,
+        "plain_title": "Effects of a Chemical Compound Called Dichloroacetate on the Body",
+        "plain_summary": "This paper discusses the biological effects of dichloroacetate, an industrial chemical, and is not related to apple cider vinegar or weight loss.",
+        "selected": true,
+        "ranking": {
+          "score": 5,
+          "overlap": 1,
+          "strategies_matched": [
+            "Broader search using the active component (acetic acid) and additional body composition endpoints in human studies"
+          ],
+          "method": "cross-strategy overlap (x3) + PubMed position weight"
+        },
+        "publication_types": [
+          "Journal Article",
+          "Research Support, U.S. Gov't, P.H.S.",
+          "Review"
+        ],
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          4
+        ]
+      }
+    ],
+    "prompts": {
+      "search_system": "You are a PubMed search expert. Your job is to turn a plain-English health or science question into optimized PubMed search queries.\n\n## Rules\n1. Generate 3-4 PubMed search queries, from broad to specific.\n2. Use proper MeSH terms and boolean operators (AND, OR) where helpful.\n3. Include relevant synonyms and alternative phrasings.\n4. Prioritize queries that will find systematic reviews, meta-analyses, and RCTs when relevant.\n5. Keep queries concise but effective.\n\n## Output Format\nReturn ONLY a JSON array of objects. No markdown, no explanation, no code fences.\nEach object has:\n- \"query\": the PubMed search string\n- \"strategy\": a brief plain-English description of what this query targets (1 sentence)\n\nExample output:\n[{\"query\":\"vitamin D supplementation respiratory infection children\",\"strategy\":\"Broad search for vitamin D and respiratory infections in children\"},{\"query\":\"(vitamin D OR cholecalciferol) AND (respiratory tract infection OR RTI OR common cold) AND (child OR pediatric) AND (randomized controlled trial OR meta-analysis)\",\"strategy\":\"Targeted search for high-quality trials on vitamin D and respiratory infections in kids\"}]",
+      "summary_system": "You translate medical research paper titles and abstracts into plain language for people without medical training.\n\n## Rules\n1. Use no medical jargon. If a technical concept is essential, explain it in parentheses.\n2. Be specific about findings (numbers, effects) when the abstract provides them.\n3. Each summary should help a non-expert decide if this paper is relevant to their question.\n\n## Output Format\nReturn ONLY a JSON array in the same order as the papers provided. No markdown, no explanation.\nEach object has:\n- \"plain_title\": A clear, jargon-free title (5-12 words)\n- \"plain_summary\": One sentence explaining the key finding or purpose in everyday language",
+      "synthesis_system": "You are a research translator for Tables Turned, a tool that helps regular people understand PubMed research.\n\n## Your Rules\n\n1. **Answer the question first.** Open with a direct, clear answer in 2-3 sentences based on the evidence. This is the most important part.\n2. **Every claim needs receipts.** Cite as [PMID: XXXXX]. If you cannot link a claim to a provided paper, mark it [UNWITNESSED].\n3. **Surface contradictions.** If papers disagree, say so plainly.\n4. **Write in common tongue.** No jargon. If a technical term is unavoidable, translate it in parentheses. Short sentences.\n5. **Do not patronize.** The reader is intelligent and busy.\n6. **State confidence honestly.** Strong, mixed, or thin with reasons.\n7. **Do not hallucinate.** Never invent findings. Never cite a PMID not provided to you.\n\n## Output Format\n\n**CRITICAL: The entire brief must fit on ONE printed page. Be concise. No filler. No padding. Every sentence must earn its place.**\n\nProduce a markdown document with exactly these sections:\n\n# [Short title from the question]\n\n**Question:** [question] · **Context:** [context]\n\n---\n\n## The short answer\n\n[2-3 sentences directly answering the user's question. Lead with what matters most to their decision. Cite key PMIDs inline.]\n\n## Key findings\n\n[4-6 bullet points maximum. Each bullet states one finding in plain language and cites [PMID: XXXXX]. If papers contradict each other, say so in the bullet.]\n\n## What is unknown\n\n[2-3 bullet points: gaps the papers do not address that the reader likely cares about.]\n\n## Confidence: [Low / Medium / High]\n\n[One sentence: why, based on study count, size, consistency, and design quality.]\n\n---\n\n*Generated by Tables Turned. Receipts only.*",
+      "synthesis_user_message": "**Question:** Does apple cider vinegar help with weight loss?\n**Context:** Seen it all over social media; deciding whether it is worth buying.\n\n---\n\n**Papers provided (12):**\n\n### PMID: 41010525\n**Title:** Effect of Apple Cider Vinegar Intake on Body Composition in Humans with Type 2 Diabetes and/or Overweight: A Systematic Review and Meta-Analysis of Randomized Controlled Trials.\n**Authors:** Castagna Alberto, Ferro Yvelise, Noto Francesca Rita, Bruno Rossella, Aragao Guimaraes Analucia et al.\n**Journal:** Nutrients (2025)\n**Abstract:**\nBackground: Apple cider vinegar (ACV) is a naturally fermented beverage with potential metabolic health benefits; however, its effects on weight loss remain controversial. This systematic review and meta-analysis of randomized controlled trials (RCTs) was conducted to assess the effect of ACV on anthropometric measurements in adults. Methods: We performed a systematic search of PubMed, Web of Science, Scopus, and CENTRAL up to March 2025 for randomized controlled trials (RCTs) in adults (≥18 years) evaluating the effects of ACV for ≥4 weeks on body composition parameters. Primary outcomes included changes in body weight, BMI, waist circumference, and other anthropometric measures. Risk of bias was assessed using the Revised Cochrane Risk-of-bias tool. Results: Out of 2961 reports screened, 10 RCTs comprising a total of 789 participants were eligible for inclusion in this meta-analysis. The pooled results using a random-effects model showed that daily ACV intake significantly reduced body weight [SMD: -0.39; 95% CI: -0.63, -0.15; p = 0.001; I2 = 62%], BMI [SMD: -0.65; 95% CI: -1.05, -0.26; p = 0.001; I2 = 83%], and WC [SMD: -0.34; 95% CI: -0.67, -0.02; p = 0.04; I2 = 61%]. However, no significant effects of ACV were observed on the other body composition parameters analyzed. Sensitivity analyses excluding high-risk-of-bias studies confirmed the robustness of ACV's beneficial effects on body weight and BMI. Subgroup analyses suggested that ACV consumption significantly improved anthropometric parameters when administered for up to 12 weeks, at a dose of 30 mL/day, and in adults who were overweight, obese, or had type 2 diabetes. Conclusions: Overall, this meta-analysis suggests that ACV supplementation may be a promising and accessible adjunctive strategy for short-term weight management in adults with excess body weight or metabolic complications.\n\n---\n\n### PMID: 19661687\n**Title:** Vinegar intake reduces body weight, body fat mass, and serum triglyceride levels in obese Japanese subjects.\n**Authors:** Kondo Tomoo, Kishi Mikiya, Fushimi Takashi, Ugajin Shinobu, Kaga Takayuki\n**Journal:** Bioscience, biotechnology, and biochemistry (2009)\n**Abstract:**\nAcetic acid (AcOH), a main component of vinegar, recently was found to suppress body fat accumulation in animal studies. Hence we investigated the effects of vinegar intake on the reduction of body fat mass in obese Japanese in a double-blind trial. The subjects were randomly assigned to three groups of similar body weight, body mass index (BMI), and waist circumference. During the 12-week treatment period, the subjects in each group ingested 500 ml daily of a beverage containing either 15 ml of vinegar (750 mg AcOH), 30 ml of vinegar (1,500 mg AcOH), or 0 ml of vinegar (0 mg AcOH, placebo). Body weight, BMI, visceral fat area, waist circumference, and serum triglyceride levels were significantly lower in both vinegar intake groups than in the placebo group. In conclusion, daily intake of vinegar might be useful in the prevention of metabolic syndrome by reducing obesity.\n\n---\n\n### PMID: 39882285\n**Title:** Comprehensive clarification of statistical and data concerns on the effects of apple cider vinegar on weight loss.\n**Authors:** Abou-Khalil Rony, El-Hayek Elissar\n**Journal:** BMJ nutrition, prevention & health (2024)\n**Abstract:** Not available.\n\n---\n\n### PMID: 39064748\n**Title:** Daily Vinegar Ingestion Improves Depression and Enhances Niacin Metabolism in Overweight Adults: A Randomized Controlled Trial.\n**Authors:** Barrong Haley, Coven Hannah, Lish Alexandra, Fessler Samantha N, Jasbi Paniz et al.\n**Journal:** Nutrients (2024)\n**Abstract:**\nDepressive disorders are the most prevalent mental health conditions in the world. The commonly prescribed antidepressant medications can have serious side effects, and their efficacy varies widely. Thus, simple, effective adjunct therapies are needed. Vinegar, a fermented acetic acid solution, is emerging as a healthful dietary supplement linked to favorable outcomes for blood glucose management, heart disease risk, and adiposity reduction, and a recent report suggests vinegar may improve symptoms of depression. This randomized controlled study examined the 4-week change in scores for the Center for Epidemiological Studies Depression (CES-D) questionnaire and the Patient Health Questionnaire (PHQ-9) in healthy overweight adults ingesting 2.95 g acetic acid (4 tablespoons vinegar) vs. 0.025 g acetic acid (one vinegar pill) daily. A secondary objective explored possible underlying mechanisms using metabolomics analyses. At week 4, mean CES-D scores fell 26% and 5% for VIN and CON participants respectively, a non-significant difference between groups, and mean PHQ-9 scores fell 42% and 18% for VIN and CON participants (p = 0.036). Metabolomics analyses revealed increased nicotinamide concentrations and upregulation of the NAD+ salvage pathway for VIN participants compared to controls, metabolic alterations previously linked to improved mood. Thus, daily vinegar ingestion over four weeks improved self-reported depression symptomology in healthy overweight adults, and enhancements in niacin metabolism may factor into this improvement.\n\n---\n\n### PMID: 7702107\n**Title:** Agent Orange in Vietnam.\n**Authors:** Dwyer J H, Flesch-Janys D\n**Journal:** American journal of public health (1995)\n**Abstract:** Not available.\n\n---\n\n### PMID: 40771528\n**Title:** Improbable data characteristics and extreme effects of apple cider vinegar on weight loss.\n**Authors:** Malbouby Vahid, Trexler Eric T, Heathers James\n**Journal:** BMJ nutrition, prevention & health (2025)\n**Abstract:** Not available.\n\n---\n\n### PMID: 34187442\n**Title:** The effect of apple cider vinegar on lipid profiles and glycemic parameters: a systematic review and meta-analysis of randomized clinical trials.\n**Authors:** Hadi Amir, Pourmasoumi Makan, Najafgholizadeh Ameneh, Clark Cain C T, Esmaillzadeh Ahmad\n**Journal:** BMC complementary medicine and therapies (2021)\n**Abstract:**\nBACKGROUND: Elevated lipid profiles and impaired glucose homeostasis are risk factors for several cardiovascular diseases (CVDs), which, subsequently, represent a leading cause of early mortality, worldwide. The aim of the current study was to conduct a systematic review and meta-analysis of the effect of apple cider vinegar (ACV) on lipid profiles and glycemic parameters in adults.\n\nMETHODS: A systematic search was conducted in electronic databases, including Medline, Scopus, Cochrane Library, and Web of Knowledge, from database inception to January 2020. All clinical trials which investigated the effect of ACV on lipid profiles and glycemic indicators were included. Studies were excluded if ACV was used in combination with other interventions or when the duration of intervention was < 2 weeks. To account for between-study heterogeneity, we performed meta-analysis using a random-effects model.\n\nRESULTS: Overall, nine studies, including 10 study arms, were included in this meta-analysis. We found that ACV consumption significantly decreased serum total cholesterol (- 6.06 mg/dL; 95% CI: - 10.95, - 1.17; I2: 39%), fasting plasma glucose (- 7.97 mg/dL; 95% CI: - 13.74, - 2.21; I2: 75%), and HbA1C concentrations (- 0.50; 95% CI: - 0.90, - 0.09; I2: 91%). No significant effect of ACV consumption was found on serum LDL-C, HDL-C, fasting insulin concentrations, or HOMA-IR. The stratified analysis revealed a significant reduction of serum TC and TG in a subgroup of patients with type 2 diabetes, those who took ≤15 mL/day of ACV, and those who consumed ACV for > 8-weeks, respectively. Furthermore, ACV consumption significantly decreased FPG levels in a subgroup of studies that administered ACV for > 8-weeks. Further, ACV intake appeared to elicit an increase in FPG and HDL-C concentrations in apparently healthy participants.\n\nCONCLUSION: We found a significant favorable effect of ACV consumption on FPG and blood lipid levels.\n\n---\n\n### PMID: 33116305\n**Title:** snRNA-seq reveals a subpopulation of adipocytes that regulates thermogenesis.\n**Authors:** Sun Wenfei, Dong Hua, Balaz Miroslav, Slyper Michal, Drokhlyansky Eugene et al.\n**Journal:** Nature (2020)\n**Abstract:**\nAdipose tissue is usually classified on the basis of its function as white, brown or beige (brite)1. It is an important regulator of systemic metabolism, as shown by the fact that dysfunctional adipose tissue in obesity leads to a variety of secondary metabolic complications2,3. In addition, adipose tissue functions as a signalling hub that regulates systemic metabolism through paracrine and endocrine signals4. Here we use single-nucleus RNA-sequencing (snRNA-seq) analysis in mice and humans to characterize adipocyte heterogeneity. We identify a rare subpopulation of adipocytes in mice that increases in abundance at higher temperatures, and we show that this subpopulation regulates the activity of neighbouring adipocytes through acetate-mediated modulation of their thermogenic capacity. Human adipose tissue contains higher numbers of cells of this subpopulation, which could explain the lower thermogenic activity of human compared to mouse adipose tissue and suggests that targeting this pathway could be used to restore thermogenic activity.\n\n---\n\n### PMID: 33436350\n**Title:** Effect of Dietary Acetic Acid Supplementation on Plasma Glucose, Lipid Profiles, and Body Mass Index in Human Adults: A Systematic Review and Meta-analysis.\n**Authors:** Valdes Daniela S, So Daniel, Gill Paul A, Kellow Nicole J\n**Journal:** Journal of the Academy of Nutrition and Dietetics (2021)\n**Abstract:**\nBACKGROUND: Acetic acid is a short-chain fatty acid that has demonstrated biomedical potential as a dietary therapeutic agent for the management of chronic and metabolic illness comorbidities. In human beings, its consumption may improve glucose regulation and insulin sensitivity in individuals with cardiometabolic conditions and type 2 diabetes mellitus. Published clinical trial evidence evaluating its sustained supplementation effects on metabolic outcomes is inconsistent.\n\nOBJECTIVE: This systematic review and meta-analysis summarized available evidence on potential therapeutic effects of dietary acetic acid supplementation via consumption of acetic acid-rich beverages and food sources on metabolic and anthropometric outcomes.\n\nMETHODS: A systematic search was conducted in Medline, Scopus, EMBASE, CINAHL Plus, and Web of Science from database inception until October 2020. Randomized controlled trials conducted in adults evaluating the effect of dietary acetic acid supplementation for a minimum of 1 week were included. Meta-analyses were performed using a random-effects model on fasting blood glucose (FBG), triacylglycerol (TAG), high-density lipoprotein (HDL), low-density lipoprotein (LDL), glycated hemoglobin (HbA1c), body mass index (BMI), and body fat percentage. Statistical heterogeneity was assessed by calculation of Q and I2 statistics, and publication bias was assessed by calculation of Egger's regression asymmetry and Begg's test.\n\nRESULTS: Sixteen studies were included, involving 910 participants who consumed between 750 and 3600 mg acetic acid daily in interventions lasting an average of 8 weeks. Dietary acetic acid supplementation resulted in significant reductions in TAG concentrations in overweight and obese but otherwise healthy individuals (mean difference [MD] = -20.51 mg/dL [95% confidence intervals = -32.98, -8.04], P = .001) and people with type 2 diabetes (MD = -7.37 mg/dL [-10.15, -4.59], P < .001). Additionally, acetic acid supplementation significantly reduced FBG levels (MD = -35.73 mg/dL [-63.79, -7.67], P = .01) in subjects with type 2 diabetes compared with placebo and low-dose comparators. No other changes were seen for other metabolic or anthropometric outcomes assessed. Five of the 16 studies did not specify the dose of acetic acid delivered, and no studies measured blood acetate concentrations. Only one study controlled for background acetic acid-rich food consumption during intervention periods. Most studies had an unclear or high risk of bias.\n\nCONCLUSION: Supplementation with dietary acetic acid is well tolerated, has no adverse side effects, and has clinical potential to reduce plasma TAG and FBG concentrations in individuals with type 2 diabetes, and to reduce TAG levels in people who are overweight or obese. No significant effects of dietary acetic acid consumption were seen on HbA1c, HDL, or anthropometric markers. High-quality, longer-term studies in larger cohorts are required to confirm whether dietary acetic acid can act as an adjuvant therapeutic agent in metabolic comorbidities management.\n\n---\n\n### PMID: 23373303\n**Title:** [Unhealthy weight loss. Erosion by apple cider vinegar].\n**Authors:** Gambon D L, Brand H S, Veerman E C I\n**Journal:** Nederlands tijdschrift voor tandheelkunde (2012)\n**Abstract:**\nErosive tooth wear was diagnosed in the dentition of a 15-year-old girl with a Moroccan background. After an anamnesis, extensive analysis of possible risk factors and a study of the pattern of erosion, it was concluded that the erosive tooth wear was induced by daily consumption of a glass of apple cider vinegar Further investigation revealed that in North-African culture, women have used apple cider vinegar to achieve weight loss for generations. Bodybuilders are also known to make use of this method of weight reduction.\n\n---\n\n### PMID: 37356723\n**Title:** Fecal microbiota transplantation in obesity metabolism: A meta analysis and systematic review.\n**Authors:** Zecheng Li, Donghai Liu, Runchuan Gu, Yuan Qiao, Qi Jin et al.\n**Journal:** Diabetes research and clinical practice (2023)\n**Abstract:**\nOBJECTIVE: The effect of fecal microbiota transplantation (FMT) on microbiota engraftment in patients with metabolic syndrome remains unclear. This systematic review employed a meta-analysis of RCTs for assessment on the role of FMT in treating obesity and metabolic syndrome, and its impact on clinically relevant parameters.\n\nMETHOD: Major databases and grey literatures were searched identifying RCTs comparing FMT of lean donors with placebo in obese/metabolic syndrome patients. Studies using any form of placebo were included. Variations in the parameters before and after treatment were calculated followed by meta-analyses.\n\nRESULT: Ten studies met the inclusion criteria and a total of 334 patients were included for further analysis. Clinically significant parameters associated with obesity and metabolic syndrome were explored and FMT was identified significantly and negatively associated with most indices of abdominal adiposity including caloric intake, fasting glucose, HOMA-IR, systolic blood pressure, diastolic blood pressure, total cholesterol, HDL, LDL, triglycerides and CRP, Obesity parameters including fasting glucose and acetic acid were increased following FMT.\n\nCONCLUSION: FMT is more advantageous for obese patients with elevated blood pressure, disordered glucose and insulin metabolism, and elevated blood lipids. The study of metabolic factors in obese patients will be our starting point in the future.\n\n---\n\n### PMID: 7024720\n**Title:** The metabolic effects of dichloroacetate.\n**Authors:** Crabb D W, Yount E A, Harris R A\n**Journal:** Metabolism: clinical and experimental (1981)\n**Abstract:** Not available.\n\n---\n\nBased on these papers, generate a plain-language synthesis brief.\nCRITICAL: The brief MUST fit on ONE printed page. Be direct and concise. Cut all filler.\nAnswer the question first. Every claim must cite PMID(s).\nSurface contradictions. State confidence honestly.\nWrite for a regular person making a real decision.",
+      "model": "claude-opus-4-6"
+    },
+    "synthesis": {
+      "brief_markdown": "# Does Apple Cider Vinegar Help With Weight Loss?\n\n**Question:** Does apple cider vinegar help with weight loss? · **Context:** Seen it all over social media; deciding whether it is worth buying.\n\n---\n\n## The short answer\n\nThere is some evidence that apple cider vinegar (ACV) can produce modest, short-term weight loss — roughly a few pounds over 8–12 weeks — especially in people who are already overweight or have type 2 diabetes [PMID: 41010525] [PMID: 19661687]. However, the effect sizes are small, the study quality is generally low, and recent critiques have flagged statistical problems in key trials, casting doubt on whether the results are trustworthy [PMID: 40771528] [PMID: 39882285].\n\n## Key findings\n\n- **A 2025 meta-analysis of 10 trials (789 people)** found that daily ACV intake significantly reduced body weight, BMI, and waist circumference compared to placebo. Benefits were clearest at ~30 mL/day for up to 12 weeks in overweight/obese adults [PMID: 41010525].\n- **A 2009 Japanese trial (155 obese adults)** showed that 12 weeks of daily vinegar (15–30 mL) reduced body weight, visceral fat, waist circumference, and triglycerides versus placebo [PMID: 19661687].\n- **A separate 2021 meta-analysis (16 trials, 910 people)** found **no significant effect** of acetic acid on BMI or body fat percentage, contradicting the more positive findings above [PMID: 33436350].\n- **Two independent critiques** have raised serious concerns about \"improbable data\" and statistical errors in influential ACV-weight-loss trials, suggesting some positive results may be unreliable [PMID: 40771528] [PMID: 39882285].\n- **ACV may modestly improve blood sugar and cholesterol**, which could benefit metabolic health even apart from weight loss [PMID: 34187442].\n- **ACV carries a real dental risk.** A case report documented significant tooth erosion from daily ACV consumption [PMID: 23373303].\n\n## What is unknown\n\n- **Long-term effects beyond 12 weeks** have not been studied. Whether any weight lost stays off is entirely unclear.\n- **How ACV compares to simply eating less or exercising more** — no study has made this head-to-head comparison.\n- **Optimal dose, form (liquid vs. pill), and who benefits most** remain poorly defined; existing studies vary widely in design.\n\n## Confidence: Low to Medium\n\nMultiple meta-analyses exist, but the underlying trials are small, short, and often rated as having high or unclear risk of bias. Independent researchers have flagged data integrity issues in key studies. The overall signal is weak and contested.\n\n---\n\n*Generated by Tables Turned. Receipts only.*"
+    },
+    "provenance": [
+      {
+        "timestamp": "2026-09-28T23:41:46Z",
+        "action": "search_started",
+        "detail": "Does apple cider vinegar help with weight loss?"
+      },
+      {
+        "timestamp": "2026-09-28T23:41:52Z",
+        "action": "search_queries_generated",
+        "detail": "apple cider vinegar weight loss | (apple cider vinegar OR acetic acid) AND (weight loss OR body weight OR obesity OR body mass index OR BMI) AND (randomized controlled trial OR clinical trial OR meta-analysis) | (vinegar OR acetic acid) AND (body composition OR adiposity OR waist circumference OR body fat) AND (humans[MeSH]) | (apple cider vinegar OR vinegar dietary supplement) AND (weight management OR anti-obesity OR appetite OR satiety) AND (systematic review OR meta-analysis)"
+      },
+      {
+        "timestamp": "2026-09-28T23:41:53Z",
+        "action": "pubmed_searched",
+        "detail": "\"apple cider vinegar weight loss\" -> 11 total, fetched 11"
+      },
+      {
+        "timestamp": "2026-09-28T23:41:54Z",
+        "action": "pubmed_searched",
+        "detail": "\"(apple cider vinegar OR acetic acid) AND (weight loss OR body weight OR obesity OR body mass index OR BMI) AND (randomized controlled trial OR clinical trial OR meta-analysis)\" -> 459 total, fetched 25"
+      },
+      {
+        "timestamp": "2026-09-28T23:41:56Z",
+        "action": "pubmed_searched",
+        "detail": "\"(vinegar OR acetic acid) AND (body composition OR adiposity OR waist circumference OR body fat) AND (humans[MeSH])\" -> 621 total, fetched 25"
+      },
+      {
+        "timestamp": "2026-09-28T23:41:58Z",
+        "action": "pubmed_searched",
+        "detail": "\"(apple cider vinegar OR vinegar dietary supplement) AND (weight management OR anti-obesity OR appetite OR satiety) AND (systematic review OR meta-analysis)\" -> 2 total, fetched 2"
+      },
+      {
+        "timestamp": "2026-09-28T23:41:58Z",
+        "action": "papers_ranked",
+        "detail": "58 papers scored. Top 12 selected (scores 26-5). Method: cross-strategy overlap (x3) + PubMed position weight."
+      },
+      {
+        "timestamp": "2026-09-28T23:42:20Z",
+        "action": "plain_summaries_generated",
+        "detail": "12 papers translated"
+      },
+      {
+        "timestamp": "2026-09-28T23:42:20Z",
+        "action": "papers_selected_for_synthesis",
+        "detail": "12 papers"
+      },
+      {
+        "timestamp": "2026-09-28T23:42:40Z",
+        "action": "synthesis_generated",
+        "detail": "2610 chars, 12 papers"
+      }
+    ]
+  },
+  "telemetry": {
+    "prompt_sha256": {
+      "SEARCH_SYSTEM": "0a2d1ccd7d4c77e0f5441613fc38edb45f36237befa5723d030b9244d27b607e",
+      "SUMMARY_SYSTEM": "7726ec6a8d32f245ff4d3b8ecb20668a8b440756e31f4106cb36a69dea75243b",
+      "SYNTH_SYSTEM": "dbda0a2b78e23926f4a986a6d6f9d0ed42a9090ed3128819e380e0c82beddde4"
+    },
+    "search_depth": 25,
+    "search_sort": "relevance",
+    "per_query": [
+      {
+        "query": "apple cider vinegar weight loss",
+        "strategy": "Broad search to capture any studies linking apple cider vinegar to weight loss",
+        "total_hits": 11,
+        "returned": [
+          "39882285",
+          "40771528",
+          "41010525",
+          "23373303",
+          "34731308",
+          "40622264",
+          "33084094",
+          "39238884",
+          "34948755",
+          "35436789",
+          "23997718"
+        ],
+        "querytranslation": "(\"apple s\"[All Fields] OR \"malus\"[MeSH Terms] OR \"malus\"[All Fields] OR \"apple\"[All Fields] OR \"apples\"[All Fields]) AND (\"cider\"[All Fields] OR \"ciders\"[All Fields]) AND (\"acetic acid\"[Supplementary Concept] OR \"acetic acid\"[All Fields] OR \"vinegar\"[All Fields] OR \"acetic acid\"[MeSH Terms] OR (\"acetic\"[All Fields] AND \"acid\"[All Fields]) OR \"vinegars\"[All Fields]) AND (\"weight loss\"[MeSH Terms] OR (\"weight\"[All Fields] AND \"loss\"[All Fields]) OR \"weight loss\"[All Fields])"
+      },
+      {
+        "query": "(apple cider vinegar OR acetic acid) AND (weight loss OR body weight OR obesity OR body mass index OR BMI) AND (randomized controlled trial OR clinical trial OR meta-analysis)",
+        "strategy": "Targeted search for high-quality clinical evidence on vinegar or acetic acid and weight reduction outcomes",
+        "total_hits": 459,
+        "returned": [
+          "41010525",
+          "34187442",
+          "19661687",
+          "37356723",
+          "31208525",
+          "11362303",
+          "28668546",
+          "37578552",
+          "4101384",
+          "33113929",
+          "339865",
+          "30052270",
+          "37608660",
+          "18268250",
+          "11879369",
+          "9025743",
+          "4102452",
+          "34942461",
+          "39578890",
+          "39064748",
+          "35014156",
+          "21865769",
+          "22169113",
+          "26565124",
+          "3867794"
+        ],
+        "querytranslation": "(((\"apple s\"[All Fields] OR \"malus\"[MeSH Terms] OR \"malus\"[All Fields] OR \"apple\"[All Fields] OR \"apples\"[All Fields]) AND (\"cider\"[All Fields] OR \"ciders\"[All Fields]) AND (\"acetic acid\"[Supplementary Concept] OR \"acetic acid\"[All Fields] OR \"vinegar\"[All Fields] OR \"acetic acid\"[MeSH Terms] OR (\"acetic\"[All Fields] AND \"acid\"[All Fields]) OR \"vinegars\"[All Fields])) OR (\"acetic acid\"[Supplementary Concept] OR \"acetic acid\"[All Fields] OR \"acetates\"[Supplementary Concept] OR \"acetates\"[All Fields] OR \"acetic acid\"[MeSH Terms] OR (\"acetic\"[All Fields] AND \"acid\"[All Fields]) OR \"acetates\"[MeSH Terms])) AND (\"weight loss\"[MeSH Terms] OR (\"weight\"[All Fields] AND \"loss\"[All Fields]) OR \"weight loss\"[All Fields] OR (\"body weight\"[MeSH Terms] OR (\"body\"[All Fields] AND \"weight\"[All Fields]) OR \"body weight\"[All Fields]) OR (\"obeses\"[All Fields] OR \"obesity\"[MeSH Terms] OR \"obesity\"[All Fields] OR \"obese\"[All Fields] OR \"obesities\"[All Fields] OR \"obesity s\"[All Fields]) OR (\"body mass index\"[MeSH Terms] OR (\"body\"[All Fields] AND \"mass\"[All Fields] AND \"index\"[All Fields]) OR \"body mass index\"[All Fields]) OR \"BMI\"[All Fields]) AND (\"randomized controlled trial\"[Publication Type] OR \"randomized controlled trials as topic\"[MeSH Terms] OR \"randomized controlled trial\"[All Fields] OR \"randomised controlled trial\"[All Fields] OR (\"clinical trial\"[Publication Type] OR \"clinical trials as topic\"[MeSH Terms] OR \"clinical trial\"[All Fields]) OR (\"meta analysis\"[Publication Type] OR \"meta analysis as topic\"[MeSH Terms] OR \"meta analysis\"[All Fields]))"
+      },
+      {
+        "query": "(vinegar OR acetic acid) AND (body composition OR adiposity OR waist circumference OR body fat) AND (humans[MeSH])",
+        "strategy": "Broader search using the active component (acetic acid) and additional body composition endpoints in human studies",
+        "total_hits": 621,
+        "returned": [
+          "7702107",
+          "33116305",
+          "19661687",
+          "7024720",
+          "41010525",
+          "19997012",
+          "31274",
+          "4318962",
+          "12094525",
+          "32399897",
+          "38429906",
+          "42618739",
+          "25793631",
+          "35075209",
+          "32170375",
+          "39064748",
+          "10883452",
+          "5780461",
+          "31694216",
+          "19386514",
+          "17554340",
+          "31359245",
+          "28600981",
+          "22610058",
+          "37590975"
+        ],
+        "querytranslation": "(\"acetic acid\"[Supplementary Concept] OR \"acetic acid\"[All Fields] OR \"vinegar\"[All Fields] OR \"acetic acid\"[MeSH Terms] OR (\"acetic\"[All Fields] AND \"acid\"[All Fields]) OR \"vinegars\"[All Fields] OR (\"acetic acid\"[Supplementary Concept] OR \"acetic acid\"[All Fields] OR \"acetates\"[Supplementary Concept] OR \"acetates\"[All Fields] OR \"acetic acid\"[MeSH Terms] OR (\"acetic\"[All Fields] AND \"acid\"[All Fields]) OR \"acetates\"[MeSH Terms])) AND (\"body composition\"[MeSH Terms] OR (\"body\"[All Fields] AND \"composition\"[All Fields]) OR \"body composition\"[All Fields] OR (\"adipose\"[All Fields] OR \"adiposities\"[All Fields] OR \"adiposity\"[MeSH Terms] OR \"adiposity\"[All Fields]) OR (\"waist circumference\"[MeSH Terms] OR (\"waist\"[All Fields] AND \"circumference\"[All Fields]) OR \"waist circumference\"[All Fields]) OR (\"fat body\"[MeSH Terms] OR (\"fat\"[All Fields] AND \"body\"[All Fields]) OR \"fat body\"[All Fields] OR (\"body\"[All Fields] AND \"fat\"[All Fields]) OR \"body fat\"[All Fields] OR \"adipose tissue\"[MeSH Terms] OR (\"adipose\"[All Fields] AND \"tissue\"[All Fields]) OR \"adipose tissue\"[All Fields])) AND \"humans\"[MeSH Terms]"
+      },
+      {
+        "query": "(apple cider vinegar OR vinegar dietary supplement) AND (weight management OR anti-obesity OR appetite OR satiety) AND (systematic review OR meta-analysis)",
+        "strategy": "Focused search for systematic reviews and meta-analyses summarizing the evidence on vinegar for weight management and appetite control",
+        "total_hits": 2,
+        "returned": [
+          "41010525",
+          "33436350"
+        ],
+        "querytranslation": "(((\"apple s\"[All Fields] OR \"malus\"[MeSH Terms] OR \"malus\"[All Fields] OR \"apple\"[All Fields] OR \"apples\"[All Fields]) AND (\"cider\"[All Fields] OR \"ciders\"[All Fields]) AND (\"acetic acid\"[Supplementary Concept] OR \"acetic acid\"[All Fields] OR \"vinegar\"[All Fields] OR \"acetic acid\"[MeSH Terms] OR (\"acetic\"[All Fields] AND \"acid\"[All Fields]) OR \"vinegars\"[All Fields])) OR ((\"acetic acid\"[Supplementary Concept] OR \"acetic acid\"[All Fields] OR \"vinegar\"[All Fields] OR \"acetic acid\"[MeSH Terms] OR (\"acetic\"[All Fields] AND \"acid\"[All Fields]) OR \"vinegars\"[All Fields]) AND (\"dietary supplements\"[MeSH Terms] OR (\"dietary\"[All Fields] AND \"supplements\"[All Fields]) OR \"dietary supplements\"[All Fields] OR (\"dietary\"[All Fields] AND \"supplement\"[All Fields]) OR \"dietary supplement\"[All Fields]))) AND (((\"weight s\"[All Fields] OR \"weighted\"[All Fields] OR \"weighting\"[All Fields] OR \"weightings\"[All Fields] OR \"weights and measures\"[MeSH Terms] OR (\"weights\"[All Fields] AND \"measures\"[All Fields]) OR \"weights and measures\"[All Fields] OR \"weight\"[All Fields] OR \"body weight\"[MeSH Terms] OR (\"body\"[All Fields] AND \"weight\"[All Fields]) OR \"body weight\"[All Fields] OR \"weights\"[All Fields]) AND (\"manage\"[All Fields] OR \"managed\"[All Fields] OR \"management s\"[All Fields] OR \"managements\"[All Fields] OR \"manager\"[All Fields] OR \"manager s\"[All Fields] OR \"managers\"[All Fields] OR \"manages\"[All Fields] OR \"managing\"[All Fields] OR \"managment\"[All Fields] OR \"organization and administration\"[MeSH Terms] OR (\"organization\"[All Fields] AND \"administration\"[All Fields]) OR \"organization and administration\"[All Fields] OR \"management\"[All Fields] OR \"disease management\"[MeSH Terms] OR (\"disease\"[All Fields] AND \"management\"[All Fields]) OR \"disease management\"[All Fields])) OR \"anti-obesity\"[All Fields] OR (\"appetite\"[MeSH Terms] OR \"appetite\"[All Fields] OR \"appetites\"[All Fields] OR \"appetitive\"[All Fields] OR \"appetitively\"[All Fields] OR \"appetitiveness\"[All Fields]) OR (\"satiation\"[MeSH Terms] OR \"satiation\"[All Fields] OR \"satiety\"[All Fields] OR \"satieties\"[All Fields])) AND (\"systematic review\"[Publication Type] OR \"systematic reviews as topic\"[MeSH Terms] OR \"systematic review\"[All Fields] OR (\"meta analysis\"[Publication Type] OR \"meta analysis as topic\"[MeSH Terms] OR \"meta analysis\"[All Fields]))"
+      }
+    ],
+    "candidate_pool": [
+      {
+        "pmid": "41010525",
+        "title": "Effect of Apple Cider Vinegar Intake on Body Composition in Humans with Type 2 Diabetes and/or Overweight: A Systematic Review and Meta-Analysis of Randomized Controlled Trials.",
+        "year": 2025,
+        "score": 26,
+        "overlap": 4,
+        "strategy_idx": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "positions": [
+          3,
+          1,
+          5,
+          1
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review",
+          "Meta-Analysis"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "19661687",
+        "title": "Vinegar intake reduces body weight, body fat mass, and serum triglyceride levels in obese Japanese subjects.",
+        "year": 2009,
+        "score": 12,
+        "overlap": 2,
+        "strategy_idx": [
+          1,
+          2
+        ],
+        "positions": [
+          3,
+          3
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "39882285",
+        "title": "Comprehensive clarification of statistical and data concerns on the effects of apple cider vinegar on weight loss.",
+        "year": 2024,
+        "score": 8,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          1
+        ],
+        "publication_types": [
+          "Journal Article"
+        ],
+        "has_abstract": false
+      },
+      {
+        "pmid": "39064748",
+        "title": "Daily Vinegar Ingestion Improves Depression and Enhances Niacin Metabolism in Overweight Adults: A Randomized Controlled Trial.",
+        "year": 2024,
+        "score": 8,
+        "overlap": 2,
+        "strategy_idx": [
+          1,
+          2
+        ],
+        "positions": [
+          20,
+          16
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "7702107",
+        "title": "Agent Orange in Vietnam.",
+        "year": 1995,
+        "score": 8,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          1
+        ],
+        "publication_types": [
+          "Editorial",
+          "Comment"
+        ],
+        "has_abstract": false
+      },
+      {
+        "pmid": "40771528",
+        "title": "Improbable data characteristics and extreme effects of apple cider vinegar on weight loss.",
+        "year": 2025,
+        "score": 7,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          2
+        ],
+        "publication_types": [
+          "Letter",
+          "Comment"
+        ],
+        "has_abstract": false
+      },
+      {
+        "pmid": "34187442",
+        "title": "The effect of apple cider vinegar on lipid profiles and glycemic parameters: a systematic review and meta-analysis of randomized clinical trials.",
+        "year": 2021,
+        "score": 7,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          2
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "33116305",
+        "title": "snRNA-seq reveals a subpopulation of adipocytes that regulates thermogenesis.",
+        "year": 2020,
+        "score": 7,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          2
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "33436350",
+        "title": "Effect of Dietary Acetic Acid Supplementation on Plasma Glucose, Lipid Profiles, and Body Mass Index in Human Adults: A Systematic Review and Meta-analysis.",
+        "year": 2021,
+        "score": 7,
+        "overlap": 1,
+        "strategy_idx": [
+          3
+        ],
+        "positions": [
+          2
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "23373303",
+        "title": "[Unhealthy weight loss. Erosion by apple cider vinegar].",
+        "year": 2012,
+        "score": 5,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          4
+        ],
+        "publication_types": [
+          "Case Reports",
+          "English Abstract",
+          "Journal Article"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "37356723",
+        "title": "Fecal microbiota transplantation in obesity metabolism: A meta analysis and systematic review.",
+        "year": 2023,
+        "score": 5,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          4
+        ],
+        "publication_types": [
+          "Meta-Analysis",
+          "Systematic Review",
+          "Journal Article"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "7024720",
+        "title": "The metabolic effects of dichloroacetate.",
+        "year": 1981,
+        "score": 5,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          4
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Research Support, U.S. Gov't, P.H.S.",
+          "Review"
+        ],
+        "has_abstract": false
+      },
+      {
+        "pmid": "34731308",
+        "title": "Apple cider vinegar administration on carcass characteristics and meat quality of broiler chickens.",
+        "year": 2021,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          5
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial, Veterinary"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "40622264",
+        "title": "Gastroesophageal Reflux Disease and Amazon.com.",
+        "year": 2025,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          6
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "33084094",
+        "title": "Ameliorative effects of apple cider vinegar on neurological complications via regulation of oxidative stress markers.",
+        "year": 2020,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          7
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "39238884",
+        "title": "Unveiling a Sour Truth: Acute Pancreatitis Linked to Apple Cider Vinegar Supplement.",
+        "year": 2024,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          8
+        ],
+        "publication_types": [
+          "Case Reports",
+          "Journal Article"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "34948755",
+        "title": "Dispensing Practices for Weight Management Products in Eastern Saudi Arabia: A Survey of Community Pharmacists.",
+        "year": 2021,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          9
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "35436789",
+        "title": "Erosive Effect of Acidic Beverages and Dietary Preservatives on Extracted Human Teeth-An In Vitro Analysis.",
+        "year": 2022,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          10
+        ],
+        "publication_types": [
+          "Journal Article"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "23997718",
+        "title": "Changes in anthropometric measurements, body composition, blood pressure, lipid profile, and testosterone in patients participating in a low-energy dietary intervention.",
+        "year": 2013,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          0
+        ],
+        "positions": [
+          11
+        ],
+        "publication_types": [
+          "Journal Article"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "31208525",
+        "title": "Dichloroacetate-induced peripheral neuropathy.",
+        "year": 2019,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          5
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "11362303",
+        "title": "Treatment review.",
+        "year": 1995,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          6
+        ],
+        "publication_types": [
+          "Newspaper Article",
+          "Journal Article"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "28668546",
+        "title": "Effectiveness of montelukast in overweight and obese atopic asthmatics.",
+        "year": 2017,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          7
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": false
+      },
+      {
+        "pmid": "37578552",
+        "title": "Risk factors for thrombocytopenia in patients receiving linezolid therapy: a systematic review and meta-analysis.",
+        "year": 2023,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          8
+        ],
+        "publication_types": [
+          "Meta-Analysis",
+          "Systematic Review",
+          "Journal Article"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "4101384",
+        "title": "Fertility control with 15-8-5.",
+        "year": 1970,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          9
+        ],
+        "publication_types": [
+          "Clinical Trial",
+          "Controlled Clinical Trial",
+          "Journal Article"
+        ],
+        "has_abstract": false
+      },
+      {
+        "pmid": "33113929",
+        "title": "The Role of Dietary Fibre in Modulating Gut Microbiota Dysbiosis in Patients with Type 2 Diabetes: A Systematic Review and Meta-Analysis of Randomised Controlled Trials.",
+        "year": 2020,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          10
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Meta-Analysis",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "339865",
+        "title": "Ticrynafen: a novel uricosuric antihypertensive natriuretic agent.",
+        "year": 1978,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          11
+        ],
+        "publication_types": [
+          "Clinical Trial",
+          "Comparative Study",
+          "Controlled Clinical Trial",
+          "Journal Article",
+          "Research Support, U.S. Gov't, P.H.S."
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "30052270",
+        "title": "Pharmacokinetic and Pharmacodynamic Evaluation of Intravenous Levetiracetam in Children With Epilepsy.",
+        "year": 2018,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          12
+        ],
+        "publication_types": [
+          "Clinical Trial",
+          "Journal Article",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "37608660",
+        "title": "The Effects of Apple Cider Vinegar on Cardiometabolic Risk Factors: A Systematic Review and Meta-analysis of Clinical Trials.",
+        "year": 2025,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          13
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review",
+          "Meta-Analysis"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "18268250",
+        "title": "Response of infantile spasms to levetiracetam.",
+        "year": 2008,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          14
+        ],
+        "publication_types": [
+          "Clinical Trial",
+          "Journal Article"
+        ],
+        "has_abstract": false
+      },
+      {
+        "pmid": "11879369",
+        "title": "Pharmacokinetic study of levetiracetam in children.",
+        "year": 2001,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          15
+        ],
+        "publication_types": [
+          "Clinical Trial",
+          "Comparative Study",
+          "Journal Article",
+          "Multicenter Study",
+          "Research Support, Non-U.S. Gov't",
+          "Research Support, U.S. Gov't, P.H.S."
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "9025743",
+        "title": "Tin-117m(4+)DTPA: pharmacokinetics and imaging characteristics in patients with metastatic bone pain.",
+        "year": 1997,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          16
+        ],
+        "publication_types": [
+          "Clinical Trial",
+          "Clinical Trial, Phase II",
+          "Controlled Clinical Trial",
+          "Journal Article",
+          "Research Support, Non-U.S. Gov't",
+          "Research Support, U.S. Gov't, Non-P.H.S."
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "4102452",
+        "title": "Effect of diuretic therapy on glucose tolerance in hypertensive patients.",
+        "year": 1971,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          17
+        ],
+        "publication_types": [
+          "Clinical Trial",
+          "Controlled Clinical Trial",
+          "Journal Article"
+        ],
+        "has_abstract": false
+      },
+      {
+        "pmid": "34942461",
+        "title": "Levocetirizine and montelukast in the COVID-19 treatment paradigm.",
+        "year": 2022,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          18
+        ],
+        "publication_types": [
+          "Journal Article"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "39578890",
+        "title": "Gut microbiota and gut-derived metabolites are altered and associated with dietary intake in women with polycystic ovary syndrome.",
+        "year": 2024,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          19
+        ],
+        "publication_types": [
+          "Journal Article"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "35014156",
+        "title": "Inhibition of 11β-Hydroxysteroid dehydrogenase-1 with AZD4017 in patients with nonalcoholic steatohepatitis or nonalcoholic fatty liver disease: A randomized, double-blind, placebo-controlled, phase II study.",
+        "year": 2022,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          21
+        ],
+        "publication_types": [
+          "Clinical Trial, Phase II",
+          "Journal Article",
+          "Randomized Controlled Trial",
+          "Research Support, N.I.H., Extramural",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "21865769",
+        "title": "Pharmacokinetics and tolerability of almorexant in Japanese and Caucasian healthy male subjects.",
+        "year": 2011,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          22
+        ],
+        "publication_types": [
+          "Clinical Trial",
+          "Comparative Study",
+          "Journal Article",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "22169113",
+        "title": "Effects of the PPAR-δ agonist MBX-8025 on atherogenic dyslipidemia.",
+        "year": 2012,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          23
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Multicenter Study",
+          "Randomized Controlled Trial",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "26565124",
+        "title": "Sobetirome: the past, present and questions about the future.",
+        "year": 2016,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          24
+        ],
+        "publication_types": [
+          "Editorial",
+          "Research Support, N.I.H., Extramural"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "3867794",
+        "title": "Benefits of bicarbonate dialysis.",
+        "year": 1985,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          1
+        ],
+        "positions": [
+          25
+        ],
+        "publication_types": [
+          "Clinical Trial",
+          "Controlled Clinical Trial",
+          "Journal Article"
+        ],
+        "has_abstract": false
+      },
+      {
+        "pmid": "19997012",
+        "title": "Reflex inhibition of electrically induced muscle cramps in hypohydrated humans.",
+        "year": 2010,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          6
+        ],
+        "publication_types": [
+          "Comparative Study",
+          "Journal Article",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "31274",
+        "title": "Lipogenesis in developing human adipose tissue.",
+        "year": 1978,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          7
+        ],
+        "publication_types": [
+          "Journal Article"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "4318962",
+        "title": "Lipid mobilizing factor from the hypothalamus.",
+        "year": 1970,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          8
+        ],
+        "publication_types": [
+          "Journal Article"
+        ],
+        "has_abstract": false
+      },
+      {
+        "pmid": "12094525",
+        "title": "The volunteers: the first human biopsy studies of TCDD from Agent Orange exposure.",
+        "year": 2002,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          9
+        ],
+        "publication_types": [
+          "Editorial"
+        ],
+        "has_abstract": false
+      },
+      {
+        "pmid": "32399897",
+        "title": "Ethacrynic acid targets GSTM1 to ameliorate obesity by promoting browning of white adipocytes.",
+        "year": 2021,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          10
+        ],
+        "publication_types": [
+          "Letter",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": false
+      },
+      {
+        "pmid": "38429906",
+        "title": "Blautia Coccoides is a Newly Identified Bacterium Increased by Leucine Deprivation and has a Novel Function in Improving Metabolic Disorders.",
+        "year": 2024,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          11
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "42618739",
+        "title": "Intestinal cGAS-STING-IFN signalling promotes obesity by downregulating microbiota-derived IAA in male mice.",
+        "year": 2026,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          12
+        ],
+        "publication_types": [
+          "Journal Article"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "25793631",
+        "title": "Alcohol: a nutrient with multiple salutary effects.",
+        "year": 2015,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          13
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Research Support, N.I.H., Extramural",
+          "Research Support, Non-U.S. Gov't",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "35075209",
+        "title": "Transplantation of 3D adipose-derived stem cell/hepatocyte spheroids alleviates chronic hepatic damage in a rat model of thioacetamide-induced liver cirrhosis.",
+        "year": 2022,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          14
+        ],
+        "publication_types": [
+          "Evaluation Study",
+          "Journal Article",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "32170375",
+        "title": "Safety and side effects of apple vinegar intake and its effect on metabolic parameters and body weight: a systematic review.",
+        "year": 2020,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          15
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "10883452",
+        "title": "Angiomyolipoma arising in the thigh.",
+        "year": 2000,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          17
+        ],
+        "publication_types": [
+          "Case Reports",
+          "Journal Article"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "5780461",
+        "title": "New synthetic absorbable suture material.",
+        "year": 1969,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          18
+        ],
+        "publication_types": [
+          "Journal Article"
+        ],
+        "has_abstract": false
+      },
+      {
+        "pmid": "31694216",
+        "title": "Imaging Metabolically Active Fat: A Literature Review and Mechanistic Insights.",
+        "year": 2019,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          19
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "19386514",
+        "title": "Fat containing HCC: findings on CT and MRI including serial contrast-enhanced imaging.",
+        "year": 2009,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          20
+        ],
+        "publication_types": [
+          "Journal Article"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "17554340",
+        "title": "Treatment of diabetes and atherosclerosis by inhibiting fatty-acid-binding protein aP2.",
+        "year": 2007,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          21
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Research Support, N.I.H., Extramural",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "31359245",
+        "title": "Thyroid hormone metabolites and analogues.",
+        "year": 2019,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          22
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Research Support, Non-U.S. Gov't",
+          "Review"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "28600981",
+        "title": "Pharmacologic concentrations of linezolid modify oxidative phosphorylation function and adipocyte secretome.",
+        "year": 2017,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          23
+        ],
+        "publication_types": [
+          "Journal Article",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "22610058",
+        "title": "Epithelioid angiomyolipoma of the liver: CT and MRI features.",
+        "year": 2013,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          24
+        ],
+        "publication_types": [
+          "Journal Article"
+        ],
+        "has_abstract": true
+      },
+      {
+        "pmid": "37590975",
+        "title": "Alleviation of adipose-hepatic glycolipid dysregulation by acetate in experimental PCOS model is associated with NF-κB/NLRP3 repression.",
+        "year": 2023,
+        "score": 4,
+        "overlap": 1,
+        "strategy_idx": [
+          2
+        ],
+        "positions": [
+          25
+        ],
+        "publication_types": [
+          "Journal Article"
+        ],
+        "has_abstract": true
+      }
+    ],
+    "timings": {
+      "query_generation_s": 6.12,
+      "retrieval_s": 5.96,
+      "translation_s": 21.94,
+      "synthesis_s": 19.55,
+      "synthesis_first_token_s": 1.72,
+      "total_s": 53.57
+    },
+    "usage": {
+      "search": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 335,
+        "output_tokens": 228,
+        "output_tokens_details": null,
+        "server_tool_use": null,
+        "service_tier": "standard"
+      },
+      "summary": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 1782,
+        "output_tokens": 954,
+        "output_tokens_details": null,
+        "server_tool_use": null,
+        "service_tier": "standard"
+      },
+      "synthesis": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 4656,
+        "output_tokens": 695,
+        "output_tokens_details": null,
+        "server_tool_use": null,
+        "service_tier": "standard"
+      }
+    },
+    "synthesis_stop_reason": "end_turn",
+    "served_model": "claude-opus-4-6"
+  },
+  "run": {
+    "question_id": "Q6",
+    "replicate": 1,
+    "route": "worker:https://tables-turned-api.jethomasphd.workers.dev",
+    "captured_at": "2026-09-28T23:42:40Z"
+  }
+}
