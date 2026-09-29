@@ -7,4 +7,15 @@ compatibility_date = "2024-12-01"
 # Then paste your sk-ant-... key when prompted.
 
 [vars]
+# Models the Worker will forward. Keep in sync with MODEL in commons-table/js/synthesis.js.
+ALLOWED_MODELS = "claude-opus-4-6"
+# Largest max_tokens the site ever sends (plain-language summaries use 2048).
+MAX_OUTPUT_TOKENS = "2048"
 ALLOWED_ORIGIN = "https://turned-tables.pages.dev,https://tables-turned.com,https://www.tables-turned.com"
+
+# Per-IP rate limit. One search-to-brief session makes 3 calls, so 15/minute
+# allows several sessions per minute from one address. period must be 10 or 60.
+[[ratelimits]]
+name = "RATE_LIMITER"
+namespace_id = "1001"
+simple = { limit = 15, period = 60 }
