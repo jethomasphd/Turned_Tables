@@ -33,12 +33,12 @@ const App = (() => {
 
   // ── Educational Scaffolding (main page) ──
   const EDU_MESSAGES = [
-    'Right now, ChatGPT is fabricating medical citations. Real-sounding titles, invented authors, made-up findings \u2014 delivered with total confidence. You cannot tell which papers are real. We only return papers that exist.',
-    'Google\u2019s AI Overviews treat wellness blogs and supplement ads the same as peer-reviewed research. Your health question deserves better than a confident summary of the open web.',
-    'Ask ChatGPT for sources on any drug. Then try clicking them. Many of those papers were never written. Here, every PMID links to a real paper in the U.S. National Library of Medicine.',
-    'Google gives you a paragraph. ChatGPT gives you a paragraph with fake footnotes. Neither shows you the methods, the sample size, or who funded the study. We show you the actual abstracts.',
-    'ChatGPT hallucinates evidence. Google buries evidence under ads. Neither lets you choose which papers matter. Here, you see every paper and decide for yourself.',
-    'Every claim in your brief will cite a real PubMed paper you can click and verify in seconds. No hallucinations. No ads. No hidden sources.'
+    'Ask a chatbot a health question and it answers first. Ask for its sources and it lists studies from memory \u2014 tied to no particular sentence, and yours to check. Here, the papers come first.',
+    'Google\u2019s AI Overviews summarize whatever the web ranks highest \u2014 mostly health sites and news, rarely the studies themselves. Your health question deserves the research, not a retelling of it.',
+    'Every PMID here links to a real paper in the U.S. National Library of Medicine \u2014 one you saw, and chose, before the brief was written.',
+    'Google gives you a paragraph. A chatbot gives you a paragraph, and footnotes if you ask. Neither shows you the abstracts. We do.',
+    'Neither Google nor a chatbot lets you choose which studies matter. Here, you see every paper and decide for yourself.',
+    'Every claim in your brief cites a real PubMed paper you can click and check in seconds. No ads. No hidden sources.'
   ];
   let eduInterval = null;
   let eduIdx = 0;
@@ -79,7 +79,7 @@ const App = (() => {
   // ═══════════════════════════════════════════════════════════
 
   const INTRO_LINES = [
-    { id: 'ln1', text: '39 million medical papers.' },
+    { id: 'ln1', text: '41 million medical papers.' },
     { pause: 600 },
     { id: 'ln2', text: 'Your taxes paid for them\u2026' },
     { pause: 900 },
@@ -599,6 +599,15 @@ const App = (() => {
     $('curate-count').textContent = `${state.selectedPMIDs.size} of ${state.allFoundPapers.length} selected`;
   }
 
+  // Turn any citation bracket into one chip per PMID. Handles "[PMID: 1]",
+  // "[PMID: 1, PMID: 2]" and "[PMID: 1, 2]" (the model uses all three forms).
+  function linkPmids(text, extraAttrs) {
+    return text.replace(/\[PMID:?\s*\d+(?:\s*[,;]\s*(?:PMID:?\s*)?\d+)*\]/g, (bracket) => {
+      const ids = bracket.match(/\d+/g) || [];
+      return ids.map(id => `<a href="https://pubmed.ncbi.nlm.nih.gov/${id}/"${extraAttrs} class="pmid">[PMID: ${id}]</a>`).join(' ');
+    });
+  }
+
   function escapeHtml(str) {
     if (!str) return '';
     return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -732,11 +741,10 @@ const App = (() => {
     }
 
     function inline(text) {
-      return text
+      return linkPmids(text
         .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-        .replace(/\*(.+?)\*/g, '<em>$1</em>')
-        .replace(/\[PMID:\s*(\d+)\]/g, '<a href="https://pubmed.ncbi.nlm.nih.gov/$1/" target="_blank" rel="noopener" class="pmid">[PMID: $1]</a>')
-        .replace(/\[UNWITNESSED\]/g, '<span class="tag-unwitnessed">[UNWITNESSED]</span>')
+        .replace(/\*(.+?)\*/g, '<em>$1</em>'), ' target="_blank" rel="noopener"')
+        .replace(/\[UNWITNESSED[^\]]*\]/g, m => `<span class="tag-unwitnessed">${m}</span>`)
         .replace(/\[CONTESTED\]/g, '<span class="tag-contested">[CONTESTED]</span>')
         .replace(/`(.+?)`/g, '<code>$1</code>');
     }
@@ -849,11 +857,10 @@ ${htmlContent}
     }
 
     function docInline(text) {
-      return text
+      return linkPmids(text
         .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-        .replace(/\*(.+?)\*/g, '<em>$1</em>')
-        .replace(/\[PMID:\s*(\d+)\]/g, '<a href="https://pubmed.ncbi.nlm.nih.gov/$1/" class="pmid">[PMID: $1]</a>')
-        .replace(/\[UNWITNESSED\]/g, '<span class="unwitnessed">[UNWITNESSED]</span>')
+        .replace(/\*(.+?)\*/g, '<em>$1</em>'), '')
+        .replace(/\[UNWITNESSED[^\]]*\]/g, m => `<span class="unwitnessed">${m}</span>`)
         .replace(/`(.+?)`/g, '<code>$1</code>');
     }
 

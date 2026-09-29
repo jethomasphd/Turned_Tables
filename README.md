@@ -1,7 +1,7 @@
 # Tables Turned
 
 
-**Your taxes paid for 39 million medical papers. They keep you out.**
+**Your taxes paid for 41 million medical papers. They keep you out.**
 
 Search the U.S. medical database in plain English. AI translates the jargon, you curate the evidence, every claim cites its source. The public record, returned to the public.
 
@@ -23,7 +23,7 @@ Tables Turned breaks both locks.
 
 ```
 YOU ASK          →  AI SEARCHES      →  YOU CHOOSE       →  AI READS         →  YOUR BRIEF
-plain English       PubMed (39M          which papers        the abstracts       every claim
+plain English       PubMed (41M          which papers        the abstracts       every claim
                     papers, free)        matter to you                           has a receipt
 ```
 
@@ -69,7 +69,7 @@ plain English       PubMed (39M          which papers        the abstracts      
   │                                                                  │
   │   ╔═══════════════════════════════════════════════════════╗      │
   │   ║  NCBI / PubMed  ·  U.S. National Library of Medicine ║      │
-  │   ║  39,000,000+ peer-reviewed medical papers             ║      │
+  │   ║  41,000,000+ peer-reviewed medical papers             ║      │
   │   ╚═══════════════════════════════════════════════════════╝      │
   │                                                                  │
   │   eutils.ncbi.nlm.nih.gov                                       │
@@ -214,9 +214,9 @@ plain English       PubMed (39M          which papers        the abstracts      
 
 | Tool | What It Does | The Problem |
 |------|-------------|-------------|
-| **Google AI Overviews** | Summarizes the open web | Wellness blogs and supplement ads weighted the same as peer-reviewed research. No sources you can verify. |
-| **ChatGPT** | Cites papers | Some real, some **completely fabricated**. Invented authors, fake titles, made-up findings delivered with total confidence. You cannot tell which are real. |
-| **Tables Turned** | Searches the actual U.S. medical database | Every paper is real. Every claim cites a PubMed ID you can click. Every prompt is visible. Nothing is hidden. Nothing is invented. |
+| **Google AI Overviews** | Summarizes the open web | Cites a page per sentence, but mostly health sites and news, rarely the studies themselves. |
+| **Free chatbots** | Answer from memory | Now usually cite real papers, but only when asked, after the answer is written, and tied to no specific claim. Checking them is on you. |
+| **Tables Turned** | Searches the actual U.S. medical database | Every paper is real. Every claim cites a PubMed ID you can click. Every prompt is visible. Nothing is hidden. |
 
 They give you *answers*. This gives you *evidence*.
 
